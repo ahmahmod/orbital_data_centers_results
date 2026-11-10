@@ -1,0 +1,453 @@
+E1_b gossip epoch=1 step=100 elapsed=3.1s
+E1_b gossip epoch=1 step=200 elapsed=5.4s
+E1_b gossip epoch=1 step=300 elapsed=7.6s
+VALIDATION_ALL {"epoch": 1, "mean_accuracy": 0.09609999999999999, "min_accuracy": 0.0728, "max_accuracy": 0.122, "std_accuracy": 0.01915698306101459}
+E1_b gossip epoch=2 step=400 elapsed=12.2s
+E1_b gossip epoch=2 step=500 elapsed=14.4s
+E1_b gossip epoch=2 step=600 elapsed=16.7s
+E1_b gossip epoch=2 step=700 elapsed=19.0s
+VALIDATION_ALL {"epoch": 2, "mean_accuracy": 0.11865, "min_accuracy": 0.1078, "max_accuracy": 0.1252, "std_accuracy": 0.006996248994997246}
+E1_b gossip epoch=3 step=800 elapsed=23.3s
+E1_b gossip epoch=3 step=900 elapsed=25.5s
+E1_b gossip epoch=3 step=1000 elapsed=27.8s
+VALIDATION_ALL {"epoch": 3, "mean_accuracy": 0.1565, "min_accuracy": 0.116, "max_accuracy": 0.2012, "std_accuracy": 0.03403248448174185}
+E1_b gossip epoch=4 step=1100 elapsed=32.6s
+E1_b gossip epoch=4 step=1200 elapsed=34.9s
+E1_b gossip epoch=4 step=1300 elapsed=37.1s
+E1_b gossip epoch=4 step=1400 elapsed=39.4s
+VALIDATION_ALL {"epoch": 4, "mean_accuracy": 0.19240000000000002, "min_accuracy": 0.1436, "max_accuracy": 0.2216, "std_accuracy": 0.0293335984836501}
+E1_b gossip epoch=5 step=1500 elapsed=43.6s
+E1_b gossip epoch=5 step=1600 elapsed=46.0s
+E1_b gossip epoch=5 step=1700 elapsed=48.2s
+VALIDATION_ALL {"epoch": 5, "mean_accuracy": 0.26405, "min_accuracy": 0.1748, "max_accuracy": 0.3276, "std_accuracy": 0.05897802556885064}
+E1_b gossip epoch=6 step=1800 elapsed=52.7s
+E1_b gossip epoch=6 step=1900 elapsed=55.0s
+E1_b gossip epoch=6 step=2000 elapsed=57.3s
+E1_b gossip epoch=6 step=2100 elapsed=59.6s
+VALIDATION_ALL {"epoch": 6, "mean_accuracy": 0.2492, "min_accuracy": 0.1532, "max_accuracy": 0.3286, "std_accuracy": 0.07767586497748191}
+E1_b gossip epoch=7 step=2200 elapsed=63.9s
+E1_b gossip epoch=7 step=2300 elapsed=66.2s
+E1_b gossip epoch=7 step=2400 elapsed=68.4s
+VALIDATION_ALL {"epoch": 7, "mean_accuracy": 0.23909999999999998, "min_accuracy": 0.1506, "max_accuracy": 0.3404, "std_accuracy": 0.07198062239241891}
+E1_b gossip epoch=8 step=2500 elapsed=72.8s
+E1_b gossip epoch=8 step=2600 elapsed=75.0s
+E1_b gossip epoch=8 step=2700 elapsed=77.3s
+E1_b gossip epoch=8 step=2800 elapsed=79.6s
+VALIDATION_ALL {"epoch": 8, "mean_accuracy": 0.29895, "min_accuracy": 0.2338, "max_accuracy": 0.3814, "std_accuracy": 0.061332271277036526}
+E1_b gossip epoch=9 step=2900 elapsed=83.7s
+E1_b gossip epoch=9 step=3000 elapsed=86.0s
+E1_b gossip epoch=9 step=3100 elapsed=88.3s
+VALIDATION_ALL {"epoch": 9, "mean_accuracy": 0.2827, "min_accuracy": 0.1784, "max_accuracy": 0.3698, "std_accuracy": 0.08120252459129582}
+E1_b gossip epoch=10 step=3200 elapsed=92.9s
+E1_b gossip epoch=10 step=3300 elapsed=95.1s
+E1_b gossip epoch=10 step=3400 elapsed=97.5s
+E1_b gossip epoch=10 step=3500 elapsed=99.8s
+VALIDATION_ALL {"epoch": 10, "mean_accuracy": 0.31829999999999997, "min_accuracy": 0.2278, "max_accuracy": 0.3644, "std_accuracy": 0.05560656436069396}
+E1_b gossip epoch=11 step=3600 elapsed=104.1s
+E1_b gossip epoch=11 step=3700 elapsed=106.3s
+E1_b gossip epoch=11 step=3800 elapsed=108.7s
+VALIDATION_ALL {"epoch": 11, "mean_accuracy": 0.40709999999999996, "min_accuracy": 0.295, "max_accuracy": 0.4886, "std_accuracy": 0.07622092888439501}
+E1_b gossip epoch=12 step=3900 elapsed=113.1s
+E1_b gossip epoch=12 step=4000 elapsed=115.4s
+E1_b gossip epoch=12 step=4100 elapsed=117.7s
+E1_b gossip epoch=12 step=4200 elapsed=120.0s
+VALIDATION_ALL {"epoch": 12, "mean_accuracy": 0.38395, "min_accuracy": 0.235, "max_accuracy": 0.4786, "std_accuracy": 0.09391947348659917}
+E1_b gossip epoch=13 step=4300 elapsed=124.0s
+E1_b gossip epoch=13 step=4400 elapsed=126.3s
+E1_b gossip epoch=13 step=4500 elapsed=128.7s
+VALIDATION_ALL {"epoch": 13, "mean_accuracy": 0.37075, "min_accuracy": 0.2418, "max_accuracy": 0.49, "std_accuracy": 0.11253491680363033}
+E1_b gossip epoch=14 step=4600 elapsed=133.0s
+E1_b gossip epoch=14 step=4700 elapsed=135.3s
+E1_b gossip epoch=14 step=4800 elapsed=137.6s
+E1_b gossip epoch=14 step=4900 elapsed=139.8s
+VALIDATION_ALL {"epoch": 14, "mean_accuracy": 0.3872, "min_accuracy": 0.189, "max_accuracy": 0.5152, "std_accuracy": 0.12061948432985443}
+E1_b gossip epoch=15 step=5000 elapsed=144.2s
+E1_b gossip epoch=15 step=5100 elapsed=146.4s
+E1_b gossip epoch=15 step=5200 elapsed=148.7s
+VALIDATION_ALL {"epoch": 15, "mean_accuracy": 0.36455, "min_accuracy": 0.2276, "max_accuracy": 0.4172, "std_accuracy": 0.07918451553176291}
+E1_b gossip epoch=16 step=5300 elapsed=153.0s
+E1_b gossip epoch=16 step=5400 elapsed=155.3s
+E1_b gossip epoch=16 step=5500 elapsed=157.5s
+E1_b gossip epoch=16 step=5600 elapsed=159.8s
+VALIDATION_ALL {"epoch": 16, "mean_accuracy": 0.38954999999999995, "min_accuracy": 0.331, "max_accuracy": 0.4194, "std_accuracy": 0.03461022247833722}
+E1_b gossip epoch=17 step=5700 elapsed=164.0s
+E1_b gossip epoch=17 step=5800 elapsed=166.3s
+E1_b gossip epoch=17 step=5900 elapsed=168.5s
+VALIDATION_ALL {"epoch": 17, "mean_accuracy": 0.36535, "min_accuracy": 0.1794, "max_accuracy": 0.4566, "std_accuracy": 0.10920223212004414}
+E1_b gossip epoch=18 step=6000 elapsed=173.0s
+E1_b gossip epoch=18 step=6100 elapsed=175.3s
+E1_b gossip epoch=18 step=6200 elapsed=177.6s
+E1_b gossip epoch=18 step=6300 elapsed=179.9s
+VALIDATION_ALL {"epoch": 18, "mean_accuracy": 0.3576, "min_accuracy": 0.2246, "max_accuracy": 0.4398, "std_accuracy": 0.0829701151017642}
+E1_b gossip epoch=19 step=6400 elapsed=184.0s
+E1_b gossip epoch=19 step=6500 elapsed=186.3s
+E1_b gossip epoch=19 step=6600 elapsed=188.6s
+VALIDATION_ALL {"epoch": 19, "mean_accuracy": 0.45044999999999996, "min_accuracy": 0.2944, "max_accuracy": 0.5628, "std_accuracy": 0.10025012468820176}
+E1_b gossip epoch=20 step=6700 elapsed=192.7s
+E1_b gossip epoch=20 step=6800 elapsed=195.0s
+E1_b gossip epoch=20 step=6900 elapsed=197.3s
+E1_b gossip epoch=20 step=7000 elapsed=199.7s
+VALIDATION_ALL {"epoch": 20, "mean_accuracy": 0.31795, "min_accuracy": 0.2428, "max_accuracy": 0.3932, "std_accuracy": 0.07475137122488122}
+E1_b gossip epoch=21 step=7100 elapsed=203.6s
+E1_b gossip epoch=21 step=7200 elapsed=205.9s
+E1_b gossip epoch=21 step=7300 elapsed=208.2s
+VALIDATION_ALL {"epoch": 21, "mean_accuracy": 0.34995, "min_accuracy": 0.2402, "max_accuracy": 0.442, "std_accuracy": 0.0845023520382717}
+E1_b gossip epoch=22 step=7400 elapsed=212.4s
+E1_b gossip epoch=22 step=7500 elapsed=214.7s
+E1_b gossip epoch=22 step=7600 elapsed=217.0s
+E1_b gossip epoch=22 step=7700 elapsed=219.3s
+VALIDATION_ALL {"epoch": 22, "mean_accuracy": 0.4183, "min_accuracy": 0.2238, "max_accuracy": 0.5186, "std_accuracy": 0.1150661114316461}
+E1_b gossip epoch=23 step=7800 elapsed=223.5s
+E1_b gossip epoch=23 step=7900 elapsed=225.8s
+E1_b gossip epoch=23 step=8000 elapsed=228.1s
+VALIDATION_ALL {"epoch": 23, "mean_accuracy": 0.4188, "min_accuracy": 0.2842, "max_accuracy": 0.5212, "std_accuracy": 0.08588911456057746}
+E1_b gossip epoch=24 step=8100 elapsed=232.3s
+E1_b gossip epoch=24 step=8200 elapsed=234.6s
+E1_b gossip epoch=24 step=8300 elapsed=236.9s
+E1_b gossip epoch=24 step=8400 elapsed=239.3s
+VALIDATION_ALL {"epoch": 24, "mean_accuracy": 0.36405, "min_accuracy": 0.1482, "max_accuracy": 0.5532, "std_accuracy": 0.16197508296031213}
+E1_b gossip epoch=25 step=8500 elapsed=243.5s
+E1_b gossip epoch=25 step=8600 elapsed=245.8s
+E1_b gossip epoch=25 step=8700 elapsed=248.1s
+E1_b gossip epoch=25 step=8800 elapsed=250.4s
+VALIDATION_ALL {"epoch": 25, "mean_accuracy": 0.44394999999999996, "min_accuracy": 0.293, "max_accuracy": 0.5636, "std_accuracy": 0.099711922556934}
+E1_b gossip epoch=26 step=8900 elapsed=254.7s
+E1_b gossip epoch=26 step=9000 elapsed=257.0s
+E1_b gossip epoch=26 step=9100 elapsed=259.3s
+VALIDATION_ALL {"epoch": 26, "mean_accuracy": 0.40855, "min_accuracy": 0.2456, "max_accuracy": 0.5442, "std_accuracy": 0.11402625794087956}
+E1_b gossip epoch=27 step=9200 elapsed=263.8s
+E1_b gossip epoch=27 step=9300 elapsed=266.0s
+E1_b gossip epoch=27 step=9400 elapsed=268.3s
+E1_b gossip epoch=27 step=9500 elapsed=270.7s
+VALIDATION_ALL {"epoch": 27, "mean_accuracy": 0.46955, "min_accuracy": 0.293, "max_accuracy": 0.5906, "std_accuracy": 0.11723577738898652}
+E1_b gossip epoch=28 step=9600 elapsed=274.6s
+E1_b gossip epoch=28 step=9700 elapsed=276.8s
+E1_b gossip epoch=28 step=9800 elapsed=279.2s
+VALIDATION_ALL {"epoch": 28, "mean_accuracy": 0.44355, "min_accuracy": 0.261, "max_accuracy": 0.548, "std_accuracy": 0.11252345311089595}
+E1_b gossip epoch=29 step=9900 elapsed=283.3s
+E1_b gossip epoch=29 step=10000 elapsed=285.7s
+E1_b gossip epoch=29 step=10100 elapsed=288.0s
+E1_b gossip epoch=29 step=10200 elapsed=290.4s
+VALIDATION_ALL {"epoch": 29, "mean_accuracy": 0.40390000000000004, "min_accuracy": 0.259, "max_accuracy": 0.5222, "std_accuracy": 0.10920233513986778}
+E1_b gossip epoch=30 step=10300 elapsed=294.8s
+E1_b gossip epoch=30 step=10400 elapsed=297.4s
+E1_b gossip epoch=30 step=10500 elapsed=299.8s
+VALIDATION_ALL {"epoch": 30, "mean_accuracy": 0.34905, "min_accuracy": 0.2272, "max_accuracy": 0.4452, "std_accuracy": 0.09776721076107264}
+E1_b gossip epoch=31 step=10600 elapsed=303.8s
+E1_b gossip epoch=31 step=10700 elapsed=306.1s
+E1_b gossip epoch=31 step=10800 elapsed=308.4s
+E1_b gossip epoch=31 step=10900 elapsed=310.7s
+VALIDATION_ALL {"epoch": 31, "mean_accuracy": 0.44179999999999997, "min_accuracy": 0.2614, "max_accuracy": 0.577, "std_accuracy": 0.13607262766625766}
+E1_b gossip epoch=32 step=11000 elapsed=315.4s
+E1_b gossip epoch=32 step=11100 elapsed=317.6s
+E1_b gossip epoch=32 step=11200 elapsed=319.9s
+VALIDATION_ALL {"epoch": 32, "mean_accuracy": 0.4653, "min_accuracy": 0.2638, "max_accuracy": 0.609, "std_accuracy": 0.12885732420006246}
+E1_b gossip epoch=33 step=11300 elapsed=324.0s
+E1_b gossip epoch=33 step=11400 elapsed=326.3s
+E1_b gossip epoch=33 step=11500 elapsed=328.5s
+E1_b gossip epoch=33 step=11600 elapsed=330.8s
+VALIDATION_ALL {"epoch": 33, "mean_accuracy": 0.45995, "min_accuracy": 0.265, "max_accuracy": 0.533, "std_accuracy": 0.1128628703338702}
+E1_b gossip epoch=34 step=11700 elapsed=335.1s
+E1_b gossip epoch=34 step=11800 elapsed=337.4s
+E1_b gossip epoch=34 step=11900 elapsed=339.6s
+VALIDATION_ALL {"epoch": 34, "mean_accuracy": 0.41605000000000003, "min_accuracy": 0.2288, "max_accuracy": 0.5484, "std_accuracy": 0.1164373114598581}
+E1_b gossip epoch=35 step=12000 elapsed=344.1s
+E1_b gossip epoch=35 step=12100 elapsed=346.3s
+E1_b gossip epoch=35 step=12200 elapsed=348.6s
+E1_b gossip epoch=35 step=12300 elapsed=350.8s
+VALIDATION_ALL {"epoch": 35, "mean_accuracy": 0.5075000000000001, "min_accuracy": 0.2856, "max_accuracy": 0.6078, "std_accuracy": 0.12974378597836583}
+E1_b gossip epoch=36 step=12400 elapsed=355.3s
+E1_b gossip epoch=36 step=12500 elapsed=357.6s
+E1_b gossip epoch=36 step=12600 elapsed=359.9s
+VALIDATION_ALL {"epoch": 36, "mean_accuracy": 0.46685, "min_accuracy": 0.3246, "max_accuracy": 0.5694, "std_accuracy": 0.08977609648453201}
+E1_b gossip epoch=37 step=12700 elapsed=364.4s
+E1_b gossip epoch=37 step=12800 elapsed=366.7s
+E1_b gossip epoch=37 step=12900 elapsed=368.9s
+E1_b gossip epoch=37 step=13000 elapsed=371.3s
+VALIDATION_ALL {"epoch": 37, "mean_accuracy": 0.47895, "min_accuracy": 0.3138, "max_accuracy": 0.5914, "std_accuracy": 0.10716271506452234}
+E1_b gossip epoch=38 step=13100 elapsed=375.7s
+E1_b gossip epoch=38 step=13200 elapsed=378.0s
+E1_b gossip epoch=38 step=13300 elapsed=380.3s
+VALIDATION_ALL {"epoch": 38, "mean_accuracy": 0.45620000000000005, "min_accuracy": 0.2596, "max_accuracy": 0.553, "std_accuracy": 0.11719240589731061}
+E1_b gossip epoch=39 step=13400 elapsed=384.5s
+E1_b gossip epoch=39 step=13500 elapsed=386.8s
+E1_b gossip epoch=39 step=13600 elapsed=389.1s
+E1_b gossip epoch=39 step=13700 elapsed=391.3s
+VALIDATION_ALL {"epoch": 39, "mean_accuracy": 0.43435, "min_accuracy": 0.246, "max_accuracy": 0.5228, "std_accuracy": 0.1107893835166529}
+E1_b gossip epoch=40 step=13800 elapsed=395.6s
+E1_b gossip epoch=40 step=13900 elapsed=397.9s
+E1_b gossip epoch=40 step=14000 elapsed=400.3s
+VALIDATION_ALL {"epoch": 40, "mean_accuracy": 0.509, "min_accuracy": 0.3392, "max_accuracy": 0.6086, "std_accuracy": 0.10705540621566012}
+E1_b gossip epoch=41 step=14100 elapsed=404.5s
+E1_b gossip epoch=41 step=14200 elapsed=406.8s
+E1_b gossip epoch=41 step=14300 elapsed=409.1s
+E1_b gossip epoch=41 step=14400 elapsed=411.4s
+VALIDATION_ALL {"epoch": 41, "mean_accuracy": 0.47885, "min_accuracy": 0.2346, "max_accuracy": 0.6164, "std_accuracy": 0.14613564760180864}
+E1_b gossip epoch=42 step=14500 elapsed=415.9s
+E1_b gossip epoch=42 step=14600 elapsed=418.1s
+E1_b gossip epoch=42 step=14700 elapsed=420.4s
+VALIDATION_ALL {"epoch": 42, "mean_accuracy": 0.4537, "min_accuracy": 0.348, "max_accuracy": 0.5658, "std_accuracy": 0.07905599281521926}
+E1_b gossip epoch=43 step=14800 elapsed=424.5s
+E1_b gossip epoch=43 step=14900 elapsed=426.9s
+E1_b gossip epoch=43 step=15000 elapsed=429.3s
+E1_b gossip epoch=43 step=15100 elapsed=431.5s
+VALIDATION_ALL {"epoch": 43, "mean_accuracy": 0.4628, "min_accuracy": 0.2038, "max_accuracy": 0.6136, "std_accuracy": 0.1678094752986255}
+E1_b gossip epoch=44 step=15200 elapsed=435.8s
+E1_b gossip epoch=44 step=15300 elapsed=438.1s
+E1_b gossip epoch=44 step=15400 elapsed=440.3s
+VALIDATION_ALL {"epoch": 44, "mean_accuracy": 0.47085, "min_accuracy": 0.2564, "max_accuracy": 0.6092, "std_accuracy": 0.14724716465861065}
+E1_b gossip epoch=45 step=15500 elapsed=444.7s
+E1_b gossip epoch=45 step=15600 elapsed=447.0s
+E1_b gossip epoch=45 step=15700 elapsed=449.3s
+E1_b gossip epoch=45 step=15800 elapsed=451.7s
+VALIDATION_ALL {"epoch": 45, "mean_accuracy": 0.49375, "min_accuracy": 0.3464, "max_accuracy": 0.6246, "std_accuracy": 0.12308723532519529}
+E1_b gossip epoch=46 step=15900 elapsed=455.6s
+E1_b gossip epoch=46 step=16000 elapsed=457.9s
+E1_b gossip epoch=46 step=16100 elapsed=460.2s
+VALIDATION_ALL {"epoch": 46, "mean_accuracy": 0.5057499999999999, "min_accuracy": 0.2608, "max_accuracy": 0.6238, "std_accuracy": 0.14471021905864148}
+E1_b gossip epoch=47 step=16200 elapsed=464.5s
+E1_b gossip epoch=47 step=16300 elapsed=466.7s
+E1_b gossip epoch=47 step=16400 elapsed=468.9s
+E1_b gossip epoch=47 step=16500 elapsed=471.2s
+VALIDATION_ALL {"epoch": 47, "mean_accuracy": 0.48014999999999997, "min_accuracy": 0.2844, "max_accuracy": 0.6198, "std_accuracy": 0.12848084487580239}
+E1_b gossip epoch=48 step=16600 elapsed=475.7s
+E1_b gossip epoch=48 step=16700 elapsed=478.0s
+E1_b gossip epoch=48 step=16800 elapsed=480.4s
+VALIDATION_ALL {"epoch": 48, "mean_accuracy": 0.4867, "min_accuracy": 0.2824, "max_accuracy": 0.6416, "std_accuracy": 0.1293761569996574}
+E1_b gossip epoch=49 step=16900 elapsed=484.3s
+E1_b gossip epoch=49 step=17000 elapsed=486.7s
+E1_b gossip epoch=49 step=17100 elapsed=488.9s
+E1_b gossip epoch=49 step=17200 elapsed=491.2s
+VALIDATION_ALL {"epoch": 49, "mean_accuracy": 0.5307999999999999, "min_accuracy": 0.3196, "max_accuracy": 0.6462, "std_accuracy": 0.12505190922173082}
+E1_b gossip epoch=50 step=17300 elapsed=495.6s
+E1_b gossip epoch=50 step=17400 elapsed=498.0s
+E1_b gossip epoch=50 step=17500 elapsed=500.2s
+E1_b gossip epoch=50 step=17600 elapsed=502.5s
+VALIDATION_ALL {"epoch": 50, "mean_accuracy": 0.45305, "min_accuracy": 0.3028, "max_accuracy": 0.5824, "std_accuracy": 0.1057195700899318}
+E1_b gossip epoch=51 step=17700 elapsed=507.0s
+E1_b gossip epoch=51 step=17800 elapsed=509.2s
+E1_b gossip epoch=51 step=17900 elapsed=511.6s
+VALIDATION_ALL {"epoch": 51, "mean_accuracy": 0.4877499999999999, "min_accuracy": 0.255, "max_accuracy": 0.6154, "std_accuracy": 0.13788635719316106}
+E1_b gossip epoch=52 step=18000 elapsed=516.0s
+E1_b gossip epoch=52 step=18100 elapsed=518.3s
+E1_b gossip epoch=52 step=18200 elapsed=520.6s
+E1_b gossip epoch=52 step=18300 elapsed=522.9s
+VALIDATION_ALL {"epoch": 52, "mean_accuracy": 0.48635, "min_accuracy": 0.3288, "max_accuracy": 0.588, "std_accuracy": 0.09956268126160524}
+E1_b gossip epoch=53 step=18400 elapsed=527.3s
+E1_b gossip epoch=53 step=18500 elapsed=529.7s
+E1_b gossip epoch=53 step=18600 elapsed=532.0s
+VALIDATION_ALL {"epoch": 53, "mean_accuracy": 0.5063500000000001, "min_accuracy": 0.33, "max_accuracy": 0.6434, "std_accuracy": 0.11334852226650331}
+E1_b gossip epoch=54 step=18700 elapsed=536.1s
+E1_b gossip epoch=54 step=18800 elapsed=538.4s
+E1_b gossip epoch=54 step=18900 elapsed=540.7s
+E1_b gossip epoch=54 step=19000 elapsed=542.9s
+VALIDATION_ALL {"epoch": 54, "mean_accuracy": 0.5371, "min_accuracy": 0.3202, "max_accuracy": 0.658, "std_accuracy": 0.128715383695967}
+E1_b gossip epoch=55 step=19100 elapsed=547.2s
+E1_b gossip epoch=55 step=19200 elapsed=549.5s
+E1_b gossip epoch=55 step=19300 elapsed=551.7s
+VALIDATION_ALL {"epoch": 55, "mean_accuracy": 0.50445, "min_accuracy": 0.29, "max_accuracy": 0.6364, "std_accuracy": 0.13046351022412359}
+E1_b gossip epoch=56 step=19400 elapsed=556.2s
+E1_b gossip epoch=56 step=19500 elapsed=558.5s
+E1_b gossip epoch=56 step=19600 elapsed=560.8s
+E1_b gossip epoch=56 step=19700 elapsed=563.2s
+VALIDATION_ALL {"epoch": 56, "mean_accuracy": 0.5286500000000001, "min_accuracy": 0.358, "max_accuracy": 0.627, "std_accuracy": 0.10290562423891127}
+E1_b gossip epoch=57 step=19800 elapsed=567.4s
+E1_b gossip epoch=57 step=19900 elapsed=569.7s
+E1_b gossip epoch=57 step=20000 elapsed=572.0s
+VALIDATION_ALL {"epoch": 57, "mean_accuracy": 0.54915, "min_accuracy": 0.3242, "max_accuracy": 0.6718, "std_accuracy": 0.13931025626277485}
+E1_b gossip epoch=58 step=20100 elapsed=576.0s
+E1_b gossip epoch=58 step=20200 elapsed=578.4s
+E1_b gossip epoch=58 step=20300 elapsed=580.7s
+E1_b gossip epoch=58 step=20400 elapsed=583.1s
+VALIDATION_ALL {"epoch": 58, "mean_accuracy": 0.50175, "min_accuracy": 0.2946, "max_accuracy": 0.6116, "std_accuracy": 0.12676895321804943}
+E1_b gossip epoch=59 step=20500 elapsed=587.0s
+E1_b gossip epoch=59 step=20600 elapsed=589.1s
+E1_b gossip epoch=59 step=20700 elapsed=591.4s
+VALIDATION_ALL {"epoch": 59, "mean_accuracy": 0.5642, "min_accuracy": 0.3802, "max_accuracy": 0.6446, "std_accuracy": 0.1083943725476558}
+E1_b gossip epoch=60 step=20800 elapsed=595.9s
+E1_b gossip epoch=60 step=20900 elapsed=598.1s
+E1_b gossip epoch=60 step=21000 elapsed=600.3s
+E1_b gossip epoch=60 step=21100 elapsed=602.6s
+VALIDATION_ALL {"epoch": 60, "mean_accuracy": 0.52405, "min_accuracy": 0.3038, "max_accuracy": 0.6208, "std_accuracy": 0.12842417023286543}
+E1_b gossip epoch=61 step=21200 elapsed=607.0s
+E1_b gossip epoch=61 step=21300 elapsed=609.3s
+E1_b gossip epoch=61 step=21400 elapsed=611.6s
+VALIDATION_ALL {"epoch": 61, "mean_accuracy": 0.56305, "min_accuracy": 0.3906, "max_accuracy": 0.6636, "std_accuracy": 0.10300120144930348}
+E1_b gossip epoch=62 step=21500 elapsed=616.0s
+E1_b gossip epoch=62 step=21600 elapsed=618.2s
+E1_b gossip epoch=62 step=21700 elapsed=620.5s
+E1_b gossip epoch=62 step=21800 elapsed=622.7s
+VALIDATION_ALL {"epoch": 62, "mean_accuracy": 0.5587, "min_accuracy": 0.3874, "max_accuracy": 0.6504, "std_accuracy": 0.10126880072361871}
+E1_b gossip epoch=63 step=21900 elapsed=627.0s
+E1_b gossip epoch=63 step=22000 elapsed=629.2s
+E1_b gossip epoch=63 step=22100 elapsed=631.5s
+VALIDATION_ALL {"epoch": 63, "mean_accuracy": 0.5506000000000001, "min_accuracy": 0.3214, "max_accuracy": 0.6932, "std_accuracy": 0.13840426294012767}
+E1_b gossip epoch=64 step=22200 elapsed=636.1s
+E1_b gossip epoch=64 step=22300 elapsed=638.3s
+E1_b gossip epoch=64 step=22400 elapsed=640.6s
+E1_b gossip epoch=64 step=22500 elapsed=642.9s
+VALIDATION_ALL {"epoch": 64, "mean_accuracy": 0.59535, "min_accuracy": 0.4706, "max_accuracy": 0.6722, "std_accuracy": 0.07525986646281005}
+E1_b gossip epoch=65 step=22600 elapsed=647.1s
+E1_b gossip epoch=65 step=22700 elapsed=649.5s
+E1_b gossip epoch=65 step=22800 elapsed=651.9s
+VALIDATION_ALL {"epoch": 65, "mean_accuracy": 0.5952, "min_accuracy": 0.403, "max_accuracy": 0.6878, "std_accuracy": 0.11244296331918684}
+E1_b gossip epoch=66 step=22900 elapsed=656.0s
+E1_b gossip epoch=66 step=23000 elapsed=658.3s
+E1_b gossip epoch=66 step=23100 elapsed=660.6s
+E1_b gossip epoch=66 step=23200 elapsed=662.9s
+VALIDATION_ALL {"epoch": 66, "mean_accuracy": 0.63765, "min_accuracy": 0.5138, "max_accuracy": 0.6866, "std_accuracy": 0.07165882709059644}
+E1_b gossip epoch=67 step=23300 elapsed=667.1s
+E1_b gossip epoch=67 step=23400 elapsed=669.4s
+E1_b gossip epoch=67 step=23500 elapsed=671.7s
+VALIDATION_ALL {"epoch": 67, "mean_accuracy": 0.6021, "min_accuracy": 0.4048, "max_accuracy": 0.71, "std_accuracy": 0.11759953231199519}
+E1_b gossip epoch=68 step=23600 elapsed=676.1s
+E1_b gossip epoch=68 step=23700 elapsed=678.4s
+E1_b gossip epoch=68 step=23800 elapsed=680.8s
+E1_b gossip epoch=68 step=23900 elapsed=683.1s
+VALIDATION_ALL {"epoch": 68, "mean_accuracy": 0.6499, "min_accuracy": 0.6266, "max_accuracy": 0.677, "std_accuracy": 0.020140258190996466}
+E1_b gossip epoch=69 step=24000 elapsed=686.9s
+E1_b gossip epoch=69 step=24100 elapsed=689.2s
+E1_b gossip epoch=69 step=24200 elapsed=691.5s
+VALIDATION_ALL {"epoch": 69, "mean_accuracy": 0.6337, "min_accuracy": 0.4794, "max_accuracy": 0.6986, "std_accuracy": 0.08953585873827312}
+E1_b gossip epoch=70 step=24300 elapsed=695.7s
+E1_b gossip epoch=70 step=24400 elapsed=698.1s
+E1_b gossip epoch=70 step=24500 elapsed=700.4s
+E1_b gossip epoch=70 step=24600 elapsed=702.7s
+VALIDATION_ALL {"epoch": 70, "mean_accuracy": 0.5725499999999999, "min_accuracy": 0.3478, "max_accuracy": 0.7108, "std_accuracy": 0.13637106547944838}
+E1_b gossip epoch=71 step=24700 elapsed=707.2s
+E1_b gossip epoch=71 step=24800 elapsed=709.4s
+E1_b gossip epoch=71 step=24900 elapsed=711.6s
+VALIDATION_ALL {"epoch": 71, "mean_accuracy": 0.6275999999999999, "min_accuracy": 0.4498, "max_accuracy": 0.7, "std_accuracy": 0.10296863600145435}
+E1_b gossip epoch=72 step=25000 elapsed=716.2s
+E1_b gossip epoch=72 step=25100 elapsed=718.4s
+E1_b gossip epoch=72 step=25200 elapsed=720.7s
+E1_b gossip epoch=72 step=25300 elapsed=723.0s
+VALIDATION_ALL {"epoch": 72, "mean_accuracy": 0.6467, "min_accuracy": 0.4822, "max_accuracy": 0.7144, "std_accuracy": 0.09623289458392073}
+E1_b gossip epoch=73 step=25400 elapsed=727.5s
+E1_b gossip epoch=73 step=25500 elapsed=729.8s
+E1_b gossip epoch=73 step=25600 elapsed=732.2s
+VALIDATION_ALL {"epoch": 73, "mean_accuracy": 0.6730499999999999, "min_accuracy": 0.5754, "max_accuracy": 0.7206, "std_accuracy": 0.05712904252654686}
+E1_b gossip epoch=74 step=25700 elapsed=736.2s
+E1_b gossip epoch=74 step=25800 elapsed=738.5s
+E1_b gossip epoch=74 step=25900 elapsed=740.8s
+E1_b gossip epoch=74 step=26000 elapsed=743.0s
+VALIDATION_ALL {"epoch": 74, "mean_accuracy": 0.70555, "min_accuracy": 0.6722, "max_accuracy": 0.7246, "std_accuracy": 0.021151536587208024}
+E1_b gossip epoch=75 step=26100 elapsed=747.2s
+E1_b gossip epoch=75 step=26200 elapsed=749.4s
+E1_b gossip epoch=75 step=26300 elapsed=751.7s
+E1_b gossip epoch=75 step=26400 elapsed=754.0s
+VALIDATION_ALL {"epoch": 75, "mean_accuracy": 0.70145, "min_accuracy": 0.6324, "max_accuracy": 0.7316, "std_accuracy": 0.04019934700962195}
+E1_b gossip epoch=76 step=26500 elapsed=758.7s
+E1_b gossip epoch=76 step=26600 elapsed=760.9s
+E1_b gossip epoch=76 step=26700 elapsed=763.2s
+VALIDATION_ALL {"epoch": 76, "mean_accuracy": 0.7072, "min_accuracy": 0.6374, "max_accuracy": 0.7368, "std_accuracy": 0.040610097266566614}
+E1_b gossip epoch=77 step=26800 elapsed=767.6s
+E1_b gossip epoch=77 step=26900 elapsed=769.9s
+E1_b gossip epoch=77 step=27000 elapsed=772.2s
+E1_b gossip epoch=77 step=27100 elapsed=774.4s
+VALIDATION_ALL {"epoch": 77, "mean_accuracy": 0.7104, "min_accuracy": 0.6716, "max_accuracy": 0.73, "std_accuracy": 0.023801260470823815}
+E1_b gossip epoch=78 step=27200 elapsed=778.6s
+E1_b gossip epoch=78 step=27300 elapsed=780.8s
+E1_b gossip epoch=78 step=27400 elapsed=783.1s
+VALIDATION_ALL {"epoch": 78, "mean_accuracy": 0.72585, "min_accuracy": 0.6952, "max_accuracy": 0.7384, "std_accuracy": 0.017888194430964767}
+E1_b gossip epoch=79 step=27500 elapsed=787.4s
+E1_b gossip epoch=79 step=27600 elapsed=789.7s
+E1_b gossip epoch=79 step=27700 elapsed=792.0s
+E1_b gossip epoch=79 step=27800 elapsed=794.3s
+VALIDATION_ALL {"epoch": 79, "mean_accuracy": 0.73555, "min_accuracy": 0.7248, "max_accuracy": 0.7458, "std_accuracy": 0.00768814021724371}
+E1_b gossip epoch=80 step=27900 elapsed=798.4s
+E1_b gossip epoch=80 step=28000 elapsed=800.7s
+E1_b gossip epoch=80 step=28100 elapsed=802.9s
+VALIDATION_ALL {"epoch": 80, "mean_accuracy": 0.7379000000000001, "min_accuracy": 0.724, "max_accuracy": 0.7446, "std_accuracy": 0.008149233092751748}
+E1_b gossip epoch=81 step=28200 elapsed=807.2s
+E1_b gossip epoch=81 step=28300 elapsed=809.5s
+E1_b gossip epoch=81 step=28400 elapsed=811.8s
+E1_b gossip epoch=81 step=28500 elapsed=814.2s
+VALIDATION_ALL {"epoch": 81, "mean_accuracy": 0.7347, "min_accuracy": 0.7206, "max_accuracy": 0.7458, "std_accuracy": 0.009651424765287242}
+E1_b gossip epoch=82 step=28600 elapsed=818.3s
+E1_b gossip epoch=82 step=28700 elapsed=820.5s
+E1_b gossip epoch=82 step=28800 elapsed=822.9s
+VALIDATION_ALL {"epoch": 82, "mean_accuracy": 0.7444, "min_accuracy": 0.7358, "max_accuracy": 0.7482, "std_accuracy": 0.005015974481593763}
+E1_b gossip epoch=83 step=28900 elapsed=826.9s
+E1_b gossip epoch=83 step=29000 elapsed=829.3s
+E1_b gossip epoch=83 step=29100 elapsed=831.6s
+E1_b gossip epoch=83 step=29200 elapsed=833.9s
+VALIDATION_ALL {"epoch": 83, "mean_accuracy": 0.7516, "min_accuracy": 0.7476, "max_accuracy": 0.7546, "std_accuracy": 0.002572936066053723}
+E1_b gossip epoch=84 step=29300 elapsed=837.7s
+E1_b gossip epoch=84 step=29400 elapsed=840.0s
+E1_b gossip epoch=84 step=29500 elapsed=842.3s
+VALIDATION_ALL {"epoch": 84, "mean_accuracy": 0.7503500000000001, "min_accuracy": 0.745, "max_accuracy": 0.753, "std_accuracy": 0.003134884367883457}
+E1_b gossip epoch=85 step=29600 elapsed=846.5s
+E1_b gossip epoch=85 step=29700 elapsed=848.7s
+E1_b gossip epoch=85 step=29800 elapsed=851.0s
+E1_b gossip epoch=85 step=29900 elapsed=853.3s
+VALIDATION_ALL {"epoch": 85, "mean_accuracy": 0.7513, "min_accuracy": 0.7476, "max_accuracy": 0.7544, "std_accuracy": 0.002736786436680765}
+E1_b gossip epoch=86 step=30000 elapsed=857.9s
+E1_b gossip epoch=86 step=30100 elapsed=860.2s
+E1_b gossip epoch=86 step=30200 elapsed=862.4s
+VALIDATION_ALL {"epoch": 86, "mean_accuracy": 0.7565000000000001, "min_accuracy": 0.7518, "max_accuracy": 0.759, "std_accuracy": 0.0027730849247724113}
+E1_b gossip epoch=87 step=30300 elapsed=866.9s
+E1_b gossip epoch=87 step=30400 elapsed=869.1s
+E1_b gossip epoch=87 step=30500 elapsed=871.5s
+E1_b gossip epoch=87 step=30600 elapsed=873.8s
+VALIDATION_ALL {"epoch": 87, "mean_accuracy": 0.75465, "min_accuracy": 0.7534, "max_accuracy": 0.756, "std_accuracy": 0.0010136567466356762}
+E1_b gossip epoch=88 step=30700 elapsed=877.8s
+E1_b gossip epoch=88 step=30800 elapsed=880.1s
+E1_b gossip epoch=88 step=30900 elapsed=882.3s
+VALIDATION_ALL {"epoch": 88, "mean_accuracy": 0.7563000000000001, "min_accuracy": 0.7526, "max_accuracy": 0.7596, "std_accuracy": 0.0028930952282979036}
+E1_b gossip epoch=89 step=31000 elapsed=886.4s
+E1_b gossip epoch=89 step=31100 elapsed=888.6s
+E1_b gossip epoch=89 step=31200 elapsed=890.9s
+E1_b gossip epoch=89 step=31300 elapsed=893.2s
+VALIDATION_ALL {"epoch": 89, "mean_accuracy": 0.7563000000000001, "min_accuracy": 0.7556, "max_accuracy": 0.757, "std_accuracy": 0.0006082762530298097}
+E1_b gossip epoch=90 step=31400 elapsed=897.5s
+E1_b gossip epoch=90 step=31500 elapsed=899.7s
+E1_b gossip epoch=90 step=31600 elapsed=902.0s
+VALIDATION_ALL {"epoch": 90, "mean_accuracy": 0.7575999999999999, "min_accuracy": 0.7548, "max_accuracy": 0.7602, "std_accuracy": 0.0022583179581272227}
+E1_b gossip epoch=91 step=31700 elapsed=906.3s
+E1_b gossip epoch=91 step=31800 elapsed=908.6s
+E1_b gossip epoch=91 step=31900 elapsed=910.9s
+E1_b gossip epoch=91 step=32000 elapsed=913.1s
+VALIDATION_ALL {"epoch": 91, "mean_accuracy": 0.7563, "min_accuracy": 0.7546, "max_accuracy": 0.759, "std_accuracy": 0.0016583123951776962}
+E1_b gossip epoch=92 step=32100 elapsed=917.4s
+E1_b gossip epoch=92 step=32200 elapsed=919.7s
+E1_b gossip epoch=92 step=32300 elapsed=922.0s
+VALIDATION_ALL {"epoch": 92, "mean_accuracy": 0.7573, "min_accuracy": 0.7562, "max_accuracy": 0.7594, "std_accuracy": 0.001307669683062194}
+E1_b gossip epoch=93 step=32400 elapsed=926.4s
+E1_b gossip epoch=93 step=32500 elapsed=928.6s
+E1_b gossip epoch=93 step=32600 elapsed=931.0s
+E1_b gossip epoch=93 step=32700 elapsed=933.3s
+VALIDATION_ALL {"epoch": 93, "mean_accuracy": 0.7575500000000001, "min_accuracy": 0.7558, "max_accuracy": 0.7586, "std_accuracy": 0.0010523782589924634}
+E1_b gossip epoch=94 step=32800 elapsed=937.6s
+E1_b gossip epoch=94 step=32900 elapsed=939.9s
+E1_b gossip epoch=94 step=33000 elapsed=942.2s
+VALIDATION_ALL {"epoch": 94, "mean_accuracy": 0.7585, "min_accuracy": 0.757, "max_accuracy": 0.7604, "std_accuracy": 0.0012369316876852832}
+E1_b gossip epoch=95 step=33100 elapsed=946.5s
+E1_b gossip epoch=95 step=33200 elapsed=948.8s
+E1_b gossip epoch=95 step=33300 elapsed=951.1s
+E1_b gossip epoch=95 step=33400 elapsed=953.4s
+VALIDATION_ALL {"epoch": 95, "mean_accuracy": 0.7604, "min_accuracy": 0.7596, "max_accuracy": 0.7614, "std_accuracy": 0.0006782329983125012}
+E1_b gossip epoch=96 step=33500 elapsed=957.9s
+E1_b gossip epoch=96 step=33600 elapsed=960.2s
+E1_b gossip epoch=96 step=33700 elapsed=962.5s
+VALIDATION_ALL {"epoch": 96, "mean_accuracy": 0.7587000000000002, "min_accuracy": 0.757, "max_accuracy": 0.7602, "std_accuracy": 0.0012688577540449545}
+E1_b gossip epoch=97 step=33800 elapsed=966.7s
+E1_b gossip epoch=97 step=33900 elapsed=969.0s
+E1_b gossip epoch=97 step=34000 elapsed=971.4s
+E1_b gossip epoch=97 step=34100 elapsed=973.7s
+VALIDATION_ALL {"epoch": 97, "mean_accuracy": 0.7596999999999999, "min_accuracy": 0.7588, "max_accuracy": 0.761, "std_accuracy": 0.0009433981132056477}
+E1_b gossip epoch=98 step=34200 elapsed=977.7s
+E1_b gossip epoch=98 step=34300 elapsed=980.0s
+E1_b gossip epoch=98 step=34400 elapsed=982.3s
+VALIDATION_ALL {"epoch": 98, "mean_accuracy": 0.7593, "min_accuracy": 0.759, "max_accuracy": 0.7598, "std_accuracy": 0.0003316624790355453}
+E1_b gossip epoch=99 step=34500 elapsed=986.8s
+E1_b gossip epoch=99 step=34600 elapsed=989.1s
+E1_b gossip epoch=99 step=34700 elapsed=991.4s
+E1_b gossip epoch=99 step=34800 elapsed=993.7s
+VALIDATION_ALL {"epoch": 99, "mean_accuracy": 0.7583499999999999, "min_accuracy": 0.7562, "max_accuracy": 0.7604, "std_accuracy": 0.001589811309558451}
+E1_b gossip epoch=100 step=34900 elapsed=997.9s
+E1_b gossip epoch=100 step=35000 elapsed=1000.2s
+E1_b gossip epoch=100 step=35100 elapsed=1002.4s
+E1_b gossip epoch=100 step=35200 elapsed=1004.7s
+VALIDATION_ALL {"epoch": 100, "mean_accuracy": 0.759, "min_accuracy": 0.758, "max_accuracy": 0.761, "std_accuracy": 0.0011747340124470761}
+SUMMARY {"experiment": "E1_b", "method": "gossip", "status": "ok", "reason": "epochs_completed", "world_size": 4, "completed_epochs": 100, "steps_per_worker": 35200, "global_samples_approx": 4500000, "wall_training_s": 1006.7723, "best_validation_accuracy_rank0": 0.7602, "mean_accuracy_target_first_s": 745.288671663031, "all_workers_target_first_s": 795.5609913180233, "target_accuracy": 0.7, "latest_validation_rank0": {"experiment": "E1_b", "epoch": 100, "step": 35200, "global_samples_approx": 4500000, "unix_time_s": 1794311351.399412, "elapsed_s": 1005.954873, "val_loss": 1.0002944, "val_accuracy": 0.7584, "val_samples": 5000, "val_s": 0.435685, "lr": 0.0001, "best_val_accuracy": 0.7602, "cumulative_samples_per_s": 4473.362}, "validation_definition": "Mean of per-rank local-model accuracies; not a global model"}

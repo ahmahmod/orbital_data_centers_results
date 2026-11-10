@@ -1,0 +1,33 @@
+{
+  "workers": [
+    {
+      "rank": 0,
+      "local_rank": 0,
+      "node": "gratouille-1.nancy.grid5000.fr",
+      "ip": "172.16.74.15",
+      "pid": 169260
+    },
+    {
+      "rank": 1,
+      "local_rank": 0,
+      "node": "grue-1.nancy.grid5000.fr",
+      "ip": "172.16.77.1",
+      "pid": 9915
+    },
+    {
+      "rank": 2,
+      "local_rank": 0,
+      "node": "grue-2.nancy.grid5000.fr",
+      "ip": "172.16.77.2",
+      "pid": 214867
+    },
+    {
+      "rank": 3,
+      "local_rank": 0,
+      "node": "grue-3.nancy.grid5000.fr",
+      "ip": "172.16.77.3",
+      "pid": 159778
+    }
+  ],
+  "note": "rank-to-IP mapping; IP is shared by ranks on the same physical node; NCCL internal peer flows not inferred"
+}

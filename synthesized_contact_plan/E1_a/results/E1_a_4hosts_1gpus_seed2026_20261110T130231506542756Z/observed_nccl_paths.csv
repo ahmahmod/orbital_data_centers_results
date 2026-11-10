@@ -1,0 +1,12 @@
+src_rank,dst_rank,transport,src_node,dst_node,occurrences,bytes,note
+0,1,NET/Socket/0,graffiti-5.nancy.grid5000.fr,graffiti-7.nancy.grid5000.fr,4,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+0,2,NET/Socket/0,graffiti-5.nancy.grid5000.fr,graffiti-8.nancy.grid5000.fr,2,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+1,0,NET/Socket/0,graffiti-7.nancy.grid5000.fr,graffiti-5.nancy.grid5000.fr,2,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+1,2,NET/Socket/0,graffiti-7.nancy.grid5000.fr,graffiti-8.nancy.grid5000.fr,4,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+1,3,NET/Socket/0,graffiti-7.nancy.grid5000.fr,graffiti-9.nancy.grid5000.fr,2,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+2,0,NET/Socket/0,graffiti-8.nancy.grid5000.fr,graffiti-5.nancy.grid5000.fr,2,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+2,1,NET/Socket/0,graffiti-8.nancy.grid5000.fr,graffiti-7.nancy.grid5000.fr,4,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+2,3,NET/Socket/0,graffiti-8.nancy.grid5000.fr,graffiti-9.nancy.grid5000.fr,4,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+3,0,NET/Socket/0,graffiti-9.nancy.grid5000.fr,graffiti-5.nancy.grid5000.fr,4,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+3,1,NET/Socket/0,graffiti-9.nancy.grid5000.fr,graffiti-7.nancy.grid5000.fr,2,,"NCCL logged channel route; occurrences are log lines, not actual transfers"
+3,2,NET/Socket/0,graffiti-9.nancy.grid5000.fr,graffiti-8.nancy.grid5000.fr,2,,"NCCL logged channel route; occurrences are log lines, not actual transfers"

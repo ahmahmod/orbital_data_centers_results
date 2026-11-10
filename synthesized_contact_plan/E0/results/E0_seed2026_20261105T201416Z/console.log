@@ -1,0 +1,15 @@
+Files already downloaded and verified
+Files already downloaded and verified
+E0 epoch=1 step=25 elapsed=2.7s loss=4.8074
+E0 epoch=1 step=50 elapsed=3.2s loss=4.7449
+E0 epoch=1 step=75 elapsed=3.6s loss=4.6641
+E0 epoch=1 step=100 elapsed=4.1s loss=4.5226
+E0 epoch=1 step=125 elapsed=4.6s loss=4.4516
+E0 epoch=1 step=150 elapsed=5.1s loss=4.6087
+E0 epoch=1 step=175 elapsed=5.6s loss=4.4570
+VALIDATION {"experiment": "E0", "rank": 0, "world_size": 1, "epoch": 1, "step": 200, "elapsed_s": 8.1865, "samples_seen": 6400, "val_loss": 4.417696, "val_accuracy": 0.038, "val_samples": 10000, "val_s": 2.0764, "train_loss_running": 4.735711, "train_samples_per_s_running": 781.772}
+E0 epoch=1 step=200 elapsed=6.1s loss=4.4766
+E0 epoch=1 step=225 elapsed=8.9s loss=4.3407
+E0 epoch=1 step=250 elapsed=9.4s loss=4.2188
+E0 epoch=1 step=275 elapsed=9.8s loss=4.4478
+E0 epoch=1 step=300 elapsed=10.3s loss=4.4537

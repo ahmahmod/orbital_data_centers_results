@@ -1,0 +1,27 @@
+{
+  "experiment": "E0_v2",
+  "status": "ok",
+  "reason": "epochs_completed",
+  "steps": 140700,
+  "samples_seen": 4500000,
+  "completed_epochs": 100,
+  "wall_training_s": 2743.458,
+  "best_validation_accuracy": 0.7624,
+  "target_accuracy": 0.7,
+  "target_first_s": 2277.036911092,
+  "latest_val": {
+    "experiment": "E0_v2",
+    "epoch": 100,
+    "step": 140700,
+    "samples_seen": 4500000,
+    "elapsed_s": 2743.2632,
+    "val_loss": 0.998842,
+    "val_accuracy": 0.7588,
+    "val_samples": 5000,
+    "val_s": 0.7094,
+    "lr": 0.0001,
+    "best_val_accuracy": 0.7624,
+    "train_samples_per_s_running": 1640.38
+  },
+  "peak_gpu_memory_mb": 2551.94
+}

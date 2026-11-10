@@ -1,0 +1,33 @@
+{
+  "workers": [
+    {
+      "rank": 0,
+      "local_rank": 0,
+      "node": "graffiti-5.nancy.grid5000.fr",
+      "ip": "172.16.64.5",
+      "pid": 1308939
+    },
+    {
+      "rank": 1,
+      "local_rank": 0,
+      "node": "graffiti-7.nancy.grid5000.fr",
+      "ip": "172.16.64.7",
+      "pid": 613017
+    },
+    {
+      "rank": 2,
+      "local_rank": 0,
+      "node": "graffiti-8.nancy.grid5000.fr",
+      "ip": "172.16.64.8",
+      "pid": 892533
+    },
+    {
+      "rank": 3,
+      "local_rank": 0,
+      "node": "graffiti-9.nancy.grid5000.fr",
+      "ip": "172.16.64.9",
+      "pid": 715902
+    }
+  ],
+  "note": "rank-to-IP mapping; IP is shared by ranks on the same physical node; NCCL internal peer flows not inferred"
+}

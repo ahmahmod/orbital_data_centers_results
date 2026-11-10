@@ -1,0 +1,2 @@
+experiment,rank,world_size,epoch,step,elapsed_s,samples_seen,val_loss,val_accuracy,val_samples,val_s,train_loss_running,train_samples_per_s_running
+E0,0,1,1,200,8.1865,6400,4.417696,0.038,10000,2.0764,4.735711,781.772

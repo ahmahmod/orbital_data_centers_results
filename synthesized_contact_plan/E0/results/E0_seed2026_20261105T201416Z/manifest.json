@@ -1,0 +1,40 @@
+{
+  "experiment": "E0",
+  "description": "single worker, no network emulation",
+  "start_utc": "2026-11-05T20:14:35.154134+00:00",
+  "host": "chifflot-6.lille.grid5000.fr",
+  "device": "cuda:0",
+  "gpu_name": "Tesla P100-PCIE-16GB",
+  "torch": "2.5.1+cu118",
+  "python": "3.11.18",
+  "arguments": {
+    "output": "/home/amahmod/tcp_exp/synthesized_contact_plan/E0/results/E0_seed2026_20261105T201416Z",
+    "data_root": "/home/amahmod/tcp_exp/synthesized_contact_plan/E0/../data",
+    "dataset": "cifar100",
+    "download": true,
+    "epochs": 100,
+    "batch_size": 32,
+    "lr": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "num_workers": 4,
+    "seed": 2026,
+    "eval_every_steps": 200,
+    "log_every_steps": 1,
+    "max_seconds": 3600.0,
+    "max_steps": 0,
+    "train_subset": 0,
+    "val_subset": 0,
+    "cpu": false,
+    "target_accuracy": 0,
+    "gpu_sample_s": 1
+  },
+  "train_examples": 50000,
+  "val_examples": 10000,
+  "notes": [
+    "CIFAR-adapted torchvision ResNet18, randomly initialized",
+    "No orbital traces, no distributed collective; sync_s is 0 by definition",
+    "Elapsed time begins immediately before first training batch fetch",
+    "Test/validation split is CIFAR-100 test set for this demonstration; reserve a separate final test split for publication"
+  ]
+}

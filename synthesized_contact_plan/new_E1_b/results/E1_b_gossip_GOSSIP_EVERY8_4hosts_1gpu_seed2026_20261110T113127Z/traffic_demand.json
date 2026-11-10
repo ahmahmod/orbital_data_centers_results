@@ -1,0 +1,53 @@
+{
+  "experiment": "E1_b",
+  "method": "gossip",
+  "events": {
+    "send_posted": 17600,
+    "send_complete": 17600,
+    "receive_mix": 17110,
+    "inbox_drop": 490
+  },
+  "directional_p2p": [
+    {
+      "src_rank": "0",
+      "dst_rank": "1",
+      "messages": 4400,
+      "logical_bytes": 197474340800,
+      "first_unix": 1794310345.936598,
+      "last_unix": 1794311351.704504,
+      "versions": []
+    },
+    {
+      "src_rank": "1",
+      "dst_rank": "2",
+      "messages": 4400,
+      "logical_bytes": 197474340800,
+      "first_unix": 1794310345.901896,
+      "last_unix": 1794311351.704254,
+      "versions": []
+    },
+    {
+      "src_rank": "2",
+      "dst_rank": "3",
+      "messages": 4400,
+      "logical_bytes": 197474340800,
+      "first_unix": 1794310345.99632,
+      "last_unix": 1794311351.690811,
+      "versions": []
+    },
+    {
+      "src_rank": "3",
+      "dst_rank": "0",
+      "messages": 4400,
+      "logical_bytes": 197474340800,
+      "first_unix": 1794310345.949801,
+      "last_unix": 1794311351.687077,
+      "versions": []
+    }
+  ],
+  "completed_p2p_logical_bytes": 789897363200,
+  "outstanding_unconfirmed": 0,
+  "p2p_note": "Only completed sends counted. Messages are full model snapshots, not gradient all-reduce.",
+  "diloco_note": "DiLoCo outer synchronization is an all-reduce; exact per-rank network paths/physical bytes not inferred.",
+  "transport_note": "Use E1_a_new TCP socket and NIC analyses for observed transport (with sampling limitations)."
+}

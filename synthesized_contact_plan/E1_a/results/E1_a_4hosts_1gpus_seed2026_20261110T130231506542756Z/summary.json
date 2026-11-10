@@ -1,0 +1,30 @@
+{
+  "experiment": "E1_a",
+  "status": "ok",
+  "reason": "epochs_completed",
+  "world_size": 4,
+  "completed_epochs": 100,
+  "steps_per_worker": 35200,
+  "global_samples_approx": 4500000,
+  "wall_training_s": 2781.7052,
+  "best_validation_accuracy": 0.7674,
+  "target_accuracy": 0.7,
+  "target_first_s": 1964.0160242629936,
+  "latest_validation": {
+    "experiment": "E1_a",
+    "epoch": 100,
+    "step": 35200,
+    "global_samples_approx": 4500000,
+    "unix_time_s": 1794318566.199913,
+    "elapsed_s": 2781.46316,
+    "val_loss": 0.9706049,
+    "val_accuracy": 0.7668,
+    "val_samples": 5000,
+    "val_s": 0.42496,
+    "lr": 0.0001,
+    "best_val_accuracy": 0.7674,
+    "cumulative_samples_per_s": 1617.854
+  },
+  "global_batch_size": 128,
+  "instrumented": true
+}

@@ -1,0 +1,2 @@
+rank,local_rank,host,unix_time_s,elapsed_s,gpu_util_pct,gpu_memory_util_pct,gpu_mem_used_mib,gpu_power_w,rx_bytes_node,tx_bytes_node,nic,status
+0,0,graffiti-5.nancy.grid5000.fr,1794312324.120862,0.014494,0,0,323,64.39,2704212102115,2971657131897,br0,ok

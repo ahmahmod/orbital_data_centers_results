@@ -1,0 +1,31 @@
+{
+  "experiment": "E1_b",
+  "method": "gossip",
+  "status": "ok",
+  "reason": "epochs_completed",
+  "world_size": 4,
+  "completed_epochs": 100,
+  "steps_per_worker": 35200,
+  "global_samples_approx": 4500000,
+  "wall_training_s": 858.7389,
+  "best_validation_accuracy_rank0": 0.7682,
+  "mean_accuracy_target_first_s": 661.5380706590367,
+  "all_workers_target_first_s": 670.0037603320088,
+  "target_accuracy": 0.7,
+  "latest_validation_rank0": {
+    "experiment": "E1_b",
+    "epoch": 100,
+    "step": 35200,
+    "global_samples_approx": 4500000,
+    "unix_time_s": 1794312267.672694,
+    "elapsed_s": 857.918549,
+    "val_loss": 0.9801799,
+    "val_accuracy": 0.7658,
+    "val_samples": 5000,
+    "val_s": 0.436776,
+    "lr": 0.0001,
+    "best_val_accuracy": 0.7682,
+    "cumulative_samples_per_s": 5245.253
+  },
+  "validation_definition": "Mean of per-rank local-model accuracies; not a global model"
+}

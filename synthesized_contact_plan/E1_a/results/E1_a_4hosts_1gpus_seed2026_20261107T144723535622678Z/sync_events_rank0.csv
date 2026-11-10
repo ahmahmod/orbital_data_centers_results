@@ -1,0 +1,303 @@
+rank,host,epoch,step,event,unix_time_s,duration_s,world_size,note
+0,gratouille-1.nancy.grid5000.fr,0,0,initial_barrier,1794062885.84183,0.0537767,4,
+0,gratouille-1.nancy.grid5000.fr,1,352,pre_validation_barrier,1794062921.607878,0.0031453,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,1,352,post_validation_barrier,1794062922.685327,0.000666,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,1,352,stop_decision_broadcast,1794062922.68567,0.0001858,4,
+0,gratouille-1.nancy.grid5000.fr,2,704,pre_validation_barrier,1794062957.967174,0.0025006,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,2,704,post_validation_barrier,1794062958.749607,0.0003363,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,2,704,stop_decision_broadcast,1794062958.749887,0.0001196,4,
+0,gratouille-1.nancy.grid5000.fr,3,1056,pre_validation_barrier,1794062992.74434,0.0025042,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,3,1056,post_validation_barrier,1794062993.413503,0.0003952,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,3,1056,stop_decision_broadcast,1794062993.413808,0.0001339,4,
+0,gratouille-1.nancy.grid5000.fr,4,1408,pre_validation_barrier,1794063026.351924,0.0024241,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,4,1408,post_validation_barrier,1794063026.9985,0.0004039,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,4,1408,stop_decision_broadcast,1794063026.998867,0.0001864,4,
+0,gratouille-1.nancy.grid5000.fr,5,1760,pre_validation_barrier,1794063060.297211,0.0024737,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,5,1760,post_validation_barrier,1794063060.968573,0.0003427,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,5,1760,stop_decision_broadcast,1794063060.968941,0.000175,4,
+0,gratouille-1.nancy.grid5000.fr,6,2112,pre_validation_barrier,1794063093.881179,0.002359,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,6,2112,post_validation_barrier,1794063094.603349,0.0003823,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,6,2112,stop_decision_broadcast,1794063094.603688,0.0001632,4,
+0,gratouille-1.nancy.grid5000.fr,7,2464,pre_validation_barrier,1794063128.254354,0.0024055,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,7,2464,post_validation_barrier,1794063128.862514,0.0003484,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,7,2464,stop_decision_broadcast,1794063128.862791,0.0001261,4,
+0,gratouille-1.nancy.grid5000.fr,8,2816,pre_validation_barrier,1794063161.675504,0.0022356,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,8,2816,post_validation_barrier,1794063162.310039,0.0004212,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,8,2816,stop_decision_broadcast,1794063162.310396,0.0001627,4,
+0,gratouille-1.nancy.grid5000.fr,9,3168,pre_validation_barrier,1794063195.648822,0.0022924,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,9,3168,post_validation_barrier,1794063196.286948,0.0003907,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,9,3168,stop_decision_broadcast,1794063196.287358,0.0002061,4,
+0,gratouille-1.nancy.grid5000.fr,10,3520,pre_validation_barrier,1794063229.452334,0.0021498,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,10,3520,post_validation_barrier,1794063230.0781,0.0003995,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,10,3520,stop_decision_broadcast,1794063230.078454,0.0001618,4,
+0,gratouille-1.nancy.grid5000.fr,11,3872,pre_validation_barrier,1794063263.004971,0.0021919,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,11,3872,post_validation_barrier,1794063263.689562,0.0003454,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,11,3872,stop_decision_broadcast,1794063263.689874,0.000139,4,
+0,gratouille-1.nancy.grid5000.fr,12,4224,pre_validation_barrier,1794063298.628349,0.0030892,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,12,4224,post_validation_barrier,1794063299.267135,0.0003947,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,12,4224,stop_decision_broadcast,1794063299.267456,0.0001393,4,
+0,gratouille-1.nancy.grid5000.fr,13,4576,pre_validation_barrier,1794063334.49553,0.0022581,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,13,4576,post_validation_barrier,1794063335.118116,0.0003867,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,13,4576,stop_decision_broadcast,1794063335.118442,0.0001477,4,
+0,gratouille-1.nancy.grid5000.fr,14,4928,pre_validation_barrier,1794063368.82625,0.0024257,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,14,4928,post_validation_barrier,1794063369.610257,0.0003801,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,14,4928,stop_decision_broadcast,1794063369.610552,0.0001342,4,
+0,gratouille-1.nancy.grid5000.fr,15,5280,pre_validation_barrier,1794063403.022153,0.0021421,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,15,5280,post_validation_barrier,1794063403.705953,0.0003439,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,15,5280,stop_decision_broadcast,1794063403.706252,0.0001335,4,
+0,gratouille-1.nancy.grid5000.fr,16,5632,pre_validation_barrier,1794063436.232382,0.0021657,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,16,5632,post_validation_barrier,1794063436.876653,0.0004035,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,16,5632,stop_decision_broadcast,1794063436.877018,0.0001902,4,
+0,gratouille-1.nancy.grid5000.fr,17,5984,pre_validation_barrier,1794063470.172947,0.0024709,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,17,5984,post_validation_barrier,1794063470.80129,0.0003584,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,17,5984,stop_decision_broadcast,1794063470.801605,0.00015,4,
+0,gratouille-1.nancy.grid5000.fr,18,6336,pre_validation_barrier,1794063504.594351,0.0024307,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,18,6336,post_validation_barrier,1794063505.32805,0.0003695,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,18,6336,stop_decision_broadcast,1794063505.328386,0.0001542,4,
+0,gratouille-1.nancy.grid5000.fr,19,6688,pre_validation_barrier,1794063537.963806,0.0022728,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,19,6688,post_validation_barrier,1794063538.660085,0.0003453,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,19,6688,stop_decision_broadcast,1794063538.660365,0.0001224,4,
+0,gratouille-1.nancy.grid5000.fr,20,7040,pre_validation_barrier,1794063571.961621,0.0021883,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,20,7040,post_validation_barrier,1794063572.592117,0.0003647,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,20,7040,stop_decision_broadcast,1794063572.592397,0.0001253,4,
+0,gratouille-1.nancy.grid5000.fr,21,7392,pre_validation_barrier,1794063607.622433,0.0020371,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,21,7392,post_validation_barrier,1794063608.310354,0.0003636,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,21,7392,stop_decision_broadcast,1794063608.310688,0.0001585,4,
+0,gratouille-1.nancy.grid5000.fr,22,7744,pre_validation_barrier,1794063643.312087,0.0021052,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,22,7744,post_validation_barrier,1794063643.946257,0.0003589,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,22,7744,stop_decision_broadcast,1794063643.946568,0.0001316,4,
+0,gratouille-1.nancy.grid5000.fr,23,8096,pre_validation_barrier,1794063678.083599,0.0041002,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,23,8096,post_validation_barrier,1794063678.692017,0.0003392,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,23,8096,stop_decision_broadcast,1794063678.692323,0.0001437,4,
+0,gratouille-1.nancy.grid5000.fr,24,8448,pre_validation_barrier,1794063711.941351,0.0024804,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,24,8448,post_validation_barrier,1794063712.626008,0.0003573,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,24,8448,stop_decision_broadcast,1794063712.6263,0.0001235,4,
+0,gratouille-1.nancy.grid5000.fr,25,8800,pre_validation_barrier,1794063746.020993,0.0024002,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,25,8800,post_validation_barrier,1794063746.631645,0.0003807,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,25,8800,stop_decision_broadcast,1794063746.631981,0.0001576,4,
+0,gratouille-1.nancy.grid5000.fr,26,9152,pre_validation_barrier,1794063780.665271,0.0024647,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,26,9152,post_validation_barrier,1794063781.386569,0.0004029,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,26,9152,stop_decision_broadcast,1794063781.386922,0.0001743,4,
+0,gratouille-1.nancy.grid5000.fr,27,9504,pre_validation_barrier,1794063815.619594,0.0032952,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,27,9504,post_validation_barrier,1794063816.297076,0.0004482,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,27,9504,stop_decision_broadcast,1794063816.29738,0.0001358,4,
+0,gratouille-1.nancy.grid5000.fr,28,9856,pre_validation_barrier,1794063851.379517,0.002416,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,28,9856,post_validation_barrier,1794063852.177724,0.0004994,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,28,9856,stop_decision_broadcast,1794063852.178126,0.0001881,4,
+0,gratouille-1.nancy.grid5000.fr,29,10208,pre_validation_barrier,1794063885.941174,0.002141,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,29,10208,post_validation_barrier,1794063886.555902,0.0004256,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,29,10208,stop_decision_broadcast,1794063886.55627,0.0001487,4,
+0,gratouille-1.nancy.grid5000.fr,30,10560,pre_validation_barrier,1794063919.907869,0.0022297,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,30,10560,post_validation_barrier,1794063920.532555,0.0003825,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,30,10560,stop_decision_broadcast,1794063920.532905,0.0001818,4,
+0,gratouille-1.nancy.grid5000.fr,31,10912,pre_validation_barrier,1794063954.675707,0.0023017,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,31,10912,post_validation_barrier,1794063955.306153,0.0004622,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,31,10912,stop_decision_broadcast,1794063955.306574,0.0002141,4,
+0,gratouille-1.nancy.grid5000.fr,32,11264,pre_validation_barrier,1794063988.160974,0.0024708,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,32,11264,post_validation_barrier,1794063988.843468,0.000406,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,32,11264,stop_decision_broadcast,1794063988.843842,0.0001872,4,
+0,gratouille-1.nancy.grid5000.fr,33,11616,pre_validation_barrier,1794064023.408257,0.0024128,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,33,11616,post_validation_barrier,1794064024.033386,0.000459,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,33,11616,stop_decision_broadcast,1794064024.03375,0.0001708,4,
+0,gratouille-1.nancy.grid5000.fr,34,11968,pre_validation_barrier,1794064057.823799,0.0018476,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,34,11968,post_validation_barrier,1794064058.401573,0.0003739,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,34,11968,stop_decision_broadcast,1794064058.401878,0.0001383,4,
+0,gratouille-1.nancy.grid5000.fr,35,12320,pre_validation_barrier,1794064090.94357,0.002391,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,35,12320,post_validation_barrier,1794064091.537015,0.0004506,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,35,12320,stop_decision_broadcast,1794064091.537362,0.0001521,4,
+0,gratouille-1.nancy.grid5000.fr,36,12672,pre_validation_barrier,1794064124.648669,0.0027078,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,36,12672,post_validation_barrier,1794064125.272466,0.0003763,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,36,12672,stop_decision_broadcast,1794064125.272776,0.0001309,4,
+0,gratouille-1.nancy.grid5000.fr,37,13024,pre_validation_barrier,1794064159.549089,0.0022297,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,37,13024,post_validation_barrier,1794064160.167182,0.0004598,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,37,13024,stop_decision_broadcast,1794064160.167561,0.00017,4,
+0,gratouille-1.nancy.grid5000.fr,38,13376,pre_validation_barrier,1794064194.442718,0.0022132,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,38,13376,post_validation_barrier,1794064195.093848,0.0004653,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,38,13376,stop_decision_broadcast,1794064195.094454,0.0003819,4,
+0,gratouille-1.nancy.grid5000.fr,39,13728,pre_validation_barrier,1794064229.463425,0.0019141,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,39,13728,post_validation_barrier,1794064230.086604,0.0004146,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,39,13728,stop_decision_broadcast,1794064230.087026,0.0002129,4,
+0,gratouille-1.nancy.grid5000.fr,40,14080,pre_validation_barrier,1794064263.125645,0.0022056,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,40,14080,post_validation_barrier,1794064263.73753,0.0004203,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,40,14080,stop_decision_broadcast,1794064263.737911,0.0001711,4,
+0,gratouille-1.nancy.grid5000.fr,41,14432,pre_validation_barrier,1794064296.305627,0.0022876,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,41,14432,post_validation_barrier,1794064296.96946,0.0004522,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,41,14432,stop_decision_broadcast,1794064296.969831,0.0001644,4,
+0,gratouille-1.nancy.grid5000.fr,42,14784,pre_validation_barrier,1794064330.222757,0.0021506,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,42,14784,post_validation_barrier,1794064330.837592,0.0004006,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,42,14784,stop_decision_broadcast,1794064330.837939,0.0001614,4,
+0,gratouille-1.nancy.grid5000.fr,43,15136,pre_validation_barrier,1794064365.275066,0.0018061,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,43,15136,post_validation_barrier,1794064365.885114,0.0003669,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,43,15136,stop_decision_broadcast,1794064365.885414,0.0001335,4,
+0,gratouille-1.nancy.grid5000.fr,44,15488,pre_validation_barrier,1794064399.156244,0.0021314,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,44,15488,post_validation_barrier,1794064399.76632,0.0005474,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,44,15488,stop_decision_broadcast,1794064399.76672,0.0002055,4,
+0,gratouille-1.nancy.grid5000.fr,45,15840,pre_validation_barrier,1794064432.772323,0.0020173,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,45,15840,post_validation_barrier,1794064433.416986,0.0005318,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,45,15840,stop_decision_broadcast,1794064433.417421,0.0001574,4,
+0,gratouille-1.nancy.grid5000.fr,46,16192,pre_validation_barrier,1794064469.26598,0.0022959,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,46,16192,post_validation_barrier,1794064469.898711,0.0004078,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,46,16192,stop_decision_broadcast,1794064469.89907,0.0001604,4,
+0,gratouille-1.nancy.grid5000.fr,47,16544,pre_validation_barrier,1794064503.985374,0.002256,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,47,16544,post_validation_barrier,1794064504.661706,0.000386,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,47,16544,stop_decision_broadcast,1794064504.66204,0.0001453,4,
+0,gratouille-1.nancy.grid5000.fr,48,16896,pre_validation_barrier,1794064537.935023,0.0024103,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,48,16896,post_validation_barrier,1794064538.614603,0.0003729,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,48,16896,stop_decision_broadcast,1794064538.614913,0.0001277,4,
+0,gratouille-1.nancy.grid5000.fr,49,17248,pre_validation_barrier,1794064570.672033,0.0037142,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,49,17248,post_validation_barrier,1794064571.341044,0.0004207,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,49,17248,stop_decision_broadcast,1794064571.341369,0.000131,4,
+0,gratouille-1.nancy.grid5000.fr,50,17600,pre_validation_barrier,1794064605.090471,0.0023802,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,50,17600,post_validation_barrier,1794064605.811353,0.000369,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,50,17600,stop_decision_broadcast,1794064605.811674,0.0001382,4,
+0,gratouille-1.nancy.grid5000.fr,51,17952,pre_validation_barrier,1794064641.521542,0.002189,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,51,17952,post_validation_barrier,1794064642.199389,0.0003608,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,51,17952,stop_decision_broadcast,1794064642.199703,0.000145,4,
+0,gratouille-1.nancy.grid5000.fr,52,18304,pre_validation_barrier,1794064675.824693,0.0024187,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,52,18304,post_validation_barrier,1794064676.489561,0.000466,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,52,18304,stop_decision_broadcast,1794064676.489894,0.0001497,4,
+0,gratouille-1.nancy.grid5000.fr,53,18656,pre_validation_barrier,1794064710.982714,0.0021134,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,53,18656,post_validation_barrier,1794064711.658164,0.0003965,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,53,18656,stop_decision_broadcast,1794064711.658497,0.0001395,4,
+0,gratouille-1.nancy.grid5000.fr,54,19008,pre_validation_barrier,1794064744.009389,0.0024448,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,54,19008,post_validation_barrier,1794064744.662305,0.0003959,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,54,19008,stop_decision_broadcast,1794064744.662653,0.0001718,4,
+0,gratouille-1.nancy.grid5000.fr,55,19360,pre_validation_barrier,1794064778.069557,0.0022484,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,55,19360,post_validation_barrier,1794064778.705871,0.0003566,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,55,19360,stop_decision_broadcast,1794064778.706204,0.0001359,4,
+0,gratouille-1.nancy.grid5000.fr,56,19712,pre_validation_barrier,1794064812.281814,0.0023519,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,56,19712,post_validation_barrier,1794064813.046814,0.0005156,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,56,19712,stop_decision_broadcast,1794064813.047224,0.0001559,4,
+0,gratouille-1.nancy.grid5000.fr,57,20064,pre_validation_barrier,1794064846.766128,0.0021998,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,57,20064,post_validation_barrier,1794064847.44429,0.0004582,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,57,20064,stop_decision_broadcast,1794064847.444684,0.0001771,4,
+0,gratouille-1.nancy.grid5000.fr,58,20416,pre_validation_barrier,1794064880.625624,0.002305,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,58,20416,post_validation_barrier,1794064881.230685,0.0003726,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,58,20416,stop_decision_broadcast,1794064881.230979,0.0001279,4,
+0,gratouille-1.nancy.grid5000.fr,59,20768,pre_validation_barrier,1794064915.153997,0.0027813,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,59,20768,post_validation_barrier,1794064915.769975,0.000494,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,59,20768,stop_decision_broadcast,1794064915.770414,0.0001722,4,
+0,gratouille-1.nancy.grid5000.fr,60,21120,pre_validation_barrier,1794064949.930954,0.0021218,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,60,21120,post_validation_barrier,1794064950.600459,0.0004089,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,60,21120,stop_decision_broadcast,1794064950.600768,0.0001316,4,
+0,gratouille-1.nancy.grid5000.fr,61,21472,pre_validation_barrier,1794064983.225933,0.002718,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,61,21472,post_validation_barrier,1794064983.830486,0.0003634,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,61,21472,stop_decision_broadcast,1794064983.830791,0.0001306,4,
+0,gratouille-1.nancy.grid5000.fr,62,21824,pre_validation_barrier,1794065018.667941,0.0021837,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,62,21824,post_validation_barrier,1794065019.297195,0.0004282,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,62,21824,stop_decision_broadcast,1794065019.297539,0.0001501,4,
+0,gratouille-1.nancy.grid5000.fr,63,22176,pre_validation_barrier,1794065053.74828,0.0020904,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,63,22176,post_validation_barrier,1794065054.35863,0.0003991,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,63,22176,stop_decision_broadcast,1794065054.358993,0.0001549,4,
+0,gratouille-1.nancy.grid5000.fr,64,22528,pre_validation_barrier,1794065087.64888,0.0022205,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,64,22528,post_validation_barrier,1794065088.292158,0.0004556,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,64,22528,stop_decision_broadcast,1794065088.292551,0.0001803,4,
+0,gratouille-1.nancy.grid5000.fr,65,22880,pre_validation_barrier,1794065122.594091,0.0022755,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,65,22880,post_validation_barrier,1794065123.235625,0.000423,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,65,22880,stop_decision_broadcast,1794065123.236004,0.000169,4,
+0,gratouille-1.nancy.grid5000.fr,66,23232,pre_validation_barrier,1794065157.859234,0.0062125,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,66,23232,post_validation_barrier,1794065158.550826,0.0003698,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,66,23232,stop_decision_broadcast,1794065158.551128,0.0001226,4,
+0,gratouille-1.nancy.grid5000.fr,67,23584,pre_validation_barrier,1794065192.230238,0.0019673,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,67,23584,post_validation_barrier,1794065192.890359,0.0004358,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,67,23584,stop_decision_broadcast,1794065192.890745,0.0001751,4,
+0,gratouille-1.nancy.grid5000.fr,68,23936,pre_validation_barrier,1794065226.667868,0.0020165,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,68,23936,post_validation_barrier,1794065227.318895,0.0003539,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,68,23936,stop_decision_broadcast,1794065227.319187,0.0001325,4,
+0,gratouille-1.nancy.grid5000.fr,69,24288,pre_validation_barrier,1794065262.363756,0.0025232,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,69,24288,post_validation_barrier,1794065262.977867,0.0003538,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,69,24288,stop_decision_broadcast,1794065262.97816,0.0001195,4,
+0,gratouille-1.nancy.grid5000.fr,70,24640,pre_validation_barrier,1794065297.324262,0.0022064,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,70,24640,post_validation_barrier,1794065297.949061,0.0004329,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,70,24640,stop_decision_broadcast,1794065297.949397,0.0001449,4,
+0,gratouille-1.nancy.grid5000.fr,71,24992,pre_validation_barrier,1794065333.498139,0.0022337,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,71,24992,post_validation_barrier,1794065334.119538,0.0003686,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,71,24992,stop_decision_broadcast,1794065334.119873,0.0001507,4,
+0,gratouille-1.nancy.grid5000.fr,72,25344,pre_validation_barrier,1794065366.734531,0.0024219,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,72,25344,post_validation_barrier,1794065367.382689,0.000357,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,72,25344,stop_decision_broadcast,1794065367.382975,0.0001288,4,
+0,gratouille-1.nancy.grid5000.fr,73,25696,pre_validation_barrier,1794065400.239913,0.0037267,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,73,25696,post_validation_barrier,1794065400.882458,0.0003752,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,73,25696,stop_decision_broadcast,1794065400.882756,0.0001227,4,
+0,gratouille-1.nancy.grid5000.fr,74,26048,pre_validation_barrier,1794065436.157556,0.0033327,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,74,26048,post_validation_barrier,1794065436.73096,0.0003774,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,74,26048,stop_decision_broadcast,1794065436.731248,0.0001223,4,
+0,gratouille-1.nancy.grid5000.fr,75,26400,pre_validation_barrier,1794065472.060207,0.0020017,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,75,26400,post_validation_barrier,1794065472.663081,0.0003618,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,75,26400,stop_decision_broadcast,1794065472.663389,0.0001315,4,
+0,gratouille-1.nancy.grid5000.fr,76,26752,pre_validation_barrier,1794065507.28813,0.0025049,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,76,26752,post_validation_barrier,1794065507.968897,0.0004043,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,76,26752,stop_decision_broadcast,1794065507.969215,0.0001389,4,
+0,gratouille-1.nancy.grid5000.fr,77,27104,pre_validation_barrier,1794065543.446917,0.002157,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,77,27104,post_validation_barrier,1794065544.186286,0.0004394,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,77,27104,stop_decision_broadcast,1794065544.186635,0.0001461,4,
+0,gratouille-1.nancy.grid5000.fr,78,27456,pre_validation_barrier,1794065579.420042,0.0021037,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,78,27456,post_validation_barrier,1794065580.079993,0.000417,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,78,27456,stop_decision_broadcast,1794065580.080346,0.0001589,4,
+0,gratouille-1.nancy.grid5000.fr,79,27808,pre_validation_barrier,1794065612.090001,0.0021649,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,79,27808,post_validation_barrier,1794065612.731901,0.0003936,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,79,27808,stop_decision_broadcast,1794065612.732248,0.0001428,4,
+0,gratouille-1.nancy.grid5000.fr,80,28160,pre_validation_barrier,1794065645.380714,0.0029683,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,80,28160,post_validation_barrier,1794065646.072779,0.0003944,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,80,28160,stop_decision_broadcast,1794065646.073196,0.0001937,4,
+0,gratouille-1.nancy.grid5000.fr,81,28512,pre_validation_barrier,1794065680.472266,0.0021391,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,81,28512,post_validation_barrier,1794065681.105365,0.0004789,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,81,28512,stop_decision_broadcast,1794065681.10577,0.0001618,4,
+0,gratouille-1.nancy.grid5000.fr,82,28864,pre_validation_barrier,1794065715.194268,0.0026926,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,82,28864,post_validation_barrier,1794065715.970422,0.0004252,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,82,28864,stop_decision_broadcast,1794065715.970812,0.0001686,4,
+0,gratouille-1.nancy.grid5000.fr,83,29216,pre_validation_barrier,1794065749.83013,0.0029475,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,83,29216,post_validation_barrier,1794065750.491805,0.0004183,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,83,29216,stop_decision_broadcast,1794065750.492171,0.0001755,4,
+0,gratouille-1.nancy.grid5000.fr,84,29568,pre_validation_barrier,1794065783.561773,0.0021111,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,84,29568,post_validation_barrier,1794065784.175371,0.0003935,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,84,29568,stop_decision_broadcast,1794065784.175726,0.000151,4,
+0,gratouille-1.nancy.grid5000.fr,85,29920,pre_validation_barrier,1794065818.914131,0.0014613,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,85,29920,post_validation_barrier,1794065819.530039,0.0003142,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,85,29920,stop_decision_broadcast,1794065819.530317,0.0001405,4,
+0,gratouille-1.nancy.grid5000.fr,86,30272,pre_validation_barrier,1794065852.426777,0.0029481,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,86,30272,post_validation_barrier,1794065853.061774,0.000389,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,86,30272,stop_decision_broadcast,1794065853.062074,0.0001226,4,
+0,gratouille-1.nancy.grid5000.fr,87,30624,pre_validation_barrier,1794065885.078825,0.0033307,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,87,30624,post_validation_barrier,1794065885.691211,0.0003808,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,87,30624,stop_decision_broadcast,1794065885.691549,0.0001587,4,
+0,gratouille-1.nancy.grid5000.fr,88,30976,pre_validation_barrier,1794065919.365649,0.0024252,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,88,30976,post_validation_barrier,1794065920.034007,0.0003702,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,88,30976,stop_decision_broadcast,1794065920.034358,0.000165,4,
+0,gratouille-1.nancy.grid5000.fr,89,31328,pre_validation_barrier,1794065952.554796,0.0023367,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,89,31328,post_validation_barrier,1794065953.152369,0.0004391,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,89,31328,stop_decision_broadcast,1794065953.152743,0.0001662,4,
+0,gratouille-1.nancy.grid5000.fr,90,31680,pre_validation_barrier,1794065987.083676,0.002095,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,90,31680,post_validation_barrier,1794065987.743764,0.0004004,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,90,31680,stop_decision_broadcast,1794065987.744103,0.000152,4,
+0,gratouille-1.nancy.grid5000.fr,91,32032,pre_validation_barrier,1794066021.630871,0.0025129,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,91,32032,post_validation_barrier,1794066022.323274,0.0004381,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,91,32032,stop_decision_broadcast,1794066022.323616,0.0001402,4,
+0,gratouille-1.nancy.grid5000.fr,92,32384,pre_validation_barrier,1794066055.365144,0.0028102,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,92,32384,post_validation_barrier,1794066056.034932,0.0003845,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,92,32384,stop_decision_broadcast,1794066056.035245,0.0001308,4,
+0,gratouille-1.nancy.grid5000.fr,93,32736,pre_validation_barrier,1794066090.116675,0.0024448,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,93,32736,post_validation_barrier,1794066090.787792,0.0003759,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,93,32736,stop_decision_broadcast,1794066090.788105,0.0001179,4,
+0,gratouille-1.nancy.grid5000.fr,94,33088,pre_validation_barrier,1794066124.299165,0.0023631,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,94,33088,post_validation_barrier,1794066125.082282,0.000375,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,94,33088,stop_decision_broadcast,1794066125.082568,0.0001221,4,
+0,gratouille-1.nancy.grid5000.fr,95,33440,pre_validation_barrier,1794066158.08567,0.0023103,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,95,33440,post_validation_barrier,1794066158.762941,0.0003535,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,95,33440,stop_decision_broadcast,1794066158.763219,0.0001148,4,
+0,gratouille-1.nancy.grid5000.fr,96,33792,pre_validation_barrier,1794066193.517085,0.0044693,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,96,33792,post_validation_barrier,1794066194.14515,0.0004704,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,96,33792,stop_decision_broadcast,1794066194.145503,0.0001541,4,
+0,gratouille-1.nancy.grid5000.fr,97,34144,pre_validation_barrier,1794066228.45516,0.0024369,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,97,34144,post_validation_barrier,1794066229.110941,0.0003863,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,97,34144,stop_decision_broadcast,1794066229.111274,0.0001469,4,
+0,gratouille-1.nancy.grid5000.fr,98,34496,pre_validation_barrier,1794066262.327773,0.0020511,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,98,34496,post_validation_barrier,1794066262.946131,0.0004352,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,98,34496,stop_decision_broadcast,1794066262.946504,0.0001726,4,
+0,gratouille-1.nancy.grid5000.fr,99,34848,pre_validation_barrier,1794066298.016246,0.0023955,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,99,34848,post_validation_barrier,1794066298.578719,0.0003758,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,99,34848,stop_decision_broadcast,1794066298.579024,0.0001256,4,
+0,gratouille-1.nancy.grid5000.fr,100,35200,pre_validation_barrier,1794066331.004396,0.0023736,4,ranks 1..N wait until all completed their epoch
+0,gratouille-1.nancy.grid5000.fr,100,35200,post_validation_barrier,1794066331.601794,0.0006181,4,includes rank0 evaluation and checkpoint wait
+0,gratouille-1.nancy.grid5000.fr,100,35200,stop_decision_broadcast,1794066331.602093,0.0001251,4,
+0,gratouille-1.nancy.grid5000.fr,100,35200,final_barrier,1794066331.603773,0.0003399,4,

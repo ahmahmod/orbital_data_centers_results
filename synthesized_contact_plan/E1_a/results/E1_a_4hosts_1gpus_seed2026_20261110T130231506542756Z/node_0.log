@@ -1,0 +1,491 @@
+graffiti-5:1308939:1308939 [0] NCCL INFO NCCL_SOCKET_FAMILY set by environment to AF_INET
+graffiti-5:1308939:1308939 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to br0
+graffiti-5:1308939:1308939 [0] NCCL INFO Bootstrap : Using br0:172.16.64.5<0>
+graffiti-5:1308939:1308939 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+graffiti-5:1308939:1308939 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+graffiti-5:1308939:1308939 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+graffiti-5:1308939:1308939 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.21.5+cuda11.0
+graffiti-5:1308939:1308964 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+graffiti-5:1308939:1308964 [0] NCCL INFO NCCL_SOCKET_FAMILY set by environment to AF_INET
+graffiti-5:1308939:1308964 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to br0
+graffiti-5:1308939:1308964 [0] NCCL INFO NET/Socket : Using [0]br0:172.16.64.5<0>
+graffiti-5:1308939:1308964 [0] NCCL INFO Using non-device net plugin version 0
+graffiti-5:1308939:1308964 [0] NCCL INFO Using network Socket
+graffiti-5:1308939:1308964 [0] NCCL INFO ncclCommInitRank comm 0x563b28fb9e40 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 5e000 commId 0xb607a2f52b9a1786 - Init START
+graffiti-5:1308939:1308964 [0] NCCL INFO Setting affinity for GPU 0 to 55005500
+graffiti-5:1308939:1308964 [0] NCCL INFO comm 0x563b28fb9e40 rank 0 nRanks 4 nNodes 4 localRanks 1 localRank 0 MNNVL 0
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+graffiti-5:1308939:1308964 [0] NCCL INFO Trees [0] 2/-1/-1->0->-1 [1] -1/-1/-1->0->1
+graffiti-5:1308939:1308964 [0] NCCL INFO P2P Chunksize set to 131072
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 00/0 : 3[0] -> 0[0] [receive] via NET/Socket/0
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 01/0 : 3[0] -> 0[0] [receive] via NET/Socket/0
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+graffiti-5:1308939:1308964 [0] NCCL INFO Connected all rings
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 00/0 : 2[0] -> 0[0] [receive] via NET/Socket/0
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[0] [send] via NET/Socket/0
+graffiti-5:1308939:1308964 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+graffiti-5:1308939:1308964 [0] NCCL INFO Connected all trees
+graffiti-5:1308939:1308964 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+graffiti-5:1308939:1308964 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+graffiti-5:1308939:1308964 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+graffiti-5:1308939:1308964 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+graffiti-5:1308939:1308964 [0] NCCL INFO ncclCommInitRank comm 0x563b28fb9e40 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 5e000 commId 0xb607a2f52b9a1786 - Init COMPLETE
+Rootless TCP monitor launched host=graffiti-5 pid=1308968
+E1_a epoch=1 step=100 elapsed=8.5s loss=4.0107 collectives=3
+E1_a epoch=1 step=200 elapsed=16.1s loss=4.0836 collectives=3
+E1_a epoch=1 step=300 elapsed=23.6s loss=3.4333 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 1, "step": 352, "global_samples_approx": 45000, "unix_time_s": 1794315813.243068, "elapsed_s": 28.50631, "val_loss": 3.476126, "val_accuracy": 0.1684, "val_samples": 5000, "val_s": 0.75906, "lr": 0.02, "best_val_accuracy": 0.1684, "cumulative_samples_per_s": 1578.598}
+E1_a epoch=2 step=400 elapsed=32.4s loss=3.8457 collectives=3
+E1_a epoch=2 step=500 elapsed=40.0s loss=3.5444 collectives=3
+E1_a epoch=2 step=600 elapsed=47.6s loss=2.3665 collectives=3
+E1_a epoch=2 step=700 elapsed=55.2s loss=2.6709 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 2, "step": 704, "global_samples_approx": 90000, "unix_time_s": 1794315840.739704, "elapsed_s": 56.00294, "val_loss": 3.0053315, "val_accuracy": 0.2652, "val_samples": 5000, "val_s": 0.48641, "lr": 0.04, "best_val_accuracy": 0.2652, "cumulative_samples_per_s": 1607.058}
+E1_a epoch=3 step=800 elapsed=63.6s loss=2.6263 collectives=3
+E1_a epoch=3 step=900 elapsed=71.3s loss=2.5104 collectives=3
+E1_a epoch=3 step=1000 elapsed=79.0s loss=2.4588 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 3, "step": 1056, "global_samples_approx": 135000, "unix_time_s": 1794315868.452515, "elapsed_s": 83.71576, "val_loss": 3.0688582, "val_accuracy": 0.2612, "val_samples": 5000, "val_s": 0.48968, "lr": 0.06, "best_val_accuracy": 0.2652, "cumulative_samples_per_s": 1612.6}
+E1_a epoch=4 step=1100 elapsed=87.3s loss=2.3080 collectives=3
+E1_a epoch=4 step=1200 elapsed=95.0s loss=2.8693 collectives=3
+E1_a epoch=4 step=1300 elapsed=102.5s loss=2.7563 collectives=3
+E1_a epoch=4 step=1400 elapsed=110.2s loss=2.1751 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 4, "step": 1408, "global_samples_approx": 180000, "unix_time_s": 1794315895.993882, "elapsed_s": 111.25712, "val_loss": 2.3131262, "val_accuracy": 0.3974, "val_samples": 5000, "val_s": 0.50364, "lr": 0.08, "best_val_accuracy": 0.3974, "cumulative_samples_per_s": 1617.874}
+E1_a epoch=5 step=1500 elapsed=118.5s loss=1.5064 collectives=3
+E1_a epoch=5 step=1600 elapsed=126.1s loss=2.0317 collectives=3
+E1_a epoch=5 step=1700 elapsed=133.8s loss=1.9581 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 5, "step": 1760, "global_samples_approx": 225000, "unix_time_s": 1794315923.611072, "elapsed_s": 138.87432, "val_loss": 2.3387841, "val_accuracy": 0.3982, "val_samples": 5000, "val_s": 0.49581, "lr": 0.1, "best_val_accuracy": 0.3982, "cumulative_samples_per_s": 1620.17}
+E1_a epoch=6 step=1800 elapsed=142.3s loss=2.3986 collectives=3
+E1_a epoch=6 step=1900 elapsed=149.9s loss=2.1172 collectives=3
+E1_a epoch=6 step=2000 elapsed=157.5s loss=1.9654 collectives=3
+E1_a epoch=6 step=2100 elapsed=165.1s loss=2.0906 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 6, "step": 2112, "global_samples_approx": 270000, "unix_time_s": 1794315951.242404, "elapsed_s": 166.50565, "val_loss": 2.3720093, "val_accuracy": 0.3946, "val_samples": 5000, "val_s": 0.49363, "lr": 0.1, "best_val_accuracy": 0.3982, "cumulative_samples_per_s": 1621.567}
+E1_a epoch=7 step=2200 elapsed=173.7s loss=1.5358 collectives=3
+E1_a epoch=7 step=2300 elapsed=181.3s loss=1.6819 collectives=3
+E1_a epoch=7 step=2400 elapsed=188.8s loss=1.4797 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 7, "step": 2464, "global_samples_approx": 315000, "unix_time_s": 1794315978.91255, "elapsed_s": 194.17579, "val_loss": 2.1154349, "val_accuracy": 0.4554, "val_samples": 5000, "val_s": 0.50082, "lr": 0.099972106, "best_val_accuracy": 0.4554, "cumulative_samples_per_s": 1622.241}
+E1_a epoch=8 step=2500 elapsed=197.2s loss=1.5450 collectives=3
+E1_a epoch=8 step=2600 elapsed=204.9s loss=1.6321 collectives=3
+E1_a epoch=8 step=2700 elapsed=212.6s loss=1.8464 collectives=3
+E1_a epoch=8 step=2800 elapsed=220.2s loss=1.7049 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 8, "step": 2816, "global_samples_approx": 360000, "unix_time_s": 1794316006.568714, "elapsed_s": 221.83196, "val_loss": 1.8931063, "val_accuracy": 0.4928, "val_samples": 5000, "val_s": 0.48306, "lr": 0.099888456, "best_val_accuracy": 0.4928, "cumulative_samples_per_s": 1622.85}
+E1_a epoch=9 step=2900 elapsed=228.6s loss=1.5565 collectives=3
+E1_a epoch=9 step=3000 elapsed=236.2s loss=1.3962 collectives=3
+E1_a epoch=9 step=3100 elapsed=243.9s loss=1.6317 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 9, "step": 3168, "global_samples_approx": 405000, "unix_time_s": 1794316034.261483, "elapsed_s": 249.52473, "val_loss": 1.9429191, "val_accuracy": 0.4944, "val_samples": 5000, "val_s": 0.50791, "lr": 0.099749142, "best_val_accuracy": 0.4944, "cumulative_samples_per_s": 1623.086}
+E1_a epoch=10 step=3200 elapsed=252.3s loss=1.0271 collectives=3
+E1_a epoch=10 step=3300 elapsed=259.9s loss=1.3183 collectives=3
+E1_a epoch=10 step=3400 elapsed=267.5s loss=1.7201 collectives=3
+E1_a epoch=10 step=3500 elapsed=275.1s loss=1.6417 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 10, "step": 3520, "global_samples_approx": 450000, "unix_time_s": 1794316061.857454, "elapsed_s": 277.1207, "val_loss": 1.8714084, "val_accuracy": 0.511, "val_samples": 5000, "val_s": 0.4916, "lr": 0.099554321, "best_val_accuracy": 0.511, "cumulative_samples_per_s": 1623.841}
+E1_a epoch=11 step=3600 elapsed=283.5s loss=1.4751 collectives=3
+E1_a epoch=11 step=3700 elapsed=291.1s loss=1.4530 collectives=3
+E1_a epoch=11 step=3800 elapsed=298.7s loss=1.6384 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 11, "step": 3872, "global_samples_approx": 495000, "unix_time_s": 1794316089.394917, "elapsed_s": 304.65816, "val_loss": 1.7517962, "val_accuracy": 0.5402, "val_samples": 5000, "val_s": 0.49019, "lr": 0.099304209, "best_val_accuracy": 0.5402, "cumulative_samples_per_s": 1624.772}
+E1_a epoch=12 step=3900 elapsed=307.1s loss=1.5698 collectives=3
+E1_a epoch=12 step=4000 elapsed=314.6s loss=1.6105 collectives=3
+E1_a epoch=12 step=4100 elapsed=322.2s loss=1.9461 collectives=3
+E1_a epoch=12 step=4200 elapsed=329.8s loss=1.6089 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 12, "step": 4224, "global_samples_approx": 540000, "unix_time_s": 1794316116.846785, "elapsed_s": 332.11003, "val_loss": 1.7031478, "val_accuracy": 0.5394, "val_samples": 5000, "val_s": 0.47162, "lr": 0.098999087, "best_val_accuracy": 0.5402, "cumulative_samples_per_s": 1625.967}
+E1_a epoch=13 step=4300 elapsed=338.2s loss=1.7409 collectives=3
+E1_a epoch=13 step=4400 elapsed=345.7s loss=1.5622 collectives=3
+E1_a epoch=13 step=4500 elapsed=353.3s loss=1.4146 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 13, "step": 4576, "global_samples_approx": 585000, "unix_time_s": 1794316144.276295, "elapsed_s": 359.53954, "val_loss": 1.7953997, "val_accuracy": 0.529, "val_samples": 5000, "val_s": 0.4867, "lr": 0.098639295, "best_val_accuracy": 0.5402, "cumulative_samples_per_s": 1627.081}
+E1_a epoch=14 step=4600 elapsed=361.7s loss=1.1644 collectives=3
+E1_a epoch=14 step=4700 elapsed=369.2s loss=1.0701 collectives=3
+E1_a epoch=14 step=4800 elapsed=376.8s loss=1.2797 collectives=3
+E1_a epoch=14 step=4900 elapsed=384.3s loss=1.4353 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 14, "step": 4928, "global_samples_approx": 630000, "unix_time_s": 1794316171.653767, "elapsed_s": 386.91701, "val_loss": 1.8004729, "val_accuracy": 0.5318, "val_samples": 5000, "val_s": 0.511, "lr": 0.098225235, "best_val_accuracy": 0.5402, "cumulative_samples_per_s": 1628.256}
+E1_a epoch=15 step=5000 elapsed=392.6s loss=1.3670 collectives=3
+E1_a epoch=15 step=5100 elapsed=400.2s loss=1.2419 collectives=3
+E1_a epoch=15 step=5200 elapsed=407.8s loss=1.3531 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 15, "step": 5280, "global_samples_approx": 675000, "unix_time_s": 1794316198.955, "elapsed_s": 414.21824, "val_loss": 1.5984379, "val_accuracy": 0.5706, "val_samples": 5000, "val_s": 0.5153, "lr": 0.09775737, "best_val_accuracy": 0.5706, "cumulative_samples_per_s": 1629.576}
+E1_a epoch=16 step=5300 elapsed=416.0s loss=0.9296 collectives=3
+E1_a epoch=16 step=5400 elapsed=423.6s loss=0.9148 collectives=3
+E1_a epoch=16 step=5500 elapsed=431.4s loss=1.3185 collectives=3
+E1_a epoch=16 step=5600 elapsed=439.0s loss=1.2963 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 16, "step": 5632, "global_samples_approx": 720000, "unix_time_s": 1794316226.647481, "elapsed_s": 441.91072, "val_loss": 1.8275727, "val_accuracy": 0.5254, "val_samples": 5000, "val_s": 0.49195, "lr": 0.097236221, "best_val_accuracy": 0.5706, "cumulative_samples_per_s": 1629.288}
+E1_a epoch=17 step=5700 elapsed=447.4s loss=1.2215 collectives=3
+E1_a epoch=17 step=5800 elapsed=455.0s loss=1.3559 collectives=3
+E1_a epoch=17 step=5900 elapsed=462.5s loss=1.3441 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 17, "step": 5984, "global_samples_approx": 765000, "unix_time_s": 1794316254.112258, "elapsed_s": 469.3755, "val_loss": 2.0576742, "val_accuracy": 0.5022, "val_samples": 5000, "val_s": 0.47989, "lr": 0.096662372, "best_val_accuracy": 0.5706, "cumulative_samples_per_s": 1629.825}
+E1_a epoch=18 step=6000 elapsed=470.9s loss=0.9848 collectives=3
+E1_a epoch=18 step=6100 elapsed=478.3s loss=0.9301 collectives=3
+E1_a epoch=18 step=6200 elapsed=485.8s loss=1.4313 collectives=3
+E1_a epoch=18 step=6300 elapsed=493.5s loss=1.7306 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 18, "step": 6336, "global_samples_approx": 810000, "unix_time_s": 1794316281.536881, "elapsed_s": 496.80013, "val_loss": 1.7250728, "val_accuracy": 0.5454, "val_samples": 5000, "val_s": 0.4821, "lr": 0.096036462, "best_val_accuracy": 0.5706, "cumulative_samples_per_s": 1630.434}
+E1_a epoch=19 step=6400 elapsed=502.0s loss=1.4474 collectives=3
+E1_a epoch=19 step=6500 elapsed=509.6s loss=1.3806 collectives=3
+E1_a epoch=19 step=6600 elapsed=517.1s loss=1.3608 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 19, "step": 6688, "global_samples_approx": 855000, "unix_time_s": 1794316308.977717, "elapsed_s": 524.24096, "val_loss": 1.7358017, "val_accuracy": 0.5478, "val_samples": 5000, "val_s": 0.50674, "lr": 0.095359191, "best_val_accuracy": 0.5706, "cumulative_samples_per_s": 1630.929}
+E1_a epoch=20 step=6700 elapsed=525.5s loss=1.1331 collectives=3
+E1_a epoch=20 step=6800 elapsed=533.0s loss=1.3764 collectives=3
+E1_a epoch=20 step=6900 elapsed=540.7s loss=1.6109 collectives=3
+E1_a epoch=20 step=7000 elapsed=548.3s loss=1.3937 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 20, "step": 7040, "global_samples_approx": 900000, "unix_time_s": 1794316336.560889, "elapsed_s": 551.82413, "val_loss": 1.5514987, "val_accuracy": 0.5894, "val_samples": 5000, "val_s": 0.47196, "lr": 0.094631316, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1630.954}
+E1_a epoch=21 step=7100 elapsed=556.7s loss=0.8938 collectives=3
+E1_a epoch=21 step=7200 elapsed=564.3s loss=1.0302 collectives=3
+E1_a epoch=21 step=7300 elapsed=572.0s loss=1.5822 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 21, "step": 7392, "global_samples_approx": 945000, "unix_time_s": 1794316364.314132, "elapsed_s": 579.57738, "val_loss": 1.7336921, "val_accuracy": 0.5548, "val_samples": 5000, "val_s": 0.47725, "lr": 0.093853649, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1630.498}
+E1_a epoch=22 step=7400 elapsed=580.5s loss=1.3207 collectives=3
+E1_a epoch=22 step=7500 elapsed=588.1s loss=1.1834 collectives=3
+E1_a epoch=22 step=7600 elapsed=595.7s loss=0.9932 collectives=3
+E1_a epoch=22 step=7700 elapsed=603.3s loss=1.2956 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 22, "step": 7744, "global_samples_approx": 990000, "unix_time_s": 1794316391.861532, "elapsed_s": 607.12477, "val_loss": 1.5870726, "val_accuracy": 0.58, "val_samples": 5000, "val_s": 0.47684, "lr": 0.093027059, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1630.637}
+E1_a epoch=23 step=7800 elapsed=611.8s loss=1.4244 collectives=3
+E1_a epoch=23 step=7900 elapsed=619.4s loss=1.0705 collectives=3
+E1_a epoch=23 step=8000 elapsed=627.0s loss=0.9886 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 23, "step": 8096, "global_samples_approx": 1035000, "unix_time_s": 1794316419.44955, "elapsed_s": 634.71279, "val_loss": 1.6877899, "val_accuracy": 0.5486, "val_samples": 5000, "val_s": 0.50451, "lr": 0.092152469, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1630.659}
+E1_a epoch=24 step=8100 elapsed=635.3s loss=1.0397 collectives=3
+E1_a epoch=24 step=8200 elapsed=643.0s loss=0.9877 collectives=3
+E1_a epoch=24 step=8300 elapsed=650.6s loss=1.1406 collectives=3
+E1_a epoch=24 step=8400 elapsed=658.3s loss=1.4295 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 24, "step": 8448, "global_samples_approx": 1080000, "unix_time_s": 1794316447.16229, "elapsed_s": 662.42553, "val_loss": 1.5967052, "val_accuracy": 0.5774, "val_samples": 5000, "val_s": 0.4895, "lr": 0.091230856, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1630.372}
+E1_a epoch=25 step=8500 elapsed=666.6s loss=0.9976 collectives=3
+E1_a epoch=25 step=8600 elapsed=674.2s loss=1.5826 collectives=3
+E1_a epoch=25 step=8700 elapsed=681.8s loss=1.8073 collectives=3
+E1_a epoch=25 step=8800 elapsed=689.3s loss=1.5158 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 25, "step": 8800, "global_samples_approx": 1125000, "unix_time_s": 1794316474.555105, "elapsed_s": 689.81835, "val_loss": 1.8216424, "val_accuracy": 0.5418, "val_samples": 5000, "val_s": 0.48585, "lr": 0.090263249, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1630.864}
+E1_a epoch=26 step=8900 elapsed=697.8s loss=1.3743 collectives=3
+E1_a epoch=26 step=9000 elapsed=705.5s loss=1.4700 collectives=3
+E1_a epoch=26 step=9100 elapsed=713.1s loss=0.9758 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 26, "step": 9152, "global_samples_approx": 1170000, "unix_time_s": 1794316502.17423, "elapsed_s": 717.43747, "val_loss": 1.6230607, "val_accuracy": 0.5712, "val_samples": 5000, "val_s": 0.49486, "lr": 0.089250729, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1630.804}
+E1_a epoch=27 step=9200 elapsed=721.4s loss=1.0305 collectives=3
+E1_a epoch=27 step=9300 elapsed=729.0s loss=1.3187 collectives=3
+E1_a epoch=27 step=9400 elapsed=736.7s loss=1.4987 collectives=3
+E1_a epoch=27 step=9500 elapsed=744.2s loss=1.1135 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 27, "step": 9504, "global_samples_approx": 1215000, "unix_time_s": 1794316529.671996, "elapsed_s": 744.93524, "val_loss": 1.6180814, "val_accuracy": 0.5828, "val_samples": 5000, "val_s": 0.47557, "lr": 0.088194427, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1631.014}
+E1_a epoch=28 step=9600 elapsed=752.5s loss=0.8554 collectives=3
+E1_a epoch=28 step=9700 elapsed=760.1s loss=1.0739 collectives=3
+E1_a epoch=28 step=9800 elapsed=767.7s loss=1.2028 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 28, "step": 9856, "global_samples_approx": 1260000, "unix_time_s": 1794316557.141138, "elapsed_s": 772.40438, "val_loss": 1.8550806, "val_accuracy": 0.55, "val_samples": 5000, "val_s": 0.46584, "lr": 0.087095523, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1631.27}
+E1_a epoch=29 step=9900 elapsed=776.1s loss=0.7891 collectives=3
+E1_a epoch=29 step=10000 elapsed=783.6s loss=0.9896 collectives=3
+E1_a epoch=29 step=10100 elapsed=791.2s loss=1.1127 collectives=3
+E1_a epoch=29 step=10200 elapsed=798.7s loss=1.2225 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 29, "step": 10208, "global_samples_approx": 1305000, "unix_time_s": 1794316584.553069, "elapsed_s": 799.81631, "val_loss": 1.6753367, "val_accuracy": 0.572, "val_samples": 5000, "val_s": 0.49478, "lr": 0.085955243, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1631.625}
+E1_a epoch=30 step=10300 elapsed=807.2s loss=1.4234 collectives=3
+E1_a epoch=30 step=10400 elapsed=814.8s loss=1.0476 collectives=3
+E1_a epoch=30 step=10500 elapsed=822.4s loss=1.1004 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 30, "step": 10560, "global_samples_approx": 1350000, "unix_time_s": 1794316612.076324, "elapsed_s": 827.33957, "val_loss": 1.6103333, "val_accuracy": 0.585, "val_samples": 5000, "val_s": 0.4736, "lr": 0.084774862, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1631.736}
+E1_a epoch=31 step=10600 elapsed=830.7s loss=0.9446 collectives=3
+E1_a epoch=31 step=10700 elapsed=838.2s loss=1.0253 collectives=3
+E1_a epoch=31 step=10800 elapsed=845.8s loss=1.3758 collectives=3
+E1_a epoch=31 step=10900 elapsed=853.4s loss=1.1642 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 31, "step": 10912, "global_samples_approx": 1395000, "unix_time_s": 1794316639.536819, "elapsed_s": 854.80006, "val_loss": 1.6427808, "val_accuracy": 0.577, "val_samples": 5000, "val_s": 0.49401, "lr": 0.083555697, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1631.961}
+E1_a epoch=32 step=11000 elapsed=861.8s loss=1.3082 collectives=3
+E1_a epoch=32 step=11100 elapsed=869.4s loss=1.1619 collectives=3
+E1_a epoch=32 step=11200 elapsed=877.1s loss=1.1343 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 32, "step": 11264, "global_samples_approx": 1440000, "unix_time_s": 1794316667.212636, "elapsed_s": 882.47588, "val_loss": 1.6656519, "val_accuracy": 0.579, "val_samples": 5000, "val_s": 0.49359, "lr": 0.082299111, "best_val_accuracy": 0.5894, "cumulative_samples_per_s": 1631.773}
+E1_a epoch=33 step=11300 elapsed=885.5s loss=1.1136 collectives=3
+E1_a epoch=33 step=11400 elapsed=893.1s loss=0.9316 collectives=3
+E1_a epoch=33 step=11500 elapsed=900.7s loss=0.8781 collectives=3
+E1_a epoch=33 step=11600 elapsed=908.5s loss=1.0164 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 33, "step": 11616, "global_samples_approx": 1485000, "unix_time_s": 1794316694.889148, "elapsed_s": 910.15239, "val_loss": 1.5207164, "val_accuracy": 0.6036, "val_samples": 5000, "val_s": 0.50306, "lr": 0.081006507, "best_val_accuracy": 0.6036, "cumulative_samples_per_s": 1631.595}
+E1_a epoch=34 step=11700 elapsed=916.9s loss=0.9676 collectives=3
+E1_a epoch=34 step=11800 elapsed=924.5s loss=1.1287 collectives=3
+E1_a epoch=34 step=11900 elapsed=932.1s loss=0.8436 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 34, "step": 11968, "global_samples_approx": 1530000, "unix_time_s": 1794316722.491685, "elapsed_s": 937.75493, "val_loss": 1.4982278, "val_accuracy": 0.6164, "val_samples": 5000, "val_s": 0.48698, "lr": 0.079679328, "best_val_accuracy": 0.6164, "cumulative_samples_per_s": 1631.556}
+E1_a epoch=35 step=12000 elapsed=940.6s loss=0.8221 collectives=3
+E1_a epoch=35 step=12100 elapsed=948.1s loss=0.6868 collectives=3
+E1_a epoch=35 step=12200 elapsed=955.6s loss=0.9738 collectives=3
+E1_a epoch=35 step=12300 elapsed=963.3s loss=1.2026 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 35, "step": 12320, "global_samples_approx": 1575000, "unix_time_s": 1794316749.974081, "elapsed_s": 965.23732, "val_loss": 1.580578, "val_accuracy": 0.5954, "val_samples": 5000, "val_s": 0.4896, "lr": 0.078319057, "best_val_accuracy": 0.6164, "cumulative_samples_per_s": 1631.723}
+E1_a epoch=36 step=12400 elapsed=971.9s loss=0.5811 collectives=3
+E1_a epoch=36 step=12500 elapsed=979.5s loss=1.0135 collectives=3
+E1_a epoch=36 step=12600 elapsed=987.2s loss=0.9615 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 36, "step": 12672, "global_samples_approx": 1620000, "unix_time_s": 1794316777.965024, "elapsed_s": 993.22827, "val_loss": 1.5156009, "val_accuracy": 0.6118, "val_samples": 5000, "val_s": 0.47959, "lr": 0.076927214, "best_val_accuracy": 0.6164, "cumulative_samples_per_s": 1631.045}
+E1_a epoch=37 step=12700 elapsed=995.6s loss=0.8004 collectives=3
+E1_a epoch=37 step=12800 elapsed=1003.2s loss=0.7676 collectives=3
+E1_a epoch=37 step=12900 elapsed=1010.7s loss=1.0440 collectives=3
+E1_a epoch=37 step=13000 elapsed=1018.3s loss=0.9836 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 37, "step": 13024, "global_samples_approx": 1665000, "unix_time_s": 1794316805.336813, "elapsed_s": 1020.60006, "val_loss": 1.7908874, "val_accuracy": 0.561, "val_samples": 5000, "val_s": 0.47781, "lr": 0.075505351, "best_val_accuracy": 0.6164, "cumulative_samples_per_s": 1631.393}
+E1_a epoch=38 step=13100 elapsed=1026.7s loss=0.9441 collectives=3
+E1_a epoch=38 step=13200 elapsed=1034.2s loss=0.8827 collectives=3
+E1_a epoch=38 step=13300 elapsed=1041.8s loss=1.2781 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 38, "step": 13376, "global_samples_approx": 1710000, "unix_time_s": 1794316832.81448, "elapsed_s": 1048.07772, "val_loss": 1.6355044, "val_accuracy": 0.5804, "val_samples": 5000, "val_s": 0.48694, "lr": 0.074055059, "best_val_accuracy": 0.6164, "cumulative_samples_per_s": 1631.558}
+E1_a epoch=39 step=13400 elapsed=1050.2s loss=0.4475 collectives=3
+E1_a epoch=39 step=13500 elapsed=1057.8s loss=1.0911 collectives=3
+E1_a epoch=39 step=13600 elapsed=1065.4s loss=0.7493 collectives=3
+E1_a epoch=39 step=13700 elapsed=1072.9s loss=1.1810 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 39, "step": 13728, "global_samples_approx": 1755000, "unix_time_s": 1794316860.276752, "elapsed_s": 1075.54, "val_loss": 1.7629169, "val_accuracy": 0.565, "val_samples": 5000, "val_s": 0.52217, "lr": 0.072577955, "best_val_accuracy": 0.6164, "cumulative_samples_per_s": 1631.738}
+E1_a epoch=40 step=13800 elapsed=1081.3s loss=0.6824 collectives=3
+E1_a epoch=40 step=13900 elapsed=1088.9s loss=0.6698 collectives=3
+E1_a epoch=40 step=14000 elapsed=1096.5s loss=0.7883 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 40, "step": 14080, "global_samples_approx": 1800000, "unix_time_s": 1794316887.874452, "elapsed_s": 1103.13769, "val_loss": 1.4507217, "val_accuracy": 0.617, "val_samples": 5000, "val_s": 0.51118, "lr": 0.071075691, "best_val_accuracy": 0.617, "cumulative_samples_per_s": 1631.709}
+E1_a epoch=41 step=14100 elapsed=1104.9s loss=0.6608 collectives=3
+E1_a epoch=41 step=14200 elapsed=1112.5s loss=0.8074 collectives=3
+E1_a epoch=41 step=14300 elapsed=1120.1s loss=0.5823 collectives=3
+E1_a epoch=41 step=14400 elapsed=1127.7s loss=0.6866 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 41, "step": 14432, "global_samples_approx": 1845000, "unix_time_s": 1794316915.361727, "elapsed_s": 1130.62497, "val_loss": 1.6699495, "val_accuracy": 0.5826, "val_samples": 5000, "val_s": 0.47504, "lr": 0.069549944, "best_val_accuracy": 0.617, "cumulative_samples_per_s": 1631.841}
+E1_a epoch=42 step=14500 elapsed=1136.1s loss=0.7270 collectives=3
+E1_a epoch=42 step=14600 elapsed=1143.7s loss=1.0468 collectives=3
+E1_a epoch=42 step=14700 elapsed=1151.2s loss=0.8851 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 42, "step": 14784, "global_samples_approx": 1890000, "unix_time_s": 1794316942.744949, "elapsed_s": 1158.00819, "val_loss": 1.4572574, "val_accuracy": 0.6198, "val_samples": 5000, "val_s": 0.49161, "lr": 0.068002418, "best_val_accuracy": 0.6198, "cumulative_samples_per_s": 1632.113}
+E1_a epoch=43 step=14800 elapsed=1159.5s loss=0.5350 collectives=3
+E1_a epoch=43 step=14900 elapsed=1167.1s loss=0.4576 collectives=3
+E1_a epoch=43 step=15000 elapsed=1174.8s loss=0.3340 collectives=3
+E1_a epoch=43 step=15100 elapsed=1182.4s loss=1.1546 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 43, "step": 15136, "global_samples_approx": 1935000, "unix_time_s": 1794316970.276101, "elapsed_s": 1185.53935, "val_loss": 1.5423239, "val_accuracy": 0.598, "val_samples": 5000, "val_s": 0.48806, "lr": 0.066434842, "best_val_accuracy": 0.6198, "cumulative_samples_per_s": 1632.169}
+E1_a epoch=44 step=15200 elapsed=1190.7s loss=0.7089 collectives=3
+E1_a epoch=44 step=15300 elapsed=1198.3s loss=0.8752 collectives=3
+E1_a epoch=44 step=15400 elapsed=1205.8s loss=0.6813 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 44, "step": 15488, "global_samples_approx": 1980000, "unix_time_s": 1794316997.654611, "elapsed_s": 1212.91785, "val_loss": 1.4371985, "val_accuracy": 0.6258, "val_samples": 5000, "val_s": 0.48154, "lr": 0.064848965, "best_val_accuracy": 0.6258, "cumulative_samples_per_s": 1632.427}
+E1_a epoch=45 step=15500 elapsed=1214.1s loss=1.0574 collectives=3
+E1_a epoch=45 step=15600 elapsed=1221.9s loss=0.9044 collectives=3
+E1_a epoch=45 step=15700 elapsed=1229.6s loss=1.0973 collectives=3
+E1_a epoch=45 step=15800 elapsed=1237.1s loss=0.4126 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 45, "step": 15840, "global_samples_approx": 2025000, "unix_time_s": 1794317025.377534, "elapsed_s": 1240.64078, "val_loss": 1.6153001, "val_accuracy": 0.605, "val_samples": 5000, "val_s": 0.50734, "lr": 0.06324656, "best_val_accuracy": 0.6258, "cumulative_samples_per_s": 1632.221}
+E1_a epoch=46 step=15900 elapsed=1245.5s loss=1.1115 collectives=3
+E1_a epoch=46 step=16000 elapsed=1253.1s loss=0.7139 collectives=3
+E1_a epoch=46 step=16100 elapsed=1260.6s loss=1.1342 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 46, "step": 16192, "global_samples_approx": 2070000, "unix_time_s": 1794317052.875187, "elapsed_s": 1268.13843, "val_loss": 1.4384159, "val_accuracy": 0.6294, "val_samples": 5000, "val_s": 0.47842, "lr": 0.061629417, "best_val_accuracy": 0.6294, "cumulative_samples_per_s": 1632.314}
+E1_a epoch=47 step=16200 elapsed=1269.0s loss=0.8383 collectives=3
+E1_a epoch=47 step=16300 elapsed=1276.8s loss=0.9491 collectives=3
+E1_a epoch=47 step=16400 elapsed=1284.4s loss=0.9311 collectives=3
+E1_a epoch=47 step=16500 elapsed=1292.0s loss=1.3030 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 47, "step": 16544, "global_samples_approx": 2115000, "unix_time_s": 1794317080.473516, "elapsed_s": 1295.73676, "val_loss": 1.5354834, "val_accuracy": 0.6164, "val_samples": 5000, "val_s": 0.49075, "lr": 0.05999934, "best_val_accuracy": 0.6294, "cumulative_samples_per_s": 1632.276}
+E1_a epoch=48 step=16600 elapsed=1300.2s loss=0.8306 collectives=3
+E1_a epoch=48 step=16700 elapsed=1307.8s loss=0.8680 collectives=3
+E1_a epoch=48 step=16800 elapsed=1315.4s loss=0.8784 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 48, "step": 16896, "global_samples_approx": 2160000, "unix_time_s": 1794317107.87019, "elapsed_s": 1323.13343, "val_loss": 1.5970661, "val_accuracy": 0.603, "val_samples": 5000, "val_s": 0.49154, "lr": 0.058358151, "best_val_accuracy": 0.6294, "cumulative_samples_per_s": 1632.488}
+E1_a epoch=49 step=16900 elapsed=1323.7s loss=0.7896 collectives=3
+E1_a epoch=49 step=17000 elapsed=1331.2s loss=0.7570 collectives=3
+E1_a epoch=49 step=17100 elapsed=1338.8s loss=0.5691 collectives=3
+E1_a epoch=49 step=17200 elapsed=1346.3s loss=0.6388 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 49, "step": 17248, "global_samples_approx": 2205000, "unix_time_s": 1794317135.268875, "elapsed_s": 1350.53212, "val_loss": 1.4647213, "val_accuracy": 0.6266, "val_samples": 5000, "val_s": 0.48694, "lr": 0.056707683, "best_val_accuracy": 0.6294, "cumulative_samples_per_s": 1632.69}
+E1_a epoch=50 step=17300 elapsed=1354.7s loss=0.8464 collectives=3
+E1_a epoch=50 step=17400 elapsed=1362.4s loss=0.6546 collectives=3
+E1_a epoch=50 step=17500 elapsed=1369.9s loss=0.8560 collectives=3
+E1_a epoch=50 step=17600 elapsed=1377.4s loss=0.7574 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 50, "step": 17600, "global_samples_approx": 2250000, "unix_time_s": 1794317162.648634, "elapsed_s": 1377.91188, "val_loss": 1.4356273, "val_accuracy": 0.6352, "val_samples": 5000, "val_s": 0.48835, "lr": 0.05504978, "best_val_accuracy": 0.6352, "cumulative_samples_per_s": 1632.906}
+E1_a epoch=51 step=17700 elapsed=1385.8s loss=0.7921 collectives=3
+E1_a epoch=51 step=17800 elapsed=1393.4s loss=0.4951 collectives=3
+E1_a epoch=51 step=17900 elapsed=1401.0s loss=0.9010 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 51, "step": 17952, "global_samples_approx": 2295000, "unix_time_s": 1794317190.058791, "elapsed_s": 1405.32203, "val_loss": 1.42929, "val_accuracy": 0.6416, "val_samples": 5000, "val_s": 0.51089, "lr": 0.053386292, "best_val_accuracy": 0.6416, "cumulative_samples_per_s": 1633.078}
+E1_a epoch=52 step=18000 elapsed=1409.2s loss=0.7038 collectives=3
+E1_a epoch=52 step=18100 elapsed=1416.8s loss=0.5722 collectives=3
+E1_a epoch=52 step=18200 elapsed=1424.5s loss=0.8363 collectives=3
+E1_a epoch=52 step=18300 elapsed=1432.1s loss=0.3879 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 52, "step": 18304, "global_samples_approx": 2340000, "unix_time_s": 1794317217.629993, "elapsed_s": 1432.89324, "val_loss": 1.5237357, "val_accuracy": 0.6238, "val_samples": 5000, "val_s": 0.49753, "lr": 0.051719078, "best_val_accuracy": 0.6416, "cumulative_samples_per_s": 1633.06}
+E1_a epoch=53 step=18400 elapsed=1440.5s loss=0.7167 collectives=3
+E1_a epoch=53 step=18500 elapsed=1448.3s loss=0.5316 collectives=3
+E1_a epoch=53 step=18600 elapsed=1455.9s loss=0.5352 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 53, "step": 18656, "global_samples_approx": 2385000, "unix_time_s": 1794317245.296738, "elapsed_s": 1460.55998, "val_loss": 1.4448492, "val_accuracy": 0.651, "val_samples": 5000, "val_s": 0.47709, "lr": 0.05005, "best_val_accuracy": 0.651, "cumulative_samples_per_s": 1632.935}
+E1_a epoch=54 step=18700 elapsed=1464.2s loss=0.3707 collectives=3
+E1_a epoch=54 step=18800 elapsed=1471.8s loss=0.3997 collectives=3
+E1_a epoch=54 step=18900 elapsed=1479.4s loss=0.8767 collectives=3
+E1_a epoch=54 step=19000 elapsed=1487.2s loss=0.9430 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 54, "step": 19008, "global_samples_approx": 2430000, "unix_time_s": 1794317273.027585, "elapsed_s": 1488.29083, "val_loss": 1.4652773, "val_accuracy": 0.6346, "val_samples": 5000, "val_s": 0.50583, "lr": 0.048380922, "best_val_accuracy": 0.651, "cumulative_samples_per_s": 1632.745}
+E1_a epoch=55 step=19100 elapsed=1495.7s loss=0.6277 collectives=3
+E1_a epoch=55 step=19200 elapsed=1503.3s loss=0.4371 collectives=3
+E1_a epoch=55 step=19300 elapsed=1510.8s loss=0.4800 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 55, "step": 19360, "global_samples_approx": 2475000, "unix_time_s": 1794317300.624918, "elapsed_s": 1515.88816, "val_loss": 1.4237427, "val_accuracy": 0.6508, "val_samples": 5000, "val_s": 0.54308, "lr": 0.046713708, "best_val_accuracy": 0.651, "cumulative_samples_per_s": 1632.706}
+E1_a epoch=56 step=19400 elapsed=1519.2s loss=0.6429 collectives=3
+E1_a epoch=56 step=19500 elapsed=1526.8s loss=0.6638 collectives=3
+E1_a epoch=56 step=19600 elapsed=1534.4s loss=0.7832 collectives=3
+E1_a epoch=56 step=19700 elapsed=1541.9s loss=0.5355 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 56, "step": 19712, "global_samples_approx": 2520000, "unix_time_s": 1794317327.975296, "elapsed_s": 1543.23854, "val_loss": 1.4251294, "val_accuracy": 0.64, "val_samples": 5000, "val_s": 0.49638, "lr": 0.04505022, "best_val_accuracy": 0.651, "cumulative_samples_per_s": 1632.93}
+E1_a epoch=57 step=19800 elapsed=1550.2s loss=0.4794 collectives=3
+E1_a epoch=57 step=19900 elapsed=1557.7s loss=0.3735 collectives=3
+E1_a epoch=57 step=20000 elapsed=1565.2s loss=0.4395 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 57, "step": 20064, "global_samples_approx": 2565000, "unix_time_s": 1794317355.27924, "elapsed_s": 1570.54248, "val_loss": 1.4452125, "val_accuracy": 0.65, "val_samples": 5000, "val_s": 0.53078, "lr": 0.043392317, "best_val_accuracy": 0.651, "cumulative_samples_per_s": 1633.194}
+E1_a epoch=58 step=20100 elapsed=1574.3s loss=0.4762 collectives=3
+E1_a epoch=58 step=20200 elapsed=1581.8s loss=0.4022 collectives=3
+E1_a epoch=58 step=20300 elapsed=1589.4s loss=0.3361 collectives=3
+E1_a epoch=58 step=20400 elapsed=1596.9s loss=0.5649 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 58, "step": 20416, "global_samples_approx": 2610000, "unix_time_s": 1794317383.33831, "elapsed_s": 1598.60155, "val_loss": 1.4877533, "val_accuracy": 0.6404, "val_samples": 5000, "val_s": 0.49291, "lr": 0.041741849, "best_val_accuracy": 0.651, "cumulative_samples_per_s": 1632.677}
+E1_a epoch=59 step=20500 elapsed=1605.5s loss=0.2488 collectives=3
+E1_a epoch=59 step=20600 elapsed=1612.9s loss=0.3710 collectives=3
+E1_a epoch=59 step=20700 elapsed=1620.4s loss=0.6083 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 59, "step": 20768, "global_samples_approx": 2655000, "unix_time_s": 1794317410.693538, "elapsed_s": 1625.95678, "val_loss": 1.3671729, "val_accuracy": 0.6626, "val_samples": 5000, "val_s": 0.48953, "lr": 0.04010066, "best_val_accuracy": 0.6626, "cumulative_samples_per_s": 1632.885}
+E1_a epoch=60 step=20800 elapsed=1628.7s loss=0.3358 collectives=3
+E1_a epoch=60 step=20900 elapsed=1636.2s loss=0.4051 collectives=3
+E1_a epoch=60 step=21000 elapsed=1643.8s loss=0.3021 collectives=3
+E1_a epoch=60 step=21100 elapsed=1651.3s loss=0.4721 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 60, "step": 21120, "global_samples_approx": 2700000, "unix_time_s": 1794317437.992852, "elapsed_s": 1653.2561, "val_loss": 1.4415962, "val_accuracy": 0.6482, "val_samples": 5000, "val_s": 0.48243, "lr": 0.038470583, "best_val_accuracy": 0.6626, "cumulative_samples_per_s": 1633.141}
+E1_a epoch=61 step=21200 elapsed=1659.5s loss=0.6106 collectives=3
+E1_a epoch=61 step=21300 elapsed=1667.1s loss=0.4314 collectives=3
+E1_a epoch=61 step=21400 elapsed=1674.6s loss=0.2751 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 61, "step": 21472, "global_samples_approx": 2745000, "unix_time_s": 1794317465.17703, "elapsed_s": 1680.44027, "val_loss": 1.3840678, "val_accuracy": 0.6632, "val_samples": 5000, "val_s": 0.49403, "lr": 0.03685344, "best_val_accuracy": 0.6632, "cumulative_samples_per_s": 1633.5}
+E1_a epoch=62 step=21500 elapsed=1682.8s loss=0.4450 collectives=3
+E1_a epoch=62 step=21600 elapsed=1690.4s loss=0.6342 collectives=3
+E1_a epoch=62 step=21700 elapsed=1698.0s loss=0.3640 collectives=3
+E1_a epoch=62 step=21800 elapsed=1705.5s loss=0.5132 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 62, "step": 21824, "global_samples_approx": 2790000, "unix_time_s": 1794317492.47132, "elapsed_s": 1707.73456, "val_loss": 1.3682783, "val_accuracy": 0.6658, "val_samples": 5000, "val_s": 0.46724, "lr": 0.035251035, "best_val_accuracy": 0.6658, "cumulative_samples_per_s": 1633.743}
+E1_a epoch=63 step=21900 elapsed=1713.8s loss=0.0734 collectives=3
+E1_a epoch=63 step=22000 elapsed=1721.4s loss=0.1243 collectives=3
+E1_a epoch=63 step=22100 elapsed=1728.9s loss=0.7613 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 63, "step": 22176, "global_samples_approx": 2835000, "unix_time_s": 1794317519.971765, "elapsed_s": 1735.23501, "val_loss": 1.4015973, "val_accuracy": 0.673, "val_samples": 5000, "val_s": 0.49877, "lr": 0.033665158, "best_val_accuracy": 0.673, "cumulative_samples_per_s": 1633.784}
+E1_a epoch=64 step=22200 elapsed=1737.3s loss=0.4437 collectives=3
+E1_a epoch=64 step=22300 elapsed=1744.8s loss=0.3815 collectives=3
+E1_a epoch=64 step=22400 elapsed=1752.4s loss=0.3318 collectives=3
+E1_a epoch=64 step=22500 elapsed=1760.1s loss=0.4762 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 64, "step": 22528, "global_samples_approx": 2880000, "unix_time_s": 1794317547.586366, "elapsed_s": 1762.84961, "val_loss": 1.4447184, "val_accuracy": 0.6634, "val_samples": 5000, "val_s": 0.49671, "lr": 0.032097582, "best_val_accuracy": 0.673, "cumulative_samples_per_s": 1633.718}
+E1_a epoch=65 step=22600 elapsed=1768.8s loss=0.3832 collectives=3
+E1_a epoch=65 step=22700 elapsed=1776.7s loss=0.3985 collectives=3
+E1_a epoch=65 step=22800 elapsed=1784.6s loss=0.3578 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 65, "step": 22880, "global_samples_approx": 2925000, "unix_time_s": 1794317576.064393, "elapsed_s": 1791.32764, "val_loss": 1.3918122, "val_accuracy": 0.6684, "val_samples": 5000, "val_s": 0.51616, "lr": 0.030550056, "best_val_accuracy": 0.673, "cumulative_samples_per_s": 1632.867}
+E1_a epoch=66 step=22900 elapsed=1793.2s loss=0.3626 collectives=3
+E1_a epoch=66 step=23000 elapsed=1801.1s loss=0.2354 collectives=3
+E1_a epoch=66 step=23100 elapsed=1809.1s loss=0.2988 collectives=3
+E1_a epoch=66 step=23200 elapsed=1816.9s loss=0.4182 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 66, "step": 23232, "global_samples_approx": 2970000, "unix_time_s": 1794317604.704019, "elapsed_s": 1819.96726, "val_loss": 1.3245268, "val_accuracy": 0.6888, "val_samples": 5000, "val_s": 0.50204, "lr": 0.029024309, "best_val_accuracy": 0.6888, "cumulative_samples_per_s": 1631.897}
+E1_a epoch=67 step=23300 elapsed=1825.6s loss=0.1908 collectives=3
+E1_a epoch=67 step=23400 elapsed=1833.4s loss=0.2009 collectives=3
+E1_a epoch=67 step=23500 elapsed=1841.3s loss=0.1815 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 67, "step": 23584, "global_samples_approx": 3015000, "unix_time_s": 1794317633.313533, "elapsed_s": 1848.57678, "val_loss": 1.3238222, "val_accuracy": 0.6834, "val_samples": 5000, "val_s": 0.47401, "lr": 0.027522045, "best_val_accuracy": 0.6888, "cumulative_samples_per_s": 1630.984}
+E1_a epoch=68 step=23600 elapsed=1850.1s loss=0.1708 collectives=3
+E1_a epoch=68 step=23700 elapsed=1858.2s loss=0.2507 collectives=3
+E1_a epoch=68 step=23800 elapsed=1866.2s loss=0.2094 collectives=3
+E1_a epoch=68 step=23900 elapsed=1874.3s loss=0.2623 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 68, "step": 23936, "global_samples_approx": 3060000, "unix_time_s": 1794317662.411602, "elapsed_s": 1877.67484, "val_loss": 1.25243, "val_accuracy": 0.6902, "val_samples": 5000, "val_s": 0.5253, "lr": 0.026044941, "best_val_accuracy": 0.6902, "cumulative_samples_per_s": 1629.675}
+E1_a epoch=69 step=24000 elapsed=1883.0s loss=0.2016 collectives=3
+E1_a epoch=69 step=24100 elapsed=1891.1s loss=0.3036 collectives=3
+E1_a epoch=69 step=24200 elapsed=1899.0s loss=0.3602 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 69, "step": 24288, "global_samples_approx": 3105000, "unix_time_s": 1794317691.252795, "elapsed_s": 1906.51604, "val_loss": 1.2718785, "val_accuracy": 0.6974, "val_samples": 5000, "val_s": 0.52392, "lr": 0.024594649, "best_val_accuracy": 0.6974, "cumulative_samples_per_s": 1628.625}
+E1_a epoch=70 step=24300 elapsed=1907.7s loss=0.1881 collectives=3
+E1_a epoch=70 step=24400 elapsed=1915.7s loss=0.1315 collectives=3
+E1_a epoch=70 step=24500 elapsed=1923.8s loss=0.1257 collectives=3
+E1_a epoch=70 step=24600 elapsed=1931.8s loss=0.2928 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 70, "step": 24640, "global_samples_approx": 3150000, "unix_time_s": 1794317720.172022, "elapsed_s": 1935.43526, "val_loss": 1.2983075, "val_accuracy": 0.6958, "val_samples": 5000, "val_s": 0.49653, "lr": 0.023172786, "best_val_accuracy": 0.6974, "cumulative_samples_per_s": 1627.541}
+E1_a epoch=71 step=24700 elapsed=1940.5s loss=0.0258 collectives=3
+E1_a epoch=71 step=24800 elapsed=1948.3s loss=0.1223 collectives=3
+E1_a epoch=71 step=24900 elapsed=1956.3s loss=0.3314 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 71, "step": 24992, "global_samples_approx": 3195000, "unix_time_s": 1794317748.752782, "elapsed_s": 1964.01602, "val_loss": 1.2455875, "val_accuracy": 0.7022, "val_samples": 5000, "val_s": 0.4896, "lr": 0.021780943, "best_val_accuracy": 0.7022, "cumulative_samples_per_s": 1626.769}
+E1_a epoch=72 step=25000 elapsed=1965.0s loss=0.0679 collectives=3
+E1_a epoch=72 step=25100 elapsed=1972.9s loss=0.1376 collectives=3
+E1_a epoch=72 step=25200 elapsed=1980.8s loss=0.2439 collectives=3
+E1_a epoch=72 step=25300 elapsed=1988.7s loss=0.2039 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 72, "step": 25344, "global_samples_approx": 3240000, "unix_time_s": 1794317777.492218, "elapsed_s": 1992.75546, "val_loss": 1.2886155, "val_accuracy": 0.6982, "val_samples": 5000, "val_s": 0.49677, "lr": 0.020420672, "best_val_accuracy": 0.7022, "cumulative_samples_per_s": 1625.889}
+E1_a epoch=73 step=25400 elapsed=1997.5s loss=0.1355 collectives=3
+E1_a epoch=73 step=25500 elapsed=2005.5s loss=0.2260 collectives=3
+E1_a epoch=73 step=25600 elapsed=2013.4s loss=0.2467 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 73, "step": 25696, "global_samples_approx": 3285000, "unix_time_s": 1794317806.201313, "elapsed_s": 2021.46456, "val_loss": 1.2396278, "val_accuracy": 0.7074, "val_samples": 5000, "val_s": 0.52111, "lr": 0.019093493, "best_val_accuracy": 0.7074, "cumulative_samples_per_s": 1625.059}
+E1_a epoch=74 step=25700 elapsed=2022.1s loss=0.1682 collectives=3
+E1_a epoch=74 step=25800 elapsed=2030.1s loss=0.1554 collectives=3
+E1_a epoch=74 step=25900 elapsed=2038.0s loss=0.2300 collectives=3
+E1_a epoch=74 step=26000 elapsed=2045.9s loss=0.0893 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 74, "step": 26048, "global_samples_approx": 3330000, "unix_time_s": 1794317834.935874, "elapsed_s": 2050.19912, "val_loss": 1.1796119, "val_accuracy": 0.7282, "val_samples": 5000, "val_s": 0.50083, "lr": 0.017800889, "best_val_accuracy": 0.7282, "cumulative_samples_per_s": 1624.232}
+E1_a epoch=75 step=26100 elapsed=2054.6s loss=0.1362 collectives=3
+E1_a epoch=75 step=26200 elapsed=2062.4s loss=0.1038 collectives=3
+E1_a epoch=75 step=26300 elapsed=2070.2s loss=0.2587 collectives=3
+E1_a epoch=75 step=26400 elapsed=2078.2s loss=0.1203 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 75, "step": 26400, "global_samples_approx": 3375000, "unix_time_s": 1794317863.44065, "elapsed_s": 2078.70389, "val_loss": 1.178485, "val_accuracy": 0.7254, "val_samples": 5000, "val_s": 0.51707, "lr": 0.016544303, "best_val_accuracy": 0.7282, "cumulative_samples_per_s": 1623.608}
+E1_a epoch=76 step=26500 elapsed=2087.0s loss=0.0396 collectives=3
+E1_a epoch=76 step=26600 elapsed=2094.8s loss=0.0311 collectives=3
+E1_a epoch=76 step=26700 elapsed=2102.7s loss=0.0739 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 76, "step": 26752, "global_samples_approx": 3420000, "unix_time_s": 1794317892.036876, "elapsed_s": 2107.30012, "val_loss": 1.1331451, "val_accuracy": 0.739, "val_samples": 5000, "val_s": 0.50778, "lr": 0.015325138, "best_val_accuracy": 0.739, "cumulative_samples_per_s": 1622.93}
+E1_a epoch=77 step=26800 elapsed=2111.4s loss=0.1216 collectives=3
+E1_a epoch=77 step=26900 elapsed=2119.3s loss=0.0895 collectives=3
+E1_a epoch=77 step=27000 elapsed=2127.6s loss=0.0288 collectives=3
+E1_a epoch=77 step=27100 elapsed=2135.5s loss=0.0359 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 77, "step": 27104, "global_samples_approx": 3465000, "unix_time_s": 1794317921.079639, "elapsed_s": 2136.34288, "val_loss": 1.1448758, "val_accuracy": 0.731, "val_samples": 5000, "val_s": 0.49293, "lr": 0.014144757, "best_val_accuracy": 0.739, "cumulative_samples_per_s": 1621.931}
+E1_a epoch=78 step=27200 elapsed=2144.3s loss=0.0465 collectives=3
+E1_a epoch=78 step=27300 elapsed=2152.2s loss=0.0951 collectives=3
+E1_a epoch=78 step=27400 elapsed=2160.2s loss=0.0577 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 78, "step": 27456, "global_samples_approx": 3510000, "unix_time_s": 1794317949.800705, "elapsed_s": 2165.06395, "val_loss": 1.1111152, "val_accuracy": 0.7426, "val_samples": 5000, "val_s": 0.52188, "lr": 0.013004477, "best_val_accuracy": 0.7426, "cumulative_samples_per_s": 1621.199}
+E1_a epoch=79 step=27500 elapsed=2168.8s loss=0.0568 collectives=3
+E1_a epoch=79 step=27600 elapsed=2176.7s loss=0.0337 collectives=3
+E1_a epoch=79 step=27700 elapsed=2184.7s loss=0.0283 collectives=3
+E1_a epoch=79 step=27800 elapsed=2192.7s loss=0.0218 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 79, "step": 27808, "global_samples_approx": 3555000, "unix_time_s": 1794317978.542213, "elapsed_s": 2193.80546, "val_loss": 1.061487, "val_accuracy": 0.7512, "val_samples": 5000, "val_s": 0.50996, "lr": 0.011905573, "best_val_accuracy": 0.7512, "cumulative_samples_per_s": 1620.472}
+E1_a epoch=80 step=27900 elapsed=2201.4s loss=0.0170 collectives=3
+E1_a epoch=80 step=28000 elapsed=2209.4s loss=0.0571 collectives=3
+E1_a epoch=80 step=28100 elapsed=2217.3s loss=0.0729 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 80, "step": 28160, "global_samples_approx": 3600000, "unix_time_s": 1794318007.330289, "elapsed_s": 2222.59353, "val_loss": 1.0547123, "val_accuracy": 0.7498, "val_samples": 5000, "val_s": 0.5022, "lr": 0.010849271, "best_val_accuracy": 0.7512, "cumulative_samples_per_s": 1619.729}
+E1_a epoch=81 step=28200 elapsed=2226.0s loss=0.0350 collectives=3
+E1_a epoch=81 step=28300 elapsed=2233.9s loss=0.0266 collectives=3
+E1_a epoch=81 step=28400 elapsed=2241.8s loss=0.0153 collectives=3
+E1_a epoch=81 step=28500 elapsed=2249.7s loss=0.0143 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 81, "step": 28512, "global_samples_approx": 3645000, "unix_time_s": 1794318035.896668, "elapsed_s": 2251.1599, "val_loss": 1.0536346, "val_accuracy": 0.749, "val_samples": 5000, "val_s": 0.53161, "lr": 0.009836751, "best_val_accuracy": 0.7512, "cumulative_samples_per_s": 1619.165}
+E1_a epoch=82 step=28600 elapsed=2258.7s loss=0.0628 collectives=3
+E1_a epoch=82 step=28700 elapsed=2266.9s loss=0.0768 collectives=3
+E1_a epoch=82 step=28800 elapsed=2275.3s loss=0.0433 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 82, "step": 28864, "global_samples_approx": 3690000, "unix_time_s": 1794318066.097093, "elapsed_s": 2281.36034, "val_loss": 1.0299998, "val_accuracy": 0.7532, "val_samples": 5000, "val_s": 0.52317, "lr": 0.008869144, "best_val_accuracy": 0.7532, "cumulative_samples_per_s": 1617.456}
+E1_a epoch=83 step=28900 elapsed=2284.6s loss=0.0084 collectives=3
+E1_a epoch=83 step=29000 elapsed=2292.9s loss=0.0121 collectives=3
+E1_a epoch=83 step=29100 elapsed=2301.2s loss=0.0103 collectives=3
+E1_a epoch=83 step=29200 elapsed=2309.2s loss=0.0205 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 83, "step": 29216, "global_samples_approx": 3735000, "unix_time_s": 1794318095.692753, "elapsed_s": 2310.956, "val_loss": 1.041799, "val_accuracy": 0.7556, "val_samples": 5000, "val_s": 0.48318, "lr": 0.007947531, "best_val_accuracy": 0.7556, "cumulative_samples_per_s": 1616.214}
+E1_a epoch=84 step=29300 elapsed=2317.7s loss=0.0365 collectives=3
+E1_a epoch=84 step=29400 elapsed=2325.3s loss=0.0132 collectives=3
+E1_a epoch=84 step=29500 elapsed=2332.9s loss=0.0127 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 84, "step": 29568, "global_samples_approx": 3780000, "unix_time_s": 1794318123.230692, "elapsed_s": 2338.49394, "val_loss": 1.0132533, "val_accuracy": 0.7522, "val_samples": 5000, "val_s": 0.48971, "lr": 0.007072941, "best_val_accuracy": 0.7556, "cumulative_samples_per_s": 1616.425}
+E1_a epoch=85 step=29600 elapsed=2341.2s loss=0.0127 collectives=3
+E1_a epoch=85 step=29700 elapsed=2349.1s loss=0.0338 collectives=3
+E1_a epoch=85 step=29800 elapsed=2356.6s loss=0.0122 collectives=3
+E1_a epoch=85 step=29900 elapsed=2364.3s loss=0.0254 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 85, "step": 29920, "global_samples_approx": 3825000, "unix_time_s": 1794318150.98385, "elapsed_s": 2366.2471, "val_loss": 1.0092945, "val_accuracy": 0.755, "val_samples": 5000, "val_s": 0.49506, "lr": 0.006246351, "best_val_accuracy": 0.7556, "cumulative_samples_per_s": 1616.484}
+E1_a epoch=86 step=30000 elapsed=2372.6s loss=0.0272 collectives=3
+E1_a epoch=86 step=30100 elapsed=2380.4s loss=0.0264 collectives=3
+E1_a epoch=86 step=30200 elapsed=2388.2s loss=0.0210 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 86, "step": 30272, "global_samples_approx": 3870000, "unix_time_s": 1794318178.876654, "elapsed_s": 2394.1399, "val_loss": 0.9951259, "val_accuracy": 0.7582, "val_samples": 5000, "val_s": 0.50868, "lr": 0.005468684, "best_val_accuracy": 0.7582, "cumulative_samples_per_s": 1616.447}
+E1_a epoch=87 step=30300 elapsed=2396.5s loss=0.0077 collectives=3
+E1_a epoch=87 step=30400 elapsed=2404.5s loss=0.0087 collectives=3
+E1_a epoch=87 step=30500 elapsed=2412.4s loss=0.0095 collectives=3
+E1_a epoch=87 step=30600 elapsed=2420.0s loss=0.0096 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 87, "step": 30624, "global_samples_approx": 3915000, "unix_time_s": 1794318206.982493, "elapsed_s": 2422.24574, "val_loss": 0.9960716, "val_accuracy": 0.7636, "val_samples": 5000, "val_s": 0.49771, "lr": 0.004740809, "best_val_accuracy": 0.7636, "cumulative_samples_per_s": 1616.269}
+E1_a epoch=88 step=30700 elapsed=2428.2s loss=0.0183 collectives=3
+E1_a epoch=88 step=30800 elapsed=2435.9s loss=0.0110 collectives=3
+E1_a epoch=88 step=30900 elapsed=2443.7s loss=0.0165 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 88, "step": 30976, "global_samples_approx": 3960000, "unix_time_s": 1794318234.731224, "elapsed_s": 2449.99447, "val_loss": 0.9811197, "val_accuracy": 0.7636, "val_samples": 5000, "val_s": 0.50139, "lr": 0.004063538, "best_val_accuracy": 0.7636, "cumulative_samples_per_s": 1616.33}
+E1_a epoch=89 step=31000 elapsed=2452.4s loss=0.0078 collectives=3
+E1_a epoch=89 step=31100 elapsed=2460.3s loss=0.0150 collectives=3
+E1_a epoch=89 step=31200 elapsed=2468.0s loss=0.0177 collectives=3
+E1_a epoch=89 step=31300 elapsed=2475.7s loss=0.0091 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 89, "step": 31328, "global_samples_approx": 4005000, "unix_time_s": 1794318263.101847, "elapsed_s": 2478.36509, "val_loss": 0.9882204, "val_accuracy": 0.7602, "val_samples": 5000, "val_s": 0.50704, "lr": 0.003437628, "best_val_accuracy": 0.7636, "cumulative_samples_per_s": 1615.985}
+E1_a epoch=90 step=31400 elapsed=2484.2s loss=0.0090 collectives=3
+E1_a epoch=90 step=31500 elapsed=2491.9s loss=0.0253 collectives=3
+E1_a epoch=90 step=31600 elapsed=2499.6s loss=0.0152 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 90, "step": 31680, "global_samples_approx": 4050000, "unix_time_s": 1794318290.972285, "elapsed_s": 2506.23553, "val_loss": 0.9910436, "val_accuracy": 0.7612, "val_samples": 5000, "val_s": 0.48475, "lr": 0.002863779, "best_val_accuracy": 0.7636, "cumulative_samples_per_s": 1615.969}
+E1_a epoch=91 step=31700 elapsed=2508.1s loss=0.0207 collectives=3
+E1_a epoch=91 step=31800 elapsed=2515.8s loss=0.0582 collectives=3
+E1_a epoch=91 step=31900 elapsed=2523.5s loss=0.0233 collectives=3
+E1_a epoch=91 step=32000 elapsed=2531.2s loss=0.0063 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 91, "step": 32032, "global_samples_approx": 4095000, "unix_time_s": 1794318318.88124, "elapsed_s": 2534.14449, "val_loss": 0.9831363, "val_accuracy": 0.763, "val_samples": 5000, "val_s": 0.49651, "lr": 0.00234263, "best_val_accuracy": 0.7636, "cumulative_samples_per_s": 1615.93}
+E1_a epoch=92 step=32100 elapsed=2539.7s loss=0.0150 collectives=3
+E1_a epoch=92 step=32200 elapsed=2547.4s loss=0.0058 collectives=3
+E1_a epoch=92 step=32300 elapsed=2555.0s loss=0.0036 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 92, "step": 32384, "global_samples_approx": 4140000, "unix_time_s": 1794318346.622463, "elapsed_s": 2561.88571, "val_loss": 0.9834809, "val_accuracy": 0.766, "val_samples": 5000, "val_s": 0.42784, "lr": 0.001874765, "best_val_accuracy": 0.766, "cumulative_samples_per_s": 1615.997}
+E1_a epoch=93 step=32400 elapsed=2563.5s loss=0.0193 collectives=3
+E1_a epoch=93 step=32500 elapsed=2571.1s loss=0.0080 collectives=3
+E1_a epoch=93 step=32600 elapsed=2578.8s loss=0.0172 collectives=3
+E1_a epoch=93 step=32700 elapsed=2586.4s loss=0.0087 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 93, "step": 32736, "global_samples_approx": 4185000, "unix_time_s": 1794318374.266807, "elapsed_s": 2589.53005, "val_loss": 0.971786, "val_accuracy": 0.7674, "val_samples": 5000, "val_s": 0.43395, "lr": 0.001460705, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1616.123}
+E1_a epoch=94 step=32800 elapsed=2594.8s loss=0.0273 collectives=3
+E1_a epoch=94 step=32900 elapsed=2602.4s loss=0.0168 collectives=3
+E1_a epoch=94 step=33000 elapsed=2609.9s loss=0.0088 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 94, "step": 33088, "global_samples_approx": 4230000, "unix_time_s": 1794318401.727085, "elapsed_s": 2616.99033, "val_loss": 0.969375, "val_accuracy": 0.7658, "val_samples": 5000, "val_s": 0.42481, "lr": 0.001100913, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1616.361}
+E1_a epoch=95 step=33100 elapsed=2618.2s loss=0.0248 collectives=3
+E1_a epoch=95 step=33200 elapsed=2625.8s loss=0.0192 collectives=3
+E1_a epoch=95 step=33300 elapsed=2633.3s loss=0.0448 collectives=3
+E1_a epoch=95 step=33400 elapsed=2640.9s loss=0.0205 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 95, "step": 33440, "global_samples_approx": 4275000, "unix_time_s": 1794318429.176234, "elapsed_s": 2644.43948, "val_loss": 0.9796705, "val_accuracy": 0.7666, "val_samples": 5000, "val_s": 0.4523, "lr": 0.000795791, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1616.6}
+E1_a epoch=96 step=33500 elapsed=2649.3s loss=0.0206 collectives=3
+E1_a epoch=96 step=33600 elapsed=2656.9s loss=0.0122 collectives=3
+E1_a epoch=96 step=33700 elapsed=2664.5s loss=0.0214 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 96, "step": 33792, "global_samples_approx": 4320000, "unix_time_s": 1794318456.550564, "elapsed_s": 2671.81381, "val_loss": 0.9829685, "val_accuracy": 0.7658, "val_samples": 5000, "val_s": 0.44499, "lr": 0.000545679, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1616.879}
+E1_a epoch=97 step=33800 elapsed=2672.7s loss=0.0093 collectives=3
+E1_a epoch=97 step=33900 elapsed=2680.2s loss=0.0106 collectives=3
+E1_a epoch=97 step=34000 elapsed=2687.9s loss=0.0134 collectives=3
+E1_a epoch=97 step=34100 elapsed=2695.5s loss=0.0135 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 97, "step": 34144, "global_samples_approx": 4365000, "unix_time_s": 1794318483.967055, "elapsed_s": 2699.2303, "val_loss": 0.9714744, "val_accuracy": 0.7656, "val_samples": 5000, "val_s": 0.42361, "lr": 0.000350858, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1617.128}
+E1_a epoch=98 step=34200 elapsed=2703.7s loss=0.0100 collectives=3
+E1_a epoch=98 step=34300 elapsed=2711.4s loss=0.0086 collectives=3
+E1_a epoch=98 step=34400 elapsed=2719.0s loss=0.0111 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 98, "step": 34496, "global_samples_approx": 4410000, "unix_time_s": 1794318511.464034, "elapsed_s": 2726.72728, "val_loss": 0.9803975, "val_accuracy": 0.7646, "val_samples": 5000, "val_s": 0.42184, "lr": 0.000211544, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1617.323}
+E1_a epoch=99 step=34500 elapsed=2727.3s loss=0.0082 collectives=3
+E1_a epoch=99 step=34600 elapsed=2734.8s loss=0.0187 collectives=3
+E1_a epoch=99 step=34700 elapsed=2742.4s loss=0.0119 collectives=3
+E1_a epoch=99 step=34800 elapsed=2750.1s loss=0.0088 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 99, "step": 34848, "global_samples_approx": 4455000, "unix_time_s": 1794318538.895538, "elapsed_s": 2754.15878, "val_loss": 0.9777402, "val_accuracy": 0.7646, "val_samples": 5000, "val_s": 0.45665, "lr": 0.000127894, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1617.554}
+E1_a epoch=100 step=34900 elapsed=2758.4s loss=0.0125 collectives=3
+E1_a epoch=100 step=35000 elapsed=2766.0s loss=0.0089 collectives=3
+E1_a epoch=100 step=35100 elapsed=2773.5s loss=0.0150 collectives=3
+E1_a epoch=100 step=35200 elapsed=2781.0s loss=0.0032 collectives=3
+VALIDATION {"experiment": "E1_a", "epoch": 100, "step": 35200, "global_samples_approx": 4500000, "unix_time_s": 1794318566.199913, "elapsed_s": 2781.46316, "val_loss": 0.9706049, "val_accuracy": 0.7668, "val_samples": 5000, "val_s": 0.42496, "lr": 0.0001, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1617.854}
+SUMMARY {"experiment": "E1_a", "status": "ok", "reason": "epochs_completed", "world_size": 4, "completed_epochs": 100, "steps_per_worker": 35200, "global_samples_approx": 4500000, "wall_training_s": 2781.7052, "best_validation_accuracy": 0.7674, "target_accuracy": 0.7, "target_first_s": 1964.0160242629936, "latest_validation": {"experiment": "E1_a", "epoch": 100, "step": 35200, "global_samples_approx": 4500000, "unix_time_s": 1794318566.199913, "elapsed_s": 2781.46316, "val_loss": 0.9706049, "val_accuracy": 0.7668, "val_samples": 5000, "val_s": 0.42496, "lr": 0.0001, "best_val_accuracy": 0.7674, "cumulative_samples_per_s": 1617.854}, "global_batch_size": 128, "instrumented": true}
+graffiti-5:1308939:1308965 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+graffiti-5:1308939:1354060 [0] NCCL INFO comm 0x563b28fb9e40 rank 0 nranks 4 cudaDev 0 busId 5e000 - Abort COMPLETE

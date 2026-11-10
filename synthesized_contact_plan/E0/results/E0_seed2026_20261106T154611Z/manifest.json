@@ -1,0 +1,52 @@
+{
+  "experiment": "E0_v2",
+  "hostname": "grele-1.nancy.grid5000.fr",
+  "start_utc": "2026-11-06T16:10:37.465543+00:00",
+  "torch": "2.5.1+cu118",
+  "torchvision": "0.20.1+cu118",
+  "gpu": "NVIDIA GeForce GTX 1080 Ti",
+  "device": "cuda:0",
+  "amp": true,
+  "arguments": {
+    "output": "/home/amahmod/experiments_grid/synthesized_contact_plan/E0/results/E0_seed2026_20261106T154611Z",
+    "data_root": "/home/amahmod/experiments_grid/synthesized_contact_plan/E0/../data",
+    "download": true,
+    "dataset": "cifar100",
+    "epochs": 100,
+    "batch_size": 32,
+    "lr": 0.1,
+    "min_lr": 0.0001,
+    "warmup_epochs": 5,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "label_smoothing": 0.0,
+    "num_workers": 4,
+    "seed": 2026,
+    "eval_every_epochs": 1,
+    "log_every_steps": 10,
+    "max_seconds": 3600.0,
+    "target_accuracy": 0.7,
+    "val_size": 5000,
+    "validation_source": "train-holdout",
+    "cpu": false,
+    "no_amp": false,
+    "resume": "",
+    "gpu_sample_s": 1,
+    "train_subset": 0,
+    "val_subset": 0
+  },
+  "dataset": {
+    "train_n": 45000,
+    "val_n": 5000,
+    "validation_source": "train-holdout",
+    "split_seed": 2026
+  },
+  "notes": [
+    "Fresh initialization unless --resume is set.",
+    "Validation holdout is disjoint from training when train-holdout is used.",
+    "Target 70% is a success criterion, not a guarantee.",
+    "Epoch-end cosine learning rate updated at epoch boundaries.",
+    "No DDP, no communication; sync_s=0 is a defined placeholder.",
+    "Checkpoint latest resumes only after completed epochs; interrupted incomplete epoch is not saved."
+  ]
+}

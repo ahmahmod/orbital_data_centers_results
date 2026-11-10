@@ -1,0 +1,87 @@
+{
+  "experiment": "E1_a",
+  "gpu_idle_threshold_pct": 20.0,
+  "gpu_idle_note": "fraction of 1s samples below utilization threshold, NOT actual GPU idle time",
+  "network_note": "NIC counters are node-global; cannot distinguish DDP and management traffic",
+  "communication_note": "Collective future timings measure host scheduling/completion, not exclusive GPU collective kernel times",
+  "rank_statistics": [
+    {
+      "rank": 0,
+      "logged_steps": 3520,
+      "final_logged_step": 35200,
+      "median_step_ms": 87.193,
+      "p95_step_ms": 135.153,
+      "median_collective_host_span_ms": 7.671,
+      "median_logical_bytes_per_logged_step": 44880528,
+      "gpu_samples": 3362,
+      "gpu_mean_utilization_pct": 89.659,
+      "gpu_idle_sample_pct": 0.744
+    },
+    {
+      "rank": 1,
+      "logged_steps": 3520,
+      "final_logged_step": 35200,
+      "median_step_ms": 87.195,
+      "p95_step_ms": 134.68,
+      "median_collective_host_span_ms": 7.167,
+      "median_logical_bytes_per_logged_step": 44880528,
+      "gpu_samples": 3337,
+      "gpu_mean_utilization_pct": 94.11,
+      "gpu_idle_sample_pct": 0.0
+    },
+    {
+      "rank": 2,
+      "logged_steps": 3520,
+      "final_logged_step": 35200,
+      "median_step_ms": 87.273,
+      "p95_step_ms": 135.008,
+      "median_collective_host_span_ms": 7.549,
+      "median_logical_bytes_per_logged_step": 44880528,
+      "gpu_samples": 3328,
+      "gpu_mean_utilization_pct": 93.884,
+      "gpu_idle_sample_pct": 0.03
+    },
+    {
+      "rank": 3,
+      "logged_steps": 3520,
+      "final_logged_step": 35200,
+      "median_step_ms": 87.271,
+      "p95_step_ms": 135.297,
+      "median_collective_host_span_ms": 7.264,
+      "median_logical_bytes_per_logged_step": 44880528,
+      "gpu_samples": 3341,
+      "gpu_mean_utilization_pct": 93.974,
+      "gpu_idle_sample_pct": 0.03
+    }
+  ],
+  "training_summary": {
+    "experiment": "E1_a",
+    "status": "ok",
+    "reason": "epochs_completed",
+    "world_size": 4,
+    "completed_epochs": 100,
+    "steps_per_worker": 35200,
+    "global_samples_approx": 4500000,
+    "wall_training_s": 3445.7603,
+    "best_validation_accuracy": 0.7694,
+    "target_accuracy": 0.7,
+    "target_first_s": 2376.862913758001,
+    "latest_validation": {
+      "experiment": "E1_a",
+      "epoch": 100,
+      "step": 35200,
+      "global_samples_approx": 4500000,
+      "unix_time_s": 1794066331.347223,
+      "elapsed_s": 3445.50535,
+      "val_loss": 0.9635322,
+      "val_accuracy": 0.7668,
+      "val_samples": 5000,
+      "val_s": 0.34245,
+      "lr": 0.0001,
+      "best_val_accuracy": 0.7694,
+      "cumulative_samples_per_s": 1306.049
+    },
+    "global_batch_size": 128,
+    "instrumented": true
+  }
+}

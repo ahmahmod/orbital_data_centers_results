@@ -1,0 +1,321 @@
+{
+  "experiment": "E1_a",
+  "scope": "logical_allreduce_demand",
+  "definitions": {
+    "bytes": "one input gradient bucket per participating rank, NOT physical bytes on wire",
+    "transfer": "one rank submitting one DDP bucket collective, NOT a unicast message",
+    "frequency": "observed collective bucket submissions per second in each rank",
+    "blocked_time": "epoch barriers are directly measured; host-side collective futures are overlapped and NOT isolated waiting",
+    "pair_bytes": "unavailable without per-socket/packet attribution; must not infer from collective size"
+  },
+  "workers": [
+    {
+      "rank": 0,
+      "local_rank": 0,
+      "node": "graffiti-5.nancy.grid5000.fr",
+      "ip": "172.16.64.5",
+      "pid": 1308939
+    },
+    {
+      "rank": 1,
+      "local_rank": 0,
+      "node": "graffiti-7.nancy.grid5000.fr",
+      "ip": "172.16.64.7",
+      "pid": 613017
+    },
+    {
+      "rank": 2,
+      "local_rank": 0,
+      "node": "graffiti-8.nancy.grid5000.fr",
+      "ip": "172.16.64.8",
+      "pid": 892533
+    },
+    {
+      "rank": 3,
+      "local_rank": 0,
+      "node": "graffiti-9.nancy.grid5000.fr",
+      "ip": "172.16.64.9",
+      "pid": 715902
+    }
+  ],
+  "per_worker": [
+    {
+      "rank": 0,
+      "node": "graffiti-5.nancy.grid5000.fr",
+      "ip": "172.16.64.5",
+      "collective_bucket_events": 105598,
+      "logical_bytes_total_logged": 1579794585600,
+      "logical_mib_total_logged": 1506609.52148,
+      "logical_mib_per_bucket": {
+        "count": 105598,
+        "min": 8.334228515625,
+        "median": 9.199600219726562,
+        "p95": 25.267578125,
+        "max": 42.80140686035156
+      },
+      "interarrival_seconds": {
+        "count": 105597,
+        "min": 0.0014719963073730469,
+        "median": 0.00466609001159668,
+        "p95": 0.07309026718139648,
+        "max": 1.726815938949585
+      },
+      "host_collective_completion_s": {
+        "count": 105598,
+        "min": 0.0001211,
+        "median": 0.0002225,
+        "p95": 0.0003722,
+        "max": 0.0011489
+      },
+      "observed_bucket_events_per_second": 37.98209428214675,
+      "max_concurrent_host_futures": 1,
+      "logged_step_count": 3520,
+      "last_logged_step": 35200,
+      "step_interarrival_seconds": {
+        "count": 3519,
+        "min": 0.7100849999997081,
+        "median": 0.7628540000000612,
+        "p95": 0.8254620000000159,
+        "max": 2.403105000000096
+      },
+      "warning": "Per-worker communication totals refer to collected events only; not inferred peer traffic"
+    },
+    {
+      "rank": 1,
+      "node": "graffiti-7.nancy.grid5000.fr",
+      "ip": "172.16.64.7",
+      "collective_bucket_events": 105598,
+      "logical_bytes_total_logged": 1579794585600,
+      "logical_mib_total_logged": 1506609.52148,
+      "logical_mib_per_bucket": {
+        "count": 105598,
+        "min": 8.334228515625,
+        "median": 9.199600219726562,
+        "p95": 25.267578125,
+        "max": 42.80140686035156
+      },
+      "interarrival_seconds": {
+        "count": 105597,
+        "min": 0.0014848709106445312,
+        "median": 0.004914999008178711,
+        "p95": 0.0730010986328125,
+        "max": 1.7276198863983154
+      },
+      "host_collective_completion_s": {
+        "count": 105598,
+        "min": 0.0001244,
+        "median": 0.0002345,
+        "p95": 0.0003782,
+        "max": 0.0025555
+      },
+      "observed_bucket_events_per_second": 37.98386367964127,
+      "max_concurrent_host_futures": 1,
+      "logged_step_count": 3520,
+      "last_logged_step": 35200,
+      "step_interarrival_seconds": {
+        "count": 3519,
+        "min": 0.7104030000000421,
+        "median": 0.7627529999999751,
+        "p95": 0.825038799999993,
+        "max": 2.4035089999999855
+      },
+      "warning": "Per-worker communication totals refer to collected events only; not inferred peer traffic"
+    },
+    {
+      "rank": 2,
+      "node": "graffiti-8.nancy.grid5000.fr",
+      "ip": "172.16.64.8",
+      "collective_bucket_events": 105598,
+      "logical_bytes_total_logged": 1579794585600,
+      "logical_mib_total_logged": 1506609.52148,
+      "logical_mib_per_bucket": {
+        "count": 105598,
+        "min": 8.334228515625,
+        "median": 9.199600219726562,
+        "p95": 25.267578125,
+        "max": 42.80140686035156
+      },
+      "interarrival_seconds": {
+        "count": 105597,
+        "min": 0.0015599727630615234,
+        "median": 0.005858898162841797,
+        "p95": 0.07231111526489258,
+        "max": 1.726027011871338
+      },
+      "host_collective_completion_s": {
+        "count": 105598,
+        "min": 0.0001278,
+        "median": 0.00024945,
+        "p95": 0.0004113,
+        "max": 0.0154756
+      },
+      "observed_bucket_events_per_second": 37.98311039095917,
+      "max_concurrent_host_futures": 1,
+      "logged_step_count": 3520,
+      "last_logged_step": 35200,
+      "step_interarrival_seconds": {
+        "count": 3519,
+        "min": 0.7098860000000968,
+        "median": 0.7628379999999879,
+        "p95": 0.8253089000000727,
+        "max": 2.4026719999999386
+      },
+      "warning": "Per-worker communication totals refer to collected events only; not inferred peer traffic"
+    },
+    {
+      "rank": 3,
+      "node": "graffiti-9.nancy.grid5000.fr",
+      "ip": "172.16.64.9",
+      "collective_bucket_events": 105598,
+      "logical_bytes_total_logged": 1579794585600,
+      "logical_mib_total_logged": 1506609.52148,
+      "logical_mib_per_bucket": {
+        "count": 105598,
+        "min": 8.334228515625,
+        "median": 9.199600219726562,
+        "p95": 25.267578125,
+        "max": 42.80140686035156
+      },
+      "interarrival_seconds": {
+        "count": 105597,
+        "min": 0.0015730857849121094,
+        "median": 0.004824161529541016,
+        "p95": 0.07299494743347168,
+        "max": 1.7350871562957764
+      },
+      "host_collective_completion_s": {
+        "count": 105598,
+        "min": 0.0001275,
+        "median": 0.000227,
+        "p95": 0.0003682,
+        "max": 0.0039666
+      },
+      "observed_bucket_events_per_second": 37.983340247797116,
+      "max_concurrent_host_futures": 1,
+      "logged_step_count": 3520,
+      "last_logged_step": 35200,
+      "step_interarrival_seconds": {
+        "count": 3519,
+        "min": 0.7098840000003293,
+        "median": 0.7627260000000433,
+        "p95": 0.824944600000299,
+        "max": 2.4036929999999757
+      },
+      "warning": "Per-worker communication totals refer to collected events only; not inferred peer traffic"
+    }
+  ],
+  "pair_traffic_bytes": null,
+  "observed_nccl_channel_edges": [
+    {
+      "src_rank": 0,
+      "dst_rank": 1,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-5.nancy.grid5000.fr",
+      "dst_node": "graffiti-7.nancy.grid5000.fr",
+      "occurrences": 4,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 0,
+      "dst_rank": 2,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-5.nancy.grid5000.fr",
+      "dst_node": "graffiti-8.nancy.grid5000.fr",
+      "occurrences": 2,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 1,
+      "dst_rank": 0,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-7.nancy.grid5000.fr",
+      "dst_node": "graffiti-5.nancy.grid5000.fr",
+      "occurrences": 2,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 1,
+      "dst_rank": 2,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-7.nancy.grid5000.fr",
+      "dst_node": "graffiti-8.nancy.grid5000.fr",
+      "occurrences": 4,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 1,
+      "dst_rank": 3,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-7.nancy.grid5000.fr",
+      "dst_node": "graffiti-9.nancy.grid5000.fr",
+      "occurrences": 2,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 2,
+      "dst_rank": 0,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-8.nancy.grid5000.fr",
+      "dst_node": "graffiti-5.nancy.grid5000.fr",
+      "occurrences": 2,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 2,
+      "dst_rank": 1,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-8.nancy.grid5000.fr",
+      "dst_node": "graffiti-7.nancy.grid5000.fr",
+      "occurrences": 4,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 2,
+      "dst_rank": 3,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-8.nancy.grid5000.fr",
+      "dst_node": "graffiti-9.nancy.grid5000.fr",
+      "occurrences": 4,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 3,
+      "dst_rank": 0,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-9.nancy.grid5000.fr",
+      "dst_node": "graffiti-5.nancy.grid5000.fr",
+      "occurrences": 4,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 3,
+      "dst_rank": 1,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-9.nancy.grid5000.fr",
+      "dst_node": "graffiti-7.nancy.grid5000.fr",
+      "occurrences": 2,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    },
+    {
+      "src_rank": 3,
+      "dst_rank": 2,
+      "transport": "NET/Socket/0",
+      "src_node": "graffiti-9.nancy.grid5000.fr",
+      "dst_node": "graffiti-8.nancy.grid5000.fr",
+      "occurrences": 2,
+      "bytes": null,
+      "note": "NCCL logged channel route; occurrences are log lines, not actual transfers"
+    }
+  ],
+  "concurrent_flows_note": "Max concurrent host futures is NOT simultaneous physical flows; NCCL tree/ring internal flows need NCCL transport instrumentation"
+}

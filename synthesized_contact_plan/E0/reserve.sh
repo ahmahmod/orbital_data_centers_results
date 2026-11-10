@@ -1,0 +1,1 @@
+oarsub -I -l "gpu=1,walltime=2:00:00" -q besteffort

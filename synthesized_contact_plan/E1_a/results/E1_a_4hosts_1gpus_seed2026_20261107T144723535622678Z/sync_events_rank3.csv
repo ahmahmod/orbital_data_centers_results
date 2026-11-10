@@ -1,0 +1,303 @@
+rank,host,epoch,step,event,unix_time_s,duration_s,world_size,note
+3,grue-3.nancy.grid5000.fr,0,0,initial_barrier,1794062885.84222,0.0566486,4,
+3,grue-3.nancy.grid5000.fr,1,352,pre_validation_barrier,1794062921.608378,0.0013846,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,1,352,post_validation_barrier,1794062922.685833,1.0774102,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,1,352,stop_decision_broadcast,1794062922.68609,0.0001391,4,
+3,grue-3.nancy.grid5000.fr,2,704,pre_validation_barrier,1794062957.967586,0.0006184,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,2,704,post_validation_barrier,1794062958.750123,0.7824762,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,2,704,stop_decision_broadcast,1794062958.750353,0.000112,4,
+3,grue-3.nancy.grid5000.fr,3,1056,pre_validation_barrier,1794062992.744702,0.0005907,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,3,1056,post_validation_barrier,1794062993.41403,0.6692662,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,3,1056,stop_decision_broadcast,1794062993.414251,0.0001089,4,
+3,grue-3.nancy.grid5000.fr,4,1408,pre_validation_barrier,1794063026.352325,0.0005783,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,4,1408,post_validation_barrier,1794063026.998976,0.6466128,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,4,1408,stop_decision_broadcast,1794063026.999171,0.0001008,4,
+3,grue-3.nancy.grid5000.fr,5,1760,pre_validation_barrier,1794063060.297661,0.0009679,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,5,1760,post_validation_barrier,1794063060.969091,0.671402,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,5,1760,stop_decision_broadcast,1794063060.969292,0.0001042,4,
+3,grue-3.nancy.grid5000.fr,6,2112,pre_validation_barrier,1794063093.881668,0.0006813,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,6,2112,post_validation_barrier,1794063094.603953,0.7222465,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,6,2112,stop_decision_broadcast,1794063094.604155,0.000102,4,
+3,grue-3.nancy.grid5000.fr,7,2464,pre_validation_barrier,1794063128.25495,0.0008505,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,7,2464,post_validation_barrier,1794063128.862966,0.6079798,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,7,2464,stop_decision_broadcast,1794063128.863162,9.94e-05,4,
+3,grue-3.nancy.grid5000.fr,8,2816,pre_validation_barrier,1794063161.675921,0.0005905,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,8,2816,post_validation_barrier,1794063162.310491,0.6345135,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,8,2816,stop_decision_broadcast,1794063162.310704,0.0001101,4,
+3,grue-3.nancy.grid5000.fr,9,3168,pre_validation_barrier,1794063195.649184,0.0006204,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,9,3168,post_validation_barrier,1794063196.287421,0.6381771,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,9,3168,stop_decision_broadcast,1794063196.287645,0.0001105,4,
+3,grue-3.nancy.grid5000.fr,10,3520,pre_validation_barrier,1794063229.452709,0.0005712,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,10,3520,post_validation_barrier,1794063230.078635,0.6258987,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,10,3520,stop_decision_broadcast,1794063230.078839,0.0001015,4,
+3,grue-3.nancy.grid5000.fr,11,3872,pre_validation_barrier,1794063263.005272,0.0005266,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,11,3872,post_validation_barrier,1794063263.690027,0.6847149,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,11,3872,stop_decision_broadcast,1794063263.690234,0.0001058,4,
+3,grue-3.nancy.grid5000.fr,12,4224,pre_validation_barrier,1794063298.628749,0.0014006,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,12,4224,post_validation_barrier,1794063299.267515,0.6387232,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,12,4224,stop_decision_broadcast,1794063299.267717,0.0001019,4,
+3,grue-3.nancy.grid5000.fr,13,4576,pre_validation_barrier,1794063334.495883,0.0005805,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,13,4576,post_validation_barrier,1794063335.1185,0.6225584,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,13,4576,stop_decision_broadcast,1794063335.118702,0.0001006,4,
+3,grue-3.nancy.grid5000.fr,14,4928,pre_validation_barrier,1794063368.826614,0.0008037,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,14,4928,post_validation_barrier,1794063369.610667,0.7840159,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,14,4928,stop_decision_broadcast,1794063369.610867,0.0001002,4,
+3,grue-3.nancy.grid5000.fr,15,5280,pre_validation_barrier,1794063403.022433,0.0005577,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,15,5280,post_validation_barrier,1794063403.706278,0.6838168,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,15,5280,stop_decision_broadcast,1794063403.706472,0.0001002,4,
+3,grue-3.nancy.grid5000.fr,16,5632,pre_validation_barrier,1794063436.232738,0.0006343,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,16,5632,post_validation_barrier,1794063436.877005,0.6442278,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,16,5632,stop_decision_broadcast,1794063436.877198,9.87e-05,4,
+3,grue-3.nancy.grid5000.fr,17,5984,pre_validation_barrier,1794063470.17317,0.0005481,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,17,5984,post_validation_barrier,1794063470.801632,0.6284238,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,17,5984,stop_decision_broadcast,1794063470.801833,0.0001078,4,
+3,grue-3.nancy.grid5000.fr,18,6336,pre_validation_barrier,1794063504.594507,0.0005421,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,18,6336,post_validation_barrier,1794063505.328382,0.7338169,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,18,6336,stop_decision_broadcast,1794063505.32859,0.0001061,4,
+3,grue-3.nancy.grid5000.fr,19,6688,pre_validation_barrier,1794063537.963982,0.0005597,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,19,6688,post_validation_barrier,1794063538.660445,0.696423,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,19,6688,stop_decision_broadcast,1794063538.660651,0.0001053,4,
+3,grue-3.nancy.grid5000.fr,20,7040,pre_validation_barrier,1794063571.96175,0.0005537,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,20,7040,post_validation_barrier,1794063572.592339,0.6305617,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,20,7040,stop_decision_broadcast,1794063572.592534,0.0001004,4,
+3,grue-3.nancy.grid5000.fr,21,7392,pre_validation_barrier,1794063607.622537,0.000533,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,21,7392,post_validation_barrier,1794063608.310609,0.6880138,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,21,7392,stop_decision_broadcast,1794063608.31081,0.0001002,4,
+3,grue-3.nancy.grid5000.fr,22,7744,pre_validation_barrier,1794063643.312253,0.000642,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,22,7744,post_validation_barrier,1794063643.946468,0.6341564,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,22,7744,stop_decision_broadcast,1794063643.946672,0.0001098,4,
+3,grue-3.nancy.grid5000.fr,23,8096,pre_validation_barrier,1794063678.08374,0.0020054,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,23,8096,post_validation_barrier,1794063678.69227,0.6084798,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,23,8096,stop_decision_broadcast,1794063678.692459,9.8e-05,4,
+3,grue-3.nancy.grid5000.fr,24,8448,pre_validation_barrier,1794063711.941448,0.0005189,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,24,8448,post_validation_barrier,1794063712.626369,0.6848822,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,24,8448,stop_decision_broadcast,1794063712.62657,0.0001011,4,
+3,grue-3.nancy.grid5000.fr,25,8800,pre_validation_barrier,1794063746.021034,0.0008425,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,25,8800,post_validation_barrier,1794063746.631858,0.6107929,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,25,8800,stop_decision_broadcast,1794063746.632057,9.84e-05,4,
+3,grue-3.nancy.grid5000.fr,26,9152,pre_validation_barrier,1794063780.665394,0.000655,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,26,9152,post_validation_barrier,1794063781.38668,0.7212308,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,26,9152,stop_decision_broadcast,1794063781.386883,0.0001017,4,
+3,grue-3.nancy.grid5000.fr,27,9504,pre_validation_barrier,1794063815.619619,0.0008381,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,27,9504,post_validation_barrier,1794063816.297164,0.6774842,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,27,9504,stop_decision_broadcast,1794063816.297374,0.0001006,4,
+3,grue-3.nancy.grid5000.fr,28,9856,pre_validation_barrier,1794063851.379564,0.0005993,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,28,9856,post_validation_barrier,1794063852.177856,0.7982508,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,28,9856,stop_decision_broadcast,1794063852.178061,0.000102,4,
+3,grue-3.nancy.grid5000.fr,29,10208,pre_validation_barrier,1794063885.941243,0.0005763,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,29,10208,post_validation_barrier,1794063886.556062,0.6147804,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,29,10208,stop_decision_broadcast,1794063886.556266,0.0001014,4,
+3,grue-3.nancy.grid5000.fr,30,10560,pre_validation_barrier,1794063919.907819,0.0005238,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,30,10560,post_validation_barrier,1794063920.532654,0.6248023,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,30,10560,stop_decision_broadcast,1794063920.532866,0.0001117,4,
+3,grue-3.nancy.grid5000.fr,31,10912,pre_validation_barrier,1794063954.675647,0.000533,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,31,10912,post_validation_barrier,1794063955.306186,0.6304803,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,31,10912,stop_decision_broadcast,1794063955.306388,0.0001014,4,
+3,grue-3.nancy.grid5000.fr,32,11264,pre_validation_barrier,1794063988.160901,0.000569,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,32,11264,post_validation_barrier,1794063988.843474,0.6825149,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,32,11264,stop_decision_broadcast,1794063988.843675,0.0001063,4,
+3,grue-3.nancy.grid5000.fr,33,11616,pre_validation_barrier,1794064023.408147,0.0006193,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,33,11616,post_validation_barrier,1794064024.033359,0.6251529,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,33,11616,stop_decision_broadcast,1794064024.033567,0.0001016,4,
+3,grue-3.nancy.grid5000.fr,34,11968,pre_validation_barrier,1794064057.82367,0.0005139,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,34,11968,post_validation_barrier,1794064058.401553,0.5778247,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,34,11968,stop_decision_broadcast,1794064058.401767,0.0001019,4,
+3,grue-3.nancy.grid5000.fr,35,12320,pre_validation_barrier,1794064090.943449,0.0006523,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,35,12320,post_validation_barrier,1794064091.536994,0.5935106,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,35,12320,stop_decision_broadcast,1794064091.537226,0.0001145,4,
+3,grue-3.nancy.grid5000.fr,36,12672,pre_validation_barrier,1794064124.648461,0.0010493,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,36,12672,post_validation_barrier,1794064125.272499,0.6239989,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,36,12672,stop_decision_broadcast,1794064125.272701,0.0001017,4,
+3,grue-3.nancy.grid5000.fr,37,13024,pre_validation_barrier,1794064159.548915,0.0006183,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,37,13024,post_validation_barrier,1794064160.167039,0.6180827,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,37,13024,stop_decision_broadcast,1794064160.167256,0.0001061,4,
+3,grue-3.nancy.grid5000.fr,38,13376,pre_validation_barrier,1794064194.442447,0.0005694,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,38,13376,post_validation_barrier,1794064195.093727,0.6512396,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,38,13376,stop_decision_broadcast,1794064195.093949,0.0001095,4,
+3,grue-3.nancy.grid5000.fr,39,13728,pre_validation_barrier,1794064229.463191,0.0005861,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,39,13728,post_validation_barrier,1794064230.086411,0.6231777,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,39,13728,stop_decision_broadcast,1794064230.086605,9.97e-05,4,
+3,grue-3.nancy.grid5000.fr,40,14080,pre_validation_barrier,1794064263.125383,0.0006337,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,40,14080,post_validation_barrier,1794064263.737276,0.611865,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,40,14080,stop_decision_broadcast,1794064263.737472,0.0001013,4,
+3,grue-3.nancy.grid5000.fr,41,14432,pre_validation_barrier,1794064296.305305,0.0005717,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,41,14432,post_validation_barrier,1794064296.969301,0.6639396,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,41,14432,stop_decision_broadcast,1794064296.969496,0.0001001,4,
+3,grue-3.nancy.grid5000.fr,42,14784,pre_validation_barrier,1794064330.222403,0.0005102,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,42,14784,post_validation_barrier,1794064330.837335,0.6148914,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,42,14784,stop_decision_broadcast,1794064330.83753,0.0001005,4,
+3,grue-3.nancy.grid5000.fr,43,15136,pre_validation_barrier,1794064365.274691,0.0005517,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,43,15136,post_validation_barrier,1794064365.884761,0.6100265,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,43,15136,stop_decision_broadcast,1794064365.885,0.0001283,4,
+3,grue-3.nancy.grid5000.fr,44,15488,pre_validation_barrier,1794064399.155811,0.0005397,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,44,15488,post_validation_barrier,1794064399.76597,0.6101108,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,44,15488,stop_decision_broadcast,1794064399.766188,0.0001126,4,
+3,grue-3.nancy.grid5000.fr,45,15840,pre_validation_barrier,1794064432.772048,0.0007788,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,45,15840,post_validation_barrier,1794064433.416642,0.6445657,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,45,15840,stop_decision_broadcast,1794064433.417075,0.0002232,4,
+3,grue-3.nancy.grid5000.fr,46,16192,pre_validation_barrier,1794064469.265567,0.0006505,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,46,16192,post_validation_barrier,1794064469.898357,0.6327509,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,46,16192,stop_decision_broadcast,1794064469.898602,0.0001151,4,
+3,grue-3.nancy.grid5000.fr,47,16544,pre_validation_barrier,1794064503.984953,0.0006282,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,47,16544,post_validation_barrier,1794064504.661328,0.6763267,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,47,16544,stop_decision_broadcast,1794064504.661733,0.0002125,4,
+3,grue-3.nancy.grid5000.fr,48,16896,pre_validation_barrier,1794064537.934499,0.0005506,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,48,16896,post_validation_barrier,1794064538.614225,0.679683,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,48,16896,stop_decision_broadcast,1794064538.61446,0.0001131,4,
+3,grue-3.nancy.grid5000.fr,49,17248,pre_validation_barrier,1794064570.671441,0.0018254,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,49,17248,post_validation_barrier,1794064571.340568,0.6690858,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,49,17248,stop_decision_broadcast,1794064571.340776,0.0001083,4,
+3,grue-3.nancy.grid5000.fr,50,17600,pre_validation_barrier,1794064605.089834,0.0004648,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,50,17600,post_validation_barrier,1794064605.810989,0.7211273,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,50,17600,stop_decision_broadcast,1794064605.811383,0.0002056,4,
+3,grue-3.nancy.grid5000.fr,51,17952,pre_validation_barrier,1794064641.520931,0.0005684,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,51,17952,post_validation_barrier,1794064642.198976,0.6780043,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,51,17952,stop_decision_broadcast,1794064642.19938,0.0002108,4,
+3,grue-3.nancy.grid5000.fr,52,18304,pre_validation_barrier,1794064675.824053,0.0005132,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,52,18304,post_validation_barrier,1794064676.489118,0.6650255,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,52,18304,stop_decision_broadcast,1794064676.489315,0.0001039,4,
+3,grue-3.nancy.grid5000.fr,53,18656,pre_validation_barrier,1794064710.982091,0.0005281,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,53,18656,post_validation_barrier,1794064711.657564,0.6754283,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,53,18656,stop_decision_broadcast,1794064711.657761,0.0001012,4,
+3,grue-3.nancy.grid5000.fr,54,19008,pre_validation_barrier,1794064744.008654,0.0005095,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,54,19008,post_validation_barrier,1794064744.661683,0.6529805,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,54,19008,stop_decision_broadcast,1794064744.661897,0.0001116,4,
+3,grue-3.nancy.grid5000.fr,55,19360,pre_validation_barrier,1794064778.068858,0.0009266,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,55,19360,post_validation_barrier,1794064778.705407,0.6365156,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,55,19360,stop_decision_broadcast,1794064778.705648,0.0001151,4,
+3,grue-3.nancy.grid5000.fr,56,19712,pre_validation_barrier,1794064812.281084,0.0005191,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,56,19712,post_validation_barrier,1794064813.046167,0.7650418,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,56,19712,stop_decision_broadcast,1794064813.046362,0.0001012,4,
+3,grue-3.nancy.grid5000.fr,57,20064,pre_validation_barrier,1794064846.765373,0.0005518,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,57,20064,post_validation_barrier,1794064847.443681,0.6782715,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,57,20064,stop_decision_broadcast,1794064847.444058,0.0001956,4,
+3,grue-3.nancy.grid5000.fr,58,20416,pre_validation_barrier,1794064880.624834,0.0005298,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,58,20416,post_validation_barrier,1794064881.229963,0.6050923,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,58,20416,stop_decision_broadcast,1794064881.230155,9.87e-05,4,
+3,grue-3.nancy.grid5000.fr,59,20768,pre_validation_barrier,1794064915.153294,0.0005951,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,59,20768,post_validation_barrier,1794064915.769643,0.6163095,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,59,20768,stop_decision_broadcast,1794064915.770043,0.0002114,4,
+3,grue-3.nancy.grid5000.fr,60,21120,pre_validation_barrier,1794064949.930226,0.0005899,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,60,21120,post_validation_barrier,1794064950.599789,0.669536,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,60,21120,stop_decision_broadcast,1794064950.599985,0.0001006,4,
+3,grue-3.nancy.grid5000.fr,61,21472,pre_validation_barrier,1794064983.225236,0.0011709,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,61,21472,post_validation_barrier,1794064983.829909,0.6046363,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,61,21472,stop_decision_broadcast,1794064983.830164,0.0001252,4,
+3,grue-3.nancy.grid5000.fr,62,21824,pre_validation_barrier,1794065018.667288,0.0005906,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,62,21824,post_validation_barrier,1794065019.296685,0.6293362,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,62,21824,stop_decision_broadcast,1794065019.297084,0.0002136,4,
+3,grue-3.nancy.grid5000.fr,63,22176,pre_validation_barrier,1794065053.747678,0.0005883,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,63,22176,post_validation_barrier,1794065054.35811,0.610391,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,63,22176,stop_decision_broadcast,1794065054.358492,0.0001985,4,
+3,grue-3.nancy.grid5000.fr,64,22528,pre_validation_barrier,1794065087.648146,0.0005427,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,64,22528,post_validation_barrier,1794065088.29161,0.6434239,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,64,22528,stop_decision_broadcast,1794065088.292002,0.0002077,4,
+3,grue-3.nancy.grid5000.fr,65,22880,pre_validation_barrier,1794065122.59351,0.0005996,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,65,22880,post_validation_barrier,1794065123.235136,0.6415997,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,65,22880,stop_decision_broadcast,1794065123.235366,0.0001124,4,
+3,grue-3.nancy.grid5000.fr,66,23232,pre_validation_barrier,1794065157.858653,0.004068,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,66,23232,post_validation_barrier,1794065158.550447,0.6917543,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,66,23232,stop_decision_broadcast,1794065158.550846,0.000212,4,
+3,grue-3.nancy.grid5000.fr,67,23584,pre_validation_barrier,1794065192.229693,0.0006712,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,67,23584,post_validation_barrier,1794065192.889874,0.6601201,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,67,23584,stop_decision_broadcast,1794065192.890102,0.0001167,4,
+3,grue-3.nancy.grid5000.fr,68,23936,pre_validation_barrier,1794065226.66735,0.0006084,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,68,23936,post_validation_barrier,1794065227.318416,0.6509999,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,68,23936,stop_decision_broadcast,1794065227.318636,0.0001132,4,
+3,grue-3.nancy.grid5000.fr,69,24288,pre_validation_barrier,1794065262.363137,0.0005352,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,69,24288,post_validation_barrier,1794065262.977422,0.614225,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,69,24288,stop_decision_broadcast,1794065262.977651,0.0001095,4,
+3,grue-3.nancy.grid5000.fr,70,24640,pre_validation_barrier,1794065297.32375,0.0005829,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,70,24640,post_validation_barrier,1794065297.948647,0.6248702,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,70,24640,stop_decision_broadcast,1794065297.949036,0.0002057,4,
+3,grue-3.nancy.grid5000.fr,71,24992,pre_validation_barrier,1794065333.49764,0.0005831,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,71,24992,post_validation_barrier,1794065334.119192,0.6215137,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,71,24992,stop_decision_broadcast,1794065334.119586,0.0002048,4,
+3,grue-3.nancy.grid5000.fr,72,25344,pre_validation_barrier,1794065366.734004,0.0005293,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,72,25344,post_validation_barrier,1794065367.382261,0.6482204,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,72,25344,stop_decision_broadcast,1794065367.382462,0.0001018,4,
+3,grue-3.nancy.grid5000.fr,73,25696,pre_validation_barrier,1794065400.239372,0.0016983,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,73,25696,post_validation_barrier,1794065400.882082,0.6426715,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,73,25696,stop_decision_broadcast,1794065400.88247,0.0002037,4,
+3,grue-3.nancy.grid5000.fr,74,26048,pre_validation_barrier,1794065436.157052,0.00173,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,74,26048,post_validation_barrier,1794065436.73063,0.5735381,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,74,26048,stop_decision_broadcast,1794065436.730821,9.87e-05,4,
+3,grue-3.nancy.grid5000.fr,75,26400,pre_validation_barrier,1794065472.059778,0.0006228,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,75,26400,post_validation_barrier,1794065472.662681,0.6028749,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,75,26400,stop_decision_broadcast,1794065472.662891,0.0001117,4,
+3,grue-3.nancy.grid5000.fr,76,26752,pre_validation_barrier,1794065507.287625,0.0005467,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,76,26752,post_validation_barrier,1794065507.968478,0.6807946,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,76,26752,stop_decision_broadcast,1794065507.968674,0.0001012,4,
+3,grue-3.nancy.grid5000.fr,77,27104,pre_validation_barrier,1794065543.446479,0.0006102,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,77,27104,post_validation_barrier,1794065544.185887,0.7393494,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,77,27104,stop_decision_broadcast,1794065544.186085,0.0001005,4,
+3,grue-3.nancy.grid5000.fr,78,27456,pre_validation_barrier,1794065579.419661,0.0006802,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,78,27456,post_validation_barrier,1794065580.079575,0.6598565,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,78,27456,stop_decision_broadcast,1794065580.079774,0.0001027,4,
+3,grue-3.nancy.grid5000.fr,79,27808,pre_validation_barrier,1794065612.089519,0.0005027,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,79,27808,post_validation_barrier,1794065612.731561,0.641995,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,79,27808,stop_decision_broadcast,1794065612.731965,0.0002044,4,
+3,grue-3.nancy.grid5000.fr,80,28160,pre_validation_barrier,1794065645.380338,0.0012867,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,80,28160,post_validation_barrier,1794065646.072447,0.6920781,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,80,28160,stop_decision_broadcast,1794065646.07268,0.0001125,4,
+3,grue-3.nancy.grid5000.fr,81,28512,pre_validation_barrier,1794065680.471716,0.0005627,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,81,28512,post_validation_barrier,1794065681.105062,0.6333078,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,81,28512,stop_decision_broadcast,1794065681.105317,0.0001214,4,
+3,grue-3.nancy.grid5000.fr,82,28864,pre_validation_barrier,1794065715.193805,0.0006095,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,82,28864,post_validation_barrier,1794065715.97012,0.7762752,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,82,28864,stop_decision_broadcast,1794065715.970514,0.0002039,4,
+3,grue-3.nancy.grid5000.fr,83,29216,pre_validation_barrier,1794065749.829712,0.0008871,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,83,29216,post_validation_barrier,1794065750.491383,0.6616333,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,83,29216,stop_decision_broadcast,1794065750.491584,0.0001025,4,
+3,grue-3.nancy.grid5000.fr,84,29568,pre_validation_barrier,1794065783.561352,0.0005923,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,84,29568,post_validation_barrier,1794065784.175065,0.613673,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,84,29568,stop_decision_broadcast,1794065784.175441,0.0001928,4,
+3,grue-3.nancy.grid5000.fr,85,29920,pre_validation_barrier,1794065818.913641,0.0004856,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,85,29920,post_validation_barrier,1794065819.529639,0.6159698,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,85,29920,stop_decision_broadcast,1794065819.529853,0.0001052,4,
+3,grue-3.nancy.grid5000.fr,86,30272,pre_validation_barrier,1794065852.426379,0.0012713,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,86,30272,post_validation_barrier,1794065853.06154,0.6351235,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,86,30272,stop_decision_broadcast,1794065853.061774,0.0001137,4,
+3,grue-3.nancy.grid5000.fr,87,30624,pre_validation_barrier,1794065885.078437,0.0011116,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,87,30624,post_validation_barrier,1794065885.690856,0.6123745,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,87,30624,stop_decision_broadcast,1794065885.691051,9.97e-05,4,
+3,grue-3.nancy.grid5000.fr,88,30976,pre_validation_barrier,1794065919.365287,0.0006519,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,88,30976,post_validation_barrier,1794065920.033665,0.6683167,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,88,30976,stop_decision_broadcast,1794065920.033862,0.0001012,4,
+3,grue-3.nancy.grid5000.fr,89,31328,pre_validation_barrier,1794065952.554472,0.0007324,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,89,31328,post_validation_barrier,1794065953.151968,0.597456,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,89,31328,stop_decision_broadcast,1794065953.152161,9.93e-05,4,
+3,grue-3.nancy.grid5000.fr,90,31680,pre_validation_barrier,1794065987.083209,0.0005421,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,90,31680,post_validation_barrier,1794065987.743524,0.6602879,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,90,31680,stop_decision_broadcast,1794065987.743902,0.0001889,4,
+3,grue-3.nancy.grid5000.fr,91,32032,pre_validation_barrier,1794066021.630466,0.0006518,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,91,32032,post_validation_barrier,1794066022.322864,0.6923558,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,91,32032,stop_decision_broadcast,1794066022.323057,9.98e-05,4,
+3,grue-3.nancy.grid5000.fr,92,32384,pre_validation_barrier,1794066055.364741,0.0010071,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,92,32384,post_validation_barrier,1794066056.034751,0.6699684,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,92,32384,stop_decision_broadcast,1794066056.035139,0.0001989,4,
+3,grue-3.nancy.grid5000.fr,93,32736,pre_validation_barrier,1794066090.116417,0.0008023,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,93,32736,post_validation_barrier,1794066090.787487,0.6710303,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,93,32736,stop_decision_broadcast,1794066090.787733,0.0001173,4,
+3,grue-3.nancy.grid5000.fr,94,33088,pre_validation_barrier,1794066124.298659,0.0004916,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,94,33088,post_validation_barrier,1794066125.08197,0.7832467,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,94,33088,stop_decision_broadcast,1794066125.082364,0.0002063,4,
+3,grue-3.nancy.grid5000.fr,95,33440,pre_validation_barrier,1794066158.085237,0.0005885,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,95,33440,post_validation_barrier,1794066158.762633,0.6773687,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,95,33440,stop_decision_broadcast,1794066158.762883,0.0001196,4,
+3,grue-3.nancy.grid5000.fr,96,33792,pre_validation_barrier,1794066193.51671,0.0027807,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,96,33792,post_validation_barrier,1794066194.144772,0.6280054,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,96,33792,stop_decision_broadcast,1794066194.145021,0.0001229,4,
+3,grue-3.nancy.grid5000.fr,97,34144,pre_validation_barrier,1794066228.454693,0.0006223,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,97,34144,post_validation_barrier,1794066229.110738,0.65599,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,97,34144,stop_decision_broadcast,1794066229.111131,0.0002047,4,
+3,grue-3.nancy.grid5000.fr,98,34496,pre_validation_barrier,1794066262.327394,0.0006288,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,98,34496,post_validation_barrier,1794066262.945836,0.6183998,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,98,34496,stop_decision_broadcast,1794066262.946229,0.0002045,4,
+3,grue-3.nancy.grid5000.fr,99,34848,pre_validation_barrier,1794066298.015814,0.0006297,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,99,34848,post_validation_barrier,1794066298.578402,0.5625493,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,99,34848,stop_decision_broadcast,1794066298.578615,0.0001062,4,
+3,grue-3.nancy.grid5000.fr,100,35200,pre_validation_barrier,1794066331.003891,0.0005315,4,ranks 1..N wait until all completed their epoch
+3,grue-3.nancy.grid5000.fr,100,35200,post_validation_barrier,1794066331.60143,0.597511,4,includes rank0 evaluation and checkpoint wait
+3,grue-3.nancy.grid5000.fr,100,35200,stop_decision_broadcast,1794066331.601636,0.0001049,4,
+3,grue-3.nancy.grid5000.fr,100,35200,final_barrier,1794066331.60332,0.0015778,4,
