@@ -1,0 +1,13 @@
+{
+  "experiment": "E1_b",
+  "method": "diloco",
+  "events": {
+    "outer_allreduce": 17600
+  },
+  "directional_p2p": [],
+  "completed_p2p_logical_bytes": 0,
+  "outstanding_unconfirmed": 0,
+  "p2p_note": "Only completed sends counted. Messages are full model snapshots, not gradient all-reduce.",
+  "diloco_note": "DiLoCo outer synchronization is an all-reduce; exact per-rank network paths/physical bytes not inferred.",
+  "transport_note": "Use E1_a_new TCP socket and NIC analyses for observed transport (with sampling limitations)."
+}
