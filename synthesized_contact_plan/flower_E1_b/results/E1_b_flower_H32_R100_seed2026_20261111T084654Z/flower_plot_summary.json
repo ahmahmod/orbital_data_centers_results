@@ -1,0 +1,9 @@
+{
+  "round_count": 100,
+  "plots": [
+    "40_flower_global_accuracy.png",
+    "41_flower_round_communication.png",
+    "42_flower_client_train_time.png",
+    "43_flower_aggregator_time.png"
+  ]
+}

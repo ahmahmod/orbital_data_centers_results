@@ -1,0 +1,15 @@
+{
+  "experiment": "E1_b",
+  "method": "flower_fedavg",
+  "status": "ok",
+  "world_size": 4,
+  "completed_rounds": 500,
+  "requested_rounds": 500,
+  "wall_training_s": 2454.6656,
+  "best_validation_accuracy": 0.5314,
+  "target_accuracy": 0.7,
+  "target_first_s": null,
+  "global_model_validation": "FedAvg global model, evaluated independently by all four clients",
+  "training_stop": "fixed Flower round count; max_seconds is advisory only",
+  "global_batch_size": 128
+}

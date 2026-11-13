@@ -1,0 +1,9 @@
+{
+  "rank": 2,
+  "node": "graffiti-8.nancy.grid5000.fr",
+  "ip": "172.16.64.8",
+  "pid": 37857,
+  "device": "cuda:0",
+  "data_samples": 45000,
+  "dataset": "E1_a_new stratified holdout, local distributed partition"
+}

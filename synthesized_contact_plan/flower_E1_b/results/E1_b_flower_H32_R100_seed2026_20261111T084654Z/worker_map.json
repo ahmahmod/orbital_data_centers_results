@@ -1,0 +1,28 @@
+{
+  "workers": [
+    {
+      "rank": 0,
+      "node": "graffiti-5.nancy.grid5000.fr",
+      "ip": "172.16.64.5",
+      "pid": 1716577
+    },
+    {
+      "rank": 1,
+      "node": "graffiti-7.nancy.grid5000.fr",
+      "ip": "172.16.64.7",
+      "pid": 204167
+    },
+    {
+      "rank": 2,
+      "node": "graffiti-8.nancy.grid5000.fr",
+      "ip": "172.16.64.8",
+      "pid": 124896
+    },
+    {
+      "rank": 3,
+      "node": "graffiti-9.nancy.grid5000.fr",
+      "ip": "172.16.64.9",
+      "pid": 239015
+    }
+  ]
+}

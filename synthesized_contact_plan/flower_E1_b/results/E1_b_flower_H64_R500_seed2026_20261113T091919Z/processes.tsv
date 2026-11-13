@@ -1,0 +1,6 @@
+kind	rank	host	local_oarsh_pid	remote_pid_file
+server	-1	graffiti-5.nancy.grid5000.fr	2879575	/home/amahmod/experiments_grid/synthesized_contact_plan/flower_E1_b/results/E1_b_flower_H64_R500_seed2026_20261113T091919Z/server_remote.pid
+client	0	graffiti-5.nancy.grid5000.fr	2880221	/home/amahmod/experiments_grid/synthesized_contact_plan/flower_E1_b/results/E1_b_flower_H64_R500_seed2026_20261113T091919Z/worker_0_remote.pid
+client	1	graffiti-7.nancy.grid5000.fr	2880222	/home/amahmod/experiments_grid/synthesized_contact_plan/flower_E1_b/results/E1_b_flower_H64_R500_seed2026_20261113T091919Z/worker_1_remote.pid
+client	2	graffiti-8.nancy.grid5000.fr	2880223	/home/amahmod/experiments_grid/synthesized_contact_plan/flower_E1_b/results/E1_b_flower_H64_R500_seed2026_20261113T091919Z/worker_2_remote.pid
+client	3	graffiti-9.nancy.grid5000.fr	2880224	/home/amahmod/experiments_grid/synthesized_contact_plan/flower_E1_b/results/E1_b_flower_H64_R500_seed2026_20261113T091919Z/worker_3_remote.pid

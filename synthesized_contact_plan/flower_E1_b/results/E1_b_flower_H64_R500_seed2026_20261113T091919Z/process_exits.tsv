@@ -1,0 +1,6 @@
+timestamp_utc	kind	rank	local_pid	exit_code
+2026-11-13T10:12:20Z	server	-1	2879575	0
+2026-11-13T10:12:22Z	client	0	2880221	0
+2026-11-13T10:12:22Z	client	1	2880222	0
+2026-11-13T10:12:22Z	client	2	2880223	0
+2026-11-13T10:12:22Z	client	3	2880224	0
