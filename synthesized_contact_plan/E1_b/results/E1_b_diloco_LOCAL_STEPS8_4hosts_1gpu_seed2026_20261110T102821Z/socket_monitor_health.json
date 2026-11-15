@@ -4,38 +4,38 @@
   "hosts": [
     {
       "host": "graffiti-5",
-      "samples": 8389,
+      "samples": 10448,
       "errors": 0,
-      "owned_socket_samples": 92279,
-      "connections_seen_total": 179085,
-      "map_available_samples": 8389,
+      "owned_socket_samples": 114928,
+      "connections_seen_total": 298663,
+      "map_available_samples": 10448,
       "finished": true
     },
     {
       "host": "graffiti-7",
-      "samples": 8476,
+      "samples": 10543,
       "errors": 0,
-      "owned_socket_samples": 111431,
-      "connections_seen_total": 146610,
-      "map_available_samples": 8476,
+      "owned_socket_samples": 137059,
+      "connections_seen_total": 182521,
+      "map_available_samples": 10543,
       "finished": true
     },
     {
       "host": "graffiti-8",
-      "samples": 8476,
+      "samples": 10499,
       "errors": 0,
-      "owned_socket_samples": 118664,
-      "connections_seen_total": 146365,
-      "map_available_samples": 8476,
+      "owned_socket_samples": 146986,
+      "connections_seen_total": 181514,
+      "map_available_samples": 10499,
       "finished": true
     },
     {
       "host": "graffiti-9",
-      "samples": 8444,
+      "samples": 10506,
       "errors": 0,
-      "owned_socket_samples": 92884,
-      "connections_seen_total": 129454,
-      "map_available_samples": 8444,
+      "owned_socket_samples": 115566,
+      "connections_seen_total": 249263,
+      "map_available_samples": 10506,
       "finished": true
     }
   ],

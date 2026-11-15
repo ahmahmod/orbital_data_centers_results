@@ -2,7 +2,7 @@
   "experiment": "E1_b",
   "method": "diloco",
   "events": {
-    "outer_allreduce": 17600
+    "outer_allreduce": 8800
   },
   "directional_p2p": [],
   "completed_p2p_logical_bytes": 0,
