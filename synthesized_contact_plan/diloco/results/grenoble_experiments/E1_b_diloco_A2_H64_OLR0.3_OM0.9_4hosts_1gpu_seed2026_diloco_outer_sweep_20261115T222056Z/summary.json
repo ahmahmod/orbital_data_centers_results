@@ -1,0 +1,31 @@
+{
+  "experiment": "E1_b",
+  "method": "diloco",
+  "status": "ok",
+  "reason": "epochs_completed",
+  "world_size": 4,
+  "completed_epochs": 100,
+  "steps_per_worker": 35200,
+  "global_samples_approx": 4500000,
+  "wall_training_s": 1364.8139,
+  "best_validation_accuracy_rank0": 0.7472,
+  "mean_accuracy_target_first_s": 1158.4064432870002,
+  "all_workers_target_first_s": 1158.4064432870002,
+  "target_accuracy": 0.7,
+  "latest_validation_rank0": {
+    "experiment": "E1_b",
+    "epoch": 100,
+    "step": 35200,
+    "global_samples_approx": 4500000,
+    "unix_time_s": 1794784381.364933,
+    "elapsed_s": 1362.623233,
+    "val_loss": 1.0607517,
+    "val_accuracy": 0.7472,
+    "val_samples": 5000,
+    "val_s": 0.365406,
+    "lr": 0.0001,
+    "best_val_accuracy": 0.7472,
+    "cumulative_samples_per_s": 3302.454
+  },
+  "validation_definition": "Mean of per-rank local-model accuracies; not a global model"
+}

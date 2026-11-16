@@ -1,0 +1,46 @@
+{
+  "expected_hosts": 4,
+  "observed_hosts": 4,
+  "hosts": [
+    {
+      "host": "vercors10-1",
+      "samples": 16385,
+      "errors": 0,
+      "owned_socket_samples": 180235,
+      "connections_seen_total": 332616,
+      "map_available_samples": 16385,
+      "finished": true
+    },
+    {
+      "host": "vercors10-2",
+      "samples": 16390,
+      "errors": 0,
+      "owned_socket_samples": 213070,
+      "connections_seen_total": 284576,
+      "map_available_samples": 16390,
+      "finished": true
+    },
+    {
+      "host": "vercors10-3",
+      "samples": 16390,
+      "errors": 0,
+      "owned_socket_samples": 213397,
+      "connections_seen_total": 284359,
+      "map_available_samples": 16390,
+      "finished": true
+    },
+    {
+      "host": "vercors2-2",
+      "samples": 15497,
+      "errors": 0,
+      "owned_socket_samples": 185964,
+      "connections_seen_total": 237463,
+      "map_available_samples": 15497,
+      "finished": true
+    }
+  ],
+  "monitor_completeness_ok": true,
+  "rank_socket_visibility_ok": true,
+  "directional_tcp_byte_intervals_observed": true,
+  "traffic_visibility_warning": "zero owner observations is not evidence of zero NCCL traffic; inspect ss -p permissions, transport, and worker mapping"
+}
