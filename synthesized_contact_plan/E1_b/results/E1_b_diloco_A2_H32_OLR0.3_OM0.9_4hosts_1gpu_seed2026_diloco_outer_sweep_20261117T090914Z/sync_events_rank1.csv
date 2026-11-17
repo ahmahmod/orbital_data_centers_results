@@ -1,0 +1,303 @@
+rank,host,epoch,step,event,unix_time_s,duration_s,world_size,note
+1,graffiti-11.nancy.grid5000.fr,0,0,initial_barrier,1794907420.601395,0.0016819,4,
+1,graffiti-11.nancy.grid5000.fr,1,352,pre_validation_barrier,1794907427.047293,0.0010803,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,1,352,post_validation_barrier,1794907428.895632,0.497543,4,
+1,graffiti-11.nancy.grid5000.fr,1,352,stop_decision_broadcast,1794907428.896231,0.0002188,4,
+1,graffiti-11.nancy.grid5000.fr,2,704,pre_validation_barrier,1794907434.580315,0.0007489,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,2,704,post_validation_barrier,1794907436.284527,0.5180017,4,
+1,graffiti-11.nancy.grid5000.fr,2,704,stop_decision_broadcast,1794907436.285038,0.000232,4,
+1,graffiti-11.nancy.grid5000.fr,3,1056,pre_validation_barrier,1794907442.055914,0.0007407,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,3,1056,post_validation_barrier,1794907443.797972,0.4773852,4,
+1,graffiti-11.nancy.grid5000.fr,3,1056,stop_decision_broadcast,1794907443.798425,0.0001994,4,
+1,graffiti-11.nancy.grid5000.fr,4,1408,pre_validation_barrier,1794907449.563001,0.0006827,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,4,1408,post_validation_barrier,1794907451.228171,0.4855429,4,
+1,graffiti-11.nancy.grid5000.fr,4,1408,stop_decision_broadcast,1794907451.228621,0.000219,4,
+1,graffiti-11.nancy.grid5000.fr,5,1760,pre_validation_barrier,1794907456.806505,0.0006711,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,5,1760,post_validation_barrier,1794907458.488711,0.4892749,4,
+1,graffiti-11.nancy.grid5000.fr,5,1760,stop_decision_broadcast,1794907458.489191,0.0002506,4,
+1,graffiti-11.nancy.grid5000.fr,6,2112,pre_validation_barrier,1794907464.660969,0.0007021,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,6,2112,post_validation_barrier,1794907466.374901,0.5239681,4,
+1,graffiti-11.nancy.grid5000.fr,6,2112,stop_decision_broadcast,1794907466.375271,0.0001738,4,
+1,graffiti-11.nancy.grid5000.fr,7,2464,pre_validation_barrier,1794907472.020277,0.0009418,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,7,2464,post_validation_barrier,1794907474.221078,0.5325896,4,
+1,graffiti-11.nancy.grid5000.fr,7,2464,stop_decision_broadcast,1794907474.221542,0.0002212,4,
+1,graffiti-11.nancy.grid5000.fr,8,2816,pre_validation_barrier,1794907479.861883,0.0017131,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,8,2816,post_validation_barrier,1794907481.538622,0.5008492,4,
+1,graffiti-11.nancy.grid5000.fr,8,2816,stop_decision_broadcast,1794907481.539054,0.0002081,4,
+1,graffiti-11.nancy.grid5000.fr,9,3168,pre_validation_barrier,1794907487.228141,0.0017448,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,9,3168,post_validation_barrier,1794907488.862331,0.4599758,4,
+1,graffiti-11.nancy.grid5000.fr,9,3168,stop_decision_broadcast,1794907488.862904,0.0002788,4,
+1,graffiti-11.nancy.grid5000.fr,10,3520,pre_validation_barrier,1794907494.703945,0.0012206,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,10,3520,post_validation_barrier,1794907496.83976,0.4994631,4,
+1,graffiti-11.nancy.grid5000.fr,10,3520,stop_decision_broadcast,1794907496.840156,0.000183,4,
+1,graffiti-11.nancy.grid5000.fr,11,3872,pre_validation_barrier,1794907502.519836,0.000915,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,11,3872,post_validation_barrier,1794907504.172592,0.487002,4,
+1,graffiti-11.nancy.grid5000.fr,11,3872,stop_decision_broadcast,1794907504.173061,0.0002176,4,
+1,graffiti-11.nancy.grid5000.fr,12,4224,pre_validation_barrier,1794907509.908837,0.001152,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,12,4224,post_validation_barrier,1794907511.857182,0.7635355,4,
+1,graffiti-11.nancy.grid5000.fr,12,4224,stop_decision_broadcast,1794907511.857631,0.0002009,4,
+1,graffiti-11.nancy.grid5000.fr,13,4576,pre_validation_barrier,1794907517.481531,0.0012585,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,13,4576,post_validation_barrier,1794907519.131325,0.4514312,4,
+1,graffiti-11.nancy.grid5000.fr,13,4576,stop_decision_broadcast,1794907519.131718,0.0001751,4,
+1,graffiti-11.nancy.grid5000.fr,14,4928,pre_validation_barrier,1794907524.751852,0.0006213,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,14,4928,post_validation_barrier,1794907526.413549,0.4790255,4,
+1,graffiti-11.nancy.grid5000.fr,14,4928,stop_decision_broadcast,1794907526.413983,0.0001938,4,
+1,graffiti-11.nancy.grid5000.fr,15,5280,pre_validation_barrier,1794907532.06829,0.0008647,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,15,5280,post_validation_barrier,1794907533.697491,0.4476583,4,
+1,graffiti-11.nancy.grid5000.fr,15,5280,stop_decision_broadcast,1794907533.697913,0.0001902,4,
+1,graffiti-11.nancy.grid5000.fr,16,5632,pre_validation_barrier,1794907539.293386,0.0007078,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,16,5632,post_validation_barrier,1794907540.960219,0.5883371,4,
+1,graffiti-11.nancy.grid5000.fr,16,5632,stop_decision_broadcast,1794907540.960663,0.0002169,4,
+1,graffiti-11.nancy.grid5000.fr,17,5984,pre_validation_barrier,1794907546.721031,0.0006871,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,17,5984,post_validation_barrier,1794907548.361879,0.4940449,4,
+1,graffiti-11.nancy.grid5000.fr,17,5984,stop_decision_broadcast,1794907548.362295,0.0001969,4,
+1,graffiti-11.nancy.grid5000.fr,18,6336,pre_validation_barrier,1794907553.966005,0.0008379,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,18,6336,post_validation_barrier,1794907555.618203,0.5165746,4,
+1,graffiti-11.nancy.grid5000.fr,18,6336,stop_decision_broadcast,1794907555.618623,0.0001957,4,
+1,graffiti-11.nancy.grid5000.fr,19,6688,pre_validation_barrier,1794907561.598445,0.0020361,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,19,6688,post_validation_barrier,1794907563.231821,0.4654928,4,
+1,graffiti-11.nancy.grid5000.fr,19,6688,stop_decision_broadcast,1794907563.232227,0.0001797,4,
+1,graffiti-11.nancy.grid5000.fr,20,7040,pre_validation_barrier,1794907568.76758,0.0012186,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,20,7040,post_validation_barrier,1794907570.498468,0.4867979,4,
+1,graffiti-11.nancy.grid5000.fr,20,7040,stop_decision_broadcast,1794907570.498901,0.000197,4,
+1,graffiti-11.nancy.grid5000.fr,21,7392,pre_validation_barrier,1794907576.137146,0.0007368,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,21,7392,post_validation_barrier,1794907577.775018,0.4921694,4,
+1,graffiti-11.nancy.grid5000.fr,21,7392,stop_decision_broadcast,1794907577.77544,0.0001895,4,
+1,graffiti-11.nancy.grid5000.fr,22,7744,pre_validation_barrier,1794907583.420912,0.0017975,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,22,7744,post_validation_barrier,1794907585.438043,0.497584,4,
+1,graffiti-11.nancy.grid5000.fr,22,7744,stop_decision_broadcast,1794907585.438484,0.0002214,4,
+1,graffiti-11.nancy.grid5000.fr,23,8096,pre_validation_barrier,1794907591.152419,0.00066,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,23,8096,post_validation_barrier,1794907592.804217,0.4895719,4,
+1,graffiti-11.nancy.grid5000.fr,23,8096,stop_decision_broadcast,1794907592.804887,0.0004824,4,
+1,graffiti-11.nancy.grid5000.fr,24,8448,pre_validation_barrier,1794907598.434731,0.000727,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,24,8448,post_validation_barrier,1794907600.28852,0.7026823,4,
+1,graffiti-11.nancy.grid5000.fr,24,8448,stop_decision_broadcast,1794907600.289036,0.0002454,4,
+1,graffiti-11.nancy.grid5000.fr,25,8800,pre_validation_barrier,1794907605.902628,0.0013229,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,25,8800,post_validation_barrier,1794907607.545714,0.4718716,4,
+1,graffiti-11.nancy.grid5000.fr,25,8800,stop_decision_broadcast,1794907607.546179,0.0002226,4,
+1,graffiti-11.nancy.grid5000.fr,26,9152,pre_validation_barrier,1794907613.104074,0.000712,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,26,9152,post_validation_barrier,1794907614.758088,0.5077414,4,
+1,graffiti-11.nancy.grid5000.fr,26,9152,stop_decision_broadcast,1794907614.758531,0.0002318,4,
+1,graffiti-11.nancy.grid5000.fr,27,9504,pre_validation_barrier,1794907620.365335,0.0014033,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,27,9504,post_validation_barrier,1794907621.973635,0.5834129,4,
+1,graffiti-11.nancy.grid5000.fr,27,9504,stop_decision_broadcast,1794907621.97407,0.0001852,4,
+1,graffiti-11.nancy.grid5000.fr,28,9856,pre_validation_barrier,1794907627.712746,0.0014998,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,28,9856,post_validation_barrier,1794907629.598254,0.8764964,4,
+1,graffiti-11.nancy.grid5000.fr,28,9856,stop_decision_broadcast,1794907629.598713,0.0002188,4,
+1,graffiti-11.nancy.grid5000.fr,29,10208,pre_validation_barrier,1794907635.340004,0.0008729,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,29,10208,post_validation_barrier,1794907637.01842,0.5263854,4,
+1,graffiti-11.nancy.grid5000.fr,29,10208,stop_decision_broadcast,1794907637.01883,0.0001831,4,
+1,graffiti-11.nancy.grid5000.fr,30,10560,pre_validation_barrier,1794907642.808654,0.0006832,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,30,10560,post_validation_barrier,1794907644.504908,0.5246178,4,
+1,graffiti-11.nancy.grid5000.fr,30,10560,stop_decision_broadcast,1794907644.50535,0.0002012,4,
+1,graffiti-11.nancy.grid5000.fr,31,10912,pre_validation_barrier,1794907650.210772,0.0006967,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,31,10912,post_validation_barrier,1794907651.844743,0.4584032,4,
+1,graffiti-11.nancy.grid5000.fr,31,10912,stop_decision_broadcast,1794907651.845227,0.000245,4,
+1,graffiti-11.nancy.grid5000.fr,32,11264,pre_validation_barrier,1794907657.540658,0.0019928,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,32,11264,post_validation_barrier,1794907659.198204,0.4728584,4,
+1,graffiti-11.nancy.grid5000.fr,32,11264,stop_decision_broadcast,1794907659.198599,0.0001828,4,
+1,graffiti-11.nancy.grid5000.fr,33,11616,pre_validation_barrier,1794907664.881103,0.000723,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,33,11616,post_validation_barrier,1794907666.615098,0.5343484,4,
+1,graffiti-11.nancy.grid5000.fr,33,11616,stop_decision_broadcast,1794907666.615528,0.0001921,4,
+1,graffiti-11.nancy.grid5000.fr,34,11968,pre_validation_barrier,1794907672.322134,0.0012511,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,34,11968,post_validation_barrier,1794907674.151466,0.4177868,4,
+1,graffiti-11.nancy.grid5000.fr,34,11968,stop_decision_broadcast,1794907674.15187,0.0001791,4,
+1,graffiti-11.nancy.grid5000.fr,35,12320,pre_validation_barrier,1794907680.057536,0.0012147,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,35,12320,post_validation_barrier,1794907681.649463,0.3352822,4,
+1,graffiti-11.nancy.grid5000.fr,35,12320,stop_decision_broadcast,1794907681.649902,0.0002035,4,
+1,graffiti-11.nancy.grid5000.fr,36,12672,pre_validation_barrier,1794907687.584536,0.0005387,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,36,12672,post_validation_barrier,1794907689.232524,0.6474568,4,
+1,graffiti-11.nancy.grid5000.fr,36,12672,stop_decision_broadcast,1794907689.233001,0.0002114,4,
+1,graffiti-11.nancy.grid5000.fr,37,13024,pre_validation_barrier,1794907694.762774,0.0006437,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,37,13024,post_validation_barrier,1794907696.405588,0.6241132,4,
+1,graffiti-11.nancy.grid5000.fr,37,13024,stop_decision_broadcast,1794907696.406271,0.0002908,4,
+1,graffiti-11.nancy.grid5000.fr,38,13376,pre_validation_barrier,1794907701.99714,0.0006522,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,38,13376,post_validation_barrier,1794907703.555045,0.6204736,4,
+1,graffiti-11.nancy.grid5000.fr,38,13376,stop_decision_broadcast,1794907703.555533,0.000228,4,
+1,graffiti-11.nancy.grid5000.fr,39,13728,pre_validation_barrier,1794907709.196965,0.001251,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,39,13728,post_validation_barrier,1794907710.87199,0.6576389,4,
+1,graffiti-11.nancy.grid5000.fr,39,13728,stop_decision_broadcast,1794907710.872472,0.0002354,4,
+1,graffiti-11.nancy.grid5000.fr,40,14080,pre_validation_barrier,1794907716.625123,0.0006439,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,40,14080,post_validation_barrier,1794907718.395662,0.7895124,4,
+1,graffiti-11.nancy.grid5000.fr,40,14080,stop_decision_broadcast,1794907718.396068,0.0001767,4,
+1,graffiti-11.nancy.grid5000.fr,41,14432,pre_validation_barrier,1794907724.206953,0.0007993,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,41,14432,post_validation_barrier,1794907725.818454,0.5120585,4,
+1,graffiti-11.nancy.grid5000.fr,41,14432,stop_decision_broadcast,1794907725.818835,0.000168,4,
+1,graffiti-11.nancy.grid5000.fr,42,14784,pre_validation_barrier,1794907731.619464,0.0008533,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,42,14784,post_validation_barrier,1794907733.234607,0.6045319,4,
+1,graffiti-11.nancy.grid5000.fr,42,14784,stop_decision_broadcast,1794907733.23502,0.000186,4,
+1,graffiti-11.nancy.grid5000.fr,43,15136,pre_validation_barrier,1794907738.865028,0.0011605,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,43,15136,post_validation_barrier,1794907740.492121,0.6311924,4,
+1,graffiti-11.nancy.grid5000.fr,43,15136,stop_decision_broadcast,1794907740.492509,0.0001737,4,
+1,graffiti-11.nancy.grid5000.fr,44,15488,pre_validation_barrier,1794907746.220741,0.0010477,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,44,15488,post_validation_barrier,1794907747.838659,0.5728715,4,
+1,graffiti-11.nancy.grid5000.fr,44,15488,stop_decision_broadcast,1794907747.839103,0.0001954,4,
+1,graffiti-11.nancy.grid5000.fr,45,15840,pre_validation_barrier,1794907753.597328,0.0007402,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,45,15840,post_validation_barrier,1794907755.386942,0.6454308,4,
+1,graffiti-11.nancy.grid5000.fr,45,15840,stop_decision_broadcast,1794907755.387361,0.0001824,4,
+1,graffiti-11.nancy.grid5000.fr,46,16192,pre_validation_barrier,1794907761.062438,0.0008873,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,46,16192,post_validation_barrier,1794907762.696766,0.6197358,4,
+1,graffiti-11.nancy.grid5000.fr,46,16192,stop_decision_broadcast,1794907762.697207,0.0002076,4,
+1,graffiti-11.nancy.grid5000.fr,47,16544,pre_validation_barrier,1794907768.270593,0.0012719,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,47,16544,post_validation_barrier,1794907769.857461,0.5893373,4,
+1,graffiti-11.nancy.grid5000.fr,47,16544,stop_decision_broadcast,1794907769.857894,0.0002051,4,
+1,graffiti-11.nancy.grid5000.fr,48,16896,pre_validation_barrier,1794907775.589763,0.000625,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,48,16896,post_validation_barrier,1794907777.18476,0.6609598,4,
+1,graffiti-11.nancy.grid5000.fr,48,16896,stop_decision_broadcast,1794907777.185176,0.00019,4,
+1,graffiti-11.nancy.grid5000.fr,49,17248,pre_validation_barrier,1794907782.87945,0.000652,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,49,17248,post_validation_barrier,1794907784.507239,0.6221006,4,
+1,graffiti-11.nancy.grid5000.fr,49,17248,stop_decision_broadcast,1794907784.507669,0.0001903,4,
+1,graffiti-11.nancy.grid5000.fr,50,17600,pre_validation_barrier,1794907790.332658,0.0006147,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,50,17600,post_validation_barrier,1794907792.033908,0.662002,4,
+1,graffiti-11.nancy.grid5000.fr,50,17600,stop_decision_broadcast,1794907792.03436,0.0002087,4,
+1,graffiti-11.nancy.grid5000.fr,51,17952,pre_validation_barrier,1794907797.508387,0.0009598,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,51,17952,post_validation_barrier,1794907799.311274,0.7781724,4,
+1,graffiti-11.nancy.grid5000.fr,51,17952,stop_decision_broadcast,1794907799.311912,0.0002715,4,
+1,graffiti-11.nancy.grid5000.fr,52,18304,pre_validation_barrier,1794907805.100903,0.0006536,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,52,18304,post_validation_barrier,1794907806.760461,0.5409697,4,
+1,graffiti-11.nancy.grid5000.fr,52,18304,stop_decision_broadcast,1794907806.760951,0.0002237,4,
+1,graffiti-11.nancy.grid5000.fr,53,18656,pre_validation_barrier,1794907812.417913,0.0018983,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,53,18656,post_validation_barrier,1794907814.170579,0.7581759,4,
+1,graffiti-11.nancy.grid5000.fr,53,18656,stop_decision_broadcast,1794907814.170974,0.0001843,4,
+1,graffiti-11.nancy.grid5000.fr,54,19008,pre_validation_barrier,1794907819.677971,0.0008312,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,54,19008,post_validation_barrier,1794907821.337351,0.682415,4,
+1,graffiti-11.nancy.grid5000.fr,54,19008,stop_decision_broadcast,1794907821.337767,0.0001898,4,
+1,graffiti-11.nancy.grid5000.fr,55,19360,pre_validation_barrier,1794907827.125004,0.0006752,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,55,19360,post_validation_barrier,1794907828.811804,0.7295702,4,
+1,graffiti-11.nancy.grid5000.fr,55,19360,stop_decision_broadcast,1794907828.81225,0.0002134,4,
+1,graffiti-11.nancy.grid5000.fr,56,19712,pre_validation_barrier,1794907834.378936,0.0006939,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,56,19712,post_validation_barrier,1794907836.032959,0.6697518,4,
+1,graffiti-11.nancy.grid5000.fr,56,19712,stop_decision_broadcast,1794907836.033704,0.0003098,4,
+1,graffiti-11.nancy.grid5000.fr,57,20064,pre_validation_barrier,1794907842.045619,0.0008538,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,57,20064,post_validation_barrier,1794907843.73442,0.6830045,4,
+1,graffiti-11.nancy.grid5000.fr,57,20064,stop_decision_broadcast,1794907843.735,0.0003048,4,
+1,graffiti-11.nancy.grid5000.fr,58,20416,pre_validation_barrier,1794907849.195647,0.0013376,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,58,20416,post_validation_barrier,1794907850.799977,0.6131442,4,
+1,graffiti-11.nancy.grid5000.fr,58,20416,stop_decision_broadcast,1794907850.800416,0.0001995,4,
+1,graffiti-11.nancy.grid5000.fr,59,20768,pre_validation_barrier,1794907856.542028,0.0013551,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,59,20768,post_validation_barrier,1794907858.311826,0.6959074,4,
+1,graffiti-11.nancy.grid5000.fr,59,20768,stop_decision_broadcast,1794907858.312453,0.0002927,4,
+1,graffiti-11.nancy.grid5000.fr,60,21120,pre_validation_barrier,1794907863.864609,0.0005868,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,60,21120,post_validation_barrier,1794907865.383432,0.4765506,4,
+1,graffiti-11.nancy.grid5000.fr,60,21120,stop_decision_broadcast,1794907865.383901,0.0002283,4,
+1,graffiti-11.nancy.grid5000.fr,61,21472,pre_validation_barrier,1794907870.935519,0.0006623,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,61,21472,post_validation_barrier,1794907872.578789,0.7174478,4,
+1,graffiti-11.nancy.grid5000.fr,61,21472,stop_decision_broadcast,1794907872.579258,0.0002122,4,
+1,graffiti-11.nancy.grid5000.fr,62,21824,pre_validation_barrier,1794907878.249656,0.001301,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,62,21824,post_validation_barrier,1794907879.966876,0.6663343,4,
+1,graffiti-11.nancy.grid5000.fr,62,21824,stop_decision_broadcast,1794907879.967324,0.0002088,4,
+1,graffiti-11.nancy.grid5000.fr,63,22176,pre_validation_barrier,1794907885.596629,0.0006033,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,63,22176,post_validation_barrier,1794907887.303162,0.6308422,4,
+1,graffiti-11.nancy.grid5000.fr,63,22176,stop_decision_broadcast,1794907887.3036,0.0002015,4,
+1,graffiti-11.nancy.grid5000.fr,64,22528,pre_validation_barrier,1794907892.713778,0.0007028,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,64,22528,post_validation_barrier,1794907894.423259,0.6151754,4,
+1,graffiti-11.nancy.grid5000.fr,64,22528,stop_decision_broadcast,1794907894.423703,0.0002195,4,
+1,graffiti-11.nancy.grid5000.fr,65,22880,pre_validation_barrier,1794907899.932687,0.0013237,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,65,22880,post_validation_barrier,1794907901.632707,0.6575829,4,
+1,graffiti-11.nancy.grid5000.fr,65,22880,stop_decision_broadcast,1794907901.633186,0.00023,4,
+1,graffiti-11.nancy.grid5000.fr,66,23232,pre_validation_barrier,1794907907.282118,0.0016863,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,66,23232,post_validation_barrier,1794907909.023052,0.6387591,4,
+1,graffiti-11.nancy.grid5000.fr,66,23232,stop_decision_broadcast,1794907909.023625,0.0002765,4,
+1,graffiti-11.nancy.grid5000.fr,67,23584,pre_validation_barrier,1794907914.67639,0.0014801,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,67,23584,post_validation_barrier,1794907916.298899,0.6286447,4,
+1,graffiti-11.nancy.grid5000.fr,67,23584,stop_decision_broadcast,1794907916.299479,0.0002756,4,
+1,graffiti-11.nancy.grid5000.fr,68,23936,pre_validation_barrier,1794907921.978017,0.0014663,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,68,23936,post_validation_barrier,1794907923.586424,0.5271533,4,
+1,graffiti-11.nancy.grid5000.fr,68,23936,stop_decision_broadcast,1794907923.586885,0.0002258,4,
+1,graffiti-11.nancy.grid5000.fr,69,24288,pre_validation_barrier,1794907929.23647,0.0009487,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,69,24288,post_validation_barrier,1794907930.972284,0.6838828,4,
+1,graffiti-11.nancy.grid5000.fr,69,24288,stop_decision_broadcast,1794907930.972719,0.0002036,4,
+1,graffiti-11.nancy.grid5000.fr,70,24640,pre_validation_barrier,1794907936.499614,0.000957,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,70,24640,post_validation_barrier,1794907938.07004,0.6627771,4,
+1,graffiti-11.nancy.grid5000.fr,70,24640,stop_decision_broadcast,1794907938.070439,0.0001711,4,
+1,graffiti-11.nancy.grid5000.fr,71,24992,pre_validation_barrier,1794907943.669035,0.0023881,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,71,24992,post_validation_barrier,1794907945.366657,0.6062346,4,
+1,graffiti-11.nancy.grid5000.fr,71,24992,stop_decision_broadcast,1794907945.367046,0.00017,4,
+1,graffiti-11.nancy.grid5000.fr,72,25344,pre_validation_barrier,1794907950.97421,0.001494,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,72,25344,post_validation_barrier,1794907952.568192,0.5217679,4,
+1,graffiti-11.nancy.grid5000.fr,72,25344,stop_decision_broadcast,1794907952.568624,0.0001964,4,
+1,graffiti-11.nancy.grid5000.fr,73,25696,pre_validation_barrier,1794907957.897934,0.0009015,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,73,25696,post_validation_barrier,1794907959.593471,0.5898871,4,
+1,graffiti-11.nancy.grid5000.fr,73,25696,stop_decision_broadcast,1794907959.593883,0.0001862,4,
+1,graffiti-11.nancy.grid5000.fr,74,26048,pre_validation_barrier,1794907965.060712,0.001937,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,74,26048,post_validation_barrier,1794907966.901391,0.4879304,4,
+1,graffiti-11.nancy.grid5000.fr,74,26048,stop_decision_broadcast,1794907966.901839,0.0002016,4,
+1,graffiti-11.nancy.grid5000.fr,75,26400,pre_validation_barrier,1794907972.285829,0.0012601,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,75,26400,post_validation_barrier,1794907973.928686,0.6292642,4,
+1,graffiti-11.nancy.grid5000.fr,75,26400,stop_decision_broadcast,1794907973.929091,0.0001764,4,
+1,graffiti-11.nancy.grid5000.fr,76,26752,pre_validation_barrier,1794907979.3019,0.0017837,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,76,26752,post_validation_barrier,1794907980.930754,0.5665506,4,
+1,graffiti-11.nancy.grid5000.fr,76,26752,stop_decision_broadcast,1794907980.931179,0.0001925,4,
+1,graffiti-11.nancy.grid5000.fr,77,27104,pre_validation_barrier,1794907986.888119,0.0006912,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,77,27104,post_validation_barrier,1794907988.539671,0.5526985,4,
+1,graffiti-11.nancy.grid5000.fr,77,27104,stop_decision_broadcast,1794907988.540089,0.0001857,4,
+1,graffiti-11.nancy.grid5000.fr,78,27456,pre_validation_barrier,1794907994.646473,0.0005969,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,78,27456,post_validation_barrier,1794907996.414178,0.6134248,4,
+1,graffiti-11.nancy.grid5000.fr,78,27456,stop_decision_broadcast,1794907996.414572,0.0001698,4,
+1,graffiti-11.nancy.grid5000.fr,79,27808,pre_validation_barrier,1794908002.059829,0.0009501,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,79,27808,post_validation_barrier,1794908004.147906,1.1091501,4,
+1,graffiti-11.nancy.grid5000.fr,79,27808,stop_decision_broadcast,1794908004.148525,0.0002662,4,
+1,graffiti-11.nancy.grid5000.fr,80,28160,pre_validation_barrier,1794908009.864862,0.0019038,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,80,28160,post_validation_barrier,1794908011.55157,0.476404,4,
+1,graffiti-11.nancy.grid5000.fr,80,28160,stop_decision_broadcast,1794908011.551979,0.0002165,4,
+1,graffiti-11.nancy.grid5000.fr,81,28512,pre_validation_barrier,1794908017.177878,0.0011982,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,81,28512,post_validation_barrier,1794908018.825844,0.5309841,4,
+1,graffiti-11.nancy.grid5000.fr,81,28512,stop_decision_broadcast,1794908018.826419,0.0002767,4,
+1,graffiti-11.nancy.grid5000.fr,82,28864,pre_validation_barrier,1794908024.784736,0.0006943,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,82,28864,post_validation_barrier,1794908026.444339,0.5541428,4,
+1,graffiti-11.nancy.grid5000.fr,82,28864,stop_decision_broadcast,1794908026.444819,0.000225,4,
+1,graffiti-11.nancy.grid5000.fr,83,29216,pre_validation_barrier,1794908031.956176,0.0015112,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,83,29216,post_validation_barrier,1794908033.644089,0.594799,4,
+1,graffiti-11.nancy.grid5000.fr,83,29216,stop_decision_broadcast,1794908033.644538,0.0002209,4,
+1,graffiti-11.nancy.grid5000.fr,84,29568,pre_validation_barrier,1794908039.496264,0.0010566,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,84,29568,post_validation_barrier,1794908041.173526,0.5974185,4,
+1,graffiti-11.nancy.grid5000.fr,84,29568,stop_decision_broadcast,1794908041.174025,0.0002305,4,
+1,graffiti-11.nancy.grid5000.fr,85,29920,pre_validation_barrier,1794908046.760038,0.0005969,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,85,29920,post_validation_barrier,1794908048.382409,0.5186907,4,
+1,graffiti-11.nancy.grid5000.fr,85,29920,stop_decision_broadcast,1794908048.382832,0.0001985,4,
+1,graffiti-11.nancy.grid5000.fr,86,30272,pre_validation_barrier,1794908053.954595,0.0017401,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,86,30272,post_validation_barrier,1794908055.613939,0.5774054,4,
+1,graffiti-11.nancy.grid5000.fr,86,30272,stop_decision_broadcast,1794908055.614408,0.0002337,4,
+1,graffiti-11.nancy.grid5000.fr,87,30624,pre_validation_barrier,1794908061.177663,0.0009774,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,87,30624,post_validation_barrier,1794908062.8154,0.5063473,4,
+1,graffiti-11.nancy.grid5000.fr,87,30624,stop_decision_broadcast,1794908062.815848,0.000221,4,
+1,graffiti-11.nancy.grid5000.fr,88,30976,pre_validation_barrier,1794908068.542938,0.0005901,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,88,30976,post_validation_barrier,1794908070.184689,0.5584099,4,
+1,graffiti-11.nancy.grid5000.fr,88,30976,stop_decision_broadcast,1794908070.185122,0.0002008,4,
+1,graffiti-11.nancy.grid5000.fr,89,31328,pre_validation_barrier,1794908075.809942,0.0008303,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,89,31328,post_validation_barrier,1794908077.407198,0.6221136,4,
+1,graffiti-11.nancy.grid5000.fr,89,31328,stop_decision_broadcast,1794908077.407647,0.0002195,4,
+1,graffiti-11.nancy.grid5000.fr,90,31680,pre_validation_barrier,1794908083.202614,0.0010418,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,90,31680,post_validation_barrier,1794908084.774422,0.5377629,4,
+1,graffiti-11.nancy.grid5000.fr,90,31680,stop_decision_broadcast,1794908084.774843,0.0001732,4,
+1,graffiti-11.nancy.grid5000.fr,91,32032,pre_validation_barrier,1794908090.389592,0.0006437,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,91,32032,post_validation_barrier,1794908092.780037,1.1689186,4,
+1,graffiti-11.nancy.grid5000.fr,91,32032,stop_decision_broadcast,1794908092.780436,0.0001795,4,
+1,graffiti-11.nancy.grid5000.fr,92,32384,pre_validation_barrier,1794908098.466161,0.0013977,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,92,32384,post_validation_barrier,1794908100.191492,0.4788064,4,
+1,graffiti-11.nancy.grid5000.fr,92,32384,stop_decision_broadcast,1794908100.191888,0.0001866,4,
+1,graffiti-11.nancy.grid5000.fr,93,32736,pre_validation_barrier,1794908105.900041,0.0007237,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,93,32736,post_validation_barrier,1794908107.512836,0.7462807,4,
+1,graffiti-11.nancy.grid5000.fr,93,32736,stop_decision_broadcast,1794908107.513288,0.0002112,4,
+1,graffiti-11.nancy.grid5000.fr,94,33088,pre_validation_barrier,1794908113.369195,0.0007007,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,94,33088,post_validation_barrier,1794908115.070966,0.5482292,4,
+1,graffiti-11.nancy.grid5000.fr,94,33088,stop_decision_broadcast,1794908115.071372,0.0001832,4,
+1,graffiti-11.nancy.grid5000.fr,95,33440,pre_validation_barrier,1794908120.716237,0.0011386,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,95,33440,post_validation_barrier,1794908122.383483,0.5751548,4,
+1,graffiti-11.nancy.grid5000.fr,95,33440,stop_decision_broadcast,1794908122.383886,0.0001752,4,
+1,graffiti-11.nancy.grid5000.fr,96,33792,pre_validation_barrier,1794908127.982953,0.0014366,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,96,33792,post_validation_barrier,1794908130.0756,0.786602,4,
+1,graffiti-11.nancy.grid5000.fr,96,33792,stop_decision_broadcast,1794908130.075993,0.0001653,4,
+1,graffiti-11.nancy.grid5000.fr,97,34144,pre_validation_barrier,1794908135.657796,0.0012793,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,97,34144,post_validation_barrier,1794908137.282506,0.5199928,4,
+1,graffiti-11.nancy.grid5000.fr,97,34144,stop_decision_broadcast,1794908137.282944,0.0001959,4,
+1,graffiti-11.nancy.grid5000.fr,98,34496,pre_validation_barrier,1794908143.002485,0.0006208,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,98,34496,post_validation_barrier,1794908144.643442,0.4596786,4,
+1,graffiti-11.nancy.grid5000.fr,98,34496,stop_decision_broadcast,1794908144.643883,0.0002116,4,
+1,graffiti-11.nancy.grid5000.fr,99,34848,pre_validation_barrier,1794908150.208915,0.0015259,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,99,34848,post_validation_barrier,1794908151.881449,0.5429073,4,
+1,graffiti-11.nancy.grid5000.fr,99,34848,stop_decision_broadcast,1794908151.881918,0.000216,4,
+1,graffiti-11.nancy.grid5000.fr,100,35200,pre_validation_barrier,1794908157.463811,0.0012703,4,epoch-boundary measurement synchronization; no model averaging
+1,graffiti-11.nancy.grid5000.fr,100,35200,post_validation_barrier,1794908159.134032,0.6453926,4,
+1,graffiti-11.nancy.grid5000.fr,100,35200,stop_decision_broadcast,1794908159.134489,0.0002041,4,
+1,graffiti-11.nancy.grid5000.fr,100,35200,final_barrier,1794908159.13968,0.0051197,4,
