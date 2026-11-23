@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.deployment_job
+kavlan_state.json
+#results/
+data/
+network_state.json

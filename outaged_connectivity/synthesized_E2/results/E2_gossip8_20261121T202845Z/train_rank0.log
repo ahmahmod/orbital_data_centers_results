@@ -1,0 +1,2025 @@
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=1 Loss=4.7126 Samples=32 Elapsed=13.0s Speed=0.08 steps/s
+[GOSSIP8] Step=20 Loss=5.4309 Samples=640 Elapsed=13.4s Speed=1.49 steps/s
+[GOSSIP8] Step=40 Loss=4.5729 Samples=1280 Elapsed=13.9s Speed=2.88 steps/s
+[GOSSIP8] Step=60 Loss=4.7834 Samples=1920 Elapsed=14.3s Speed=4.19 steps/s
+[GOSSIP8] Step=80 Loss=4.7128 Samples=2560 Elapsed=14.8s Speed=5.42 steps/s
+[GOSSIP8] Step=100 Loss=4.4054 Samples=3200 Elapsed=15.2s Speed=6.58 steps/s
+[GOSSIP8] Step=120 Loss=4.6019 Samples=3840 Elapsed=15.7s Speed=7.65 steps/s
+[GOSSIP8] Step=140 Loss=4.2855 Samples=4480 Elapsed=16.1s Speed=8.71 steps/s
+[GOSSIP8] Step=160 Loss=4.4844 Samples=5120 Elapsed=16.5s Speed=9.68 steps/s
+[GOSSIP8] Step=180 Loss=4.2313 Samples=5760 Elapsed=17.0s Speed=10.59 steps/s
+[GOSSIP8] Step=200 Loss=4.5617 Samples=6400 Elapsed=17.6s Speed=11.37 steps/s
+[GOSSIP8] Step=220 Loss=3.9545 Samples=7040 Elapsed=18.0s Speed=12.19 steps/s
+[GOSSIP8] Step=240 Loss=4.1598 Samples=7680 Elapsed=18.5s Speed=12.99 steps/s
+[GOSSIP8] Step=260 Loss=4.0063 Samples=8320 Elapsed=18.9s Speed=13.78 steps/s
+[GOSSIP8] Step=280 Loss=3.9602 Samples=8960 Elapsed=19.4s Speed=14.46 steps/s
+[GOSSIP8] Step=300 Loss=3.8873 Samples=9600 Elapsed=19.8s Speed=15.18 steps/s
+[GOSSIP8] Step=320 Loss=4.0877 Samples=10240 Elapsed=20.2s Speed=15.84 steps/s
+[GOSSIP8] Step=340 Loss=3.8974 Samples=10880 Elapsed=20.6s Speed=16.50 steps/s
+[GOSSIP8] Step=360 Loss=4.3184 Samples=11506 Elapsed=35.6s Speed=10.11 steps/s
+[GOSSIP8] Step=380 Loss=4.3436 Samples=12146 Elapsed=36.3s Speed=10.48 steps/s
+[GOSSIP8] Step=400 Loss=4.1106 Samples=12786 Elapsed=36.9s Speed=10.85 steps/s
+[GOSSIP8] Step=420 Loss=4.2363 Samples=13426 Elapsed=37.5s Speed=11.21 steps/s
+[GOSSIP8] Step=440 Loss=4.0415 Samples=14066 Elapsed=38.3s Speed=11.50 steps/s
+[GOSSIP8] Step=460 Loss=4.1943 Samples=14706 Elapsed=38.8s Speed=11.86 steps/s
+[GOSSIP8] Step=480 Loss=3.8590 Samples=15346 Elapsed=39.3s Speed=12.20 steps/s
+[GOSSIP8] Step=500 Loss=3.8930 Samples=15986 Elapsed=39.9s Speed=12.52 steps/s
+[GOSSIP8] Step=520 Loss=3.7597 Samples=16626 Elapsed=40.7s Speed=12.76 steps/s
+[GOSSIP8] Step=540 Loss=3.5536 Samples=17266 Elapsed=41.3s Speed=13.07 steps/s
+[GOSSIP8] Step=560 Loss=3.9078 Samples=17906 Elapsed=42.0s Speed=13.35 steps/s
+[GOSSIP8] Step=580 Loss=3.9617 Samples=18546 Elapsed=42.5s Speed=13.64 steps/s
+[GOSSIP8] Step=600 Loss=3.4705 Samples=19186 Elapsed=43.2s Speed=13.90 steps/s
+[GOSSIP8] Step=620 Loss=4.0656 Samples=19826 Elapsed=43.8s Speed=14.17 steps/s
+[GOSSIP8] Step=640 Loss=3.8391 Samples=20466 Elapsed=44.4s Speed=14.43 steps/s
+[GOSSIP8] Step=660 Loss=3.8506 Samples=21106 Elapsed=44.9s Speed=14.71 steps/s
+[GOSSIP8] Step=680 Loss=4.0992 Samples=21746 Elapsed=45.3s Speed=15.00 steps/s
+[GOSSIP8] Step=700 Loss=3.9767 Samples=22386 Elapsed=45.7s Speed=15.31 steps/s
+[GOSSIP8] Step=720 Loss=4.0598 Samples=23012 Elapsed=47.0s Speed=15.32 steps/s
+[GOSSIP8] Step=740 Loss=3.8429 Samples=23652 Elapsed=47.5s Speed=15.57 steps/s
+[GOSSIP8] Step=760 Loss=3.9990 Samples=24292 Elapsed=48.1s Speed=15.79 steps/s
+[GOSSIP8] Step=780 Loss=4.0716 Samples=24932 Elapsed=48.6s Speed=16.04 steps/s
+[GOSSIP8] Step=800 Loss=3.7491 Samples=25572 Elapsed=49.2s Speed=16.27 steps/s
+[GOSSIP8] Step=820 Loss=3.7305 Samples=26212 Elapsed=49.9s Speed=16.43 steps/s
+[GOSSIP8] Step=840 Loss=4.1243 Samples=26852 Elapsed=50.3s Speed=16.70 steps/s
+[GOSSIP8] Step=860 Loss=4.0363 Samples=27492 Elapsed=50.7s Speed=16.97 steps/s
+[GOSSIP8] Step=880 Loss=3.9750 Samples=28132 Elapsed=51.1s Speed=17.22 steps/s
+[GOSSIP8] Step=900 Loss=3.6881 Samples=28772 Elapsed=51.5s Speed=17.47 steps/s
+[GOSSIP8] Step=920 Loss=3.9841 Samples=29412 Elapsed=51.9s Speed=17.72 steps/s
+[GOSSIP8] Step=940 Loss=3.2877 Samples=30052 Elapsed=52.3s Speed=17.97 steps/s
+[GOSSIP8] Step=960 Loss=4.0554 Samples=30692 Elapsed=52.8s Speed=18.18 steps/s
+[GOSSIP8] Step=980 Loss=3.4652 Samples=31332 Elapsed=53.3s Speed=18.39 steps/s
+[GOSSIP8] Step=1000 Loss=3.7999 Samples=31972 Elapsed=53.9s Speed=18.55 steps/s
+[GOSSIP8] Step=1020 Loss=3.5333 Samples=32612 Elapsed=54.3s Speed=18.77 steps/s
+[GOSSIP8] Step=1040 Loss=3.7346 Samples=33252 Elapsed=54.8s Speed=18.97 steps/s
+[GOSSIP8] Step=1060 Loss=3.5694 Samples=33878 Elapsed=58.8s Speed=18.04 steps/s
+[GOSSIP8] Step=1080 Loss=3.2876 Samples=34518 Elapsed=59.2s Speed=18.25 steps/s
+[GOSSIP8] Step=1100 Loss=3.3299 Samples=35158 Elapsed=59.6s Speed=18.46 steps/s
+[GOSSIP8] Step=1120 Loss=3.5104 Samples=35798 Elapsed=60.1s Speed=18.63 steps/s
+[GOSSIP8] Step=1140 Loss=3.9873 Samples=36438 Elapsed=60.5s Speed=18.83 steps/s
+[GOSSIP8] Step=1160 Loss=3.9207 Samples=37078 Elapsed=61.0s Speed=19.01 steps/s
+[GOSSIP8] Step=1180 Loss=4.0115 Samples=37718 Elapsed=61.4s Speed=19.20 steps/s
+[GOSSIP8] Step=1200 Loss=3.9067 Samples=38358 Elapsed=61.9s Speed=19.38 steps/s
+[GOSSIP8] Step=1220 Loss=3.7530 Samples=38998 Elapsed=62.3s Speed=19.58 steps/s
+[GOSSIP8] Step=1240 Loss=3.7322 Samples=39638 Elapsed=62.8s Speed=19.76 steps/s
+[GOSSIP8] Step=1260 Loss=3.8646 Samples=40278 Elapsed=63.2s Speed=19.94 steps/s
+[GOSSIP8] Step=1280 Loss=3.8913 Samples=40918 Elapsed=63.6s Speed=20.11 steps/s
+[GOSSIP8] Step=1300 Loss=3.8494 Samples=41558 Elapsed=64.1s Speed=20.29 steps/s
+[GOSSIP8] Step=1320 Loss=3.8222 Samples=42198 Elapsed=64.5s Speed=20.46 steps/s
+[GOSSIP8] Step=1340 Loss=3.3138 Samples=42838 Elapsed=64.9s Speed=20.64 steps/s
+[GOSSIP8] Step=1360 Loss=3.5829 Samples=43478 Elapsed=65.4s Speed=20.80 steps/s
+[GOSSIP8] Step=1380 Loss=3.5033 Samples=44118 Elapsed=65.8s Speed=20.97 steps/s
+[GOSSIP8] Step=1400 Loss=3.3037 Samples=44758 Elapsed=66.3s Speed=21.11 steps/s
+[GOSSIP8] Step=1420 Loss=3.6846 Samples=45384 Elapsed=67.3s Speed=21.12 steps/s
+[GOSSIP8] Step=1440 Loss=3.1813 Samples=46024 Elapsed=67.7s Speed=21.27 steps/s
+[GOSSIP8] Step=1460 Loss=3.2860 Samples=46664 Elapsed=68.1s Speed=21.43 steps/s
+[GOSSIP8] Step=1480 Loss=3.6386 Samples=47304 Elapsed=68.6s Speed=21.59 steps/s
+[GOSSIP8] Step=1500 Loss=2.8086 Samples=47944 Elapsed=69.0s Speed=21.75 steps/s
+[GOSSIP8] Step=1520 Loss=3.3098 Samples=48584 Elapsed=69.4s Speed=21.90 steps/s
+[GOSSIP8] Step=1540 Loss=3.1398 Samples=49224 Elapsed=69.8s Speed=22.05 steps/s
+[GOSSIP8] Step=1560 Loss=3.4596 Samples=49864 Elapsed=70.3s Speed=22.19 steps/s
+[GOSSIP8] Step=1580 Loss=3.7282 Samples=50504 Elapsed=70.7s Speed=22.34 steps/s
+[GOSSIP8] Step=1600 Loss=3.0665 Samples=51144 Elapsed=71.2s Speed=22.48 steps/s
+[GOSSIP8] Step=1620 Loss=3.6875 Samples=51784 Elapsed=71.6s Speed=22.62 steps/s
+[GOSSIP8] Step=1640 Loss=3.4453 Samples=52424 Elapsed=72.1s Speed=22.75 steps/s
+[GOSSIP8] Step=1660 Loss=3.3584 Samples=53064 Elapsed=72.7s Speed=22.84 steps/s
+[GOSSIP8] Step=1680 Loss=3.2030 Samples=53704 Elapsed=73.3s Speed=22.91 steps/s
+[GOSSIP8] Step=1700 Loss=3.3312 Samples=54344 Elapsed=74.1s Speed=22.93 steps/s
+[GOSSIP8] Step=1720 Loss=3.3241 Samples=54984 Elapsed=74.6s Speed=23.06 steps/s
+[GOSSIP8] Step=1740 Loss=3.4020 Samples=55624 Elapsed=75.0s Speed=23.20 steps/s
+[GOSSIP8] Step=1760 Loss=3.7466 Samples=56250 Elapsed=75.4s Speed=23.35 steps/s
+[GOSSIP8] Step=1780 Loss=3.7136 Samples=56890 Elapsed=76.2s Speed=23.35 steps/s
+[GOSSIP8] Step=1800 Loss=3.3088 Samples=57530 Elapsed=76.7s Speed=23.46 steps/s
+[GOSSIP8] Step=1820 Loss=3.2355 Samples=58170 Elapsed=78.2s Speed=23.27 steps/s
+[GOSSIP8] Step=1840 Loss=3.1935 Samples=58810 Elapsed=78.7s Speed=23.38 steps/s
+[GOSSIP8] Step=1860 Loss=2.9939 Samples=59450 Elapsed=79.1s Speed=23.51 steps/s
+[GOSSIP8] Step=1880 Loss=2.9798 Samples=60090 Elapsed=79.6s Speed=23.61 steps/s
+[GOSSIP8] Step=1900 Loss=3.3131 Samples=60730 Elapsed=80.0s Speed=23.74 steps/s
+[GOSSIP8] Step=1920 Loss=3.3233 Samples=61370 Elapsed=80.5s Speed=23.86 steps/s
+[GOSSIP8] Step=1940 Loss=3.1353 Samples=62010 Elapsed=80.9s Speed=23.99 steps/s
+[GOSSIP8] Step=1960 Loss=2.6616 Samples=62650 Elapsed=81.3s Speed=24.10 steps/s
+[GOSSIP8] Step=1980 Loss=3.7039 Samples=63290 Elapsed=81.7s Speed=24.24 steps/s
+[GOSSIP8] Step=2000 Loss=3.4261 Samples=63930 Elapsed=82.1s Speed=24.35 steps/s
+[GOSSIP8] Step=2020 Loss=2.9969 Samples=64570 Elapsed=82.6s Speed=24.47 steps/s
+[GOSSIP8] Step=2040 Loss=3.5295 Samples=65210 Elapsed=83.0s Speed=24.58 steps/s
+[GOSSIP8] Step=2060 Loss=3.7258 Samples=65850 Elapsed=83.4s Speed=24.71 steps/s
+[GOSSIP8] Step=2080 Loss=2.6943 Samples=66490 Elapsed=83.8s Speed=24.82 steps/s
+[GOSSIP8] Step=2100 Loss=3.5225 Samples=67130 Elapsed=84.2s Speed=24.95 steps/s
+[GOSSIP8] Step=2120 Loss=3.9570 Samples=67756 Elapsed=85.1s Speed=24.91 steps/s
+[GOSSIP8] Step=2140 Loss=3.2615 Samples=68396 Elapsed=85.5s Speed=25.02 steps/s
+[GOSSIP8] Step=2160 Loss=3.1592 Samples=69036 Elapsed=86.0s Speed=25.12 steps/s
+[GOSSIP8] Step=2180 Loss=3.1637 Samples=69676 Elapsed=86.4s Speed=25.22 steps/s
+[GOSSIP8] Step=2200 Loss=2.4954 Samples=70316 Elapsed=86.9s Speed=25.31 steps/s
+[GOSSIP8] Step=2220 Loss=3.1086 Samples=70956 Elapsed=87.4s Speed=25.41 steps/s
+[GOSSIP8] Step=2240 Loss=3.0353 Samples=71596 Elapsed=87.8s Speed=25.51 steps/s
+[GOSSIP8] Step=2260 Loss=2.9115 Samples=72236 Elapsed=88.3s Speed=25.61 steps/s
+[GOSSIP8] Step=2280 Loss=3.2776 Samples=72876 Elapsed=88.7s Speed=25.70 steps/s
+[GOSSIP8] Step=2300 Loss=3.2335 Samples=73516 Elapsed=89.1s Speed=25.81 steps/s
+[GOSSIP8] Step=2320 Loss=3.0192 Samples=74156 Elapsed=89.6s Speed=25.89 steps/s
+[GOSSIP8] Step=2340 Loss=3.2480 Samples=74796 Elapsed=90.1s Speed=25.98 steps/s
+[GOSSIP8] Step=2360 Loss=3.0679 Samples=75436 Elapsed=90.5s Speed=26.07 steps/s
+[GOSSIP8] Step=2380 Loss=2.8226 Samples=76076 Elapsed=91.0s Speed=26.16 steps/s
+[GOSSIP8] Step=2400 Loss=2.9280 Samples=76716 Elapsed=91.5s Speed=26.23 steps/s
+[GOSSIP8] Step=2420 Loss=3.4219 Samples=77356 Elapsed=92.0s Speed=26.32 steps/s
+[GOSSIP8] Step=2440 Loss=2.5263 Samples=77996 Elapsed=92.5s Speed=26.39 steps/s
+[GOSSIP8] Step=2460 Loss=2.3625 Samples=78636 Elapsed=92.9s Speed=26.47 steps/s
+[GOSSIP8] Step=2480 Loss=2.9230 Samples=79262 Elapsed=94.5s Speed=26.23 steps/s
+[GOSSIP8] Step=2500 Loss=2.7724 Samples=79902 Elapsed=95.0s Speed=26.31 steps/s
+[GOSSIP8] Step=2520 Loss=3.1841 Samples=80542 Elapsed=95.5s Speed=26.39 steps/s
+[GOSSIP8] Step=2540 Loss=3.2192 Samples=81182 Elapsed=96.0s Speed=26.47 steps/s
+[GOSSIP8] Step=2560 Loss=2.4031 Samples=81822 Elapsed=96.4s Speed=26.54 steps/s
+[GOSSIP8] Step=2580 Loss=2.6599 Samples=82462 Elapsed=96.9s Speed=26.64 steps/s
+[GOSSIP8] Step=2600 Loss=2.9165 Samples=83102 Elapsed=97.3s Speed=26.71 steps/s
+[GOSSIP8] Step=2620 Loss=3.0071 Samples=83742 Elapsed=97.8s Speed=26.80 steps/s
+[GOSSIP8] Step=2640 Loss=3.2405 Samples=84382 Elapsed=98.2s Speed=26.87 steps/s
+[GOSSIP8] Step=2660 Loss=2.8699 Samples=85022 Elapsed=98.7s Speed=26.95 steps/s
+[GOSSIP8] Step=2680 Loss=2.8410 Samples=85662 Elapsed=99.2s Speed=27.01 steps/s
+[GOSSIP8] Step=2700 Loss=2.9865 Samples=86302 Elapsed=99.6s Speed=27.10 steps/s
+[GOSSIP8] Step=2720 Loss=2.9942 Samples=86942 Elapsed=100.1s Speed=27.18 steps/s
+[GOSSIP8] Step=2740 Loss=2.6326 Samples=87582 Elapsed=100.5s Speed=27.27 steps/s
+[GOSSIP8] Step=2760 Loss=2.4930 Samples=88222 Elapsed=100.9s Speed=27.34 steps/s
+[GOSSIP8] Step=2780 Loss=3.0945 Samples=88862 Elapsed=101.3s Speed=27.43 steps/s
+[GOSSIP8] Step=2800 Loss=2.6699 Samples=89502 Elapsed=101.8s Speed=27.50 steps/s
+[GOSSIP8] Step=2820 Loss=3.0083 Samples=90128 Elapsed=105.4s Speed=26.75 steps/s
+[GOSSIP8] Step=2840 Loss=3.0709 Samples=90768 Elapsed=105.8s Speed=26.84 steps/s
+[GOSSIP8] Step=2860 Loss=2.8929 Samples=91408 Elapsed=106.2s Speed=26.92 steps/s
+[GOSSIP8] Step=2880 Loss=3.0568 Samples=92048 Elapsed=106.7s Speed=26.99 steps/s
+[GOSSIP8] Step=2900 Loss=2.4575 Samples=92688 Elapsed=107.1s Speed=27.07 steps/s
+[GOSSIP8] Step=2920 Loss=2.2675 Samples=93328 Elapsed=107.6s Speed=27.13 steps/s
+[GOSSIP8] Step=2940 Loss=2.8855 Samples=93968 Elapsed=108.1s Speed=27.20 steps/s
+[GOSSIP8] Step=2960 Loss=2.7072 Samples=94608 Elapsed=108.6s Speed=27.25 steps/s
+[GOSSIP8] Step=2980 Loss=2.9609 Samples=95248 Elapsed=109.1s Speed=27.32 steps/s
+[GOSSIP8] Step=3000 Loss=2.1970 Samples=95888 Elapsed=109.6s Speed=27.38 steps/s
+[GOSSIP8] Step=3020 Loss=3.0082 Samples=96528 Elapsed=110.0s Speed=27.45 steps/s
+[GOSSIP8] Step=3040 Loss=2.4698 Samples=97168 Elapsed=110.5s Speed=27.52 steps/s
+[GOSSIP8] Step=3060 Loss=2.3092 Samples=97808 Elapsed=111.0s Speed=27.56 steps/s
+[GOSSIP8] Step=3080 Loss=2.4155 Samples=98448 Elapsed=111.5s Speed=27.63 steps/s
+[GOSSIP8] Step=3100 Loss=2.5077 Samples=99088 Elapsed=112.0s Speed=27.67 steps/s
+[GOSSIP8] Step=3120 Loss=2.3143 Samples=99728 Elapsed=112.6s Speed=27.70 steps/s
+[GOSSIP8] Step=3140 Loss=2.8279 Samples=100368 Elapsed=113.2s Speed=27.74 steps/s
+[GOSSIP8] Step=3160 Loss=3.2927 Samples=101008 Elapsed=113.7s Speed=27.80 steps/s
+[GOSSIP8] Step=3180 Loss=3.3200 Samples=101634 Elapsed=116.8s Speed=27.23 steps/s
+[GOSSIP8] Step=3200 Loss=2.3978 Samples=102274 Elapsed=117.2s Speed=27.29 steps/s
+[GOSSIP8] Step=3220 Loss=2.9550 Samples=102914 Elapsed=117.7s Speed=27.36 steps/s
+[GOSSIP8] Step=3240 Loss=2.2058 Samples=103554 Elapsed=118.1s Speed=27.42 steps/s
+[GOSSIP8] Step=3260 Loss=2.6755 Samples=104194 Elapsed=118.6s Speed=27.50 steps/s
+[GOSSIP8] Step=3280 Loss=2.2015 Samples=104834 Elapsed=119.1s Speed=27.55 steps/s
+[GOSSIP8] Step=3300 Loss=2.2384 Samples=105474 Elapsed=119.5s Speed=27.61 steps/s
+[GOSSIP8] Step=3320 Loss=2.4273 Samples=106114 Elapsed=120.0s Speed=27.67 steps/s
+[GOSSIP8] Step=3340 Loss=2.3467 Samples=106754 Elapsed=120.5s Speed=27.71 steps/s
+[GOSSIP8] Step=3360 Loss=2.7256 Samples=107394 Elapsed=121.0s Speed=27.77 steps/s
+[GOSSIP8] Step=3380 Loss=2.3978 Samples=108034 Elapsed=121.4s Speed=27.83 steps/s
+[GOSSIP8] Step=3400 Loss=3.0121 Samples=108674 Elapsed=122.0s Speed=27.88 steps/s
+[GOSSIP8] Step=3420 Loss=2.4249 Samples=109314 Elapsed=122.5s Speed=27.93 steps/s
+[GOSSIP8] Step=3440 Loss=2.4172 Samples=109954 Elapsed=123.0s Speed=27.97 steps/s
+[GOSSIP8] Step=3460 Loss=2.6797 Samples=110594 Elapsed=123.5s Speed=28.02 steps/s
+[GOSSIP8] Step=3480 Loss=2.8259 Samples=111234 Elapsed=124.0s Speed=28.06 steps/s
+[GOSSIP8] Step=3500 Loss=2.6183 Samples=111874 Elapsed=124.4s Speed=28.13 steps/s
+[GOSSIP8] Step=3520 Loss=2.4693 Samples=112500 Elapsed=124.8s Speed=28.20 steps/s
+[GOSSIP8] Step=3540 Loss=3.2614 Samples=113140 Elapsed=125.7s Speed=28.17 steps/s
+[GOSSIP8] Step=3560 Loss=2.2108 Samples=113780 Elapsed=126.2s Speed=28.21 steps/s
+[GOSSIP8] Step=3580 Loss=2.1809 Samples=114420 Elapsed=126.7s Speed=28.25 steps/s
+[GOSSIP8] Step=3600 Loss=2.1183 Samples=115060 Elapsed=127.3s Speed=28.29 steps/s
+[GOSSIP8] Step=3620 Loss=2.4622 Samples=115700 Elapsed=127.7s Speed=28.35 steps/s
+[GOSSIP8] Step=3640 Loss=2.6395 Samples=116340 Elapsed=128.1s Speed=28.41 steps/s
+[GOSSIP8] Step=3660 Loss=2.0412 Samples=116980 Elapsed=128.5s Speed=28.47 steps/s
+[GOSSIP8] Step=3680 Loss=1.9529 Samples=117620 Elapsed=129.0s Speed=28.52 steps/s
+[GOSSIP8] Step=3700 Loss=2.2472 Samples=118260 Elapsed=129.6s Speed=28.56 steps/s
+[GOSSIP8] Step=3720 Loss=2.4091 Samples=118900 Elapsed=130.1s Speed=28.59 steps/s
+[GOSSIP8] Step=3740 Loss=2.6889 Samples=119540 Elapsed=130.6s Speed=28.64 steps/s
+[GOSSIP8] Step=3760 Loss=2.8690 Samples=120180 Elapsed=131.1s Speed=28.69 steps/s
+[GOSSIP8] Step=3780 Loss=2.4345 Samples=120820 Elapsed=131.5s Speed=28.75 steps/s
+[GOSSIP8] Step=3800 Loss=2.0785 Samples=121460 Elapsed=132.0s Speed=28.79 steps/s
+[GOSSIP8] Step=3820 Loss=1.9705 Samples=122100 Elapsed=132.5s Speed=28.84 steps/s
+[GOSSIP8] Step=3840 Loss=2.7780 Samples=122740 Elapsed=133.2s Speed=28.84 steps/s
+[GOSSIP8] Step=3860 Loss=1.9861 Samples=123380 Elapsed=133.6s Speed=28.90 steps/s
+[GOSSIP8] Step=3880 Loss=2.4850 Samples=124006 Elapsed=135.3s Speed=28.67 steps/s
+[GOSSIP8] Step=3900 Loss=2.6137 Samples=124646 Elapsed=135.7s Speed=28.73 steps/s
+[GOSSIP8] Step=3920 Loss=2.3482 Samples=125286 Elapsed=136.2s Speed=28.78 steps/s
+[GOSSIP8] Step=3940 Loss=2.2334 Samples=125926 Elapsed=136.6s Speed=28.84 steps/s
+[GOSSIP8] Step=3960 Loss=1.9758 Samples=126566 Elapsed=137.1s Speed=28.89 steps/s
+[GOSSIP8] Step=3980 Loss=2.0187 Samples=127206 Elapsed=137.5s Speed=28.95 steps/s
+[GOSSIP8] Step=4000 Loss=2.1522 Samples=127846 Elapsed=137.9s Speed=29.00 steps/s
+[GOSSIP8] Step=4020 Loss=2.6764 Samples=128486 Elapsed=138.4s Speed=29.05 steps/s
+[GOSSIP8] Step=4040 Loss=1.6810 Samples=129126 Elapsed=138.8s Speed=29.10 steps/s
+[GOSSIP8] Step=4060 Loss=2.2065 Samples=129766 Elapsed=139.2s Speed=29.16 steps/s
+[GOSSIP8] Step=4080 Loss=2.6528 Samples=130406 Elapsed=139.7s Speed=29.21 steps/s
+[GOSSIP8] Step=4100 Loss=2.3541 Samples=131046 Elapsed=140.1s Speed=29.26 steps/s
+[GOSSIP8] Step=4120 Loss=2.4575 Samples=131686 Elapsed=140.6s Speed=29.30 steps/s
+[GOSSIP8] Step=4140 Loss=1.8054 Samples=132326 Elapsed=141.0s Speed=29.35 steps/s
+[GOSSIP8] Step=4160 Loss=2.0128 Samples=132966 Elapsed=141.5s Speed=29.39 steps/s
+[GOSSIP8] Step=4180 Loss=1.7681 Samples=133606 Elapsed=142.0s Speed=29.44 steps/s
+[GOSSIP8] Step=4200 Loss=2.9843 Samples=134246 Elapsed=142.4s Speed=29.49 steps/s
+[GOSSIP8] Step=4220 Loss=2.8140 Samples=134886 Elapsed=142.9s Speed=29.54 steps/s
+[GOSSIP8] Step=4240 Loss=2.4789 Samples=135512 Elapsed=143.7s Speed=29.50 steps/s
+[GOSSIP8] Step=4260 Loss=1.9172 Samples=136152 Elapsed=144.2s Speed=29.55 steps/s
+[GOSSIP8] Step=4280 Loss=2.1628 Samples=136792 Elapsed=144.6s Speed=29.60 steps/s
+[GOSSIP8] Step=4300 Loss=2.2147 Samples=137432 Elapsed=145.0s Speed=29.65 steps/s
+[GOSSIP8] Step=4320 Loss=2.5009 Samples=138072 Elapsed=145.4s Speed=29.71 steps/s
+[GOSSIP8] Step=4340 Loss=1.7133 Samples=138712 Elapsed=146.0s Speed=29.72 steps/s
+[GOSSIP8] Step=4360 Loss=2.3266 Samples=139352 Elapsed=146.5s Speed=29.77 steps/s
+[GOSSIP8] Step=4380 Loss=2.2871 Samples=139992 Elapsed=146.9s Speed=29.82 steps/s
+[GOSSIP8] Step=4400 Loss=2.3885 Samples=140632 Elapsed=147.3s Speed=29.87 steps/s
+[GOSSIP8] Step=4420 Loss=2.5620 Samples=141272 Elapsed=147.7s Speed=29.93 steps/s
+[GOSSIP8] Step=4440 Loss=2.1935 Samples=141912 Elapsed=148.1s Speed=29.97 steps/s
+[GOSSIP8] Step=4460 Loss=2.3202 Samples=142552 Elapsed=148.5s Speed=30.03 steps/s
+[GOSSIP8] Step=4480 Loss=1.6754 Samples=143192 Elapsed=149.0s Speed=30.07 steps/s
+[GOSSIP8] Step=4500 Loss=1.7776 Samples=143832 Elapsed=149.4s Speed=30.12 steps/s
+[GOSSIP8] Step=4520 Loss=1.8258 Samples=144472 Elapsed=149.8s Speed=30.17 steps/s
+[GOSSIP8] Step=4540 Loss=1.7152 Samples=145112 Elapsed=150.2s Speed=30.22 steps/s
+[GOSSIP8] Step=4560 Loss=2.4656 Samples=145752 Elapsed=150.7s Speed=30.26 steps/s
+[GOSSIP8] Step=4580 Loss=2.7586 Samples=146378 Elapsed=154.1s Speed=29.71 steps/s
+[GOSSIP8] Step=4600 Loss=2.3256 Samples=147018 Elapsed=154.6s Speed=29.75 steps/s
+[GOSSIP8] Step=4620 Loss=1.9531 Samples=147658 Elapsed=155.1s Speed=29.80 steps/s
+[GOSSIP8] Step=4640 Loss=1.5407 Samples=148298 Elapsed=155.5s Speed=29.83 steps/s
+[GOSSIP8] Step=4660 Loss=1.8084 Samples=148938 Elapsed=156.0s Speed=29.88 steps/s
+[GOSSIP8] Step=4680 Loss=2.4893 Samples=149578 Elapsed=156.4s Speed=29.92 steps/s
+[GOSSIP8] Step=4700 Loss=1.4746 Samples=150218 Elapsed=156.8s Speed=29.97 steps/s
+[GOSSIP8] Step=4720 Loss=3.1746 Samples=150858 Elapsed=157.3s Speed=30.01 steps/s
+[GOSSIP8] Step=4740 Loss=1.7967 Samples=151498 Elapsed=157.7s Speed=30.06 steps/s
+[GOSSIP8] Step=4760 Loss=1.9884 Samples=152138 Elapsed=158.1s Speed=30.10 steps/s
+[GOSSIP8] Step=4780 Loss=1.6285 Samples=152778 Elapsed=158.5s Speed=30.15 steps/s
+[GOSSIP8] Step=4800 Loss=2.3651 Samples=153418 Elapsed=159.0s Speed=30.19 steps/s
+[GOSSIP8] Step=4820 Loss=1.6236 Samples=154058 Elapsed=159.4s Speed=30.24 steps/s
+[GOSSIP8] Step=4840 Loss=2.1878 Samples=154698 Elapsed=159.8s Speed=30.28 steps/s
+[GOSSIP8] Step=4860 Loss=2.0173 Samples=155338 Elapsed=160.3s Speed=30.32 steps/s
+[GOSSIP8] Step=4880 Loss=1.8993 Samples=155978 Elapsed=160.7s Speed=30.36 steps/s
+[GOSSIP8] Step=4900 Loss=2.2114 Samples=156618 Elapsed=161.1s Speed=30.41 steps/s
+[GOSSIP8] Step=4920 Loss=1.7775 Samples=157258 Elapsed=161.6s Speed=30.45 steps/s
+[GOSSIP8] Step=4940 Loss=2.4885 Samples=157884 Elapsed=162.7s Speed=30.37 steps/s
+[GOSSIP8] Step=4960 Loss=2.8059 Samples=158524 Elapsed=163.1s Speed=30.41 steps/s
+[GOSSIP8] Step=4980 Loss=2.1888 Samples=159164 Elapsed=163.5s Speed=30.46 steps/s
+[GOSSIP8] Step=5000 Loss=2.2991 Samples=159804 Elapsed=164.0s Speed=30.50 steps/s
+[GOSSIP8] Step=5020 Loss=3.0173 Samples=160444 Elapsed=164.3s Speed=30.55 steps/s
+[GOSSIP8] Step=5040 Loss=1.7945 Samples=161084 Elapsed=164.8s Speed=30.59 steps/s
+[GOSSIP8] Step=5060 Loss=2.3609 Samples=161724 Elapsed=165.2s Speed=30.63 steps/s
+[GOSSIP8] Step=5080 Loss=2.0299 Samples=162364 Elapsed=165.6s Speed=30.67 steps/s
+[GOSSIP8] Step=5100 Loss=2.2725 Samples=163004 Elapsed=166.0s Speed=30.72 steps/s
+[GOSSIP8] Step=5120 Loss=2.3556 Samples=163644 Elapsed=166.4s Speed=30.76 steps/s
+[GOSSIP8] Step=5140 Loss=2.4105 Samples=164284 Elapsed=166.8s Speed=30.81 steps/s
+[GOSSIP8] Step=5160 Loss=2.6239 Samples=164924 Elapsed=167.3s Speed=30.85 steps/s
+[GOSSIP8] Step=5180 Loss=2.0644 Samples=165564 Elapsed=167.7s Speed=30.88 steps/s
+[GOSSIP8] Step=5200 Loss=1.7026 Samples=166204 Elapsed=168.3s Speed=30.90 steps/s
+[GOSSIP8] Step=5220 Loss=2.5808 Samples=166844 Elapsed=168.7s Speed=30.95 steps/s
+[GOSSIP8] Step=5240 Loss=1.9589 Samples=167484 Elapsed=169.2s Speed=30.98 steps/s
+[GOSSIP8] Step=5260 Loss=2.0084 Samples=168124 Elapsed=169.7s Speed=31.00 steps/s
+[GOSSIP8] Step=5280 Loss=2.1375 Samples=168750 Elapsed=170.2s Speed=31.03 steps/s
+[GOSSIP8] Step=5300 Loss=1.8146 Samples=169390 Elapsed=173.4s Speed=30.56 steps/s
+[GOSSIP8] Step=5320 Loss=2.0252 Samples=170030 Elapsed=173.9s Speed=30.59 steps/s
+[GOSSIP8] Step=5340 Loss=1.6426 Samples=170670 Elapsed=174.3s Speed=30.64 steps/s
+[GOSSIP8] Step=5360 Loss=2.0127 Samples=171310 Elapsed=174.8s Speed=30.66 steps/s
+[GOSSIP8] Step=5380 Loss=2.1600 Samples=171950 Elapsed=175.2s Speed=30.71 steps/s
+[GOSSIP8] Step=5400 Loss=1.8357 Samples=172590 Elapsed=175.6s Speed=30.75 steps/s
+[GOSSIP8] Step=5420 Loss=2.3372 Samples=173230 Elapsed=176.0s Speed=30.79 steps/s
+[GOSSIP8] Step=5440 Loss=1.7756 Samples=173870 Elapsed=176.5s Speed=30.82 steps/s
+[GOSSIP8] Step=5460 Loss=1.6106 Samples=174510 Elapsed=176.9s Speed=30.86 steps/s
+[GOSSIP8] Step=5480 Loss=2.0710 Samples=175150 Elapsed=177.4s Speed=30.90 steps/s
+[GOSSIP8] Step=5500 Loss=2.1739 Samples=175790 Elapsed=177.8s Speed=30.93 steps/s
+[GOSSIP8] Step=5520 Loss=2.5729 Samples=176430 Elapsed=178.3s Speed=30.96 steps/s
+[GOSSIP8] Step=5540 Loss=1.9490 Samples=177070 Elapsed=178.7s Speed=31.00 steps/s
+[GOSSIP8] Step=5560 Loss=2.0318 Samples=177710 Elapsed=179.2s Speed=31.03 steps/s
+[GOSSIP8] Step=5580 Loss=2.0059 Samples=178350 Elapsed=179.6s Speed=31.07 steps/s
+[GOSSIP8] Step=5600 Loss=2.0808 Samples=178990 Elapsed=180.1s Speed=31.09 steps/s
+[GOSSIP8] Step=5620 Loss=1.8744 Samples=179630 Elapsed=180.5s Speed=31.13 steps/s
+[GOSSIP8] Step=5640 Loss=2.5066 Samples=180256 Elapsed=181.8s Speed=31.03 steps/s
+[GOSSIP8] Step=5660 Loss=1.7088 Samples=180896 Elapsed=182.3s Speed=31.05 steps/s
+[GOSSIP8] Step=5680 Loss=1.6687 Samples=181536 Elapsed=182.7s Speed=31.08 steps/s
+[GOSSIP8] Step=5700 Loss=1.6565 Samples=182176 Elapsed=183.2s Speed=31.12 steps/s
+[GOSSIP8] Step=5720 Loss=1.8097 Samples=182816 Elapsed=183.6s Speed=31.15 steps/s
+[GOSSIP8] Step=5740 Loss=1.7973 Samples=183456 Elapsed=184.1s Speed=31.18 steps/s
+[GOSSIP8] Step=5760 Loss=2.2522 Samples=184096 Elapsed=184.5s Speed=31.22 steps/s
+[GOSSIP8] Step=5780 Loss=1.9514 Samples=184736 Elapsed=184.9s Speed=31.25 steps/s
+[GOSSIP8] Step=5800 Loss=1.8397 Samples=185376 Elapsed=185.5s Speed=31.26 steps/s
+[GOSSIP8] Step=5820 Loss=1.9018 Samples=186016 Elapsed=186.2s Speed=31.26 steps/s
+[GOSSIP8] Step=5840 Loss=1.7414 Samples=186656 Elapsed=187.3s Speed=31.19 steps/s
+[GOSSIP8] Step=5860 Loss=1.2914 Samples=187296 Elapsed=187.7s Speed=31.22 steps/s
+[GOSSIP8] Step=5880 Loss=2.0548 Samples=187936 Elapsed=188.2s Speed=31.24 steps/s
+[GOSSIP8] Step=5900 Loss=1.7054 Samples=188576 Elapsed=188.7s Speed=31.27 steps/s
+[GOSSIP8] Step=5920 Loss=2.1836 Samples=189216 Elapsed=189.1s Speed=31.30 steps/s
+[GOSSIP8] Step=5940 Loss=2.9584 Samples=189856 Elapsed=189.5s Speed=31.34 steps/s
+[GOSSIP8] Step=5960 Loss=2.0283 Samples=190496 Elapsed=189.9s Speed=31.38 steps/s
+[GOSSIP8] Step=5980 Loss=2.7596 Samples=191136 Elapsed=190.3s Speed=31.42 steps/s
+[GOSSIP8] Step=6000 Loss=2.4710 Samples=191762 Elapsed=191.3s Speed=31.36 steps/s
+[GOSSIP8] Step=6020 Loss=2.9175 Samples=192402 Elapsed=191.7s Speed=31.41 steps/s
+[GOSSIP8] Step=6040 Loss=2.3135 Samples=193042 Elapsed=192.1s Speed=31.44 steps/s
+[GOSSIP8] Step=6060 Loss=2.2235 Samples=193682 Elapsed=192.5s Speed=31.47 steps/s
+[GOSSIP8] Step=6080 Loss=2.3948 Samples=194322 Elapsed=193.0s Speed=31.50 steps/s
+[GOSSIP8] Step=6100 Loss=2.3267 Samples=194962 Elapsed=193.4s Speed=31.54 steps/s
+[GOSSIP8] Step=6120 Loss=1.4585 Samples=195602 Elapsed=193.9s Speed=31.57 steps/s
+[GOSSIP8] Step=6140 Loss=1.3156 Samples=196242 Elapsed=194.3s Speed=31.60 steps/s
+[GOSSIP8] Step=6160 Loss=2.4171 Samples=196882 Elapsed=194.7s Speed=31.64 steps/s
+[GOSSIP8] Step=6180 Loss=1.8325 Samples=197522 Elapsed=195.1s Speed=31.67 steps/s
+[GOSSIP8] Step=6200 Loss=1.9664 Samples=198162 Elapsed=195.6s Speed=31.70 steps/s
+[GOSSIP8] Step=6220 Loss=2.0416 Samples=198802 Elapsed=196.0s Speed=31.74 steps/s
+[GOSSIP8] Step=6240 Loss=2.0735 Samples=199442 Elapsed=196.4s Speed=31.77 steps/s
+[GOSSIP8] Step=6260 Loss=2.2768 Samples=200082 Elapsed=196.8s Speed=31.80 steps/s
+[GOSSIP8] Step=6280 Loss=1.5540 Samples=200722 Elapsed=197.3s Speed=31.83 steps/s
+[GOSSIP8] Step=6300 Loss=1.9155 Samples=201362 Elapsed=197.8s Speed=31.85 steps/s
+[GOSSIP8] Step=6320 Loss=1.9031 Samples=202002 Elapsed=198.3s Speed=31.87 steps/s
+[GOSSIP8] Step=6340 Loss=1.8590 Samples=202628 Elapsed=199.4s Speed=31.79 steps/s
+[GOSSIP8] Step=6360 Loss=1.2286 Samples=203268 Elapsed=199.8s Speed=31.83 steps/s
+[GOSSIP8] Step=6380 Loss=1.5747 Samples=203908 Elapsed=200.3s Speed=31.86 steps/s
+[GOSSIP8] Step=6400 Loss=1.7225 Samples=204548 Elapsed=200.7s Speed=31.89 steps/s
+[GOSSIP8] Step=6420 Loss=1.7749 Samples=205188 Elapsed=201.1s Speed=31.92 steps/s
+[GOSSIP8] Step=6440 Loss=1.9029 Samples=205828 Elapsed=201.5s Speed=31.95 steps/s
+[GOSSIP8] Step=6460 Loss=2.2611 Samples=206468 Elapsed=202.0s Speed=31.99 steps/s
+[GOSSIP8] Step=6480 Loss=1.6366 Samples=207108 Elapsed=202.4s Speed=32.02 steps/s
+[GOSSIP8] Step=6500 Loss=1.8688 Samples=207748 Elapsed=202.8s Speed=32.05 steps/s
+[GOSSIP8] Step=6520 Loss=1.4541 Samples=208388 Elapsed=203.3s Speed=32.08 steps/s
+[GOSSIP8] Step=6540 Loss=1.5819 Samples=209028 Elapsed=203.7s Speed=32.11 steps/s
+[GOSSIP8] Step=6560 Loss=1.7981 Samples=209668 Elapsed=204.1s Speed=32.13 steps/s
+[GOSSIP8] Step=6580 Loss=2.3233 Samples=210308 Elapsed=204.6s Speed=32.17 steps/s
+[GOSSIP8] Step=6600 Loss=1.6315 Samples=210948 Elapsed=205.0s Speed=32.19 steps/s
+[GOSSIP8] Step=6620 Loss=2.0999 Samples=211588 Elapsed=205.5s Speed=32.22 steps/s
+[GOSSIP8] Step=6640 Loss=1.3418 Samples=212228 Elapsed=205.9s Speed=32.25 steps/s
+[GOSSIP8] Step=6660 Loss=1.4962 Samples=212868 Elapsed=206.3s Speed=32.28 steps/s
+[GOSSIP8] Step=6680 Loss=1.3347 Samples=213508 Elapsed=207.0s Speed=32.27 steps/s
+[GOSSIP8] Step=6700 Loss=2.1456 Samples=214134 Elapsed=208.1s Speed=32.20 steps/s
+[GOSSIP8] Step=6720 Loss=2.1504 Samples=214774 Elapsed=208.6s Speed=32.22 steps/s
+[GOSSIP8] Step=6740 Loss=1.7292 Samples=215414 Elapsed=209.1s Speed=32.23 steps/s
+[GOSSIP8] Step=6760 Loss=2.0444 Samples=216054 Elapsed=209.7s Speed=32.24 steps/s
+[GOSSIP8] Step=6780 Loss=1.6673 Samples=216694 Elapsed=210.1s Speed=32.26 steps/s
+[GOSSIP8] Step=6800 Loss=1.9449 Samples=217334 Elapsed=210.6s Speed=32.29 steps/s
+[GOSSIP8] Step=6820 Loss=1.9202 Samples=217974 Elapsed=211.0s Speed=32.32 steps/s
+[GOSSIP8] Step=6840 Loss=1.5695 Samples=218614 Elapsed=211.5s Speed=32.34 steps/s
+[GOSSIP8] Step=6860 Loss=1.7994 Samples=219254 Elapsed=211.9s Speed=32.37 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=6880 Loss=1.8173 Samples=219894 Elapsed=212.4s Speed=32.40 steps/s
+[GOSSIP8] Step=6900 Loss=1.6192 Samples=220534 Elapsed=212.8s Speed=32.42 steps/s
+[GOSSIP8] Step=6920 Loss=1.3223 Samples=221174 Elapsed=213.3s Speed=32.45 steps/s
+[GOSSIP8] Step=6940 Loss=1.7248 Samples=221814 Elapsed=213.7s Speed=32.48 steps/s
+[GOSSIP8] Step=6960 Loss=1.5860 Samples=222454 Elapsed=214.1s Speed=32.50 steps/s
+[GOSSIP8] Step=6980 Loss=1.5159 Samples=223094 Elapsed=214.6s Speed=32.53 steps/s
+[GOSSIP8] Step=7000 Loss=1.9966 Samples=223734 Elapsed=215.0s Speed=32.55 steps/s
+[GOSSIP8] Step=7020 Loss=1.7124 Samples=224374 Elapsed=215.5s Speed=32.58 steps/s
+[GOSSIP8] Step=7040 Loss=1.9922 Samples=225000 Elapsed=215.9s Speed=32.61 steps/s
+[GOSSIP8] Step=7060 Loss=3.2125 Samples=225640 Elapsed=216.7s Speed=32.58 steps/s
+[GOSSIP8] Step=7080 Loss=1.6170 Samples=226280 Elapsed=217.1s Speed=32.61 steps/s
+[GOSSIP8] Step=7100 Loss=1.8003 Samples=226920 Elapsed=217.6s Speed=32.63 steps/s
+[GOSSIP8] Step=7120 Loss=1.8954 Samples=227560 Elapsed=218.0s Speed=32.65 steps/s
+[GOSSIP8] Step=7140 Loss=1.4507 Samples=228200 Elapsed=218.5s Speed=32.67 steps/s
+[GOSSIP8] Step=7160 Loss=1.6969 Samples=228840 Elapsed=219.1s Speed=32.68 steps/s
+[GOSSIP8] Step=7180 Loss=2.0382 Samples=229480 Elapsed=219.5s Speed=32.71 steps/s
+[GOSSIP8] Step=7200 Loss=1.3665 Samples=230120 Elapsed=220.0s Speed=32.73 steps/s
+[GOSSIP8] Step=7220 Loss=2.1003 Samples=230760 Elapsed=220.4s Speed=32.75 steps/s
+[GOSSIP8] Step=7240 Loss=1.1446 Samples=231400 Elapsed=220.9s Speed=32.77 steps/s
+[GOSSIP8] Step=7260 Loss=1.7992 Samples=232040 Elapsed=221.3s Speed=32.80 steps/s
+[GOSSIP8] Step=7280 Loss=1.8095 Samples=232680 Elapsed=221.8s Speed=32.82 steps/s
+[GOSSIP8] Step=7300 Loss=2.2070 Samples=233320 Elapsed=222.2s Speed=32.85 steps/s
+[GOSSIP8] Step=7320 Loss=1.5319 Samples=233960 Elapsed=222.7s Speed=32.87 steps/s
+[GOSSIP8] Step=7340 Loss=1.7828 Samples=234600 Elapsed=223.1s Speed=32.90 steps/s
+[GOSSIP8] Step=7360 Loss=1.6854 Samples=235240 Elapsed=223.6s Speed=32.92 steps/s
+[GOSSIP8] Step=7380 Loss=2.9511 Samples=235880 Elapsed=224.0s Speed=32.95 steps/s
+[GOSSIP8] Step=7400 Loss=2.2618 Samples=236506 Elapsed=225.3s Speed=32.85 steps/s
+[GOSSIP8] Step=7420 Loss=2.4288 Samples=237146 Elapsed=225.7s Speed=32.87 steps/s
+[GOSSIP8] Step=7440 Loss=1.5833 Samples=237786 Elapsed=226.2s Speed=32.89 steps/s
+[GOSSIP8] Step=7460 Loss=1.8658 Samples=238426 Elapsed=226.6s Speed=32.91 steps/s
+[GOSSIP8] Step=7480 Loss=2.2989 Samples=239066 Elapsed=227.1s Speed=32.93 steps/s
+[GOSSIP8] Step=7500 Loss=1.8121 Samples=239706 Elapsed=227.6s Speed=32.95 steps/s
+[GOSSIP8] Step=7520 Loss=1.6638 Samples=240346 Elapsed=228.2s Speed=32.95 steps/s
+[GOSSIP8] Step=7540 Loss=1.8206 Samples=240986 Elapsed=228.8s Speed=32.95 steps/s
+[GOSSIP8] Step=7560 Loss=2.1966 Samples=241626 Elapsed=229.3s Speed=32.98 steps/s
+[GOSSIP8] Step=7580 Loss=1.6708 Samples=242266 Elapsed=229.8s Speed=32.98 steps/s
+[GOSSIP8] Step=7600 Loss=1.6383 Samples=242906 Elapsed=230.4s Speed=32.99 steps/s
+[GOSSIP8] Step=7620 Loss=1.4152 Samples=243546 Elapsed=230.9s Speed=33.00 steps/s
+[GOSSIP8] Step=7640 Loss=1.8693 Samples=244186 Elapsed=231.4s Speed=33.02 steps/s
+[GOSSIP8] Step=7660 Loss=1.4613 Samples=244826 Elapsed=231.8s Speed=33.04 steps/s
+[GOSSIP8] Step=7680 Loss=1.7934 Samples=245466 Elapsed=232.3s Speed=33.06 steps/s
+[GOSSIP8] Step=7700 Loss=2.0125 Samples=246106 Elapsed=232.7s Speed=33.09 steps/s
+[GOSSIP8] Step=7720 Loss=2.2071 Samples=246746 Elapsed=233.2s Speed=33.11 steps/s
+[GOSSIP8] Step=7740 Loss=2.1359 Samples=247386 Elapsed=233.6s Speed=33.14 steps/s
+[GOSSIP8] Step=7760 Loss=2.7618 Samples=248012 Elapsed=234.6s Speed=33.08 steps/s
+[GOSSIP8] Step=7780 Loss=1.6032 Samples=248652 Elapsed=235.0s Speed=33.10 steps/s
+[GOSSIP8] Step=7800 Loss=2.0897 Samples=249292 Elapsed=235.5s Speed=33.12 steps/s
+[GOSSIP8] Step=7820 Loss=2.2491 Samples=249932 Elapsed=236.1s Speed=33.12 steps/s
+[GOSSIP8] Step=7840 Loss=1.5538 Samples=250572 Elapsed=236.6s Speed=33.13 steps/s
+[GOSSIP8] Step=7860 Loss=1.4192 Samples=251212 Elapsed=237.0s Speed=33.16 steps/s
+[GOSSIP8] Step=7880 Loss=1.4290 Samples=251852 Elapsed=237.4s Speed=33.19 steps/s
+[GOSSIP8] Step=7900 Loss=1.5702 Samples=252492 Elapsed=237.8s Speed=33.22 steps/s
+[GOSSIP8] Step=7920 Loss=1.8755 Samples=253132 Elapsed=238.3s Speed=33.23 steps/s
+[GOSSIP8] Step=7940 Loss=2.1904 Samples=253772 Elapsed=238.8s Speed=33.26 steps/s
+[GOSSIP8] Step=7960 Loss=1.6951 Samples=254412 Elapsed=239.3s Speed=33.26 steps/s
+[GOSSIP8] Step=7980 Loss=1.4641 Samples=255052 Elapsed=239.7s Speed=33.29 steps/s
+[GOSSIP8] Step=8000 Loss=1.1160 Samples=255692 Elapsed=240.2s Speed=33.31 steps/s
+[GOSSIP8] Step=8020 Loss=1.1385 Samples=256332 Elapsed=240.6s Speed=33.33 steps/s
+[GOSSIP8] Step=8040 Loss=1.6611 Samples=256972 Elapsed=241.2s Speed=33.34 steps/s
+[GOSSIP8] Step=8060 Loss=1.3673 Samples=257612 Elapsed=241.7s Speed=33.35 steps/s
+[GOSSIP8] Step=8080 Loss=1.6218 Samples=258252 Elapsed=242.3s Speed=33.35 steps/s
+[GOSSIP8] Step=8100 Loss=2.0947 Samples=258878 Elapsed=243.3s Speed=33.30 steps/s
+[GOSSIP8] Step=8120 Loss=1.9877 Samples=259518 Elapsed=243.9s Speed=33.29 steps/s
+[GOSSIP8] Step=8140 Loss=1.3708 Samples=260158 Elapsed=244.3s Speed=33.32 steps/s
+[GOSSIP8] Step=8160 Loss=1.6791 Samples=260798 Elapsed=244.8s Speed=33.34 steps/s
+[GOSSIP8] Step=8180 Loss=1.2905 Samples=261438 Elapsed=245.2s Speed=33.36 steps/s
+[GOSSIP8] Step=8200 Loss=1.3213 Samples=262078 Elapsed=245.7s Speed=33.38 steps/s
+[GOSSIP8] Step=8220 Loss=1.3342 Samples=262718 Elapsed=246.1s Speed=33.41 steps/s
+[GOSSIP8] Step=8240 Loss=1.6136 Samples=263358 Elapsed=246.5s Speed=33.43 steps/s
+[GOSSIP8] Step=8260 Loss=1.4659 Samples=263998 Elapsed=246.9s Speed=33.45 steps/s
+[GOSSIP8] Step=8280 Loss=1.7222 Samples=264638 Elapsed=247.4s Speed=33.47 steps/s
+[GOSSIP8] Step=8300 Loss=1.2405 Samples=265278 Elapsed=247.8s Speed=33.49 steps/s
+[GOSSIP8] Step=8320 Loss=2.0080 Samples=265918 Elapsed=248.3s Speed=33.51 steps/s
+[GOSSIP8] Step=8340 Loss=1.3078 Samples=266558 Elapsed=248.7s Speed=33.54 steps/s
+[GOSSIP8] Step=8360 Loss=1.6561 Samples=267198 Elapsed=249.1s Speed=33.56 steps/s
+[GOSSIP8] Step=8380 Loss=0.9700 Samples=267838 Elapsed=249.5s Speed=33.59 steps/s
+[GOSSIP8] Step=8400 Loss=1.5492 Samples=268478 Elapsed=250.0s Speed=33.61 steps/s
+[GOSSIP8] Step=8420 Loss=1.9041 Samples=269118 Elapsed=250.4s Speed=33.63 steps/s
+[GOSSIP8] Step=8440 Loss=1.7063 Samples=269758 Elapsed=250.8s Speed=33.65 steps/s
+[GOSSIP8] Step=8460 Loss=1.5291 Samples=270384 Elapsed=251.8s Speed=33.59 steps/s
+[GOSSIP8] Step=8480 Loss=1.5760 Samples=271024 Elapsed=252.3s Speed=33.61 steps/s
+[GOSSIP8] Step=8500 Loss=2.1024 Samples=271664 Elapsed=252.9s Speed=33.62 steps/s
+[GOSSIP8] Step=8520 Loss=1.6797 Samples=272304 Elapsed=253.4s Speed=33.62 steps/s
+[GOSSIP8] Step=8540 Loss=1.5031 Samples=272944 Elapsed=253.9s Speed=33.64 steps/s
+[GOSSIP8] Step=8560 Loss=1.7890 Samples=273584 Elapsed=254.4s Speed=33.65 steps/s
+[GOSSIP8] Step=8580 Loss=1.4498 Samples=274224 Elapsed=254.8s Speed=33.67 steps/s
+[GOSSIP8] Step=8600 Loss=2.1354 Samples=274864 Elapsed=255.2s Speed=33.70 steps/s
+[GOSSIP8] Step=8620 Loss=1.7296 Samples=275504 Elapsed=255.6s Speed=33.72 steps/s
+[GOSSIP8] Step=8640 Loss=1.3399 Samples=276144 Elapsed=256.0s Speed=33.75 steps/s
+[GOSSIP8] Step=8660 Loss=1.9299 Samples=276784 Elapsed=256.4s Speed=33.77 steps/s
+[GOSSIP8] Step=8680 Loss=1.6741 Samples=277424 Elapsed=256.8s Speed=33.80 steps/s
+[GOSSIP8] Step=8700 Loss=2.0772 Samples=278064 Elapsed=257.2s Speed=33.82 steps/s
+[GOSSIP8] Step=8720 Loss=1.7966 Samples=278704 Elapsed=257.7s Speed=33.84 steps/s
+[GOSSIP8] Step=8740 Loss=1.3976 Samples=279344 Elapsed=258.1s Speed=33.87 steps/s
+[GOSSIP8] Step=8760 Loss=1.6439 Samples=279984 Elapsed=258.5s Speed=33.89 steps/s
+[GOSSIP8] Step=8780 Loss=0.9100 Samples=280624 Elapsed=258.9s Speed=33.92 steps/s
+[GOSSIP8] Step=8800 Loss=1.4705 Samples=281250 Elapsed=259.3s Speed=33.94 steps/s
+[GOSSIP8] Step=8820 Loss=1.6660 Samples=281890 Elapsed=260.8s Speed=33.81 steps/s
+[GOSSIP8] Step=8840 Loss=1.3689 Samples=282530 Elapsed=261.3s Speed=33.83 steps/s
+[GOSSIP8] Step=8860 Loss=2.1455 Samples=283170 Elapsed=261.7s Speed=33.85 steps/s
+[GOSSIP8] Step=8880 Loss=1.5522 Samples=283810 Elapsed=262.2s Speed=33.87 steps/s
+[GOSSIP8] Step=8900 Loss=1.7210 Samples=284450 Elapsed=262.7s Speed=33.88 steps/s
+[GOSSIP8] Step=8920 Loss=1.1205 Samples=285090 Elapsed=263.2s Speed=33.89 steps/s
+[GOSSIP8] Step=8940 Loss=1.2414 Samples=285730 Elapsed=263.6s Speed=33.91 steps/s
+[GOSSIP8] Step=8960 Loss=2.0567 Samples=286370 Elapsed=264.1s Speed=33.93 steps/s
+[GOSSIP8] Step=8980 Loss=1.3495 Samples=287010 Elapsed=264.5s Speed=33.95 steps/s
+[GOSSIP8] Step=9000 Loss=1.4208 Samples=287650 Elapsed=265.0s Speed=33.96 steps/s
+[GOSSIP8] Step=9020 Loss=1.4834 Samples=288290 Elapsed=265.6s Speed=33.96 steps/s
+[GOSSIP8] Step=9040 Loss=1.4366 Samples=288930 Elapsed=266.3s Speed=33.95 steps/s
+[GOSSIP8] Step=9060 Loss=1.1981 Samples=289570 Elapsed=266.8s Speed=33.96 steps/s
+[GOSSIP8] Step=9080 Loss=1.5236 Samples=290210 Elapsed=267.3s Speed=33.97 steps/s
+[GOSSIP8] Step=9100 Loss=1.6539 Samples=290850 Elapsed=267.8s Speed=33.99 steps/s
+[GOSSIP8] Step=9120 Loss=1.5690 Samples=291490 Elapsed=268.2s Speed=34.00 steps/s
+[GOSSIP8] Step=9140 Loss=1.1743 Samples=292130 Elapsed=268.6s Speed=34.03 steps/s
+[GOSSIP8] Step=9160 Loss=2.6091 Samples=292756 Elapsed=270.1s Speed=33.91 steps/s
+[GOSSIP8] Step=9180 Loss=2.3524 Samples=293396 Elapsed=270.5s Speed=33.94 steps/s
+[GOSSIP8] Step=9200 Loss=1.5711 Samples=294036 Elapsed=271.0s Speed=33.95 steps/s
+[GOSSIP8] Step=9220 Loss=1.3457 Samples=294676 Elapsed=271.4s Speed=33.97 steps/s
+[GOSSIP8] Step=9240 Loss=1.1743 Samples=295316 Elapsed=271.9s Speed=33.99 steps/s
+[GOSSIP8] Step=9260 Loss=1.7719 Samples=295956 Elapsed=272.3s Speed=34.01 steps/s
+[GOSSIP8] Step=9280 Loss=1.6975 Samples=296596 Elapsed=272.9s Speed=34.01 steps/s
+[GOSSIP8] Step=9300 Loss=1.1887 Samples=297236 Elapsed=273.4s Speed=34.02 steps/s
+[GOSSIP8] Step=9320 Loss=1.6825 Samples=297876 Elapsed=273.9s Speed=34.03 steps/s
+[GOSSIP8] Step=9340 Loss=1.8026 Samples=298516 Elapsed=274.3s Speed=34.05 steps/s
+[GOSSIP8] Step=9360 Loss=0.9725 Samples=299156 Elapsed=274.9s Speed=34.05 steps/s
+[GOSSIP8] Step=9380 Loss=1.4208 Samples=299796 Elapsed=275.4s Speed=34.06 steps/s
+[GOSSIP8] Step=9400 Loss=1.8431 Samples=300436 Elapsed=275.9s Speed=34.07 steps/s
+[GOSSIP8] Step=9420 Loss=1.9363 Samples=301076 Elapsed=276.4s Speed=34.08 steps/s
+[GOSSIP8] Step=9440 Loss=1.6451 Samples=301716 Elapsed=276.9s Speed=34.09 steps/s
+[GOSSIP8] Step=9460 Loss=1.2018 Samples=302356 Elapsed=277.3s Speed=34.11 steps/s
+[GOSSIP8] Step=9480 Loss=2.6325 Samples=302996 Elapsed=277.8s Speed=34.13 steps/s
+[GOSSIP8] Step=9500 Loss=2.0617 Samples=303636 Elapsed=278.1s Speed=34.16 steps/s
+[GOSSIP8] Step=9520 Loss=2.2768 Samples=304262 Elapsed=279.8s Speed=34.02 steps/s
+[GOSSIP8] Step=9540 Loss=1.3587 Samples=304902 Elapsed=280.2s Speed=34.05 steps/s
+[GOSSIP8] Step=9560 Loss=1.8607 Samples=305542 Elapsed=280.6s Speed=34.07 steps/s
+[GOSSIP8] Step=9580 Loss=1.3511 Samples=306182 Elapsed=281.0s Speed=34.09 steps/s
+[GOSSIP8] Step=9600 Loss=1.3763 Samples=306822 Elapsed=281.5s Speed=34.11 steps/s
+[GOSSIP8] Step=9620 Loss=1.0277 Samples=307462 Elapsed=282.0s Speed=34.12 steps/s
+[GOSSIP8] Step=9640 Loss=1.2278 Samples=308102 Elapsed=282.5s Speed=34.12 steps/s
+[GOSSIP8] Step=9660 Loss=1.7901 Samples=308742 Elapsed=283.0s Speed=34.14 steps/s
+[GOSSIP8] Step=9680 Loss=1.2244 Samples=309382 Elapsed=283.4s Speed=34.15 steps/s
+[GOSSIP8] Step=9700 Loss=1.6861 Samples=310022 Elapsed=283.9s Speed=34.17 steps/s
+[GOSSIP8] Step=9720 Loss=1.6115 Samples=310662 Elapsed=284.4s Speed=34.18 steps/s
+[GOSSIP8] Step=9740 Loss=1.2197 Samples=311302 Elapsed=284.8s Speed=34.20 steps/s
+[GOSSIP8] Step=9760 Loss=1.5124 Samples=311942 Elapsed=285.2s Speed=34.22 steps/s
+[GOSSIP8] Step=9780 Loss=1.8263 Samples=312582 Elapsed=285.7s Speed=34.23 steps/s
+[GOSSIP8] Step=9800 Loss=1.2804 Samples=313222 Elapsed=286.2s Speed=34.25 steps/s
+[GOSSIP8] Step=9820 Loss=1.8072 Samples=313862 Elapsed=286.6s Speed=34.26 steps/s
+[GOSSIP8] Step=9840 Loss=1.7687 Samples=314502 Elapsed=287.1s Speed=34.28 steps/s
+[GOSSIP8] Step=9860 Loss=1.6392 Samples=315128 Elapsed=289.8s Speed=34.03 steps/s
+[GOSSIP8] Step=9880 Loss=1.7193 Samples=315768 Elapsed=290.3s Speed=34.03 steps/s
+[GOSSIP8] Step=9900 Loss=1.0659 Samples=316408 Elapsed=290.9s Speed=34.03 steps/s
+[GOSSIP8] Step=9920 Loss=0.8479 Samples=317048 Elapsed=291.5s Speed=34.03 steps/s
+[GOSSIP8] Step=9940 Loss=1.3654 Samples=317688 Elapsed=292.4s Speed=34.00 steps/s
+[GOSSIP8] Step=9960 Loss=1.3825 Samples=318328 Elapsed=293.1s Speed=33.99 steps/s
+[GOSSIP8] Step=9980 Loss=1.6246 Samples=318968 Elapsed=293.8s Speed=33.97 steps/s
+[GOSSIP8] Step=10000 Loss=1.1628 Samples=319608 Elapsed=294.4s Speed=33.96 steps/s
+[GOSSIP8] Step=10020 Loss=1.4774 Samples=320248 Elapsed=295.3s Speed=33.93 steps/s
+[GOSSIP8] Step=10040 Loss=0.8923 Samples=320888 Elapsed=296.3s Speed=33.88 steps/s
+[GOSSIP8] Step=10060 Loss=1.3164 Samples=321528 Elapsed=296.9s Speed=33.88 steps/s
+[GOSSIP8] Step=10080 Loss=1.7414 Samples=322168 Elapsed=297.5s Speed=33.88 steps/s
+[GOSSIP8] Step=10100 Loss=1.9710 Samples=322808 Elapsed=298.0s Speed=33.89 steps/s
+[GOSSIP8] Step=10120 Loss=2.7335 Samples=323448 Elapsed=298.5s Speed=33.90 steps/s
+[GOSSIP8] Step=10140 Loss=2.8988 Samples=324088 Elapsed=299.0s Speed=33.92 steps/s
+[GOSSIP8] Step=10160 Loss=2.2502 Samples=324728 Elapsed=299.4s Speed=33.94 steps/s
+[GOSSIP8] Step=10180 Loss=2.6523 Samples=325368 Elapsed=299.8s Speed=33.96 steps/s
+[GOSSIP8] Step=10200 Loss=2.1547 Samples=326008 Elapsed=300.2s Speed=33.98 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=10220 Loss=1.6999 Samples=326634 Elapsed=783.3s Speed=13.05 steps/s
+[GOSSIP8] Step=10240 Loss=1.6765 Samples=327274 Elapsed=784.1s Speed=13.06 steps/s
+[GOSSIP8] Step=10260 Loss=1.5942 Samples=327914 Elapsed=784.5s Speed=13.08 steps/s
+[GOSSIP8] Step=10280 Loss=1.5574 Samples=328554 Elapsed=785.0s Speed=13.10 steps/s
+[GOSSIP8] Step=10300 Loss=2.0548 Samples=329194 Elapsed=785.4s Speed=13.11 steps/s
+[GOSSIP8] Step=10320 Loss=1.2720 Samples=329834 Elapsed=785.8s Speed=13.13 steps/s
+[GOSSIP8] Step=10340 Loss=0.8319 Samples=330474 Elapsed=786.3s Speed=13.15 steps/s
+[GOSSIP8] Step=10360 Loss=1.5648 Samples=331114 Elapsed=786.8s Speed=13.17 steps/s
+[GOSSIP8] Step=10380 Loss=1.5386 Samples=331754 Elapsed=787.2s Speed=13.19 steps/s
+[GOSSIP8] Step=10400 Loss=1.0812 Samples=332394 Elapsed=787.7s Speed=13.20 steps/s
+[GOSSIP8] Step=10420 Loss=1.3331 Samples=333034 Elapsed=788.2s Speed=13.22 steps/s
+[GOSSIP8] Step=10440 Loss=2.0043 Samples=333674 Elapsed=788.7s Speed=13.24 steps/s
+[GOSSIP8] Step=10460 Loss=1.3321 Samples=334314 Elapsed=789.1s Speed=13.26 steps/s
+[GOSSIP8] Step=10480 Loss=1.3452 Samples=334954 Elapsed=789.5s Speed=13.27 steps/s
+[GOSSIP8] Step=10500 Loss=1.9145 Samples=335594 Elapsed=789.9s Speed=13.29 steps/s
+[GOSSIP8] Step=10520 Loss=1.4396 Samples=336234 Elapsed=790.4s Speed=13.31 steps/s
+[GOSSIP8] Step=10540 Loss=1.7827 Samples=336874 Elapsed=790.8s Speed=13.33 steps/s
+[GOSSIP8] Step=10560 Loss=1.8787 Samples=337500 Elapsed=791.2s Speed=13.35 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=10580 Loss=2.3657 Samples=338140 Elapsed=792.4s Speed=13.35 steps/s
+[GOSSIP8] Step=10600 Loss=1.3779 Samples=338780 Elapsed=792.9s Speed=13.37 steps/s
+[GOSSIP8] Step=10620 Loss=1.1738 Samples=339420 Elapsed=793.3s Speed=13.39 steps/s
+[GOSSIP8] Step=10640 Loss=1.2532 Samples=340060 Elapsed=793.8s Speed=13.40 steps/s
+[GOSSIP8] Step=10660 Loss=1.8349 Samples=340700 Elapsed=794.3s Speed=13.42 steps/s
+[GOSSIP8] Step=10680 Loss=1.5625 Samples=341340 Elapsed=794.8s Speed=13.44 steps/s
+[GOSSIP8] Step=10700 Loss=1.1913 Samples=341980 Elapsed=795.2s Speed=13.46 steps/s
+[GOSSIP8] Step=10720 Loss=1.3513 Samples=342620 Elapsed=795.6s Speed=13.47 steps/s
+[GOSSIP8] Step=10740 Loss=1.4834 Samples=343260 Elapsed=796.0s Speed=13.49 steps/s
+[GOSSIP8] Step=10760 Loss=1.9239 Samples=343900 Elapsed=796.4s Speed=13.51 steps/s
+[GOSSIP8] Step=10780 Loss=1.1701 Samples=344540 Elapsed=796.9s Speed=13.53 steps/s
+[GOSSIP8] Step=10800 Loss=2.0699 Samples=345180 Elapsed=797.3s Speed=13.55 steps/s
+[GOSSIP8] Step=10820 Loss=1.0247 Samples=345820 Elapsed=797.7s Speed=13.56 steps/s
+[GOSSIP8] Step=10840 Loss=1.4332 Samples=346460 Elapsed=798.2s Speed=13.58 steps/s
+[GOSSIP8] Step=10860 Loss=1.4921 Samples=347100 Elapsed=798.6s Speed=13.60 steps/s
+[GOSSIP8] Step=10880 Loss=1.2017 Samples=347740 Elapsed=799.0s Speed=13.62 steps/s
+[GOSSIP8] Step=10900 Loss=1.3959 Samples=348380 Elapsed=799.5s Speed=13.63 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=10920 Loss=1.4962 Samples=349006 Elapsed=800.8s Speed=13.64 steps/s
+[GOSSIP8] Step=10940 Loss=0.8518 Samples=349646 Elapsed=801.2s Speed=13.66 steps/s
+[GOSSIP8] Step=10960 Loss=1.0413 Samples=350286 Elapsed=801.6s Speed=13.67 steps/s
+[GOSSIP8] Step=10980 Loss=1.1533 Samples=350926 Elapsed=802.0s Speed=13.69 steps/s
+[GOSSIP8] Step=11000 Loss=1.1725 Samples=351566 Elapsed=802.5s Speed=13.71 steps/s
+[GOSSIP8] Step=11020 Loss=1.4198 Samples=352206 Elapsed=802.9s Speed=13.73 steps/s
+[GOSSIP8] Step=11040 Loss=1.8058 Samples=352846 Elapsed=803.3s Speed=13.74 steps/s
+[GOSSIP8] Step=11060 Loss=0.9509 Samples=353486 Elapsed=803.7s Speed=13.76 steps/s
+[GOSSIP8] Step=11080 Loss=0.8840 Samples=354126 Elapsed=804.2s Speed=13.78 steps/s
+[GOSSIP8] Step=11100 Loss=1.3440 Samples=354766 Elapsed=804.6s Speed=13.80 steps/s
+[GOSSIP8] Step=11120 Loss=1.3260 Samples=355406 Elapsed=805.0s Speed=13.81 steps/s
+[GOSSIP8] Step=11140 Loss=1.0669 Samples=356046 Elapsed=805.4s Speed=13.83 steps/s
+[GOSSIP8] Step=11160 Loss=1.5562 Samples=356686 Elapsed=805.9s Speed=13.85 steps/s
+[GOSSIP8] Step=11180 Loss=0.5575 Samples=357326 Elapsed=806.5s Speed=13.86 steps/s
+[GOSSIP8] Step=11200 Loss=1.8761 Samples=357966 Elapsed=807.0s Speed=13.88 steps/s
+[GOSSIP8] Step=11220 Loss=1.1864 Samples=358606 Elapsed=807.6s Speed=13.89 steps/s
+[GOSSIP8] Step=11240 Loss=1.6618 Samples=359246 Elapsed=808.2s Speed=13.91 steps/s
+[GOSSIP8] Step=11260 Loss=2.4944 Samples=359886 Elapsed=808.7s Speed=13.92 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=11280 Loss=0.9577 Samples=360512 Elapsed=810.1s Speed=13.92 steps/s
+[GOSSIP8] Step=11300 Loss=1.3190 Samples=361152 Elapsed=810.5s Speed=13.94 steps/s
+[GOSSIP8] Step=11320 Loss=1.7195 Samples=361792 Elapsed=811.0s Speed=13.96 steps/s
+[GOSSIP8] Step=11340 Loss=1.1463 Samples=362432 Elapsed=811.4s Speed=13.98 steps/s
+[GOSSIP8] Step=11360 Loss=1.7725 Samples=363072 Elapsed=811.9s Speed=13.99 steps/s
+[GOSSIP8] Step=11380 Loss=1.5825 Samples=363712 Elapsed=812.3s Speed=14.01 steps/s
+[GOSSIP8] Step=11400 Loss=1.1743 Samples=364352 Elapsed=812.8s Speed=14.03 steps/s
+[GOSSIP8] Step=11420 Loss=1.1964 Samples=364992 Elapsed=813.3s Speed=14.04 steps/s
+[GOSSIP8] Step=11440 Loss=1.4016 Samples=365632 Elapsed=813.8s Speed=14.06 steps/s
+[GOSSIP8] Step=11460 Loss=1.7403 Samples=366272 Elapsed=814.4s Speed=14.07 steps/s
+[GOSSIP8] Step=11480 Loss=1.7805 Samples=366912 Elapsed=814.9s Speed=14.09 steps/s
+[GOSSIP8] Step=11500 Loss=1.2798 Samples=367552 Elapsed=815.4s Speed=14.10 steps/s
+[GOSSIP8] Step=11520 Loss=1.2857 Samples=368192 Elapsed=815.9s Speed=14.12 steps/s
+[GOSSIP8] Step=11540 Loss=1.5407 Samples=368832 Elapsed=816.4s Speed=14.14 steps/s
+[GOSSIP8] Step=11560 Loss=1.4865 Samples=369472 Elapsed=816.8s Speed=14.15 steps/s
+[GOSSIP8] Step=11580 Loss=1.9037 Samples=370112 Elapsed=817.2s Speed=14.17 steps/s
+[GOSSIP8] Step=11600 Loss=2.6777 Samples=370752 Elapsed=817.7s Speed=14.19 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=11620 Loss=1.8737 Samples=371378 Elapsed=818.7s Speed=14.19 steps/s
+[GOSSIP8] Step=11640 Loss=1.3812 Samples=372018 Elapsed=819.1s Speed=14.21 steps/s
+[GOSSIP8] Step=11660 Loss=1.2447 Samples=372658 Elapsed=819.6s Speed=14.23 steps/s
+[GOSSIP8] Step=11680 Loss=1.5063 Samples=373298 Elapsed=820.1s Speed=14.24 steps/s
+[GOSSIP8] Step=11700 Loss=1.4941 Samples=373938 Elapsed=820.7s Speed=14.26 steps/s
+[GOSSIP8] Step=11720 Loss=1.0473 Samples=374578 Elapsed=821.2s Speed=14.27 steps/s
+[GOSSIP8] Step=11740 Loss=1.1558 Samples=375218 Elapsed=821.8s Speed=14.29 steps/s
+[GOSSIP8] Step=11760 Loss=2.1063 Samples=375858 Elapsed=822.4s Speed=14.30 steps/s
+[GOSSIP8] Step=11780 Loss=1.0174 Samples=376498 Elapsed=823.7s Speed=14.30 steps/s
+[GOSSIP8] Step=11800 Loss=1.6037 Samples=377138 Elapsed=824.5s Speed=14.31 steps/s
+[GOSSIP8] Step=11820 Loss=1.0314 Samples=377778 Elapsed=824.9s Speed=14.33 steps/s
+[GOSSIP8] Step=11840 Loss=1.3096 Samples=378418 Elapsed=825.3s Speed=14.35 steps/s
+[GOSSIP8] Step=11860 Loss=1.7845 Samples=379058 Elapsed=825.7s Speed=14.36 steps/s
+[GOSSIP8] Step=11880 Loss=1.5918 Samples=379698 Elapsed=826.7s Speed=14.37 steps/s
+[GOSSIP8] Step=11900 Loss=2.3174 Samples=380338 Elapsed=827.2s Speed=14.39 steps/s
+[GOSSIP8] Step=11920 Loss=1.9833 Samples=380978 Elapsed=827.7s Speed=14.40 steps/s
+[GOSSIP8] Step=11940 Loss=2.2775 Samples=381618 Elapsed=828.2s Speed=14.42 steps/s
+[GOSSIP8] Step=11960 Loss=2.3782 Samples=382258 Elapsed=828.7s Speed=14.43 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=11980 Loss=2.3172 Samples=382884 Elapsed=830.9s Speed=14.42 steps/s
+[GOSSIP8] Step=12000 Loss=1.3305 Samples=383524 Elapsed=832.0s Speed=14.42 steps/s
+[GOSSIP8] Step=12020 Loss=1.1547 Samples=384164 Elapsed=832.7s Speed=14.43 steps/s
+[GOSSIP8] Step=12040 Loss=1.5506 Samples=384804 Elapsed=833.6s Speed=14.44 steps/s
+[GOSSIP8] Step=12060 Loss=1.5346 Samples=385444 Elapsed=834.2s Speed=14.46 steps/s
+[GOSSIP8] Step=12080 Loss=1.3352 Samples=386084 Elapsed=834.8s Speed=14.47 steps/s
+[GOSSIP8] Step=12100 Loss=1.1549 Samples=386724 Elapsed=835.4s Speed=14.48 steps/s
+[GOSSIP8] Step=12120 Loss=1.1566 Samples=387364 Elapsed=836.0s Speed=14.50 steps/s
+[GOSSIP8] Step=12140 Loss=1.2904 Samples=388004 Elapsed=836.6s Speed=14.51 steps/s
+[GOSSIP8] Step=12160 Loss=1.6181 Samples=388644 Elapsed=837.2s Speed=14.52 steps/s
+[GOSSIP8] Step=12180 Loss=0.9335 Samples=389284 Elapsed=838.2s Speed=14.53 steps/s
+[GOSSIP8] Step=12200 Loss=1.8506 Samples=389924 Elapsed=838.7s Speed=14.55 steps/s
+[GOSSIP8] Step=12220 Loss=2.4037 Samples=390564 Elapsed=839.2s Speed=14.56 steps/s
+[GOSSIP8] Step=12240 Loss=2.1547 Samples=391204 Elapsed=839.7s Speed=14.58 steps/s
+[GOSSIP8] Step=12260 Loss=1.8997 Samples=391844 Elapsed=840.2s Speed=14.59 steps/s
+[GOSSIP8] Step=12280 Loss=1.9711 Samples=392484 Elapsed=840.8s Speed=14.61 steps/s
+[GOSSIP8] Step=12300 Loss=2.6915 Samples=393124 Elapsed=841.3s Speed=14.62 steps/s
+[GOSSIP8] Step=12320 Loss=1.8624 Samples=393750 Elapsed=841.8s Speed=14.64 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=12340 Loss=1.9520 Samples=394390 Elapsed=844.7s Speed=14.61 steps/s
+[GOSSIP8] Step=12360 Loss=1.2952 Samples=395030 Elapsed=845.7s Speed=14.62 steps/s
+[GOSSIP8] Step=12380 Loss=0.7852 Samples=395670 Elapsed=846.3s Speed=14.63 steps/s
+[GOSSIP8] Step=12400 Loss=1.1022 Samples=396310 Elapsed=847.1s Speed=14.64 steps/s
+[GOSSIP8] Step=12420 Loss=1.2671 Samples=396950 Elapsed=847.5s Speed=14.65 steps/s
+[GOSSIP8] Step=12440 Loss=1.2731 Samples=397590 Elapsed=848.0s Speed=14.67 steps/s
+[GOSSIP8] Step=12460 Loss=1.0292 Samples=398230 Elapsed=848.4s Speed=14.69 steps/s
+[GOSSIP8] Step=12480 Loss=1.2060 Samples=398870 Elapsed=848.9s Speed=14.70 steps/s
+[GOSSIP8] Step=12500 Loss=1.0689 Samples=399510 Elapsed=849.3s Speed=14.72 steps/s
+[GOSSIP8] Step=12520 Loss=1.0628 Samples=400150 Elapsed=849.8s Speed=14.73 steps/s
+[GOSSIP8] Step=12540 Loss=1.0438 Samples=400790 Elapsed=850.1s Speed=14.75 steps/s
+[GOSSIP8] Step=12560 Loss=1.1251 Samples=401430 Elapsed=850.6s Speed=14.77 steps/s
+[GOSSIP8] Step=12580 Loss=1.2956 Samples=402070 Elapsed=851.4s Speed=14.78 steps/s
+[GOSSIP8] Step=12600 Loss=1.0650 Samples=402710 Elapsed=852.1s Speed=14.79 steps/s
+[GOSSIP8] Step=12620 Loss=1.6536 Samples=403350 Elapsed=852.6s Speed=14.80 steps/s
+[GOSSIP8] Step=12640 Loss=1.9149 Samples=403990 Elapsed=853.1s Speed=14.82 steps/s
+[GOSSIP8] Step=12660 Loss=2.5251 Samples=404630 Elapsed=853.6s Speed=14.83 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=12680 Loss=2.6463 Samples=405256 Elapsed=857.0s Speed=14.80 steps/s
+[GOSSIP8] Step=12700 Loss=2.7748 Samples=405896 Elapsed=857.3s Speed=14.81 steps/s
+[GOSSIP8] Step=12720 Loss=1.3976 Samples=406536 Elapsed=857.8s Speed=14.83 steps/s
+[GOSSIP8] Step=12740 Loss=1.0086 Samples=407176 Elapsed=858.3s Speed=14.84 steps/s
+[GOSSIP8] Step=12760 Loss=1.3094 Samples=407816 Elapsed=858.7s Speed=14.86 steps/s
+[GOSSIP8] Step=12780 Loss=0.9849 Samples=408456 Elapsed=859.1s Speed=14.88 steps/s
+[GOSSIP8] Step=12800 Loss=1.1836 Samples=409096 Elapsed=859.6s Speed=14.89 steps/s
+[GOSSIP8] Step=12820 Loss=1.3145 Samples=409736 Elapsed=860.0s Speed=14.91 steps/s
+[GOSSIP8] Step=12840 Loss=1.4911 Samples=410376 Elapsed=860.4s Speed=14.92 steps/s
+[GOSSIP8] Step=12860 Loss=1.6377 Samples=411016 Elapsed=860.8s Speed=14.94 steps/s
+[GOSSIP8] Step=12880 Loss=1.3091 Samples=411656 Elapsed=861.2s Speed=14.96 steps/s
+[GOSSIP8] Step=12900 Loss=1.1728 Samples=412296 Elapsed=861.6s Speed=14.97 steps/s
+[GOSSIP8] Step=12920 Loss=1.2260 Samples=412936 Elapsed=862.1s Speed=14.99 steps/s
+[GOSSIP8] Step=12940 Loss=1.2797 Samples=413576 Elapsed=862.5s Speed=15.00 steps/s
+[GOSSIP8] Step=12960 Loss=1.6663 Samples=414216 Elapsed=862.9s Speed=15.02 steps/s
+[GOSSIP8] Step=12980 Loss=1.8519 Samples=414856 Elapsed=863.3s Speed=15.04 steps/s
+[GOSSIP8] Step=13000 Loss=1.4533 Samples=415496 Elapsed=863.7s Speed=15.05 steps/s
+[GOSSIP8] Step=13020 Loss=1.4238 Samples=416136 Elapsed=864.1s Speed=15.07 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=13040 Loss=1.9090 Samples=416762 Elapsed=866.5s Speed=15.05 steps/s
+[GOSSIP8] Step=13060 Loss=1.2935 Samples=417402 Elapsed=866.9s Speed=15.07 steps/s
+[GOSSIP8] Step=13080 Loss=1.4056 Samples=418042 Elapsed=867.3s Speed=15.08 steps/s
+[GOSSIP8] Step=13100 Loss=1.1189 Samples=418682 Elapsed=867.7s Speed=15.10 steps/s
+[GOSSIP8] Step=13120 Loss=1.1557 Samples=419322 Elapsed=868.2s Speed=15.11 steps/s
+[GOSSIP8] Step=13140 Loss=0.8174 Samples=419962 Elapsed=868.5s Speed=15.13 steps/s
+[GOSSIP8] Step=13160 Loss=1.3476 Samples=420602 Elapsed=869.0s Speed=15.14 steps/s
+[GOSSIP8] Step=13180 Loss=1.5414 Samples=421242 Elapsed=869.4s Speed=15.16 steps/s
+[GOSSIP8] Step=13200 Loss=0.9066 Samples=421882 Elapsed=870.0s Speed=15.17 steps/s
+[GOSSIP8] Step=13220 Loss=0.6110 Samples=422522 Elapsed=870.6s Speed=15.18 steps/s
+[GOSSIP8] Step=13240 Loss=1.1246 Samples=423162 Elapsed=871.3s Speed=15.20 steps/s
+[GOSSIP8] Step=13260 Loss=0.8976 Samples=423802 Elapsed=871.9s Speed=15.21 steps/s
+[GOSSIP8] Step=13280 Loss=1.4409 Samples=424442 Elapsed=872.5s Speed=15.22 steps/s
+[GOSSIP8] Step=13300 Loss=1.3594 Samples=425082 Elapsed=873.1s Speed=15.23 steps/s
+[GOSSIP8] Step=13320 Loss=1.6224 Samples=425722 Elapsed=873.6s Speed=15.25 steps/s
+[GOSSIP8] Step=13340 Loss=1.3583 Samples=426362 Elapsed=874.2s Speed=15.26 steps/s
+[GOSSIP8] Step=13360 Loss=1.9816 Samples=427002 Elapsed=874.7s Speed=15.27 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=13380 Loss=2.4461 Samples=427628 Elapsed=876.6s Speed=15.26 steps/s
+[GOSSIP8] Step=13400 Loss=0.6405 Samples=428268 Elapsed=877.6s Speed=15.27 steps/s
+[GOSSIP8] Step=13420 Loss=0.9184 Samples=428908 Elapsed=878.5s Speed=15.28 steps/s
+[GOSSIP8] Step=13440 Loss=1.5768 Samples=429548 Elapsed=878.9s Speed=15.29 steps/s
+[GOSSIP8] Step=13460 Loss=1.0746 Samples=430188 Elapsed=879.4s Speed=15.31 steps/s
+[GOSSIP8] Step=13480 Loss=0.7536 Samples=430828 Elapsed=879.9s Speed=15.32 steps/s
+[GOSSIP8] Step=13500 Loss=1.0420 Samples=431468 Elapsed=880.4s Speed=15.33 steps/s
+[GOSSIP8] Step=13520 Loss=1.3775 Samples=432108 Elapsed=880.8s Speed=15.35 steps/s
+[GOSSIP8] Step=13540 Loss=0.8760 Samples=432748 Elapsed=881.2s Speed=15.36 steps/s
+[GOSSIP8] Step=13560 Loss=1.4307 Samples=433388 Elapsed=881.7s Speed=15.38 steps/s
+[GOSSIP8] Step=13580 Loss=0.7906 Samples=434028 Elapsed=882.1s Speed=15.39 steps/s
+[GOSSIP8] Step=13600 Loss=1.1255 Samples=434668 Elapsed=882.7s Speed=15.41 steps/s
+[GOSSIP8] Step=13620 Loss=1.5625 Samples=435308 Elapsed=883.1s Speed=15.42 steps/s
+[GOSSIP8] Step=13640 Loss=1.0165 Samples=435948 Elapsed=883.5s Speed=15.44 steps/s
+[GOSSIP8] Step=13660 Loss=0.9526 Samples=436588 Elapsed=883.9s Speed=15.45 steps/s
+[GOSSIP8] Step=13680 Loss=1.5020 Samples=437228 Elapsed=884.4s Speed=15.47 steps/s
+[GOSSIP8] Step=13700 Loss=2.1092 Samples=437868 Elapsed=884.7s Speed=15.49 steps/s
+[GOSSIP8] Step=13720 Loss=2.4156 Samples=438508 Elapsed=885.1s Speed=15.50 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=13740 Loss=1.8478 Samples=439134 Elapsed=887.7s Speed=15.48 steps/s
+[GOSSIP8] Step=13760 Loss=2.2550 Samples=439774 Elapsed=888.2s Speed=15.49 steps/s
+[GOSSIP8] Step=13780 Loss=1.9859 Samples=440414 Elapsed=888.6s Speed=15.51 steps/s
+[GOSSIP8] Step=13800 Loss=1.3439 Samples=441054 Elapsed=889.1s Speed=15.52 steps/s
+[GOSSIP8] Step=13820 Loss=0.8678 Samples=441694 Elapsed=889.5s Speed=15.54 steps/s
+[GOSSIP8] Step=13840 Loss=1.1684 Samples=442334 Elapsed=890.0s Speed=15.55 steps/s
+[GOSSIP8] Step=13860 Loss=1.2164 Samples=442974 Elapsed=890.4s Speed=15.57 steps/s
+[GOSSIP8] Step=13880 Loss=1.8879 Samples=443614 Elapsed=890.8s Speed=15.58 steps/s
+[GOSSIP8] Step=13900 Loss=0.9001 Samples=444254 Elapsed=891.4s Speed=15.59 steps/s
+[GOSSIP8] Step=13920 Loss=1.4167 Samples=444894 Elapsed=891.8s Speed=15.61 steps/s
+[GOSSIP8] Step=13940 Loss=0.9759 Samples=445534 Elapsed=892.2s Speed=15.62 steps/s
+[GOSSIP8] Step=13960 Loss=0.9200 Samples=446174 Elapsed=892.7s Speed=15.64 steps/s
+[GOSSIP8] Step=13980 Loss=1.3468 Samples=446814 Elapsed=893.1s Speed=15.65 steps/s
+[GOSSIP8] Step=14000 Loss=0.8303 Samples=447454 Elapsed=893.6s Speed=15.67 steps/s
+[GOSSIP8] Step=14020 Loss=1.0754 Samples=448094 Elapsed=894.0s Speed=15.68 steps/s
+[GOSSIP8] Step=14040 Loss=1.2933 Samples=448734 Elapsed=894.5s Speed=15.70 steps/s
+[GOSSIP8] Step=14060 Loss=1.1830 Samples=449374 Elapsed=894.9s Speed=15.71 steps/s
+[GOSSIP8] Step=14080 Loss=1.6193 Samples=450000 Elapsed=895.3s Speed=15.73 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=14100 Loss=2.0466 Samples=450640 Elapsed=896.5s Speed=15.73 steps/s
+[GOSSIP8] Step=14120 Loss=0.9811 Samples=451280 Elapsed=896.9s Speed=15.74 steps/s
+[GOSSIP8] Step=14140 Loss=1.2639 Samples=451920 Elapsed=897.4s Speed=15.76 steps/s
+[GOSSIP8] Step=14160 Loss=0.9941 Samples=452560 Elapsed=897.8s Speed=15.77 steps/s
+[GOSSIP8] Step=14180 Loss=1.2782 Samples=453200 Elapsed=898.2s Speed=15.79 steps/s
+[GOSSIP8] Step=14200 Loss=1.3050 Samples=453840 Elapsed=898.7s Speed=15.80 steps/s
+[GOSSIP8] Step=14220 Loss=1.4749 Samples=454480 Elapsed=899.1s Speed=15.82 steps/s
+[GOSSIP8] Step=14240 Loss=1.3681 Samples=455120 Elapsed=899.5s Speed=15.83 steps/s
+[GOSSIP8] Step=14260 Loss=1.4297 Samples=455760 Elapsed=899.9s Speed=15.85 steps/s
+[GOSSIP8] Step=14280 Loss=1.1399 Samples=456400 Elapsed=900.3s Speed=15.86 steps/s
+[GOSSIP8] Step=14300 Loss=1.1545 Samples=457040 Elapsed=900.8s Speed=15.88 steps/s
+[GOSSIP8] Step=14320 Loss=1.9441 Samples=457680 Elapsed=901.2s Speed=15.89 steps/s
+[GOSSIP8] Step=14340 Loss=1.9004 Samples=458320 Elapsed=901.7s Speed=15.90 steps/s
+[GOSSIP8] Step=14360 Loss=1.6790 Samples=458960 Elapsed=902.2s Speed=15.92 steps/s
+[GOSSIP8] Step=14380 Loss=1.9689 Samples=459600 Elapsed=902.6s Speed=15.93 steps/s
+[GOSSIP8] Step=14400 Loss=1.7304 Samples=460240 Elapsed=903.1s Speed=15.94 steps/s
+[GOSSIP8] Step=14420 Loss=2.3175 Samples=460880 Elapsed=903.5s Speed=15.96 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=14440 Loss=1.6433 Samples=461506 Elapsed=1488.7s Speed=9.70 steps/s
+[GOSSIP8] Step=14460 Loss=1.5323 Samples=462146 Elapsed=1489.1s Speed=9.71 steps/s
+[GOSSIP8] Step=14480 Loss=1.9835 Samples=462786 Elapsed=1490.0s Speed=9.72 steps/s
+[GOSSIP8] Step=14500 Loss=1.3633 Samples=463426 Elapsed=1490.4s Speed=9.73 steps/s
+[GOSSIP8] Step=14520 Loss=1.6565 Samples=464066 Elapsed=1490.9s Speed=9.74 steps/s
+[GOSSIP8] Step=14540 Loss=2.0318 Samples=464706 Elapsed=1491.3s Speed=9.75 steps/s
+[GOSSIP8] Step=14560 Loss=1.6825 Samples=465346 Elapsed=1491.9s Speed=9.76 steps/s
+[GOSSIP8] Step=14580 Loss=1.7194 Samples=465986 Elapsed=1492.3s Speed=9.77 steps/s
+[GOSSIP8] Step=14600 Loss=1.2040 Samples=466626 Elapsed=1492.9s Speed=9.78 steps/s
+[GOSSIP8] Step=14620 Loss=1.1456 Samples=467266 Elapsed=1493.4s Speed=9.79 steps/s
+[GOSSIP8] Step=14640 Loss=1.5405 Samples=467906 Elapsed=1493.8s Speed=9.80 steps/s
+[GOSSIP8] Step=14660 Loss=1.7780 Samples=468546 Elapsed=1494.3s Speed=9.81 steps/s
+[GOSSIP8] Step=14680 Loss=1.6509 Samples=469186 Elapsed=1494.7s Speed=9.82 steps/s
+[GOSSIP8] Step=14700 Loss=1.5143 Samples=469826 Elapsed=1495.2s Speed=9.83 steps/s
+[GOSSIP8] Step=14720 Loss=1.7739 Samples=470466 Elapsed=1495.6s Speed=9.84 steps/s
+[GOSSIP8] Step=14740 Loss=1.8514 Samples=471106 Elapsed=1496.0s Speed=9.85 steps/s
+[GOSSIP8] Step=14760 Loss=2.3014 Samples=471746 Elapsed=1496.5s Speed=9.86 steps/s
+[GOSSIP8] Step=14780 Loss=1.8126 Samples=472386 Elapsed=1496.8s Speed=9.87 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=14800 Loss=1.5989 Samples=473012 Elapsed=1500.7s Speed=9.86 steps/s
+[GOSSIP8] Step=14820 Loss=2.1604 Samples=473652 Elapsed=1501.2s Speed=9.87 steps/s
+[GOSSIP8] Step=14840 Loss=1.1493 Samples=474292 Elapsed=1501.7s Speed=9.88 steps/s
+[GOSSIP8] Step=14860 Loss=1.4982 Samples=474932 Elapsed=1502.1s Speed=9.89 steps/s
+[GOSSIP8] Step=14880 Loss=1.7367 Samples=475572 Elapsed=1502.6s Speed=9.90 steps/s
+[GOSSIP8] Step=14900 Loss=1.2481 Samples=476212 Elapsed=1503.0s Speed=9.91 steps/s
+[GOSSIP8] Step=14920 Loss=1.4854 Samples=476852 Elapsed=1503.5s Speed=9.92 steps/s
+[GOSSIP8] Step=14940 Loss=1.0897 Samples=477492 Elapsed=1503.9s Speed=9.93 steps/s
+[GOSSIP8] Step=14960 Loss=1.3247 Samples=478132 Elapsed=1504.4s Speed=9.94 steps/s
+[GOSSIP8] Step=14980 Loss=1.3695 Samples=478772 Elapsed=1504.8s Speed=9.95 steps/s
+[GOSSIP8] Step=15000 Loss=1.0098 Samples=479412 Elapsed=1505.3s Speed=9.96 steps/s
+[GOSSIP8] Step=15020 Loss=1.5719 Samples=480052 Elapsed=1505.8s Speed=9.98 steps/s
+[GOSSIP8] Step=15040 Loss=1.6560 Samples=480692 Elapsed=1506.2s Speed=9.99 steps/s
+[GOSSIP8] Step=15060 Loss=1.4182 Samples=481332 Elapsed=1506.7s Speed=10.00 steps/s
+[GOSSIP8] Step=15080 Loss=1.6479 Samples=481972 Elapsed=1507.1s Speed=10.01 steps/s
+[GOSSIP8] Step=15100 Loss=1.5612 Samples=482612 Elapsed=1507.6s Speed=10.02 steps/s
+[GOSSIP8] Step=15120 Loss=1.4202 Samples=483252 Elapsed=1508.0s Speed=10.03 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=15140 Loss=1.6919 Samples=483878 Elapsed=1509.2s Speed=10.03 steps/s
+[GOSSIP8] Step=15160 Loss=1.7408 Samples=484518 Elapsed=1509.6s Speed=10.04 steps/s
+[GOSSIP8] Step=15180 Loss=1.5522 Samples=485158 Elapsed=1510.1s Speed=10.05 steps/s
+[GOSSIP8] Step=15200 Loss=1.6775 Samples=485798 Elapsed=1510.6s Speed=10.06 steps/s
+[GOSSIP8] Step=15220 Loss=1.4682 Samples=486438 Elapsed=1511.0s Speed=10.07 steps/s
+[GOSSIP8] Step=15240 Loss=2.3450 Samples=487078 Elapsed=1511.5s Speed=10.08 steps/s
+[GOSSIP8] Step=15260 Loss=1.8225 Samples=487718 Elapsed=1511.9s Speed=10.09 steps/s
+[GOSSIP8] Step=15280 Loss=1.8265 Samples=488358 Elapsed=1512.4s Speed=10.10 steps/s
+[GOSSIP8] Step=15300 Loss=1.9038 Samples=488998 Elapsed=1512.9s Speed=10.11 steps/s
+[GOSSIP8] Step=15320 Loss=1.5582 Samples=489638 Elapsed=1513.4s Speed=10.12 steps/s
+[GOSSIP8] Step=15340 Loss=1.3669 Samples=490278 Elapsed=1513.8s Speed=10.13 steps/s
+[GOSSIP8] Step=15360 Loss=1.4898 Samples=490918 Elapsed=1514.3s Speed=10.14 steps/s
+[GOSSIP8] Step=15380 Loss=1.6586 Samples=491558 Elapsed=1514.7s Speed=10.15 steps/s
+[GOSSIP8] Step=15400 Loss=1.2367 Samples=492198 Elapsed=1515.2s Speed=10.16 steps/s
+[GOSSIP8] Step=15420 Loss=1.8267 Samples=492838 Elapsed=1515.6s Speed=10.17 steps/s
+[GOSSIP8] Step=15440 Loss=2.2822 Samples=493478 Elapsed=1516.1s Speed=10.18 steps/s
+[GOSSIP8] Step=15460 Loss=1.7716 Samples=494118 Elapsed=1516.5s Speed=10.19 steps/s
+[GOSSIP8] Step=15480 Loss=1.4369 Samples=494758 Elapsed=1517.0s Speed=10.20 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=15500 Loss=2.1888 Samples=495384 Elapsed=1520.2s Speed=10.20 steps/s
+[GOSSIP8] Step=15520 Loss=1.2897 Samples=496024 Elapsed=1520.7s Speed=10.21 steps/s
+[GOSSIP8] Step=15540 Loss=1.5649 Samples=496664 Elapsed=1521.3s Speed=10.22 steps/s
+[GOSSIP8] Step=15560 Loss=1.2012 Samples=497304 Elapsed=1521.9s Speed=10.22 steps/s
+[GOSSIP8] Step=15580 Loss=1.3901 Samples=497944 Elapsed=1522.5s Speed=10.23 steps/s
+[GOSSIP8] Step=15600 Loss=1.2877 Samples=498584 Elapsed=1523.1s Speed=10.24 steps/s
+[GOSSIP8] Step=15620 Loss=1.3786 Samples=499224 Elapsed=1523.8s Speed=10.25 steps/s
+[GOSSIP8] Step=15640 Loss=1.3521 Samples=499864 Elapsed=1524.5s Speed=10.26 steps/s
+[GOSSIP8] Step=15660 Loss=1.4250 Samples=500504 Elapsed=1525.1s Speed=10.27 steps/s
+[GOSSIP8] Step=15680 Loss=1.3426 Samples=501144 Elapsed=1525.7s Speed=10.28 steps/s
+[GOSSIP8] Step=15700 Loss=1.7557 Samples=501784 Elapsed=1526.3s Speed=10.29 steps/s
+[GOSSIP8] Step=15720 Loss=1.6422 Samples=502424 Elapsed=1526.9s Speed=10.30 steps/s
+[GOSSIP8] Step=15740 Loss=1.5036 Samples=503064 Elapsed=1527.5s Speed=10.30 steps/s
+[GOSSIP8] Step=15760 Loss=1.6223 Samples=503704 Elapsed=1528.5s Speed=10.31 steps/s
+[GOSSIP8] Step=15780 Loss=2.3970 Samples=504344 Elapsed=1529.0s Speed=10.32 steps/s
+[GOSSIP8] Step=15800 Loss=1.4218 Samples=504984 Elapsed=1529.6s Speed=10.33 steps/s
+[GOSSIP8] Step=15820 Loss=1.7941 Samples=505624 Elapsed=1530.2s Speed=10.34 steps/s
+[GOSSIP8] Step=15840 Loss=1.5171 Samples=506250 Elapsed=1530.7s Speed=10.35 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=15860 Loss=1.7576 Samples=506890 Elapsed=1534.5s Speed=10.34 steps/s
+[GOSSIP8] Step=15880 Loss=1.9317 Samples=507530 Elapsed=1535.0s Speed=10.35 steps/s
+[GOSSIP8] Step=15900 Loss=1.4492 Samples=508170 Elapsed=1535.5s Speed=10.35 steps/s
+[GOSSIP8] Step=15920 Loss=1.3639 Samples=508810 Elapsed=1536.0s Speed=10.36 steps/s
+[GOSSIP8] Step=15940 Loss=1.2885 Samples=509450 Elapsed=1536.5s Speed=10.37 steps/s
+[GOSSIP8] Step=15960 Loss=1.1700 Samples=510090 Elapsed=1536.9s Speed=10.38 steps/s
+[GOSSIP8] Step=15980 Loss=1.6324 Samples=510730 Elapsed=1537.3s Speed=10.39 steps/s
+[GOSSIP8] Step=16000 Loss=1.3665 Samples=511370 Elapsed=1537.8s Speed=10.40 steps/s
+[GOSSIP8] Step=16020 Loss=1.1048 Samples=512010 Elapsed=1538.2s Speed=10.41 steps/s
+[GOSSIP8] Step=16040 Loss=1.5617 Samples=512650 Elapsed=1538.7s Speed=10.42 steps/s
+[GOSSIP8] Step=16060 Loss=2.2446 Samples=513290 Elapsed=1539.1s Speed=10.43 steps/s
+[GOSSIP8] Step=16080 Loss=1.3758 Samples=513930 Elapsed=1539.6s Speed=10.44 steps/s
+[GOSSIP8] Step=16100 Loss=1.1584 Samples=514570 Elapsed=1540.0s Speed=10.45 steps/s
+[GOSSIP8] Step=16120 Loss=1.6599 Samples=515210 Elapsed=1540.5s Speed=10.46 steps/s
+[GOSSIP8] Step=16140 Loss=1.2966 Samples=515850 Elapsed=1540.9s Speed=10.47 steps/s
+[GOSSIP8] Step=16160 Loss=1.7938 Samples=516490 Elapsed=1541.4s Speed=10.48 steps/s
+[GOSSIP8] Step=16180 Loss=1.4601 Samples=517130 Elapsed=1541.8s Speed=10.49 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=16200 Loss=1.3857 Samples=517756 Elapsed=1542.8s Speed=10.50 steps/s
+[GOSSIP8] Step=16220 Loss=1.1559 Samples=518396 Elapsed=1543.2s Speed=10.51 steps/s
+[GOSSIP8] Step=16240 Loss=1.2483 Samples=519036 Elapsed=1543.6s Speed=10.52 steps/s
+[GOSSIP8] Step=16260 Loss=1.6506 Samples=519676 Elapsed=1544.1s Speed=10.53 steps/s
+[GOSSIP8] Step=16280 Loss=0.9999 Samples=520316 Elapsed=1544.5s Speed=10.54 steps/s
+[GOSSIP8] Step=16300 Loss=1.2536 Samples=520956 Elapsed=1545.0s Speed=10.55 steps/s
+[GOSSIP8] Step=16320 Loss=1.2069 Samples=521596 Elapsed=1545.4s Speed=10.56 steps/s
+[GOSSIP8] Step=16340 Loss=1.2021 Samples=522236 Elapsed=1545.9s Speed=10.57 steps/s
+[GOSSIP8] Step=16360 Loss=1.0691 Samples=522876 Elapsed=1546.3s Speed=10.58 steps/s
+[GOSSIP8] Step=16380 Loss=1.4860 Samples=523516 Elapsed=1546.7s Speed=10.59 steps/s
+[GOSSIP8] Step=16400 Loss=1.2276 Samples=524156 Elapsed=1547.2s Speed=10.60 steps/s
+[GOSSIP8] Step=16420 Loss=1.2750 Samples=524796 Elapsed=1547.6s Speed=10.61 steps/s
+[GOSSIP8] Step=16440 Loss=1.2338 Samples=525436 Elapsed=1548.1s Speed=10.62 steps/s
+[GOSSIP8] Step=16460 Loss=0.9604 Samples=526076 Elapsed=1548.5s Speed=10.63 steps/s
+[GOSSIP8] Step=16480 Loss=1.5507 Samples=526716 Elapsed=1549.0s Speed=10.64 steps/s
+[GOSSIP8] Step=16500 Loss=1.7975 Samples=527356 Elapsed=1549.4s Speed=10.65 steps/s
+[GOSSIP8] Step=16520 Loss=1.1296 Samples=527996 Elapsed=1549.8s Speed=10.66 steps/s
+[GOSSIP8] Step=16540 Loss=1.1156 Samples=528636 Elapsed=1550.3s Speed=10.67 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=16560 Loss=1.0326 Samples=529262 Elapsed=1551.9s Speed=10.67 steps/s
+[GOSSIP8] Step=16580 Loss=1.1915 Samples=529902 Elapsed=1552.7s Speed=10.68 steps/s
+[GOSSIP8] Step=16600 Loss=1.4024 Samples=530542 Elapsed=1553.2s Speed=10.69 steps/s
+[GOSSIP8] Step=16620 Loss=1.2730 Samples=531182 Elapsed=1553.6s Speed=10.70 steps/s
+[GOSSIP8] Step=16640 Loss=1.2910 Samples=531822 Elapsed=1554.0s Speed=10.71 steps/s
+[GOSSIP8] Step=16660 Loss=1.0710 Samples=532462 Elapsed=1554.5s Speed=10.72 steps/s
+[GOSSIP8] Step=16680 Loss=0.7699 Samples=533102 Elapsed=1555.0s Speed=10.73 steps/s
+[GOSSIP8] Step=16700 Loss=1.2056 Samples=533742 Elapsed=1555.5s Speed=10.74 steps/s
+[GOSSIP8] Step=16720 Loss=0.7853 Samples=534382 Elapsed=1556.2s Speed=10.74 steps/s
+[GOSSIP8] Step=16740 Loss=0.8770 Samples=535022 Elapsed=1557.0s Speed=10.75 steps/s
+[GOSSIP8] Step=16760 Loss=1.0312 Samples=535662 Elapsed=1557.5s Speed=10.76 steps/s
+[GOSSIP8] Step=16780 Loss=1.1722 Samples=536302 Elapsed=1558.1s Speed=10.77 steps/s
+[GOSSIP8] Step=16800 Loss=0.7820 Samples=536942 Elapsed=1558.7s Speed=10.78 steps/s
+[GOSSIP8] Step=16820 Loss=1.0420 Samples=537582 Elapsed=1559.2s Speed=10.79 steps/s
+[GOSSIP8] Step=16840 Loss=1.1759 Samples=538222 Elapsed=1559.8s Speed=10.80 steps/s
+[GOSSIP8] Step=16860 Loss=1.6585 Samples=538862 Elapsed=1560.3s Speed=10.81 steps/s
+[GOSSIP8] Step=16880 Loss=1.7209 Samples=539502 Elapsed=1560.9s Speed=10.81 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=16900 Loss=1.3436 Samples=540128 Elapsed=1561.7s Speed=10.82 steps/s
+[GOSSIP8] Step=16920 Loss=1.3286 Samples=540768 Elapsed=1562.2s Speed=10.83 steps/s
+[GOSSIP8] Step=16940 Loss=0.9460 Samples=541408 Elapsed=1562.6s Speed=10.84 steps/s
+[GOSSIP8] Step=16960 Loss=1.1199 Samples=542048 Elapsed=1563.1s Speed=10.85 steps/s
+[GOSSIP8] Step=16980 Loss=1.1999 Samples=542688 Elapsed=1563.5s Speed=10.86 steps/s
+[GOSSIP8] Step=17000 Loss=1.4728 Samples=543328 Elapsed=1563.9s Speed=10.87 steps/s
+[GOSSIP8] Step=17020 Loss=1.0308 Samples=543968 Elapsed=1564.3s Speed=10.88 steps/s
+[GOSSIP8] Step=17040 Loss=0.9013 Samples=544608 Elapsed=1564.7s Speed=10.89 steps/s
+[GOSSIP8] Step=17060 Loss=1.2671 Samples=545248 Elapsed=1565.2s Speed=10.90 steps/s
+[GOSSIP8] Step=17080 Loss=1.2103 Samples=545888 Elapsed=1565.6s Speed=10.91 steps/s
+[GOSSIP8] Step=17100 Loss=0.9657 Samples=546528 Elapsed=1566.1s Speed=10.92 steps/s
+[GOSSIP8] Step=17120 Loss=0.8242 Samples=547168 Elapsed=1566.5s Speed=10.93 steps/s
+[GOSSIP8] Step=17140 Loss=0.7519 Samples=547808 Elapsed=1566.9s Speed=10.94 steps/s
+[GOSSIP8] Step=17160 Loss=1.5531 Samples=548448 Elapsed=1567.4s Speed=10.95 steps/s
+[GOSSIP8] Step=17180 Loss=1.3380 Samples=549088 Elapsed=1567.8s Speed=10.96 steps/s
+[GOSSIP8] Step=17200 Loss=0.8898 Samples=549728 Elapsed=1568.2s Speed=10.97 steps/s
+[GOSSIP8] Step=17220 Loss=0.8190 Samples=550368 Elapsed=1568.6s Speed=10.98 steps/s
+[GOSSIP8] Step=17240 Loss=0.8820 Samples=551008 Elapsed=1569.1s Speed=10.99 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=17260 Loss=0.9738 Samples=551634 Elapsed=1570.7s Speed=10.99 steps/s
+[GOSSIP8] Step=17280 Loss=0.9171 Samples=552274 Elapsed=1571.2s Speed=11.00 steps/s
+[GOSSIP8] Step=17300 Loss=0.9010 Samples=552914 Elapsed=1571.6s Speed=11.01 steps/s
+[GOSSIP8] Step=17320 Loss=0.7816 Samples=553554 Elapsed=1572.0s Speed=11.02 steps/s
+[GOSSIP8] Step=17340 Loss=0.7097 Samples=554194 Elapsed=1572.5s Speed=11.03 steps/s
+[GOSSIP8] Step=17360 Loss=0.9332 Samples=554834 Elapsed=1572.9s Speed=11.04 steps/s
+[GOSSIP8] Step=17380 Loss=0.8973 Samples=555474 Elapsed=1573.4s Speed=11.05 steps/s
+[GOSSIP8] Step=17400 Loss=1.4205 Samples=556114 Elapsed=1573.8s Speed=11.06 steps/s
+[GOSSIP8] Step=17420 Loss=0.9875 Samples=556754 Elapsed=1574.2s Speed=11.07 steps/s
+[GOSSIP8] Step=17440 Loss=0.9950 Samples=557394 Elapsed=1574.7s Speed=11.08 steps/s
+[GOSSIP8] Step=17460 Loss=1.1138 Samples=558034 Elapsed=1575.1s Speed=11.08 steps/s
+[GOSSIP8] Step=17480 Loss=0.7239 Samples=558674 Elapsed=1575.6s Speed=11.09 steps/s
+[GOSSIP8] Step=17500 Loss=0.6319 Samples=559314 Elapsed=1576.0s Speed=11.10 steps/s
+[GOSSIP8] Step=17520 Loss=1.1551 Samples=559954 Elapsed=1576.4s Speed=11.11 steps/s
+[GOSSIP8] Step=17540 Loss=0.6282 Samples=560594 Elapsed=1576.8s Speed=11.12 steps/s
+[GOSSIP8] Step=17560 Loss=1.1767 Samples=561234 Elapsed=1577.3s Speed=11.13 steps/s
+[GOSSIP8] Step=17580 Loss=0.7279 Samples=561874 Elapsed=1577.7s Speed=11.14 steps/s
+[GOSSIP8] Step=17600 Loss=0.8542 Samples=562500 Elapsed=1578.1s Speed=11.15 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=17620 Loss=1.0574 Samples=563140 Elapsed=1579.4s Speed=11.16 steps/s
+[GOSSIP8] Step=17640 Loss=0.7112 Samples=563780 Elapsed=1579.9s Speed=11.17 steps/s
+[GOSSIP8] Step=17660 Loss=1.7843 Samples=564420 Elapsed=1580.2s Speed=11.18 steps/s
+[GOSSIP8] Step=17680 Loss=1.3365 Samples=565060 Elapsed=1580.7s Speed=11.19 steps/s
+[GOSSIP8] Step=17700 Loss=1.0848 Samples=565700 Elapsed=1581.0s Speed=11.20 steps/s
+[GOSSIP8] Step=17720 Loss=1.3337 Samples=566340 Elapsed=1581.5s Speed=11.20 steps/s
+[GOSSIP8] Step=17740 Loss=0.7307 Samples=566980 Elapsed=1581.8s Speed=11.21 steps/s
+[GOSSIP8] Step=17760 Loss=1.1520 Samples=567620 Elapsed=1582.3s Speed=11.22 steps/s
+[GOSSIP8] Step=17780 Loss=1.1890 Samples=568260 Elapsed=1582.6s Speed=11.23 steps/s
+[GOSSIP8] Step=17800 Loss=1.0003 Samples=568900 Elapsed=1583.1s Speed=11.24 steps/s
+[GOSSIP8] Step=17820 Loss=1.1153 Samples=569540 Elapsed=1583.4s Speed=11.25 steps/s
+[GOSSIP8] Step=17840 Loss=0.9899 Samples=570180 Elapsed=1583.9s Speed=11.26 steps/s
+[GOSSIP8] Step=17860 Loss=1.5485 Samples=570820 Elapsed=1584.2s Speed=11.27 steps/s
+[GOSSIP8] Step=17880 Loss=0.9571 Samples=571460 Elapsed=1584.7s Speed=11.28 steps/s
+[GOSSIP8] Step=17900 Loss=1.3457 Samples=572100 Elapsed=1585.1s Speed=11.29 steps/s
+[GOSSIP8] Step=17920 Loss=0.6681 Samples=572740 Elapsed=1585.5s Speed=11.30 steps/s
+[GOSSIP8] Step=17940 Loss=1.3481 Samples=573380 Elapsed=1585.9s Speed=11.31 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=17960 Loss=1.1392 Samples=574006 Elapsed=1590.2s Speed=11.29 steps/s
+[GOSSIP8] Step=17980 Loss=1.1032 Samples=574646 Elapsed=1590.7s Speed=11.30 steps/s
+[GOSSIP8] Step=18000 Loss=1.1266 Samples=575286 Elapsed=1591.4s Speed=11.31 steps/s
+[GOSSIP8] Step=18020 Loss=1.3926 Samples=575926 Elapsed=1591.9s Speed=11.32 steps/s
+[GOSSIP8] Step=18040 Loss=0.6372 Samples=576566 Elapsed=1592.3s Speed=11.33 steps/s
+[GOSSIP8] Step=18060 Loss=0.8705 Samples=577206 Elapsed=1592.7s Speed=11.34 steps/s
+[GOSSIP8] Step=18080 Loss=0.9401 Samples=577846 Elapsed=1593.2s Speed=11.35 steps/s
+[GOSSIP8] Step=18100 Loss=1.0493 Samples=578486 Elapsed=1593.5s Speed=11.36 steps/s
+[GOSSIP8] Step=18120 Loss=1.2319 Samples=579126 Elapsed=1593.9s Speed=11.37 steps/s
+[GOSSIP8] Step=18140 Loss=0.7149 Samples=579766 Elapsed=1594.3s Speed=11.38 steps/s
+[GOSSIP8] Step=18160 Loss=1.4725 Samples=580406 Elapsed=1594.8s Speed=11.39 steps/s
+[GOSSIP8] Step=18180 Loss=1.1297 Samples=581046 Elapsed=1595.2s Speed=11.40 steps/s
+[GOSSIP8] Step=18200 Loss=1.0284 Samples=581686 Elapsed=1595.6s Speed=11.41 steps/s
+[GOSSIP8] Step=18220 Loss=0.8028 Samples=582326 Elapsed=1596.0s Speed=11.42 steps/s
+[GOSSIP8] Step=18240 Loss=0.6851 Samples=582966 Elapsed=1596.4s Speed=11.43 steps/s
+[GOSSIP8] Step=18260 Loss=1.1413 Samples=583606 Elapsed=1596.8s Speed=11.44 steps/s
+[GOSSIP8] Step=18280 Loss=1.1476 Samples=584246 Elapsed=1597.2s Speed=11.45 steps/s
+[GOSSIP8] Step=18300 Loss=0.8635 Samples=584886 Elapsed=1597.6s Speed=11.45 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=18320 Loss=1.7022 Samples=585512 Elapsed=1598.8s Speed=11.46 steps/s
+[GOSSIP8] Step=18340 Loss=0.6970 Samples=586152 Elapsed=1599.2s Speed=11.47 steps/s
+[GOSSIP8] Step=18360 Loss=1.1839 Samples=586792 Elapsed=1599.7s Speed=11.48 steps/s
+[GOSSIP8] Step=18380 Loss=0.9871 Samples=587432 Elapsed=1600.1s Speed=11.49 steps/s
+[GOSSIP8] Step=18400 Loss=0.7464 Samples=588072 Elapsed=1600.5s Speed=11.50 steps/s
+[GOSSIP8] Step=18420 Loss=0.9675 Samples=588712 Elapsed=1600.9s Speed=11.51 steps/s
+[GOSSIP8] Step=18440 Loss=1.0676 Samples=589352 Elapsed=1601.4s Speed=11.52 steps/s
+[GOSSIP8] Step=18460 Loss=1.0685 Samples=589992 Elapsed=1601.8s Speed=11.52 steps/s
+[GOSSIP8] Step=18480 Loss=0.9911 Samples=590632 Elapsed=1602.2s Speed=11.53 steps/s
+[GOSSIP8] Step=18500 Loss=0.6719 Samples=591272 Elapsed=1602.6s Speed=11.54 steps/s
+[GOSSIP8] Step=18520 Loss=0.6586 Samples=591912 Elapsed=1603.0s Speed=11.55 steps/s
+[GOSSIP8] Step=18540 Loss=0.9693 Samples=592552 Elapsed=1603.4s Speed=11.56 steps/s
+[GOSSIP8] Step=18560 Loss=0.8095 Samples=593192 Elapsed=1603.9s Speed=11.57 steps/s
+[GOSSIP8] Step=18580 Loss=0.8444 Samples=593832 Elapsed=1604.3s Speed=11.58 steps/s
+[GOSSIP8] Step=18600 Loss=0.4991 Samples=594472 Elapsed=1604.7s Speed=11.59 steps/s
+[GOSSIP8] Step=18620 Loss=0.8578 Samples=595112 Elapsed=1605.1s Speed=11.60 steps/s
+[GOSSIP8] Step=18640 Loss=1.3377 Samples=595752 Elapsed=1605.5s Speed=11.61 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=18660 Loss=0.5468 Samples=596378 Elapsed=1608.6s Speed=11.60 steps/s
+[GOSSIP8] Step=18680 Loss=1.4239 Samples=597018 Elapsed=1609.0s Speed=11.61 steps/s
+[GOSSIP8] Step=18700 Loss=1.0502 Samples=597658 Elapsed=1609.4s Speed=11.62 steps/s
+[GOSSIP8] Step=18720 Loss=0.6499 Samples=598298 Elapsed=1609.9s Speed=11.63 steps/s
+[GOSSIP8] Step=18740 Loss=1.5500 Samples=598938 Elapsed=1610.3s Speed=11.64 steps/s
+[GOSSIP8] Step=18760 Loss=0.7540 Samples=599578 Elapsed=1610.7s Speed=11.65 steps/s
+[GOSSIP8] Step=18780 Loss=1.0327 Samples=600218 Elapsed=1611.1s Speed=11.66 steps/s
+[GOSSIP8] Step=18800 Loss=0.8303 Samples=600858 Elapsed=1611.5s Speed=11.67 steps/s
+[GOSSIP8] Step=18820 Loss=1.0984 Samples=601498 Elapsed=1611.9s Speed=11.68 steps/s
+[GOSSIP8] Step=18840 Loss=0.9301 Samples=602138 Elapsed=1612.3s Speed=11.68 steps/s
+[GOSSIP8] Step=18860 Loss=0.3546 Samples=602778 Elapsed=1612.7s Speed=11.69 steps/s
+[GOSSIP8] Step=18880 Loss=1.3663 Samples=603418 Elapsed=1613.2s Speed=11.70 steps/s
+[GOSSIP8] Step=18900 Loss=1.2209 Samples=604058 Elapsed=1613.6s Speed=11.71 steps/s
+[GOSSIP8] Step=18920 Loss=1.0842 Samples=604698 Elapsed=1614.0s Speed=11.72 steps/s
+[GOSSIP8] Step=18940 Loss=0.7507 Samples=605338 Elapsed=1614.4s Speed=11.73 steps/s
+[GOSSIP8] Step=18960 Loss=0.8462 Samples=605978 Elapsed=1614.9s Speed=11.74 steps/s
+[GOSSIP8] Step=18980 Loss=1.1259 Samples=606618 Elapsed=1615.3s Speed=11.75 steps/s
+[GOSSIP8] Step=19000 Loss=1.1835 Samples=607258 Elapsed=1615.7s Speed=11.76 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=19020 Loss=1.2107 Samples=607884 Elapsed=1617.5s Speed=11.76 steps/s
+[GOSSIP8] Step=19040 Loss=1.0245 Samples=608524 Elapsed=1618.0s Speed=11.77 steps/s
+[GOSSIP8] Step=19060 Loss=0.7857 Samples=609164 Elapsed=1618.4s Speed=11.78 steps/s
+[GOSSIP8] Step=19080 Loss=0.9712 Samples=609804 Elapsed=1618.9s Speed=11.79 steps/s
+[GOSSIP8] Step=19100 Loss=1.0097 Samples=610444 Elapsed=1619.3s Speed=11.80 steps/s
+[GOSSIP8] Step=19120 Loss=0.6604 Samples=611084 Elapsed=1619.7s Speed=11.80 steps/s
+[GOSSIP8] Step=19140 Loss=0.9646 Samples=611724 Elapsed=1620.1s Speed=11.81 steps/s
+[GOSSIP8] Step=19160 Loss=0.7149 Samples=612364 Elapsed=1620.6s Speed=11.82 steps/s
+[GOSSIP8] Step=19180 Loss=0.7646 Samples=613004 Elapsed=1621.0s Speed=11.83 steps/s
+[GOSSIP8] Step=19200 Loss=0.8972 Samples=613644 Elapsed=1621.4s Speed=11.84 steps/s
+[GOSSIP8] Step=19220 Loss=0.9236 Samples=614284 Elapsed=1621.8s Speed=11.85 steps/s
+[GOSSIP8] Step=19240 Loss=0.7900 Samples=614924 Elapsed=1622.3s Speed=11.86 steps/s
+[GOSSIP8] Step=19260 Loss=0.5987 Samples=615564 Elapsed=1622.7s Speed=11.87 steps/s
+[GOSSIP8] Step=19280 Loss=1.3636 Samples=616204 Elapsed=1623.1s Speed=11.88 steps/s
+[GOSSIP8] Step=19300 Loss=0.8086 Samples=616844 Elapsed=1623.6s Speed=11.89 steps/s
+[GOSSIP8] Step=19320 Loss=0.5881 Samples=617484 Elapsed=1624.0s Speed=11.90 steps/s
+[GOSSIP8] Step=19340 Loss=0.9825 Samples=618124 Elapsed=1624.4s Speed=11.91 steps/s
+[GOSSIP8] Step=19360 Loss=1.6344 Samples=618750 Elapsed=1624.8s Speed=11.92 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=19380 Loss=1.8092 Samples=619390 Elapsed=1625.8s Speed=11.92 steps/s
+[GOSSIP8] Step=19400 Loss=0.6494 Samples=620030 Elapsed=1626.2s Speed=11.93 steps/s
+[GOSSIP8] Step=19420 Loss=0.5152 Samples=620670 Elapsed=1626.6s Speed=11.94 steps/s
+[GOSSIP8] Step=19440 Loss=1.0414 Samples=621310 Elapsed=1627.1s Speed=11.95 steps/s
+[GOSSIP8] Step=19460 Loss=1.2956 Samples=621950 Elapsed=1627.4s Speed=11.96 steps/s
+[GOSSIP8] Step=19480 Loss=0.7101 Samples=622590 Elapsed=1627.9s Speed=11.97 steps/s
+[GOSSIP8] Step=19500 Loss=1.0296 Samples=623230 Elapsed=1628.3s Speed=11.98 steps/s
+[GOSSIP8] Step=19520 Loss=0.3909 Samples=623870 Elapsed=1628.7s Speed=11.98 steps/s
+[GOSSIP8] Step=19540 Loss=0.4696 Samples=624510 Elapsed=1629.1s Speed=11.99 steps/s
+[GOSSIP8] Step=19560 Loss=0.6983 Samples=625150 Elapsed=1629.6s Speed=12.00 steps/s
+[GOSSIP8] Step=19580 Loss=0.6358 Samples=625790 Elapsed=1630.0s Speed=12.01 steps/s
+[GOSSIP8] Step=19600 Loss=0.9362 Samples=626430 Elapsed=1630.4s Speed=12.02 steps/s
+[GOSSIP8] Step=19620 Loss=0.5530 Samples=627070 Elapsed=1630.8s Speed=12.03 steps/s
+[GOSSIP8] Step=19640 Loss=1.0545 Samples=627710 Elapsed=1631.3s Speed=12.04 steps/s
+[GOSSIP8] Step=19660 Loss=1.2757 Samples=628350 Elapsed=1631.7s Speed=12.05 steps/s
+[GOSSIP8] Step=19680 Loss=0.5024 Samples=628990 Elapsed=1632.1s Speed=12.06 steps/s
+[GOSSIP8] Step=19700 Loss=0.7007 Samples=629630 Elapsed=1632.5s Speed=12.07 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=19720 Loss=1.2277 Samples=630256 Elapsed=1633.8s Speed=12.07 steps/s
+[GOSSIP8] Step=19740 Loss=0.5662 Samples=630896 Elapsed=1634.2s Speed=12.08 steps/s
+[GOSSIP8] Step=19760 Loss=0.9534 Samples=631536 Elapsed=1634.6s Speed=12.09 steps/s
+[GOSSIP8] Step=19780 Loss=0.6756 Samples=632176 Elapsed=1635.0s Speed=12.10 steps/s
+[GOSSIP8] Step=19800 Loss=0.9068 Samples=632816 Elapsed=1635.5s Speed=12.11 steps/s
+[GOSSIP8] Step=19820 Loss=0.6708 Samples=633456 Elapsed=1635.9s Speed=12.12 steps/s
+[GOSSIP8] Step=19840 Loss=0.7570 Samples=634096 Elapsed=1636.3s Speed=12.12 steps/s
+[GOSSIP8] Step=19860 Loss=1.0568 Samples=634736 Elapsed=1636.8s Speed=12.13 steps/s
+[GOSSIP8] Step=19880 Loss=0.4555 Samples=635376 Elapsed=1637.2s Speed=12.14 steps/s
+[GOSSIP8] Step=19900 Loss=0.5415 Samples=636016 Elapsed=1637.6s Speed=12.15 steps/s
+[GOSSIP8] Step=19920 Loss=1.0834 Samples=636656 Elapsed=1638.0s Speed=12.16 steps/s
+[GOSSIP8] Step=19940 Loss=1.2271 Samples=637296 Elapsed=1638.4s Speed=12.17 steps/s
+[GOSSIP8] Step=19960 Loss=0.8805 Samples=637936 Elapsed=1638.9s Speed=12.18 steps/s
+[GOSSIP8] Step=19980 Loss=0.8262 Samples=638576 Elapsed=1639.3s Speed=12.19 steps/s
+[GOSSIP8] Step=20000 Loss=0.6701 Samples=639216 Elapsed=1639.7s Speed=12.20 steps/s
+[GOSSIP8] Step=20020 Loss=0.7361 Samples=639856 Elapsed=1640.1s Speed=12.21 steps/s
+[GOSSIP8] Step=20040 Loss=0.9690 Samples=640496 Elapsed=1640.5s Speed=12.22 steps/s
+[GOSSIP8] Step=20060 Loss=0.6740 Samples=641136 Elapsed=1640.9s Speed=12.22 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=20080 Loss=1.1022 Samples=641762 Elapsed=1644.2s Speed=12.21 steps/s
+[GOSSIP8] Step=20100 Loss=0.8643 Samples=642402 Elapsed=1644.6s Speed=12.22 steps/s
+[GOSSIP8] Step=20120 Loss=1.0181 Samples=643042 Elapsed=1645.0s Speed=12.23 steps/s
+[GOSSIP8] Step=20140 Loss=0.6137 Samples=643682 Elapsed=1645.4s Speed=12.24 steps/s
+[GOSSIP8] Step=20160 Loss=0.5585 Samples=644322 Elapsed=1645.9s Speed=12.25 steps/s
+[GOSSIP8] Step=20180 Loss=1.2727 Samples=644962 Elapsed=1646.3s Speed=12.26 steps/s
+[GOSSIP8] Step=20200 Loss=1.3625 Samples=645602 Elapsed=1646.7s Speed=12.27 steps/s
+[GOSSIP8] Step=20220 Loss=1.0990 Samples=646242 Elapsed=1647.1s Speed=12.28 steps/s
+[GOSSIP8] Step=20240 Loss=0.7919 Samples=646882 Elapsed=1647.6s Speed=12.28 steps/s
+[GOSSIP8] Step=20260 Loss=0.8832 Samples=647522 Elapsed=1648.1s Speed=12.29 steps/s
+[GOSSIP8] Step=20280 Loss=0.7393 Samples=648162 Elapsed=1648.6s Speed=12.30 steps/s
+[GOSSIP8] Step=20300 Loss=0.3899 Samples=648802 Elapsed=1649.1s Speed=12.31 steps/s
+[GOSSIP8] Step=20320 Loss=0.9269 Samples=649442 Elapsed=1649.7s Speed=12.32 steps/s
+[GOSSIP8] Step=20340 Loss=0.7997 Samples=650082 Elapsed=1650.2s Speed=12.33 steps/s
+[GOSSIP8] Step=20360 Loss=0.8900 Samples=650722 Elapsed=1650.7s Speed=12.33 steps/s
+[GOSSIP8] Step=20380 Loss=1.5319 Samples=651362 Elapsed=1651.2s Speed=12.34 steps/s
+[GOSSIP8] Step=20400 Loss=1.4937 Samples=652002 Elapsed=1651.7s Speed=12.35 steps/s
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[GOSSIP8] Step=20420 Loss=1.4378 Samples=652628 Elapsed=2358.2s Speed=8.66 steps/s
+[GOSSIP8] Step=20440 Loss=1.6704 Samples=653268 Elapsed=2358.6s Speed=8.67 steps/s
+[GOSSIP8] Step=20460 Loss=0.9116 Samples=653908 Elapsed=2359.0s Speed=8.67 steps/s
+[GOSSIP8] Step=20480 Loss=1.5805 Samples=654548 Elapsed=2359.5s Speed=8.68 steps/s
+[GOSSIP8] Step=20500 Loss=1.4266 Samples=655188 Elapsed=2359.9s Speed=8.69 steps/s
+[GOSSIP8] Step=20520 Loss=1.3708 Samples=655828 Elapsed=2360.5s Speed=8.69 steps/s
+[GOSSIP8] Step=20540 Loss=1.6715 Samples=656468 Elapsed=2360.9s Speed=8.70 steps/s
+[GOSSIP8] Step=20560 Loss=1.6757 Samples=657108 Elapsed=2361.4s Speed=8.71 steps/s
+[GOSSIP8] Step=20580 Loss=1.1802 Samples=657748 Elapsed=2361.9s Speed=8.71 steps/s
+[GOSSIP8] Step=20600 Loss=1.6064 Samples=658388 Elapsed=2362.4s Speed=8.72 steps/s
+[GOSSIP8] Step=20620 Loss=1.0715 Samples=659028 Elapsed=2363.3s Speed=8.73 steps/s
+[GOSSIP8] Step=20640 Loss=1.8408 Samples=659668 Elapsed=2363.8s Speed=8.73 steps/s
+[GOSSIP8] Step=20660 Loss=1.6329 Samples=660308 Elapsed=2364.3s Speed=8.74 steps/s
+[GOSSIP8] Step=20680 Loss=1.4614 Samples=660948 Elapsed=2364.8s Speed=8.74 steps/s
+[GOSSIP8] Step=20700 Loss=1.2692 Samples=661588 Elapsed=2365.3s Speed=8.75 steps/s
+[GOSSIP8] Step=20720 Loss=1.5746 Samples=662228 Elapsed=2365.7s Speed=8.76 steps/s
+[GOSSIP8] Step=20740 Loss=1.3669 Samples=662868 Elapsed=2366.1s Speed=8.77 steps/s
+[GOSSIP8] Step=20760 Loss=1.2858 Samples=663508 Elapsed=2366.5s Speed=8.77 steps/s
+[GOSSIP8] Step=20780 Loss=1.9687 Samples=664134 Elapsed=2367.7s Speed=8.78 steps/s
+[GOSSIP8] Step=20800 Loss=1.0229 Samples=664774 Elapsed=2368.1s Speed=8.78 steps/s
+[GOSSIP8] Step=20820 Loss=1.2018 Samples=665414 Elapsed=2368.5s Speed=8.79 steps/s
+[GOSSIP8] Step=20840 Loss=1.2645 Samples=666054 Elapsed=2368.9s Speed=8.80 steps/s
+[GOSSIP8] Step=20860 Loss=0.6908 Samples=666694 Elapsed=2369.3s Speed=8.80 steps/s
+[GOSSIP8] Step=20880 Loss=1.3936 Samples=667334 Elapsed=2369.8s Speed=8.81 steps/s
+[GOSSIP8] Step=20900 Loss=1.3637 Samples=667974 Elapsed=2370.3s Speed=8.82 steps/s
+[GOSSIP8] Step=20920 Loss=1.1767 Samples=668614 Elapsed=2370.8s Speed=8.82 steps/s
+[GOSSIP8] Step=20940 Loss=1.2446 Samples=669254 Elapsed=2371.3s Speed=8.83 steps/s
+[GOSSIP8] Step=20960 Loss=1.2653 Samples=669894 Elapsed=2371.9s Speed=8.84 steps/s
+[GOSSIP8] Step=20980 Loss=1.4467 Samples=670534 Elapsed=2372.4s Speed=8.84 steps/s
+[GOSSIP8] Step=21000 Loss=1.2553 Samples=671174 Elapsed=2372.9s Speed=8.85 steps/s
+[GOSSIP8] Step=21020 Loss=1.1183 Samples=671814 Elapsed=2373.4s Speed=8.86 steps/s
+[GOSSIP8] Step=21040 Loss=1.2265 Samples=672454 Elapsed=2373.9s Speed=8.86 steps/s
+[GOSSIP8] Step=21060 Loss=1.0882 Samples=673094 Elapsed=2374.3s Speed=8.87 steps/s
+[GOSSIP8] Step=21080 Loss=1.0065 Samples=673734 Elapsed=2374.7s Speed=8.88 steps/s
+[GOSSIP8] Step=21100 Loss=1.2594 Samples=674374 Elapsed=2375.1s Speed=8.88 steps/s
+[GOSSIP8] Step=21120 Loss=1.6674 Samples=675000 Elapsed=2375.5s Speed=8.89 steps/s
+[GOSSIP8] Step=21140 Loss=1.6484 Samples=675640 Elapsed=2376.8s Speed=8.89 steps/s
+[GOSSIP8] Step=21160 Loss=1.2631 Samples=676280 Elapsed=2377.4s Speed=8.90 steps/s
+[GOSSIP8] Step=21180 Loss=1.2096 Samples=676920 Elapsed=2377.8s Speed=8.91 steps/s
+[GOSSIP8] Step=21200 Loss=1.5001 Samples=677560 Elapsed=2378.2s Speed=8.91 steps/s
+[GOSSIP8] Step=21220 Loss=1.2764 Samples=678200 Elapsed=2378.7s Speed=8.92 steps/s
+[GOSSIP8] Step=21240 Loss=1.2792 Samples=678840 Elapsed=2379.1s Speed=8.93 steps/s
+[GOSSIP8] Step=21260 Loss=1.1304 Samples=679480 Elapsed=2379.5s Speed=8.93 steps/s
+[GOSSIP8] Step=21280 Loss=1.4374 Samples=680120 Elapsed=2379.9s Speed=8.94 steps/s
+[GOSSIP8] Step=21300 Loss=0.8581 Samples=680760 Elapsed=2380.4s Speed=8.95 steps/s
+[GOSSIP8] Step=21320 Loss=1.5418 Samples=681400 Elapsed=2380.9s Speed=8.95 steps/s
+[GOSSIP8] Step=21340 Loss=1.0169 Samples=682040 Elapsed=2381.4s Speed=8.96 steps/s
+[GOSSIP8] Step=21360 Loss=1.4744 Samples=682680 Elapsed=2381.9s Speed=8.97 steps/s
+[GOSSIP8] Step=21380 Loss=1.2667 Samples=683320 Elapsed=2382.3s Speed=8.97 steps/s
+[GOSSIP8] Step=21400 Loss=1.8832 Samples=683960 Elapsed=2382.8s Speed=8.98 steps/s
+[GOSSIP8] Step=21420 Loss=1.3502 Samples=684600 Elapsed=2383.2s Speed=8.99 steps/s
+[GOSSIP8] Step=21440 Loss=0.9632 Samples=685240 Elapsed=2383.6s Speed=8.99 steps/s
+[GOSSIP8] Step=21460 Loss=1.0596 Samples=685880 Elapsed=2384.0s Speed=9.00 steps/s
+[GOSSIP8] Step=21480 Loss=1.5863 Samples=686506 Elapsed=2385.5s Speed=9.00 steps/s
+[GOSSIP8] Step=21500 Loss=0.7110 Samples=687146 Elapsed=2385.9s Speed=9.01 steps/s
+[GOSSIP8] Step=21520 Loss=0.6990 Samples=687786 Elapsed=2386.4s Speed=9.02 steps/s
+[GOSSIP8] Step=21540 Loss=0.8362 Samples=688426 Elapsed=2386.8s Speed=9.02 steps/s
+[GOSSIP8] Step=21560 Loss=1.1037 Samples=689066 Elapsed=2387.4s Speed=9.03 steps/s
+[GOSSIP8] Step=21580 Loss=1.3245 Samples=689706 Elapsed=2387.8s Speed=9.04 steps/s
+[GOSSIP8] Step=21600 Loss=1.1903 Samples=690346 Elapsed=2388.3s Speed=9.04 steps/s
+[GOSSIP8] Step=21620 Loss=1.0091 Samples=690986 Elapsed=2388.7s Speed=9.05 steps/s
+[GOSSIP8] Step=21640 Loss=1.2348 Samples=691626 Elapsed=2389.2s Speed=9.06 steps/s
+[GOSSIP8] Step=21660 Loss=1.2754 Samples=692266 Elapsed=2389.6s Speed=9.06 steps/s
+[GOSSIP8] Step=21680 Loss=0.9525 Samples=692906 Elapsed=2390.1s Speed=9.07 steps/s
+[GOSSIP8] Step=21700 Loss=0.7998 Samples=693546 Elapsed=2390.5s Speed=9.08 steps/s
+[GOSSIP8] Step=21720 Loss=0.9119 Samples=694186 Elapsed=2391.0s Speed=9.08 steps/s
+[GOSSIP8] Step=21740 Loss=0.9413 Samples=694826 Elapsed=2391.5s Speed=9.09 steps/s
+[GOSSIP8] Step=21760 Loss=1.6115 Samples=695466 Elapsed=2391.9s Speed=9.10 steps/s
+[GOSSIP8] Step=21780 Loss=0.6902 Samples=696106 Elapsed=2392.4s Speed=9.10 steps/s
+[GOSSIP8] Step=21800 Loss=1.0231 Samples=696746 Elapsed=2392.8s Speed=9.11 steps/s
+[GOSSIP8] Step=21820 Loss=0.9561 Samples=697386 Elapsed=2393.2s Speed=9.12 steps/s
+[GOSSIP8] Step=21840 Loss=1.0491 Samples=698012 Elapsed=2394.4s Speed=9.12 steps/s
+[GOSSIP8] Step=21860 Loss=0.6726 Samples=698652 Elapsed=2394.8s Speed=9.13 steps/s
+[GOSSIP8] Step=21880 Loss=0.6094 Samples=699292 Elapsed=2395.2s Speed=9.13 steps/s
+[GOSSIP8] Step=21900 Loss=0.5940 Samples=699932 Elapsed=2395.7s Speed=9.14 steps/s
+[GOSSIP8] Step=21920 Loss=1.0114 Samples=700572 Elapsed=2396.2s Speed=9.15 steps/s
+[GOSSIP8] Step=21940 Loss=1.0919 Samples=701212 Elapsed=2396.7s Speed=9.15 steps/s
+[GOSSIP8] Step=21960 Loss=0.6294 Samples=701852 Elapsed=2397.1s Speed=9.16 steps/s
+[GOSSIP8] Step=21980 Loss=1.4606 Samples=702492 Elapsed=2397.6s Speed=9.17 steps/s
+[GOSSIP8] Step=22000 Loss=0.5351 Samples=703132 Elapsed=2398.0s Speed=9.17 steps/s
+[GOSSIP8] Step=22020 Loss=0.3961 Samples=703772 Elapsed=2398.5s Speed=9.18 steps/s
+[GOSSIP8] Step=22040 Loss=0.7450 Samples=704412 Elapsed=2399.0s Speed=9.19 steps/s
+[GOSSIP8] Step=22060 Loss=1.1006 Samples=705052 Elapsed=2399.4s Speed=9.19 steps/s
+[GOSSIP8] Step=22080 Loss=1.1586 Samples=705692 Elapsed=2399.9s Speed=9.20 steps/s
+[GOSSIP8] Step=22100 Loss=1.0710 Samples=706332 Elapsed=2400.3s Speed=9.21 steps/s
+[GOSSIP8] Step=22120 Loss=1.0893 Samples=706972 Elapsed=2400.7s Speed=9.21 steps/s
+[GOSSIP8] Step=22140 Loss=0.5654 Samples=707612 Elapsed=2401.2s Speed=9.22 steps/s
+[GOSSIP8] Step=22160 Loss=0.9326 Samples=708252 Elapsed=2401.6s Speed=9.23 steps/s
+[GOSSIP8] Step=22180 Loss=0.7083 Samples=708878 Elapsed=2403.1s Speed=9.23 steps/s
+[GOSSIP8] Step=22200 Loss=0.6502 Samples=709518 Elapsed=2403.6s Speed=9.24 steps/s
+[GOSSIP8] Step=22220 Loss=0.7727 Samples=710158 Elapsed=2404.0s Speed=9.24 steps/s
+[GOSSIP8] Step=22240 Loss=0.7599 Samples=710798 Elapsed=2404.4s Speed=9.25 steps/s
+[GOSSIP8] Step=22260 Loss=0.5456 Samples=711438 Elapsed=2404.9s Speed=9.26 steps/s
+[GOSSIP8] Step=22280 Loss=0.8081 Samples=712078 Elapsed=2405.3s Speed=9.26 steps/s
+[GOSSIP8] Step=22300 Loss=0.5884 Samples=712718 Elapsed=2405.8s Speed=9.27 steps/s
+[GOSSIP8] Step=22320 Loss=0.6899 Samples=713358 Elapsed=2406.3s Speed=9.28 steps/s
+[GOSSIP8] Step=22340 Loss=0.5756 Samples=713998 Elapsed=2406.8s Speed=9.28 steps/s
+[GOSSIP8] Step=22360 Loss=0.4419 Samples=714638 Elapsed=2407.4s Speed=9.29 steps/s
+[GOSSIP8] Step=22380 Loss=0.7164 Samples=715278 Elapsed=2407.9s Speed=9.29 steps/s
+[GOSSIP8] Step=22400 Loss=0.4718 Samples=715918 Elapsed=2408.4s Speed=9.30 steps/s
+[GOSSIP8] Step=22420 Loss=0.8341 Samples=716558 Elapsed=2408.9s Speed=9.31 steps/s
+[GOSSIP8] Step=22440 Loss=0.7187 Samples=717198 Elapsed=2409.5s Speed=9.31 steps/s
+[GOSSIP8] Step=22460 Loss=0.8487 Samples=717838 Elapsed=2409.9s Speed=9.32 steps/s
+[GOSSIP8] Step=22480 Loss=1.2508 Samples=718478 Elapsed=2410.4s Speed=9.33 steps/s
+[GOSSIP8] Step=22500 Loss=0.6313 Samples=719118 Elapsed=2410.9s Speed=9.33 steps/s
+[GOSSIP8] Step=22520 Loss=0.3991 Samples=719758 Elapsed=2411.3s Speed=9.34 steps/s
+[GOSSIP8] Step=22540 Loss=1.0530 Samples=720384 Elapsed=2412.6s Speed=9.34 steps/s
+[GOSSIP8] Step=22560 Loss=0.6461 Samples=721024 Elapsed=2413.0s Speed=9.35 steps/s
+[GOSSIP8] Step=22580 Loss=0.8687 Samples=721664 Elapsed=2413.4s Speed=9.36 steps/s
+[GOSSIP8] Step=22600 Loss=0.7107 Samples=722304 Elapsed=2413.9s Speed=9.36 steps/s
+[GOSSIP8] Step=22620 Loss=0.7370 Samples=722944 Elapsed=2414.3s Speed=9.37 steps/s
+[GOSSIP8] Step=22640 Loss=1.1426 Samples=723584 Elapsed=2414.8s Speed=9.38 steps/s
+[GOSSIP8] Step=22660 Loss=0.5596 Samples=724224 Elapsed=2415.2s Speed=9.38 steps/s
+[GOSSIP8] Step=22680 Loss=0.7893 Samples=724864 Elapsed=2415.6s Speed=9.39 steps/s
+[GOSSIP8] Step=22700 Loss=0.6730 Samples=725504 Elapsed=2416.0s Speed=9.40 steps/s
+[GOSSIP8] Step=22720 Loss=0.7908 Samples=726144 Elapsed=2416.5s Speed=9.40 steps/s
+[GOSSIP8] Step=22740 Loss=0.7398 Samples=726784 Elapsed=2416.9s Speed=9.41 steps/s
+[GOSSIP8] Step=22760 Loss=0.9299 Samples=727424 Elapsed=2417.3s Speed=9.42 steps/s
+[GOSSIP8] Step=22780 Loss=1.0414 Samples=728064 Elapsed=2417.7s Speed=9.42 steps/s
+[GOSSIP8] Step=22800 Loss=0.6580 Samples=728704 Elapsed=2418.1s Speed=9.43 steps/s
+[GOSSIP8] Step=22820 Loss=0.6952 Samples=729344 Elapsed=2418.5s Speed=9.44 steps/s
+[GOSSIP8] Step=22840 Loss=0.3773 Samples=729984 Elapsed=2419.0s Speed=9.44 steps/s
+[GOSSIP8] Step=22860 Loss=0.4921 Samples=730624 Elapsed=2419.4s Speed=9.45 steps/s
+[GOSSIP8] Step=22880 Loss=1.5882 Samples=731250 Elapsed=2419.8s Speed=9.46 steps/s
+[GOSSIP8] Step=22900 Loss=0.5734 Samples=731890 Elapsed=2421.5s Speed=9.46 steps/s
+[GOSSIP8] Step=22920 Loss=0.4882 Samples=732530 Elapsed=2422.0s Speed=9.46 steps/s
+[GOSSIP8] Step=22940 Loss=0.6329 Samples=733170 Elapsed=2422.4s Speed=9.47 steps/s
+[GOSSIP8] Step=22960 Loss=0.5142 Samples=733810 Elapsed=2422.9s Speed=9.48 steps/s
+[GOSSIP8] Step=22980 Loss=0.9677 Samples=734450 Elapsed=2423.3s Speed=9.48 steps/s
+[GOSSIP8] Step=23000 Loss=0.2746 Samples=735090 Elapsed=2423.9s Speed=9.49 steps/s
+[GOSSIP8] Step=23020 Loss=0.9074 Samples=735730 Elapsed=2424.3s Speed=9.50 steps/s
+[GOSSIP8] Step=23040 Loss=0.8415 Samples=736370 Elapsed=2424.7s Speed=9.50 steps/s
+[GOSSIP8] Step=23060 Loss=0.4050 Samples=737010 Elapsed=2425.1s Speed=9.51 steps/s
+[GOSSIP8] Step=23080 Loss=0.4549 Samples=737650 Elapsed=2425.6s Speed=9.52 steps/s
+[GOSSIP8] Step=23100 Loss=0.5991 Samples=738290 Elapsed=2426.0s Speed=9.52 steps/s
+[GOSSIP8] Step=23120 Loss=0.8182 Samples=738930 Elapsed=2426.5s Speed=9.53 steps/s
+[GOSSIP8] Step=23140 Loss=0.9240 Samples=739570 Elapsed=2427.0s Speed=9.53 steps/s
+[GOSSIP8] Step=23160 Loss=0.6187 Samples=740210 Elapsed=2427.4s Speed=9.54 steps/s
+[GOSSIP8] Step=23180 Loss=0.5652 Samples=740850 Elapsed=2427.8s Speed=9.55 steps/s
+[GOSSIP8] Step=23200 Loss=0.4262 Samples=741490 Elapsed=2428.3s Speed=9.55 steps/s
+[GOSSIP8] Step=23220 Loss=0.7521 Samples=742130 Elapsed=2428.7s Speed=9.56 steps/s
+[GOSSIP8] Step=23240 Loss=0.7341 Samples=742756 Elapsed=2430.2s Speed=9.56 steps/s
+[GOSSIP8] Step=23260 Loss=0.6116 Samples=743396 Elapsed=2430.6s Speed=9.57 steps/s
+[GOSSIP8] Step=23280 Loss=0.4898 Samples=744036 Elapsed=2431.0s Speed=9.58 steps/s
+[GOSSIP8] Step=23300 Loss=0.7244 Samples=744676 Elapsed=2431.4s Speed=9.58 steps/s
+[GOSSIP8] Step=23320 Loss=0.8741 Samples=745316 Elapsed=2431.9s Speed=9.59 steps/s
+[GOSSIP8] Step=23340 Loss=0.7506 Samples=745956 Elapsed=2432.3s Speed=9.60 steps/s
+[GOSSIP8] Step=23360 Loss=0.4137 Samples=746596 Elapsed=2432.7s Speed=9.60 steps/s
+[GOSSIP8] Step=23380 Loss=0.4302 Samples=747236 Elapsed=2433.1s Speed=9.61 steps/s
+[GOSSIP8] Step=23400 Loss=0.5599 Samples=747876 Elapsed=2433.5s Speed=9.62 steps/s
+[GOSSIP8] Step=23420 Loss=0.4379 Samples=748516 Elapsed=2433.9s Speed=9.62 steps/s
+[GOSSIP8] Step=23440 Loss=0.5443 Samples=749156 Elapsed=2434.4s Speed=9.63 steps/s
+[GOSSIP8] Step=23460 Loss=0.6586 Samples=749796 Elapsed=2434.8s Speed=9.64 steps/s
+[GOSSIP8] Step=23480 Loss=0.4371 Samples=750436 Elapsed=2435.2s Speed=9.64 steps/s
+[GOSSIP8] Step=23500 Loss=0.2566 Samples=751076 Elapsed=2435.6s Speed=9.65 steps/s
+[GOSSIP8] Step=23520 Loss=0.5584 Samples=751716 Elapsed=2436.1s Speed=9.65 steps/s
+[GOSSIP8] Step=23540 Loss=0.6420 Samples=752356 Elapsed=2436.5s Speed=9.66 steps/s
+[GOSSIP8] Step=23560 Loss=0.4216 Samples=752996 Elapsed=2437.0s Speed=9.67 steps/s
+[GOSSIP8] Step=23580 Loss=0.6028 Samples=753636 Elapsed=2437.4s Speed=9.67 steps/s
+[GOSSIP8] Step=23600 Loss=0.6085 Samples=754262 Elapsed=2438.2s Speed=9.68 steps/s
+[GOSSIP8] Step=23620 Loss=0.4572 Samples=754902 Elapsed=2438.7s Speed=9.69 steps/s
+[GOSSIP8] Step=23640 Loss=0.7449 Samples=755542 Elapsed=2439.1s Speed=9.69 steps/s
+[GOSSIP8] Step=23660 Loss=0.5429 Samples=756182 Elapsed=2439.6s Speed=9.70 steps/s
+[GOSSIP8] Step=23680 Loss=0.3530 Samples=756822 Elapsed=2440.0s Speed=9.70 steps/s
+[GOSSIP8] Step=23700 Loss=0.6465 Samples=757462 Elapsed=2440.4s Speed=9.71 steps/s
+[GOSSIP8] Step=23720 Loss=0.3287 Samples=758102 Elapsed=2440.9s Speed=9.72 steps/s
+[GOSSIP8] Step=23740 Loss=0.3740 Samples=758742 Elapsed=2441.3s Speed=9.72 steps/s
+[GOSSIP8] Step=23760 Loss=0.6135 Samples=759382 Elapsed=2441.7s Speed=9.73 steps/s
+[GOSSIP8] Step=23780 Loss=0.4227 Samples=760022 Elapsed=2442.2s Speed=9.74 steps/s
+[GOSSIP8] Step=23800 Loss=0.6579 Samples=760662 Elapsed=2442.6s Speed=9.74 steps/s
+[GOSSIP8] Step=23820 Loss=0.3581 Samples=761302 Elapsed=2443.0s Speed=9.75 steps/s
+[GOSSIP8] Step=23840 Loss=0.4545 Samples=761942 Elapsed=2443.5s Speed=9.76 steps/s
+[GOSSIP8] Step=23860 Loss=0.2213 Samples=762582 Elapsed=2443.9s Speed=9.76 steps/s
+[GOSSIP8] Step=23880 Loss=0.4531 Samples=763222 Elapsed=2444.3s Speed=9.77 steps/s
+[GOSSIP8] Step=23900 Loss=0.5952 Samples=763862 Elapsed=2444.8s Speed=9.78 steps/s
+[GOSSIP8] Step=23920 Loss=0.5504 Samples=764502 Elapsed=2445.2s Speed=9.78 steps/s
+[GOSSIP8] Step=23940 Loss=0.4730 Samples=765128 Elapsed=2446.4s Speed=9.79 steps/s
+[GOSSIP8] Step=23960 Loss=0.6382 Samples=765768 Elapsed=2446.8s Speed=9.79 steps/s
+[GOSSIP8] Step=23980 Loss=0.3819 Samples=766408 Elapsed=2447.3s Speed=9.80 steps/s
+[GOSSIP8] Step=24000 Loss=0.4659 Samples=767048 Elapsed=2447.7s Speed=9.80 steps/s
+[GOSSIP8] Step=24020 Loss=0.5789 Samples=767688 Elapsed=2448.2s Speed=9.81 steps/s
+[GOSSIP8] Step=24040 Loss=0.5227 Samples=768328 Elapsed=2448.6s Speed=9.82 steps/s
+[GOSSIP8] Step=24060 Loss=0.4274 Samples=768968 Elapsed=2449.1s Speed=9.82 steps/s
+[GOSSIP8] Step=24080 Loss=0.2525 Samples=769608 Elapsed=2449.5s Speed=9.83 steps/s
+[GOSSIP8] Step=24100 Loss=0.5170 Samples=770248 Elapsed=2450.0s Speed=9.84 steps/s
+[GOSSIP8] Step=24120 Loss=0.6090 Samples=770888 Elapsed=2450.5s Speed=9.84 steps/s
+[GOSSIP8] Step=24140 Loss=0.5951 Samples=771528 Elapsed=2451.0s Speed=9.85 steps/s
+[GOSSIP8] Step=24160 Loss=0.5937 Samples=772168 Elapsed=2451.4s Speed=9.86 steps/s
+[GOSSIP8] Step=24180 Loss=0.3541 Samples=772808 Elapsed=2451.9s Speed=9.86 steps/s
+[GOSSIP8] Step=24200 Loss=0.4723 Samples=773448 Elapsed=2452.4s Speed=9.87 steps/s
+[GOSSIP8] Step=24220 Loss=0.7389 Samples=774088 Elapsed=2452.9s Speed=9.87 steps/s
+[GOSSIP8] Step=24240 Loss=0.3661 Samples=774728 Elapsed=2453.3s Speed=9.88 steps/s
+[GOSSIP8] Step=24260 Loss=0.3078 Samples=775368 Elapsed=2453.8s Speed=9.89 steps/s
+[GOSSIP8] Step=24280 Loss=0.8077 Samples=776008 Elapsed=2454.2s Speed=9.89 steps/s
+[GOSSIP8] Step=24300 Loss=0.5941 Samples=776634 Elapsed=2455.6s Speed=9.90 steps/s
+[GOSSIP8] Step=24320 Loss=1.0950 Samples=777274 Elapsed=2456.0s Speed=9.90 steps/s
+[GOSSIP8] Step=24340 Loss=0.2693 Samples=777914 Elapsed=2456.4s Speed=9.91 steps/s
+[GOSSIP8] Step=24360 Loss=0.3697 Samples=778554 Elapsed=2456.8s Speed=9.92 steps/s
+[GOSSIP8] Step=24380 Loss=0.4771 Samples=779194 Elapsed=2457.3s Speed=9.92 steps/s
+[GOSSIP8] Step=24400 Loss=0.3740 Samples=779834 Elapsed=2457.8s Speed=9.93 steps/s
+[GOSSIP8] Step=24420 Loss=0.3989 Samples=780474 Elapsed=2458.2s Speed=9.93 steps/s
+[GOSSIP8] Step=24440 Loss=0.3150 Samples=781114 Elapsed=2458.7s Speed=9.94 steps/s
+[GOSSIP8] Step=24460 Loss=0.6914 Samples=781754 Elapsed=2459.1s Speed=9.95 steps/s
+[GOSSIP8] Step=24480 Loss=0.3145 Samples=782394 Elapsed=2459.6s Speed=9.95 steps/s
+[GOSSIP8] Step=24500 Loss=0.2170 Samples=783034 Elapsed=2460.0s Speed=9.96 steps/s
+[GOSSIP8] Step=24520 Loss=0.5224 Samples=783674 Elapsed=2460.5s Speed=9.97 steps/s
+[GOSSIP8] Step=24540 Loss=0.6094 Samples=784314 Elapsed=2460.9s Speed=9.97 steps/s
+[GOSSIP8] Step=24560 Loss=0.6183 Samples=784954 Elapsed=2461.4s Speed=9.98 steps/s
+[GOSSIP8] Step=24580 Loss=0.4448 Samples=785594 Elapsed=2461.8s Speed=9.98 steps/s
+[GOSSIP8] Step=24600 Loss=0.5010 Samples=786234 Elapsed=2462.2s Speed=9.99 steps/s
+[GOSSIP8] Step=24620 Loss=0.3454 Samples=786874 Elapsed=2462.7s Speed=10.00 steps/s
+[GOSSIP8] Step=24640 Loss=0.3983 Samples=787500 Elapsed=2463.1s Speed=10.00 steps/s
+[GOSSIP8] Step=24660 Loss=0.7786 Samples=788140 Elapsed=2464.6s Speed=10.01 steps/s
+[GOSSIP8] Step=24680 Loss=0.3440 Samples=788780 Elapsed=2465.0s Speed=10.01 steps/s
+[GOSSIP8] Step=24700 Loss=0.3078 Samples=789420 Elapsed=2465.4s Speed=10.02 steps/s
+[GOSSIP8] Step=24720 Loss=0.3021 Samples=790060 Elapsed=2465.9s Speed=10.02 steps/s
+[GOSSIP8] Step=24740 Loss=0.5728 Samples=790700 Elapsed=2466.3s Speed=10.03 steps/s
+[GOSSIP8] Step=24760 Loss=0.4826 Samples=791340 Elapsed=2466.8s Speed=10.04 steps/s
+[GOSSIP8] Step=24780 Loss=0.7945 Samples=791980 Elapsed=2467.2s Speed=10.04 steps/s
+[GOSSIP8] Step=24800 Loss=0.3032 Samples=792620 Elapsed=2467.6s Speed=10.05 steps/s
+[GOSSIP8] Step=24820 Loss=0.6285 Samples=793260 Elapsed=2468.0s Speed=10.06 steps/s
+[GOSSIP8] Step=24840 Loss=0.2825 Samples=793900 Elapsed=2468.5s Speed=10.06 steps/s
+[GOSSIP8] Step=24860 Loss=0.2253 Samples=794540 Elapsed=2468.9s Speed=10.07 steps/s
+[GOSSIP8] Step=24880 Loss=0.5203 Samples=795180 Elapsed=2469.4s Speed=10.08 steps/s
+[GOSSIP8] Step=24900 Loss=0.5944 Samples=795820 Elapsed=2469.8s Speed=10.08 steps/s
+[GOSSIP8] Step=24920 Loss=0.6038 Samples=796460 Elapsed=2470.2s Speed=10.09 steps/s
+[GOSSIP8] Step=24940 Loss=0.6789 Samples=797100 Elapsed=2470.6s Speed=10.09 steps/s
+[GOSSIP8] Step=24960 Loss=0.2560 Samples=797740 Elapsed=2471.1s Speed=10.10 steps/s
+[GOSSIP8] Step=24980 Loss=0.2329 Samples=798380 Elapsed=2471.5s Speed=10.11 steps/s
+[GOSSIP8] Step=25000 Loss=0.3203 Samples=799006 Elapsed=2472.8s Speed=10.11 steps/s
+[GOSSIP8] Step=25020 Loss=0.3384 Samples=799646 Elapsed=2473.3s Speed=10.12 steps/s
+[GOSSIP8] Step=25040 Loss=0.6489 Samples=800286 Elapsed=2473.7s Speed=10.12 steps/s
+[GOSSIP8] Step=25060 Loss=0.2436 Samples=800926 Elapsed=2474.1s Speed=10.13 steps/s
+[GOSSIP8] Step=25080 Loss=0.2549 Samples=801566 Elapsed=2474.6s Speed=10.14 steps/s
+[GOSSIP8] Step=25100 Loss=0.2704 Samples=802206 Elapsed=2475.0s Speed=10.14 steps/s
+[GOSSIP8] Step=25120 Loss=0.3860 Samples=802846 Elapsed=2475.5s Speed=10.15 steps/s
+[GOSSIP8] Step=25140 Loss=0.4872 Samples=803486 Elapsed=2475.9s Speed=10.15 steps/s
+[GOSSIP8] Step=25160 Loss=0.2901 Samples=804126 Elapsed=2476.3s Speed=10.16 steps/s
+[GOSSIP8] Step=25180 Loss=0.3594 Samples=804766 Elapsed=2476.7s Speed=10.17 steps/s
+[GOSSIP8] Step=25200 Loss=0.4538 Samples=805406 Elapsed=2477.2s Speed=10.17 steps/s
+[GOSSIP8] Step=25220 Loss=0.3054 Samples=806046 Elapsed=2477.6s Speed=10.18 steps/s
+[GOSSIP8] Step=25240 Loss=0.4633 Samples=806686 Elapsed=2478.0s Speed=10.19 steps/s
+[GOSSIP8] Step=25260 Loss=0.3788 Samples=807326 Elapsed=2478.4s Speed=10.19 steps/s
+[GOSSIP8] Step=25280 Loss=0.2058 Samples=807966 Elapsed=2478.9s Speed=10.20 steps/s
+[GOSSIP8] Step=25300 Loss=0.3003 Samples=808606 Elapsed=2479.3s Speed=10.20 steps/s
+[GOSSIP8] Step=25320 Loss=0.2965 Samples=809246 Elapsed=2479.7s Speed=10.21 steps/s
+[GOSSIP8] Step=25340 Loss=0.4968 Samples=809886 Elapsed=2480.1s Speed=10.22 steps/s
+[GOSSIP8] Step=25360 Loss=0.2609 Samples=810512 Elapsed=2481.3s Speed=10.22 steps/s
+[GOSSIP8] Step=25380 Loss=0.3723 Samples=811152 Elapsed=2481.8s Speed=10.23 steps/s
+[GOSSIP8] Step=25400 Loss=0.4530 Samples=811792 Elapsed=2482.2s Speed=10.23 steps/s
+[GOSSIP8] Step=25420 Loss=0.2297 Samples=812432 Elapsed=2482.7s Speed=10.24 steps/s
+[GOSSIP8] Step=25440 Loss=0.2898 Samples=813072 Elapsed=2483.2s Speed=10.24 steps/s
+[GOSSIP8] Step=25460 Loss=0.4337 Samples=813712 Elapsed=2483.6s Speed=10.25 steps/s
+[GOSSIP8] Step=25480 Loss=0.4339 Samples=814352 Elapsed=2484.0s Speed=10.26 steps/s
+[GOSSIP8] Step=25500 Loss=0.5717 Samples=814992 Elapsed=2484.4s Speed=10.26 steps/s
+[GOSSIP8] Step=25520 Loss=0.3128 Samples=815632 Elapsed=2484.9s Speed=10.27 steps/s
+[GOSSIP8] Step=25540 Loss=0.2498 Samples=816272 Elapsed=2485.4s Speed=10.28 steps/s
+[GOSSIP8] Step=25560 Loss=0.4170 Samples=816912 Elapsed=2485.8s Speed=10.28 steps/s
+[GOSSIP8] Step=25580 Loss=0.2999 Samples=817552 Elapsed=2486.2s Speed=10.29 steps/s
+[GOSSIP8] Step=25600 Loss=0.6762 Samples=818192 Elapsed=2486.6s Speed=10.30 steps/s
+[GOSSIP8] Step=25620 Loss=0.2024 Samples=818832 Elapsed=2487.0s Speed=10.30 steps/s
+[GOSSIP8] Step=25640 Loss=0.6183 Samples=819472 Elapsed=2487.5s Speed=10.31 steps/s
+[GOSSIP8] Step=25660 Loss=0.1795 Samples=820112 Elapsed=2487.8s Speed=10.31 steps/s
+[GOSSIP8] Step=25680 Loss=0.3914 Samples=820752 Elapsed=2488.3s Speed=10.32 steps/s
+[GOSSIP8] Step=25700 Loss=0.2580 Samples=821378 Elapsed=2489.4s Speed=10.32 steps/s
+[GOSSIP8] Step=25720 Loss=0.3005 Samples=822018 Elapsed=2489.9s Speed=10.33 steps/s
+[GOSSIP8] Step=25740 Loss=0.4880 Samples=822658 Elapsed=2490.3s Speed=10.34 steps/s
+[GOSSIP8] Step=25760 Loss=0.3560 Samples=823298 Elapsed=2490.8s Speed=10.34 steps/s
+[GOSSIP8] Step=25780 Loss=0.4177 Samples=823938 Elapsed=2491.2s Speed=10.35 steps/s
+[GOSSIP8] Step=25800 Loss=0.3008 Samples=824578 Elapsed=2492.2s Speed=10.35 steps/s
+[GOSSIP8] Step=25820 Loss=0.2834 Samples=825218 Elapsed=2492.7s Speed=10.36 steps/s
+[GOSSIP8] Step=25840 Loss=0.9299 Samples=825858 Elapsed=2493.1s Speed=10.36 steps/s
+[GOSSIP8] Step=25860 Loss=0.2533 Samples=826498 Elapsed=2493.6s Speed=10.37 steps/s
+[GOSSIP8] Step=25880 Loss=0.2644 Samples=827138 Elapsed=2494.0s Speed=10.38 steps/s
+[GOSSIP8] Step=25900 Loss=0.3962 Samples=827778 Elapsed=2494.5s Speed=10.38 steps/s
+[GOSSIP8] Step=25920 Loss=0.4270 Samples=828418 Elapsed=2495.0s Speed=10.39 steps/s
+[GOSSIP8] Step=25940 Loss=0.3289 Samples=829058 Elapsed=2495.5s Speed=10.39 steps/s
+[GOSSIP8] Step=25960 Loss=0.4594 Samples=829698 Elapsed=2495.9s Speed=10.40 steps/s
+[GOSSIP8] Step=25980 Loss=0.2759 Samples=830338 Elapsed=2496.4s Speed=10.41 steps/s
+[GOSSIP8] Step=26000 Loss=0.2276 Samples=830978 Elapsed=2496.8s Speed=10.41 steps/s
+[GOSSIP8] Step=26020 Loss=0.4882 Samples=831618 Elapsed=2497.2s Speed=10.42 steps/s
+[GOSSIP8] Step=26040 Loss=0.5252 Samples=832258 Elapsed=2497.6s Speed=10.43 steps/s
+[GOSSIP8] Step=26060 Loss=0.9902 Samples=832884 Elapsed=2498.6s Speed=10.43 steps/s
+[GOSSIP8] Step=26080 Loss=0.1803 Samples=833524 Elapsed=2499.0s Speed=10.44 steps/s
+[GOSSIP8] Step=26100 Loss=0.2916 Samples=834164 Elapsed=2499.4s Speed=10.44 steps/s
+[GOSSIP8] Step=26120 Loss=0.1956 Samples=834804 Elapsed=2499.9s Speed=10.45 steps/s
+[GOSSIP8] Step=26140 Loss=0.4111 Samples=835444 Elapsed=2500.4s Speed=10.45 steps/s
+[GOSSIP8] Step=26160 Loss=0.3315 Samples=836084 Elapsed=2500.9s Speed=10.46 steps/s
+[GOSSIP8] Step=26180 Loss=0.2804 Samples=836724 Elapsed=2501.5s Speed=10.47 steps/s
+[GOSSIP8] Step=26200 Loss=0.4170 Samples=837364 Elapsed=2502.0s Speed=10.47 steps/s
+[GOSSIP8] Step=26220 Loss=0.1595 Samples=838004 Elapsed=2502.5s Speed=10.48 steps/s
+[GOSSIP8] Step=26240 Loss=0.2696 Samples=838644 Elapsed=2502.9s Speed=10.48 steps/s
+[GOSSIP8] Step=26260 Loss=0.3599 Samples=839284 Elapsed=2503.3s Speed=10.49 steps/s
+[GOSSIP8] Step=26280 Loss=0.1318 Samples=839924 Elapsed=2503.8s Speed=10.50 steps/s
+[GOSSIP8] Step=26300 Loss=0.3916 Samples=840564 Elapsed=2504.2s Speed=10.50 steps/s
+[GOSSIP8] Step=26320 Loss=0.1608 Samples=841204 Elapsed=2504.7s Speed=10.51 steps/s
+[GOSSIP8] Step=26340 Loss=0.4019 Samples=841844 Elapsed=2505.1s Speed=10.51 steps/s
+[GOSSIP8] Step=26360 Loss=0.2498 Samples=842484 Elapsed=2505.5s Speed=10.52 steps/s
+[GOSSIP8] Step=26380 Loss=0.2828 Samples=843124 Elapsed=2506.0s Speed=10.53 steps/s
+[GOSSIP8] Step=26400 Loss=0.7983 Samples=843750 Elapsed=2506.4s Speed=10.53 steps/s
+[GOSSIP8] Step=26420 Loss=0.2223 Samples=844390 Elapsed=2507.4s Speed=10.54 steps/s
+[GOSSIP8] Step=26440 Loss=0.4931 Samples=845030 Elapsed=2507.9s Speed=10.54 steps/s
+[GOSSIP8] Step=26460 Loss=0.1201 Samples=845670 Elapsed=2508.3s Speed=10.55 steps/s
+[GOSSIP8] Step=26480 Loss=0.2761 Samples=846310 Elapsed=2508.7s Speed=10.56 steps/s
+[GOSSIP8] Step=26500 Loss=0.2791 Samples=846950 Elapsed=2509.2s Speed=10.56 steps/s
+[GOSSIP8] Step=26520 Loss=0.2731 Samples=847590 Elapsed=2509.6s Speed=10.57 steps/s
+[GOSSIP8] Step=26540 Loss=0.3795 Samples=848230 Elapsed=2510.0s Speed=10.57 steps/s
+[GOSSIP8] Step=26560 Loss=0.2658 Samples=848870 Elapsed=2510.5s Speed=10.58 steps/s
+[GOSSIP8] Step=26580 Loss=0.1974 Samples=849510 Elapsed=2510.9s Speed=10.59 steps/s
+[GOSSIP8] Step=26600 Loss=0.2278 Samples=850150 Elapsed=2511.4s Speed=10.59 steps/s
+[GOSSIP8] Step=26620 Loss=0.4703 Samples=850790 Elapsed=2511.8s Speed=10.60 steps/s
+[GOSSIP8] Step=26640 Loss=0.2610 Samples=851430 Elapsed=2513.0s Speed=10.60 steps/s
+[GOSSIP8] Step=26660 Loss=0.1149 Samples=852070 Elapsed=2513.4s Speed=10.61 steps/s
+[GOSSIP8] Step=26680 Loss=0.3245 Samples=852710 Elapsed=2513.9s Speed=10.61 steps/s
+[GOSSIP8] Step=26700 Loss=0.4308 Samples=853350 Elapsed=2514.3s Speed=10.62 steps/s
+[GOSSIP8] Step=26720 Loss=0.3159 Samples=853990 Elapsed=2514.8s Speed=10.62 steps/s
+[GOSSIP8] Step=26740 Loss=0.3643 Samples=854630 Elapsed=2515.2s Speed=10.63 steps/s
+[GOSSIP8] Step=26760 Loss=0.4638 Samples=855256 Elapsed=2516.7s Speed=10.63 steps/s
+[GOSSIP8] Step=26780 Loss=0.1750 Samples=855896 Elapsed=2517.1s Speed=10.64 steps/s
+[GOSSIP8] Step=26800 Loss=0.1812 Samples=856536 Elapsed=2517.6s Speed=10.65 steps/s
+[GOSSIP8] Step=26820 Loss=0.0992 Samples=857176 Elapsed=2518.0s Speed=10.65 steps/s
+[GOSSIP8] Step=26840 Loss=0.2534 Samples=857816 Elapsed=2518.5s Speed=10.66 steps/s
+[GOSSIP8] Step=26860 Loss=0.2728 Samples=858456 Elapsed=2519.0s Speed=10.66 steps/s
+[GOSSIP8] Step=26880 Loss=0.2375 Samples=859096 Elapsed=2519.5s Speed=10.67 steps/s
+[GOSSIP8] Step=26900 Loss=0.2144 Samples=859736 Elapsed=2520.0s Speed=10.67 steps/s
+[GOSSIP8] Step=26920 Loss=0.2374 Samples=860376 Elapsed=2520.5s Speed=10.68 steps/s
+[GOSSIP8] Step=26940 Loss=0.4720 Samples=861016 Elapsed=2520.9s Speed=10.69 steps/s
+[GOSSIP8] Step=26960 Loss=0.3026 Samples=861656 Elapsed=2521.4s Speed=10.69 steps/s
+[GOSSIP8] Step=26980 Loss=0.5049 Samples=862296 Elapsed=2521.8s Speed=10.70 steps/s
+[GOSSIP8] Step=27000 Loss=0.5407 Samples=862936 Elapsed=2522.3s Speed=10.70 steps/s
+[GOSSIP8] Step=27020 Loss=0.9300 Samples=863576 Elapsed=2522.7s Speed=10.71 steps/s
+[GOSSIP8] Step=27040 Loss=0.6032 Samples=864216 Elapsed=2523.2s Speed=10.72 steps/s
+[GOSSIP8] Step=27060 Loss=1.0724 Samples=864856 Elapsed=2523.6s Speed=10.72 steps/s
+[GOSSIP8] Step=27080 Loss=1.2304 Samples=865496 Elapsed=2524.1s Speed=10.73 steps/s
+[GOSSIP8] Step=27100 Loss=0.9719 Samples=866136 Elapsed=2524.5s Speed=10.73 steps/s
+[GOSSIP8] Step=27120 Loss=0.7143 Samples=866762 Elapsed=3231.2s Speed=8.39 steps/s
+[GOSSIP8] Step=27140 Loss=0.5872 Samples=867402 Elapsed=3231.6s Speed=8.40 steps/s
+[GOSSIP8] Step=27160 Loss=0.7233 Samples=868042 Elapsed=3232.1s Speed=8.40 steps/s
+[GOSSIP8] Step=27180 Loss=0.4648 Samples=868682 Elapsed=3232.5s Speed=8.41 steps/s
+[GOSSIP8] Step=27200 Loss=0.5523 Samples=869322 Elapsed=3233.0s Speed=8.41 steps/s
+[GOSSIP8] Step=27220 Loss=0.4357 Samples=869962 Elapsed=3233.4s Speed=8.42 steps/s
+[GOSSIP8] Step=27240 Loss=0.8033 Samples=870602 Elapsed=3233.8s Speed=8.42 steps/s
+[GOSSIP8] Step=27260 Loss=0.9111 Samples=871242 Elapsed=3234.2s Speed=8.43 steps/s
+[GOSSIP8] Step=27280 Loss=0.8246 Samples=871882 Elapsed=3234.6s Speed=8.43 steps/s
+[GOSSIP8] Step=27300 Loss=1.3366 Samples=872522 Elapsed=3235.0s Speed=8.44 steps/s
+[GOSSIP8] Step=27320 Loss=0.7836 Samples=873162 Elapsed=3235.4s Speed=8.44 steps/s
+[GOSSIP8] Step=27340 Loss=0.4403 Samples=873802 Elapsed=3235.8s Speed=8.45 steps/s
+[GOSSIP8] Step=27360 Loss=0.7805 Samples=874442 Elapsed=3236.2s Speed=8.45 steps/s
+[GOSSIP8] Step=27380 Loss=0.7743 Samples=875082 Elapsed=3236.6s Speed=8.46 steps/s
+[GOSSIP8] Step=27400 Loss=0.8273 Samples=875722 Elapsed=3237.0s Speed=8.46 steps/s
+[GOSSIP8] Step=27420 Loss=0.5124 Samples=876362 Elapsed=3237.4s Speed=8.47 steps/s
+[GOSSIP8] Step=27440 Loss=0.8084 Samples=877002 Elapsed=3238.5s Speed=8.47 steps/s
+[GOSSIP8] Step=27460 Loss=0.5408 Samples=877628 Elapsed=3239.9s Speed=8.48 steps/s
+[GOSSIP8] Step=27480 Loss=1.0765 Samples=878268 Elapsed=3240.3s Speed=8.48 steps/s
+[GOSSIP8] Step=27500 Loss=0.7711 Samples=878908 Elapsed=3240.8s Speed=8.49 steps/s
+[GOSSIP8] Step=27520 Loss=0.5878 Samples=879548 Elapsed=3241.3s Speed=8.49 steps/s
+[GOSSIP8] Step=27540 Loss=0.5675 Samples=880188 Elapsed=3241.8s Speed=8.50 steps/s
+[GOSSIP8] Step=27560 Loss=0.3485 Samples=880828 Elapsed=3242.2s Speed=8.50 steps/s
+[GOSSIP8] Step=27580 Loss=0.6247 Samples=881468 Elapsed=3242.7s Speed=8.51 steps/s
+[GOSSIP8] Step=27600 Loss=0.5175 Samples=882108 Elapsed=3243.1s Speed=8.51 steps/s
+[GOSSIP8] Step=27620 Loss=0.6483 Samples=882748 Elapsed=3243.6s Speed=8.52 steps/s
+[GOSSIP8] Step=27640 Loss=0.5367 Samples=883388 Elapsed=3244.0s Speed=8.52 steps/s
+[GOSSIP8] Step=27660 Loss=0.7645 Samples=884028 Elapsed=3244.5s Speed=8.53 steps/s
+[GOSSIP8] Step=27680 Loss=0.8068 Samples=884668 Elapsed=3245.0s Speed=8.53 steps/s
+[GOSSIP8] Step=27700 Loss=0.7820 Samples=885308 Elapsed=3245.4s Speed=8.54 steps/s
+[GOSSIP8] Step=27720 Loss=0.6065 Samples=885948 Elapsed=3246.0s Speed=8.54 steps/s
+[GOSSIP8] Step=27740 Loss=0.7083 Samples=886588 Elapsed=3246.4s Speed=8.54 steps/s
+[GOSSIP8] Step=27760 Loss=0.7990 Samples=887228 Elapsed=3246.9s Speed=8.55 steps/s
+[GOSSIP8] Step=27780 Loss=1.0162 Samples=887868 Elapsed=3247.4s Speed=8.55 steps/s
+[GOSSIP8] Step=27800 Loss=0.4309 Samples=888508 Elapsed=3247.9s Speed=8.56 steps/s
+[GOSSIP8] Step=27820 Loss=1.0736 Samples=889134 Elapsed=3249.9s Speed=8.56 steps/s
+[GOSSIP8] Step=27840 Loss=1.0479 Samples=889774 Elapsed=3250.3s Speed=8.57 steps/s
+[GOSSIP8] Step=27860 Loss=0.7791 Samples=890414 Elapsed=3250.8s Speed=8.57 steps/s
+[GOSSIP8] Step=27880 Loss=0.8723 Samples=891054 Elapsed=3251.3s Speed=8.58 steps/s
+[GOSSIP8] Step=27900 Loss=0.7826 Samples=891694 Elapsed=3251.8s Speed=8.58 steps/s
+[GOSSIP8] Step=27920 Loss=0.7185 Samples=892334 Elapsed=3252.3s Speed=8.58 steps/s
+[GOSSIP8] Step=27940 Loss=0.4502 Samples=892974 Elapsed=3252.8s Speed=8.59 steps/s
+[GOSSIP8] Step=27960 Loss=0.7258 Samples=893614 Elapsed=3253.3s Speed=8.59 steps/s
+[GOSSIP8] Step=27980 Loss=0.6335 Samples=894254 Elapsed=3254.0s Speed=8.60 steps/s
+[GOSSIP8] Step=28000 Loss=1.2608 Samples=894894 Elapsed=3254.5s Speed=8.60 steps/s
+[GOSSIP8] Step=28020 Loss=0.7436 Samples=895534 Elapsed=3254.9s Speed=8.61 steps/s
+[GOSSIP8] Step=28040 Loss=0.4714 Samples=896174 Elapsed=3255.4s Speed=8.61 steps/s
+[GOSSIP8] Step=28060 Loss=0.9849 Samples=896814 Elapsed=3255.8s Speed=8.62 steps/s
+[GOSSIP8] Step=28080 Loss=1.2426 Samples=897454 Elapsed=3256.3s Speed=8.62 steps/s
+[GOSSIP8] Step=28100 Loss=0.5194 Samples=898094 Elapsed=3256.7s Speed=8.63 steps/s
+[GOSSIP8] Step=28120 Loss=0.6099 Samples=898734 Elapsed=3257.2s Speed=8.63 steps/s
+[GOSSIP8] Step=28140 Loss=0.6334 Samples=899374 Elapsed=3257.6s Speed=8.64 steps/s
+[GOSSIP8] Step=28160 Loss=0.6484 Samples=900000 Elapsed=3258.0s Speed=8.64 steps/s
+[GOSSIP8] Step=28180 Loss=0.6835 Samples=900640 Elapsed=3259.3s Speed=8.65 steps/s
+[GOSSIP8] Step=28200 Loss=0.4146 Samples=901280 Elapsed=3259.8s Speed=8.65 steps/s
+[GOSSIP8] Step=28220 Loss=0.9221 Samples=901920 Elapsed=3260.3s Speed=8.66 steps/s
+[GOSSIP8] Step=28240 Loss=0.8319 Samples=902560 Elapsed=3260.8s Speed=8.66 steps/s
+[GOSSIP8] Step=28260 Loss=0.7054 Samples=903200 Elapsed=3261.2s Speed=8.67 steps/s
+[GOSSIP8] Step=28280 Loss=0.8013 Samples=903840 Elapsed=3261.6s Speed=8.67 steps/s
+[GOSSIP8] Step=28300 Loss=0.4107 Samples=904480 Elapsed=3262.1s Speed=8.68 steps/s
+[GOSSIP8] Step=28320 Loss=0.6531 Samples=905120 Elapsed=3262.5s Speed=8.68 steps/s
+[GOSSIP8] Step=28340 Loss=0.7168 Samples=905760 Elapsed=3263.0s Speed=8.69 steps/s
+[GOSSIP8] Step=28360 Loss=0.4230 Samples=906400 Elapsed=3263.4s Speed=8.69 steps/s
+[GOSSIP8] Step=28380 Loss=0.6290 Samples=907040 Elapsed=3263.9s Speed=8.70 steps/s
+[GOSSIP8] Step=28400 Loss=0.4721 Samples=907680 Elapsed=3264.3s Speed=8.70 steps/s
+[GOSSIP8] Step=28420 Loss=0.8170 Samples=908320 Elapsed=3264.8s Speed=8.70 steps/s
+[GOSSIP8] Step=28440 Loss=0.6377 Samples=908960 Elapsed=3265.3s Speed=8.71 steps/s
+[GOSSIP8] Step=28460 Loss=0.7032 Samples=909600 Elapsed=3265.7s Speed=8.71 steps/s
+[GOSSIP8] Step=28480 Loss=0.6460 Samples=910240 Elapsed=3266.2s Speed=8.72 steps/s
+[GOSSIP8] Step=28500 Loss=0.6673 Samples=910880 Elapsed=3266.6s Speed=8.72 steps/s
+[GOSSIP8] Step=28520 Loss=0.5229 Samples=911506 Elapsed=3268.4s Speed=8.73 steps/s
+[GOSSIP8] Step=28540 Loss=0.6323 Samples=912146 Elapsed=3268.8s Speed=8.73 steps/s
+[GOSSIP8] Step=28560 Loss=0.6512 Samples=912786 Elapsed=3269.3s Speed=8.74 steps/s
+[GOSSIP8] Step=28580 Loss=0.6789 Samples=913426 Elapsed=3269.8s Speed=8.74 steps/s
+[GOSSIP8] Step=28600 Loss=0.5635 Samples=914066 Elapsed=3270.3s Speed=8.75 steps/s
+[GOSSIP8] Step=28620 Loss=0.4510 Samples=914706 Elapsed=3270.8s Speed=8.75 steps/s
+[GOSSIP8] Step=28640 Loss=0.5342 Samples=915346 Elapsed=3271.3s Speed=8.75 steps/s
+[GOSSIP8] Step=28660 Loss=0.5871 Samples=915986 Elapsed=3271.8s Speed=8.76 steps/s
+[GOSSIP8] Step=28680 Loss=0.3805 Samples=916626 Elapsed=3272.2s Speed=8.76 steps/s
+[GOSSIP8] Step=28700 Loss=0.9538 Samples=917266 Elapsed=3272.6s Speed=8.77 steps/s
+[GOSSIP8] Step=28720 Loss=0.5260 Samples=917906 Elapsed=3273.1s Speed=8.77 steps/s
+[GOSSIP8] Step=28740 Loss=0.6627 Samples=918546 Elapsed=3273.5s Speed=8.78 steps/s
+[GOSSIP8] Step=28760 Loss=0.7343 Samples=919186 Elapsed=3274.0s Speed=8.78 steps/s
+[GOSSIP8] Step=28780 Loss=0.3377 Samples=919826 Elapsed=3274.4s Speed=8.79 steps/s
+[GOSSIP8] Step=28800 Loss=0.6518 Samples=920466 Elapsed=3274.9s Speed=8.79 steps/s
+[GOSSIP8] Step=28820 Loss=0.6411 Samples=921106 Elapsed=3275.3s Speed=8.80 steps/s
+[GOSSIP8] Step=28840 Loss=0.8381 Samples=921746 Elapsed=3275.8s Speed=8.80 steps/s
+[GOSSIP8] Step=28860 Loss=0.6351 Samples=922386 Elapsed=3276.2s Speed=8.81 steps/s
+[GOSSIP8] Step=28880 Loss=0.7286 Samples=923012 Elapsed=3277.6s Speed=8.81 steps/s
+[GOSSIP8] Step=28900 Loss=0.4370 Samples=923652 Elapsed=3278.1s Speed=8.82 steps/s
+[GOSSIP8] Step=28920 Loss=0.5308 Samples=924292 Elapsed=3278.5s Speed=8.82 steps/s
+[GOSSIP8] Step=28940 Loss=0.3992 Samples=924932 Elapsed=3279.0s Speed=8.83 steps/s
+[GOSSIP8] Step=28960 Loss=1.0463 Samples=925572 Elapsed=3279.6s Speed=8.83 steps/s
+[GOSSIP8] Step=28980 Loss=0.5909 Samples=926212 Elapsed=3280.1s Speed=8.84 steps/s
+[GOSSIP8] Step=29000 Loss=0.3362 Samples=926852 Elapsed=3280.5s Speed=8.84 steps/s
+[GOSSIP8] Step=29020 Loss=0.3902 Samples=927492 Elapsed=3281.0s Speed=8.84 steps/s
+[GOSSIP8] Step=29040 Loss=0.5390 Samples=928132 Elapsed=3281.5s Speed=8.85 steps/s
+[GOSSIP8] Step=29060 Loss=0.4103 Samples=928772 Elapsed=3281.9s Speed=8.85 steps/s
+[GOSSIP8] Step=29080 Loss=0.3126 Samples=929412 Elapsed=3282.4s Speed=8.86 steps/s
+[GOSSIP8] Step=29100 Loss=0.4289 Samples=930052 Elapsed=3282.8s Speed=8.86 steps/s
+[GOSSIP8] Step=29120 Loss=0.5478 Samples=930692 Elapsed=3283.3s Speed=8.87 steps/s
+[GOSSIP8] Step=29140 Loss=0.6514 Samples=931332 Elapsed=3283.7s Speed=8.87 steps/s
+[GOSSIP8] Step=29160 Loss=0.6125 Samples=931972 Elapsed=3284.2s Speed=8.88 steps/s
+[GOSSIP8] Step=29180 Loss=0.4840 Samples=932612 Elapsed=3284.7s Speed=8.88 steps/s
+[GOSSIP8] Step=29200 Loss=0.4064 Samples=933252 Elapsed=3285.1s Speed=8.89 steps/s
+[GOSSIP8] Step=29220 Loss=0.3558 Samples=933878 Elapsed=3287.6s Speed=8.89 steps/s
+[GOSSIP8] Step=29240 Loss=0.2221 Samples=934518 Elapsed=3288.0s Speed=8.89 steps/s
+[GOSSIP8] Step=29260 Loss=0.6700 Samples=935158 Elapsed=3288.5s Speed=8.90 steps/s
+[GOSSIP8] Step=29280 Loss=0.4812 Samples=935798 Elapsed=3288.9s Speed=8.90 steps/s
+[GOSSIP8] Step=29300 Loss=0.3488 Samples=936438 Elapsed=3289.4s Speed=8.91 steps/s
+[GOSSIP8] Step=29320 Loss=0.4429 Samples=937078 Elapsed=3289.8s Speed=8.91 steps/s
+[GOSSIP8] Step=29340 Loss=0.3110 Samples=937718 Elapsed=3290.3s Speed=8.92 steps/s
+[GOSSIP8] Step=29360 Loss=0.6599 Samples=938358 Elapsed=3290.7s Speed=8.92 steps/s
+[GOSSIP8] Step=29380 Loss=0.5744 Samples=938998 Elapsed=3291.2s Speed=8.93 steps/s
+[GOSSIP8] Step=29400 Loss=0.4477 Samples=939638 Elapsed=3291.6s Speed=8.93 steps/s
+[GOSSIP8] Step=29420 Loss=0.3983 Samples=940278 Elapsed=3292.4s Speed=8.94 steps/s
+[GOSSIP8] Step=29440 Loss=0.3348 Samples=940918 Elapsed=3292.8s Speed=8.94 steps/s
+[GOSSIP8] Step=29460 Loss=0.2869 Samples=941558 Elapsed=3293.2s Speed=8.95 steps/s
+[GOSSIP8] Step=29480 Loss=0.7609 Samples=942198 Elapsed=3293.8s Speed=8.95 steps/s
+[GOSSIP8] Step=29500 Loss=0.3168 Samples=942838 Elapsed=3294.2s Speed=8.96 steps/s
+[GOSSIP8] Step=29520 Loss=0.4087 Samples=943478 Elapsed=3294.6s Speed=8.96 steps/s
+[GOSSIP8] Step=29540 Loss=0.3634 Samples=944118 Elapsed=3295.1s Speed=8.96 steps/s
+[GOSSIP8] Step=29560 Loss=0.2191 Samples=944758 Elapsed=3295.5s Speed=8.97 steps/s
+[GOSSIP8] Step=29580 Loss=0.4963 Samples=945384 Elapsed=3297.9s Speed=8.97 steps/s
+[GOSSIP8] Step=29600 Loss=0.3937 Samples=946024 Elapsed=3298.4s Speed=8.97 steps/s
+[GOSSIP8] Step=29620 Loss=0.4545 Samples=946664 Elapsed=3298.8s Speed=8.98 steps/s
+[GOSSIP8] Step=29640 Loss=0.2823 Samples=947304 Elapsed=3299.3s Speed=8.98 steps/s
+[GOSSIP8] Step=29660 Loss=0.3287 Samples=947944 Elapsed=3299.7s Speed=8.99 steps/s
+[GOSSIP8] Step=29680 Loss=0.3971 Samples=948584 Elapsed=3300.2s Speed=8.99 steps/s
+[GOSSIP8] Step=29700 Loss=0.3268 Samples=949224 Elapsed=3300.6s Speed=9.00 steps/s
+[GOSSIP8] Step=29720 Loss=0.2542 Samples=949864 Elapsed=3301.2s Speed=9.00 steps/s
+[GOSSIP8] Step=29740 Loss=0.4136 Samples=950504 Elapsed=3301.6s Speed=9.01 steps/s
+[GOSSIP8] Step=29760 Loss=0.2524 Samples=951144 Elapsed=3302.1s Speed=9.01 steps/s
+[GOSSIP8] Step=29780 Loss=0.3853 Samples=951784 Elapsed=3302.5s Speed=9.02 steps/s
+[GOSSIP8] Step=29800 Loss=0.4441 Samples=952424 Elapsed=3303.0s Speed=9.02 steps/s
+[GOSSIP8] Step=29820 Loss=0.3856 Samples=953064 Elapsed=3303.4s Speed=9.03 steps/s
+[GOSSIP8] Step=29840 Loss=0.3926 Samples=953704 Elapsed=3303.9s Speed=9.03 steps/s
+[GOSSIP8] Step=29860 Loss=0.2416 Samples=954344 Elapsed=3304.4s Speed=9.04 steps/s
+[GOSSIP8] Step=29880 Loss=0.2185 Samples=954984 Elapsed=3304.8s Speed=9.04 steps/s
+[GOSSIP8] Step=29900 Loss=0.5563 Samples=955624 Elapsed=3305.2s Speed=9.05 steps/s
+[GOSSIP8] Step=29920 Loss=0.6410 Samples=956250 Elapsed=3305.6s Speed=9.05 steps/s
+[GOSSIP8] Step=29940 Loss=0.4637 Samples=956890 Elapsed=3307.1s Speed=9.05 steps/s
+[GOSSIP8] Step=29960 Loss=0.5404 Samples=957530 Elapsed=3307.5s Speed=9.06 steps/s
+[GOSSIP8] Step=29980 Loss=0.3312 Samples=958170 Elapsed=3308.0s Speed=9.06 steps/s
+[GOSSIP8] Step=30000 Loss=0.3115 Samples=958810 Elapsed=3308.5s Speed=9.07 steps/s
+[GOSSIP8] Step=30020 Loss=0.4227 Samples=959450 Elapsed=3308.9s Speed=9.07 steps/s
+[GOSSIP8] Step=30040 Loss=0.3240 Samples=960090 Elapsed=3309.4s Speed=9.08 steps/s
+[GOSSIP8] Step=30060 Loss=0.5390 Samples=960730 Elapsed=3309.8s Speed=9.08 steps/s
+[GOSSIP8] Step=30080 Loss=0.2038 Samples=961370 Elapsed=3310.3s Speed=9.09 steps/s
+[GOSSIP8] Step=30100 Loss=0.4834 Samples=962010 Elapsed=3310.8s Speed=9.09 steps/s
+[GOSSIP8] Step=30120 Loss=0.3639 Samples=962650 Elapsed=3311.3s Speed=9.10 steps/s
+[GOSSIP8] Step=30140 Loss=0.4333 Samples=963290 Elapsed=3311.8s Speed=9.10 steps/s
+[GOSSIP8] Step=30160 Loss=0.4769 Samples=963930 Elapsed=3312.2s Speed=9.11 steps/s
+[GOSSIP8] Step=30180 Loss=0.3154 Samples=964570 Elapsed=3312.7s Speed=9.11 steps/s
+[GOSSIP8] Step=30200 Loss=0.2478 Samples=965210 Elapsed=3313.2s Speed=9.12 steps/s
+[GOSSIP8] Step=30220 Loss=0.5418 Samples=965850 Elapsed=3313.6s Speed=9.12 steps/s
+[GOSSIP8] Step=30240 Loss=0.4643 Samples=966490 Elapsed=3314.1s Speed=9.12 steps/s
+[GOSSIP8] Step=30260 Loss=0.3698 Samples=967130 Elapsed=3314.4s Speed=9.13 steps/s
+[GOSSIP8] Step=30280 Loss=0.5080 Samples=967756 Elapsed=3317.8s Speed=9.13 steps/s
+[GOSSIP8] Step=30300 Loss=0.2502 Samples=968396 Elapsed=3318.2s Speed=9.13 steps/s
+[GOSSIP8] Step=30320 Loss=0.5838 Samples=969036 Elapsed=3318.7s Speed=9.14 steps/s
+[GOSSIP8] Step=30340 Loss=0.2402 Samples=969676 Elapsed=3319.1s Speed=9.14 steps/s
+[GOSSIP8] Step=30360 Loss=0.4082 Samples=970316 Elapsed=3319.6s Speed=9.15 steps/s
+[GOSSIP8] Step=30380 Loss=0.5194 Samples=970956 Elapsed=3320.1s Speed=9.15 steps/s
+[GOSSIP8] Step=30400 Loss=0.4373 Samples=971596 Elapsed=3320.6s Speed=9.15 steps/s
+[GOSSIP8] Step=30420 Loss=0.2015 Samples=972236 Elapsed=3321.1s Speed=9.16 steps/s
+[GOSSIP8] Step=30440 Loss=0.3111 Samples=972876 Elapsed=3321.5s Speed=9.16 steps/s
+[GOSSIP8] Step=30460 Loss=0.2090 Samples=973516 Elapsed=3322.0s Speed=9.17 steps/s
+[GOSSIP8] Step=30480 Loss=0.4199 Samples=974156 Elapsed=3322.5s Speed=9.17 steps/s
+[GOSSIP8] Step=30500 Loss=0.6596 Samples=974796 Elapsed=3322.9s Speed=9.18 steps/s
+[GOSSIP8] Step=30520 Loss=0.3530 Samples=975436 Elapsed=3323.4s Speed=9.18 steps/s
+[GOSSIP8] Step=30540 Loss=0.3086 Samples=976076 Elapsed=3323.8s Speed=9.19 steps/s
+[GOSSIP8] Step=30560 Loss=0.2524 Samples=976716 Elapsed=3324.3s Speed=9.19 steps/s
+[GOSSIP8] Step=30580 Loss=0.1492 Samples=977356 Elapsed=3324.7s Speed=9.20 steps/s
+[GOSSIP8] Step=30600 Loss=0.3504 Samples=977996 Elapsed=3325.2s Speed=9.20 steps/s
+[GOSSIP8] Step=30620 Loss=0.5173 Samples=978636 Elapsed=3325.6s Speed=9.21 steps/s
+[GOSSIP8] Step=30640 Loss=0.3025 Samples=979262 Elapsed=3327.6s Speed=9.21 steps/s
+[GOSSIP8] Step=30660 Loss=0.2082 Samples=979902 Elapsed=3328.0s Speed=9.21 steps/s
+[GOSSIP8] Step=30680 Loss=0.7054 Samples=980542 Elapsed=3328.5s Speed=9.22 steps/s
+[GOSSIP8] Step=30700 Loss=0.3228 Samples=981182 Elapsed=3328.9s Speed=9.22 steps/s
+[GOSSIP8] Step=30720 Loss=0.2316 Samples=981822 Elapsed=3329.4s Speed=9.23 steps/s
+[GOSSIP8] Step=30740 Loss=0.1914 Samples=982462 Elapsed=3330.0s Speed=9.23 steps/s
+[GOSSIP8] Step=30760 Loss=0.2144 Samples=983102 Elapsed=3330.6s Speed=9.24 steps/s
+[GOSSIP8] Step=30780 Loss=0.4533 Samples=983742 Elapsed=3331.1s Speed=9.24 steps/s
+[GOSSIP8] Step=30800 Loss=0.2717 Samples=984382 Elapsed=3331.6s Speed=9.24 steps/s
+[GOSSIP8] Step=30820 Loss=0.2959 Samples=985022 Elapsed=3332.0s Speed=9.25 steps/s
+[GOSSIP8] Step=30840 Loss=0.4634 Samples=985662 Elapsed=3332.5s Speed=9.25 steps/s
+[GOSSIP8] Step=30860 Loss=0.1845 Samples=986302 Elapsed=3333.0s Speed=9.26 steps/s
+[GOSSIP8] Step=30880 Loss=0.2029 Samples=986942 Elapsed=3333.5s Speed=9.26 steps/s
+[GOSSIP8] Step=30900 Loss=0.2868 Samples=987582 Elapsed=3333.9s Speed=9.27 steps/s
+[GOSSIP8] Step=30920 Loss=0.2783 Samples=988222 Elapsed=3334.8s Speed=9.27 steps/s
+[GOSSIP8] Step=30940 Loss=0.2792 Samples=988862 Elapsed=3335.3s Speed=9.28 steps/s
+[GOSSIP8] Step=30960 Loss=0.2617 Samples=989502 Elapsed=3335.7s Speed=9.28 steps/s
+[GOSSIP8] Step=30980 Loss=0.3490 Samples=990128 Elapsed=3336.9s Speed=9.28 steps/s
+[GOSSIP8] Step=31000 Loss=0.2207 Samples=990768 Elapsed=3337.3s Speed=9.29 steps/s
+[GOSSIP8] Step=31020 Loss=0.1922 Samples=991408 Elapsed=3337.8s Speed=9.29 steps/s
+[GOSSIP8] Step=31040 Loss=0.2571 Samples=992048 Elapsed=3338.2s Speed=9.30 steps/s
+[GOSSIP8] Step=31060 Loss=0.3506 Samples=992688 Elapsed=3338.7s Speed=9.30 steps/s
+[GOSSIP8] Step=31080 Loss=0.1151 Samples=993328 Elapsed=3339.1s Speed=9.31 steps/s
+[GOSSIP8] Step=31100 Loss=0.2377 Samples=993968 Elapsed=3339.6s Speed=9.31 steps/s
+[GOSSIP8] Step=31120 Loss=0.3142 Samples=994608 Elapsed=3340.0s Speed=9.32 steps/s
+[GOSSIP8] Step=31140 Loss=0.3454 Samples=995248 Elapsed=3340.4s Speed=9.32 steps/s
+[GOSSIP8] Step=31160 Loss=0.2180 Samples=995888 Elapsed=3340.9s Speed=9.33 steps/s
+[GOSSIP8] Step=31180 Loss=0.2185 Samples=996528 Elapsed=3341.3s Speed=9.33 steps/s
+[GOSSIP8] Step=31200 Loss=0.4452 Samples=997168 Elapsed=3341.7s Speed=9.34 steps/s
+[GOSSIP8] Step=31220 Loss=0.3225 Samples=997808 Elapsed=3342.2s Speed=9.34 steps/s
+[GOSSIP8] Step=31240 Loss=0.2498 Samples=998448 Elapsed=3342.6s Speed=9.35 steps/s
+[GOSSIP8] Step=31260 Loss=0.1735 Samples=999088 Elapsed=3343.1s Speed=9.35 steps/s
+[GOSSIP8] Step=31280 Loss=0.1967 Samples=999728 Elapsed=3343.6s Speed=9.36 steps/s
+[GOSSIP8] Step=31300 Loss=0.3885 Samples=1000368 Elapsed=3344.0s Speed=9.36 steps/s
+[GOSSIP8] Step=31320 Loss=0.2516 Samples=1001008 Elapsed=3344.4s Speed=9.36 steps/s
+[GOSSIP8] Step=31340 Loss=0.3442 Samples=1001634 Elapsed=3345.7s Speed=9.37 steps/s
+[GOSSIP8] Step=31360 Loss=0.3520 Samples=1002274 Elapsed=3346.3s Speed=9.37 steps/s
+[GOSSIP8] Step=31380 Loss=0.3974 Samples=1002914 Elapsed=3346.9s Speed=9.38 steps/s
+[GOSSIP8] Step=31400 Loss=0.2181 Samples=1003554 Elapsed=3348.0s Speed=9.38 steps/s
+[GOSSIP8] Step=31420 Loss=0.1551 Samples=1004194 Elapsed=3348.5s Speed=9.38 steps/s
+[GOSSIP8] Step=31440 Loss=0.1820 Samples=1004834 Elapsed=3349.0s Speed=9.39 steps/s
+[GOSSIP8] Step=31460 Loss=0.2228 Samples=1005474 Elapsed=3349.4s Speed=9.39 steps/s
+[GOSSIP8] Step=31480 Loss=0.3474 Samples=1006114 Elapsed=3349.9s Speed=9.40 steps/s
+[GOSSIP8] Step=31500 Loss=0.1460 Samples=1006754 Elapsed=3350.3s Speed=9.40 steps/s
+[GOSSIP8] Step=31520 Loss=0.2376 Samples=1007394 Elapsed=3350.8s Speed=9.41 steps/s
+[GOSSIP8] Step=31540 Loss=0.1735 Samples=1008034 Elapsed=3351.3s Speed=9.41 steps/s
+[GOSSIP8] Step=31560 Loss=0.2179 Samples=1008674 Elapsed=3351.8s Speed=9.42 steps/s
+[GOSSIP8] Step=31580 Loss=0.5359 Samples=1009314 Elapsed=3352.2s Speed=9.42 steps/s
+[GOSSIP8] Step=31600 Loss=0.2896 Samples=1009954 Elapsed=3352.7s Speed=9.43 steps/s
+[GOSSIP8] Step=31620 Loss=0.2735 Samples=1010594 Elapsed=3353.2s Speed=9.43 steps/s
+[GOSSIP8] Step=31640 Loss=0.1361 Samples=1011234 Elapsed=3353.6s Speed=9.43 steps/s
+[GOSSIP8] Step=31660 Loss=0.2019 Samples=1011874 Elapsed=3354.0s Speed=9.44 steps/s
+[GOSSIP8] Step=31680 Loss=0.5283 Samples=1012500 Elapsed=3354.4s Speed=9.44 steps/s
+[GOSSIP8] Step=31700 Loss=0.2748 Samples=1013140 Elapsed=3355.5s Speed=9.45 steps/s
+[GOSSIP8] Step=31720 Loss=0.2659 Samples=1013780 Elapsed=3355.9s Speed=9.45 steps/s
+[GOSSIP8] Step=31740 Loss=0.3470 Samples=1014420 Elapsed=3356.4s Speed=9.46 steps/s
+[GOSSIP8] Step=31760 Loss=0.1723 Samples=1015060 Elapsed=3356.9s Speed=9.46 steps/s
+[GOSSIP8] Step=31780 Loss=0.1291 Samples=1015700 Elapsed=3357.3s Speed=9.47 steps/s
+[GOSSIP8] Step=31800 Loss=0.2259 Samples=1016340 Elapsed=3357.8s Speed=9.47 steps/s
+[GOSSIP8] Step=31820 Loss=0.1652 Samples=1016980 Elapsed=3358.2s Speed=9.48 steps/s
+[GOSSIP8] Step=31840 Loss=0.1956 Samples=1017620 Elapsed=3358.7s Speed=9.48 steps/s
+[GOSSIP8] Step=31860 Loss=0.3074 Samples=1018260 Elapsed=3359.1s Speed=9.48 steps/s
+[GOSSIP8] Step=31880 Loss=0.2963 Samples=1018900 Elapsed=3359.6s Speed=9.49 steps/s
+[GOSSIP8] Step=31900 Loss=0.2440 Samples=1019540 Elapsed=3360.0s Speed=9.49 steps/s
+[GOSSIP8] Step=31920 Loss=0.0843 Samples=1020180 Elapsed=3360.5s Speed=9.50 steps/s
+[GOSSIP8] Step=31940 Loss=0.1739 Samples=1020820 Elapsed=3361.0s Speed=9.50 steps/s
+[GOSSIP8] Step=31960 Loss=0.1874 Samples=1021460 Elapsed=3361.5s Speed=9.51 steps/s
+[GOSSIP8] Step=31980 Loss=0.2836 Samples=1022100 Elapsed=3362.0s Speed=9.51 steps/s
+[GOSSIP8] Step=32000 Loss=0.2833 Samples=1022740 Elapsed=3362.4s Speed=9.52 steps/s
+[GOSSIP8] Step=32020 Loss=0.2574 Samples=1023380 Elapsed=3362.8s Speed=9.52 steps/s
+[GOSSIP8] Step=32040 Loss=0.2079 Samples=1024006 Elapsed=3712.3s Speed=8.63 steps/s
+[GOSSIP8] Step=32060 Loss=0.1378 Samples=1024646 Elapsed=3712.7s Speed=8.64 steps/s
+[GOSSIP8] Step=32080 Loss=0.2432 Samples=1025286 Elapsed=3713.2s Speed=8.64 steps/s
+[GOSSIP8] Step=32100 Loss=0.2765 Samples=1025926 Elapsed=3713.7s Speed=8.64 steps/s
+[GOSSIP8] Step=32120 Loss=0.1982 Samples=1026566 Elapsed=3714.1s Speed=8.65 steps/s
+[GOSSIP8] Step=32140 Loss=0.3245 Samples=1027206 Elapsed=3714.5s Speed=8.65 steps/s
+[GOSSIP8] Step=32160 Loss=0.2931 Samples=1027846 Elapsed=3715.0s Speed=8.66 steps/s
+[GOSSIP8] Step=32180 Loss=0.1357 Samples=1028486 Elapsed=3715.4s Speed=8.66 steps/s
+[GOSSIP8] Step=32200 Loss=0.2289 Samples=1029126 Elapsed=3715.8s Speed=8.67 steps/s
+[GOSSIP8] Step=32220 Loss=0.2501 Samples=1029766 Elapsed=3716.3s Speed=8.67 steps/s
+[GOSSIP8] Step=32240 Loss=0.0846 Samples=1030406 Elapsed=3716.7s Speed=8.67 steps/s
+[GOSSIP8] Step=32260 Loss=0.2354 Samples=1031046 Elapsed=3717.2s Speed=8.68 steps/s
+[GOSSIP8] Step=32280 Loss=0.2281 Samples=1031686 Elapsed=3717.7s Speed=8.68 steps/s
+[GOSSIP8] Step=32300 Loss=0.1607 Samples=1032326 Elapsed=3718.1s Speed=8.69 steps/s
+[GOSSIP8] Step=32320 Loss=0.2611 Samples=1032966 Elapsed=3718.6s Speed=8.69 steps/s
+[GOSSIP8] Step=32340 Loss=0.2124 Samples=1033606 Elapsed=3719.0s Speed=8.70 steps/s
+[GOSSIP8] Step=32360 Loss=0.2852 Samples=1034246 Elapsed=3719.5s Speed=8.70 steps/s
+[GOSSIP8] Step=32380 Loss=0.1156 Samples=1034886 Elapsed=3719.9s Speed=8.70 steps/s
+[GOSSIP8] Step=32400 Loss=0.0676 Samples=1035512 Elapsed=3722.2s Speed=8.70 steps/s
+[GOSSIP8] Step=32420 Loss=0.1813 Samples=1036152 Elapsed=3722.6s Speed=8.71 steps/s
+[GOSSIP8] Step=32440 Loss=0.2527 Samples=1036792 Elapsed=3723.1s Speed=8.71 steps/s
+[GOSSIP8] Step=32460 Loss=0.2298 Samples=1037432 Elapsed=3723.5s Speed=8.72 steps/s
+[GOSSIP8] Step=32480 Loss=0.1944 Samples=1038072 Elapsed=3723.9s Speed=8.72 steps/s
+[GOSSIP8] Step=32500 Loss=0.0723 Samples=1038712 Elapsed=3724.4s Speed=8.73 steps/s
+[GOSSIP8] Step=32520 Loss=0.2003 Samples=1039352 Elapsed=3724.8s Speed=8.73 steps/s
+[GOSSIP8] Step=32540 Loss=0.0658 Samples=1039992 Elapsed=3725.3s Speed=8.73 steps/s
+[GOSSIP8] Step=32560 Loss=0.1290 Samples=1040632 Elapsed=3725.7s Speed=8.74 steps/s
+[GOSSIP8] Step=32580 Loss=0.1232 Samples=1041272 Elapsed=3726.2s Speed=8.74 steps/s
+[GOSSIP8] Step=32600 Loss=0.1728 Samples=1041912 Elapsed=3726.6s Speed=8.75 steps/s
+[GOSSIP8] Step=32620 Loss=0.1510 Samples=1042552 Elapsed=3727.1s Speed=8.75 steps/s
+[GOSSIP8] Step=32640 Loss=0.1335 Samples=1043192 Elapsed=3727.5s Speed=8.76 steps/s
+[GOSSIP8] Step=32660 Loss=0.1101 Samples=1043832 Elapsed=3728.0s Speed=8.76 steps/s
+[GOSSIP8] Step=32680 Loss=0.1621 Samples=1044472 Elapsed=3728.4s Speed=8.77 steps/s
+[GOSSIP8] Step=32700 Loss=0.1146 Samples=1045112 Elapsed=3728.9s Speed=8.77 steps/s
+[GOSSIP8] Step=32720 Loss=0.1727 Samples=1045752 Elapsed=3729.3s Speed=8.77 steps/s
+[GOSSIP8] Step=32740 Loss=0.0698 Samples=1046378 Elapsed=3730.3s Speed=8.78 steps/s
+[GOSSIP8] Step=32760 Loss=0.0616 Samples=1047018 Elapsed=3730.7s Speed=8.78 steps/s
+[GOSSIP8] Step=32780 Loss=0.3226 Samples=1047658 Elapsed=3731.2s Speed=8.79 steps/s
+[GOSSIP8] Step=32800 Loss=0.1156 Samples=1048298 Elapsed=3731.6s Speed=8.79 steps/s
+[GOSSIP8] Step=32820 Loss=0.2936 Samples=1048938 Elapsed=3732.1s Speed=8.79 steps/s
+[GOSSIP8] Step=32840 Loss=0.1670 Samples=1049578 Elapsed=3732.5s Speed=8.80 steps/s
+[GOSSIP8] Step=32860 Loss=0.0756 Samples=1050218 Elapsed=3732.9s Speed=8.80 steps/s
+[GOSSIP8] Step=32880 Loss=0.0782 Samples=1050858 Elapsed=3733.4s Speed=8.81 steps/s
+[GOSSIP8] Step=32900 Loss=0.1083 Samples=1051498 Elapsed=3733.8s Speed=8.81 steps/s
+[GOSSIP8] Step=32920 Loss=0.1368 Samples=1052138 Elapsed=3734.2s Speed=8.82 steps/s
+[GOSSIP8] Step=32940 Loss=0.1227 Samples=1052778 Elapsed=3734.7s Speed=8.82 steps/s
+[GOSSIP8] Step=32960 Loss=0.0350 Samples=1053418 Elapsed=3735.1s Speed=8.82 steps/s
+[GOSSIP8] Step=32980 Loss=0.1607 Samples=1054058 Elapsed=3735.5s Speed=8.83 steps/s
+[GOSSIP8] Step=33000 Loss=0.2558 Samples=1054698 Elapsed=3736.0s Speed=8.83 steps/s
+[GOSSIP8] Step=33020 Loss=0.2386 Samples=1055338 Elapsed=3736.4s Speed=8.84 steps/s
+[GOSSIP8] Step=33040 Loss=0.1326 Samples=1055978 Elapsed=3736.8s Speed=8.84 steps/s
+[GOSSIP8] Step=33060 Loss=0.1454 Samples=1056618 Elapsed=3737.2s Speed=8.85 steps/s
+[GOSSIP8] Step=33080 Loss=0.1175 Samples=1057258 Elapsed=3737.7s Speed=8.85 steps/s
+[GOSSIP8] Step=33100 Loss=0.1574 Samples=1057884 Elapsed=3738.5s Speed=8.85 steps/s
+[GOSSIP8] Step=33120 Loss=0.1005 Samples=1058524 Elapsed=3738.9s Speed=8.86 steps/s
+[GOSSIP8] Step=33140 Loss=0.0691 Samples=1059164 Elapsed=3739.3s Speed=8.86 steps/s
+[GOSSIP8] Step=33160 Loss=0.2557 Samples=1059804 Elapsed=3739.8s Speed=8.87 steps/s
+[GOSSIP8] Step=33180 Loss=0.0951 Samples=1060444 Elapsed=3740.2s Speed=8.87 steps/s
+[GOSSIP8] Step=33200 Loss=0.1609 Samples=1061084 Elapsed=3740.7s Speed=8.88 steps/s
+[GOSSIP8] Step=33220 Loss=0.0551 Samples=1061724 Elapsed=3741.1s Speed=8.88 steps/s
+[GOSSIP8] Step=33240 Loss=0.3196 Samples=1062364 Elapsed=3741.6s Speed=8.88 steps/s
+[GOSSIP8] Step=33260 Loss=0.0988 Samples=1063004 Elapsed=3742.0s Speed=8.89 steps/s
+[GOSSIP8] Step=33280 Loss=0.2481 Samples=1063644 Elapsed=3742.4s Speed=8.89 steps/s
+[GOSSIP8] Step=33300 Loss=0.0845 Samples=1064284 Elapsed=3743.3s Speed=8.90 steps/s
+[GOSSIP8] Step=33320 Loss=0.2114 Samples=1064924 Elapsed=3743.8s Speed=8.90 steps/s
+[GOSSIP8] Step=33340 Loss=0.0880 Samples=1065564 Elapsed=3744.3s Speed=8.90 steps/s
+[GOSSIP8] Step=33360 Loss=0.1123 Samples=1066204 Elapsed=3744.8s Speed=8.91 steps/s
+[GOSSIP8] Step=33380 Loss=0.2548 Samples=1066844 Elapsed=3745.2s Speed=8.91 steps/s
+[GOSSIP8] Step=33400 Loss=0.1810 Samples=1067484 Elapsed=3745.7s Speed=8.92 steps/s
+[GOSSIP8] Step=33420 Loss=0.1087 Samples=1068124 Elapsed=3746.1s Speed=8.92 steps/s
+[GOSSIP8] Step=33440 Loss=0.2345 Samples=1068750 Elapsed=3746.5s Speed=8.93 steps/s
+[GOSSIP8] Step=33460 Loss=0.1853 Samples=1069390 Elapsed=3747.5s Speed=8.93 steps/s
+[GOSSIP8] Step=33480 Loss=0.1368 Samples=1070030 Elapsed=3748.1s Speed=8.93 steps/s
+[GOSSIP8] Step=33500 Loss=0.2040 Samples=1070670 Elapsed=3748.5s Speed=8.94 steps/s
+[GOSSIP8] Step=33520 Loss=0.1435 Samples=1071310 Elapsed=3749.0s Speed=8.94 steps/s
+[GOSSIP8] Step=33540 Loss=0.1342 Samples=1071950 Elapsed=3749.4s Speed=8.95 steps/s
+[GOSSIP8] Step=33560 Loss=0.1556 Samples=1072590 Elapsed=3749.9s Speed=8.95 steps/s
+[GOSSIP8] Step=33580 Loss=0.2960 Samples=1073230 Elapsed=3750.3s Speed=8.95 steps/s
+[GOSSIP8] Step=33600 Loss=0.0667 Samples=1073870 Elapsed=3750.8s Speed=8.96 steps/s
+[GOSSIP8] Step=33620 Loss=0.0872 Samples=1074510 Elapsed=3751.2s Speed=8.96 steps/s
+[GOSSIP8] Step=33640 Loss=0.0985 Samples=1075150 Elapsed=3751.7s Speed=8.97 steps/s
+[GOSSIP8] Step=33660 Loss=0.1357 Samples=1075790 Elapsed=3752.1s Speed=8.97 steps/s
+[GOSSIP8] Step=33680 Loss=0.1967 Samples=1076430 Elapsed=3752.6s Speed=8.98 steps/s
+[GOSSIP8] Step=33700 Loss=0.2292 Samples=1077070 Elapsed=3753.0s Speed=8.98 steps/s
+[GOSSIP8] Step=33720 Loss=0.1036 Samples=1077710 Elapsed=3753.5s Speed=8.98 steps/s
+[GOSSIP8] Step=33740 Loss=0.1284 Samples=1078350 Elapsed=3753.9s Speed=8.99 steps/s
+[GOSSIP8] Step=33760 Loss=0.1524 Samples=1078990 Elapsed=3754.4s Speed=8.99 steps/s
+[GOSSIP8] Step=33780 Loss=0.0916 Samples=1079630 Elapsed=3754.9s Speed=9.00 steps/s
+[GOSSIP8] Step=33800 Loss=0.1730 Samples=1080256 Elapsed=3756.0s Speed=9.00 steps/s
+[GOSSIP8] Step=33820 Loss=0.0572 Samples=1080896 Elapsed=3756.5s Speed=9.00 steps/s
+[GOSSIP8] Step=33840 Loss=0.1955 Samples=1081536 Elapsed=3757.0s Speed=9.01 steps/s
+[GOSSIP8] Step=33860 Loss=0.0288 Samples=1082176 Elapsed=3757.5s Speed=9.01 steps/s
+[GOSSIP8] Step=33880 Loss=0.1136 Samples=1082816 Elapsed=3758.0s Speed=9.02 steps/s
+[GOSSIP8] Step=33900 Loss=0.1245 Samples=1083456 Elapsed=3758.5s Speed=9.02 steps/s
+[GOSSIP8] Step=33920 Loss=0.2112 Samples=1084096 Elapsed=3759.1s Speed=9.02 steps/s
+[GOSSIP8] Step=33940 Loss=0.2287 Samples=1084736 Elapsed=3759.5s Speed=9.03 steps/s
+[GOSSIP8] Step=33960 Loss=0.2419 Samples=1085376 Elapsed=3760.0s Speed=9.03 steps/s
+[GOSSIP8] Step=33980 Loss=0.1746 Samples=1086016 Elapsed=3760.4s Speed=9.04 steps/s
+[GOSSIP8] Step=34000 Loss=0.1255 Samples=1086656 Elapsed=3760.9s Speed=9.04 steps/s
+[GOSSIP8] Step=34020 Loss=0.1392 Samples=1087296 Elapsed=3761.3s Speed=9.04 steps/s
+[GOSSIP8] Step=34040 Loss=0.1880 Samples=1087936 Elapsed=3761.8s Speed=9.05 steps/s
+[GOSSIP8] Step=34060 Loss=0.1399 Samples=1088576 Elapsed=3762.2s Speed=9.05 steps/s
+[GOSSIP8] Step=34080 Loss=0.2356 Samples=1089216 Elapsed=3762.7s Speed=9.06 steps/s
+[GOSSIP8] Step=34100 Loss=0.0733 Samples=1089856 Elapsed=3763.2s Speed=9.06 steps/s
+[GOSSIP8] Step=34120 Loss=0.1793 Samples=1090496 Elapsed=3763.7s Speed=9.07 steps/s
+[GOSSIP8] Step=34140 Loss=0.1694 Samples=1091136 Elapsed=3764.1s Speed=9.07 steps/s
+[GOSSIP8] Step=34160 Loss=0.0764 Samples=1091762 Elapsed=3766.9s Speed=9.07 steps/s
+[GOSSIP8] Step=34180 Loss=0.0766 Samples=1092402 Elapsed=3767.4s Speed=9.07 steps/s
+[GOSSIP8] Step=34200 Loss=0.0936 Samples=1093042 Elapsed=3767.9s Speed=9.08 steps/s
+[GOSSIP8] Step=34220 Loss=0.2620 Samples=1093682 Elapsed=3768.3s Speed=9.08 steps/s
+[GOSSIP8] Step=34240 Loss=0.1475 Samples=1094322 Elapsed=3768.8s Speed=9.09 steps/s
+[GOSSIP8] Step=34260 Loss=0.1927 Samples=1094962 Elapsed=3769.2s Speed=9.09 steps/s
+[GOSSIP8] Step=34280 Loss=0.0574 Samples=1095602 Elapsed=3769.7s Speed=9.09 steps/s
+[GOSSIP8] Step=34300 Loss=0.1033 Samples=1096242 Elapsed=3770.2s Speed=9.10 steps/s
+[GOSSIP8] Step=34320 Loss=0.1259 Samples=1096882 Elapsed=3770.7s Speed=9.10 steps/s
+[GOSSIP8] Step=34340 Loss=0.1560 Samples=1097522 Elapsed=3771.2s Speed=9.11 steps/s
+[GOSSIP8] Step=34360 Loss=0.0435 Samples=1098162 Elapsed=3771.7s Speed=9.11 steps/s
+[GOSSIP8] Step=34380 Loss=0.0968 Samples=1098802 Elapsed=3772.1s Speed=9.11 steps/s
+[GOSSIP8] Step=34400 Loss=0.0341 Samples=1099442 Elapsed=3772.6s Speed=9.12 steps/s
+[GOSSIP8] Step=34420 Loss=0.0919 Samples=1100082 Elapsed=3773.0s Speed=9.12 steps/s
+[GOSSIP8] Step=34440 Loss=0.0758 Samples=1100722 Elapsed=3773.5s Speed=9.13 steps/s
+[GOSSIP8] Step=34460 Loss=0.1237 Samples=1101362 Elapsed=3773.9s Speed=9.13 steps/s
+[GOSSIP8] Step=34480 Loss=0.1389 Samples=1102002 Elapsed=3774.4s Speed=9.14 steps/s
+[GOSSIP8] Step=34500 Loss=0.0954 Samples=1102628 Elapsed=3777.4s Speed=9.13 steps/s
+[GOSSIP8] Step=34520 Loss=0.2205 Samples=1103268 Elapsed=3777.8s Speed=9.14 steps/s
+[GOSSIP8] Step=34540 Loss=0.1206 Samples=1103908 Elapsed=3778.4s Speed=9.14 steps/s
+[GOSSIP8] Step=34560 Loss=0.0743 Samples=1104548 Elapsed=3778.8s Speed=9.15 steps/s
+[GOSSIP8] Step=34580 Loss=0.1048 Samples=1105188 Elapsed=3779.2s Speed=9.15 steps/s
+[GOSSIP8] Step=34600 Loss=0.1231 Samples=1105828 Elapsed=3779.7s Speed=9.15 steps/s
+[GOSSIP8] Step=34620 Loss=0.2643 Samples=1106468 Elapsed=3780.1s Speed=9.16 steps/s
+[GOSSIP8] Step=34640 Loss=0.0719 Samples=1107108 Elapsed=3780.7s Speed=9.16 steps/s
+[GOSSIP8] Step=34660 Loss=0.1468 Samples=1107748 Elapsed=3781.1s Speed=9.17 steps/s
+[GOSSIP8] Step=34680 Loss=0.2103 Samples=1108388 Elapsed=3781.7s Speed=9.17 steps/s
+[GOSSIP8] Step=34700 Loss=0.0390 Samples=1109028 Elapsed=3782.1s Speed=9.17 steps/s
+[GOSSIP8] Step=34720 Loss=0.1764 Samples=1109668 Elapsed=3782.6s Speed=9.18 steps/s
+[GOSSIP8] Step=34740 Loss=0.1797 Samples=1110308 Elapsed=3783.1s Speed=9.18 steps/s
+[GOSSIP8] Step=34760 Loss=0.0707 Samples=1110948 Elapsed=3783.6s Speed=9.19 steps/s
+[GOSSIP8] Step=34780 Loss=0.0588 Samples=1111588 Elapsed=3784.1s Speed=9.19 steps/s
+[GOSSIP8] Step=34800 Loss=0.1468 Samples=1112228 Elapsed=3784.6s Speed=9.20 steps/s
+[GOSSIP8] Step=34820 Loss=0.1287 Samples=1112868 Elapsed=3785.1s Speed=9.20 steps/s
+[GOSSIP8] Step=34840 Loss=0.1018 Samples=1113508 Elapsed=3785.5s Speed=9.20 steps/s
+[GOSSIP8] Step=34860 Loss=0.0979 Samples=1114134 Elapsed=3787.0s Speed=9.21 steps/s
+[GOSSIP8] Step=34880 Loss=0.1712 Samples=1114774 Elapsed=3787.4s Speed=9.21 steps/s
+[GOSSIP8] Step=34900 Loss=0.1321 Samples=1115414 Elapsed=3787.8s Speed=9.21 steps/s
+[GOSSIP8] Step=34920 Loss=0.1607 Samples=1116054 Elapsed=3788.2s Speed=9.22 steps/s
+[GOSSIP8] Step=34940 Loss=0.0506 Samples=1116694 Elapsed=3788.7s Speed=9.22 steps/s
+[GOSSIP8] Step=34960 Loss=0.2455 Samples=1117334 Elapsed=3789.1s Speed=9.23 steps/s
+[GOSSIP8] Step=34980 Loss=0.1609 Samples=1117974 Elapsed=3789.6s Speed=9.23 steps/s
+[GOSSIP8] Step=35000 Loss=0.1477 Samples=1118614 Elapsed=3790.0s Speed=9.23 steps/s
+[GOSSIP8] Step=35020 Loss=0.0842 Samples=1119254 Elapsed=3790.5s Speed=9.24 steps/s
+[GOSSIP8] Step=35040 Loss=0.1039 Samples=1119894 Elapsed=3790.9s Speed=9.24 steps/s
+[GOSSIP8] Step=35060 Loss=0.0598 Samples=1120534 Elapsed=3791.4s Speed=9.25 steps/s
+[GOSSIP8] Step=35080 Loss=0.0980 Samples=1121174 Elapsed=3791.8s Speed=9.25 steps/s
+[GOSSIP8] Step=35100 Loss=0.2522 Samples=1121814 Elapsed=3792.2s Speed=9.26 steps/s
+[GOSSIP8] Step=35120 Loss=0.2654 Samples=1122454 Elapsed=3792.7s Speed=9.26 steps/s
+[GOSSIP8] Step=35140 Loss=0.1534 Samples=1123094 Elapsed=3793.2s Speed=9.26 steps/s
+[GOSSIP8] Step=35160 Loss=0.0742 Samples=1123734 Elapsed=3793.7s Speed=9.27 steps/s
+[GOSSIP8] Step=35180 Loss=0.1358 Samples=1124374 Elapsed=3794.2s Speed=9.27 steps/s
+[GOSSIP8] Step=35200 Loss=0.0809 Samples=1125000 Elapsed=3794.6s Speed=9.28 steps/s
+[Rank 0] Training finished at step=35200; epochs_completed=100; reason=epochs_completed
+[Rank 0] Cleanup started; gossip sender active=True
+[Rank 0] Destroying process group
+[Rank 0] Process group destroyed
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)

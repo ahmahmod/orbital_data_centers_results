@@ -1,0 +1,63 @@
+{
+  "method": "diloco64",
+  "init_unix_s": 1795357821.0468776,
+  "duration_s": 10800,
+  "nodes": [
+    {
+      "rank": 0,
+      "host": "graffiti-3.nancy.grid5000.fr",
+      "ip": "172.16.64.3",
+      "iface": "ens4f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-001"
+    },
+    {
+      "rank": 1,
+      "host": "graffiti-4.nancy.grid5000.fr",
+      "ip": "172.16.64.4",
+      "iface": "ens4f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-002"
+    },
+    {
+      "rank": 2,
+      "host": "graffiti-6.nancy.grid5000.fr",
+      "ip": "172.16.64.6",
+      "iface": "ens4f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-003"
+    },
+    {
+      "rank": 3,
+      "host": "graffiti-9.nancy.grid5000.fr",
+      "ip": "172.16.64.9",
+      "iface": "ens4f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-004"
+    }
+  ],
+  "trace_sha256": "a7dbad1deea65af9fc379e39a30f664af4cd2eefc6cadb8f8cc5a03243e5d6ca",
+  "tc_applied": true,
+  "network_mode": "selective_tc",
+  "rate_scale": 1,
+  "dataset": "cifar100",
+  "comm_timeout_s": 1200,
+  "shutdown_grace_s": 300,
+  "training_profile": "E1_aligned_v1",
+  "validation_schedule": "wall_clock",
+  "max_epochs": 100,
+  "model": "ResNet18_CIFAR_stem",
+  "outer_lr": 0.3,
+  "outer_momentum": 0.9,
+  "seed": 2026,
+  "batch_size": 32,
+  "num_workers": 4,
+  "lr": 0.1,
+  "lr_schedule": "warmup5_cosine100",
+  "weight_decay": 0.0005,
+  "amp_fp16": true,
+  "validation_source": "train-holdout",
+  "val_size": 5000,
+  "eval_interval_s": 300.0,
+  "resource_interval_s": 2.0
+}

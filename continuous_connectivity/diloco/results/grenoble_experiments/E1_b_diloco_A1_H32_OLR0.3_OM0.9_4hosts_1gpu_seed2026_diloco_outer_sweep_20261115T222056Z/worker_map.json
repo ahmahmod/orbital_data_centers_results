@@ -1,0 +1,32 @@
+{
+  "workers": [
+    {
+      "rank": 0,
+      "local_rank": 0,
+      "node": "vercors10-1.grenoble.grid5000.fr",
+      "ip": "172.16.27.25",
+      "pid": 4264
+    },
+    {
+      "rank": 1,
+      "local_rank": 0,
+      "node": "vercors10-2.grenoble.grid5000.fr",
+      "ip": "172.16.27.26",
+      "pid": 4006
+    },
+    {
+      "rank": 2,
+      "local_rank": 0,
+      "node": "vercors10-3.grenoble.grid5000.fr",
+      "ip": "172.16.27.27",
+      "pid": 4089
+    },
+    {
+      "rank": 3,
+      "local_rank": 0,
+      "node": "vercors2-2.grenoble.grid5000.fr",
+      "ip": "172.16.27.4",
+      "pid": 5216
+    }
+  ]
+}

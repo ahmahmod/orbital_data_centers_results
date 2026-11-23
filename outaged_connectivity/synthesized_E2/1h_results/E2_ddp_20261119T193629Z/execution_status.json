@@ -1,0 +1,19 @@
+{
+  "return_codes": {
+    "tc_rank0.log": 0,
+    "tc_rank1.log": 0,
+    "tc_rank2.log": 0,
+    "tc_rank3.log": 0,
+    "train_rank0.log": 6,
+    "train_rank1.log": 6,
+    "train_rank2.log": 15,
+    "train_rank3.log": 6
+  },
+  "failures": [
+    "One or more remote processes exited nonzero",
+    "Nonzero process exits: {'train_rank0.log': 6, 'train_rank1.log': 6, 'train_rank2.log': 15, 'train_rank3.log': 6}"
+  ],
+  "wall_end": 1795118987.0239787,
+  "run_id": "81d5e7bf9eb8",
+  "success": false
+}

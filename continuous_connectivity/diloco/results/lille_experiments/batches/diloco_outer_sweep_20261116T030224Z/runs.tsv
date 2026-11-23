@@ -1,0 +1,2 @@
+test	local_steps	outer_lr	outer_momentum	status	run_id	output	best_accuracy	final_accuracy	wall_training_s
+A1	32	0.3	0.9	failed	E1_b_diloco_A1_H32_OLR0.3_OM0.9_4hosts_1gpu_seed2026_diloco_outer_sweep_20261116T030224Z	/home/amahmod/tcp_exp/synthesized_contact_plan/diloco_E1_b/results/lille_experiments/E1_b_diloco_A1_H32_OLR0.3_OM0.9_4hosts_1gpu_seed2026_diloco_outer_sweep_20261116T030224Z	NA	NA	NA

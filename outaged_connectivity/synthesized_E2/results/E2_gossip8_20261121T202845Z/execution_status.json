@@ -1,0 +1,20 @@
+{
+  "return_codes": {
+    "tc_rank0.log": 0,
+    "tc_rank1.log": -9,
+    "tc_rank2.log": -9,
+    "tc_rank3.log": -9,
+    "train_rank0.log": 0,
+    "train_rank1.log": 0,
+    "train_rank2.log": 0,
+    "train_rank3.log": 0
+  },
+  "failures": [
+    "Experiment exceeded wall-clock deadline; pending: ['tc1@graffiti-4.nancy.grid5000.fr', 'tc2@graffiti-6.nancy.grid5000.fr', 'tc3@graffiti-9.nancy.grid5000.fr']",
+    "Nonzero process exits: {'tc_rank1.log': -9, 'tc_rank2.log': -9, 'tc_rank3.log': -9}"
+  ],
+  "shutdown_grace_s": 300,
+  "wall_end": 1795304323.756284,
+  "run_id": "a0fdf9c358fa",
+  "success": false
+}

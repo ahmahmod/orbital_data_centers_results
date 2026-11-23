@@ -1,0 +1,361 @@
+E2 overnight batch: 20261120T094236Z
+Methods: ddp gossip8 gossip64 diloco8 diloco64 fl8 fl64
+CIFAR-100; contact shaping ON; each run 3600s; NCCL/Flower timeout 900s
+Batch log: /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_batch_20261120T094236Z.log
+Current OAR job: 2250757
+Minimum time for one experiment: 3990s
+OAR time remaining: 5064s
+PASS: four workers reachable, CIFAR-100 available, no E2 workers/qdiscs/markers
+SKIP: ddp already has an output directory
+SKIP: gossip8 already has an output directory
+SKIP: gossip64 already has an output directory
+SKIP: diloco8 already has an output directory
+
+===== [5/7] diloco64 =====
+Checking traffic-control state on all four nodes...
+PASS: chifflot-2.lille.grid5000.fr — no existing E2 root qdisc
+PASS: chifflot-4.lille.grid5000.fr — no existing E2 root qdisc
+PASS: chifflot-7.lille.grid5000.fr — no existing E2 root qdisc
+PASS: chifflot-8.lille.grid5000.fr — no existing E2 root qdisc
+PASS: Traffic-control preflight completed.
+Four allocated workers: [('chifflot-2.lille.grid5000.fr', '172.16.36.2', 'ens5f0'), ('chifflot-4.lille.grid5000.fr', '172.16.36.4', 'ens5f0'), ('chifflot-7.lille.grid5000.fr', '172.16.36.7', 'ens5f0'), ('chifflot-8.lille.grid5000.fr', '172.16.36.8', 'ens5f0')]
+chifflot-2.lille.grid5000.fr 2.7.1+cu126 Tesla P100-PCIE-16GB
+chifflot-4.lille.grid5000.fr 2.7.1+cu126 Tesla P100-PCIE-16GB
+chifflot-7.lille.grid5000.fr 2.7.1+cu126 Tesla V100-PCIE-32GB
+chifflot-8.lille.grid5000.fr 2.7.1+cu126 Tesla V100-PCIE-32GB
+Launched 8 remote processes, start=1795167946.040, run=8395ff8746ad
+[rank0] /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user.
+[rank0]   warnings.warn(  # warn only once
+[rank0] [DILOCO64] Step=1 Loss=4.7677 Samples=32 Elapsed=0.6s Speed=1.68 steps/s
+[rank0] [DILOCO64] Step=20 Loss=4.6906 Samples=640 Elapsed=1.0s Speed=20.23 steps/s
+[rank0] [DILOCO64] Step=40 Loss=4.7188 Samples=1280 Elapsed=1.4s Speed=29.00 steps/s
+[rank0] [DILOCO64] Step=60 Loss=4.2674 Samples=1920 Elapsed=1.8s Speed=33.92 steps/s
+[rank0] [DILOCO64] Step=80 Loss=4.8682 Samples=2560 Elapsed=10.1s Speed=7.94 steps/s
+[rank0] [DILOCO64] Step=100 Loss=4.4903 Samples=3200 Elapsed=10.5s Speed=9.56 steps/s
+[rank0] [DILOCO64] Step=120 Loss=4.4619 Samples=3840 Elapsed=10.8s Speed=11.06 steps/s
+[rank0] [DILOCO64] Step=140 Loss=4.2939 Samples=4480 Elapsed=18.8s Speed=7.44 steps/s
+[rank0] [DILOCO64] Step=160 Loss=4.5334 Samples=5120 Elapsed=19.2s Speed=8.33 steps/s
+[rank0] [DILOCO64] Step=180 Loss=4.4379 Samples=5760 Elapsed=19.6s Speed=9.18 steps/s
+[rank0] [DILOCO64] Step=200 Loss=4.3273 Samples=6400 Elapsed=27.9s Speed=7.17 steps/s
+[rank0] [DILOCO64] Step=220 Loss=4.1715 Samples=7040 Elapsed=28.3s Speed=7.78 steps/s
+[rank0] [DILOCO64] Step=240 Loss=4.3781 Samples=7680 Elapsed=28.7s Speed=8.37 steps/s
+[rank0] [DILOCO64] Step=260 Loss=4.2288 Samples=8320 Elapsed=36.8s Speed=7.07 steps/s
+[rank0] [DILOCO64] Step=280 Loss=4.1656 Samples=8960 Elapsed=37.2s Speed=7.54 steps/s
+[rank0] [DILOCO64] Step=300 Loss=4.1751 Samples=9600 Elapsed=37.5s Speed=7.99 steps/s
+[rank0] [DILOCO64] Step=320 Loss=4.1405 Samples=10240 Elapsed=45.7s Speed=7.00 steps/s
+[rank0] [DILOCO64] Step=340 Loss=4.2880 Samples=10880 Elapsed=46.1s Speed=7.37 steps/s
+[rank0] [DILOCO64] Step=360 Loss=4.2197 Samples=11520 Elapsed=46.5s Speed=7.74 steps/s
+[rank0] [DILOCO64] Step=380 Loss=3.9925 Samples=12160 Elapsed=46.9s Speed=8.10 steps/s
+[rank0] [DILOCO64] Step=400 Loss=4.2454 Samples=12800 Elapsed=54.9s Speed=7.29 steps/s
+[rank0] [DILOCO64] Step=420 Loss=4.1337 Samples=13440 Elapsed=55.3s Speed=7.60 steps/s
+[rank0] [DILOCO64] Step=440 Loss=3.8805 Samples=14080 Elapsed=55.7s Speed=7.91 steps/s
+[rank0] [DILOCO64] Step=460 Loss=3.7727 Samples=14720 Elapsed=63.9s Speed=7.20 steps/s
+[rank0] [DILOCO64] Step=480 Loss=3.7306 Samples=15360 Elapsed=64.2s Speed=7.47 steps/s
+[rank0] [DILOCO64] Step=500 Loss=3.6195 Samples=16000 Elapsed=64.6s Speed=7.74 steps/s
+[rank0] [DILOCO64] Step=520 Loss=3.5361 Samples=16640 Elapsed=72.7s Speed=7.15 steps/s
+[rank0] [DILOCO64] Step=540 Loss=3.7885 Samples=17280 Elapsed=73.1s Speed=7.39 steps/s
+[rank0] [DILOCO64] Step=560 Loss=4.0498 Samples=17920 Elapsed=73.5s Speed=7.62 steps/s
+[rank0] [DILOCO64] Step=580 Loss=4.0581 Samples=18560 Elapsed=81.6s Speed=7.11 steps/s
+[rank0] [DILOCO64] Step=600 Loss=3.9685 Samples=19200 Elapsed=82.0s Speed=7.32 steps/s
+[rank0] [DILOCO64] Step=620 Loss=3.9597 Samples=19840 Elapsed=82.4s Speed=7.53 steps/s
+[rank0] [DILOCO64] Step=640 Loss=3.8518 Samples=20480 Elapsed=90.4s Speed=7.08 steps/s
+[rank0] [DILOCO64] Step=660 Loss=4.1823 Samples=21120 Elapsed=90.8s Speed=7.27 steps/s
+[rank0] [DILOCO64] Step=680 Loss=4.0460 Samples=21760 Elapsed=91.2s Speed=7.46 steps/s
+[rank0] [DILOCO64] Step=700 Loss=3.9269 Samples=22400 Elapsed=91.6s Speed=7.64 steps/s
+[rank0] [DILOCO64] Step=720 Loss=3.5902 Samples=23040 Elapsed=99.6s Speed=7.23 steps/s
+[rank0] [DILOCO64] Step=740 Loss=3.8616 Samples=23680 Elapsed=100.0s Speed=7.40 steps/s
+[rank0] [DILOCO64] Step=760 Loss=4.2424 Samples=24320 Elapsed=100.4s Speed=7.57 steps/s
+[rank0] [DILOCO64] Step=780 Loss=3.4608 Samples=24960 Elapsed=108.5s Speed=7.19 steps/s
+[rank0] [DILOCO64] Step=800 Loss=3.6805 Samples=25600 Elapsed=108.9s Speed=7.34 steps/s
+[rank0] [DILOCO64] Step=820 Loss=3.8907 Samples=26240 Elapsed=109.3s Speed=7.50 steps/s
+[rank0] [DILOCO64] Step=840 Loss=3.5507 Samples=26880 Elapsed=117.2s Speed=7.17 steps/s
+[rank0] [DILOCO64] Step=860 Loss=3.8999 Samples=27520 Elapsed=117.6s Speed=7.31 steps/s
+[rank0] [DILOCO64] Step=880 Loss=3.6736 Samples=28160 Elapsed=118.0s Speed=7.46 steps/s
+[rank0] [DILOCO64] Step=900 Loss=3.8575 Samples=28800 Elapsed=126.0s Speed=7.14 steps/s
+[rank0] [DILOCO64] Step=920 Loss=3.8382 Samples=29440 Elapsed=126.4s Speed=7.28 steps/s
+[rank0] [DILOCO64] Step=940 Loss=3.4096 Samples=30080 Elapsed=126.8s Speed=7.41 steps/s
+[rank0] [DILOCO64] Step=960 Loss=3.8503 Samples=30720 Elapsed=134.7s Speed=7.13 steps/s
+[rank0] [DILOCO64] Step=980 Loss=3.5896 Samples=31360 Elapsed=135.1s Speed=7.26 steps/s
+[rank0] [DILOCO64] Step=1000 Loss=3.9334 Samples=32000 Elapsed=135.4s Speed=7.38 steps/s
+[rank0] [DILOCO64] Step=1020 Loss=3.6513 Samples=32640 Elapsed=135.8s Speed=7.51 steps/s
+[rank0] [DILOCO64] Step=1040 Loss=3.3151 Samples=33280 Elapsed=143.9s Speed=7.23 steps/s
+[rank0] [DILOCO64] Step=1060 Loss=3.6610 Samples=33920 Elapsed=144.3s Speed=7.35 steps/s
+[rank0] [DILOCO64] Step=1080 Loss=4.2182 Samples=34560 Elapsed=144.7s Speed=7.46 steps/s
+[rank0] [DILOCO64] Step=1100 Loss=3.5711 Samples=35200 Elapsed=152.5s Speed=7.21 steps/s
+[rank0] [DILOCO64] Step=1120 Loss=3.7464 Samples=35840 Elapsed=153.1s Speed=7.31 steps/s
+[rank0] [DILOCO64] Step=1140 Loss=3.6994 Samples=36480 Elapsed=153.5s Speed=7.43 steps/s
+[rank0] [DILOCO64] Step=1160 Loss=3.5247 Samples=37120 Elapsed=161.7s Speed=7.17 steps/s
+[rank0] [DILOCO64] Step=1180 Loss=3.7086 Samples=37760 Elapsed=162.2s Speed=7.28 steps/s
+[rank0] [DILOCO64] Step=1200 Loss=3.4601 Samples=38400 Elapsed=162.6s Speed=7.38 steps/s
+[rank0] [DILOCO64] Step=1220 Loss=3.2599 Samples=39040 Elapsed=170.4s Speed=7.16 steps/s
+[rank0] [DILOCO64] Step=1240 Loss=3.7442 Samples=39680 Elapsed=170.8s Speed=7.26 steps/s
+[rank0] [DILOCO64] Step=1260 Loss=3.5506 Samples=40320 Elapsed=171.2s Speed=7.36 steps/s
+[rank0] [DILOCO64] Step=1280 Loss=3.4902 Samples=40960 Elapsed=179.4s Speed=7.13 steps/s
+[rank0] [DILOCO64] Step=1300 Loss=4.0771 Samples=41600 Elapsed=179.8s Speed=7.23 steps/s
+[rank0] [DILOCO64] Step=1320 Loss=3.5660 Samples=42240 Elapsed=180.2s Speed=7.33 steps/s
+[rank0] [DILOCO64] Step=1340 Loss=3.7768 Samples=42880 Elapsed=180.6s Speed=7.42 steps/s
+[rank0] [DILOCO64] Step=1360 Loss=3.6261 Samples=43520 Elapsed=188.6s Speed=7.21 steps/s
+[rank0] [DILOCO64] Step=1380 Loss=3.2709 Samples=44160 Elapsed=189.0s Speed=7.30 steps/s
+[rank0] [DILOCO64] Step=1400 Loss=4.3568 Samples=44800 Elapsed=189.4s Speed=7.39 steps/s
+[rank0] [DILOCO64] Step=1420 Loss=3.6741 Samples=45440 Elapsed=197.5s Speed=7.19 steps/s
+[rank0] [DILOCO64] Step=1440 Loss=3.5185 Samples=46080 Elapsed=197.9s Speed=7.28 steps/s
+[rank0] [DILOCO64] Step=1460 Loss=3.6608 Samples=46720 Elapsed=198.3s Speed=7.36 steps/s
+[rank0] [DILOCO64] Step=1480 Loss=3.6178 Samples=47360 Elapsed=206.5s Speed=7.17 steps/s
+[rank0] [DILOCO64] Step=1500 Loss=3.3804 Samples=48000 Elapsed=206.9s Speed=7.25 steps/s
+[rank0] [DILOCO64] Step=1520 Loss=3.6557 Samples=48640 Elapsed=207.3s Speed=7.33 steps/s
+[rank0] [DILOCO64] Step=1540 Loss=3.2386 Samples=49280 Elapsed=215.4s Speed=7.15 steps/s
+[rank0] [DILOCO64] Step=1560 Loss=3.5439 Samples=49920 Elapsed=215.8s Speed=7.23 steps/s
+[rank0] [DILOCO64] Step=1580 Loss=3.6441 Samples=50560 Elapsed=216.2s Speed=7.31 steps/s
+[rank0] [DILOCO64] Step=1600 Loss=3.4663 Samples=51200 Elapsed=224.4s Speed=7.13 steps/s
+[rank0] [DILOCO64] Step=1620 Loss=3.1237 Samples=51840 Elapsed=224.8s Speed=7.21 steps/s
+[rank0] [DILOCO64] Step=1640 Loss=3.4288 Samples=52480 Elapsed=225.1s Speed=7.28 steps/s
+[rank0] [DILOCO64] Step=1660 Loss=3.7832 Samples=53120 Elapsed=225.5s Speed=7.36 steps/s
+[rank0] [DILOCO64] Step=1680 Loss=3.4214 Samples=53760 Elapsed=233.8s Speed=7.19 steps/s
+[rank0] [DILOCO64] Step=1700 Loss=3.3863 Samples=54400 Elapsed=234.2s Speed=7.26 steps/s
+[rank0] [DILOCO64] Step=1720 Loss=3.3612 Samples=55040 Elapsed=234.6s Speed=7.33 steps/s
+[rank0] [DILOCO64] Step=1740 Loss=3.5143 Samples=55680 Elapsed=242.8s Speed=7.17 steps/s
+[rank0] [DILOCO64] Step=1760 Loss=3.3713 Samples=56320 Elapsed=243.2s Speed=7.24 steps/s
+[rank0] [DILOCO64] Step=1780 Loss=3.6070 Samples=56960 Elapsed=243.5s Speed=7.31 steps/s
+[rank0] [DILOCO64] Step=1800 Loss=3.1156 Samples=57600 Elapsed=251.8s Speed=7.15 steps/s
+[rank0] [DILOCO64] Step=1820 Loss=3.6335 Samples=58240 Elapsed=252.2s Speed=7.22 steps/s
+[rank0] [DILOCO64] Step=1840 Loss=3.5378 Samples=58880 Elapsed=252.6s Speed=7.29 steps/s
+[rank0] [DILOCO64] Step=1860 Loss=2.8821 Samples=59520 Elapsed=260.7s Speed=7.13 steps/s
+[rank0] [DILOCO64] Step=1880 Loss=3.4876 Samples=60160 Elapsed=261.1s Speed=7.20 steps/s
+[rank0] [DILOCO64] Step=1900 Loss=3.4241 Samples=60800 Elapsed=261.5s Speed=7.27 steps/s
+[rank0] [DILOCO64] Step=1920 Loss=3.1990 Samples=61440 Elapsed=269.6s Speed=7.12 steps/s
+[rank0] [DILOCO64] Step=1940 Loss=2.7004 Samples=62080 Elapsed=270.0s Speed=7.19 steps/s
+[rank0] [DILOCO64] Step=1960 Loss=3.4318 Samples=62720 Elapsed=270.4s Speed=7.25 steps/s
+[rank0] [DILOCO64] Step=1980 Loss=3.0533 Samples=63360 Elapsed=270.8s Speed=7.31 steps/s
+[rank0] [DILOCO64] Step=2000 Loss=3.3281 Samples=64000 Elapsed=279.0s Speed=7.17 steps/s
+[rank0] [DILOCO64] Step=2020 Loss=2.9999 Samples=64640 Elapsed=279.4s Speed=7.23 steps/s
+[rank0] [DILOCO64] Step=2040 Loss=2.8515 Samples=65280 Elapsed=279.8s Speed=7.29 steps/s
+[rank0] [DILOCO64] Step=2060 Loss=2.9798 Samples=65920 Elapsed=288.0s Speed=7.15 steps/s
+[rank0] [DILOCO64] Step=2080 Loss=3.2002 Samples=66560 Elapsed=288.4s Speed=7.21 steps/s
+[rank0] [DILOCO64] Step=2100 Loss=3.1955 Samples=67200 Elapsed=288.8s Speed=7.27 steps/s
+[rank0] [DILOCO64] Step=2120 Loss=2.9779 Samples=67840 Elapsed=297.0s Speed=7.14 steps/s
+[rank0] [DILOCO64] Step=2140 Loss=2.5747 Samples=68480 Elapsed=297.4s Speed=7.20 steps/s
+[rank0] [DILOCO64] Step=2160 Loss=3.2169 Samples=69120 Elapsed=297.8s Speed=7.25 steps/s
+[rank0] [DILOCO64] Step=2180 Loss=2.5979 Samples=69760 Elapsed=717.3s Speed=3.04 steps/s
+[rank0] [DILOCO64] Step=2200 Loss=3.2098 Samples=70400 Elapsed=717.7s Speed=3.07 steps/s
+[rank0] [DILOCO64] Step=2220 Loss=2.4228 Samples=71040 Elapsed=718.1s Speed=3.09 steps/s
+[rank0] [DILOCO64] Step=2240 Loss=3.1602 Samples=71680 Elapsed=725.1s Speed=3.09 steps/s
+[rank0] [DILOCO64] Step=2260 Loss=3.1393 Samples=72320 Elapsed=725.5s Speed=3.12 steps/s
+[rank0] [DILOCO64] Step=2280 Loss=2.7354 Samples=72960 Elapsed=725.9s Speed=3.14 steps/s
+[rank0] [DILOCO64] Step=2300 Loss=2.3948 Samples=73600 Elapsed=726.3s Speed=3.17 steps/s
+[rank0] [DILOCO64] Step=2320 Loss=3.0312 Samples=74240 Elapsed=733.5s Speed=3.16 steps/s
+[rank0] [DILOCO64] Step=2340 Loss=3.2358 Samples=74880 Elapsed=733.9s Speed=3.19 steps/s
+[rank0] [DILOCO64] Step=2360 Loss=3.4113 Samples=75520 Elapsed=734.4s Speed=3.21 steps/s
+[rank0] [DILOCO64] Step=2380 Loss=2.7247 Samples=76160 Elapsed=741.5s Speed=3.21 steps/s
+[rank0] [DILOCO64] Step=2400 Loss=2.8726 Samples=76800 Elapsed=741.9s Speed=3.24 steps/s
+[rank0] [DILOCO64] Step=2420 Loss=2.9569 Samples=77440 Elapsed=742.3s Speed=3.26 steps/s
+[rank0] [DILOCO64] Step=2440 Loss=3.4430 Samples=78080 Elapsed=749.4s Speed=3.26 steps/s
+[rank0] [DILOCO64] Step=2460 Loss=3.4232 Samples=78720 Elapsed=749.8s Speed=3.28 steps/s
+[rank0] [DILOCO64] Step=2480 Loss=2.7294 Samples=79360 Elapsed=750.2s Speed=3.31 steps/s
+[rank0] [DILOCO64] Step=2500 Loss=2.6140 Samples=80000 Elapsed=757.5s Speed=3.30 steps/s
+[rank0] [DILOCO64] Step=2520 Loss=2.8201 Samples=80640 Elapsed=757.9s Speed=3.33 steps/s
+[rank0] [DILOCO64] Step=2540 Loss=3.2465 Samples=81280 Elapsed=758.3s Speed=3.35 steps/s
+[rank0] [DILOCO64] Step=2560 Loss=3.0929 Samples=81920 Elapsed=765.5s Speed=3.34 steps/s
+[rank0] [DILOCO64] Step=2580 Loss=2.9314 Samples=82560 Elapsed=765.9s Speed=3.37 steps/s
+[rank0] [DILOCO64] Step=2600 Loss=3.1890 Samples=83200 Elapsed=766.3s Speed=3.39 steps/s
+[rank0] [DILOCO64] Step=2620 Loss=2.8136 Samples=83840 Elapsed=766.7s Speed=3.42 steps/s
+[rank0] [DILOCO64] Step=2640 Loss=2.8551 Samples=84480 Elapsed=773.9s Speed=3.41 steps/s
+[rank0] [DILOCO64] Step=2660 Loss=2.9108 Samples=85120 Elapsed=774.3s Speed=3.44 steps/s
+[rank0] [DILOCO64] Step=2680 Loss=3.3871 Samples=85760 Elapsed=774.7s Speed=3.46 steps/s
+[rank0] [DILOCO64] Step=2700 Loss=3.2810 Samples=86400 Elapsed=781.7s Speed=3.45 steps/s
+[rank0] [DILOCO64] Step=2720 Loss=2.3682 Samples=87040 Elapsed=782.1s Speed=3.48 steps/s
+[rank0] [DILOCO64] Step=2740 Loss=2.8931 Samples=87680 Elapsed=782.5s Speed=3.50 steps/s
+[rank0] [DILOCO64] Step=2760 Loss=2.6659 Samples=88320 Elapsed=789.8s Speed=3.49 steps/s
+[rank0] [DILOCO64] Step=2780 Loss=2.4032 Samples=88960 Elapsed=790.2s Speed=3.52 steps/s
+[rank0] [DILOCO64] Step=2800 Loss=3.2611 Samples=89600 Elapsed=790.6s Speed=3.54 steps/s
+[rank0] [DILOCO64] Step=2820 Loss=3.1841 Samples=90240 Elapsed=797.7s Speed=3.54 steps/s
+[rank0] [DILOCO64] Step=2840 Loss=2.7654 Samples=90880 Elapsed=798.1s Speed=3.56 steps/s
+[rank0] [DILOCO64] Step=2860 Loss=2.9584 Samples=91520 Elapsed=798.5s Speed=3.58 steps/s
+[rank0] [DILOCO64] Step=2880 Loss=2.4098 Samples=92160 Elapsed=805.7s Speed=3.57 steps/s
+[rank0] [DILOCO64] Step=2900 Loss=2.2590 Samples=92800 Elapsed=806.1s Speed=3.60 steps/s
+[rank0] [DILOCO64] Step=2920 Loss=2.7020 Samples=93440 Elapsed=806.5s Speed=3.62 steps/s
+[rank0] [DILOCO64] Step=2940 Loss=2.4616 Samples=94080 Elapsed=806.8s Speed=3.64 steps/s
+[rank0] [DILOCO64] Step=2960 Loss=2.8785 Samples=94720 Elapsed=814.1s Speed=3.64 steps/s
+[rank0] [DILOCO64] Step=2980 Loss=2.9144 Samples=95360 Elapsed=814.5s Speed=3.66 steps/s
+[rank0] [DILOCO64] Step=3000 Loss=2.4362 Samples=96000 Elapsed=814.9s Speed=3.68 steps/s
+[rank0] [DILOCO64] Step=3020 Loss=2.2675 Samples=96640 Elapsed=822.1s Speed=3.67 steps/s
+[rank0] [DILOCO64] Step=3040 Loss=2.9439 Samples=97280 Elapsed=822.5s Speed=3.70 steps/s
+[rank0] [DILOCO64] Step=3060 Loss=2.5611 Samples=97920 Elapsed=822.9s Speed=3.72 steps/s
+[rank0] [DILOCO64] Step=3080 Loss=2.1922 Samples=98560 Elapsed=830.2s Speed=3.71 steps/s
+[rank0] [DILOCO64] Step=3100 Loss=2.5171 Samples=99200 Elapsed=830.6s Speed=3.73 steps/s
+[rank0] [DILOCO64] Step=3120 Loss=2.7722 Samples=99840 Elapsed=831.0s Speed=3.75 steps/s
+[rank0] [DILOCO64] Step=3140 Loss=2.8786 Samples=100480 Elapsed=838.3s Speed=3.75 steps/s
+[rank0] [DILOCO64] Step=3160 Loss=2.7295 Samples=101120 Elapsed=838.7s Speed=3.77 steps/s
+[rank0] [DILOCO64] Step=3180 Loss=3.0601 Samples=101760 Elapsed=839.1s Speed=3.79 steps/s
+[rank0] [DILOCO64] Step=3200 Loss=2.3117 Samples=102400 Elapsed=846.3s Speed=3.78 steps/s
+[rank0] [DILOCO64] Step=3220 Loss=3.1663 Samples=103040 Elapsed=846.7s Speed=3.80 steps/s
+[rank0] [DILOCO64] Step=3240 Loss=2.4854 Samples=103680 Elapsed=847.1s Speed=3.82 steps/s
+[rank0] [DILOCO64] Step=3260 Loss=2.4983 Samples=104320 Elapsed=847.5s Speed=3.85 steps/s
+[rank0] [DILOCO64] Step=3280 Loss=2.6585 Samples=104960 Elapsed=854.8s Speed=3.84 steps/s
+[rank0] [DILOCO64] Step=3300 Loss=2.3742 Samples=105600 Elapsed=855.2s Speed=3.86 steps/s
+[rank0] [DILOCO64] Step=3320 Loss=2.3733 Samples=106240 Elapsed=855.5s Speed=3.88 steps/s
+[rank0] [DILOCO64] Step=3340 Loss=2.4800 Samples=106880 Elapsed=862.8s Speed=3.87 steps/s
+[rank0] [DILOCO64] Step=3360 Loss=2.5976 Samples=107520 Elapsed=863.2s Speed=3.89 steps/s
+[rank0] [DILOCO64] Step=3380 Loss=2.6107 Samples=108160 Elapsed=863.6s Speed=3.91 steps/s
+[rank0] [DILOCO64] Step=3400 Loss=2.3510 Samples=108800 Elapsed=870.8s Speed=3.90 steps/s
+[rank0] [DILOCO64] Step=3420 Loss=2.5024 Samples=109440 Elapsed=871.2s Speed=3.93 steps/s
+[rank0] [DILOCO64] Step=3440 Loss=2.5494 Samples=110080 Elapsed=871.6s Speed=3.95 steps/s
+[rank0] [DILOCO64] Step=3460 Loss=2.3331 Samples=110720 Elapsed=878.8s Speed=3.94 steps/s
+[rank0] [DILOCO64] Step=3480 Loss=2.4752 Samples=111360 Elapsed=879.2s Speed=3.96 steps/s
+[rank0] [DILOCO64] Step=3500 Loss=2.6870 Samples=112000 Elapsed=879.6s Speed=3.98 steps/s
+[rank0] [DILOCO64] Step=3520 Loss=2.3087 Samples=112640 Elapsed=886.7s Speed=3.97 steps/s
+[rank0] [DILOCO64] Step=3540 Loss=2.4541 Samples=113280 Elapsed=887.1s Speed=3.99 steps/s
+[rank0] [DILOCO64] Step=3560 Loss=2.1809 Samples=113920 Elapsed=887.5s Speed=4.01 steps/s
+[rank0] [DILOCO64] Step=3580 Loss=2.6750 Samples=114560 Elapsed=887.9s Speed=4.03 steps/s
+[rank0] [DILOCO64] Step=3600 Loss=2.3817 Samples=115200 Elapsed=895.2s Speed=4.02 steps/s
+[rank0] [DILOCO64] Step=3620 Loss=2.3509 Samples=115840 Elapsed=895.6s Speed=4.04 steps/s
+[rank0] [DILOCO64] Step=3640 Loss=2.3105 Samples=116480 Elapsed=896.0s Speed=4.06 steps/s
+[rank0] [DILOCO64] Step=3660 Loss=2.2986 Samples=117120 Elapsed=1451.6s Speed=2.52 steps/s
+[rank0] [DILOCO64] Step=3680 Loss=2.0936 Samples=117760 Elapsed=1452.0s Speed=2.53 steps/s
+[rank0] [DILOCO64] Step=3700 Loss=2.4249 Samples=118400 Elapsed=1452.4s Speed=2.55 steps/s
+[rank0] [DILOCO64] Step=3720 Loss=1.7253 Samples=119040 Elapsed=1460.7s Speed=2.55 steps/s
+[rank0] [DILOCO64] Step=3740 Loss=2.5578 Samples=119680 Elapsed=1461.1s Speed=2.56 steps/s
+[rank0] [DILOCO64] Step=3760 Loss=2.0434 Samples=120320 Elapsed=1461.5s Speed=2.57 steps/s
+[rank0] [DILOCO64] Step=3780 Loss=2.2764 Samples=120960 Elapsed=1469.6s Speed=2.57 steps/s
+[rank0] [DILOCO64] Step=3800 Loss=2.7116 Samples=121600 Elapsed=1470.0s Speed=2.59 steps/s
+[rank0] [DILOCO64] Step=3820 Loss=2.1769 Samples=122240 Elapsed=1470.4s Speed=2.60 steps/s
+[rank0] [DILOCO64] Step=3840 Loss=2.5189 Samples=122880 Elapsed=1478.4s Speed=2.60 steps/s
+[rank0] [DILOCO64] Step=3860 Loss=2.4738 Samples=123520 Elapsed=1478.8s Speed=2.61 steps/s
+[rank0] [DILOCO64] Step=3880 Loss=1.9441 Samples=124160 Elapsed=1479.2s Speed=2.62 steps/s
+[rank0] [DILOCO64] Step=3900 Loss=2.5329 Samples=124800 Elapsed=1479.6s Speed=2.64 steps/s
+[rank0] [DILOCO64] Step=3920 Loss=2.1030 Samples=125440 Elapsed=1487.7s Speed=2.63 steps/s
+[rank0] [DILOCO64] Step=3940 Loss=2.1846 Samples=126080 Elapsed=1488.1s Speed=2.65 steps/s
+[rank0] [DILOCO64] Step=3960 Loss=1.9573 Samples=126720 Elapsed=1488.5s Speed=2.66 steps/s
+[rank0] [DILOCO64] Step=3980 Loss=2.5170 Samples=127360 Elapsed=1496.4s Speed=2.66 steps/s
+[rank0] [DILOCO64] Step=4000 Loss=2.2722 Samples=128000 Elapsed=1496.8s Speed=2.67 steps/s
+[rank0] [DILOCO64] Step=4020 Loss=2.2265 Samples=128640 Elapsed=1497.2s Speed=2.69 steps/s
+[rank0] [DILOCO64] Step=4040 Loss=2.0327 Samples=129280 Elapsed=1508.1s Speed=2.68 steps/s
+[rank0] [DILOCO64] Step=4060 Loss=2.0712 Samples=129920 Elapsed=1508.5s Speed=2.69 steps/s
+[rank0] [DILOCO64] Step=4080 Loss=2.3330 Samples=130560 Elapsed=1508.9s Speed=2.70 steps/s
+[rank0] [DILOCO64] Step=4100 Loss=1.8678 Samples=131200 Elapsed=1517.0s Speed=2.70 steps/s
+[rank0] [DILOCO64] Step=4120 Loss=2.2294 Samples=131840 Elapsed=1517.4s Speed=2.72 steps/s
+[rank0] [DILOCO64] Step=4140 Loss=1.8603 Samples=132480 Elapsed=1517.8s Speed=2.73 steps/s
+[rank0] [DILOCO64] Step=4160 Loss=1.8500 Samples=133120 Elapsed=1525.9s Speed=2.73 steps/s
+[rank0] [DILOCO64] Step=4180 Loss=2.1252 Samples=133760 Elapsed=1526.3s Speed=2.74 steps/s
+[rank0] [DILOCO64] Step=4200 Loss=1.8470 Samples=134400 Elapsed=1526.7s Speed=2.75 steps/s
+[rank0] [DILOCO64] Step=4220 Loss=2.4622 Samples=135040 Elapsed=1527.1s Speed=2.76 steps/s
+[rank0] [DILOCO64] Step=4240 Loss=2.0969 Samples=135680 Elapsed=1535.3s Speed=2.76 steps/s
+[rank0] [DILOCO64] Step=4260 Loss=1.6541 Samples=136320 Elapsed=1535.6s Speed=2.77 steps/s
+[rank0] [DILOCO64] Step=4280 Loss=1.5103 Samples=136960 Elapsed=1536.0s Speed=2.79 steps/s
+[rank0] [DILOCO64] Step=4300 Loss=1.8120 Samples=137600 Elapsed=1544.3s Speed=2.78 steps/s
+[rank0] [DILOCO64] Step=4320 Loss=2.0950 Samples=138240 Elapsed=1544.7s Speed=2.80 steps/s
+[rank0] [DILOCO64] Step=4340 Loss=1.6990 Samples=138880 Elapsed=1545.1s Speed=2.81 steps/s
+[rank0] [DILOCO64] Step=4360 Loss=1.6350 Samples=139520 Elapsed=1553.1s Speed=2.81 steps/s
+[rank0] [DILOCO64] Step=4380 Loss=1.4218 Samples=140160 Elapsed=1553.5s Speed=2.82 steps/s
+[rank0] [DILOCO64] Step=4400 Loss=1.7741 Samples=140800 Elapsed=1553.9s Speed=2.83 steps/s
+[rank0] [DILOCO64] Step=4420 Loss=1.5706 Samples=141440 Elapsed=1561.9s Speed=2.83 steps/s
+[rank0] [DILOCO64] Step=4440 Loss=1.7555 Samples=142080 Elapsed=1562.3s Speed=2.84 steps/s
+[rank0] [DILOCO64] Step=4460 Loss=2.1654 Samples=142720 Elapsed=1562.7s Speed=2.85 steps/s
+[rank0] [DILOCO64] Step=4480 Loss=1.5354 Samples=143360 Elapsed=1570.7s Speed=2.85 steps/s
+[rank0] [DILOCO64] Step=4500 Loss=2.1391 Samples=144000 Elapsed=1571.1s Speed=2.86 steps/s
+[rank0] [DILOCO64] Step=4520 Loss=2.4961 Samples=144640 Elapsed=1571.5s Speed=2.88 steps/s
+[rank0] [DILOCO64] Step=4540 Loss=1.4500 Samples=145280 Elapsed=1571.9s Speed=2.89 steps/s
+[rank0] [DILOCO64] Step=4560 Loss=1.5599 Samples=145920 Elapsed=1580.0s Speed=2.89 steps/s
+[rank0] [DILOCO64] Step=4580 Loss=1.8237 Samples=146560 Elapsed=1580.4s Speed=2.90 steps/s
+[rank0] [DILOCO64] Step=4600 Loss=1.7682 Samples=147200 Elapsed=1580.8s Speed=2.91 steps/s
+[rank0] [DILOCO64] Step=4620 Loss=1.6377 Samples=147840 Elapsed=1588.7s Speed=2.91 steps/s
+[rank0] [DILOCO64] Step=4640 Loss=1.9562 Samples=148480 Elapsed=1589.1s Speed=2.92 steps/s
+[rank0] [DILOCO64] Step=4660 Loss=1.4379 Samples=149120 Elapsed=1589.5s Speed=2.93 steps/s
+[rank0] [DILOCO64] Step=4680 Loss=2.1651 Samples=149760 Elapsed=1597.5s Speed=2.93 steps/s
+[rank0] [DILOCO64] Step=4700 Loss=1.4247 Samples=150400 Elapsed=1597.9s Speed=2.94 steps/s
+[rank0] [DILOCO64] Step=4720 Loss=1.5247 Samples=151040 Elapsed=1598.3s Speed=2.95 steps/s
+[rank0] [DILOCO64] Step=4740 Loss=1.3795 Samples=151680 Elapsed=1606.4s Speed=2.95 steps/s
+[rank0] [DILOCO64] Step=4760 Loss=2.3882 Samples=152320 Elapsed=1606.8s Speed=2.96 steps/s
+[rank0] [DILOCO64] Step=4780 Loss=1.8507 Samples=152960 Elapsed=1607.2s Speed=2.97 steps/s
+[rank0] [DILOCO64] Step=4800 Loss=1.9625 Samples=153600 Elapsed=1615.4s Speed=2.97 steps/s
+[rank0] [DILOCO64] Step=4820 Loss=1.6909 Samples=154240 Elapsed=1615.7s Speed=2.98 steps/s
+[rank0] [DILOCO64] Step=4840 Loss=1.7018 Samples=154880 Elapsed=1616.1s Speed=2.99 steps/s
+[rank0] [DILOCO64] Step=4860 Loss=1.6824 Samples=155520 Elapsed=1616.5s Speed=3.01 steps/s
+[rank0] [DILOCO64] Step=4880 Loss=2.0301 Samples=156160 Elapsed=1624.8s Speed=3.00 steps/s
+[rank0] [DILOCO64] Step=4900 Loss=1.9400 Samples=156800 Elapsed=1625.1s Speed=3.02 steps/s
+[rank0] [DILOCO64] Step=4920 Loss=1.6659 Samples=157440 Elapsed=1625.5s Speed=3.03 steps/s
+[rank0] [DILOCO64] Step=4940 Loss=1.2152 Samples=158080 Elapsed=1633.7s Speed=3.02 steps/s
+[rank0] [DILOCO64] Step=4960 Loss=2.0272 Samples=158720 Elapsed=1634.1s Speed=3.04 steps/s
+[rank0] [DILOCO64] Step=4980 Loss=2.4914 Samples=159360 Elapsed=1634.5s Speed=3.05 steps/s
+[rank0] [DILOCO64] Step=5000 Loss=1.4088 Samples=160000 Elapsed=1642.7s Speed=3.04 steps/s
+[rank0] [DILOCO64] Step=5020 Loss=1.3785 Samples=160640 Elapsed=1643.1s Speed=3.06 steps/s
+[rank0] [DILOCO64] Step=5040 Loss=1.2293 Samples=161280 Elapsed=1643.5s Speed=3.07 steps/s
+[rank0] [DILOCO64] Step=5060 Loss=1.7433 Samples=161920 Elapsed=2374.4s Speed=2.13 steps/s
+[rank0] [DILOCO64] Step=5080 Loss=1.3392 Samples=162560 Elapsed=2374.9s Speed=2.14 steps/s
+[rank0] [DILOCO64] Step=5100 Loss=1.5750 Samples=163200 Elapsed=2375.3s Speed=2.15 steps/s
+[rank0] [DILOCO64] Step=5120 Loss=1.6440 Samples=163840 Elapsed=2383.4s Speed=2.15 steps/s
+[rank0] [DILOCO64] Step=5140 Loss=1.1223 Samples=164480 Elapsed=2383.8s Speed=2.16 steps/s
+[rank0] [DILOCO64] Step=5160 Loss=1.6690 Samples=165120 Elapsed=2384.2s Speed=2.16 steps/s
+[rank0] [DILOCO64] Step=5180 Loss=1.3886 Samples=165760 Elapsed=2384.6s Speed=2.17 steps/s
+[rank0] [DILOCO64] Step=5200 Loss=0.8898 Samples=166400 Elapsed=2392.7s Speed=2.17 steps/s
+[rank0] [DILOCO64] Step=5220 Loss=0.9940 Samples=167040 Elapsed=2393.1s Speed=2.18 steps/s
+[rank0] [DILOCO64] Step=5240 Loss=1.1948 Samples=167680 Elapsed=2393.5s Speed=2.19 steps/s
+[rank0] [DILOCO64] Step=5260 Loss=1.1156 Samples=168320 Elapsed=2404.6s Speed=2.19 steps/s
+[rank0] [DILOCO64] Step=5280 Loss=1.1298 Samples=168960 Elapsed=2405.0s Speed=2.20 steps/s
+[rank0] [DILOCO64] Step=5300 Loss=1.7268 Samples=169600 Elapsed=2405.3s Speed=2.20 steps/s
+[rank0] [DILOCO64] Step=5320 Loss=1.4259 Samples=170240 Elapsed=2413.6s Speed=2.20 steps/s
+[rank0] [DILOCO64] Step=5340 Loss=1.1017 Samples=170880 Elapsed=2414.0s Speed=2.21 steps/s
+[rank0] [DILOCO64] Step=5360 Loss=1.6754 Samples=171520 Elapsed=2414.4s Speed=2.22 steps/s
+[rank0] [DILOCO64] Step=5380 Loss=1.1462 Samples=172160 Elapsed=2422.6s Speed=2.22 steps/s
+[rank0] [DILOCO64] Step=5400 Loss=1.8508 Samples=172800 Elapsed=2423.0s Speed=2.23 steps/s
+[rank0] [DILOCO64] Step=5420 Loss=1.2533 Samples=173440 Elapsed=2423.4s Speed=2.24 steps/s
+[rank0] [DILOCO64] Step=5440 Loss=1.3509 Samples=174080 Elapsed=2431.6s Speed=2.24 steps/s
+[rank0] [DILOCO64] Step=5460 Loss=1.3408 Samples=174720 Elapsed=2432.0s Speed=2.25 steps/s
+[rank0] [DILOCO64] Step=5480 Loss=0.5660 Samples=175360 Elapsed=2432.4s Speed=2.25 steps/s
+[rank0] [DILOCO64] Step=5500 Loss=0.9249 Samples=176000 Elapsed=2432.8s Speed=2.26 steps/s
+[rank0] [DILOCO64] Step=5520 Loss=1.4760 Samples=176640 Elapsed=2440.9s Speed=2.26 steps/s
+[rank0] [DILOCO64] Step=5540 Loss=1.0127 Samples=177280 Elapsed=2441.3s Speed=2.27 steps/s
+[rank0] [DILOCO64] Step=5560 Loss=0.7629 Samples=177920 Elapsed=2441.7s Speed=2.28 steps/s
+[rank0] [DILOCO64] Step=5580 Loss=0.9289 Samples=178560 Elapsed=2449.8s Speed=2.28 steps/s
+[rank0] [DILOCO64] Step=5600 Loss=1.3060 Samples=179200 Elapsed=2450.2s Speed=2.29 steps/s
+[rank0] [DILOCO64] Step=5620 Loss=0.7258 Samples=179840 Elapsed=2450.6s Speed=2.29 steps/s
+[rank0] [DILOCO64] Step=5640 Loss=0.7522 Samples=180480 Elapsed=2458.7s Speed=2.29 steps/s
+[rank0] [DILOCO64] Step=5660 Loss=1.1623 Samples=181120 Elapsed=2459.0s Speed=2.30 steps/s
+[rank0] [DILOCO64] Step=5680 Loss=1.0134 Samples=181760 Elapsed=2459.4s Speed=2.31 steps/s
+[rank0] [DILOCO64] Step=5700 Loss=0.7871 Samples=182400 Elapsed=2467.6s Speed=2.31 steps/s
+[rank0] [DILOCO64] Step=5720 Loss=0.3537 Samples=183040 Elapsed=2467.9s Speed=2.32 steps/s
+[rank0] [DILOCO64] Step=5740 Loss=0.9387 Samples=183680 Elapsed=2468.3s Speed=2.33 steps/s
+[rank0] [DILOCO64] Step=5760 Loss=1.1894 Samples=184320 Elapsed=2476.5s Speed=2.33 steps/s
+[rank0] [DILOCO64] Step=5780 Loss=0.9312 Samples=184960 Elapsed=2476.9s Speed=2.33 steps/s
+[rank0] [DILOCO64] Step=5800 Loss=0.9567 Samples=185600 Elapsed=2477.3s Speed=2.34 steps/s
+[rank0] [DILOCO64] Step=5820 Loss=1.2296 Samples=186240 Elapsed=2477.7s Speed=2.35 steps/s
+[rank0] [DILOCO64] Step=5840 Loss=1.0322 Samples=186880 Elapsed=2485.9s Speed=2.35 steps/s
+[rank0] [DILOCO64] Step=5860 Loss=1.0104 Samples=187520 Elapsed=2486.3s Speed=2.36 steps/s
+[rank0] [DILOCO64] Step=5880 Loss=0.9079 Samples=188160 Elapsed=2486.7s Speed=2.36 steps/s
+[rank0] [DILOCO64] Step=5900 Loss=1.0743 Samples=188800 Elapsed=2494.9s Speed=2.36 steps/s
+[rank0] [DILOCO64] Step=5920 Loss=0.7119 Samples=189440 Elapsed=2495.3s Speed=2.37 steps/s
+[rank0] [DILOCO64] Step=5940 Loss=0.7783 Samples=190080 Elapsed=2495.7s Speed=2.38 steps/s
+[rank0] [DILOCO64] Step=5960 Loss=0.8402 Samples=190720 Elapsed=2503.9s Speed=2.38 steps/s
+[rank0] [DILOCO64] Step=5980 Loss=0.8668 Samples=191360 Elapsed=2504.3s Speed=2.39 steps/s
+[rank0] [DILOCO64] Step=6000 Loss=0.9433 Samples=192000 Elapsed=2504.7s Speed=2.40 steps/s
+[rank0] [DILOCO64] Step=6020 Loss=0.6115 Samples=192640 Elapsed=2512.8s Speed=2.40 steps/s
+[rank0] [DILOCO64] Step=6040 Loss=0.9696 Samples=193280 Elapsed=2513.2s Speed=2.40 steps/s
+[rank0] [DILOCO64] Step=6060 Loss=0.5761 Samples=193920 Elapsed=2513.6s Speed=2.41 steps/s
+Log/output folder: /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_diloco64_20261120T094236Z
+{
+  "ranks_seen": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "training_step_events": 28928,
+  "communications_completed": 448,
+  "mean_comm_ready_to_complete_s": 28.743870792410714,
+  "scheduled_outage_intervals_per_direction": 54,
+  "outage_steps_note": "Per-link progress may count one optimizer step in multiple simultaneous outages.",
+  "ready_complete_note": "Ready-to-complete is application-level duration, not pure network blocking.",
+  "failure_note": "Missing or incomplete communications can indicate blocked or failed collectives; see training logs."
+}
+/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_diloco64_20261120T094236Z generated 38 plots; validation slots: 4 complete 4-worker slots: 4
+E2 FAILED:
+ - Experiment exceeded wall-clock deadline
+ - Nonzero process exits: {'tc_rank0.log': -9, 'tc_rank1.log': -9, 'tc_rank3.log': -9, 'train_rank0.log': -9, 'train_rank1.log': 15, 'train_rank2.log': -9, 'train_rank3.log': -9}
+PASS: four workers reachable, CIFAR-100 available, no E2 workers/qdiscs/markers
+Completed diloco64: runner_exit=1; clean_after=YES; status=FAIL
+NOTE: experiment failed but cleanup verified. Continuing to the next independent method.
+STOP: 1138s remain; fl8 needs 3990s
+
+BATCH SUMMARY: 0 PASS, 1 FAIL, 4 SKIPPED, 2 NOT STARTED, 7 TOTAL
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+diloco64	FAIL	1	YES	2026-11-20T09:42:41Z	2026-11-20T10:47:48Z	/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_diloco64_20261120T094236Z
+Results stored under /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results; plotting runs during runner.py finalization.

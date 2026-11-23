@@ -1,0 +1,12 @@
+{
+  "experiment": "E2",
+  "method": "fl8",
+  "status": "incomplete",
+  "completed_rounds": 67,
+  "evaluated_rounds": 66,
+  "requested_rounds": 500,
+  "best_validation_accuracy": 0.1354,
+  "world_size": 4,
+  "local_steps": 8,
+  "training_stop": "fixed Flower round count; duration is coordinator safety deadline"
+}

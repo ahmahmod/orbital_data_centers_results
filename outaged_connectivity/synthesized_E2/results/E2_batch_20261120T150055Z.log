@@ -1,0 +1,14 @@
+E2 overnight batch: 20261120T150055Z
+Methods: ddp gossip8 gossip64 diloco8 diloco64
+CIFAR-100; contact shaping ON; each run 10800s; NCCL/Flower timeout 900s
+Batch log: /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_batch_20261120T150055Z.log
+Current OAR job: 2250902
+Minimum time for one experiment: 11490s
+OAR time remaining: 10434s
+PASS: four workers reachable, CIFAR-100 available, no E2 workers/qdiscs/markers
+STOP: 10430s remain; ddp needs 11490s
+
+BATCH SUMMARY: 0 PASS, 0 FAIL, 0 SKIPPED, 5 NOT STARTED, 5 TOTAL
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+Results stored under /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results; plotting runs during runner.py finalization.
+Remaining experiments can run in a later OAR reservation.

@@ -1,0 +1,303 @@
+rank,host,epoch,step,event,unix_time_s,duration_s,world_size,note
+2,vercors10-3.grenoble.grid5000.fr,0,0,initial_barrier,1794781313.177156,0.0057761,4,
+2,vercors10-3.grenoble.grid5000.fr,1,352,pre_validation_barrier,1794781333.848293,0.0229238,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,1,352,post_validation_barrier,1794781337.236119,1.4378919,4,
+2,vercors10-3.grenoble.grid5000.fr,1,352,stop_decision_broadcast,1794781337.236583,0.0002438,4,
+2,vercors10-3.grenoble.grid5000.fr,2,704,pre_validation_barrier,1794781351.26963,0.0327364,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,2,704,post_validation_barrier,1794781353.823711,1.3827038,4,
+2,vercors10-3.grenoble.grid5000.fr,2,704,stop_decision_broadcast,1794781353.824132,0.000228,4,
+2,vercors10-3.grenoble.grid5000.fr,3,1056,pre_validation_barrier,1794781367.907407,0.0230054,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,3,1056,post_validation_barrier,1794781370.473881,1.3770975,4,
+2,vercors10-3.grenoble.grid5000.fr,3,1056,stop_decision_broadcast,1794781370.474299,0.0002101,4,
+2,vercors10-3.grenoble.grid5000.fr,4,1408,pre_validation_barrier,1794781384.398528,0.0229561,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,4,1408,post_validation_barrier,1794781386.989104,1.4031612,4,
+2,vercors10-3.grenoble.grid5000.fr,4,1408,stop_decision_broadcast,1794781386.989492,0.0001922,4,
+2,vercors10-3.grenoble.grid5000.fr,5,1760,pre_validation_barrier,1794781400.997636,0.0252644,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,5,1760,post_validation_barrier,1794781403.595383,1.4120103,4,
+2,vercors10-3.grenoble.grid5000.fr,5,1760,stop_decision_broadcast,1794781403.595842,0.000248,4,
+2,vercors10-3.grenoble.grid5000.fr,6,2112,pre_validation_barrier,1794781417.611263,0.0230862,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,6,2112,post_validation_barrier,1794781420.192152,1.382431,4,
+2,vercors10-3.grenoble.grid5000.fr,6,2112,stop_decision_broadcast,1794781420.192549,0.0002023,4,
+2,vercors10-3.grenoble.grid5000.fr,7,2464,pre_validation_barrier,1794781434.079886,0.0385115,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,7,2464,post_validation_barrier,1794781436.65783,1.3968177,4,
+2,vercors10-3.grenoble.grid5000.fr,7,2464,stop_decision_broadcast,1794781436.658255,0.0002289,4,
+2,vercors10-3.grenoble.grid5000.fr,8,2816,pre_validation_barrier,1794781450.771464,0.0230527,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,8,2816,post_validation_barrier,1794781453.345587,1.3754177,4,
+2,vercors10-3.grenoble.grid5000.fr,8,2816,stop_decision_broadcast,1794781453.346007,0.0002095,4,
+2,vercors10-3.grenoble.grid5000.fr,9,3168,pre_validation_barrier,1794781467.402258,0.0229538,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,9,3168,post_validation_barrier,1794781470.009863,1.450247,4,
+2,vercors10-3.grenoble.grid5000.fr,9,3168,stop_decision_broadcast,1794781470.010271,0.0002016,4,
+2,vercors10-3.grenoble.grid5000.fr,10,3520,pre_validation_barrier,1794781484.027303,0.0229685,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,10,3520,post_validation_barrier,1794781486.58195,1.3860828,4,
+2,vercors10-3.grenoble.grid5000.fr,10,3520,stop_decision_broadcast,1794781486.582356,0.0002109,4,
+2,vercors10-3.grenoble.grid5000.fr,11,3872,pre_validation_barrier,1794781500.611082,0.0229205,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,11,3872,post_validation_barrier,1794781503.171631,1.3885348,4,
+2,vercors10-3.grenoble.grid5000.fr,11,3872,stop_decision_broadcast,1794781503.172136,0.0002539,4,
+2,vercors10-3.grenoble.grid5000.fr,12,4224,pre_validation_barrier,1794781517.077772,0.0230153,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,12,4224,post_validation_barrier,1794781519.663184,1.3860502,4,
+2,vercors10-3.grenoble.grid5000.fr,12,4224,stop_decision_broadcast,1794781519.663609,0.0002163,4,
+2,vercors10-3.grenoble.grid5000.fr,13,4576,pre_validation_barrier,1794781533.73422,0.0230375,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,13,4576,post_validation_barrier,1794781536.31039,1.4026129,4,
+2,vercors10-3.grenoble.grid5000.fr,13,4576,stop_decision_broadcast,1794781536.310821,0.0002204,4,
+2,vercors10-3.grenoble.grid5000.fr,14,4928,pre_validation_barrier,1794781550.386716,0.0230583,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,14,4928,post_validation_barrier,1794781552.972253,1.4067114,4,
+2,vercors10-3.grenoble.grid5000.fr,14,4928,stop_decision_broadcast,1794781552.972679,0.0002147,4,
+2,vercors10-3.grenoble.grid5000.fr,15,5280,pre_validation_barrier,1794781567.04335,0.0232002,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,15,5280,post_validation_barrier,1794781569.611199,1.3337151,4,
+2,vercors10-3.grenoble.grid5000.fr,15,5280,stop_decision_broadcast,1794781569.61163,0.000209,4,
+2,vercors10-3.grenoble.grid5000.fr,16,5632,pre_validation_barrier,1794781583.648008,0.0228699,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,16,5632,post_validation_barrier,1794781586.198309,1.3678283,4,
+2,vercors10-3.grenoble.grid5000.fr,16,5632,stop_decision_broadcast,1794781586.198693,0.0001836,4,
+2,vercors10-3.grenoble.grid5000.fr,17,5984,pre_validation_barrier,1794781600.290665,0.0228232,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,17,5984,post_validation_barrier,1794781602.855419,1.394921,4,
+2,vercors10-3.grenoble.grid5000.fr,17,5984,stop_decision_broadcast,1794781602.855885,0.0002593,4,
+2,vercors10-3.grenoble.grid5000.fr,18,6336,pre_validation_barrier,1794781616.863085,0.0231966,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,18,6336,post_validation_barrier,1794781619.416407,1.36575,4,
+2,vercors10-3.grenoble.grid5000.fr,18,6336,stop_decision_broadcast,1794781619.416903,0.0002411,4,
+2,vercors10-3.grenoble.grid5000.fr,19,6688,pre_validation_barrier,1794781633.415067,0.0231908,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,19,6688,post_validation_barrier,1794781635.954637,1.386107,4,
+2,vercors10-3.grenoble.grid5000.fr,19,6688,stop_decision_broadcast,1794781635.955101,0.0002639,4,
+2,vercors10-3.grenoble.grid5000.fr,20,7040,pre_validation_barrier,1794781649.912036,0.0231548,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,20,7040,post_validation_barrier,1794781652.462306,1.3576028,4,
+2,vercors10-3.grenoble.grid5000.fr,20,7040,stop_decision_broadcast,1794781652.46276,0.0002423,4,
+2,vercors10-3.grenoble.grid5000.fr,21,7392,pre_validation_barrier,1794781666.501724,0.022868,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,21,7392,post_validation_barrier,1794781669.042492,1.320806,4,
+2,vercors10-3.grenoble.grid5000.fr,21,7392,stop_decision_broadcast,1794781669.042899,0.0002215,4,
+2,vercors10-3.grenoble.grid5000.fr,22,7744,pre_validation_barrier,1794781683.108051,0.0231817,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,22,7744,post_validation_barrier,1794781685.656607,1.3475576,4,
+2,vercors10-3.grenoble.grid5000.fr,22,7744,stop_decision_broadcast,1794781685.657025,0.0002227,4,
+2,vercors10-3.grenoble.grid5000.fr,23,8096,pre_validation_barrier,1794781699.770492,0.0230631,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,23,8096,post_validation_barrier,1794781702.309676,1.3394763,4,
+2,vercors10-3.grenoble.grid5000.fr,23,8096,stop_decision_broadcast,1794781702.310085,0.0002056,4,
+2,vercors10-3.grenoble.grid5000.fr,24,8448,pre_validation_barrier,1794781716.379286,0.0230845,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,24,8448,post_validation_barrier,1794781718.929373,1.354947,4,
+2,vercors10-3.grenoble.grid5000.fr,24,8448,stop_decision_broadcast,1794781718.929828,0.0002305,4,
+2,vercors10-3.grenoble.grid5000.fr,25,8800,pre_validation_barrier,1794781732.934697,0.022784,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,25,8800,post_validation_barrier,1794781735.474384,1.3578063,4,
+2,vercors10-3.grenoble.grid5000.fr,25,8800,stop_decision_broadcast,1794781735.474844,0.0002329,4,
+2,vercors10-3.grenoble.grid5000.fr,26,9152,pre_validation_barrier,1794781749.464835,0.0231471,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,26,9152,post_validation_barrier,1794781752.008221,1.3622117,4,
+2,vercors10-3.grenoble.grid5000.fr,26,9152,stop_decision_broadcast,1794781752.008641,0.0002136,4,
+2,vercors10-3.grenoble.grid5000.fr,27,9504,pre_validation_barrier,1794781766.01932,0.0229714,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,27,9504,post_validation_barrier,1794781768.56167,1.3527756,4,
+2,vercors10-3.grenoble.grid5000.fr,27,9504,stop_decision_broadcast,1794781768.562083,0.0002085,4,
+2,vercors10-3.grenoble.grid5000.fr,28,9856,pre_validation_barrier,1794781782.710767,0.0384095,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,28,9856,post_validation_barrier,1794781785.254977,1.3808956,4,
+2,vercors10-3.grenoble.grid5000.fr,28,9856,stop_decision_broadcast,1794781785.255413,0.0002334,4,
+2,vercors10-3.grenoble.grid5000.fr,29,10208,pre_validation_barrier,1794781799.2503,0.0254462,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,29,10208,post_validation_barrier,1794781801.801174,1.3394269,4,
+2,vercors10-3.grenoble.grid5000.fr,29,10208,stop_decision_broadcast,1794781801.801641,0.0002281,4,
+2,vercors10-3.grenoble.grid5000.fr,30,10560,pre_validation_barrier,1794781815.945407,0.0230425,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,30,10560,post_validation_barrier,1794781818.488501,1.3537089,4,
+2,vercors10-3.grenoble.grid5000.fr,30,10560,stop_decision_broadcast,1794781818.488947,0.0002202,4,
+2,vercors10-3.grenoble.grid5000.fr,31,10912,pre_validation_barrier,1794781832.412548,0.0230055,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,31,10912,post_validation_barrier,1794781834.968299,1.3670643,4,
+2,vercors10-3.grenoble.grid5000.fr,31,10912,stop_decision_broadcast,1794781834.968737,0.000226,4,
+2,vercors10-3.grenoble.grid5000.fr,32,11264,pre_validation_barrier,1794781848.86585,0.0229766,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,32,11264,post_validation_barrier,1794781851.404887,1.3432205,4,
+2,vercors10-3.grenoble.grid5000.fr,32,11264,stop_decision_broadcast,1794781851.405342,0.0002374,4,
+2,vercors10-3.grenoble.grid5000.fr,33,11616,pre_validation_barrier,1794781865.338243,0.0228857,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,33,11616,post_validation_barrier,1794781867.888015,1.3503634,4,
+2,vercors10-3.grenoble.grid5000.fr,33,11616,stop_decision_broadcast,1794781867.888465,0.000234,4,
+2,vercors10-3.grenoble.grid5000.fr,34,11968,pre_validation_barrier,1794781881.741983,0.0229607,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,34,11968,post_validation_barrier,1794781884.289134,1.3429715,4,
+2,vercors10-3.grenoble.grid5000.fr,34,11968,stop_decision_broadcast,1794781884.289565,0.0002327,4,
+2,vercors10-3.grenoble.grid5000.fr,35,12320,pre_validation_barrier,1794781898.08966,0.0288808,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,35,12320,post_validation_barrier,1794781900.640258,1.3571148,4,
+2,vercors10-3.grenoble.grid5000.fr,35,12320,stop_decision_broadcast,1794781900.640678,0.0002077,4,
+2,vercors10-3.grenoble.grid5000.fr,36,12672,pre_validation_barrier,1794781914.554743,0.0229261,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,36,12672,post_validation_barrier,1794781917.099194,1.3572868,4,
+2,vercors10-3.grenoble.grid5000.fr,36,12672,stop_decision_broadcast,1794781917.099616,0.0002074,4,
+2,vercors10-3.grenoble.grid5000.fr,37,13024,pre_validation_barrier,1794781930.972782,0.0229539,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,37,13024,post_validation_barrier,1794781933.512439,1.364354,4,
+2,vercors10-3.grenoble.grid5000.fr,37,13024,stop_decision_broadcast,1794781933.512904,0.0002498,4,
+2,vercors10-3.grenoble.grid5000.fr,38,13376,pre_validation_barrier,1794781947.268154,0.0228634,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,38,13376,post_validation_barrier,1794781949.649731,1.1899418,4,
+2,vercors10-3.grenoble.grid5000.fr,38,13376,stop_decision_broadcast,1794781949.650165,0.0002113,4,
+2,vercors10-3.grenoble.grid5000.fr,39,13728,pre_validation_barrier,1794781963.490895,0.0468671,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,39,13728,post_validation_barrier,1794781966.036356,1.3522798,4,
+2,vercors10-3.grenoble.grid5000.fr,39,13728,stop_decision_broadcast,1794781966.036793,0.0002215,4,
+2,vercors10-3.grenoble.grid5000.fr,40,14080,pre_validation_barrier,1794781979.802119,0.0438059,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,40,14080,post_validation_barrier,1794781982.339185,1.3864452,4,
+2,vercors10-3.grenoble.grid5000.fr,40,14080,stop_decision_broadcast,1794781982.339631,0.0002122,4,
+2,vercors10-3.grenoble.grid5000.fr,41,14432,pre_validation_barrier,1794781996.015109,0.0434496,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,41,14432,post_validation_barrier,1794781998.569874,1.3686286,4,
+2,vercors10-3.grenoble.grid5000.fr,41,14432,stop_decision_broadcast,1794781998.570294,0.0002209,4,
+2,vercors10-3.grenoble.grid5000.fr,42,14784,pre_validation_barrier,1794782012.239981,0.0438173,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,42,14784,post_validation_barrier,1794782014.788682,1.3675811,4,
+2,vercors10-3.grenoble.grid5000.fr,42,14784,stop_decision_broadcast,1794782014.789095,0.000208,4,
+2,vercors10-3.grenoble.grid5000.fr,43,15136,pre_validation_barrier,1794782028.49219,0.0437291,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,43,15136,post_validation_barrier,1794782031.031599,1.3601373,4,
+2,vercors10-3.grenoble.grid5000.fr,43,15136,stop_decision_broadcast,1794782031.032069,0.0002524,4,
+2,vercors10-3.grenoble.grid5000.fr,44,15488,pre_validation_barrier,1794782044.706181,0.0467903,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,44,15488,post_validation_barrier,1794782047.281028,1.3998821,4,
+2,vercors10-3.grenoble.grid5000.fr,44,15488,stop_decision_broadcast,1794782047.281413,0.0001889,4,
+2,vercors10-3.grenoble.grid5000.fr,45,15840,pre_validation_barrier,1794782061.007676,0.0442492,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,45,15840,post_validation_barrier,1794782063.565057,1.3802781,4,
+2,vercors10-3.grenoble.grid5000.fr,45,15840,stop_decision_broadcast,1794782063.565475,0.000208,4,
+2,vercors10-3.grenoble.grid5000.fr,46,16192,pre_validation_barrier,1794782077.244544,0.045354,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,46,16192,post_validation_barrier,1794782079.66333,1.2355757,4,
+2,vercors10-3.grenoble.grid5000.fr,46,16192,stop_decision_broadcast,1794782079.663774,0.0002672,4,
+2,vercors10-3.grenoble.grid5000.fr,47,16544,pre_validation_barrier,1794782093.358081,0.0439844,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,47,16544,post_validation_barrier,1794782095.953718,1.4103823,4,
+2,vercors10-3.grenoble.grid5000.fr,47,16544,stop_decision_broadcast,1794782095.954187,0.0002485,4,
+2,vercors10-3.grenoble.grid5000.fr,48,16896,pre_validation_barrier,1794782109.63938,0.0447659,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,48,16896,post_validation_barrier,1794782112.060221,1.2365315,4,
+2,vercors10-3.grenoble.grid5000.fr,48,16896,stop_decision_broadcast,1794782112.060633,0.0002246,4,
+2,vercors10-3.grenoble.grid5000.fr,49,17248,pre_validation_barrier,1794782125.7732,0.0448801,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,49,17248,post_validation_barrier,1794782128.327893,1.3609588,4,
+2,vercors10-3.grenoble.grid5000.fr,49,17248,stop_decision_broadcast,1794782128.328305,0.0002229,4,
+2,vercors10-3.grenoble.grid5000.fr,50,17600,pre_validation_barrier,1794782142.016527,0.0444625,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,50,17600,post_validation_barrier,1794782144.603206,1.3743113,4,
+2,vercors10-3.grenoble.grid5000.fr,50,17600,stop_decision_broadcast,1794782144.603705,0.0002847,4,
+2,vercors10-3.grenoble.grid5000.fr,51,17952,pre_validation_barrier,1794782158.284685,0.0446601,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,51,17952,post_validation_barrier,1794782160.847147,1.366507,4,
+2,vercors10-3.grenoble.grid5000.fr,51,17952,stop_decision_broadcast,1794782160.847549,0.0001898,4,
+2,vercors10-3.grenoble.grid5000.fr,52,18304,pre_validation_barrier,1794782174.520667,0.0230328,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,52,18304,post_validation_barrier,1794782177.09459,1.3807488,4,
+2,vercors10-3.grenoble.grid5000.fr,52,18304,stop_decision_broadcast,1794782177.095044,0.0002393,4,
+2,vercors10-3.grenoble.grid5000.fr,53,18656,pre_validation_barrier,1794782190.771066,0.0438168,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,53,18656,post_validation_barrier,1794782193.204344,1.2431925,4,
+2,vercors10-3.grenoble.grid5000.fr,53,18656,stop_decision_broadcast,1794782193.204793,0.0002203,4,
+2,vercors10-3.grenoble.grid5000.fr,54,19008,pre_validation_barrier,1794782206.896506,0.0437013,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,54,19008,post_validation_barrier,1794782209.368427,1.2842782,4,
+2,vercors10-3.grenoble.grid5000.fr,54,19008,stop_decision_broadcast,1794782209.368857,0.0002179,4,
+2,vercors10-3.grenoble.grid5000.fr,55,19360,pre_validation_barrier,1794782223.062572,0.0442802,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,55,19360,post_validation_barrier,1794782225.625432,1.372748,4,
+2,vercors10-3.grenoble.grid5000.fr,55,19360,stop_decision_broadcast,1794782225.625838,0.0002208,4,
+2,vercors10-3.grenoble.grid5000.fr,56,19712,pre_validation_barrier,1794782239.286809,0.0450296,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,56,19712,post_validation_barrier,1794782241.897977,1.4246758,4,
+2,vercors10-3.grenoble.grid5000.fr,56,19712,stop_decision_broadcast,1794782241.898413,0.0002098,4,
+2,vercors10-3.grenoble.grid5000.fr,57,20064,pre_validation_barrier,1794782255.569504,0.0454488,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,57,20064,post_validation_barrier,1794782258.137872,1.3736843,4,
+2,vercors10-3.grenoble.grid5000.fr,57,20064,stop_decision_broadcast,1794782258.138293,0.0002254,4,
+2,vercors10-3.grenoble.grid5000.fr,58,20416,pre_validation_barrier,1794782271.835746,0.0442367,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,58,20416,post_validation_barrier,1794782274.350963,1.3441,4,
+2,vercors10-3.grenoble.grid5000.fr,58,20416,stop_decision_broadcast,1794782274.351453,0.0002553,4,
+2,vercors10-3.grenoble.grid5000.fr,59,20768,pre_validation_barrier,1794782288.007409,0.0437441,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,59,20768,post_validation_barrier,1794782290.603051,1.3997651,4,
+2,vercors10-3.grenoble.grid5000.fr,59,20768,stop_decision_broadcast,1794782290.603509,0.0002073,4,
+2,vercors10-3.grenoble.grid5000.fr,60,21120,pre_validation_barrier,1794782304.275436,0.0455043,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,60,21120,post_validation_barrier,1794782306.858596,1.3632005,4,
+2,vercors10-3.grenoble.grid5000.fr,60,21120,stop_decision_broadcast,1794782306.859043,0.0002599,4,
+2,vercors10-3.grenoble.grid5000.fr,61,21472,pre_validation_barrier,1794782320.56122,0.0444135,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,61,21472,post_validation_barrier,1794782323.123206,1.3818854,4,
+2,vercors10-3.grenoble.grid5000.fr,61,21472,stop_decision_broadcast,1794782323.123625,0.0002046,4,
+2,vercors10-3.grenoble.grid5000.fr,62,21824,pre_validation_barrier,1794782336.821784,0.0454355,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,62,21824,post_validation_barrier,1794782339.413457,1.4111641,4,
+2,vercors10-3.grenoble.grid5000.fr,62,21824,stop_decision_broadcast,1794782339.413867,0.000211,4,
+2,vercors10-3.grenoble.grid5000.fr,63,22176,pre_validation_barrier,1794782353.1335,0.0432882,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,63,22176,post_validation_barrier,1794782355.682339,1.3595366,4,
+2,vercors10-3.grenoble.grid5000.fr,63,22176,stop_decision_broadcast,1794782355.68273,0.0001995,4,
+2,vercors10-3.grenoble.grid5000.fr,64,22528,pre_validation_barrier,1794782369.487714,0.0232797,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,64,22528,post_validation_barrier,1794782372.033018,1.383341,4,
+2,vercors10-3.grenoble.grid5000.fr,64,22528,stop_decision_broadcast,1794782372.033478,0.0002243,4,
+2,vercors10-3.grenoble.grid5000.fr,65,22880,pre_validation_barrier,1794782385.751948,0.0448958,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,65,22880,post_validation_barrier,1794782388.296149,1.3629081,4,
+2,vercors10-3.grenoble.grid5000.fr,65,22880,stop_decision_broadcast,1794782388.296574,0.0002103,4,
+2,vercors10-3.grenoble.grid5000.fr,66,23232,pre_validation_barrier,1794782402.085866,0.0230819,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,66,23232,post_validation_barrier,1794782404.640212,1.3509082,4,
+2,vercors10-3.grenoble.grid5000.fr,66,23232,stop_decision_broadcast,1794782404.640638,0.000229,4,
+2,vercors10-3.grenoble.grid5000.fr,67,23584,pre_validation_barrier,1794782418.386743,0.044288,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,67,23584,post_validation_barrier,1794782420.921994,1.3337754,4,
+2,vercors10-3.grenoble.grid5000.fr,67,23584,stop_decision_broadcast,1794782420.92238,0.0001984,4,
+2,vercors10-3.grenoble.grid5000.fr,68,23936,pre_validation_barrier,1794782434.649294,0.0458689,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,68,23936,post_validation_barrier,1794782437.196304,1.36377,4,
+2,vercors10-3.grenoble.grid5000.fr,68,23936,stop_decision_broadcast,1794782437.196712,0.0002106,4,
+2,vercors10-3.grenoble.grid5000.fr,69,24288,pre_validation_barrier,1794782450.903253,0.0438271,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,69,24288,post_validation_barrier,1794782453.369322,1.2594854,4,
+2,vercors10-3.grenoble.grid5000.fr,69,24288,stop_decision_broadcast,1794782453.369744,0.0002244,4,
+2,vercors10-3.grenoble.grid5000.fr,70,24640,pre_validation_barrier,1794782467.069813,0.0438539,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,70,24640,post_validation_barrier,1794782469.541449,1.3513362,4,
+2,vercors10-3.grenoble.grid5000.fr,70,24640,stop_decision_broadcast,1794782469.541849,0.0002064,4,
+2,vercors10-3.grenoble.grid5000.fr,71,24992,pre_validation_barrier,1794782483.24809,0.0443702,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,71,24992,post_validation_barrier,1794782485.797195,1.3240783,4,
+2,vercors10-3.grenoble.grid5000.fr,71,24992,stop_decision_broadcast,1794782485.797638,0.0002317,4,
+2,vercors10-3.grenoble.grid5000.fr,72,25344,pre_validation_barrier,1794782499.443256,0.0444338,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,72,25344,post_validation_barrier,1794782501.980562,1.3424299,4,
+2,vercors10-3.grenoble.grid5000.fr,72,25344,stop_decision_broadcast,1794782501.981028,0.000237,4,
+2,vercors10-3.grenoble.grid5000.fr,73,25696,pre_validation_barrier,1794782515.675349,0.0460626,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,73,25696,post_validation_barrier,1794782518.21818,1.3545296,4,
+2,vercors10-3.grenoble.grid5000.fr,73,25696,stop_decision_broadcast,1794782518.218593,0.0002184,4,
+2,vercors10-3.grenoble.grid5000.fr,74,26048,pre_validation_barrier,1794782531.942419,0.0451084,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,74,26048,post_validation_barrier,1794782534.475563,1.3577791,4,
+2,vercors10-3.grenoble.grid5000.fr,74,26048,stop_decision_broadcast,1794782534.475986,0.0002285,4,
+2,vercors10-3.grenoble.grid5000.fr,75,26400,pre_validation_barrier,1794782548.140953,0.0434451,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,75,26400,post_validation_barrier,1794782550.684115,1.336356,4,
+2,vercors10-3.grenoble.grid5000.fr,75,26400,stop_decision_broadcast,1794782550.684626,0.000257,4,
+2,vercors10-3.grenoble.grid5000.fr,76,26752,pre_validation_barrier,1794782564.403178,0.0231426,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,76,26752,post_validation_barrier,1794782567.012609,1.4161197,4,
+2,vercors10-3.grenoble.grid5000.fr,76,26752,stop_decision_broadcast,1794782567.013077,0.0002656,4,
+2,vercors10-3.grenoble.grid5000.fr,77,27104,pre_validation_barrier,1794782580.709888,0.0437618,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,77,27104,post_validation_barrier,1794782583.266274,1.3481254,4,
+2,vercors10-3.grenoble.grid5000.fr,77,27104,stop_decision_broadcast,1794782583.266678,0.000228,4,
+2,vercors10-3.grenoble.grid5000.fr,78,27456,pre_validation_barrier,1794782596.935466,0.0443356,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,78,27456,post_validation_barrier,1794782599.576098,1.3973555,4,
+2,vercors10-3.grenoble.grid5000.fr,78,27456,stop_decision_broadcast,1794782599.576535,0.0002276,4,
+2,vercors10-3.grenoble.grid5000.fr,79,27808,pre_validation_barrier,1794782613.248443,0.0453047,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,79,27808,post_validation_barrier,1794782615.804876,1.345756,4,
+2,vercors10-3.grenoble.grid5000.fr,79,27808,stop_decision_broadcast,1794782615.805276,0.0001832,4,
+2,vercors10-3.grenoble.grid5000.fr,80,28160,pre_validation_barrier,1794782629.535305,0.0448783,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,80,28160,post_validation_barrier,1794782632.107687,1.354371,4,
+2,vercors10-3.grenoble.grid5000.fr,80,28160,stop_decision_broadcast,1794782632.108162,0.0002324,4,
+2,vercors10-3.grenoble.grid5000.fr,81,28512,pre_validation_barrier,1794782645.813281,0.0449097,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,81,28512,post_validation_barrier,1794782648.361964,1.3332257,4,
+2,vercors10-3.grenoble.grid5000.fr,81,28512,stop_decision_broadcast,1794782648.3624,0.0002112,4,
+2,vercors10-3.grenoble.grid5000.fr,82,28864,pre_validation_barrier,1794782662.070979,0.0455866,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,82,28864,post_validation_barrier,1794782664.629171,1.3390017,4,
+2,vercors10-3.grenoble.grid5000.fr,82,28864,stop_decision_broadcast,1794782664.629643,0.0002353,4,
+2,vercors10-3.grenoble.grid5000.fr,83,29216,pre_validation_barrier,1794782678.423548,0.0229949,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,83,29216,post_validation_barrier,1794782680.959915,1.3512385,4,
+2,vercors10-3.grenoble.grid5000.fr,83,29216,stop_decision_broadcast,1794782680.960354,0.0002157,4,
+2,vercors10-3.grenoble.grid5000.fr,84,29568,pre_validation_barrier,1794782694.714002,0.0442093,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,84,29568,post_validation_barrier,1794782697.264948,1.3323042,4,
+2,vercors10-3.grenoble.grid5000.fr,84,29568,stop_decision_broadcast,1794782697.265369,0.0002092,4,
+2,vercors10-3.grenoble.grid5000.fr,85,29920,pre_validation_barrier,1794782711.014554,0.0432411,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,85,29920,post_validation_barrier,1794782713.582232,1.3746806,4,
+2,vercors10-3.grenoble.grid5000.fr,85,29920,stop_decision_broadcast,1794782713.582657,0.0002069,4,
+2,vercors10-3.grenoble.grid5000.fr,86,30272,pre_validation_barrier,1794782727.337785,0.0466804,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,86,30272,post_validation_barrier,1794782729.891875,1.3622268,4,
+2,vercors10-3.grenoble.grid5000.fr,86,30272,stop_decision_broadcast,1794782729.892339,0.0002422,4,
+2,vercors10-3.grenoble.grid5000.fr,87,30624,pre_validation_barrier,1794782743.604886,0.0461079,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,87,30624,post_validation_barrier,1794782746.155275,1.3657353,4,
+2,vercors10-3.grenoble.grid5000.fr,87,30624,stop_decision_broadcast,1794782746.155709,0.0002054,4,
+2,vercors10-3.grenoble.grid5000.fr,88,30976,pre_validation_barrier,1794782759.935657,0.0453249,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,88,30976,post_validation_barrier,1794782762.556681,1.4111387,4,
+2,vercors10-3.grenoble.grid5000.fr,88,30976,stop_decision_broadcast,1794782762.557157,0.0002293,4,
+2,vercors10-3.grenoble.grid5000.fr,89,31328,pre_validation_barrier,1794782776.242913,0.0443354,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,89,31328,post_validation_barrier,1794782778.803384,1.3458249,4,
+2,vercors10-3.grenoble.grid5000.fr,89,31328,stop_decision_broadcast,1794782778.803828,0.0002335,4,
+2,vercors10-3.grenoble.grid5000.fr,90,31680,pre_validation_barrier,1794782792.468674,0.0443305,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,90,31680,post_validation_barrier,1794782795.02343,1.3616607,4,
+2,vercors10-3.grenoble.grid5000.fr,90,31680,stop_decision_broadcast,1794782795.023918,0.0002731,4,
+2,vercors10-3.grenoble.grid5000.fr,91,32032,pre_validation_barrier,1794782808.720448,0.0442852,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,91,32032,post_validation_barrier,1794782811.196679,1.2742349,4,
+2,vercors10-3.grenoble.grid5000.fr,91,32032,stop_decision_broadcast,1794782811.19714,0.0002302,4,
+2,vercors10-3.grenoble.grid5000.fr,92,32384,pre_validation_barrier,1794782824.873701,0.0443248,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,92,32384,post_validation_barrier,1794782827.419456,1.4413481,4,
+2,vercors10-3.grenoble.grid5000.fr,92,32384,stop_decision_broadcast,1794782827.419842,0.0001939,4,
+2,vercors10-3.grenoble.grid5000.fr,93,32736,pre_validation_barrier,1794782841.112815,0.0455241,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,93,32736,post_validation_barrier,1794782843.695875,1.3937836,4,
+2,vercors10-3.grenoble.grid5000.fr,93,32736,stop_decision_broadcast,1794782843.696342,0.0002373,4,
+2,vercors10-3.grenoble.grid5000.fr,94,33088,pre_validation_barrier,1794782857.41336,0.0442973,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,94,33088,post_validation_barrier,1794782859.96521,1.3491235,4,
+2,vercors10-3.grenoble.grid5000.fr,94,33088,stop_decision_broadcast,1794782859.965625,0.0002271,4,
+2,vercors10-3.grenoble.grid5000.fr,95,33440,pre_validation_barrier,1794782873.717946,0.0442865,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,95,33440,post_validation_barrier,1794782876.267633,1.3441142,4,
+2,vercors10-3.grenoble.grid5000.fr,95,33440,stop_decision_broadcast,1794782876.26812,0.0002297,4,
+2,vercors10-3.grenoble.grid5000.fr,96,33792,pre_validation_barrier,1794782889.959144,0.0460656,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,96,33792,post_validation_barrier,1794782892.542909,1.3682745,4,
+2,vercors10-3.grenoble.grid5000.fr,96,33792,stop_decision_broadcast,1794782892.543417,0.0002922,4,
+2,vercors10-3.grenoble.grid5000.fr,97,34144,pre_validation_barrier,1794782906.261226,0.0438132,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,97,34144,post_validation_barrier,1794782908.849389,1.3858396,4,
+2,vercors10-3.grenoble.grid5000.fr,97,34144,stop_decision_broadcast,1794782908.849823,0.0002322,4,
+2,vercors10-3.grenoble.grid5000.fr,98,34496,pre_validation_barrier,1794782922.593017,0.0450701,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,98,34496,post_validation_barrier,1794782925.159178,1.3736276,4,
+2,vercors10-3.grenoble.grid5000.fr,98,34496,stop_decision_broadcast,1794782925.159612,0.0002084,4,
+2,vercors10-3.grenoble.grid5000.fr,99,34848,pre_validation_barrier,1794782938.867359,0.0231144,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,99,34848,post_validation_barrier,1794782941.383396,1.3514781,4,
+2,vercors10-3.grenoble.grid5000.fr,99,34848,stop_decision_broadcast,1794782941.383878,0.0002572,4,
+2,vercors10-3.grenoble.grid5000.fr,100,35200,pre_validation_barrier,1794782955.23016,0.0443645,4,epoch-boundary measurement synchronization; no model averaging
+2,vercors10-3.grenoble.grid5000.fr,100,35200,post_validation_barrier,1794782957.78842,1.3490626,4,
+2,vercors10-3.grenoble.grid5000.fr,100,35200,stop_decision_broadcast,1794782957.788856,0.0002421,4,
+2,vercors10-3.grenoble.grid5000.fr,100,35200,final_barrier,1794782957.790602,0.0016715,4,

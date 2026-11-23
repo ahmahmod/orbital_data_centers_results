@@ -1,0 +1,2 @@
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+diloco64	FAIL	1	YES	2026-11-20T09:42:41Z	2026-11-20T10:47:48Z	/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_diloco64_20261120T094236Z

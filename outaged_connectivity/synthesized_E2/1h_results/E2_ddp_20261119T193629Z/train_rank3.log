@@ -1,0 +1,40 @@
+/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[E1119 21:09:40.466027062 ProcessGroupNCCL.cpp:632] [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2844, OpType=ALLREDUCE, NumelIn=512, NumelOut=512, Timeout(ms)=900000) ran for 900036 milliseconds before timing out.
+[rank3]:[E1119 21:09:40.484633188 ProcessGroupNCCL.cpp:2271] [PG ID 0 PG GUID 0(default_pg) Rank 3]  failure detected by watchdog at work sequence id: 2844 PG status: last enqueued work: 2853, last completed work: 2843
+[rank3]:[E1119 21:09:40.484647975 ProcessGroupNCCL.cpp:670] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank3]:[E1119 21:09:40.484679332 ProcessGroupNCCL.cpp:2106] [PG ID 0 PG GUID 0(default_pg) Rank 3] First PG on this rank to signal dumping.
+[rank3]:[E1119 21:09:40.767970615 ProcessGroupNCCL.cpp:1746] [PG ID 0 PG GUID 0(default_pg) Rank 3] Received a dump signal due to a collective timeout from this local rank and we will try our best to dump the debug info. Last enqueued NCCL work: 2853, last completed NCCL work: 2843.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank3]:[E1119 21:09:40.768176432 ProcessGroupNCCL.cpp:1536] [PG ID 0 PG GUID 0(default_pg) Rank 3] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1
+[rank3]:[E1119 21:09:40.768541503 ProcessGroupNCCL.cpp:684] [Rank 3] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank3]:[E1119 21:09:40.768551509 ProcessGroupNCCL.cpp:698] [Rank 3] To avoid data inconsistency, we are taking the entire process down.
+[rank3]:[E1119 21:09:40.771207927 ProcessGroupNCCL.cpp:1899] [PG ID 0 PG GUID 0(default_pg) Rank 3] Process group watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2844, OpType=ALLREDUCE, NumelIn=512, NumelOut=512, Timeout(ms)=900000) ran for 900036 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:635 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7fb5ccd785e8 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x23d (0x7fb5777f2a6d in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0xc80 (0x7fb5777f47f0 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7fb5777f5efd in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xe1224 (0x7fb5674e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #5: <unknown function> + 0x928bb (0x7fb5cddee8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #6: <unknown function> + 0x110538 (0x7fb5cde6c538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG ID 0 PG GUID 0(default_pg) Rank 3] Process group watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2844, OpType=ALLREDUCE, NumelIn=512, NumelOut=512, Timeout(ms)=900000) ran for 900036 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:635 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7fb5ccd785e8 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x23d (0x7fb5777f2a6d in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0xc80 (0x7fb5777f47f0 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7fb5777f5efd in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xe1224 (0x7fb5674e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #5: <unknown function> + 0x928bb (0x7fb5cddee8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #6: <unknown function> + 0x110538 (0x7fb5cde6c538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+Exception raised from ncclCommWatchdog at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1905 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7fb5ccd785e8 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x11b4abe (0x7fb5777c4abe in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: <unknown function> + 0xe07bed (0x7fb577417bed in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: <unknown function> + 0xe1224 (0x7fb5674e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #4: <unknown function> + 0x928bb (0x7fb5cddee8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #5: <unknown function> + 0x110538 (0x7fb5cde6c538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+setsid: child 6043 did not exit normally: Success

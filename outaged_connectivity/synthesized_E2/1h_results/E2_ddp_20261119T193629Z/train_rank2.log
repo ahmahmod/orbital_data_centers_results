@@ -1,0 +1,6 @@
+/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[E1119 21:09:40.619154454 ProcessGroupNCCL.cpp:632] [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2844, OpType=ALLREDUCE, NumelIn=512, NumelOut=512, Timeout(ms)=900000) ran for 900008 milliseconds before timing out.
+[rank2]:[E1119 21:09:40.657977139 ProcessGroupNCCL.cpp:2271] [PG ID 0 PG GUID 0(default_pg) Rank 2]  failure detected by watchdog at work sequence id: 2844 PG status: last enqueued work: 2853, last completed work: 2843
+[rank2]:[E1119 21:09:40.657993979 ProcessGroupNCCL.cpp:670] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+setsid: child 6036 did not exit normally: Success

@@ -1,0 +1,2 @@
+E2 tc installed: iface=enp1s0f0np0, mode=selective_tc, run=E2_diloco8_20261118T132146Z
+E2 tc cleanup PASS: enp1s0f0np0

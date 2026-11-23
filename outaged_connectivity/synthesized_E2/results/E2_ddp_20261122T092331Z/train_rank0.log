@@ -1,0 +1,430 @@
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[DDP] Step=1 Loss=4.7126 Samples=32 Elapsed=13.9s Speed=0.07 steps/s
+[DDP] Step=20 Loss=4.6698 Samples=640 Elapsed=28.1s Speed=0.71 steps/s
+[DDP] Step=40 Loss=4.5945 Samples=1280 Elapsed=33.8s Speed=1.18 steps/s
+[DDP] Step=60 Loss=4.3180 Samples=1920 Elapsed=38.6s Speed=1.56 steps/s
+[DDP] Step=80 Loss=3.8726 Samples=2560 Elapsed=43.0s Speed=1.86 steps/s
+[DDP] Step=100 Loss=4.0010 Samples=3200 Elapsed=47.1s Speed=2.12 steps/s
+[DDP] Step=120 Loss=4.2569 Samples=3840 Elapsed=51.2s Speed=2.34 steps/s
+[DDP] Step=140 Loss=3.8021 Samples=4480 Elapsed=55.3s Speed=2.53 steps/s
+[DDP] Step=160 Loss=3.9094 Samples=5120 Elapsed=59.4s Speed=2.69 steps/s
+[DDP] Step=180 Loss=3.8479 Samples=5760 Elapsed=63.5s Speed=2.84 steps/s
+[DDP] Step=200 Loss=4.0679 Samples=6400 Elapsed=67.5s Speed=2.96 steps/s
+[DDP] Step=220 Loss=3.5490 Samples=7040 Elapsed=71.6s Speed=3.07 steps/s
+[DDP] Step=240 Loss=3.7420 Samples=7680 Elapsed=75.7s Speed=3.17 steps/s
+[DDP] Step=260 Loss=3.5841 Samples=8320 Elapsed=79.8s Speed=3.26 steps/s
+[DDP] Step=280 Loss=3.6094 Samples=8960 Elapsed=83.9s Speed=3.34 steps/s
+[DDP] Step=300 Loss=3.4444 Samples=9600 Elapsed=88.0s Speed=3.41 steps/s
+[DDP] Step=320 Loss=3.5770 Samples=10240 Elapsed=92.1s Speed=3.48 steps/s
+[DDP] Step=340 Loss=3.3922 Samples=10880 Elapsed=96.2s Speed=3.54 steps/s
+[DDP] Step=360 Loss=3.4098 Samples=11506 Elapsed=106.5s Speed=3.38 steps/s
+[DDP] Step=380 Loss=3.8704 Samples=12146 Elapsed=110.6s Speed=3.44 steps/s
+[DDP] Step=400 Loss=3.9324 Samples=12786 Elapsed=114.6s Speed=3.49 steps/s
+[DDP] Step=420 Loss=4.0364 Samples=13426 Elapsed=118.7s Speed=3.54 steps/s
+[DDP] Step=440 Loss=2.9718 Samples=14066 Elapsed=122.8s Speed=3.58 steps/s
+[DDP] Step=460 Loss=3.7204 Samples=14706 Elapsed=126.9s Speed=3.63 steps/s
+[DDP] Step=480 Loss=3.3649 Samples=15346 Elapsed=130.9s Speed=3.67 steps/s
+[DDP] Step=500 Loss=3.6884 Samples=15986 Elapsed=135.0s Speed=3.70 steps/s
+[DDP] Step=520 Loss=3.1030 Samples=16626 Elapsed=139.1s Speed=3.74 steps/s
+[DDP] Step=540 Loss=2.6102 Samples=17266 Elapsed=143.1s Speed=3.77 steps/s
+[DDP] Step=560 Loss=3.2944 Samples=17906 Elapsed=147.2s Speed=3.80 steps/s
+[DDP] Step=580 Loss=3.5484 Samples=18546 Elapsed=151.3s Speed=3.83 steps/s
+[DDP] Step=600 Loss=2.4529 Samples=19186 Elapsed=155.3s Speed=3.86 steps/s
+[DDP] Step=620 Loss=3.9960 Samples=19826 Elapsed=159.4s Speed=3.89 steps/s
+[DDP] Step=640 Loss=3.0736 Samples=20466 Elapsed=163.5s Speed=3.92 steps/s
+[DDP] Step=660 Loss=2.8685 Samples=21106 Elapsed=167.5s Speed=3.94 steps/s
+[DDP] Step=680 Loss=3.3303 Samples=21746 Elapsed=171.6s Speed=3.96 steps/s
+[DDP] Step=700 Loss=2.6357 Samples=22386 Elapsed=175.7s Speed=3.98 steps/s
+[DDP] Step=720 Loss=3.3003 Samples=23012 Elapsed=179.8s Speed=4.00 steps/s
+[DDP] Step=740 Loss=3.2204 Samples=23652 Elapsed=183.8s Speed=4.03 steps/s
+[DDP] Step=760 Loss=3.2015 Samples=24292 Elapsed=187.9s Speed=4.04 steps/s
+[DDP] Step=780 Loss=3.2932 Samples=24932 Elapsed=192.0s Speed=4.06 steps/s
+[DDP] Step=800 Loss=2.8963 Samples=25572 Elapsed=196.0s Speed=4.08 steps/s
+[DDP] Step=820 Loss=2.6962 Samples=26212 Elapsed=200.1s Speed=4.10 steps/s
+[DDP] Step=840 Loss=2.6028 Samples=26852 Elapsed=204.2s Speed=4.11 steps/s
+[DDP] Step=860 Loss=2.6063 Samples=27492 Elapsed=208.2s Speed=4.13 steps/s
+[DDP] Step=880 Loss=3.2877 Samples=28132 Elapsed=212.3s Speed=4.14 steps/s
+[DDP] Step=900 Loss=2.4462 Samples=28772 Elapsed=216.4s Speed=4.16 steps/s
+[DDP] Step=920 Loss=2.6576 Samples=29412 Elapsed=220.4s Speed=4.17 steps/s
+[DDP] Step=940 Loss=2.2365 Samples=30052 Elapsed=224.5s Speed=4.19 steps/s
+[DDP] Step=960 Loss=2.8210 Samples=30692 Elapsed=228.6s Speed=4.20 steps/s
+[DDP] Step=980 Loss=2.4227 Samples=31332 Elapsed=232.7s Speed=4.21 steps/s
+[DDP] Step=1000 Loss=2.4379 Samples=31972 Elapsed=236.8s Speed=4.22 steps/s
+[DDP] Step=1020 Loss=2.4608 Samples=32612 Elapsed=240.9s Speed=4.23 steps/s
+[DDP] Step=1040 Loss=2.6591 Samples=33252 Elapsed=244.9s Speed=4.25 steps/s
+[DDP] Step=1060 Loss=2.6445 Samples=33878 Elapsed=249.1s Speed=4.26 steps/s
+[DDP] Step=1080 Loss=2.9594 Samples=34518 Elapsed=253.2s Speed=4.26 steps/s
+[DDP] Step=1100 Loss=2.3758 Samples=35158 Elapsed=257.3s Speed=4.28 steps/s
+[DDP] Step=1120 Loss=2.6159 Samples=35798 Elapsed=261.4s Speed=4.28 steps/s
+[DDP] Step=1140 Loss=2.9033 Samples=36438 Elapsed=265.4s Speed=4.29 steps/s
+[DDP] Step=1160 Loss=3.0237 Samples=37078 Elapsed=269.7s Speed=4.30 steps/s
+[DDP] Step=1180 Loss=2.9313 Samples=37718 Elapsed=274.0s Speed=4.31 steps/s
+[DDP] Step=1200 Loss=2.9128 Samples=38358 Elapsed=278.0s Speed=4.32 steps/s
+[DDP] Step=1220 Loss=2.2430 Samples=38998 Elapsed=282.1s Speed=4.32 steps/s
+[DDP] Step=1240 Loss=2.4636 Samples=39638 Elapsed=286.2s Speed=4.33 steps/s
+[DDP] Step=1260 Loss=2.3754 Samples=40278 Elapsed=290.3s Speed=4.34 steps/s
+[DDP] Step=1280 Loss=2.4239 Samples=40918 Elapsed=294.3s Speed=4.35 steps/s
+[DDP] Step=1300 Loss=2.4908 Samples=41558 Elapsed=298.4s Speed=4.36 steps/s
+[DDP] Step=1320 Loss=2.5310 Samples=42198 Elapsed=666.9s Speed=1.98 steps/s
+[DDP] Step=1340 Loss=2.0304 Samples=42838 Elapsed=671.3s Speed=2.00 steps/s
+[DDP] Step=1360 Loss=2.2740 Samples=43478 Elapsed=675.4s Speed=2.01 steps/s
+[DDP] Step=1380 Loss=2.4777 Samples=44118 Elapsed=679.5s Speed=2.03 steps/s
+[DDP] Step=1400 Loss=2.0557 Samples=44758 Elapsed=683.5s Speed=2.05 steps/s
+[DDP] Step=1420 Loss=2.1473 Samples=45384 Elapsed=687.7s Speed=2.06 steps/s
+[DDP] Step=1440 Loss=2.1356 Samples=46024 Elapsed=691.8s Speed=2.08 steps/s
+[DDP] Step=1460 Loss=1.9865 Samples=46664 Elapsed=695.8s Speed=2.10 steps/s
+[DDP] Step=1480 Loss=2.3023 Samples=47304 Elapsed=699.8s Speed=2.11 steps/s
+[DDP] Step=1500 Loss=1.7565 Samples=47944 Elapsed=704.0s Speed=2.13 steps/s
+[DDP] Step=1520 Loss=1.8101 Samples=48584 Elapsed=708.0s Speed=2.15 steps/s
+[DDP] Step=1540 Loss=1.6308 Samples=49224 Elapsed=712.0s Speed=2.16 steps/s
+[DDP] Step=1560 Loss=2.2408 Samples=49864 Elapsed=715.9s Speed=2.18 steps/s
+[DDP] Step=1580 Loss=2.4549 Samples=50504 Elapsed=719.9s Speed=2.19 steps/s
+[DDP] Step=1600 Loss=2.1055 Samples=51144 Elapsed=723.9s Speed=2.21 steps/s
+[DDP] Step=1620 Loss=2.1590 Samples=51784 Elapsed=727.9s Speed=2.23 steps/s
+[DDP] Step=1640 Loss=1.9002 Samples=52424 Elapsed=731.9s Speed=2.24 steps/s
+[DDP] Step=1660 Loss=2.1500 Samples=53064 Elapsed=735.8s Speed=2.26 steps/s
+[DDP] Step=1680 Loss=2.2053 Samples=53704 Elapsed=740.1s Speed=2.27 steps/s
+[DDP] Step=1700 Loss=1.7274 Samples=54344 Elapsed=744.1s Speed=2.28 steps/s
+[DDP] Step=1720 Loss=1.9111 Samples=54984 Elapsed=748.1s Speed=2.30 steps/s
+[DDP] Step=1740 Loss=2.1039 Samples=55624 Elapsed=752.1s Speed=2.31 steps/s
+[DDP] Step=1760 Loss=2.0967 Samples=56250 Elapsed=756.0s Speed=2.33 steps/s
+[DDP] Step=1780 Loss=1.7518 Samples=56890 Elapsed=760.0s Speed=2.34 steps/s
+[DDP] Step=1800 Loss=2.6069 Samples=57530 Elapsed=764.0s Speed=2.36 steps/s
+[DDP] Step=1820 Loss=1.8081 Samples=58170 Elapsed=768.0s Speed=2.37 steps/s
+[DDP] Step=1840 Loss=1.9868 Samples=58810 Elapsed=771.9s Speed=2.38 steps/s
+[DDP] Step=1860 Loss=1.6382 Samples=59450 Elapsed=775.9s Speed=2.40 steps/s
+[DDP] Step=1880 Loss=1.8173 Samples=60090 Elapsed=779.9s Speed=2.41 steps/s
+[DDP] Step=1900 Loss=2.0577 Samples=60730 Elapsed=783.9s Speed=2.42 steps/s
+[DDP] Step=1920 Loss=1.9772 Samples=61370 Elapsed=787.8s Speed=2.44 steps/s
+[DDP] Step=1940 Loss=1.6128 Samples=62010 Elapsed=791.8s Speed=2.45 steps/s
+[DDP] Step=1960 Loss=1.2987 Samples=62650 Elapsed=795.8s Speed=2.46 steps/s
+[DDP] Step=1980 Loss=1.4205 Samples=63290 Elapsed=799.7s Speed=2.48 steps/s
+[DDP] Step=2000 Loss=2.0595 Samples=63930 Elapsed=803.7s Speed=2.49 steps/s
+[DDP] Step=2020 Loss=1.7557 Samples=64570 Elapsed=807.7s Speed=2.50 steps/s
+[DDP] Step=2040 Loss=2.0057 Samples=65210 Elapsed=811.6s Speed=2.51 steps/s
+[DDP] Step=2060 Loss=2.2834 Samples=65850 Elapsed=815.6s Speed=2.53 steps/s
+[DDP] Step=2080 Loss=1.3825 Samples=66490 Elapsed=819.6s Speed=2.54 steps/s
+[DDP] Step=2100 Loss=2.0571 Samples=67130 Elapsed=823.5s Speed=2.55 steps/s
+[DDP] Step=2120 Loss=2.0813 Samples=67756 Elapsed=827.6s Speed=2.56 steps/s
+[DDP] Step=2140 Loss=2.0407 Samples=68396 Elapsed=831.5s Speed=2.57 steps/s
+[DDP] Step=2160 Loss=1.3433 Samples=69036 Elapsed=835.5s Speed=2.59 steps/s
+[DDP] Step=2180 Loss=1.5857 Samples=69676 Elapsed=839.5s Speed=2.60 steps/s
+[DDP] Step=2200 Loss=1.6103 Samples=70316 Elapsed=843.5s Speed=2.61 steps/s
+[DDP] Step=2220 Loss=1.5754 Samples=70956 Elapsed=847.4s Speed=2.62 steps/s
+[DDP] Step=2240 Loss=1.5977 Samples=71596 Elapsed=851.4s Speed=2.63 steps/s
+[DDP] Step=2260 Loss=1.7358 Samples=72236 Elapsed=855.4s Speed=2.64 steps/s
+[DDP] Step=2280 Loss=2.1112 Samples=72876 Elapsed=859.4s Speed=2.65 steps/s
+[DDP] Step=2300 Loss=1.7898 Samples=73516 Elapsed=863.3s Speed=2.66 steps/s
+[DDP] Step=2320 Loss=1.5419 Samples=74156 Elapsed=867.3s Speed=2.67 steps/s
+[DDP] Step=2340 Loss=2.3553 Samples=74796 Elapsed=871.3s Speed=2.69 steps/s
+[DDP] Step=2360 Loss=1.7480 Samples=75436 Elapsed=875.3s Speed=2.70 steps/s
+[DDP] Step=2380 Loss=2.1681 Samples=76076 Elapsed=879.2s Speed=2.71 steps/s
+[DDP] Step=2400 Loss=1.5883 Samples=76716 Elapsed=883.2s Speed=2.72 steps/s
+[DDP] Step=2420 Loss=1.7046 Samples=77356 Elapsed=887.2s Speed=2.73 steps/s
+[DDP] Step=2440 Loss=1.3052 Samples=77996 Elapsed=891.2s Speed=2.74 steps/s
+[DDP] Step=2460 Loss=1.2370 Samples=78636 Elapsed=895.3s Speed=2.75 steps/s
+[DDP] Step=2480 Loss=1.2813 Samples=79262 Elapsed=899.3s Speed=2.76 steps/s
+[DDP] Step=2500 Loss=1.7162 Samples=79902 Elapsed=1444.6s Speed=1.73 steps/s
+[DDP] Step=2520 Loss=1.4828 Samples=80542 Elapsed=1448.7s Speed=1.74 steps/s
+[DDP] Step=2540 Loss=2.1856 Samples=81182 Elapsed=1452.8s Speed=1.75 steps/s
+[DDP] Step=2560 Loss=1.4564 Samples=81822 Elapsed=1456.8s Speed=1.76 steps/s
+[DDP] Step=2580 Loss=1.2515 Samples=82462 Elapsed=1460.9s Speed=1.77 steps/s
+[DDP] Step=2600 Loss=1.7664 Samples=83102 Elapsed=1465.0s Speed=1.77 steps/s
+[DDP] Step=2620 Loss=1.8430 Samples=83742 Elapsed=1469.0s Speed=1.78 steps/s
+[DDP] Step=2640 Loss=1.7667 Samples=84382 Elapsed=1473.1s Speed=1.79 steps/s
+[DDP] Step=2660 Loss=1.5723 Samples=85022 Elapsed=1477.2s Speed=1.80 steps/s
+[DDP] Step=2680 Loss=1.8036 Samples=85662 Elapsed=1481.2s Speed=1.81 steps/s
+[DDP] Step=2700 Loss=2.0711 Samples=86302 Elapsed=1485.3s Speed=1.82 steps/s
+[DDP] Step=2720 Loss=1.6437 Samples=86942 Elapsed=1489.4s Speed=1.83 steps/s
+[DDP] Step=2740 Loss=1.7147 Samples=87582 Elapsed=1493.4s Speed=1.83 steps/s
+[DDP] Step=2760 Loss=1.2927 Samples=88222 Elapsed=1497.5s Speed=1.84 steps/s
+[DDP] Step=2780 Loss=1.8109 Samples=88862 Elapsed=1502.4s Speed=1.85 steps/s
+[DDP] Step=2800 Loss=1.7809 Samples=89502 Elapsed=1506.5s Speed=1.86 steps/s
+[DDP] Step=2820 Loss=1.8820 Samples=90128 Elapsed=1510.6s Speed=1.87 steps/s
+[DDP] Step=2840 Loss=1.6901 Samples=90768 Elapsed=1514.7s Speed=1.87 steps/s
+[DDP] Step=2860 Loss=1.3837 Samples=91408 Elapsed=1518.7s Speed=1.88 steps/s
+[DDP] Step=2880 Loss=1.8284 Samples=92048 Elapsed=1522.8s Speed=1.89 steps/s
+[DDP] Step=2900 Loss=1.4978 Samples=92688 Elapsed=1526.9s Speed=1.90 steps/s
+[DDP] Step=2920 Loss=0.9110 Samples=93328 Elapsed=1531.8s Speed=1.91 steps/s
+[DDP] Step=2940 Loss=1.5537 Samples=93968 Elapsed=1535.9s Speed=1.91 steps/s
+[DDP] Step=2960 Loss=2.1130 Samples=94608 Elapsed=1540.0s Speed=1.92 steps/s
+[DDP] Step=2980 Loss=1.9905 Samples=95248 Elapsed=1544.0s Speed=1.93 steps/s
+[DDP] Step=3000 Loss=1.6919 Samples=95888 Elapsed=1548.1s Speed=1.94 steps/s
+[DDP] Step=3020 Loss=1.6545 Samples=96528 Elapsed=1552.2s Speed=1.95 steps/s
+[DDP] Step=3040 Loss=1.2792 Samples=97168 Elapsed=1556.2s Speed=1.95 steps/s
+[DDP] Step=3060 Loss=1.2939 Samples=97808 Elapsed=1560.3s Speed=1.96 steps/s
+[DDP] Step=3080 Loss=1.5638 Samples=98448 Elapsed=1564.4s Speed=1.97 steps/s
+[DDP] Step=3100 Loss=1.4246 Samples=99088 Elapsed=1568.7s Speed=1.98 steps/s
+[DDP] Step=3120 Loss=1.9421 Samples=99728 Elapsed=1572.9s Speed=1.98 steps/s
+[DDP] Step=3140 Loss=1.8957 Samples=100368 Elapsed=1577.0s Speed=1.99 steps/s
+[DDP] Step=3160 Loss=1.6784 Samples=101008 Elapsed=1581.3s Speed=2.00 steps/s
+[DDP] Step=3180 Loss=1.6841 Samples=101634 Elapsed=1585.4s Speed=2.01 steps/s
+[DDP] Step=3200 Loss=1.1358 Samples=102274 Elapsed=1589.5s Speed=2.01 steps/s
+[DDP] Step=3220 Loss=1.8589 Samples=102914 Elapsed=1593.6s Speed=2.02 steps/s
+[DDP] Step=3240 Loss=1.1698 Samples=103554 Elapsed=1597.6s Speed=2.03 steps/s
+[DDP] Step=3260 Loss=1.6671 Samples=104194 Elapsed=1601.7s Speed=2.04 steps/s
+[DDP] Step=3280 Loss=1.5015 Samples=104834 Elapsed=1605.8s Speed=2.04 steps/s
+[DDP] Step=3300 Loss=1.2602 Samples=105474 Elapsed=1609.9s Speed=2.05 steps/s
+[DDP] Step=3320 Loss=1.4816 Samples=106114 Elapsed=1614.0s Speed=2.06 steps/s
+[DDP] Step=3340 Loss=1.4293 Samples=106754 Elapsed=1618.1s Speed=2.06 steps/s
+[DDP] Step=3360 Loss=1.3522 Samples=107394 Elapsed=1622.1s Speed=2.07 steps/s
+[DDP] Step=3380 Loss=1.2186 Samples=108034 Elapsed=1626.2s Speed=2.08 steps/s
+[DDP] Step=3400 Loss=1.6403 Samples=108674 Elapsed=1630.3s Speed=2.09 steps/s
+[DDP] Step=3420 Loss=1.7244 Samples=109314 Elapsed=1634.4s Speed=2.09 steps/s
+[DDP] Step=3440 Loss=1.9017 Samples=109954 Elapsed=1638.4s Speed=2.10 steps/s
+[DDP] Step=3460 Loss=1.8893 Samples=110594 Elapsed=1642.5s Speed=2.11 steps/s
+[DDP] Step=3480 Loss=2.1729 Samples=111234 Elapsed=1646.6s Speed=2.11 steps/s
+[DDP] Step=3500 Loss=1.5223 Samples=111874 Elapsed=2373.0s Speed=1.47 steps/s
+[DDP] Step=3520 Loss=1.4326 Samples=112500 Elapsed=2377.2s Speed=1.48 steps/s
+[DDP] Step=3540 Loss=1.4474 Samples=113140 Elapsed=2381.4s Speed=1.49 steps/s
+[DDP] Step=3560 Loss=1.6179 Samples=113780 Elapsed=2385.5s Speed=1.49 steps/s
+[DDP] Step=3580 Loss=1.6472 Samples=114420 Elapsed=2389.6s Speed=1.50 steps/s
+[DDP] Step=3600 Loss=1.6569 Samples=115060 Elapsed=2393.7s Speed=1.50 steps/s
+[DDP] Step=3620 Loss=1.6065 Samples=115700 Elapsed=2397.8s Speed=1.51 steps/s
+[DDP] Step=3640 Loss=1.5914 Samples=116340 Elapsed=2403.3s Speed=1.51 steps/s
+[DDP] Step=3660 Loss=1.4715 Samples=116980 Elapsed=2407.4s Speed=1.52 steps/s
+[DDP] Step=3680 Loss=1.1308 Samples=117620 Elapsed=2411.5s Speed=1.53 steps/s
+[DDP] Step=3700 Loss=1.3184 Samples=118260 Elapsed=2415.7s Speed=1.53 steps/s
+[DDP] Step=3720 Loss=1.6462 Samples=118900 Elapsed=2419.8s Speed=1.54 steps/s
+[DDP] Step=3740 Loss=1.7282 Samples=119540 Elapsed=2423.9s Speed=1.54 steps/s
+[DDP] Step=3760 Loss=1.7186 Samples=120180 Elapsed=2428.0s Speed=1.55 steps/s
+[DDP] Step=3780 Loss=1.8740 Samples=120820 Elapsed=2432.2s Speed=1.55 steps/s
+[DDP] Step=3800 Loss=1.4986 Samples=121460 Elapsed=2436.3s Speed=1.56 steps/s
+[DDP] Step=3820 Loss=1.3852 Samples=122100 Elapsed=2440.4s Speed=1.57 steps/s
+[DDP] Step=3840 Loss=1.8453 Samples=122740 Elapsed=2444.8s Speed=1.57 steps/s
+[DDP] Step=3860 Loss=1.1530 Samples=123380 Elapsed=2448.9s Speed=1.58 steps/s
+[DDP] Step=3880 Loss=1.3772 Samples=124006 Elapsed=2453.1s Speed=1.58 steps/s
+[DDP] Step=3900 Loss=1.7586 Samples=124646 Elapsed=2457.3s Speed=1.59 steps/s
+[DDP] Step=3920 Loss=1.5118 Samples=125286 Elapsed=2461.4s Speed=1.59 steps/s
+[DDP] Step=3940 Loss=1.5786 Samples=125926 Elapsed=2465.5s Speed=1.60 steps/s
+[DDP] Step=3960 Loss=1.1402 Samples=126566 Elapsed=2469.7s Speed=1.60 steps/s
+[DDP] Step=3980 Loss=1.1396 Samples=127206 Elapsed=2473.8s Speed=1.61 steps/s
+[DDP] Step=4000 Loss=1.5461 Samples=127846 Elapsed=2477.9s Speed=1.61 steps/s
+[DDP] Step=4020 Loss=1.4547 Samples=128486 Elapsed=2482.1s Speed=1.62 steps/s
+[DDP] Step=4040 Loss=1.0844 Samples=129126 Elapsed=2486.2s Speed=1.62 steps/s
+[DDP] Step=4060 Loss=1.5930 Samples=129766 Elapsed=2490.3s Speed=1.63 steps/s
+[DDP] Step=4080 Loss=1.6280 Samples=130406 Elapsed=2494.4s Speed=1.64 steps/s
+[DDP] Step=4100 Loss=1.6958 Samples=131046 Elapsed=2498.6s Speed=1.64 steps/s
+[DDP] Step=4120 Loss=2.4089 Samples=131686 Elapsed=2502.7s Speed=1.65 steps/s
+[DDP] Step=4140 Loss=1.3917 Samples=132326 Elapsed=2506.8s Speed=1.65 steps/s
+[DDP] Step=4160 Loss=1.7184 Samples=132966 Elapsed=2511.0s Speed=1.66 steps/s
+[DDP] Step=4180 Loss=1.2510 Samples=133606 Elapsed=2515.1s Speed=1.66 steps/s
+[DDP] Step=4200 Loss=1.9893 Samples=134246 Elapsed=2519.2s Speed=1.67 steps/s
+[DDP] Step=4220 Loss=1.0624 Samples=134886 Elapsed=3242.5s Speed=1.30 steps/s
+[DDP] Step=4240 Loss=1.6814 Samples=135512 Elapsed=3246.6s Speed=1.31 steps/s
+[DDP] Step=4260 Loss=1.1267 Samples=136152 Elapsed=3250.6s Speed=1.31 steps/s
+[DDP] Step=4280 Loss=1.2756 Samples=136792 Elapsed=3254.6s Speed=1.32 steps/s
+[DDP] Step=4300 Loss=1.8292 Samples=137432 Elapsed=3258.6s Speed=1.32 steps/s
+[DDP] Step=4320 Loss=1.6365 Samples=138072 Elapsed=3262.6s Speed=1.32 steps/s
+[DDP] Step=4340 Loss=1.4462 Samples=138712 Elapsed=3266.6s Speed=1.33 steps/s
+[DDP] Step=4360 Loss=1.6620 Samples=139352 Elapsed=3270.6s Speed=1.33 steps/s
+[DDP] Step=4380 Loss=1.3477 Samples=139992 Elapsed=3274.6s Speed=1.34 steps/s
+[DDP] Step=4400 Loss=1.7471 Samples=140632 Elapsed=3278.7s Speed=1.34 steps/s
+[DDP] Step=4420 Loss=1.3569 Samples=141272 Elapsed=3282.6s Speed=1.35 steps/s
+[DDP] Step=4440 Loss=1.2718 Samples=141912 Elapsed=3286.6s Speed=1.35 steps/s
+[DDP] Step=4460 Loss=1.4450 Samples=142552 Elapsed=3290.6s Speed=1.36 steps/s
+[DDP] Step=4480 Loss=1.2192 Samples=143192 Elapsed=3294.6s Speed=1.36 steps/s
+[DDP] Step=4500 Loss=1.6074 Samples=143832 Elapsed=3298.5s Speed=1.36 steps/s
+[DDP] Step=4520 Loss=1.3427 Samples=144472 Elapsed=3302.9s Speed=1.37 steps/s
+[DDP] Step=4540 Loss=1.3603 Samples=145112 Elapsed=3306.9s Speed=1.37 steps/s
+[DDP] Step=4560 Loss=1.3514 Samples=145752 Elapsed=3310.9s Speed=1.38 steps/s
+[DDP] Step=4580 Loss=1.4905 Samples=146378 Elapsed=3314.9s Speed=1.38 steps/s
+[DDP] Step=4600 Loss=1.1620 Samples=147018 Elapsed=3318.9s Speed=1.39 steps/s
+[DDP] Step=4620 Loss=1.8134 Samples=147658 Elapsed=3322.9s Speed=1.39 steps/s
+[DDP] Step=4640 Loss=0.7147 Samples=148298 Elapsed=3326.9s Speed=1.39 steps/s
+[DDP] Step=4660 Loss=1.5325 Samples=148938 Elapsed=3330.9s Speed=1.40 steps/s
+[DDP] Step=4680 Loss=1.3081 Samples=149578 Elapsed=3334.8s Speed=1.40 steps/s
+[DDP] Step=4700 Loss=0.9569 Samples=150218 Elapsed=3338.8s Speed=1.41 steps/s
+[DDP] Step=4720 Loss=1.8062 Samples=150858 Elapsed=3342.8s Speed=1.41 steps/s
+[DDP] Step=4740 Loss=1.2538 Samples=151498 Elapsed=3346.8s Speed=1.42 steps/s
+[DDP] Step=4760 Loss=1.1644 Samples=152138 Elapsed=3350.8s Speed=1.42 steps/s
+[DDP] Step=4780 Loss=1.0392 Samples=152778 Elapsed=3354.8s Speed=1.42 steps/s
+[DDP] Step=4800 Loss=1.3087 Samples=153418 Elapsed=3358.8s Speed=1.43 steps/s
+[DDP] Step=4820 Loss=1.2037 Samples=154058 Elapsed=3663.8s Speed=1.32 steps/s
+[DDP] Step=4840 Loss=1.4375 Samples=154698 Elapsed=3667.9s Speed=1.32 steps/s
+[DDP] Step=4860 Loss=1.3632 Samples=155338 Elapsed=3672.0s Speed=1.32 steps/s
+[DDP] Step=4880 Loss=1.4460 Samples=155978 Elapsed=3676.1s Speed=1.33 steps/s
+[DDP] Step=4900 Loss=1.6039 Samples=156618 Elapsed=3680.2s Speed=1.33 steps/s
+[DDP] Step=4920 Loss=0.8714 Samples=157258 Elapsed=3684.3s Speed=1.34 steps/s
+[DDP] Step=4940 Loss=1.6857 Samples=157884 Elapsed=3688.4s Speed=1.34 steps/s
+[DDP] Step=4960 Loss=0.9751 Samples=158524 Elapsed=3692.5s Speed=1.34 steps/s
+[DDP] Step=4980 Loss=1.2380 Samples=159164 Elapsed=3696.5s Speed=1.35 steps/s
+[DDP] Step=5000 Loss=1.5624 Samples=159804 Elapsed=3700.6s Speed=1.35 steps/s
+[DDP] Step=5020 Loss=1.6606 Samples=160444 Elapsed=3704.7s Speed=1.36 steps/s
+[DDP] Step=5040 Loss=1.1878 Samples=161084 Elapsed=3708.8s Speed=1.36 steps/s
+[DDP] Step=5060 Loss=1.6786 Samples=161724 Elapsed=3712.9s Speed=1.36 steps/s
+[DDP] Step=5080 Loss=1.5728 Samples=162364 Elapsed=3717.0s Speed=1.37 steps/s
+[DDP] Step=5100 Loss=1.3868 Samples=163004 Elapsed=3721.2s Speed=1.37 steps/s
+[DDP] Step=5120 Loss=1.0315 Samples=163644 Elapsed=3725.3s Speed=1.37 steps/s
+[DDP] Step=5140 Loss=1.8974 Samples=164284 Elapsed=3729.3s Speed=1.38 steps/s
+[DDP] Step=5160 Loss=1.6743 Samples=164924 Elapsed=3733.4s Speed=1.38 steps/s
+[DDP] Step=5180 Loss=1.1407 Samples=165564 Elapsed=3737.5s Speed=1.39 steps/s
+[DDP] Step=5200 Loss=1.1476 Samples=166204 Elapsed=3741.6s Speed=1.39 steps/s
+[DDP] Step=5220 Loss=1.7669 Samples=166844 Elapsed=3745.7s Speed=1.39 steps/s
+[DDP] Step=5240 Loss=2.0397 Samples=167484 Elapsed=3749.8s Speed=1.40 steps/s
+[DDP] Step=5260 Loss=1.3023 Samples=168124 Elapsed=3753.9s Speed=1.40 steps/s
+[DDP] Step=5280 Loss=1.4105 Samples=168750 Elapsed=3757.9s Speed=1.41 steps/s
+[DDP] Step=5300 Loss=1.2121 Samples=169390 Elapsed=3762.0s Speed=1.41 steps/s
+[DDP] Step=5320 Loss=1.1958 Samples=170030 Elapsed=3766.1s Speed=1.41 steps/s
+[DDP] Step=5340 Loss=1.4886 Samples=170670 Elapsed=3770.1s Speed=1.42 steps/s
+[DDP] Step=5360 Loss=1.1294 Samples=171310 Elapsed=3774.2s Speed=1.42 steps/s
+[DDP] Step=5380 Loss=1.4408 Samples=171950 Elapsed=3778.3s Speed=1.42 steps/s
+[DDP] Step=5400 Loss=0.7014 Samples=172590 Elapsed=3782.4s Speed=1.43 steps/s
+[DDP] Step=5420 Loss=1.0735 Samples=173230 Elapsed=3786.4s Speed=1.43 steps/s
+[DDP] Step=5440 Loss=1.2914 Samples=173870 Elapsed=3790.5s Speed=1.44 steps/s
+[DDP] Step=5460 Loss=1.3617 Samples=174510 Elapsed=3794.6s Speed=1.44 steps/s
+[DDP] Step=5480 Loss=1.5499 Samples=175150 Elapsed=3798.6s Speed=1.44 steps/s
+[DDP] Step=5500 Loss=1.3896 Samples=175790 Elapsed=3802.7s Speed=1.45 steps/s
+[DDP] Step=5520 Loss=1.8149 Samples=176430 Elapsed=3806.8s Speed=1.45 steps/s
+[DDP] Step=5540 Loss=1.4175 Samples=177070 Elapsed=3810.8s Speed=1.45 steps/s
+[DDP] Step=5560 Loss=1.4146 Samples=177710 Elapsed=3814.9s Speed=1.46 steps/s
+[DDP] Step=5580 Loss=1.3108 Samples=178350 Elapsed=3819.0s Speed=1.46 steps/s
+[DDP] Step=5600 Loss=1.3821 Samples=178990 Elapsed=3823.0s Speed=1.46 steps/s
+[DDP] Step=5620 Loss=1.5509 Samples=179630 Elapsed=3827.1s Speed=1.47 steps/s
+[DDP] Step=5640 Loss=1.5388 Samples=180256 Elapsed=3831.2s Speed=1.47 steps/s
+[DDP] Step=5660 Loss=1.0553 Samples=180896 Elapsed=3835.3s Speed=1.48 steps/s
+[DDP] Step=5680 Loss=1.0050 Samples=181536 Elapsed=3839.4s Speed=1.48 steps/s
+[DDP] Step=5700 Loss=1.0209 Samples=182176 Elapsed=3843.4s Speed=1.48 steps/s
+[DDP] Step=5720 Loss=0.9206 Samples=182816 Elapsed=3847.5s Speed=1.49 steps/s
+[DDP] Step=5740 Loss=1.1713 Samples=183456 Elapsed=3851.6s Speed=1.49 steps/s
+[DDP] Step=5760 Loss=1.4312 Samples=184096 Elapsed=3855.7s Speed=1.49 steps/s
+[DDP] Step=5780 Loss=1.4497 Samples=184736 Elapsed=3859.7s Speed=1.50 steps/s
+[DDP] Step=5800 Loss=1.3297 Samples=185376 Elapsed=3863.8s Speed=1.50 steps/s
+[DDP] Step=5820 Loss=1.7130 Samples=186016 Elapsed=3867.9s Speed=1.50 steps/s
+[DDP] Step=5840 Loss=1.1746 Samples=186656 Elapsed=3871.9s Speed=1.51 steps/s
+[DDP] Step=5860 Loss=0.9219 Samples=187296 Elapsed=3876.0s Speed=1.51 steps/s
+[DDP] Step=5880 Loss=0.8851 Samples=187936 Elapsed=3880.1s Speed=1.52 steps/s
+[DDP] Step=5900 Loss=1.3743 Samples=188576 Elapsed=3884.1s Speed=1.52 steps/s
+[DDP] Step=5920 Loss=1.1598 Samples=189216 Elapsed=3888.2s Speed=1.52 steps/s
+[DDP] Step=5940 Loss=1.7874 Samples=189856 Elapsed=3892.3s Speed=1.53 steps/s
+[DDP] Step=5960 Loss=1.0138 Samples=190496 Elapsed=3896.4s Speed=1.53 steps/s
+[DDP] Step=5980 Loss=1.3571 Samples=191136 Elapsed=4321.3s Speed=1.38 steps/s
+[DDP] Step=6000 Loss=1.1401 Samples=191762 Elapsed=4325.4s Speed=1.39 steps/s
+[DDP] Step=6020 Loss=1.3386 Samples=192402 Elapsed=4329.4s Speed=1.39 steps/s
+[DDP] Step=6040 Loss=1.0432 Samples=193042 Elapsed=4333.3s Speed=1.39 steps/s
+[DDP] Step=6060 Loss=1.3695 Samples=193682 Elapsed=4337.3s Speed=1.40 steps/s
+[DDP] Step=6080 Loss=1.3702 Samples=194322 Elapsed=4341.3s Speed=1.40 steps/s
+[DDP] Step=6100 Loss=0.9230 Samples=194962 Elapsed=4345.3s Speed=1.40 steps/s
+[DDP] Step=6120 Loss=0.9987 Samples=195602 Elapsed=4349.3s Speed=1.41 steps/s
+[DDP] Step=6140 Loss=1.2697 Samples=196242 Elapsed=4353.3s Speed=1.41 steps/s
+[DDP] Step=6160 Loss=1.5487 Samples=196882 Elapsed=4357.3s Speed=1.41 steps/s
+[DDP] Step=6180 Loss=1.7654 Samples=197522 Elapsed=4361.3s Speed=1.42 steps/s
+[DDP] Step=6200 Loss=1.3568 Samples=198162 Elapsed=4365.3s Speed=1.42 steps/s
+[DDP] Step=6220 Loss=1.5165 Samples=198802 Elapsed=4370.0s Speed=1.42 steps/s
+[DDP] Step=6240 Loss=0.9085 Samples=199442 Elapsed=4374.1s Speed=1.43 steps/s
+[DDP] Step=6260 Loss=1.7051 Samples=200082 Elapsed=4378.3s Speed=1.43 steps/s
+[DDP] Step=6280 Loss=1.1250 Samples=200722 Elapsed=4382.7s Speed=1.43 steps/s
+[DDP] Step=6300 Loss=1.6207 Samples=201362 Elapsed=4386.7s Speed=1.44 steps/s
+[DDP] Step=6320 Loss=0.9439 Samples=202002 Elapsed=4390.7s Speed=1.44 steps/s
+[DDP] Step=6340 Loss=1.1179 Samples=202628 Elapsed=4394.7s Speed=1.44 steps/s
+[DDP] Step=6360 Loss=0.8641 Samples=203268 Elapsed=4398.7s Speed=1.45 steps/s
+[DDP] Step=6380 Loss=1.1866 Samples=203908 Elapsed=4402.7s Speed=1.45 steps/s
+[DDP] Step=6400 Loss=1.2172 Samples=204548 Elapsed=4406.6s Speed=1.45 steps/s
+[DDP] Step=6420 Loss=1.1175 Samples=205188 Elapsed=4410.6s Speed=1.46 steps/s
+[DDP] Step=6440 Loss=1.2694 Samples=205828 Elapsed=4414.6s Speed=1.46 steps/s
+[DDP] Step=6460 Loss=1.6587 Samples=206468 Elapsed=4418.6s Speed=1.46 steps/s
+[DDP] Step=6480 Loss=0.8985 Samples=207108 Elapsed=4422.6s Speed=1.47 steps/s
+[DDP] Step=6500 Loss=1.5469 Samples=207748 Elapsed=4426.6s Speed=1.47 steps/s
+[DDP] Step=6520 Loss=1.2035 Samples=208388 Elapsed=4430.6s Speed=1.47 steps/s
+[DDP] Step=6540 Loss=1.1927 Samples=209028 Elapsed=4434.6s Speed=1.47 steps/s
+[DDP] Step=6560 Loss=1.2617 Samples=209668 Elapsed=4438.6s Speed=1.48 steps/s
+[DDP] Step=6580 Loss=1.5683 Samples=210308 Elapsed=4442.6s Speed=1.48 steps/s
+[DDP] Step=6600 Loss=1.0706 Samples=210948 Elapsed=4446.6s Speed=1.48 steps/s
+[DDP] Step=6620 Loss=1.6141 Samples=211588 Elapsed=4450.6s Speed=1.49 steps/s
+[DDP] Step=6640 Loss=0.8296 Samples=212228 Elapsed=4454.5s Speed=1.49 steps/s
+[DDP] Step=6660 Loss=1.0417 Samples=212868 Elapsed=4458.5s Speed=1.49 steps/s
+[DDP] Step=6680 Loss=1.2077 Samples=213508 Elapsed=4462.5s Speed=1.50 steps/s
+[DDP] Step=6700 Loss=1.1989 Samples=214134 Elapsed=4466.5s Speed=1.50 steps/s
+[DDP] Step=6720 Loss=1.0820 Samples=214774 Elapsed=4470.5s Speed=1.50 steps/s
+[DDP] Step=6740 Loss=1.0141 Samples=215414 Elapsed=4474.5s Speed=1.51 steps/s
+[DDP] Step=6760 Loss=1.2219 Samples=216054 Elapsed=4478.5s Speed=1.51 steps/s
+[DDP] Step=6780 Loss=1.0166 Samples=216694 Elapsed=4482.5s Speed=1.51 steps/s
+[DDP] Step=6800 Loss=1.0771 Samples=217334 Elapsed=4486.5s Speed=1.52 steps/s
+[DDP] Step=6820 Loss=1.3920 Samples=217974 Elapsed=4490.4s Speed=1.52 steps/s
+[DDP] Step=6840 Loss=0.8488 Samples=218614 Elapsed=4494.4s Speed=1.52 steps/s
+[DDP] Step=6860 Loss=1.3279 Samples=219254 Elapsed=4498.4s Speed=1.52 steps/s
+[DDP] Step=6880 Loss=1.4686 Samples=219894 Elapsed=5085.4s Speed=1.35 steps/s
+[DDP] Step=6900 Loss=1.3464 Samples=220534 Elapsed=5089.5s Speed=1.36 steps/s
+[DDP] Step=6920 Loss=0.8493 Samples=221174 Elapsed=5093.5s Speed=1.36 steps/s
+[DDP] Step=6940 Loss=1.1685 Samples=221814 Elapsed=5097.6s Speed=1.36 steps/s
+[DDP] Step=6960 Loss=1.0049 Samples=222454 Elapsed=5102.2s Speed=1.36 steps/s
+[DDP] Step=6980 Loss=1.5081 Samples=223094 Elapsed=5106.2s Speed=1.37 steps/s
+[DDP] Step=7000 Loss=1.4603 Samples=223734 Elapsed=5110.3s Speed=1.37 steps/s
+[DDP] Step=7020 Loss=1.1997 Samples=224374 Elapsed=5114.4s Speed=1.37 steps/s
+[DDP] Step=7040 Loss=1.0151 Samples=225000 Elapsed=5118.4s Speed=1.38 steps/s
+[DDP] Step=7060 Loss=0.9957 Samples=225640 Elapsed=5122.5s Speed=1.38 steps/s
+[DDP] Step=7080 Loss=1.1843 Samples=226280 Elapsed=5126.6s Speed=1.38 steps/s
+[DDP] Step=7100 Loss=0.9710 Samples=226920 Elapsed=5130.7s Speed=1.38 steps/s
+[DDP] Step=7120 Loss=1.0114 Samples=227560 Elapsed=5134.8s Speed=1.39 steps/s
+[DDP] Step=7140 Loss=1.0939 Samples=228200 Elapsed=5138.8s Speed=1.39 steps/s
+[DDP] Step=7160 Loss=0.9817 Samples=228840 Elapsed=5142.9s Speed=1.39 steps/s
+[DDP] Step=7180 Loss=1.5666 Samples=229480 Elapsed=5147.0s Speed=1.39 steps/s
+[DDP] Step=7200 Loss=1.0726 Samples=230120 Elapsed=5151.1s Speed=1.40 steps/s
+[DDP] Step=7220 Loss=1.8486 Samples=230760 Elapsed=5155.1s Speed=1.40 steps/s
+[DDP] Step=7240 Loss=0.9015 Samples=231400 Elapsed=5159.2s Speed=1.40 steps/s
+[DDP] Step=7260 Loss=1.5764 Samples=232040 Elapsed=5163.3s Speed=1.41 steps/s
+[DDP] Step=7280 Loss=1.6993 Samples=232680 Elapsed=5167.4s Speed=1.41 steps/s
+[DDP] Step=7300 Loss=1.6573 Samples=233320 Elapsed=5171.5s Speed=1.41 steps/s
+[DDP] Step=7320 Loss=1.3074 Samples=233960 Elapsed=5175.6s Speed=1.41 steps/s
+[DDP] Step=7340 Loss=1.7074 Samples=234600 Elapsed=5179.6s Speed=1.42 steps/s
+[DDP] Step=7360 Loss=1.1013 Samples=235240 Elapsed=5183.7s Speed=1.42 steps/s
+[DDP] Step=7380 Loss=2.1452 Samples=235880 Elapsed=5187.8s Speed=1.42 steps/s
+[DDP] Step=7400 Loss=1.2198 Samples=236506 Elapsed=5191.9s Speed=1.43 steps/s
+[DDP] Step=7420 Loss=0.9461 Samples=237146 Elapsed=5195.9s Speed=1.43 steps/s
+[DDP] Step=7440 Loss=1.3011 Samples=237786 Elapsed=5200.0s Speed=1.43 steps/s
+[DDP] Step=7460 Loss=1.3154 Samples=238426 Elapsed=5204.1s Speed=1.43 steps/s
+[DDP] Step=7480 Loss=1.3150 Samples=239066 Elapsed=5208.2s Speed=1.44 steps/s
+[DDP] Step=7500 Loss=1.3614 Samples=239706 Elapsed=5212.2s Speed=1.44 steps/s
+[DDP] Step=7520 Loss=1.2526 Samples=240346 Elapsed=5216.3s Speed=1.44 steps/s
+[DDP] Step=7540 Loss=1.5040 Samples=240986 Elapsed=5220.4s Speed=1.44 steps/s
+[DDP] Step=7560 Loss=1.3024 Samples=241626 Elapsed=5224.4s Speed=1.45 steps/s
+[DDP] Step=7580 Loss=1.3123 Samples=242266 Elapsed=5228.5s Speed=1.45 steps/s
+[DDP] Step=7600 Loss=1.1272 Samples=242906 Elapsed=5232.5s Speed=1.45 steps/s
+[DDP] Step=7620 Loss=1.3971 Samples=243546 Elapsed=5236.6s Speed=1.46 steps/s
+[DDP] Step=7640 Loss=1.8035 Samples=244186 Elapsed=5240.7s Speed=1.46 steps/s
+[DDP] Step=7660 Loss=1.0906 Samples=244826 Elapsed=5244.7s Speed=1.46 steps/s
+[DDP] Step=7680 Loss=0.8474 Samples=245466 Elapsed=5248.8s Speed=1.46 steps/s
+[rank0]:[E1122 12:14:18.932864192 ProcessGroupNCCL.cpp:741] [PG GUID 0(default_pg) Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=38438, OpType=ALLREDUCE, NumelIn=2411620, NumelOut=2411620, Timeout(ms)=1200000) ran for 1200016 milliseconds before timing out.
+[rank0]:[E1122 12:14:18.001119865 ProcessGroupNCCL.cpp:2390] [PG ID 0 PG GUID 0(default_pg) Rank 0]  failure detected by watchdog at work sequence id: 38438 PG status: last enqueued work: 38440, last started work: -1 (), last completed work: 38437
+[rank0]:[E1122 12:14:18.001406853 ProcessGroupNCCL.cpp:788] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank0]:[E1122 12:14:18.001452315 ProcessGroupNCCL.cpp:2732] [PG ID 0 PG GUID 0(default_pg) Rank 0] First PG on this rank to signal dumping.
+[rank0]:[E1122 12:14:19.731556643 ProcessGroupNCCL.cpp:1982] [PG ID 0 PG GUID 0(default_pg) Rank 0] Received a dump signal due to a collective timeout from this local rank and we will try our best to dump the debug info. Last enqueued NCCL work: 38440, last completed NCCL work: 38437.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank0]:[E1122 12:14:19.731777823 ProcessGroupNCCL.cpp:1694] [PG ID 0 PG GUID 0(default_pg) Rank 0] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1, only active collectives: 0
+[rank0]:[E1122 12:15:18.001681050 ProcessGroupNCCL.cpp:802] [PG GUID 0(default_pg) Rank 0] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank0]:[E1122 12:15:18.001704838 ProcessGroupNCCL.cpp:816] [PG GUID 0(default_pg) Rank 0] To avoid data inconsistency, we are taking the entire process down.
+[rank0]:[E1122 12:15:18.062972476 ProcessGroupNCCL.cpp:2192] [PG ID 0 PG GUID 0(default_pg) Rank 0] Process group watchdog thread terminated with exception: [PG GUID 0(default_pg) Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=38438, OpType=ALLREDUCE, NumelIn=2411620, NumelOut=2411620, Timeout(ms)=1200000) ran for 1200016 milliseconds before timing out.
+Exception raised from checkTimeout at /__w/pytorch/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:744 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7fd86415e60d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10::DistError::DistError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd86415f5e2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #2: c10::DistBackendError::DistBackendError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd86415f712 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #3: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x2a7 (0x7fd7aac1a847 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x15b1 (0x7fd7aac267e1 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: c10d::ProcessGroupNCCL::Watchdog::run() + 0x157 (0x7fd7aac27a57 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xe1224 (0x7fd8358e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x928bb (0x7fd86565e8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #8: <unknown function> + 0x110538 (0x7fd8656dc538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG ID 0 PG GUID 0(default_pg) Rank 0] Process group watchdog thread terminated with exception: [PG GUID 0(default_pg) Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=38438, OpType=ALLREDUCE, NumelIn=2411620, NumelOut=2411620, Timeout(ms)=1200000) ran for 1200016 milliseconds before timing out.
+Exception raised from checkTimeout at /__w/pytorch/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:744 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7fd86415e60d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10::DistError::DistError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd86415f5e2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #2: c10::DistBackendError::DistBackendError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd86415f712 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #3: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x2a7 (0x7fd7aac1a847 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x15b1 (0x7fd7aac267e1 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: c10d::ProcessGroupNCCL::Watchdog::run() + 0x157 (0x7fd7aac27a57 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xe1224 (0x7fd8358e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x928bb (0x7fd86565e8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #8: <unknown function> + 0x110538 (0x7fd8656dc538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+Exception raised from run at /__w/pytorch/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:2198 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7fd86415e60d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10::DistError::DistError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd86415f5e2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #2: c10::DistBackendError::DistBackendError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd86415f712 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x6cf968 (0x7fd7aa324968 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xe1224 (0x7fd8358e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #5: <unknown function> + 0x928bb (0x7fd86565e8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #6: <unknown function> + 0x110538 (0x7fd8656dc538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+setsid: child 4707 did not exit normally: Success

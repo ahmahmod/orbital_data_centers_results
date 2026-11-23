@@ -1,0 +1,17 @@
+{
+  "return_codes": {
+    "tc_rank0.log": 0,
+    "tc_rank1.log": 0,
+    "tc_rank2.log": 0,
+    "tc_rank3.log": 0,
+    "train_rank0.log": 0,
+    "train_rank1.log": 0,
+    "train_rank2.log": 0,
+    "train_rank3.log": 0
+  },
+  "failures": [],
+  "shutdown_grace_s": 300,
+  "wall_end": 1795315362.7532156,
+  "run_id": "d49d22e577d1",
+  "success": true
+}

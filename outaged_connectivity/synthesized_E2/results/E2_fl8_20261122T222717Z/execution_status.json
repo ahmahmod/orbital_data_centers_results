@@ -1,0 +1,23 @@
+{
+  "return_codes": {
+    "tc_rank0.log": 0,
+    "tc_rank1.log": -9,
+    "tc_rank2.log": -9,
+    "tc_rank3.log": -9,
+    "flower_server.log": -9,
+    "train_rank0.log": 15,
+    "train_rank1.log": 15,
+    "train_rank2.log": -9,
+    "train_rank3.log": -9
+  },
+  "failures": [
+    "Experiment exceeded wall-clock deadline; pending: ['tc1@graffiti-4.nancy.grid5000.fr', 'tc2@graffiti-6.nancy.grid5000.fr', 'tc3@graffiti-9.nancy.grid5000.fr', 'flower_server@graffiti-3.nancy.grid5000.fr', 'train0@graffiti-3.nancy.grid5000.fr', 'train1@graffiti-4.nancy.grid5000.fr', 'train2@graffiti-6.nancy.grid5000.fr', 'train3@graffiti-9.nancy.grid5000.fr']",
+    "Nonzero process exits: {'tc_rank1.log': -9, 'tc_rank2.log': -9, 'tc_rank3.log': -9, 'flower_server.log': -9, 'train_rank0.log': 15, 'train_rank1.log': 15, 'train_rank2.log': -9, 'train_rank3.log': -9}"
+  ],
+  "shutdown_grace_s": 300,
+  "wall_end": 1795397862.824845,
+  "run_id": "48be540d9071",
+  "success": false,
+  "training_completed_early": false,
+  "completion_reason": "duration_or_failure"
+}

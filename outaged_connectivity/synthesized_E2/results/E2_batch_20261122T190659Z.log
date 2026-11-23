@@ -1,0 +1,135 @@
+E2 overnight batch: 20261122T190659Z
+Methods: ddp gossip8 gossip64 diloco8 diloco64 fl8 fl64
+Flower: 500 rounds per FL method, with global-model evaluation on all four workers every round.
+CIFAR-100; contact shaping ON; up to 10800s per run (early exit after all trainers finish); NCCL/Flower timeout 1200s
+Batch log: /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_batch_20261122T190659Z.log
+Current OAR job: 7066998
+Minimum time for one experiment: 11490s
+OAR time remaining: 26602s
+PASS: four workers reachable, CIFAR-100 available, no E2 workers/qdiscs/markers
+Matching prior attempt: /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_ddp_20261122T092331Z
+SKIP: ddp already has an output directory
+Matching prior attempt: /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_gossip8_20261121T202845Z
+SKIP: gossip8 already has an output directory
+Matching prior attempt: /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_gossip64_20261121T202845Z
+SKIP: gossip64 already has an output directory
+Matching prior attempt: /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_diloco8_20261122T092331Z
+SKIP: diloco8 already has an output directory
+Matching prior attempt: /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_diloco64_20261122T092331Z
+SKIP: diloco64 already has an output directory
+Matching prior attempt: /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_fl8_20261122T174834Z
+SKIP: fl8 already has an output directory
+
+===== [7/7] fl64 =====
+Checking traffic-control state on all four nodes...
+PASS: graffiti-3.nancy.grid5000.fr — no existing E2 root qdisc
+PASS: graffiti-4.nancy.grid5000.fr — no existing E2 root qdisc
+PASS: graffiti-6.nancy.grid5000.fr — no existing E2 root qdisc
+PASS: graffiti-9.nancy.grid5000.fr — no existing E2 root qdisc
+PASS: Traffic-control preflight completed.
+Four allocated workers: [('graffiti-3.nancy.grid5000.fr', '172.16.64.3', 'ens4f0'), ('graffiti-4.nancy.grid5000.fr', '172.16.64.4', 'ens4f0'), ('graffiti-6.nancy.grid5000.fr', '172.16.64.6', 'ens4f0'), ('graffiti-9.nancy.grid5000.fr', '172.16.64.9', 'ens4f0')]
+graffiti-3.nancy.grid5000.fr 2.14.1+cu130 NVIDIA GeForce RTX 2080 Ti
+graffiti-4.nancy.grid5000.fr 2.14.1+cu130 NVIDIA GeForce RTX 2080 Ti
+graffiti-6.nancy.grid5000.fr 2.14.1+cu130 NVIDIA GeForce RTX 2080 Ti
+graffiti-9.nancy.grid5000.fr 2.14.1+cu130 NVIDIA GeForce RTX 2080 Ti
+Launched 9 remote processes, start=1795374618.722, run=09781068b71f
+Training ends at 1795385418.722; shutdown grace 300s
+[rank0] [93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+[rank0] 	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+[rank0] 
+[rank0] 		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+[rank0] 
+[rank0] 	To view all available options, run:
+[rank0] 
+[rank0] 		$ flower-supernode --help
+[rank0] 
+[rank0] 	Using `start_client()` is deprecated.
+[rank0] 
+[rank0]             This is a deprecated feature. It will be removed
+[rank0]             entirely in future versions of Flower.
+[rank0] 
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: train message 0a3d8083-aaf6-4d3f-bd4f-605d7a60d127
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: evaluate message 45c101ef-c454-4e51-a30c-c9ac19cb18ae
+[rank0] I1122 20:10:36.055620    3647 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+[rank0] I1122 20:10:36.098717    3647 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+[rank0] I1122 20:10:36.121616    3647 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+[rank0] I1122 20:10:36.144328    3647 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: train message eeebae89-5301-4399-a529-e75e0a172344
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: evaluate message 47f26da8-0368-489b-94f6-e8ce334bc7ce
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: train message 46b9f69d-0c41-4e1a-a380-f246ad1cc5ad
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: evaluate message 3b3e3f02-0791-4fb1-8b10-508aa04cd3c6
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: train message 5315a59c-538a-4120-9e4b-7a5278548c18
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: evaluate message e5c8b5ff-647e-4401-b2bc-ca9a92670ec1
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: train message fb6d1d6a-dae3-4626-abaf-d1d42c975ba0
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: evaluate message fb4fab77-67f2-4815-84d1-98129efc2804
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: train message b60a96ac-8819-4395-9798-80fdd7a6d453
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: evaluate message b7f601fa-6020-43f9-b4a6-8eba277dab0b
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: train message 33888c5b-2dca-425d-b863-294f28103520
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: evaluate message 27fd6f0b-df92-49ea-adcc-5a03e40f9b57
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: train message 62f771ca-d0cd-48d5-9bba-fa29f62fbbf1
+[rank0] [92mINFO [0m:      Sent reply
+[rank0] [92mINFO [0m:
+[rank0] [92mINFO [0m:      Received: evaluate message 7060d308-e8dc-487e-b51c-62df999c7e69
+[rank0] [92mINFO [0m:      Sent reply
+FINALIZATION: stopping remaining training workers before tc agents
+TC agent still pending after cleanup grace: graffiti-3.nancy.grid5000.fr
+TC agent still pending after cleanup grace: graffiti-4.nancy.grid5000.fr
+TC agent still pending after cleanup grace: graffiti-6.nancy.grid5000.fr
+TC agent still pending after cleanup grace: graffiti-9.nancy.grid5000.fr
+Log/output folder: /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_fl64_20261122T190659Z
+{
+  "ranks_seen": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "training_step_events": 13824,
+  "communications_completed": 212,
+  "mean_comm_ready_to_complete_s": 4.3083210754716985,
+  "scheduled_outage_intervals_per_direction": 162,
+  "outage_steps_note": "Per-link progress may count one optimizer step in multiple simultaneous outages.",
+  "ready_complete_note": "Ready-to-complete is application-level duration, not pure network blocking.",
+  "failure_note": "Missing or incomplete communications can indicate blocked or failed collectives; see training logs."
+}
+/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_fl64_20261122T190659Z generated 38 plots; validation slots: 1 complete 4-worker slots: 1
+E2 FAILED:
+ - Experiment exceeded wall-clock deadline; pending: ['tc0@graffiti-3.nancy.grid5000.fr', 'tc1@graffiti-4.nancy.grid5000.fr', 'tc2@graffiti-6.nancy.grid5000.fr', 'tc3@graffiti-9.nancy.grid5000.fr', 'flower_server@graffiti-3.nancy.grid5000.fr', 'train0@graffiti-3.nancy.grid5000.fr', 'train1@graffiti-4.nancy.grid5000.fr', 'train2@graffiti-6.nancy.grid5000.fr', 'train3@graffiti-9.nancy.grid5000.fr']
+ - Nonzero process exits: {'tc_rank0.log': -9, 'tc_rank1.log': -9, 'tc_rank2.log': -9, 'tc_rank3.log': -9, 'flower_server.log': -9, 'train_rank0.log': -9, 'train_rank1.log': -9, 'train_rank2.log': 15, 'train_rank3.log': -9}
+PASS: four workers reachable, CIFAR-100 available, no E2 workers/qdiscs/markers
+Completed fl64: runner_exit=1; clean_after=YES; status=FAIL; reason=duration_or_failure
+NOTE: experiment failed but cleanup verified. Continuing to the next independent method.
+
+BATCH SUMMARY: 0 PASS, 1 FAIL, 6 SKIPPED, 0 NOT STARTED, 7 TOTAL
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+fl64	FAIL	1	YES	2026-11-22T19:07:06Z	2026-11-22T22:17:57Z	/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_fl64_20261122T190659Z
+Results stored under /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results; plotting runs during runner.py finalization.

@@ -1,0 +1,46 @@
+{
+  "expected_hosts": 4,
+  "observed_hosts": 4,
+  "hosts": [
+    {
+      "host": "graffiti-5",
+      "samples": 9774,
+      "errors": 0,
+      "owned_socket_samples": 107514,
+      "connections_seen_total": 210486,
+      "map_available_samples": 9774,
+      "finished": true
+    },
+    {
+      "host": "graffiti-7",
+      "samples": 9929,
+      "errors": 0,
+      "owned_socket_samples": 129077,
+      "connections_seen_total": 171229,
+      "map_available_samples": 9929,
+      "finished": true
+    },
+    {
+      "host": "graffiti-8",
+      "samples": 9833,
+      "errors": 0,
+      "owned_socket_samples": 137662,
+      "connections_seen_total": 170350,
+      "map_available_samples": 9833,
+      "finished": true
+    },
+    {
+      "host": "graffiti-9",
+      "samples": 9820,
+      "errors": 0,
+      "owned_socket_samples": 108020,
+      "connections_seen_total": 151295,
+      "map_available_samples": 9820,
+      "finished": true
+    }
+  ],
+  "monitor_completeness_ok": true,
+  "rank_socket_visibility_ok": true,
+  "directional_tcp_byte_intervals_observed": true,
+  "traffic_visibility_warning": "zero owner observations is not evidence of zero NCCL traffic; inspect ss -p permissions, transport, and worker mapping"
+}

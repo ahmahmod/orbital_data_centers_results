@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "rank": 0,
+      "host": "graffiti-3.nancy.grid5000.fr",
+      "ip": "172.16.64.3",
+      "iface": "ens4f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-001"
+    },
+    {
+      "rank": 1,
+      "host": "graffiti-4.nancy.grid5000.fr",
+      "ip": "172.16.64.4",
+      "iface": "ens4f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-002"
+    },
+    {
+      "rank": 2,
+      "host": "graffiti-6.nancy.grid5000.fr",
+      "ip": "172.16.64.6",
+      "iface": "ens4f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-003"
+    },
+    {
+      "rank": 3,
+      "host": "graffiti-9.nancy.grid5000.fr",
+      "ip": "172.16.64.9",
+      "iface": "ens4f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-004"
+    }
+  ],
+  "oar_job_id": "7065108",
+  "site": "nancy",
+  "vlan_id": null,
+  "network_mode": "selective_tc"
+}

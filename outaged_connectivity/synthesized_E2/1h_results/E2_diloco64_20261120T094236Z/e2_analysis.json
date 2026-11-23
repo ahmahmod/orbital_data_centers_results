@@ -1,0 +1,15 @@
+{
+  "ranks_seen": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "training_step_events": 28928,
+  "communications_completed": 448,
+  "mean_comm_ready_to_complete_s": 28.743870792410714,
+  "scheduled_outage_intervals_per_direction": 54,
+  "outage_steps_note": "Per-link progress may count one optimizer step in multiple simultaneous outages.",
+  "ready_complete_note": "Ready-to-complete is application-level duration, not pure network blocking.",
+  "failure_note": "Missing or incomplete communications can indicate blocked or failed collectives; see training logs."
+}

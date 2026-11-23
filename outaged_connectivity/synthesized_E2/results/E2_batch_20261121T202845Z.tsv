@@ -1,0 +1,4 @@
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+gossip8	FAIL	1	YES	2026-11-21T20:28:52Z	2026-11-21T23:38:54Z	/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_gossip8_20261121T202845Z
+gossip64	PASS	0	YES	2026-11-21T23:39:11Z	2026-11-22T02:42:55Z	/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_gossip64_20261121T202845Z
+diloco8	PASS	0	YES	2026-11-22T02:43:14Z	2026-11-22T05:46:42Z	/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_diloco8_20261121T202845Z

@@ -1,0 +1,2 @@
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+fl8	FAIL	1	YES	2026-11-22T22:27:25Z	2026-11-23T01:37:50Z	/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_fl8_20261122T222717Z

@@ -1,0 +1,2 @@
+experiment,method,rank,epoch,step,unix_time_s,elapsed_s,val_loss,val_accuracy,val_samples,val_s,local_samples,global_samples_approx
+E2,ddp,3,0,32,1795117976.0502224,790.4456942081451,5.346224333953858,0.0418,10000,2.0884160489999886,1024,4096

@@ -1,0 +1,14 @@
+E2 overnight batch: 20261120T093806Z
+Methods: ddp gossip8 gossip64 diloco8 diloco64 fl8 fl64
+CIFAR-100; contact shaping ON; each run 3600s; NCCL/Flower timeout 900s
+Batch log: /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_batch_20261120T093806Z.log
+Current OAR job: 2250757
+Minimum time for one experiment: 3990s
+OAR time remaining: 5335s
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/remote.py", line 54, in read_state
+    if x.get('oar_job_id')!=os.getenv('OAR_JOB_ID'):raise RuntimeError('KaVLAN state is for another reservation; run bootstrap.sh')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: KaVLAN state is for another reservation; run bootstrap.sh
+ERROR: Initial state is not clean; no experiment started.

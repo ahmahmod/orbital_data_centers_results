@@ -1,0 +1,66 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a91e903b-9436-44dc-bf09-12840c17be80
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message df881657-e7a1-4de3-9097-3c8c8d4c213d
+I1122 20:10:36.109089    3543 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1122 20:10:36.151510    3543 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1122 20:10:36.191331    3543 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I1122 20:10:36.211964    3543 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 6544dfaf-80ee-4a27-bb8e-11c6c8c7af32
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 6d5c9aa5-82eb-4231-be8b-dc431261afc2
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 2bb53561-98e5-4a1f-89ff-bf407214bc2e
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message d06de5b8-b634-447c-babe-f98d636a389a
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 857a0fb9-596d-4e3d-b8bf-4db03a57c4b2
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 7a59d447-4f73-4cbe-8325-bc1b6eceab7a
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message c939438b-7a24-4022-b5e2-3a6da88fdc6f
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message b9a25b29-bcfe-4a5c-ad2a-d164957bb6d5
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 41717868-e306-4db9-9599-2c61e9903b1f
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message ddb73898-5271-4e47-bd04-47d99a2aaaa4
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message c45cc995-0cb5-406a-a33b-df0ec7343d45
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message a8e79a90-36a5-4f16-872f-60d8b0d6bd21
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message c7359740-d4b5-47d0-802c-a44f12087e3c
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 9716ca2c-de82-4905-8bc7-81b780a2e006
+[92mINFO [0m:      Sent reply

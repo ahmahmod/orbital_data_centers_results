@@ -1,0 +1,19 @@
+{
+  "return_codes": {
+    "tc_rank0.log": -9,
+    "tc_rank1.log": 0,
+    "tc_rank2.log": -9,
+    "tc_rank3.log": 0,
+    "train_rank0.log": -9,
+    "train_rank1.log": -9,
+    "train_rank2.log": -9,
+    "train_rank3.log": 15
+  },
+  "failures": [
+    "Experiment exceeded wall-clock deadline",
+    "Nonzero process exits: {'tc_rank0.log': -9, 'tc_rank2.log': -9, 'train_rank0.log': -9, 'train_rank1.log': -9, 'train_rank2.log': -9, 'train_rank3.log': 15}"
+  ],
+  "wall_end": 1795126520.6273303,
+  "run_id": "e415441d66b4",
+  "success": false
+}

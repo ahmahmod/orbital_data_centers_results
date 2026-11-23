@@ -1,0 +1,521 @@
+FLOWER ROUND 1/500: global_accuracy=0.0134
+FLOWER ROUND 2/500: global_accuracy=0.0254
+FLOWER ROUND 3/500: global_accuracy=0.0252
+FLOWER ROUND 4/500: global_accuracy=0.0330
+FLOWER ROUND 5/500: global_accuracy=0.0331
+FLOWER ROUND 6/500: global_accuracy=0.0400
+FLOWER ROUND 7/500: global_accuracy=0.0548
+FLOWER ROUND 8/500: global_accuracy=0.0548
+FLOWER ROUND 9/500: global_accuracy=0.0518
+FLOWER ROUND 10/500: global_accuracy=0.0540
+FLOWER ROUND 11/500: global_accuracy=0.0436
+FLOWER ROUND 12/500: global_accuracy=0.0635
+FLOWER ROUND 13/500: global_accuracy=0.0588
+FLOWER ROUND 14/500: global_accuracy=0.0571
+FLOWER ROUND 15/500: global_accuracy=0.0746
+FLOWER ROUND 16/500: global_accuracy=0.0834
+FLOWER ROUND 17/500: global_accuracy=0.0722
+FLOWER ROUND 18/500: global_accuracy=0.0668
+FLOWER ROUND 19/500: global_accuracy=0.0842
+FLOWER ROUND 20/500: global_accuracy=0.0730
+FLOWER ROUND 21/500: global_accuracy=0.0791
+FLOWER ROUND 22/500: global_accuracy=0.0901
+FLOWER ROUND 23/500: global_accuracy=0.0806
+FLOWER ROUND 24/500: global_accuracy=0.0936
+FLOWER ROUND 25/500: global_accuracy=0.0852
+FLOWER ROUND 26/500: global_accuracy=0.0852
+FLOWER ROUND 27/500: global_accuracy=0.0892
+FLOWER ROUND 28/500: global_accuracy=0.0944
+FLOWER ROUND 29/500: global_accuracy=0.0888
+FLOWER ROUND 30/500: global_accuracy=0.0988
+FLOWER ROUND 31/500: global_accuracy=0.1122
+FLOWER ROUND 32/500: global_accuracy=0.1036
+FLOWER ROUND 33/500: global_accuracy=0.1012
+FLOWER ROUND 34/500: global_accuracy=0.1023
+FLOWER ROUND 35/500: global_accuracy=0.1034
+FLOWER ROUND 36/500: global_accuracy=0.0988
+FLOWER ROUND 37/500: global_accuracy=0.1089
+FLOWER ROUND 38/500: global_accuracy=0.1178
+FLOWER ROUND 39/500: global_accuracy=0.1088
+FLOWER ROUND 40/500: global_accuracy=0.1169
+FLOWER ROUND 41/500: global_accuracy=0.1152
+FLOWER ROUND 42/500: global_accuracy=0.1080
+FLOWER ROUND 43/500: global_accuracy=0.1290
+FLOWER ROUND 44/500: global_accuracy=0.1246
+FLOWER ROUND 45/500: global_accuracy=0.1258
+FLOWER ROUND 46/500: global_accuracy=0.0564
+FLOWER ROUND 47/500: global_accuracy=0.0918
+FLOWER ROUND 48/500: global_accuracy=0.0882
+FLOWER ROUND 49/500: global_accuracy=0.0980
+FLOWER ROUND 50/500: global_accuracy=0.1016
+FLOWER ROUND 51/500: global_accuracy=0.0848
+FLOWER ROUND 52/500: global_accuracy=0.1018
+FLOWER ROUND 53/500: global_accuracy=0.1042
+FLOWER ROUND 54/500: global_accuracy=0.1114
+FLOWER ROUND 55/500: global_accuracy=0.1034
+FLOWER ROUND 56/500: global_accuracy=0.1204
+FLOWER ROUND 57/500: global_accuracy=0.1074
+FLOWER ROUND 58/500: global_accuracy=0.1206
+FLOWER ROUND 59/500: global_accuracy=0.1072
+FLOWER ROUND 60/500: global_accuracy=0.1140
+FLOWER ROUND 61/500: global_accuracy=0.0978
+FLOWER ROUND 62/500: global_accuracy=0.1316
+FLOWER ROUND 63/500: global_accuracy=0.1142
+FLOWER ROUND 64/500: global_accuracy=0.1076
+FLOWER ROUND 65/500: global_accuracy=0.1246
+FLOWER ROUND 66/500: global_accuracy=0.1354
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower server, config: num_rounds=500, round_timeout=1200.0s
+[92mINFO [0m:      Flower ECE: gRPC server running (500 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[93mWARNING [0m:   No evaluate_metrics_aggregation_fn provided
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 21]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 22]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 23]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 24]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 25]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 26]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 27]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 28]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 29]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 30]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 31]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 32]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 33]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 34]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 35]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 36]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 37]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 38]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 39]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 40]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 41]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 42]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 43]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 44]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 45]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 46]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 47]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 48]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 49]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 50]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 51]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 52]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 53]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 54]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 55]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 56]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 57]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 58]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 59]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 60]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 61]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 62]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 63]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 64]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 65]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 66]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 67]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 1 failures
+Traceback (most recent call last):
+  File "/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/train_flower.py", line 235, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/train_flower.py", line 121, in main
+    fl.server.start_server(server_address=a.server,
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+        config=fl.server.ServerConfig(num_rounds=a.rounds,round_timeout=a.round_timeout),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        strategy=strategy,grpc_max_message_length=2147483647)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/flwr/compat/server/app.py", line 163, in start_server
+    hist = run_fl(
+        server=initialized_server,
+        config=initialized_config,
+    )
+  File "/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/flwr/server/server.py", line 487, in run_fl
+    hist, elapsed_time = server.fit(
+                         ~~~~~~~~~~^
+        num_rounds=config.num_rounds, timeout=config.round_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/flwr/server/server.py", line 144, in fit
+    res_fed = self.evaluate_round(server_round=current_round, timeout=timeout)
+  File "/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/flwr/server/server.py", line 200, in evaluate_round
+    ] = self.strategy.aggregate_evaluate(server_round, results, failures)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/train_flower.py", line 85, in aggregate_evaluate
+    raise RuntimeError(f'FedAvg round {server_round}: expected 4 evaluations; got {len(results)}')
+RuntimeError: FedAvg round 67: expected 4 evaluations; got 3

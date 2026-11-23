@@ -1,0 +1,5 @@
+/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[GOSSIP8] Step=1 Loss=4.7677 Samples=32 Elapsed=0.6s Speed=1.78 steps/s
+[GOSSIP8] Step=20 Loss=4.5620 Samples=640 Elapsed=10.6s Speed=1.89 steps/s
+[GOSSIP8] Step=40 Loss=4.3424 Samples=1280 Elapsed=21.6s Speed=1.85 steps/s

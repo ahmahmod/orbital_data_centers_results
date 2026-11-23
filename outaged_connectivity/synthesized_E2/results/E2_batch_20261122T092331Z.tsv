@@ -1,0 +1,3 @@
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+ddp	FAIL	1	YES	2026-11-22T09:23:38Z	2026-11-22T11:17:23Z	/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_ddp_20261122T092331Z
+diloco8	FAIL	1	YES	2026-11-22T11:17:40Z	2026-11-22T14:26:44Z	/home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/results/E2_diloco8_20261122T092331Z

@@ -1,0 +1,4 @@
+[Rank 3] Training finished at step=35200; epochs_completed=100; reason=epochs_completed
+[Rank 3] Cleanup started; gossip sender active=True
+[Rank 3] Destroying process group
+[Rank 3] Process group destroyed

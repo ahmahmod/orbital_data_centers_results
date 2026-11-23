@@ -1,0 +1,2 @@
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+gossip8	FAIL	1	YES	2026-11-19T21:10:25Z	2026-11-19T22:15:28Z	/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_gossip8_20261119T211019Z

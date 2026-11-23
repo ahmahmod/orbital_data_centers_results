@@ -1,0 +1,35 @@
+/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[DILOCO8] Step=1 Loss=4.7677 Samples=32 Elapsed=2.1s Speed=0.47 steps/s
+[DILOCO8] Step=20 Loss=5.3076 Samples=640 Elapsed=18.4s Speed=1.09 steps/s
+[DILOCO8] Step=40 Loss=4.8461 Samples=1280 Elapsed=42.4s Speed=0.94 steps/s
+[DILOCO8] Step=60 Loss=4.0923 Samples=1920 Elapsed=58.6s Speed=1.02 steps/s
+[DILOCO8] Step=80 Loss=4.4656 Samples=2560 Elapsed=82.7s Speed=0.97 steps/s
+[DILOCO8] Step=100 Loss=4.0388 Samples=3200 Elapsed=98.8s Speed=1.01 steps/s
+[DILOCO8] Step=120 Loss=4.2983 Samples=3840 Elapsed=122.9s Speed=0.98 steps/s
+[DILOCO8] Step=140 Loss=3.6613 Samples=4480 Elapsed=139.1s Speed=1.01 steps/s
+[DILOCO8] Step=160 Loss=4.4952 Samples=5120 Elapsed=163.1s Speed=0.98 steps/s
+[DILOCO8] Step=180 Loss=4.3146 Samples=5760 Elapsed=179.3s Speed=1.00 steps/s
+[DILOCO8] Step=200 Loss=4.0695 Samples=6400 Elapsed=203.3s Speed=0.98 steps/s
+[DILOCO8] Step=220 Loss=3.6436 Samples=7040 Elapsed=219.5s Speed=1.00 steps/s
+[DILOCO8] Step=240 Loss=4.0914 Samples=7680 Elapsed=243.6s Speed=0.99 steps/s
+[DILOCO8] Step=260 Loss=3.7182 Samples=8320 Elapsed=259.7s Speed=1.00 steps/s
+[DILOCO8] Step=280 Loss=3.9622 Samples=8960 Elapsed=283.8s Speed=0.99 steps/s
+[DILOCO8] Step=300 Loss=4.0508 Samples=9600 Elapsed=300.0s Speed=1.00 steps/s
+[DILOCO8] Step=320 Loss=3.9715 Samples=10240 Elapsed=756.1s Speed=0.42 steps/s
+[DILOCO8] Step=340 Loss=3.9919 Samples=10880 Elapsed=770.5s Speed=0.44 steps/s
+[DILOCO8] Step=360 Loss=3.8522 Samples=11520 Elapsed=791.7s Speed=0.45 steps/s
+[DILOCO8] Step=380 Loss=3.8171 Samples=12160 Elapsed=806.2s Speed=0.47 steps/s
+[DILOCO8] Step=400 Loss=3.6853 Samples=12800 Elapsed=827.3s Speed=0.48 steps/s
+[DILOCO8] Step=420 Loss=3.7998 Samples=13440 Elapsed=841.6s Speed=0.50 steps/s
+[DILOCO8] Step=440 Loss=3.8535 Samples=14080 Elapsed=863.0s Speed=0.51 steps/s
+[DILOCO8] Step=460 Loss=3.8075 Samples=14720 Elapsed=877.3s Speed=0.52 steps/s
+[DILOCO8] Step=480 Loss=3.5767 Samples=15360 Elapsed=898.5s Speed=0.53 steps/s
+[DILOCO8] Step=500 Loss=3.2827 Samples=16000 Elapsed=1498.7s Speed=0.33 steps/s
+[DILOCO8] Step=520 Loss=3.6632 Samples=16640 Elapsed=1525.9s Speed=0.34 steps/s
+[DILOCO8] Step=540 Loss=4.1402 Samples=17280 Elapsed=1542.0s Speed=0.35 steps/s
+[DILOCO8] Step=560 Loss=3.8536 Samples=17920 Elapsed=1566.2s Speed=0.36 steps/s
+[DILOCO8] Step=580 Loss=3.7621 Samples=18560 Elapsed=1582.5s Speed=0.37 steps/s
+[DILOCO8] Step=600 Loss=3.8502 Samples=19200 Elapsed=1606.7s Speed=0.37 steps/s
+[DILOCO8] Step=620 Loss=3.8259 Samples=19840 Elapsed=1623.0s Speed=0.38 steps/s
+[DILOCO8] Step=640 Loss=3.7318 Samples=20480 Elapsed=1647.2s Speed=0.39 steps/s

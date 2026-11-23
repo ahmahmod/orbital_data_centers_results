@@ -1,0 +1,3 @@
+test	local_steps	outer_lr	outer_momentum	status	run_id	output	best_accuracy	final_accuracy	wall_training_s
+A1	64	0.3	0.9	success	E1_b_diloco_A1_H64_OLR0.3_OM0.9_4hosts_1gpu_seed2026_diloco_outer_sweep_20261117T090914Z	/home/amahmod/experiments_grid/synthesized_contact_plan/diloco_E1_b/results/E1_b_diloco_A1_H64_OLR0.3_OM0.9_4hosts_1gpu_seed2026_diloco_outer_sweep_20261117T090914Z	0.7522	0.7522	714.6014
+A2	32	0.3	0.9	success	E1_b_diloco_A2_H32_OLR0.3_OM0.9_4hosts_1gpu_seed2026_diloco_outer_sweep_20261117T090914Z	/home/amahmod/experiments_grid/synthesized_contact_plan/diloco_E1_b/results/E1_b_diloco_A2_H32_OLR0.3_OM0.9_4hosts_1gpu_seed2026_diloco_outer_sweep_20261117T090914Z	0.754	0.754	738.5304

@@ -1,0 +1,2 @@
+E2 tc installed: iface=ens5f0, mode=selective_tc, run=E2_gossip64_20261120T081940Z
+E2 tc cleanup PASS: ens5f0

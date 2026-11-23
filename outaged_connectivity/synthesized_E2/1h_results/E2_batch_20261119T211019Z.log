@@ -1,0 +1,57 @@
+E2 overnight batch: 20261119T211019Z
+Methods: ddp gossip8 gossip64 diloco8 diloco64 fl8 fl64
+CIFAR-100; contact shaping ON; each run 3600s; NCCL/Flower timeout 900s
+Batch log: /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_batch_20261119T211019Z.log
+Current OAR job: 2250568
+Minimum time for one experiment: 3990s
+OAR time remaining: 4368s
+PASS: four workers reachable, CIFAR-100 available, no E2 workers/qdiscs/markers
+SKIP: ddp already has an output directory
+
+===== [2/7] gossip8 =====
+Checking traffic-control state on all four nodes...
+PASS: chifflot-5.lille.grid5000.fr — no existing E2 root qdisc
+PASS: chifflot-6.lille.grid5000.fr — no existing E2 root qdisc
+PASS: chifflot-7.lille.grid5000.fr — no existing E2 root qdisc
+PASS: chifflot-8.lille.grid5000.fr — no existing E2 root qdisc
+PASS: Traffic-control preflight completed.
+Four allocated workers: [('chifflot-5.lille.grid5000.fr', '172.16.36.5', 'ens5f0'), ('chifflot-6.lille.grid5000.fr', '172.16.36.6', 'ens5f0'), ('chifflot-7.lille.grid5000.fr', '172.16.36.7', 'ens5f0'), ('chifflot-8.lille.grid5000.fr', '172.16.36.8', 'ens5f0')]
+chifflot-5.lille.grid5000.fr 2.7.1+cu126 Tesla P100-PCIE-16GB
+chifflot-6.lille.grid5000.fr 2.7.1+cu126 Tesla P100-PCIE-16GB
+chifflot-7.lille.grid5000.fr 2.7.1+cu126 Tesla V100-PCIE-32GB
+chifflot-8.lille.grid5000.fr 2.7.1+cu126 Tesla V100-PCIE-32GB
+Launched 8 remote processes, start=1795122814.151, run=e415441d66b4
+[rank0] /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user.
+[rank0]   warnings.warn(  # warn only once
+[rank0] [GOSSIP8] Step=1 Loss=4.7677 Samples=32 Elapsed=0.6s Speed=1.78 steps/s
+[rank0] [GOSSIP8] Step=20 Loss=4.5620 Samples=640 Elapsed=10.6s Speed=1.89 steps/s
+[rank0] [GOSSIP8] Step=40 Loss=4.3424 Samples=1280 Elapsed=21.6s Speed=1.85 steps/s
+Log/output folder: /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_gossip8_20261119T211019Z
+{
+  "ranks_seen": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "training_step_events": 6297,
+  "communications_completed": 786,
+  "mean_comm_ready_to_complete_s": 0.0013483155216284987,
+  "scheduled_outage_intervals_per_direction": 54,
+  "outage_steps_note": "Per-link progress may count one optimizer step in multiple simultaneous outages.",
+  "ready_complete_note": "Ready-to-complete is application-level duration, not pure network blocking.",
+  "failure_note": "Missing or incomplete communications can indicate blocked or failed collectives; see training logs."
+}
+/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_gossip8_20261119T211019Z generated 38 plots; validation slots: 7 complete 4-worker slots: 4
+E2 FAILED:
+ - Experiment exceeded wall-clock deadline
+ - Nonzero process exits: {'tc_rank0.log': -9, 'tc_rank2.log': -9, 'train_rank0.log': -9, 'train_rank1.log': -9, 'train_rank2.log': -9, 'train_rank3.log': 15}
+PASS: four workers reachable, CIFAR-100 available, no E2 workers/qdiscs/markers
+Completed gossip8: runner_exit=1; clean_after=YES; status=FAIL
+NOTE: experiment failed but cleanup verified. Continuing to the next independent method.
+STOP: 445s remain; gossip64 needs 3990s
+
+BATCH SUMMARY: 0 PASS, 1 FAIL, 1 SKIPPED, 5 NOT STARTED, 7 TOTAL
+method	run_status	runner_exit	clean_after	start_utc	end_utc	output_dir
+gossip8	FAIL	1	YES	2026-11-19T21:10:25Z	2026-11-19T22:15:28Z	/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results/E2_gossip8_20261119T211019Z
+Results stored under /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/results; plotting runs during runner.py finalization.

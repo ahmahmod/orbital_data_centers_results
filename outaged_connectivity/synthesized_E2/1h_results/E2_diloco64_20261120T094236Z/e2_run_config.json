@@ -1,0 +1,47 @@
+{
+  "method": "diloco64",
+  "init_unix_s": 1795167946.0399659,
+  "duration_s": 3600,
+  "nodes": [
+    {
+      "rank": 0,
+      "host": "chifflot-2.lille.grid5000.fr",
+      "ip": "172.16.36.2",
+      "iface": "ens5f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-001"
+    },
+    {
+      "rank": 1,
+      "host": "chifflot-4.lille.grid5000.fr",
+      "ip": "172.16.36.4",
+      "iface": "ens5f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-002"
+    },
+    {
+      "rank": 2,
+      "host": "chifflot-7.lille.grid5000.fr",
+      "ip": "172.16.36.7",
+      "iface": "ens5f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-003"
+    },
+    {
+      "rank": 3,
+      "host": "chifflot-8.lille.grid5000.fr",
+      "ip": "172.16.36.8",
+      "iface": "ens5f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-004"
+    }
+  ],
+  "trace_sha256": "858c0b66251b6b9660a7b22fdab7dacea44b326b547ca6d5a17c6a44c368ae7e",
+  "tc_applied": true,
+  "network_mode": "selective_tc",
+  "rate_scale": 1,
+  "dataset": "cifar100",
+  "comm_timeout_s": 900,
+  "eval_interval_s": 300.0,
+  "resource_interval_s": 2.0
+}

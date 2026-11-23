@@ -1,0 +1,42 @@
+/home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1119 23:14:35.001885830 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=66, addr=[chifflot-8.lille.grid5000.fr]:43770, remote=[chifflot-5.lille.grid5000.fr]:29527): failed to recv, got 0 bytes
+Exception raised from recvBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:678 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1628b785e8 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5ba8bfe (0x7f1611ef4bfe in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x5baaf40 (0x7f1611ef6f40 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x5bab84a (0x7f1611ef784a in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x2a9 (0x7f1611ef12a9 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::heartbeatMonitor() + 0x379 (0x7f15d35f09f9 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xe1224 (0x7f15c32e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x928bb (0x7f1629c2a8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #8: <unknown function> + 0x110538 (0x7f1629ca8538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[W1119 23:14:35.009337992 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 3] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: failed to recv, got 0 bytes
+[rank3]:[W1119 23:14:36.009549525 TCPStore.cpp:106] [c10d] sendBytes failed on SocketImpl(fd=66, addr=[chifflot-8.lille.grid5000.fr]:43770, remote=[chifflot-5.lille.grid5000.fr]:29527): Broken pipe
+Exception raised from sendBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:653 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1628b785e8 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5ba8bfe (0x7f1611ef4bfe in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x5baa458 (0x7f1611ef6458 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x5babc3e (0x7f1611ef7c3e in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x298 (0x7f1611ef1298 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::heartbeatMonitor() + 0x379 (0x7f15d35f09f9 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xe1224 (0x7f15c32e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x928bb (0x7f1629c2a8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #8: <unknown function> + 0x110538 (0x7f1629ca8538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[W1119 23:14:36.013747166 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 3] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: Broken pipe
+[rank3]:[W1119 23:14:37.013897925 TCPStore.cpp:106] [c10d] sendBytes failed on SocketImpl(fd=66, addr=[chifflot-8.lille.grid5000.fr]:43770, remote=[chifflot-5.lille.grid5000.fr]:29527): Broken pipe
+Exception raised from sendBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:653 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1628b785e8 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5ba8bfe (0x7f1611ef4bfe in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x5baa458 (0x7f1611ef6458 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x5babc3e (0x7f1611ef7c3e in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x298 (0x7f1611ef1298 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::heartbeatMonitor() + 0x379 (0x7f15d35f09f9 in /home/amahmod/tcp_exp/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xe1224 (0x7f15c32e1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x928bb (0x7f1629c2a8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #8: <unknown function> + 0x110538 (0x7f1629ca8538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[W1119 23:14:37.017670951 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 3] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: Broken pipe
+setsid: child 6081 did not exit normally: Success

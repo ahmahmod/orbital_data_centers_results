@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "rank": 0,
+      "host": "chifflot-1.lille.grid5000.fr",
+      "ip": "172.16.36.1",
+      "iface": "ens5f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-001"
+    },
+    {
+      "rank": 1,
+      "host": "chifflot-2.lille.grid5000.fr",
+      "ip": "172.16.36.2",
+      "iface": "ens5f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-002"
+    },
+    {
+      "rank": 2,
+      "host": "chifflot-3.lille.grid5000.fr",
+      "ip": "172.16.36.3",
+      "iface": "ens5f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-003"
+    },
+    {
+      "rank": 3,
+      "host": "chifflot-4.lille.grid5000.fr",
+      "ip": "172.16.36.4",
+      "iface": "ens5f0",
+      "gpu_class": "allocated NVIDIA GPU",
+      "sat": "SAT-DEMO-004"
+    }
+  ],
+  "oar_job_id": "2250695",
+  "site": "lille",
+  "vlan_id": null,
+  "network_mode": "selective_tc"
+}

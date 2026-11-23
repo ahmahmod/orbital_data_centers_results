@@ -1,0 +1,2 @@
+unix_s,elapsed_s,step,accuracy,method,val_accuracy,val_loss
+1795117976.8615391,791.2570109367371,32,0.0409,ddp,0.0409,5.819640818023681

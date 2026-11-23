@@ -1,0 +1,2 @@
+experiment,method,epoch,step,elapsed_s,unix_time_s,mean_accuracy,min_accuracy,max_accuracy,std_accuracy,mean_loss,min_loss,max_loss,std_loss,val_samples_per_worker,world_size,mean_accuracy_target_reached,all_workers_target_reached,observed_ranks,complete
+E2,fl8,1,536,300.0,1795386946.9934342,0.1309,0.1294,0.1354,0.002598076211353318,3.74806875,3.73955625,3.77360625,0.014744082499429935,5000,4,,,"0,1,2,3",1

@@ -1,0 +1,68 @@
+[rank3]:[W1118 15:25:40.447165630 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=48, addr=[granite-9.nancy.grid5000.fr]:52472, remote=[granite-2.nancy.grid5000.fr]:29527): Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+Exception raised from recvBytes at /__w/pytorch/pytorch/torch/csrc/distributed/c10d/Utils.hpp:790 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7fd82555e60d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10::DistError::DistError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd82555f5e2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #2: c10::DistNetworkError::DistNetworkError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd82555faa2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x6940a7d (0x7fd78bd63a7d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x383 (0x7fd78bd5d273 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::HeartbeatMonitor::runLoop() + 0x43d (0x7fd76c01de3d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xe1224 (0x7fd7f6ce1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x928bb (0x7fd826a7e8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #8: <unknown function> + 0x110538 (0x7fd826afc538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[W1118 15:25:40.450499857 ProcessGroupNCCL.cpp:1893] [PG ID 0 PG GUID 0(default_pg) Rank 3] TCPStore check for dump key "exception_dump" failed (store unavailable, not absent key). Cannot detect remote dump signals. A rank exiting outside NCCL without broadcasting is a separate case. Error: Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+[rank3]:[E1118 15:25:40.782887944 ProcessGroupNCCL.cpp:657] [PG GUID 0(default_pg) Rank 3] Collective WorkNCCL(SeqNum=183, OpType=ALLREDUCE, NumelIn=11220132, NumelOut=11220132, Timeout(ms)=900000) raised the following async exception: NCCL error: remote process exited or there was a network error, NCCL version 2.30.7
+ncclRemoteError: A call failed possibly due to a network error or a remote process exiting prematurely.
+Last error:
+socketProgress: Connection closed by remote peer granite-8.nancy.grid5000.fr<40302>
+Exception raised from checkForNCCLErrorsInternal at /__w/pytorch/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:2861 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7fd82555e60d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10::DistError::DistError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd82555f5e2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #2: c10::DistBackendError::DistBackendError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd82555f712 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #3: c10d::ProcessGroupNCCL::checkForNCCLErrorsInternal(std::shared_ptr<c10d::NCCLComm>&) + 0x36e (0x7fd76c0186ee in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::WorkNCCL::checkAndSetException() + 0x80 (0x7fd76c01a1c0 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0xb74 (0x7fd76c025da4 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: c10d::ProcessGroupNCCL::Watchdog::run() + 0x157 (0x7fd76c027a57 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0xe1224 (0x7fd7f6ce1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #8: <unknown function> + 0x928bb (0x7fd826a7e8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #9: <unknown function> + 0x110538 (0x7fd826afc538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[E1118 15:25:40.784259934 ProcessGroupNCCL.cpp:2390] [PG ID 0 PG GUID 0(default_pg) Rank 3]  failure detected by watchdog at work sequence id: 183 PG status: last enqueued work: 183, last started work: -1 (), last completed work: 182
+[rank3]:[E1118 15:25:40.784615901 ProcessGroupNCCL.cpp:785] Stack trace of the failed collective: 
+#0 all_reduce from /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/distributed_c10d.py:3906
+#1 wrapper from /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83
+#2 main from /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/train.py:163
+#3 <module> from /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/train.py:239
+
+[rank3]:[W1118 15:25:40.784728856 TCPStore.cpp:106] [c10d] sendBytes failed on SocketImpl(fd=48, addr=[granite-9.nancy.grid5000.fr]:52472, remote=[granite-2.nancy.grid5000.fr]:29527): Broken pipe
+Exception raised from sendBytes at /__w/pytorch/pytorch/torch/csrc/distributed/c10d/Utils.hpp:761 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7fd82555e60d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10::DistError::DistError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd82555f5e2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #2: c10::DistNetworkError::DistNetworkError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd82555faa2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x693fea2 (0x7fd78bd62ea2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<unsigned char, std::allocator<unsigned char> > const&) + 0x12d (0x7fd78bd6020d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::broadcastSignal(c10::intrusive_ptr<c10d::Store, c10::detail::intrusive_target_default_null_type<c10d::Store> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) + 0x97 (0x7fd76c010da7 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: c10d::ProcessGroupNCCL::broadcastDumpSignal() + 0x64 (0x7fd76c013064 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x921 (0x7fd76c025b51 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: c10d::ProcessGroupNCCL::Watchdog::run() + 0x157 (0x7fd76c027a57 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: <unknown function> + 0xe1224 (0x7fd7f6ce1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #10: <unknown function> + 0x928bb (0x7fd826a7e8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #11: <unknown function> + 0x110538 (0x7fd826afc538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[E1118 15:25:40.788607778 ProcessGroupNCCL.cpp:2722] [PG ID 0 PG GUID 0(default_pg) Rank 3] Failed to broadcast signal exception_dump through TCPStore. Error: Broken pipe
+Exception raised from sendBytes at /__w/pytorch/pytorch/torch/csrc/distributed/c10d/Utils.hpp:761 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7fd82555e60d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10::DistError::DistError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd82555f5e2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #2: c10::DistNetworkError::DistNetworkError(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x72 (0x7fd82555faa2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x693fea2 (0x7fd78bd62ea2 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<unsigned char, std::allocator<unsigned char> > const&) + 0x12d (0x7fd78bd6020d in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::broadcastSignal(c10::intrusive_ptr<c10d::Store, c10::detail::intrusive_target_default_null_type<c10d::Store> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) + 0x97 (0x7fd76c010da7 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: c10d::ProcessGroupNCCL::broadcastDumpSignal() + 0x64 (0x7fd76c013064 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x921 (0x7fd76c025b51 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: c10d::ProcessGroupNCCL::Watchdog::run() + 0x157 (0x7fd76c027a57 in /home/amahmod/experiments_grid/synthesized_contact_plan/filter_E2/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: <unknown function> + 0xe1224 (0x7fd7f6ce1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #10: <unknown function> + 0x928bb (0x7fd826a7e8bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #11: <unknown function> + 0x110538 (0x7fd826afc538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[E1118 15:25:40.788616000 ProcessGroupNCCL.cpp:2732] [PG ID 0 PG GUID 0(default_pg) Rank 3] First PG on this rank to signal dumping.
+setsid: child 4458 did not exit normally: Success
