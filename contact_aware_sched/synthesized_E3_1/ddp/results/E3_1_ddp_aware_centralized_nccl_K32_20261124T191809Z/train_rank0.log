@@ -1,0 +1,2503 @@
+[E3] mode=aware; scheduler=BatchScheduler
+[E3] topology=verified_ring_union; required_edges=8
+[E3] batch_gradient_000000000 WAIT_READY 
+[E3] batch_gradient_000000000 WAIT_CONTACT elapsed=0.04 next_start=0.25 wait_s=0.21 estimate=0.75
+[E3] batch_gradient_000000000 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000000000 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[E3] batch_gradient_000000000 DRAIN K=1
+[E3] batch_gradient_000000000 DONE drain_s=0.217 overrun=0
+[DDP] Step=1 Loss=4.7127 Samples=32 Elapsed=3.5s Speed=0.29 steps/s
+[E3] batch_gradient_000000001 WAIT_READY 
+[E3] batch_gradient_000000001 PREPARE K=32 estimate=4.668
+[E3] batch_gradient_000000001 GRANT K=32 estimate=4.668 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=20 Loss=4.6490 Samples=640 Elapsed=18.2s Speed=1.10 steps/s
+[E3] batch_gradient_000000001 DRAIN K=32
+[E3] batch_gradient_000000001 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000000033 WAIT_READY 
+[E3] batch_gradient_000000033 PREPARE K=32 estimate=1.572
+[E3] batch_gradient_000000033 GRANT K=32 estimate=1.572 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=40 Loss=4.5207 Samples=1280 Elapsed=23.5s Speed=1.70 steps/s
+[DDP] Step=60 Loss=4.2059 Samples=1920 Elapsed=27.8s Speed=2.16 steps/s
+[E3] batch_gradient_000000033 DRAIN K=32
+[E3] batch_gradient_000000033 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000000065 WAIT_READY 
+[E3] batch_gradient_000000065 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000065 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=80 Loss=3.7516 Samples=2560 Elapsed=32.1s Speed=2.49 steps/s
+[E3] batch_gradient_000000065 DRAIN K=32
+[E3] batch_gradient_000000065 DONE drain_s=0.018 overrun=0
+[E3] batch_gradient_000000097 WAIT_READY 
+[E3] batch_gradient_000000097 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000097 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=100 Loss=3.9668 Samples=3200 Elapsed=36.3s Speed=2.76 steps/s
+[DDP] Step=120 Loss=4.2928 Samples=3840 Elapsed=40.3s Speed=2.98 steps/s
+[E3] batch_gradient_000000097 DRAIN K=32
+[E3] batch_gradient_000000097 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000000129 WAIT_READY 
+[E3] batch_gradient_000000129 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000129 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=140 Loss=3.9281 Samples=4480 Elapsed=44.4s Speed=3.15 steps/s
+[DDP] Step=160 Loss=3.9115 Samples=5120 Elapsed=48.4s Speed=3.31 steps/s
+[E3] batch_gradient_000000129 DRAIN K=32
+[E3] batch_gradient_000000129 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000000161 WAIT_READY 
+[E3] batch_gradient_000000161 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000161 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=180 Loss=3.8687 Samples=5760 Elapsed=52.4s Speed=3.43 steps/s
+[E3] batch_gradient_000000161 DRAIN K=32
+[E3] batch_gradient_000000161 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000000193 WAIT_READY 
+[E3] batch_gradient_000000193 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000193 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=200 Loss=4.0039 Samples=6400 Elapsed=56.4s Speed=3.54 steps/s
+[DDP] Step=220 Loss=3.5229 Samples=7040 Elapsed=60.3s Speed=3.65 steps/s
+[E3] batch_gradient_000000193 DRAIN K=32
+[E3] batch_gradient_000000193 DONE drain_s=0.022 overrun=0
+[E3] batch_gradient_000000225 WAIT_READY 
+[E3] batch_gradient_000000225 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000225 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=240 Loss=3.6671 Samples=7680 Elapsed=64.3s Speed=3.73 steps/s
+[E3] batch_gradient_000000225 DRAIN K=32
+[E3] batch_gradient_000000225 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000000257 WAIT_READY 
+[E3] batch_gradient_000000257 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000257 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=260 Loss=3.4673 Samples=8320 Elapsed=68.3s Speed=3.81 steps/s
+[DDP] Step=280 Loss=3.6742 Samples=8960 Elapsed=72.1s Speed=3.88 steps/s
+[E3] batch_gradient_000000257 DRAIN K=32
+[E3] batch_gradient_000000257 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000000289 WAIT_READY 
+[E3] batch_gradient_000000289 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000289 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=300 Loss=3.3717 Samples=9600 Elapsed=76.1s Speed=3.94 steps/s
+[DDP] Step=320 Loss=3.5912 Samples=10240 Elapsed=79.9s Speed=4.00 steps/s
+[E3] batch_gradient_000000289 DRAIN K=32
+[E3] batch_gradient_000000289 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000000321 WAIT_READY 
+[E3] batch_gradient_000000321 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000321 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=340 Loss=3.2666 Samples=10880 Elapsed=83.9s Speed=4.05 steps/s
+[E3] batch_gradient_000000321 DRAIN K=32
+[E3] batch_gradient_000000321 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000000353 WAIT_READY 
+[E3] batch_gradient_000000353 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000353 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=360 Loss=3.4880 Samples=11506 Elapsed=88.2s Speed=4.08 steps/s
+[DDP] Step=380 Loss=4.0581 Samples=12146 Elapsed=92.0s Speed=4.13 steps/s
+[E3] batch_gradient_000000353 DRAIN K=32
+[E3] batch_gradient_000000353 DONE drain_s=0.023 overrun=0
+[E3] batch_gradient_000000385 WAIT_READY 
+[E3] batch_gradient_000000385 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000385 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=400 Loss=3.7558 Samples=12786 Elapsed=96.1s Speed=4.16 steps/s
+[E3] batch_gradient_000000385 DRAIN K=32
+[E3] batch_gradient_000000385 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000000417 WAIT_READY 
+[E3] batch_gradient_000000417 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000417 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=420 Loss=4.1426 Samples=13426 Elapsed=100.0s Speed=4.20 steps/s
+[DDP] Step=440 Loss=2.9899 Samples=14066 Elapsed=103.9s Speed=4.24 steps/s
+[E3] batch_gradient_000000417 DRAIN K=32
+[E3] batch_gradient_000000417 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000000449 WAIT_READY 
+[E3] batch_gradient_000000449 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000449 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=460 Loss=3.7172 Samples=14706 Elapsed=107.8s Speed=4.27 steps/s
+[DDP] Step=480 Loss=3.3328 Samples=15346 Elapsed=111.7s Speed=4.30 steps/s
+[E3] batch_gradient_000000449 DRAIN K=32
+[E3] batch_gradient_000000449 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000000481 WAIT_READY 
+[E3] batch_gradient_000000481 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000481 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=500 Loss=3.5309 Samples=15986 Elapsed=115.7s Speed=4.32 steps/s
+[E3] batch_gradient_000000481 DRAIN K=32
+[E3] batch_gradient_000000481 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000000513 WAIT_READY 
+[E3] batch_gradient_000000513 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000513 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=520 Loss=3.0381 Samples=16626 Elapsed=119.7s Speed=4.35 steps/s
+[DDP] Step=540 Loss=2.6233 Samples=17266 Elapsed=123.5s Speed=4.37 steps/s
+[E3] batch_gradient_000000513 DRAIN K=32
+[E3] batch_gradient_000000513 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000000545 WAIT_READY 
+[E3] batch_gradient_000000545 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000545 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=560 Loss=3.4880 Samples=17906 Elapsed=127.4s Speed=4.39 steps/s
+[E3] batch_gradient_000000545 DRAIN K=32
+[E3] batch_gradient_000000545 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000000577 WAIT_READY 
+[E3] batch_gradient_000000577 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000577 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=580 Loss=3.4981 Samples=18546 Elapsed=131.4s Speed=4.41 steps/s
+[DDP] Step=600 Loss=2.4225 Samples=19186 Elapsed=135.2s Speed=4.44 steps/s
+[E3] batch_gradient_000000577 DRAIN K=32
+[E3] batch_gradient_000000577 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000000609 WAIT_READY 
+[E3] batch_gradient_000000609 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000609 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=620 Loss=3.7237 Samples=19826 Elapsed=139.2s Speed=4.45 steps/s
+[DDP] Step=640 Loss=3.0122 Samples=20466 Elapsed=143.1s Speed=4.47 steps/s
+[E3] batch_gradient_000000609 DRAIN K=32
+[E3] batch_gradient_000000609 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000000641 WAIT_READY 
+[E3] batch_gradient_000000641 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000641 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=660 Loss=2.7721 Samples=21106 Elapsed=147.1s Speed=4.49 steps/s
+[E3] batch_gradient_000000641 DRAIN K=32
+[E3] batch_gradient_000000641 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000000673 WAIT_READY 
+[E3] batch_gradient_000000673 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000673 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=680 Loss=3.1648 Samples=21746 Elapsed=151.0s Speed=4.50 steps/s
+[DDP] Step=700 Loss=2.8085 Samples=22386 Elapsed=154.8s Speed=4.52 steps/s
+[E3] batch_gradient_000000673 DRAIN K=32
+[E3] batch_gradient_000000673 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000000705 WAIT_READY 
+[E3] batch_gradient_000000705 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000705 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=720 Loss=3.2039 Samples=23012 Elapsed=158.8s Speed=4.53 steps/s
+[E3] batch_gradient_000000705 DRAIN K=32
+[E3] batch_gradient_000000705 DONE drain_s=0.015 overrun=0
+[E3] batch_gradient_000000737 WAIT_READY 
+[E3] batch_gradient_000000737 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000737 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=740 Loss=3.1468 Samples=23652 Elapsed=162.8s Speed=4.54 steps/s
+[DDP] Step=760 Loss=3.3340 Samples=24292 Elapsed=166.7s Speed=4.56 steps/s
+[E3] batch_gradient_000000737 DRAIN K=32
+[E3] batch_gradient_000000737 DONE drain_s=0.015 overrun=0
+[E3] batch_gradient_000000769 WAIT_READY 
+[E3] batch_gradient_000000769 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000769 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=780 Loss=3.5247 Samples=24932 Elapsed=170.7s Speed=4.57 steps/s
+[DDP] Step=800 Loss=2.8839 Samples=25572 Elapsed=174.5s Speed=4.58 steps/s
+[E3] batch_gradient_000000769 DRAIN K=32
+[E3] batch_gradient_000000769 DONE drain_s=0.018 overrun=0
+[E3] batch_gradient_000000801 WAIT_READY 
+[E3] batch_gradient_000000801 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000801 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=820 Loss=2.7079 Samples=26212 Elapsed=178.5s Speed=4.59 steps/s
+[E3] batch_gradient_000000801 DRAIN K=32
+[E3] batch_gradient_000000801 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000000833 WAIT_READY 
+[E3] batch_gradient_000000833 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000833 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=840 Loss=2.4782 Samples=26852 Elapsed=182.5s Speed=4.60 steps/s
+[DDP] Step=860 Loss=2.6365 Samples=27492 Elapsed=186.3s Speed=4.62 steps/s
+[E3] batch_gradient_000000833 DRAIN K=32
+[E3] batch_gradient_000000833 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000000865 WAIT_READY 
+[E3] batch_gradient_000000865 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000865 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=880 Loss=3.2024 Samples=28132 Elapsed=190.3s Speed=4.62 steps/s
+[E3] batch_gradient_000000865 DRAIN K=32
+[E3] batch_gradient_000000865 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000000897 WAIT_READY 
+[E3] batch_gradient_000000897 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000897 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=900 Loss=2.4841 Samples=28772 Elapsed=194.3s Speed=4.63 steps/s
+[DDP] Step=920 Loss=2.7673 Samples=29412 Elapsed=198.1s Speed=4.64 steps/s
+[E3] batch_gradient_000000897 DRAIN K=32
+[E3] batch_gradient_000000897 DONE drain_s=0.005 overrun=0
+[E3] batch_gradient_000000929 WAIT_READY 
+[E3] batch_gradient_000000929 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000929 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=940 Loss=2.2661 Samples=30052 Elapsed=202.1s Speed=4.65 steps/s
+[DDP] Step=960 Loss=2.7095 Samples=30692 Elapsed=206.0s Speed=4.66 steps/s
+[E3] batch_gradient_000000929 DRAIN K=32
+[E3] batch_gradient_000000929 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000000961 WAIT_READY 
+[E3] batch_gradient_000000961 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000961 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=980 Loss=2.2938 Samples=31332 Elapsed=210.0s Speed=4.67 steps/s
+[E3] batch_gradient_000000961 DRAIN K=32
+[E3] batch_gradient_000000961 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000000993 WAIT_READY 
+[E3] batch_gradient_000000993 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000000993 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1000 Loss=2.3949 Samples=31972 Elapsed=213.9s Speed=4.67 steps/s
+[DDP] Step=1020 Loss=2.7801 Samples=32612 Elapsed=217.8s Speed=4.68 steps/s
+[E3] batch_gradient_000000993 DRAIN K=32
+[E3] batch_gradient_000000993 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000001025 WAIT_READY 
+[E3] batch_gradient_000001025 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001025 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1040 Loss=2.7872 Samples=33252 Elapsed=221.7s Speed=4.69 steps/s
+[E3] batch_gradient_000001025 DRAIN K=32
+[E3] batch_gradient_000001025 DONE drain_s=0.064 overrun=0
+[E3] batch_gradient_000001057 WAIT_READY 
+[E3] batch_gradient_000001057 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001057 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1060 Loss=2.6914 Samples=33878 Elapsed=226.2s Speed=4.69 steps/s
+[DDP] Step=1080 Loss=2.7267 Samples=34518 Elapsed=230.0s Speed=4.70 steps/s
+[E3] batch_gradient_000001057 DRAIN K=32
+[E3] batch_gradient_000001057 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000001089 WAIT_READY 
+[E3] batch_gradient_000001089 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001089 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1100 Loss=2.5580 Samples=35158 Elapsed=234.0s Speed=4.70 steps/s
+[DDP] Step=1120 Loss=2.5618 Samples=35798 Elapsed=237.9s Speed=4.71 steps/s
+[E3] batch_gradient_000001089 DRAIN K=32
+[E3] batch_gradient_000001089 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000001121 WAIT_READY 
+[E3] batch_gradient_000001121 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001121 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1140 Loss=2.8972 Samples=36438 Elapsed=241.9s Speed=4.71 steps/s
+[E3] batch_gradient_000001121 DRAIN K=32
+[E3] batch_gradient_000001121 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000001153 WAIT_READY 
+[E3] batch_gradient_000001153 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001153 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1160 Loss=3.1788 Samples=37078 Elapsed=245.9s Speed=4.72 steps/s
+[DDP] Step=1180 Loss=3.0223 Samples=37718 Elapsed=249.7s Speed=4.73 steps/s
+[E3] batch_gradient_000001153 DRAIN K=32
+[E3] batch_gradient_000001153 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000001185 WAIT_READY 
+[E3] batch_gradient_000001185 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001185 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1200 Loss=2.6474 Samples=38358 Elapsed=253.7s Speed=4.73 steps/s
+[E3] batch_gradient_000001185 DRAIN K=32
+[E3] batch_gradient_000001185 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000001217 WAIT_READY 
+[E3] batch_gradient_000001217 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001217 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1220 Loss=2.2833 Samples=38998 Elapsed=257.7s Speed=4.73 steps/s
+[DDP] Step=1240 Loss=2.3044 Samples=39638 Elapsed=261.5s Speed=4.74 steps/s
+[E3] batch_gradient_000001217 DRAIN K=32
+[E3] batch_gradient_000001217 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000001249 WAIT_READY 
+[E3] batch_gradient_000001249 PREPARE K=28 estimate=0.75
+[E3] batch_gradient_000001249 GRANT K=28 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1260 Loss=2.3959 Samples=40278 Elapsed=265.6s Speed=4.74 steps/s
+[E3] batch_gradient_000001249 DRAIN K=28
+[E3] batch_gradient_000001249 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000001277 WAIT_READY 
+[E3] batch_gradient_000001277 PREPARE K=21 estimate=0.75
+[E3] batch_gradient_000001277 GRANT K=21 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1280 Loss=2.3870 Samples=40918 Elapsed=269.6s Speed=4.75 steps/s
+[E3] batch_gradient_000001277 DRAIN K=21
+[E3] batch_gradient_000001277 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000001298 WAIT_READY 
+[E3] batch_gradient_000001298 PREPARE K=15 estimate=0.75
+[E3] batch_gradient_000001298 GRANT K=15 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1300 Loss=2.6153 Samples=41558 Elapsed=273.6s Speed=4.75 steps/s
+[E3] batch_gradient_000001298 DRAIN K=15
+[E3] batch_gradient_000001298 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000001313 WAIT_READY 
+[E3] batch_gradient_000001313 PREPARE K=11 estimate=0.75
+[E3] batch_gradient_000001313 GRANT K=11 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1320 Loss=2.3499 Samples=42198 Elapsed=277.6s Speed=4.75 steps/s
+[E3] batch_gradient_000001313 DRAIN K=11
+[E3] batch_gradient_000001313 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000001324 WAIT_READY 
+[E3] batch_gradient_000001324 PREPARE K=8 estimate=0.75
+[E3] batch_gradient_000001324 GRANT K=8 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[E3] batch_gradient_000001324 DRAIN K=8
+[E3] batch_gradient_000001324 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000001332 WAIT_READY 
+[E3] batch_gradient_000001332 PREPARE K=6 estimate=0.75
+[E3] batch_gradient_000001332 GRANT K=5 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[E3] batch_gradient_000001332 DRAIN K=5
+[E3] batch_gradient_000001332 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000001337 WAIT_READY 
+[E3] batch_gradient_000001337 PREPARE K=4 estimate=0.75
+[E3] batch_gradient_000001337 GRANT K=4 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[DDP] Step=1340 Loss=2.0185 Samples=42838 Elapsed=282.0s Speed=4.75 steps/s
+[E3] batch_gradient_000001337 DRAIN K=4
+[E3] batch_gradient_000001337 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000001341 WAIT_READY 
+[E3] batch_gradient_000001341 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000001341 GRANT K=3 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[E3] batch_gradient_000001341 DRAIN K=3
+[E3] batch_gradient_000001341 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000001344 WAIT_READY 
+[E3] batch_gradient_000001344 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000001344 GRANT K=2 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[E3] batch_gradient_000001344 DRAIN K=2
+[E3] batch_gradient_000001344 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000001346 WAIT_READY 
+[E3] batch_gradient_000001346 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000001346 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[E3] batch_gradient_000001346 DRAIN K=1
+[E3] batch_gradient_000001346 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000001347 WAIT_READY 
+[E3] batch_gradient_000001347 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000001347 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=300.0
+[E3] batch_gradient_000001347 DRAIN K=1
+[E3] batch_gradient_000001347 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000001348 WAIT_READY 
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=284.09 next_start=660.25 wait_s=376.16 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=314.13 next_start=660.25 wait_s=346.12 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=344.17 next_start=660.25 wait_s=316.08 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=374.25 next_start=660.25 wait_s=286.0 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=404.29 next_start=660.25 wait_s=255.96 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=434.3 next_start=660.25 wait_s=225.95 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=464.31 next_start=660.25 wait_s=195.94 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=494.37 next_start=660.25 wait_s=165.88 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=524.46 next_start=660.25 wait_s=135.79 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=554.53 next_start=660.25 wait_s=105.72 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=584.56 next_start=660.25 wait_s=75.69 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=614.62 next_start=660.25 wait_s=45.63 estimate=0.75
+[E3] batch_gradient_000001348 WAIT_CONTACT elapsed=644.64 next_start=660.25 wait_s=15.61 estimate=0.75
+[E3] batch_gradient_000001348 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000001348 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[E3] batch_gradient_000001348 DRAIN K=1
+[E3] batch_gradient_000001348 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000001349 WAIT_READY 
+[E3] batch_gradient_000001349 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001349 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1360 Loss=2.1446 Samples=43478 Elapsed=664.6s Speed=2.05 steps/s
+[DDP] Step=1380 Loss=2.5298 Samples=44118 Elapsed=668.4s Speed=2.06 steps/s
+[E3] batch_gradient_000001349 DRAIN K=32
+[E3] batch_gradient_000001349 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000001381 WAIT_READY 
+[E3] batch_gradient_000001381 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001381 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1400 Loss=2.1716 Samples=44758 Elapsed=672.3s Speed=2.08 steps/s
+[E3] batch_gradient_000001381 DRAIN K=32
+[E3] batch_gradient_000001381 DONE drain_s=0.018 overrun=0
+[E3] batch_gradient_000001413 WAIT_READY 
+[E3] batch_gradient_000001413 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001413 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1420 Loss=2.3164 Samples=45384 Elapsed=676.2s Speed=2.10 steps/s
+[DDP] Step=1440 Loss=2.1718 Samples=46024 Elapsed=680.0s Speed=2.12 steps/s
+[E3] batch_gradient_000001413 DRAIN K=32
+[E3] batch_gradient_000001413 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000001445 WAIT_READY 
+[E3] batch_gradient_000001445 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001445 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1460 Loss=1.6907 Samples=46664 Elapsed=684.0s Speed=2.13 steps/s
+[E3] batch_gradient_000001445 DRAIN K=32
+[E3] batch_gradient_000001445 DONE drain_s=0.015 overrun=0
+[E3] batch_gradient_000001477 WAIT_READY 
+[E3] batch_gradient_000001477 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001477 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1480 Loss=2.0564 Samples=47304 Elapsed=687.9s Speed=2.15 steps/s
+[DDP] Step=1500 Loss=1.6764 Samples=47944 Elapsed=691.7s Speed=2.17 steps/s
+[E3] batch_gradient_000001477 DRAIN K=32
+[E3] batch_gradient_000001477 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000001509 WAIT_READY 
+[E3] batch_gradient_000001509 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001509 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1520 Loss=2.0472 Samples=48584 Elapsed=695.6s Speed=2.19 steps/s
+[DDP] Step=1540 Loss=1.6572 Samples=49224 Elapsed=699.4s Speed=2.20 steps/s
+[E3] batch_gradient_000001509 DRAIN K=32
+[E3] batch_gradient_000001509 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000001541 WAIT_READY 
+[E3] batch_gradient_000001541 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001541 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1560 Loss=2.2494 Samples=49864 Elapsed=703.3s Speed=2.22 steps/s
+[E3] batch_gradient_000001541 DRAIN K=32
+[E3] batch_gradient_000001541 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000001573 WAIT_READY 
+[E3] batch_gradient_000001573 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001573 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1580 Loss=2.3000 Samples=50504 Elapsed=707.2s Speed=2.23 steps/s
+[DDP] Step=1600 Loss=2.1311 Samples=51144 Elapsed=711.0s Speed=2.25 steps/s
+[E3] batch_gradient_000001573 DRAIN K=32
+[E3] batch_gradient_000001573 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000001605 WAIT_READY 
+[E3] batch_gradient_000001605 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001605 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1620 Loss=2.2679 Samples=51784 Elapsed=714.9s Speed=2.27 steps/s
+[E3] batch_gradient_000001605 DRAIN K=32
+[E3] batch_gradient_000001605 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000001637 WAIT_READY 
+[E3] batch_gradient_000001637 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001637 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1640 Loss=1.9617 Samples=52424 Elapsed=718.9s Speed=2.28 steps/s
+[DDP] Step=1660 Loss=2.0839 Samples=53064 Elapsed=722.7s Speed=2.30 steps/s
+[E3] batch_gradient_000001637 DRAIN K=32
+[E3] batch_gradient_000001637 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000001669 WAIT_READY 
+[E3] batch_gradient_000001669 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001669 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1680 Loss=2.1658 Samples=53704 Elapsed=726.6s Speed=2.31 steps/s
+[DDP] Step=1700 Loss=1.9401 Samples=54344 Elapsed=730.5s Speed=2.33 steps/s
+[E3] batch_gradient_000001669 DRAIN K=32
+[E3] batch_gradient_000001669 DONE drain_s=0.005 overrun=0
+[E3] batch_gradient_000001701 WAIT_READY 
+[E3] batch_gradient_000001701 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001701 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1720 Loss=1.8783 Samples=54984 Elapsed=734.4s Speed=2.34 steps/s
+[E3] batch_gradient_000001701 DRAIN K=32
+[E3] batch_gradient_000001701 DONE drain_s=0.052 overrun=0
+[E3] batch_gradient_000001733 WAIT_READY 
+[E3] batch_gradient_000001733 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001733 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1740 Loss=2.0102 Samples=55624 Elapsed=738.4s Speed=2.36 steps/s
+[DDP] Step=1760 Loss=1.9219 Samples=56250 Elapsed=742.2s Speed=2.37 steps/s
+[E3] batch_gradient_000001733 DRAIN K=32
+[E3] batch_gradient_000001733 DONE drain_s=0.064 overrun=0
+[E3] batch_gradient_000001765 WAIT_READY 
+[E3] batch_gradient_000001765 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001765 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1780 Loss=1.9354 Samples=56890 Elapsed=746.3s Speed=2.39 steps/s
+[E3] batch_gradient_000001765 DRAIN K=32
+[E3] batch_gradient_000001765 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000001797 WAIT_READY 
+[E3] batch_gradient_000001797 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001797 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1800 Loss=2.5665 Samples=57530 Elapsed=750.2s Speed=2.40 steps/s
+[DDP] Step=1820 Loss=1.8448 Samples=58170 Elapsed=754.0s Speed=2.41 steps/s
+[E3] batch_gradient_000001797 DRAIN K=32
+[E3] batch_gradient_000001797 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000001829 WAIT_READY 
+[E3] batch_gradient_000001829 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001829 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1840 Loss=2.1633 Samples=58810 Elapsed=757.9s Speed=2.43 steps/s
+[DDP] Step=1860 Loss=1.5848 Samples=59450 Elapsed=761.7s Speed=2.44 steps/s
+[E3] batch_gradient_000001829 DRAIN K=32
+[E3] batch_gradient_000001829 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000001861 WAIT_READY 
+[E3] batch_gradient_000001861 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001861 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1880 Loss=1.8189 Samples=60090 Elapsed=765.6s Speed=2.46 steps/s
+[E3] batch_gradient_000001861 DRAIN K=32
+[E3] batch_gradient_000001861 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000001893 WAIT_READY 
+[E3] batch_gradient_000001893 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001893 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1900 Loss=2.0643 Samples=60730 Elapsed=769.5s Speed=2.47 steps/s
+[DDP] Step=1920 Loss=1.8807 Samples=61370 Elapsed=773.3s Speed=2.48 steps/s
+[E3] batch_gradient_000001893 DRAIN K=32
+[E3] batch_gradient_000001893 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000001925 WAIT_READY 
+[E3] batch_gradient_000001925 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001925 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1940 Loss=1.5591 Samples=62010 Elapsed=777.2s Speed=2.50 steps/s
+[E3] batch_gradient_000001925 DRAIN K=32
+[E3] batch_gradient_000001925 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000001957 WAIT_READY 
+[E3] batch_gradient_000001957 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001957 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=1960 Loss=1.3046 Samples=62650 Elapsed=781.2s Speed=2.51 steps/s
+[DDP] Step=1980 Loss=1.6400 Samples=63290 Elapsed=785.0s Speed=2.52 steps/s
+[E3] batch_gradient_000001957 DRAIN K=32
+[E3] batch_gradient_000001957 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000001989 WAIT_READY 
+[E3] batch_gradient_000001989 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000001989 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2000 Loss=1.8605 Samples=63930 Elapsed=788.9s Speed=2.54 steps/s
+[DDP] Step=2020 Loss=1.7011 Samples=64570 Elapsed=792.6s Speed=2.55 steps/s
+[E3] batch_gradient_000001989 DRAIN K=32
+[E3] batch_gradient_000001989 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000002021 WAIT_READY 
+[E3] batch_gradient_000002021 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002021 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2040 Loss=2.1428 Samples=65210 Elapsed=796.6s Speed=2.56 steps/s
+[E3] batch_gradient_000002021 DRAIN K=32
+[E3] batch_gradient_000002021 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000002053 WAIT_READY 
+[E3] batch_gradient_000002053 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002053 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2060 Loss=2.2824 Samples=65850 Elapsed=800.5s Speed=2.57 steps/s
+[DDP] Step=2080 Loss=1.4010 Samples=66490 Elapsed=804.2s Speed=2.59 steps/s
+[E3] batch_gradient_000002053 DRAIN K=32
+[E3] batch_gradient_000002053 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000002085 WAIT_READY 
+[E3] batch_gradient_000002085 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002085 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2100 Loss=2.2384 Samples=67130 Elapsed=808.1s Speed=2.60 steps/s
+[E3] batch_gradient_000002085 DRAIN K=32
+[E3] batch_gradient_000002085 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000002117 WAIT_READY 
+[E3] batch_gradient_000002117 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002117 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2120 Loss=1.9465 Samples=67756 Elapsed=812.1s Speed=2.61 steps/s
+[DDP] Step=2140 Loss=2.0698 Samples=68396 Elapsed=815.9s Speed=2.62 steps/s
+[E3] batch_gradient_000002117 DRAIN K=32
+[E3] batch_gradient_000002117 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000002149 WAIT_READY 
+[E3] batch_gradient_000002149 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002149 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2160 Loss=1.3577 Samples=69036 Elapsed=819.8s Speed=2.63 steps/s
+[DDP] Step=2180 Loss=1.4361 Samples=69676 Elapsed=823.6s Speed=2.65 steps/s
+[E3] batch_gradient_000002149 DRAIN K=32
+[E3] batch_gradient_000002149 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000002181 WAIT_READY 
+[E3] batch_gradient_000002181 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002181 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2200 Loss=1.6010 Samples=70316 Elapsed=827.6s Speed=2.66 steps/s
+[E3] batch_gradient_000002181 DRAIN K=32
+[E3] batch_gradient_000002181 DONE drain_s=0.004 overrun=0
+[E3] batch_gradient_000002213 WAIT_READY 
+[E3] batch_gradient_000002213 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002213 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2220 Loss=1.5297 Samples=70956 Elapsed=831.5s Speed=2.67 steps/s
+[DDP] Step=2240 Loss=1.7855 Samples=71596 Elapsed=835.3s Speed=2.68 steps/s
+[E3] batch_gradient_000002213 DRAIN K=32
+[E3] batch_gradient_000002213 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000002245 WAIT_READY 
+[E3] batch_gradient_000002245 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002245 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2260 Loss=1.7195 Samples=72236 Elapsed=839.3s Speed=2.69 steps/s
+[E3] batch_gradient_000002245 DRAIN K=32
+[E3] batch_gradient_000002245 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000002277 WAIT_READY 
+[E3] batch_gradient_000002277 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002277 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2280 Loss=2.2980 Samples=72876 Elapsed=843.2s Speed=2.70 steps/s
+[DDP] Step=2300 Loss=1.6247 Samples=73516 Elapsed=846.9s Speed=2.72 steps/s
+[E3] batch_gradient_000002277 DRAIN K=32
+[E3] batch_gradient_000002277 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000002309 WAIT_READY 
+[E3] batch_gradient_000002309 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002309 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2320 Loss=1.6293 Samples=74156 Elapsed=850.9s Speed=2.73 steps/s
+[DDP] Step=2340 Loss=2.0391 Samples=74796 Elapsed=854.6s Speed=2.74 steps/s
+[E3] batch_gradient_000002309 DRAIN K=32
+[E3] batch_gradient_000002309 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000002341 WAIT_READY 
+[E3] batch_gradient_000002341 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002341 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2360 Loss=1.9373 Samples=75436 Elapsed=858.5s Speed=2.75 steps/s
+[E3] batch_gradient_000002341 DRAIN K=32
+[E3] batch_gradient_000002341 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000002373 WAIT_READY 
+[E3] batch_gradient_000002373 PREPARE K=31 estimate=0.75
+[E3] batch_gradient_000002373 GRANT K=31 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2380 Loss=2.0632 Samples=76076 Elapsed=862.5s Speed=2.76 steps/s
+[DDP] Step=2400 Loss=1.6132 Samples=76716 Elapsed=866.2s Speed=2.77 steps/s
+[E3] batch_gradient_000002373 DRAIN K=31
+[E3] batch_gradient_000002373 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000002404 WAIT_READY 
+[E3] batch_gradient_000002404 PREPARE K=23 estimate=0.75
+[E3] batch_gradient_000002404 GRANT K=23 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2420 Loss=1.8379 Samples=77356 Elapsed=870.1s Speed=2.78 steps/s
+[E3] batch_gradient_000002404 DRAIN K=23
+[E3] batch_gradient_000002404 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000002427 WAIT_READY 
+[E3] batch_gradient_000002427 PREPARE K=17 estimate=0.75
+[E3] batch_gradient_000002427 GRANT K=17 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2440 Loss=1.4026 Samples=77996 Elapsed=874.0s Speed=2.79 steps/s
+[E3] batch_gradient_000002427 DRAIN K=17
+[E3] batch_gradient_000002427 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000002444 WAIT_READY 
+[E3] batch_gradient_000002444 PREPARE K=13 estimate=0.75
+[E3] batch_gradient_000002444 GRANT K=13 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[E3] batch_gradient_000002444 DRAIN K=13
+[E3] batch_gradient_000002444 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000002457 WAIT_READY 
+[E3] batch_gradient_000002457 PREPARE K=9 estimate=0.75
+[E3] batch_gradient_000002457 GRANT K=9 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2460 Loss=1.3132 Samples=78636 Elapsed=878.1s Speed=2.80 steps/s
+[E3] batch_gradient_000002457 DRAIN K=9
+[E3] batch_gradient_000002457 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000002466 WAIT_READY 
+[E3] batch_gradient_000002466 PREPARE K=7 estimate=0.75
+[E3] batch_gradient_000002466 GRANT K=7 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[E3] batch_gradient_000002466 DRAIN K=7
+[E3] batch_gradient_000002466 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000002473 WAIT_READY 
+[E3] batch_gradient_000002473 PREPARE K=5 estimate=0.75
+[E3] batch_gradient_000002473 GRANT K=5 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[E3] batch_gradient_000002473 DRAIN K=5
+[E3] batch_gradient_000002473 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000002478 WAIT_READY 
+[E3] batch_gradient_000002478 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000002478 GRANT K=3 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[DDP] Step=2480 Loss=1.1359 Samples=79262 Elapsed=882.4s Speed=2.81 steps/s
+[E3] batch_gradient_000002478 DRAIN K=3
+[E3] batch_gradient_000002478 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000002481 WAIT_READY 
+[E3] batch_gradient_000002481 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000002481 GRANT K=2 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[E3] batch_gradient_000002481 DRAIN K=2
+[E3] batch_gradient_000002481 DONE drain_s=0.059 overrun=0
+[E3] batch_gradient_000002483 WAIT_READY 
+[E3] batch_gradient_000002483 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000002483 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[E3] batch_gradient_000002483 DRAIN K=1
+[E3] batch_gradient_000002483 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000002484 WAIT_READY 
+[E3] batch_gradient_000002484 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000002484 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[E3] batch_gradient_000002484 DRAIN K=1
+[E3] batch_gradient_000002484 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000002485 WAIT_READY 
+[E3] batch_gradient_000002485 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000002485 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=900.0
+[E3] batch_gradient_000002485 DRAIN K=1
+[E3] batch_gradient_000002485 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000002486 WAIT_READY 
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=884.27 next_start=1440.25 wait_s=555.98 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=914.29 next_start=1440.25 wait_s=525.96 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=944.32 next_start=1440.25 wait_s=495.93 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=974.38 next_start=1440.25 wait_s=465.87 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1004.43 next_start=1440.25 wait_s=435.82 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1034.47 next_start=1440.25 wait_s=405.78 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1064.5 next_start=1440.25 wait_s=375.75 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1094.52 next_start=1440.25 wait_s=345.73 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1124.54 next_start=1440.25 wait_s=315.71 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1154.56 next_start=1440.25 wait_s=285.69 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1184.61 next_start=1440.25 wait_s=255.64 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1214.61 next_start=1440.25 wait_s=225.64 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1244.68 next_start=1440.25 wait_s=195.57 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1274.71 next_start=1440.25 wait_s=165.54 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1304.71 next_start=1440.25 wait_s=135.54 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1334.71 next_start=1440.25 wait_s=105.54 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1364.75 next_start=1440.25 wait_s=75.5 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1394.81 next_start=1440.25 wait_s=45.44 estimate=0.75
+[E3] batch_gradient_000002486 WAIT_CONTACT elapsed=1424.89 next_start=1440.25 wait_s=15.36 estimate=0.75
+[E3] batch_gradient_000002486 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000002486 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000002486 DRAIN K=1
+[E3] batch_gradient_000002486 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000002487 WAIT_READY 
+[E3] batch_gradient_000002487 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002487 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2500 Loss=1.6567 Samples=79902 Elapsed=1443.8s Speed=1.73 steps/s
+[E3] batch_gradient_000002487 DRAIN K=32
+[E3] batch_gradient_000002487 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000002519 WAIT_READY 
+[E3] batch_gradient_000002519 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002519 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2520 Loss=1.3370 Samples=80542 Elapsed=1447.8s Speed=1.74 steps/s
+[DDP] Step=2540 Loss=2.3370 Samples=81182 Elapsed=1451.6s Speed=1.75 steps/s
+[E3] batch_gradient_000002519 DRAIN K=32
+[E3] batch_gradient_000002519 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000002551 WAIT_READY 
+[E3] batch_gradient_000002551 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002551 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2560 Loss=1.3320 Samples=81822 Elapsed=1455.6s Speed=1.76 steps/s
+[DDP] Step=2580 Loss=1.0421 Samples=82462 Elapsed=1459.4s Speed=1.77 steps/s
+[E3] batch_gradient_000002551 DRAIN K=32
+[E3] batch_gradient_000002551 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000002583 WAIT_READY 
+[E3] batch_gradient_000002583 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002583 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2600 Loss=1.4751 Samples=83102 Elapsed=1463.3s Speed=1.78 steps/s
+[E3] batch_gradient_000002583 DRAIN K=32
+[E3] batch_gradient_000002583 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000002615 WAIT_READY 
+[E3] batch_gradient_000002615 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002615 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2620 Loss=1.6011 Samples=83742 Elapsed=1467.3s Speed=1.79 steps/s
+[DDP] Step=2640 Loss=1.6617 Samples=84382 Elapsed=1471.2s Speed=1.79 steps/s
+[E3] batch_gradient_000002615 DRAIN K=32
+[E3] batch_gradient_000002615 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000002647 WAIT_READY 
+[E3] batch_gradient_000002647 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002647 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2660 Loss=1.6689 Samples=85022 Elapsed=1475.1s Speed=1.80 steps/s
+[E3] batch_gradient_000002647 DRAIN K=32
+[E3] batch_gradient_000002647 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000002679 WAIT_READY 
+[E3] batch_gradient_000002679 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002679 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2680 Loss=1.6672 Samples=85662 Elapsed=1479.1s Speed=1.81 steps/s
+[DDP] Step=2700 Loss=2.1204 Samples=86302 Elapsed=1482.9s Speed=1.82 steps/s
+[E3] batch_gradient_000002679 DRAIN K=32
+[E3] batch_gradient_000002679 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000002711 WAIT_READY 
+[E3] batch_gradient_000002711 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002711 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2720 Loss=1.7702 Samples=86942 Elapsed=1486.9s Speed=1.83 steps/s
+[DDP] Step=2740 Loss=1.6556 Samples=87582 Elapsed=1490.8s Speed=1.84 steps/s
+[E3] batch_gradient_000002711 DRAIN K=32
+[E3] batch_gradient_000002711 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000002743 WAIT_READY 
+[E3] batch_gradient_000002743 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002743 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2760 Loss=1.5059 Samples=88222 Elapsed=1494.7s Speed=1.85 steps/s
+[E3] batch_gradient_000002743 DRAIN K=32
+[E3] batch_gradient_000002743 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000002775 WAIT_READY 
+[E3] batch_gradient_000002775 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002775 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2780 Loss=1.6221 Samples=88862 Elapsed=1498.7s Speed=1.85 steps/s
+[DDP] Step=2800 Loss=1.9123 Samples=89502 Elapsed=1502.5s Speed=1.86 steps/s
+[E3] batch_gradient_000002775 DRAIN K=32
+[E3] batch_gradient_000002775 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000002807 WAIT_READY 
+[E3] batch_gradient_000002807 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002807 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2820 Loss=1.9651 Samples=90128 Elapsed=1506.8s Speed=1.87 steps/s
+[E3] batch_gradient_000002807 DRAIN K=32
+[E3] batch_gradient_000002807 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000002839 WAIT_READY 
+[E3] batch_gradient_000002839 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002839 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2840 Loss=1.6642 Samples=90768 Elapsed=1510.8s Speed=1.88 steps/s
+[DDP] Step=2860 Loss=1.3961 Samples=91408 Elapsed=1514.6s Speed=1.89 steps/s
+[E3] batch_gradient_000002839 DRAIN K=32
+[E3] batch_gradient_000002839 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000002871 WAIT_READY 
+[E3] batch_gradient_000002871 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002871 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2880 Loss=1.7279 Samples=92048 Elapsed=1518.6s Speed=1.90 steps/s
+[DDP] Step=2900 Loss=1.6301 Samples=92688 Elapsed=1522.4s Speed=1.90 steps/s
+[E3] batch_gradient_000002871 DRAIN K=32
+[E3] batch_gradient_000002871 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000002903 WAIT_READY 
+[E3] batch_gradient_000002903 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002903 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2920 Loss=0.9402 Samples=93328 Elapsed=1526.4s Speed=1.91 steps/s
+[E3] batch_gradient_000002903 DRAIN K=32
+[E3] batch_gradient_000002903 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000002935 WAIT_READY 
+[E3] batch_gradient_000002935 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002935 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2940 Loss=1.6610 Samples=93968 Elapsed=1530.3s Speed=1.92 steps/s
+[DDP] Step=2960 Loss=1.7055 Samples=94608 Elapsed=1534.2s Speed=1.93 steps/s
+[E3] batch_gradient_000002935 DRAIN K=32
+[E3] batch_gradient_000002935 DONE drain_s=0.016 overrun=0
+[E3] batch_gradient_000002967 WAIT_READY 
+[E3] batch_gradient_000002967 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002967 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=2980 Loss=2.0872 Samples=95248 Elapsed=1538.2s Speed=1.94 steps/s
+[E3] batch_gradient_000002967 DRAIN K=32
+[E3] batch_gradient_000002967 DONE drain_s=0.03 overrun=0
+[E3] batch_gradient_000002999 WAIT_READY 
+[E3] batch_gradient_000002999 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000002999 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3000 Loss=1.5666 Samples=95888 Elapsed=1542.2s Speed=1.95 steps/s
+[DDP] Step=3020 Loss=1.7452 Samples=96528 Elapsed=1546.0s Speed=1.95 steps/s
+[E3] batch_gradient_000002999 DRAIN K=32
+[E3] batch_gradient_000002999 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000003031 WAIT_READY 
+[E3] batch_gradient_000003031 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003031 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3040 Loss=1.2087 Samples=97168 Elapsed=1550.0s Speed=1.96 steps/s
+[DDP] Step=3060 Loss=1.3185 Samples=97808 Elapsed=1553.8s Speed=1.97 steps/s
+[E3] batch_gradient_000003031 DRAIN K=32
+[E3] batch_gradient_000003031 DONE drain_s=0.055 overrun=0
+[E3] batch_gradient_000003063 WAIT_READY 
+[E3] batch_gradient_000003063 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003063 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3080 Loss=1.5770 Samples=98448 Elapsed=1557.8s Speed=1.98 steps/s
+[E3] batch_gradient_000003063 DRAIN K=32
+[E3] batch_gradient_000003063 DONE drain_s=0.005 overrun=0
+[E3] batch_gradient_000003095 WAIT_READY 
+[E3] batch_gradient_000003095 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003095 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3100 Loss=1.4462 Samples=99088 Elapsed=1561.9s Speed=1.98 steps/s
+[DDP] Step=3120 Loss=1.7052 Samples=99728 Elapsed=1565.7s Speed=1.99 steps/s
+[E3] batch_gradient_000003095 DRAIN K=32
+[E3] batch_gradient_000003095 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000003127 WAIT_READY 
+[E3] batch_gradient_000003127 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003127 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3140 Loss=1.6870 Samples=100368 Elapsed=1569.6s Speed=2.00 steps/s
+[E3] batch_gradient_000003127 DRAIN K=32
+[E3] batch_gradient_000003127 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000003159 WAIT_READY 
+[E3] batch_gradient_000003159 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003159 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3160 Loss=1.8938 Samples=101008 Elapsed=1573.6s Speed=2.01 steps/s
+[DDP] Step=3180 Loss=1.6646 Samples=101634 Elapsed=1577.5s Speed=2.02 steps/s
+[E3] batch_gradient_000003159 DRAIN K=32
+[E3] batch_gradient_000003159 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000003191 WAIT_READY 
+[E3] batch_gradient_000003191 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003191 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3200 Loss=1.1014 Samples=102274 Elapsed=1581.5s Speed=2.02 steps/s
+[DDP] Step=3220 Loss=1.8643 Samples=102914 Elapsed=1585.3s Speed=2.03 steps/s
+[E3] batch_gradient_000003191 DRAIN K=32
+[E3] batch_gradient_000003191 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000003223 WAIT_READY 
+[E3] batch_gradient_000003223 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003223 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3240 Loss=1.2460 Samples=103554 Elapsed=1589.3s Speed=2.04 steps/s
+[E3] batch_gradient_000003223 DRAIN K=32
+[E3] batch_gradient_000003223 DONE drain_s=0.078 overrun=0
+[E3] batch_gradient_000003255 WAIT_READY 
+[E3] batch_gradient_000003255 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003255 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3260 Loss=1.6002 Samples=104194 Elapsed=1593.3s Speed=2.05 steps/s
+[DDP] Step=3280 Loss=1.5462 Samples=104834 Elapsed=1597.2s Speed=2.05 steps/s
+[E3] batch_gradient_000003255 DRAIN K=32
+[E3] batch_gradient_000003255 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000003287 WAIT_READY 
+[E3] batch_gradient_000003287 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003287 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3300 Loss=1.5370 Samples=105474 Elapsed=1601.1s Speed=2.06 steps/s
+[E3] batch_gradient_000003287 DRAIN K=32
+[E3] batch_gradient_000003287 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000003319 WAIT_READY 
+[E3] batch_gradient_000003319 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003319 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3320 Loss=1.5620 Samples=106114 Elapsed=1605.1s Speed=2.07 steps/s
+[DDP] Step=3340 Loss=1.6416 Samples=106754 Elapsed=1608.9s Speed=2.08 steps/s
+[E3] batch_gradient_000003319 DRAIN K=32
+[E3] batch_gradient_000003319 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000003351 WAIT_READY 
+[E3] batch_gradient_000003351 PREPARE K=31 estimate=0.75
+[E3] batch_gradient_000003351 GRANT K=31 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3360 Loss=1.3014 Samples=107394 Elapsed=1612.9s Speed=2.08 steps/s
+[DDP] Step=3380 Loss=1.5331 Samples=108034 Elapsed=1616.7s Speed=2.09 steps/s
+[E3] batch_gradient_000003351 DRAIN K=31
+[E3] batch_gradient_000003351 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000003382 WAIT_READY 
+[E3] batch_gradient_000003382 PREPARE K=23 estimate=0.75
+[E3] batch_gradient_000003382 GRANT K=23 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3400 Loss=1.7872 Samples=108674 Elapsed=1620.7s Speed=2.10 steps/s
+[E3] batch_gradient_000003382 DRAIN K=23
+[E3] batch_gradient_000003382 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000003405 WAIT_READY 
+[E3] batch_gradient_000003405 PREPARE K=17 estimate=0.75
+[E3] batch_gradient_000003405 GRANT K=17 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3420 Loss=1.5476 Samples=109314 Elapsed=1624.7s Speed=2.11 steps/s
+[E3] batch_gradient_000003405 DRAIN K=17
+[E3] batch_gradient_000003405 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000003422 WAIT_READY 
+[E3] batch_gradient_000003422 PREPARE K=12 estimate=0.75
+[E3] batch_gradient_000003422 GRANT K=12 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000003422 DRAIN K=12
+[E3] batch_gradient_000003422 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000003434 WAIT_READY 
+[E3] batch_gradient_000003434 PREPARE K=9 estimate=0.75
+[E3] batch_gradient_000003434 GRANT K=9 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[DDP] Step=3440 Loss=2.0035 Samples=109954 Elapsed=1628.8s Speed=2.11 steps/s
+[E3] batch_gradient_000003434 DRAIN K=9
+[E3] batch_gradient_000003434 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000003443 WAIT_READY 
+[E3] batch_gradient_000003443 PREPARE K=7 estimate=0.75
+[E3] batch_gradient_000003443 GRANT K=7 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000003443 DRAIN K=7
+[E3] batch_gradient_000003443 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000003450 WAIT_READY 
+[E3] batch_gradient_000003450 PREPARE K=5 estimate=0.75
+[E3] batch_gradient_000003450 GRANT K=5 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000003450 DRAIN K=5
+[E3] batch_gradient_000003450 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000003455 WAIT_READY 
+[E3] batch_gradient_000003455 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000003455 GRANT K=3 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000003455 DRAIN K=3
+[E3] batch_gradient_000003455 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000003458 WAIT_READY 
+[E3] batch_gradient_000003458 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000003458 GRANT K=2 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000003458 DRAIN K=2
+[E3] batch_gradient_000003458 DONE drain_s=0.009 overrun=0
+[DDP] Step=3460 Loss=2.2843 Samples=110594 Elapsed=1633.2s Speed=2.12 steps/s
+[E3] batch_gradient_000003460 WAIT_READY 
+[E3] batch_gradient_000003460 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000003460 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000003460 DRAIN K=1
+[E3] batch_gradient_000003460 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000003461 WAIT_READY 
+[E3] batch_gradient_000003461 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000003461 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000003461 DRAIN K=1
+[E3] batch_gradient_000003461 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000003462 WAIT_READY 
+[E3] batch_gradient_000003462 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000003462 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=1650.0
+[E3] batch_gradient_000003462 DRAIN K=1
+[E3] batch_gradient_000003462 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000003463 WAIT_READY 
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1634.21 next_start=2340.25 wait_s=706.04 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1664.24 next_start=2340.25 wait_s=676.01 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1694.29 next_start=2340.25 wait_s=645.96 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1724.32 next_start=2340.25 wait_s=615.93 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1754.35 next_start=2340.25 wait_s=585.9 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1784.38 next_start=2340.25 wait_s=555.87 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1814.43 next_start=2340.25 wait_s=525.82 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1844.44 next_start=2340.25 wait_s=495.81 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1874.45 next_start=2340.25 wait_s=465.8 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1904.54 next_start=2340.25 wait_s=435.71 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1934.55 next_start=2340.25 wait_s=405.7 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1964.57 next_start=2340.25 wait_s=375.68 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=1994.59 next_start=2340.25 wait_s=345.66 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2024.69 next_start=2340.25 wait_s=315.56 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2054.78 next_start=2340.25 wait_s=285.47 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2084.8 next_start=2340.25 wait_s=255.45 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2114.9 next_start=2340.25 wait_s=225.35 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2144.91 next_start=2340.25 wait_s=195.34 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2175.01 next_start=2340.25 wait_s=165.24 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2205.11 next_start=2340.25 wait_s=135.14 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2235.13 next_start=2340.25 wait_s=105.12 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2265.17 next_start=2340.25 wait_s=75.08 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2295.26 next_start=2340.25 wait_s=44.99 estimate=0.75
+[E3] batch_gradient_000003463 WAIT_CONTACT elapsed=2325.3 next_start=2340.25 wait_s=14.95 estimate=0.75
+[E3] batch_gradient_000003463 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000003463 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[E3] batch_gradient_000003463 DRAIN K=1
+[E3] batch_gradient_000003463 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000003464 WAIT_READY 
+[E3] batch_gradient_000003464 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003464 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3480 Loss=2.2793 Samples=111234 Elapsed=2344.3s Speed=1.48 steps/s
+[E3] batch_gradient_000003464 DRAIN K=32
+[E3] batch_gradient_000003464 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000003496 WAIT_READY 
+[E3] batch_gradient_000003496 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003496 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3500 Loss=1.6256 Samples=111874 Elapsed=2348.3s Speed=1.49 steps/s
+[DDP] Step=3520 Loss=1.4283 Samples=112500 Elapsed=2352.2s Speed=1.50 steps/s
+[E3] batch_gradient_000003496 DRAIN K=32
+[E3] batch_gradient_000003496 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000003528 WAIT_READY 
+[E3] batch_gradient_000003528 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003528 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3540 Loss=1.4353 Samples=113140 Elapsed=2356.4s Speed=1.50 steps/s
+[E3] batch_gradient_000003528 DRAIN K=32
+[E3] batch_gradient_000003528 DONE drain_s=0.007 overrun=0
+[DDP] Step=3560 Loss=1.2249 Samples=113780 Elapsed=2360.3s Speed=1.51 steps/s
+[E3] batch_gradient_000003560 WAIT_READY 
+[E3] batch_gradient_000003560 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003560 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3580 Loss=1.6711 Samples=114420 Elapsed=2364.4s Speed=1.51 steps/s
+[E3] batch_gradient_000003560 DRAIN K=32
+[E3] batch_gradient_000003560 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000003592 WAIT_READY 
+[E3] batch_gradient_000003592 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003592 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3600 Loss=1.4875 Samples=115060 Elapsed=2368.4s Speed=1.52 steps/s
+[DDP] Step=3620 Loss=1.4660 Samples=115700 Elapsed=2372.3s Speed=1.53 steps/s
+[E3] batch_gradient_000003592 DRAIN K=32
+[E3] batch_gradient_000003592 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000003624 WAIT_READY 
+[E3] batch_gradient_000003624 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003624 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3640 Loss=1.7789 Samples=116340 Elapsed=2376.4s Speed=1.53 steps/s
+[E3] batch_gradient_000003624 DRAIN K=32
+[E3] batch_gradient_000003624 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000003656 WAIT_READY 
+[E3] batch_gradient_000003656 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003656 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3660 Loss=1.6715 Samples=116980 Elapsed=2380.4s Speed=1.54 steps/s
+[DDP] Step=3680 Loss=1.1503 Samples=117620 Elapsed=2384.3s Speed=1.54 steps/s
+[E3] batch_gradient_000003656 DRAIN K=32
+[E3] batch_gradient_000003656 DONE drain_s=0.005 overrun=0
+[E3] batch_gradient_000003688 WAIT_READY 
+[E3] batch_gradient_000003688 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003688 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3700 Loss=1.3976 Samples=118260 Elapsed=2388.4s Speed=1.55 steps/s
+[E3] batch_gradient_000003688 DRAIN K=32
+[E3] batch_gradient_000003688 DONE drain_s=0.008 overrun=0
+[DDP] Step=3720 Loss=1.6417 Samples=118900 Elapsed=2392.3s Speed=1.55 steps/s
+[E3] batch_gradient_000003720 WAIT_READY 
+[E3] batch_gradient_000003720 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003720 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3740 Loss=1.7400 Samples=119540 Elapsed=2396.3s Speed=1.56 steps/s
+[E3] batch_gradient_000003720 DRAIN K=32
+[E3] batch_gradient_000003720 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000003752 WAIT_READY 
+[E3] batch_gradient_000003752 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003752 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3760 Loss=1.7712 Samples=120180 Elapsed=2400.4s Speed=1.57 steps/s
+[DDP] Step=3780 Loss=1.8308 Samples=120820 Elapsed=2404.2s Speed=1.57 steps/s
+[E3] batch_gradient_000003752 DRAIN K=32
+[E3] batch_gradient_000003752 DONE drain_s=0.036 overrun=0
+[E3] batch_gradient_000003784 WAIT_READY 
+[E3] batch_gradient_000003784 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003784 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3800 Loss=1.3784 Samples=121460 Elapsed=2408.7s Speed=1.58 steps/s
+[E3] batch_gradient_000003784 DRAIN K=32
+[E3] batch_gradient_000003784 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000003816 WAIT_READY 
+[E3] batch_gradient_000003816 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003816 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3820 Loss=1.4061 Samples=122100 Elapsed=2412.7s Speed=1.58 steps/s
+[DDP] Step=3840 Loss=1.7707 Samples=122740 Elapsed=2416.6s Speed=1.59 steps/s
+[E3] batch_gradient_000003816 DRAIN K=32
+[E3] batch_gradient_000003816 DONE drain_s=0.005 overrun=0
+[E3] batch_gradient_000003848 WAIT_READY 
+[E3] batch_gradient_000003848 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003848 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3860 Loss=1.2964 Samples=123380 Elapsed=2420.7s Speed=1.59 steps/s
+[E3] batch_gradient_000003848 DRAIN K=32
+[E3] batch_gradient_000003848 DONE drain_s=0.056 overrun=0
+[DDP] Step=3880 Loss=1.4483 Samples=124006 Elapsed=2424.7s Speed=1.60 steps/s
+[E3] batch_gradient_000003880 WAIT_READY 
+[E3] batch_gradient_000003880 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003880 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3900 Loss=1.6379 Samples=124646 Elapsed=2428.7s Speed=1.61 steps/s
+[E3] batch_gradient_000003880 DRAIN K=32
+[E3] batch_gradient_000003880 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000003912 WAIT_READY 
+[E3] batch_gradient_000003912 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003912 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3920 Loss=1.6072 Samples=125286 Elapsed=2432.8s Speed=1.61 steps/s
+[DDP] Step=3940 Loss=1.4147 Samples=125926 Elapsed=2436.6s Speed=1.62 steps/s
+[E3] batch_gradient_000003912 DRAIN K=32
+[E3] batch_gradient_000003912 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000003944 WAIT_READY 
+[E3] batch_gradient_000003944 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003944 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3960 Loss=1.0913 Samples=126566 Elapsed=2440.8s Speed=1.62 steps/s
+[E3] batch_gradient_000003944 DRAIN K=32
+[E3] batch_gradient_000003944 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000003976 WAIT_READY 
+[E3] batch_gradient_000003976 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000003976 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=3980 Loss=1.2757 Samples=127206 Elapsed=2444.9s Speed=1.63 steps/s
+[DDP] Step=4000 Loss=1.5924 Samples=127846 Elapsed=2448.8s Speed=1.63 steps/s
+[E3] batch_gradient_000003976 DRAIN K=32
+[E3] batch_gradient_000003976 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004008 WAIT_READY 
+[E3] batch_gradient_000004008 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004008 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4020 Loss=1.3830 Samples=128486 Elapsed=2452.9s Speed=1.64 steps/s
+[E3] batch_gradient_000004008 DRAIN K=32
+[E3] batch_gradient_000004008 DONE drain_s=0.006 overrun=0
+[DDP] Step=4040 Loss=0.9413 Samples=129126 Elapsed=2456.8s Speed=1.64 steps/s
+[E3] batch_gradient_000004040 WAIT_READY 
+[E3] batch_gradient_000004040 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004040 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4060 Loss=1.6010 Samples=129766 Elapsed=2460.9s Speed=1.65 steps/s
+[E3] batch_gradient_000004040 DRAIN K=32
+[E3] batch_gradient_000004040 DONE drain_s=0.005 overrun=0
+[E3] batch_gradient_000004072 WAIT_READY 
+[E3] batch_gradient_000004072 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004072 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4080 Loss=1.5806 Samples=130406 Elapsed=2464.9s Speed=1.66 steps/s
+[DDP] Step=4100 Loss=1.8089 Samples=131046 Elapsed=2468.8s Speed=1.66 steps/s
+[E3] batch_gradient_000004072 DRAIN K=32
+[E3] batch_gradient_000004072 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004104 WAIT_READY 
+[E3] batch_gradient_000004104 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004104 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4120 Loss=1.8969 Samples=131686 Elapsed=2472.9s Speed=1.67 steps/s
+[E3] batch_gradient_000004104 DRAIN K=32
+[E3] batch_gradient_000004104 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004136 WAIT_READY 
+[E3] batch_gradient_000004136 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004136 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4140 Loss=1.3169 Samples=132326 Elapsed=2477.0s Speed=1.67 steps/s
+[DDP] Step=4160 Loss=1.6093 Samples=132966 Elapsed=2480.9s Speed=1.68 steps/s
+[E3] batch_gradient_000004136 DRAIN K=32
+[E3] batch_gradient_000004136 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004168 WAIT_READY 
+[E3] batch_gradient_000004168 PREPARE K=29 estimate=0.75
+[E3] batch_gradient_000004168 GRANT K=29 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4180 Loss=1.3432 Samples=133606 Elapsed=2484.9s Speed=1.68 steps/s
+[E3] batch_gradient_000004168 DRAIN K=29
+[E3] batch_gradient_000004168 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004197 WAIT_READY 
+[E3] batch_gradient_000004197 PREPARE K=21 estimate=0.75
+[E3] batch_gradient_000004197 GRANT K=21 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4200 Loss=1.7930 Samples=134246 Elapsed=2489.0s Speed=1.69 steps/s
+[E3] batch_gradient_000004197 DRAIN K=21
+[E3] batch_gradient_000004197 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004218 WAIT_READY 
+[E3] batch_gradient_000004218 PREPARE K=16 estimate=0.75
+[E3] batch_gradient_000004218 GRANT K=16 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4220 Loss=1.4056 Samples=134886 Elapsed=2493.1s Speed=1.69 steps/s
+[E3] batch_gradient_000004218 DRAIN K=16
+[E3] batch_gradient_000004218 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004234 WAIT_READY 
+[E3] batch_gradient_000004234 PREPARE K=11 estimate=0.75
+[E3] batch_gradient_000004234 GRANT K=11 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4240 Loss=1.5663 Samples=135512 Elapsed=2497.2s Speed=1.70 steps/s
+[E3] batch_gradient_000004234 DRAIN K=11
+[E3] batch_gradient_000004234 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000004245 WAIT_READY 
+[E3] batch_gradient_000004245 PREPARE K=8 estimate=0.75
+[E3] batch_gradient_000004245 GRANT K=8 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[E3] batch_gradient_000004245 DRAIN K=8
+[E3] batch_gradient_000004245 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000004253 WAIT_READY 
+[E3] batch_gradient_000004253 PREPARE K=6 estimate=0.75
+[E3] batch_gradient_000004253 GRANT K=6 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[E3] batch_gradient_000004253 DRAIN K=6
+[E3] batch_gradient_000004253 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000004259 WAIT_READY 
+[E3] batch_gradient_000004259 PREPARE K=4 estimate=0.75
+[E3] batch_gradient_000004259 GRANT K=4 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[DDP] Step=4260 Loss=1.2363 Samples=136152 Elapsed=2501.6s Speed=1.70 steps/s
+[E3] batch_gradient_000004259 DRAIN K=4
+[E3] batch_gradient_000004259 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000004263 WAIT_READY 
+[E3] batch_gradient_000004263 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000004263 GRANT K=3 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[E3] batch_gradient_000004263 DRAIN K=3
+[E3] batch_gradient_000004263 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004266 WAIT_READY 
+[E3] batch_gradient_000004266 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000004266 GRANT K=2 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[E3] batch_gradient_000004266 DRAIN K=2
+[E3] batch_gradient_000004266 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000004268 WAIT_READY 
+[E3] batch_gradient_000004268 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000004268 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[E3] batch_gradient_000004268 DRAIN K=1
+[E3] batch_gradient_000004268 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000004269 WAIT_READY 
+[E3] batch_gradient_000004269 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000004269 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=2520.0
+[E3] batch_gradient_000004269 DRAIN K=1
+[E3] batch_gradient_000004269 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000004270 WAIT_READY 
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2504.16 next_start=3180.25 wait_s=676.09 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2534.2 next_start=3180.25 wait_s=646.05 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2564.25 next_start=3180.25 wait_s=616.0 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2594.34 next_start=3180.25 wait_s=585.91 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2624.39 next_start=3180.25 wait_s=555.86 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2654.44 next_start=3180.25 wait_s=525.81 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2684.53 next_start=3180.25 wait_s=495.72 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2714.62 next_start=3180.25 wait_s=465.63 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2744.67 next_start=3180.25 wait_s=435.58 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2774.76 next_start=3180.25 wait_s=405.49 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2804.79 next_start=3180.25 wait_s=375.46 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2834.84 next_start=3180.25 wait_s=345.41 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2864.88 next_start=3180.25 wait_s=315.37 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2894.93 next_start=3180.25 wait_s=285.32 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2924.97 next_start=3180.25 wait_s=255.28 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2955.02 next_start=3180.25 wait_s=225.23 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=2985.03 next_start=3180.25 wait_s=195.22 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=3015.06 next_start=3180.25 wait_s=165.19 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=3045.12 next_start=3180.25 wait_s=135.13 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=3075.22 next_start=3180.25 wait_s=105.03 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=3105.26 next_start=3180.25 wait_s=74.99 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=3135.29 next_start=3180.25 wait_s=44.96 estimate=0.75
+[E3] batch_gradient_000004270 WAIT_CONTACT elapsed=3165.31 next_start=3180.25 wait_s=14.94 estimate=0.75
+[E3] batch_gradient_000004270 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000004270 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[E3] batch_gradient_000004270 DRAIN K=1
+[E3] batch_gradient_000004270 DONE drain_s=0.003 overrun=0
+[E3] batch_gradient_000004271 WAIT_READY 
+[E3] batch_gradient_000004271 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004271 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4280 Loss=1.2009 Samples=136792 Elapsed=3182.9s Speed=1.34 steps/s
+[DDP] Step=4300 Loss=1.7019 Samples=137432 Elapsed=3186.7s Speed=1.35 steps/s
+[E3] batch_gradient_000004271 DRAIN K=32
+[E3] batch_gradient_000004271 DONE drain_s=0.058 overrun=0
+[E3] batch_gradient_000004303 WAIT_READY 
+[E3] batch_gradient_000004303 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004303 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4320 Loss=1.4614 Samples=138072 Elapsed=3190.7s Speed=1.35 steps/s
+[E3] batch_gradient_000004303 DRAIN K=32
+[E3] batch_gradient_000004303 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004335 WAIT_READY 
+[E3] batch_gradient_000004335 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004335 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4340 Loss=1.2402 Samples=138712 Elapsed=3194.6s Speed=1.36 steps/s
+[DDP] Step=4360 Loss=1.6046 Samples=139352 Elapsed=3198.4s Speed=1.36 steps/s
+[E3] batch_gradient_000004335 DRAIN K=32
+[E3] batch_gradient_000004335 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000004367 WAIT_READY 
+[E3] batch_gradient_000004367 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004367 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4380 Loss=1.3383 Samples=139992 Elapsed=3202.4s Speed=1.37 steps/s
+[E3] batch_gradient_000004367 DRAIN K=32
+[E3] batch_gradient_000004367 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000004399 WAIT_READY 
+[E3] batch_gradient_000004399 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004399 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4400 Loss=1.5815 Samples=140632 Elapsed=3206.3s Speed=1.37 steps/s
+[DDP] Step=4420 Loss=1.3310 Samples=141272 Elapsed=3210.1s Speed=1.38 steps/s
+[E3] batch_gradient_000004399 DRAIN K=32
+[E3] batch_gradient_000004399 DONE drain_s=0.021 overrun=0
+[E3] batch_gradient_000004431 WAIT_READY 
+[E3] batch_gradient_000004431 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004431 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4440 Loss=1.2806 Samples=141912 Elapsed=3214.1s Speed=1.38 steps/s
+[DDP] Step=4460 Loss=1.5351 Samples=142552 Elapsed=3217.9s Speed=1.39 steps/s
+[E3] batch_gradient_000004431 DRAIN K=32
+[E3] batch_gradient_000004431 DONE drain_s=0.23 overrun=0
+[E3] batch_gradient_000004463 WAIT_READY 
+[E3] batch_gradient_000004463 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004463 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4480 Loss=0.9311 Samples=143192 Elapsed=3222.2s Speed=1.39 steps/s
+[E3] batch_gradient_000004463 DRAIN K=32
+[E3] batch_gradient_000004463 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000004495 WAIT_READY 
+[E3] batch_gradient_000004495 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004495 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4500 Loss=1.5878 Samples=143832 Elapsed=3226.1s Speed=1.39 steps/s
+[DDP] Step=4520 Loss=1.1760 Samples=144472 Elapsed=3229.9s Speed=1.40 steps/s
+[E3] batch_gradient_000004495 DRAIN K=32
+[E3] batch_gradient_000004495 DONE drain_s=0.015 overrun=0
+[E3] batch_gradient_000004527 WAIT_READY 
+[E3] batch_gradient_000004527 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004527 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4540 Loss=1.1121 Samples=145112 Elapsed=3233.8s Speed=1.40 steps/s
+[E3] batch_gradient_000004527 DRAIN K=32
+[E3] batch_gradient_000004527 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000004559 WAIT_READY 
+[E3] batch_gradient_000004559 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004559 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4560 Loss=1.4502 Samples=145752 Elapsed=3237.8s Speed=1.41 steps/s
+[DDP] Step=4580 Loss=1.3827 Samples=146378 Elapsed=3241.6s Speed=1.41 steps/s
+[E3] batch_gradient_000004559 DRAIN K=32
+[E3] batch_gradient_000004559 DONE drain_s=0.016 overrun=0
+[E3] batch_gradient_000004591 WAIT_READY 
+[E3] batch_gradient_000004591 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004591 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4600 Loss=1.2409 Samples=147018 Elapsed=3245.5s Speed=1.42 steps/s
+[DDP] Step=4620 Loss=1.5297 Samples=147658 Elapsed=3249.3s Speed=1.42 steps/s
+[E3] batch_gradient_000004591 DRAIN K=32
+[E3] batch_gradient_000004591 DONE drain_s=0.023 overrun=0
+[E3] batch_gradient_000004623 WAIT_READY 
+[E3] batch_gradient_000004623 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004623 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4640 Loss=0.8256 Samples=148298 Elapsed=3253.4s Speed=1.43 steps/s
+[E3] batch_gradient_000004623 DRAIN K=32
+[E3] batch_gradient_000004623 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000004655 WAIT_READY 
+[E3] batch_gradient_000004655 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004655 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4660 Loss=1.4037 Samples=148938 Elapsed=3257.3s Speed=1.43 steps/s
+[DDP] Step=4680 Loss=1.3104 Samples=149578 Elapsed=3261.1s Speed=1.44 steps/s
+[E3] batch_gradient_000004655 DRAIN K=32
+[E3] batch_gradient_000004655 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000004687 WAIT_READY 
+[E3] batch_gradient_000004687 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004687 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4700 Loss=1.0214 Samples=150218 Elapsed=3265.0s Speed=1.44 steps/s
+[E3] batch_gradient_000004687 DRAIN K=32
+[E3] batch_gradient_000004687 DONE drain_s=0.043 overrun=0
+[E3] batch_gradient_000004719 WAIT_READY 
+[E3] batch_gradient_000004719 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004719 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4720 Loss=1.5257 Samples=150858 Elapsed=3269.0s Speed=1.44 steps/s
+[DDP] Step=4740 Loss=1.2145 Samples=151498 Elapsed=3272.8s Speed=1.45 steps/s
+[E3] batch_gradient_000004719 DRAIN K=32
+[E3] batch_gradient_000004719 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004751 WAIT_READY 
+[E3] batch_gradient_000004751 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004751 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4760 Loss=1.1943 Samples=152138 Elapsed=3276.7s Speed=1.45 steps/s
+[DDP] Step=4780 Loss=0.9496 Samples=152778 Elapsed=3280.5s Speed=1.46 steps/s
+[E3] batch_gradient_000004751 DRAIN K=32
+[E3] batch_gradient_000004751 DONE drain_s=0.049 overrun=0
+[E3] batch_gradient_000004783 WAIT_READY 
+[E3] batch_gradient_000004783 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004783 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4800 Loss=1.2053 Samples=153418 Elapsed=3284.5s Speed=1.46 steps/s
+[E3] batch_gradient_000004783 DRAIN K=32
+[E3] batch_gradient_000004783 DONE drain_s=0.053 overrun=0
+[E3] batch_gradient_000004815 WAIT_READY 
+[E3] batch_gradient_000004815 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004815 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4820 Loss=1.3828 Samples=154058 Elapsed=3288.4s Speed=1.47 steps/s
+[DDP] Step=4840 Loss=1.1970 Samples=154698 Elapsed=3292.2s Speed=1.47 steps/s
+[E3] batch_gradient_000004815 DRAIN K=32
+[E3] batch_gradient_000004815 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000004847 WAIT_READY 
+[E3] batch_gradient_000004847 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004847 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4860 Loss=1.2331 Samples=155338 Elapsed=3296.2s Speed=1.47 steps/s
+[E3] batch_gradient_000004847 DRAIN K=32
+[E3] batch_gradient_000004847 DONE drain_s=0.065 overrun=0
+[E3] batch_gradient_000004879 WAIT_READY 
+[E3] batch_gradient_000004879 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004879 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4880 Loss=1.5736 Samples=155978 Elapsed=3300.2s Speed=1.48 steps/s
+[DDP] Step=4900 Loss=1.6464 Samples=156618 Elapsed=3304.0s Speed=1.48 steps/s
+[E3] batch_gradient_000004879 DRAIN K=32
+[E3] batch_gradient_000004879 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000004911 WAIT_READY 
+[E3] batch_gradient_000004911 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004911 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4920 Loss=0.8012 Samples=157258 Elapsed=3308.4s Speed=1.49 steps/s
+[DDP] Step=4940 Loss=1.4610 Samples=157884 Elapsed=3312.2s Speed=1.49 steps/s
+[E3] batch_gradient_000004911 DRAIN K=32
+[E3] batch_gradient_000004911 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000004943 WAIT_READY 
+[E3] batch_gradient_000004943 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004943 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4960 Loss=1.1407 Samples=158524 Elapsed=3316.1s Speed=1.50 steps/s
+[E3] batch_gradient_000004943 DRAIN K=32
+[E3] batch_gradient_000004943 DONE drain_s=0.018 overrun=0
+[E3] batch_gradient_000004975 WAIT_READY 
+[E3] batch_gradient_000004975 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000004975 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=4980 Loss=0.9472 Samples=159164 Elapsed=3320.1s Speed=1.50 steps/s
+[DDP] Step=5000 Loss=1.5309 Samples=159804 Elapsed=3323.9s Speed=1.50 steps/s
+[E3] batch_gradient_000004975 DRAIN K=32
+[E3] batch_gradient_000004975 DONE drain_s=0.031 overrun=0
+[E3] batch_gradient_000005007 WAIT_READY 
+[E3] batch_gradient_000005007 PREPARE K=25 estimate=0.75
+[E3] batch_gradient_000005007 GRANT K=25 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=5020 Loss=1.6343 Samples=160444 Elapsed=3327.9s Speed=1.51 steps/s
+[E3] batch_gradient_000005007 DRAIN K=25
+[E3] batch_gradient_000005007 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000005032 WAIT_READY 
+[E3] batch_gradient_000005032 PREPARE K=19 estimate=0.75
+[E3] batch_gradient_000005032 GRANT K=19 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=5040 Loss=1.2111 Samples=161084 Elapsed=3331.8s Speed=1.51 steps/s
+[E3] batch_gradient_000005032 DRAIN K=19
+[E3] batch_gradient_000005032 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000005051 WAIT_READY 
+[E3] batch_gradient_000005051 PREPARE K=14 estimate=0.75
+[E3] batch_gradient_000005051 GRANT K=14 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=5060 Loss=1.4610 Samples=161724 Elapsed=3335.8s Speed=1.52 steps/s
+[E3] batch_gradient_000005051 DRAIN K=14
+[E3] batch_gradient_000005051 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000005065 WAIT_READY 
+[E3] batch_gradient_000005065 PREPARE K=10 estimate=0.75
+[E3] batch_gradient_000005065 GRANT K=10 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[E3] batch_gradient_000005065 DRAIN K=10
+[E3] batch_gradient_000005065 DONE drain_s=0.017 overrun=0
+[E3] batch_gradient_000005075 WAIT_READY 
+[E3] batch_gradient_000005075 PREPARE K=7 estimate=0.75
+[E3] batch_gradient_000005075 GRANT K=7 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[DDP] Step=5080 Loss=1.5450 Samples=162364 Elapsed=3340.0s Speed=1.52 steps/s
+[E3] batch_gradient_000005075 DRAIN K=7
+[E3] batch_gradient_000005075 DONE drain_s=0.02 overrun=0
+[E3] batch_gradient_000005082 WAIT_READY 
+[E3] batch_gradient_000005082 PREPARE K=5 estimate=0.75
+[E3] batch_gradient_000005082 GRANT K=5 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[E3] batch_gradient_000005082 DRAIN K=5
+[E3] batch_gradient_000005082 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000005087 WAIT_READY 
+[E3] batch_gradient_000005087 PREPARE K=4 estimate=0.75
+[E3] batch_gradient_000005087 GRANT K=4 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[E3] batch_gradient_000005087 DRAIN K=4
+[E3] batch_gradient_000005087 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000005091 WAIT_READY 
+[E3] batch_gradient_000005091 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000005091 GRANT K=3 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[E3] batch_gradient_000005091 DRAIN K=3
+[E3] batch_gradient_000005091 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000005094 WAIT_READY 
+[E3] batch_gradient_000005094 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000005094 GRANT K=2 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[E3] batch_gradient_000005094 DRAIN K=2
+[E3] batch_gradient_000005094 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000005096 WAIT_READY 
+[E3] batch_gradient_000005096 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000005096 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=3360.0
+[E3] batch_gradient_000005096 DRAIN K=1
+[E3] batch_gradient_000005096 DONE drain_s=0.15 overrun=0
+[E3] batch_gradient_000005097 WAIT_READY 
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3344.11 next_start=3600.25 wait_s=256.14 estimate=0.75
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3374.15 next_start=3600.25 wait_s=226.1 estimate=0.75
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3404.21 next_start=3600.25 wait_s=196.04 estimate=0.75
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3434.25 next_start=3600.25 wait_s=166.0 estimate=0.75
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3464.29 next_start=3600.25 wait_s=135.96 estimate=0.75
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3494.31 next_start=3600.25 wait_s=105.94 estimate=0.75
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3524.39 next_start=3600.25 wait_s=75.86 estimate=0.75
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3554.47 next_start=3600.25 wait_s=45.78 estimate=0.75
+[E3] batch_gradient_000005097 WAIT_CONTACT elapsed=3584.57 next_start=3600.25 wait_s=15.68 estimate=0.75
+[E3] batch_gradient_000005097 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000005097 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[E3] batch_gradient_000005097 DRAIN K=1
+[E3] batch_gradient_000005097 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000005098 WAIT_READY 
+[E3] batch_gradient_000005098 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005098 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5100 Loss=1.4947 Samples=163004 Elapsed=3601.6s Speed=1.42 steps/s
+[DDP] Step=5120 Loss=1.1349 Samples=163644 Elapsed=3605.5s Speed=1.42 steps/s
+[E3] batch_gradient_000005098 DRAIN K=32
+[E3] batch_gradient_000005098 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000005130 WAIT_READY 
+[E3] batch_gradient_000005130 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005130 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5140 Loss=1.8053 Samples=164284 Elapsed=3609.5s Speed=1.42 steps/s
+[DDP] Step=5160 Loss=1.4926 Samples=164924 Elapsed=3613.3s Speed=1.43 steps/s
+[E3] batch_gradient_000005130 DRAIN K=32
+[E3] batch_gradient_000005130 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000005162 WAIT_READY 
+[E3] batch_gradient_000005162 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005162 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5180 Loss=1.3599 Samples=165564 Elapsed=3617.3s Speed=1.43 steps/s
+[E3] batch_gradient_000005162 DRAIN K=32
+[E3] batch_gradient_000005162 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000005194 WAIT_READY 
+[E3] batch_gradient_000005194 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005194 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5200 Loss=1.2842 Samples=166204 Elapsed=3621.3s Speed=1.44 steps/s
+[DDP] Step=5220 Loss=1.5862 Samples=166844 Elapsed=3625.1s Speed=1.44 steps/s
+[E3] batch_gradient_000005194 DRAIN K=32
+[E3] batch_gradient_000005194 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000005226 WAIT_READY 
+[E3] batch_gradient_000005226 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005226 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5240 Loss=1.6790 Samples=167484 Elapsed=3629.1s Speed=1.44 steps/s
+[E3] batch_gradient_000005226 DRAIN K=32
+[E3] batch_gradient_000005226 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000005258 WAIT_READY 
+[E3] batch_gradient_000005258 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005258 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5260 Loss=1.3571 Samples=168124 Elapsed=3633.1s Speed=1.45 steps/s
+[DDP] Step=5280 Loss=1.3701 Samples=168750 Elapsed=3636.9s Speed=1.45 steps/s
+[E3] batch_gradient_000005258 DRAIN K=32
+[E3] batch_gradient_000005258 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000005290 WAIT_READY 
+[E3] batch_gradient_000005290 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005290 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5300 Loss=1.1746 Samples=169390 Elapsed=3640.9s Speed=1.46 steps/s
+[DDP] Step=5320 Loss=1.3397 Samples=170030 Elapsed=3644.8s Speed=1.46 steps/s
+[E3] batch_gradient_000005290 DRAIN K=32
+[E3] batch_gradient_000005290 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000005322 WAIT_READY 
+[E3] batch_gradient_000005322 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005322 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5340 Loss=1.4842 Samples=170670 Elapsed=3648.8s Speed=1.46 steps/s
+[E3] batch_gradient_000005322 DRAIN K=32
+[E3] batch_gradient_000005322 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000005354 WAIT_READY 
+[E3] batch_gradient_000005354 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005354 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5360 Loss=1.2470 Samples=171310 Elapsed=3652.8s Speed=1.47 steps/s
+[DDP] Step=5380 Loss=1.5324 Samples=171950 Elapsed=3656.6s Speed=1.47 steps/s
+[E3] batch_gradient_000005354 DRAIN K=32
+[E3] batch_gradient_000005354 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000005386 WAIT_READY 
+[E3] batch_gradient_000005386 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005386 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5400 Loss=0.8363 Samples=172590 Elapsed=3660.6s Speed=1.48 steps/s
+[E3] batch_gradient_000005386 DRAIN K=32
+[E3] batch_gradient_000005386 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000005418 WAIT_READY 
+[E3] batch_gradient_000005418 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005418 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5420 Loss=1.4345 Samples=173230 Elapsed=3664.6s Speed=1.48 steps/s
+[DDP] Step=5440 Loss=1.1379 Samples=173870 Elapsed=3668.4s Speed=1.48 steps/s
+[E3] batch_gradient_000005418 DRAIN K=32
+[E3] batch_gradient_000005418 DONE drain_s=0.004 overrun=0
+[E3] batch_gradient_000005450 WAIT_READY 
+[E3] batch_gradient_000005450 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005450 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5460 Loss=1.3911 Samples=174510 Elapsed=3672.4s Speed=1.49 steps/s
+[DDP] Step=5480 Loss=1.3011 Samples=175150 Elapsed=3676.3s Speed=1.49 steps/s
+[E3] batch_gradient_000005450 DRAIN K=32
+[E3] batch_gradient_000005450 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000005482 WAIT_READY 
+[E3] batch_gradient_000005482 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005482 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5500 Loss=1.1922 Samples=175790 Elapsed=3680.2s Speed=1.49 steps/s
+[E3] batch_gradient_000005482 DRAIN K=32
+[E3] batch_gradient_000005482 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000005514 WAIT_READY 
+[E3] batch_gradient_000005514 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005514 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5520 Loss=2.3086 Samples=176430 Elapsed=3684.2s Speed=1.50 steps/s
+[DDP] Step=5540 Loss=1.4288 Samples=177070 Elapsed=3688.1s Speed=1.50 steps/s
+[E3] batch_gradient_000005514 DRAIN K=32
+[E3] batch_gradient_000005514 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000005546 WAIT_READY 
+[E3] batch_gradient_000005546 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005546 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5560 Loss=1.4696 Samples=177710 Elapsed=3692.1s Speed=1.51 steps/s
+[E3] batch_gradient_000005546 DRAIN K=32
+[E3] batch_gradient_000005546 DONE drain_s=0.004 overrun=0
+[E3] batch_gradient_000005578 WAIT_READY 
+[E3] batch_gradient_000005578 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005578 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5580 Loss=1.4447 Samples=178350 Elapsed=3696.0s Speed=1.51 steps/s
+[DDP] Step=5600 Loss=1.3125 Samples=178990 Elapsed=3699.9s Speed=1.51 steps/s
+[E3] batch_gradient_000005578 DRAIN K=32
+[E3] batch_gradient_000005578 DONE drain_s=0.004 overrun=0
+[E3] batch_gradient_000005610 WAIT_READY 
+[E3] batch_gradient_000005610 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005610 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5620 Loss=1.6192 Samples=179630 Elapsed=3703.9s Speed=1.52 steps/s
+[DDP] Step=5640 Loss=1.5970 Samples=180256 Elapsed=3707.7s Speed=1.52 steps/s
+[E3] batch_gradient_000005610 DRAIN K=32
+[E3] batch_gradient_000005610 DONE drain_s=0.004 overrun=0
+[E3] batch_gradient_000005642 WAIT_READY 
+[E3] batch_gradient_000005642 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005642 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5660 Loss=1.1464 Samples=180896 Elapsed=3711.7s Speed=1.52 steps/s
+[E3] batch_gradient_000005642 DRAIN K=32
+[E3] batch_gradient_000005642 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000005674 WAIT_READY 
+[E3] batch_gradient_000005674 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005674 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5680 Loss=1.0247 Samples=181536 Elapsed=3715.8s Speed=1.53 steps/s
+[DDP] Step=5700 Loss=1.1191 Samples=182176 Elapsed=3719.6s Speed=1.53 steps/s
+[E3] batch_gradient_000005674 DRAIN K=32
+[E3] batch_gradient_000005674 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000005706 WAIT_READY 
+[E3] batch_gradient_000005706 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005706 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5720 Loss=1.0936 Samples=182816 Elapsed=3723.6s Speed=1.54 steps/s
+[E3] batch_gradient_000005706 DRAIN K=32
+[E3] batch_gradient_000005706 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000005738 WAIT_READY 
+[E3] batch_gradient_000005738 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005738 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5740 Loss=1.2029 Samples=183456 Elapsed=3727.6s Speed=1.54 steps/s
+[DDP] Step=5760 Loss=1.6828 Samples=184096 Elapsed=3731.5s Speed=1.54 steps/s
+[E3] batch_gradient_000005738 DRAIN K=32
+[E3] batch_gradient_000005738 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000005770 WAIT_READY 
+[E3] batch_gradient_000005770 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005770 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5780 Loss=1.3277 Samples=184736 Elapsed=3735.4s Speed=1.55 steps/s
+[DDP] Step=5800 Loss=1.6613 Samples=185376 Elapsed=3739.3s Speed=1.55 steps/s
+[E3] batch_gradient_000005770 DRAIN K=32
+[E3] batch_gradient_000005770 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000005802 WAIT_READY 
+[E3] batch_gradient_000005802 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005802 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5820 Loss=1.5554 Samples=186016 Elapsed=3743.2s Speed=1.55 steps/s
+[E3] batch_gradient_000005802 DRAIN K=32
+[E3] batch_gradient_000005802 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000005834 WAIT_READY 
+[E3] batch_gradient_000005834 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005834 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5840 Loss=1.1499 Samples=186656 Elapsed=3747.2s Speed=1.56 steps/s
+[DDP] Step=5860 Loss=0.7131 Samples=187296 Elapsed=3751.0s Speed=1.56 steps/s
+[E3] batch_gradient_000005834 DRAIN K=32
+[E3] batch_gradient_000005834 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000005866 WAIT_READY 
+[E3] batch_gradient_000005866 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005866 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5880 Loss=0.8956 Samples=187936 Elapsed=3755.0s Speed=1.57 steps/s
+[E3] batch_gradient_000005866 DRAIN K=32
+[E3] batch_gradient_000005866 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000005898 WAIT_READY 
+[E3] batch_gradient_000005898 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005898 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5900 Loss=1.9148 Samples=188576 Elapsed=3759.0s Speed=1.57 steps/s
+[DDP] Step=5920 Loss=1.2921 Samples=189216 Elapsed=3762.8s Speed=1.57 steps/s
+[E3] batch_gradient_000005898 DRAIN K=32
+[E3] batch_gradient_000005898 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000005930 WAIT_READY 
+[E3] batch_gradient_000005930 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005930 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5940 Loss=1.5323 Samples=189856 Elapsed=3766.8s Speed=1.58 steps/s
+[DDP] Step=5960 Loss=1.1981 Samples=190496 Elapsed=3770.6s Speed=1.58 steps/s
+[E3] batch_gradient_000005930 DRAIN K=32
+[E3] batch_gradient_000005930 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000005962 WAIT_READY 
+[E3] batch_gradient_000005962 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005962 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=5980 Loss=1.2804 Samples=191136 Elapsed=3774.6s Speed=1.58 steps/s
+[E3] batch_gradient_000005962 DRAIN K=32
+[E3] batch_gradient_000005962 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000005994 WAIT_READY 
+[E3] batch_gradient_000005994 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000005994 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6000 Loss=1.1164 Samples=191762 Elapsed=3778.6s Speed=1.59 steps/s
+[DDP] Step=6020 Loss=1.2362 Samples=192402 Elapsed=3782.4s Speed=1.59 steps/s
+[E3] batch_gradient_000005994 DRAIN K=32
+[E3] batch_gradient_000005994 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000006026 WAIT_READY 
+[E3] batch_gradient_000006026 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006026 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6040 Loss=1.0523 Samples=193042 Elapsed=3786.4s Speed=1.60 steps/s
+[E3] batch_gradient_000006026 DRAIN K=32
+[E3] batch_gradient_000006026 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000006058 WAIT_READY 
+[E3] batch_gradient_000006058 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006058 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6060 Loss=1.1941 Samples=193682 Elapsed=3790.3s Speed=1.60 steps/s
+[DDP] Step=6080 Loss=1.4213 Samples=194322 Elapsed=3794.2s Speed=1.60 steps/s
+[E3] batch_gradient_000006058 DRAIN K=32
+[E3] batch_gradient_000006058 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000006090 WAIT_READY 
+[E3] batch_gradient_000006090 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006090 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6100 Loss=1.1674 Samples=194962 Elapsed=3798.1s Speed=1.61 steps/s
+[DDP] Step=6120 Loss=0.8631 Samples=195602 Elapsed=3802.0s Speed=1.61 steps/s
+[E3] batch_gradient_000006090 DRAIN K=32
+[E3] batch_gradient_000006090 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000006122 WAIT_READY 
+[E3] batch_gradient_000006122 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006122 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6140 Loss=1.1291 Samples=196242 Elapsed=3805.9s Speed=1.61 steps/s
+[E3] batch_gradient_000006122 DRAIN K=32
+[E3] batch_gradient_000006122 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000006154 WAIT_READY 
+[E3] batch_gradient_000006154 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006154 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6160 Loss=1.4038 Samples=196882 Elapsed=3809.9s Speed=1.62 steps/s
+[DDP] Step=6180 Loss=1.7556 Samples=197522 Elapsed=3813.7s Speed=1.62 steps/s
+[E3] batch_gradient_000006154 DRAIN K=32
+[E3] batch_gradient_000006154 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000006186 WAIT_READY 
+[E3] batch_gradient_000006186 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006186 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6200 Loss=1.2556 Samples=198162 Elapsed=3817.7s Speed=1.62 steps/s
+[E3] batch_gradient_000006186 DRAIN K=32
+[E3] batch_gradient_000006186 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000006218 WAIT_READY 
+[E3] batch_gradient_000006218 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006218 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6220 Loss=1.2786 Samples=198802 Elapsed=3821.7s Speed=1.63 steps/s
+[DDP] Step=6240 Loss=1.1389 Samples=199442 Elapsed=3825.5s Speed=1.63 steps/s
+[E3] batch_gradient_000006218 DRAIN K=32
+[E3] batch_gradient_000006218 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000006250 WAIT_READY 
+[E3] batch_gradient_000006250 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006250 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6260 Loss=1.7502 Samples=200082 Elapsed=3829.5s Speed=1.63 steps/s
+[DDP] Step=6280 Loss=1.0002 Samples=200722 Elapsed=3833.3s Speed=1.64 steps/s
+[E3] batch_gradient_000006250 DRAIN K=32
+[E3] batch_gradient_000006250 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000006282 WAIT_READY 
+[E3] batch_gradient_000006282 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006282 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6300 Loss=1.7405 Samples=201362 Elapsed=3837.3s Speed=1.64 steps/s
+[E3] batch_gradient_000006282 DRAIN K=32
+[E3] batch_gradient_000006282 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000006314 WAIT_READY 
+[E3] batch_gradient_000006314 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006314 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6320 Loss=1.0524 Samples=202002 Elapsed=3841.3s Speed=1.65 steps/s
+[DDP] Step=6340 Loss=1.2009 Samples=202628 Elapsed=3845.1s Speed=1.65 steps/s
+[E3] batch_gradient_000006314 DRAIN K=32
+[E3] batch_gradient_000006314 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000006346 WAIT_READY 
+[E3] batch_gradient_000006346 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006346 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6360 Loss=0.8316 Samples=203268 Elapsed=3849.1s Speed=1.65 steps/s
+[E3] batch_gradient_000006346 DRAIN K=32
+[E3] batch_gradient_000006346 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000006378 WAIT_READY 
+[E3] batch_gradient_000006378 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006378 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6380 Loss=1.2259 Samples=203908 Elapsed=3853.0s Speed=1.66 steps/s
+[DDP] Step=6400 Loss=1.4639 Samples=204548 Elapsed=3856.9s Speed=1.66 steps/s
+[E3] batch_gradient_000006378 DRAIN K=32
+[E3] batch_gradient_000006378 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000006410 WAIT_READY 
+[E3] batch_gradient_000006410 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006410 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6420 Loss=1.2085 Samples=205188 Elapsed=3860.9s Speed=1.66 steps/s
+[DDP] Step=6440 Loss=1.2514 Samples=205828 Elapsed=3864.7s Speed=1.67 steps/s
+[E3] batch_gradient_000006410 DRAIN K=32
+[E3] batch_gradient_000006410 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000006442 WAIT_READY 
+[E3] batch_gradient_000006442 PREPARE K=26 estimate=0.75
+[E3] batch_gradient_000006442 GRANT K=26 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6460 Loss=1.5848 Samples=206468 Elapsed=3868.7s Speed=1.67 steps/s
+[E3] batch_gradient_000006442 DRAIN K=26
+[E3] batch_gradient_000006442 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000006468 WAIT_READY 
+[E3] batch_gradient_000006468 PREPARE K=19 estimate=0.75
+[E3] batch_gradient_000006468 GRANT K=19 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6480 Loss=1.2102 Samples=207108 Elapsed=3872.7s Speed=1.67 steps/s
+[E3] batch_gradient_000006468 DRAIN K=19
+[E3] batch_gradient_000006468 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000006487 WAIT_READY 
+[E3] batch_gradient_000006487 PREPARE K=14 estimate=0.75
+[E3] batch_gradient_000006487 GRANT K=14 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6500 Loss=1.5648 Samples=207748 Elapsed=3876.7s Speed=1.68 steps/s
+[E3] batch_gradient_000006487 DRAIN K=14
+[E3] batch_gradient_000006487 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000006501 WAIT_READY 
+[E3] batch_gradient_000006501 PREPARE K=10 estimate=0.75
+[E3] batch_gradient_000006501 GRANT K=10 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[E3] batch_gradient_000006501 DRAIN K=10
+[E3] batch_gradient_000006501 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000006511 WAIT_READY 
+[E3] batch_gradient_000006511 PREPARE K=7 estimate=0.75
+[E3] batch_gradient_000006511 GRANT K=7 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[E3] batch_gradient_000006511 DRAIN K=7
+[E3] batch_gradient_000006511 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000006518 WAIT_READY 
+[E3] batch_gradient_000006518 PREPARE K=5 estimate=0.75
+[E3] batch_gradient_000006518 GRANT K=5 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[DDP] Step=6520 Loss=0.9521 Samples=208388 Elapsed=3880.9s Speed=1.68 steps/s
+[E3] batch_gradient_000006518 DRAIN K=5
+[E3] batch_gradient_000006518 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000006523 WAIT_READY 
+[E3] batch_gradient_000006523 PREPARE K=4 estimate=0.75
+[E3] batch_gradient_000006523 GRANT K=4 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[E3] batch_gradient_000006523 DRAIN K=4
+[E3] batch_gradient_000006523 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000006527 WAIT_READY 
+[E3] batch_gradient_000006527 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000006527 GRANT K=3 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[E3] batch_gradient_000006527 DRAIN K=3
+[E3] batch_gradient_000006527 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000006530 WAIT_READY 
+[E3] batch_gradient_000006530 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000006530 GRANT K=2 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[E3] batch_gradient_000006530 DRAIN K=2
+[E3] batch_gradient_000006530 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000006532 WAIT_READY 
+[E3] batch_gradient_000006532 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000006532 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=3900.0
+[E3] batch_gradient_000006532 DRAIN K=1
+[E3] batch_gradient_000006532 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000006533 WAIT_READY 
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=3884.05 next_start=4260.25 wait_s=376.2 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=3914.08 next_start=4260.25 wait_s=346.17 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=3944.11 next_start=4260.25 wait_s=316.14 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=3974.12 next_start=4260.25 wait_s=286.13 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4004.13 next_start=4260.25 wait_s=256.12 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4034.22 next_start=4260.25 wait_s=226.03 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4064.24 next_start=4260.25 wait_s=196.01 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4094.33 next_start=4260.25 wait_s=165.92 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4124.41 next_start=4260.25 wait_s=135.84 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4154.43 next_start=4260.25 wait_s=105.82 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4184.43 next_start=4260.25 wait_s=75.82 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4214.46 next_start=4260.25 wait_s=45.79 estimate=0.75
+[E3] batch_gradient_000006533 WAIT_CONTACT elapsed=4244.47 next_start=4260.25 wait_s=15.78 estimate=0.75
+[E3] batch_gradient_000006533 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000006533 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[E3] batch_gradient_000006533 DRAIN K=1
+[E3] batch_gradient_000006533 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000006534 WAIT_READY 
+[E3] batch_gradient_000006534 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006534 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6540 Loss=1.1810 Samples=209028 Elapsed=4262.4s Speed=1.53 steps/s
+[DDP] Step=6560 Loss=1.3739 Samples=209668 Elapsed=4266.4s Speed=1.54 steps/s
+[E3] batch_gradient_000006534 DRAIN K=32
+[E3] batch_gradient_000006534 DONE drain_s=0.056 overrun=0
+[E3] batch_gradient_000006566 WAIT_READY 
+[E3] batch_gradient_000006566 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006566 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6580 Loss=1.6923 Samples=210308 Elapsed=4270.4s Speed=1.54 steps/s
+[E3] batch_gradient_000006566 DRAIN K=32
+[E3] batch_gradient_000006566 DONE drain_s=0.005 overrun=0
+[E3] batch_gradient_000006598 WAIT_READY 
+[E3] batch_gradient_000006598 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006598 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6600 Loss=1.1615 Samples=210948 Elapsed=4274.3s Speed=1.54 steps/s
+[DDP] Step=6620 Loss=1.5343 Samples=211588 Elapsed=4278.1s Speed=1.55 steps/s
+[E3] batch_gradient_000006598 DRAIN K=32
+[E3] batch_gradient_000006598 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000006630 WAIT_READY 
+[E3] batch_gradient_000006630 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006630 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6640 Loss=0.9713 Samples=212228 Elapsed=4282.0s Speed=1.55 steps/s
+[DDP] Step=6660 Loss=1.5484 Samples=212868 Elapsed=4285.8s Speed=1.55 steps/s
+[E3] batch_gradient_000006630 DRAIN K=32
+[E3] batch_gradient_000006630 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000006662 WAIT_READY 
+[E3] batch_gradient_000006662 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006662 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6680 Loss=1.1842 Samples=213508 Elapsed=4289.7s Speed=1.56 steps/s
+[E3] batch_gradient_000006662 DRAIN K=32
+[E3] batch_gradient_000006662 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000006694 WAIT_READY 
+[E3] batch_gradient_000006694 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006694 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6700 Loss=1.1099 Samples=214134 Elapsed=4293.7s Speed=1.56 steps/s
+[DDP] Step=6720 Loss=1.1233 Samples=214774 Elapsed=4297.5s Speed=1.56 steps/s
+[E3] batch_gradient_000006694 DRAIN K=32
+[E3] batch_gradient_000006694 DONE drain_s=0.059 overrun=0
+[E3] batch_gradient_000006726 WAIT_READY 
+[E3] batch_gradient_000006726 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006726 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6740 Loss=1.1721 Samples=215414 Elapsed=4301.5s Speed=1.57 steps/s
+[E3] batch_gradient_000006726 DRAIN K=32
+[E3] batch_gradient_000006726 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000006758 WAIT_READY 
+[E3] batch_gradient_000006758 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006758 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6760 Loss=1.2920 Samples=216054 Elapsed=4305.4s Speed=1.57 steps/s
+[DDP] Step=6780 Loss=1.1104 Samples=216694 Elapsed=4309.2s Speed=1.57 steps/s
+[E3] batch_gradient_000006758 DRAIN K=32
+[E3] batch_gradient_000006758 DONE drain_s=0.055 overrun=0
+[E3] batch_gradient_000006790 WAIT_READY 
+[E3] batch_gradient_000006790 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006790 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6800 Loss=1.1297 Samples=217334 Elapsed=4313.2s Speed=1.58 steps/s
+[DDP] Step=6820 Loss=1.4627 Samples=217974 Elapsed=4317.0s Speed=1.58 steps/s
+[E3] batch_gradient_000006790 DRAIN K=32
+[E3] batch_gradient_000006790 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000006822 WAIT_READY 
+[E3] batch_gradient_000006822 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006822 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6840 Loss=0.9012 Samples=218614 Elapsed=4320.9s Speed=1.58 steps/s
+[E3] batch_gradient_000006822 DRAIN K=32
+[E3] batch_gradient_000006822 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000006854 WAIT_READY 
+[E3] batch_gradient_000006854 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006854 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6860 Loss=1.0417 Samples=219254 Elapsed=4324.9s Speed=1.59 steps/s
+[DDP] Step=6880 Loss=1.3337 Samples=219894 Elapsed=4328.7s Speed=1.59 steps/s
+[E3] batch_gradient_000006854 DRAIN K=32
+[E3] batch_gradient_000006854 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000006886 WAIT_READY 
+[E3] batch_gradient_000006886 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006886 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6900 Loss=1.2276 Samples=220534 Elapsed=4332.6s Speed=1.59 steps/s
+[E3] batch_gradient_000006886 DRAIN K=32
+[E3] batch_gradient_000006886 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000006918 WAIT_READY 
+[E3] batch_gradient_000006918 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006918 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6920 Loss=1.0384 Samples=221174 Elapsed=4336.5s Speed=1.60 steps/s
+[DDP] Step=6940 Loss=0.8750 Samples=221814 Elapsed=4340.3s Speed=1.60 steps/s
+[E3] batch_gradient_000006918 DRAIN K=32
+[E3] batch_gradient_000006918 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000006950 WAIT_READY 
+[E3] batch_gradient_000006950 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006950 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=6960 Loss=1.4013 Samples=222454 Elapsed=4344.2s Speed=1.60 steps/s
+[DDP] Step=6980 Loss=1.4757 Samples=223094 Elapsed=4348.0s Speed=1.61 steps/s
+[E3] batch_gradient_000006950 DRAIN K=32
+[E3] batch_gradient_000006950 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000006982 WAIT_READY 
+[E3] batch_gradient_000006982 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000006982 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7000 Loss=0.9760 Samples=223734 Elapsed=4351.9s Speed=1.61 steps/s
+[E3] batch_gradient_000006982 DRAIN K=32
+[E3] batch_gradient_000006982 DONE drain_s=0.056 overrun=0
+[E3] batch_gradient_000007014 WAIT_READY 
+[E3] batch_gradient_000007014 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007014 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7020 Loss=1.2487 Samples=224374 Elapsed=4355.8s Speed=1.61 steps/s
+[DDP] Step=7040 Loss=1.1560 Samples=225000 Elapsed=4359.5s Speed=1.61 steps/s
+[E3] batch_gradient_000007014 DRAIN K=32
+[E3] batch_gradient_000007014 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000007046 WAIT_READY 
+[E3] batch_gradient_000007046 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007046 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7060 Loss=1.0963 Samples=225640 Elapsed=4363.5s Speed=1.62 steps/s
+[E3] batch_gradient_000007046 DRAIN K=32
+[E3] batch_gradient_000007046 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000007078 WAIT_READY 
+[E3] batch_gradient_000007078 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007078 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7080 Loss=1.1347 Samples=226280 Elapsed=4367.5s Speed=1.62 steps/s
+[DDP] Step=7100 Loss=0.9563 Samples=226920 Elapsed=4371.3s Speed=1.62 steps/s
+[E3] batch_gradient_000007078 DRAIN K=32
+[E3] batch_gradient_000007078 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000007110 WAIT_READY 
+[E3] batch_gradient_000007110 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007110 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7120 Loss=0.7312 Samples=227560 Elapsed=4375.2s Speed=1.63 steps/s
+[DDP] Step=7140 Loss=1.2100 Samples=228200 Elapsed=4379.0s Speed=1.63 steps/s
+[E3] batch_gradient_000007110 DRAIN K=32
+[E3] batch_gradient_000007110 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000007142 WAIT_READY 
+[E3] batch_gradient_000007142 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007142 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7160 Loss=0.8233 Samples=228840 Elapsed=4382.9s Speed=1.63 steps/s
+[E3] batch_gradient_000007142 DRAIN K=32
+[E3] batch_gradient_000007142 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000007174 WAIT_READY 
+[E3] batch_gradient_000007174 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007174 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7180 Loss=1.6864 Samples=229480 Elapsed=4386.8s Speed=1.64 steps/s
+[DDP] Step=7200 Loss=0.9584 Samples=230120 Elapsed=4390.6s Speed=1.64 steps/s
+[E3] batch_gradient_000007174 DRAIN K=32
+[E3] batch_gradient_000007174 DONE drain_s=0.018 overrun=0
+[E3] batch_gradient_000007206 WAIT_READY 
+[E3] batch_gradient_000007206 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007206 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7220 Loss=1.7834 Samples=230760 Elapsed=4394.5s Speed=1.64 steps/s
+[E3] batch_gradient_000007206 DRAIN K=32
+[E3] batch_gradient_000007206 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000007238 WAIT_READY 
+[E3] batch_gradient_000007238 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007238 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7240 Loss=0.8730 Samples=231400 Elapsed=4398.5s Speed=1.65 steps/s
+[DDP] Step=7260 Loss=1.6776 Samples=232040 Elapsed=4402.3s Speed=1.65 steps/s
+[E3] batch_gradient_000007238 DRAIN K=32
+[E3] batch_gradient_000007238 DONE drain_s=0.056 overrun=0
+[E3] batch_gradient_000007270 WAIT_READY 
+[E3] batch_gradient_000007270 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007270 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7280 Loss=1.1478 Samples=232680 Elapsed=4406.3s Speed=1.65 steps/s
+[DDP] Step=7300 Loss=1.9546 Samples=233320 Elapsed=4410.0s Speed=1.66 steps/s
+[E3] batch_gradient_000007270 DRAIN K=32
+[E3] batch_gradient_000007270 DONE drain_s=0.059 overrun=0
+[E3] batch_gradient_000007302 WAIT_READY 
+[E3] batch_gradient_000007302 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007302 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7320 Loss=1.1549 Samples=233960 Elapsed=4414.0s Speed=1.66 steps/s
+[E3] batch_gradient_000007302 DRAIN K=32
+[E3] batch_gradient_000007302 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000007334 WAIT_READY 
+[E3] batch_gradient_000007334 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007334 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7340 Loss=1.6504 Samples=234600 Elapsed=4417.9s Speed=1.66 steps/s
+[DDP] Step=7360 Loss=1.0475 Samples=235240 Elapsed=4421.7s Speed=1.66 steps/s
+[E3] batch_gradient_000007334 DRAIN K=32
+[E3] batch_gradient_000007334 DONE drain_s=0.016 overrun=0
+[E3] batch_gradient_000007366 WAIT_READY 
+[E3] batch_gradient_000007366 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007366 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7380 Loss=1.9656 Samples=235880 Elapsed=4425.6s Speed=1.67 steps/s
+[E3] batch_gradient_000007366 DRAIN K=32
+[E3] batch_gradient_000007366 DONE drain_s=0.019 overrun=0
+[E3] batch_gradient_000007398 WAIT_READY 
+[E3] batch_gradient_000007398 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007398 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7400 Loss=1.3006 Samples=236506 Elapsed=4429.6s Speed=1.67 steps/s
+[DDP] Step=7420 Loss=0.9317 Samples=237146 Elapsed=4433.4s Speed=1.67 steps/s
+[E3] batch_gradient_000007398 DRAIN K=32
+[E3] batch_gradient_000007398 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000007430 WAIT_READY 
+[E3] batch_gradient_000007430 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007430 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7440 Loss=1.2768 Samples=237786 Elapsed=4437.4s Speed=1.68 steps/s
+[DDP] Step=7460 Loss=1.3628 Samples=238426 Elapsed=4441.2s Speed=1.68 steps/s
+[E3] batch_gradient_000007430 DRAIN K=32
+[E3] batch_gradient_000007430 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000007462 WAIT_READY 
+[E3] batch_gradient_000007462 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007462 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7480 Loss=1.3873 Samples=239066 Elapsed=4445.1s Speed=1.68 steps/s
+[E3] batch_gradient_000007462 DRAIN K=32
+[E3] batch_gradient_000007462 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000007494 WAIT_READY 
+[E3] batch_gradient_000007494 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007494 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7500 Loss=1.2462 Samples=239706 Elapsed=4449.1s Speed=1.69 steps/s
+[DDP] Step=7520 Loss=1.4070 Samples=240346 Elapsed=4452.9s Speed=1.69 steps/s
+[E3] batch_gradient_000007494 DRAIN K=32
+[E3] batch_gradient_000007494 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000007526 WAIT_READY 
+[E3] batch_gradient_000007526 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007526 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7540 Loss=1.4181 Samples=240986 Elapsed=4456.8s Speed=1.69 steps/s
+[E3] batch_gradient_000007526 DRAIN K=32
+[E3] batch_gradient_000007526 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000007558 WAIT_READY 
+[E3] batch_gradient_000007558 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007558 GRANT K=32 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7560 Loss=1.4502 Samples=241626 Elapsed=4460.7s Speed=1.69 steps/s
+[DDP] Step=7580 Loss=1.3482 Samples=242266 Elapsed=4464.5s Speed=1.70 steps/s
+[E3] batch_gradient_000007558 DRAIN K=32
+[E3] batch_gradient_000007558 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000007590 WAIT_READY 
+[E3] batch_gradient_000007590 PREPARE K=24 estimate=0.75
+[E3] batch_gradient_000007590 GRANT K=24 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7600 Loss=1.0782 Samples=242906 Elapsed=4468.4s Speed=1.70 steps/s
+[E3] batch_gradient_000007590 DRAIN K=24
+[E3] batch_gradient_000007590 DONE drain_s=0.034 overrun=0
+[E3] batch_gradient_000007614 WAIT_READY 
+[E3] batch_gradient_000007614 PREPARE K=18 estimate=0.75
+[E3] batch_gradient_000007614 GRANT K=18 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7620 Loss=1.3408 Samples=243546 Elapsed=4472.4s Speed=1.70 steps/s
+[E3] batch_gradient_000007614 DRAIN K=18
+[E3] batch_gradient_000007614 DONE drain_s=0.06 overrun=0
+[E3] batch_gradient_000007632 WAIT_READY 
+[E3] batch_gradient_000007632 PREPARE K=13 estimate=0.75
+[E3] batch_gradient_000007632 GRANT K=13 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7640 Loss=1.2654 Samples=244186 Elapsed=4476.4s Speed=1.71 steps/s
+[E3] batch_gradient_000007632 DRAIN K=13
+[E3] batch_gradient_000007632 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000007645 WAIT_READY 
+[E3] batch_gradient_000007645 PREPARE K=9 estimate=0.75
+[E3] batch_gradient_000007645 GRANT K=9 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[E3] batch_gradient_000007645 DRAIN K=9
+[E3] batch_gradient_000007645 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000007654 WAIT_READY 
+[E3] batch_gradient_000007654 PREPARE K=7 estimate=0.75
+[E3] batch_gradient_000007654 GRANT K=7 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[DDP] Step=7660 Loss=1.1100 Samples=244826 Elapsed=4480.5s Speed=1.71 steps/s
+[E3] batch_gradient_000007654 DRAIN K=7
+[E3] batch_gradient_000007654 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000007661 WAIT_READY 
+[E3] batch_gradient_000007661 PREPARE K=5 estimate=0.75
+[E3] batch_gradient_000007661 GRANT K=5 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[E3] batch_gradient_000007661 DRAIN K=5
+[E3] batch_gradient_000007661 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000007666 WAIT_READY 
+[E3] batch_gradient_000007666 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000007666 GRANT K=3 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[E3] batch_gradient_000007666 DRAIN K=3
+[E3] batch_gradient_000007666 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000007669 WAIT_READY 
+[E3] batch_gradient_000007669 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000007669 GRANT K=2 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[E3] batch_gradient_000007669 DRAIN K=2
+[E3] batch_gradient_000007669 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000007671 WAIT_READY 
+[E3] batch_gradient_000007671 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000007671 GRANT K=2 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[E3] batch_gradient_000007671 DRAIN K=2
+[E3] batch_gradient_000007671 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000007673 WAIT_READY 
+[E3] batch_gradient_000007673 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000007673 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[E3] batch_gradient_000007673 DRAIN K=1
+[E3] batch_gradient_000007673 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000007674 WAIT_READY 
+[E3] batch_gradient_000007674 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000007674 GRANT K=1 estimate=0.75 rate_mbps=6533.3 contact_end=4500.0
+[E3] batch_gradient_000007674 DRAIN K=1
+[E3] batch_gradient_000007674 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000007675 WAIT_READY 
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4484.13 next_start=5040.25 wait_s=556.12 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4514.19 next_start=5040.25 wait_s=526.06 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4544.2 next_start=5040.25 wait_s=496.05 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4574.25 next_start=5040.25 wait_s=466.0 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4604.25 next_start=5040.25 wait_s=436.0 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4634.31 next_start=5040.25 wait_s=405.94 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4664.34 next_start=5040.25 wait_s=375.91 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4694.34 next_start=5040.25 wait_s=345.91 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4724.43 next_start=5040.25 wait_s=315.82 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4754.53 next_start=5040.25 wait_s=285.72 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4784.54 next_start=5040.25 wait_s=255.71 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4814.61 next_start=5040.25 wait_s=225.64 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4844.61 next_start=5040.25 wait_s=195.64 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4874.64 next_start=5040.25 wait_s=165.61 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4904.71 next_start=5040.25 wait_s=135.54 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4934.73 next_start=5040.25 wait_s=105.52 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4964.81 next_start=5040.25 wait_s=75.44 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=4994.82 next_start=5040.25 wait_s=45.43 estimate=0.75
+[E3] batch_gradient_000007675 WAIT_CONTACT elapsed=5024.83 next_start=5040.25 wait_s=15.42 estimate=0.75
+[E3] batch_gradient_000007675 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000007675 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[E3] batch_gradient_000007675 DRAIN K=1
+[E3] batch_gradient_000007675 DONE drain_s=0.105 overrun=0
+[E3] batch_gradient_000007676 WAIT_READY 
+[E3] batch_gradient_000007676 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007676 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7680 Loss=1.2298 Samples=245466 Elapsed=5042.2s Speed=1.52 steps/s
+[DDP] Step=7700 Loss=1.3200 Samples=246106 Elapsed=5046.1s Speed=1.53 steps/s
+[E3] batch_gradient_000007676 DRAIN K=32
+[E3] batch_gradient_000007676 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000007708 WAIT_READY 
+[E3] batch_gradient_000007708 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007708 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7720 Loss=1.5405 Samples=246746 Elapsed=5050.1s Speed=1.53 steps/s
+[E3] batch_gradient_000007708 DRAIN K=32
+[E3] batch_gradient_000007708 DONE drain_s=0.013 overrun=0
+[DDP] Step=7740 Loss=1.4749 Samples=247386 Elapsed=5054.0s Speed=1.53 steps/s
+[E3] batch_gradient_000007740 WAIT_READY 
+[E3] batch_gradient_000007740 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007740 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7760 Loss=1.2352 Samples=248012 Elapsed=5058.0s Speed=1.53 steps/s
+[E3] batch_gradient_000007740 DRAIN K=32
+[E3] batch_gradient_000007740 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000007772 WAIT_READY 
+[E3] batch_gradient_000007772 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007772 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7780 Loss=0.9693 Samples=248652 Elapsed=5062.0s Speed=1.54 steps/s
+[DDP] Step=7800 Loss=1.3752 Samples=249292 Elapsed=5065.8s Speed=1.54 steps/s
+[E3] batch_gradient_000007772 DRAIN K=32
+[E3] batch_gradient_000007772 DONE drain_s=0.015 overrun=0
+[E3] batch_gradient_000007804 WAIT_READY 
+[E3] batch_gradient_000007804 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007804 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7820 Loss=1.3402 Samples=249932 Elapsed=5069.8s Speed=1.54 steps/s
+[E3] batch_gradient_000007804 DRAIN K=32
+[E3] batch_gradient_000007804 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000007836 WAIT_READY 
+[E3] batch_gradient_000007836 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007836 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7840 Loss=1.0879 Samples=250572 Elapsed=5073.7s Speed=1.55 steps/s
+[DDP] Step=7860 Loss=1.0104 Samples=251212 Elapsed=5077.6s Speed=1.55 steps/s
+[E3] batch_gradient_000007836 DRAIN K=32
+[E3] batch_gradient_000007836 DONE drain_s=0.025 overrun=0
+[E3] batch_gradient_000007868 WAIT_READY 
+[E3] batch_gradient_000007868 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007868 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7880 Loss=1.1646 Samples=251852 Elapsed=5081.5s Speed=1.55 steps/s
+[E3] batch_gradient_000007868 DRAIN K=32
+[E3] batch_gradient_000007868 DONE drain_s=0.055 overrun=0
+[DDP] Step=7900 Loss=0.9333 Samples=252492 Elapsed=5085.4s Speed=1.55 steps/s
+[E3] batch_gradient_000007900 WAIT_READY 
+[E3] batch_gradient_000007900 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007900 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7920 Loss=1.1757 Samples=253132 Elapsed=5089.3s Speed=1.56 steps/s
+[E3] batch_gradient_000007900 DRAIN K=32
+[E3] batch_gradient_000007900 DONE drain_s=0.031 overrun=0
+[E3] batch_gradient_000007932 WAIT_READY 
+[E3] batch_gradient_000007932 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007932 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7940 Loss=1.5729 Samples=253772 Elapsed=5093.4s Speed=1.56 steps/s
+[DDP] Step=7960 Loss=1.0310 Samples=254412 Elapsed=5097.2s Speed=1.56 steps/s
+[E3] batch_gradient_000007932 DRAIN K=32
+[E3] batch_gradient_000007932 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000007964 WAIT_READY 
+[E3] batch_gradient_000007964 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007964 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=7980 Loss=0.8976 Samples=255052 Elapsed=5101.2s Speed=1.56 steps/s
+[E3] batch_gradient_000007964 DRAIN K=32
+[E3] batch_gradient_000007964 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000007996 WAIT_READY 
+[E3] batch_gradient_000007996 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000007996 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8000 Loss=0.7758 Samples=255692 Elapsed=5105.5s Speed=1.57 steps/s
+[DDP] Step=8020 Loss=0.8107 Samples=256332 Elapsed=5109.4s Speed=1.57 steps/s
+[E3] batch_gradient_000007996 DRAIN K=32
+[E3] batch_gradient_000007996 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000008028 WAIT_READY 
+[E3] batch_gradient_000008028 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008028 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8040 Loss=1.2442 Samples=256972 Elapsed=5113.4s Speed=1.57 steps/s
+[E3] batch_gradient_000008028 DRAIN K=32
+[E3] batch_gradient_000008028 DONE drain_s=0.007 overrun=0
+[DDP] Step=8060 Loss=1.0893 Samples=257612 Elapsed=5117.2s Speed=1.58 steps/s
+[E3] batch_gradient_000008060 WAIT_READY 
+[E3] batch_gradient_000008060 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008060 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8080 Loss=0.9302 Samples=258252 Elapsed=5121.2s Speed=1.58 steps/s
+[E3] batch_gradient_000008060 DRAIN K=32
+[E3] batch_gradient_000008060 DONE drain_s=0.004 overrun=0
+[E3] batch_gradient_000008092 WAIT_READY 
+[E3] batch_gradient_000008092 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008092 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8100 Loss=1.1403 Samples=258878 Elapsed=5125.1s Speed=1.58 steps/s
+[DDP] Step=8120 Loss=1.0089 Samples=259518 Elapsed=5129.0s Speed=1.58 steps/s
+[E3] batch_gradient_000008092 DRAIN K=32
+[E3] batch_gradient_000008092 DONE drain_s=0.007 overrun=0
+[E3] batch_gradient_000008124 WAIT_READY 
+[E3] batch_gradient_000008124 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008124 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8140 Loss=0.8105 Samples=260158 Elapsed=5133.0s Speed=1.59 steps/s
+[E3] batch_gradient_000008124 DRAIN K=32
+[E3] batch_gradient_000008124 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000008156 WAIT_READY 
+[E3] batch_gradient_000008156 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008156 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8160 Loss=1.3032 Samples=260798 Elapsed=5136.9s Speed=1.59 steps/s
+[DDP] Step=8180 Loss=1.1340 Samples=261438 Elapsed=5140.8s Speed=1.59 steps/s
+[E3] batch_gradient_000008156 DRAIN K=32
+[E3] batch_gradient_000008156 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000008188 WAIT_READY 
+[E3] batch_gradient_000008188 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008188 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8200 Loss=0.9717 Samples=262078 Elapsed=5144.7s Speed=1.59 steps/s
+[E3] batch_gradient_000008188 DRAIN K=32
+[E3] batch_gradient_000008188 DONE drain_s=0.006 overrun=0
+[DDP] Step=8220 Loss=1.1120 Samples=262718 Elapsed=5148.5s Speed=1.60 steps/s
+[E3] batch_gradient_000008220 WAIT_READY 
+[E3] batch_gradient_000008220 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008220 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8240 Loss=0.9003 Samples=263358 Elapsed=5152.5s Speed=1.60 steps/s
+[E3] batch_gradient_000008220 DRAIN K=32
+[E3] batch_gradient_000008220 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000008252 WAIT_READY 
+[E3] batch_gradient_000008252 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008252 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8260 Loss=1.1329 Samples=263998 Elapsed=5156.5s Speed=1.60 steps/s
+[DDP] Step=8280 Loss=1.5646 Samples=264638 Elapsed=5160.3s Speed=1.60 steps/s
+[E3] batch_gradient_000008252 DRAIN K=32
+[E3] batch_gradient_000008252 DONE drain_s=0.005 overrun=0
+[E3] batch_gradient_000008284 WAIT_READY 
+[E3] batch_gradient_000008284 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008284 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8300 Loss=1.0988 Samples=265278 Elapsed=5164.2s Speed=1.61 steps/s
+[E3] batch_gradient_000008284 DRAIN K=32
+[E3] batch_gradient_000008284 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000008316 WAIT_READY 
+[E3] batch_gradient_000008316 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008316 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8320 Loss=1.3659 Samples=265918 Elapsed=5168.2s Speed=1.61 steps/s
+[DDP] Step=8340 Loss=1.0009 Samples=266558 Elapsed=5172.0s Speed=1.61 steps/s
+[E3] batch_gradient_000008316 DRAIN K=32
+[E3] batch_gradient_000008316 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000008348 WAIT_READY 
+[E3] batch_gradient_000008348 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008348 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8360 Loss=0.7712 Samples=267198 Elapsed=5176.0s Speed=1.62 steps/s
+[E3] batch_gradient_000008348 DRAIN K=32
+[E3] batch_gradient_000008348 DONE drain_s=0.012 overrun=0
+[DDP] Step=8380 Loss=0.8151 Samples=267838 Elapsed=5179.8s Speed=1.62 steps/s
+[E3] batch_gradient_000008380 WAIT_READY 
+[E3] batch_gradient_000008380 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008380 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8400 Loss=1.4144 Samples=268478 Elapsed=5183.8s Speed=1.62 steps/s
+[E3] batch_gradient_000008380 DRAIN K=32
+[E3] batch_gradient_000008380 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000008412 WAIT_READY 
+[E3] batch_gradient_000008412 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008412 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8420 Loss=1.3796 Samples=269118 Elapsed=5187.7s Speed=1.62 steps/s
+[DDP] Step=8440 Loss=1.0703 Samples=269758 Elapsed=5191.5s Speed=1.63 steps/s
+[E3] batch_gradient_000008412 DRAIN K=32
+[E3] batch_gradient_000008412 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000008444 WAIT_READY 
+[E3] batch_gradient_000008444 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008444 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8460 Loss=1.1147 Samples=270384 Elapsed=5195.6s Speed=1.63 steps/s
+[E3] batch_gradient_000008444 DRAIN K=32
+[E3] batch_gradient_000008444 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000008476 WAIT_READY 
+[E3] batch_gradient_000008476 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008476 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8480 Loss=0.7658 Samples=271024 Elapsed=5199.6s Speed=1.63 steps/s
+[DDP] Step=8500 Loss=0.9481 Samples=271664 Elapsed=5203.6s Speed=1.63 steps/s
+[E3] batch_gradient_000008476 DRAIN K=32
+[E3] batch_gradient_000008476 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000008508 WAIT_READY 
+[E3] batch_gradient_000008508 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008508 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8520 Loss=0.9867 Samples=272304 Elapsed=5207.7s Speed=1.64 steps/s
+[E3] batch_gradient_000008508 DRAIN K=32
+[E3] batch_gradient_000008508 DONE drain_s=0.01 overrun=0
+[DDP] Step=8540 Loss=0.9554 Samples=272944 Elapsed=5211.6s Speed=1.64 steps/s
+[E3] batch_gradient_000008540 WAIT_READY 
+[E3] batch_gradient_000008540 PREPARE K=30 estimate=0.75
+[E3] batch_gradient_000008540 GRANT K=30 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8560 Loss=1.4885 Samples=273584 Elapsed=5215.5s Speed=1.64 steps/s
+[E3] batch_gradient_000008540 DRAIN K=30
+[E3] batch_gradient_000008540 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000008570 WAIT_READY 
+[E3] batch_gradient_000008570 PREPARE K=23 estimate=0.75
+[E3] batch_gradient_000008570 GRANT K=23 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8580 Loss=1.0328 Samples=274224 Elapsed=5219.5s Speed=1.64 steps/s
+[E3] batch_gradient_000008570 DRAIN K=23
+[E3] batch_gradient_000008570 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000008593 WAIT_READY 
+[E3] batch_gradient_000008593 PREPARE K=17 estimate=0.75
+[E3] batch_gradient_000008593 GRANT K=16 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8600 Loss=1.2824 Samples=274864 Elapsed=5223.5s Speed=1.65 steps/s
+[E3] batch_gradient_000008593 DRAIN K=16
+[E3] batch_gradient_000008593 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000008609 WAIT_READY 
+[E3] batch_gradient_000008609 PREPARE K=12 estimate=0.75
+[E3] batch_gradient_000008609 GRANT K=12 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8620 Loss=1.3949 Samples=275504 Elapsed=5227.4s Speed=1.65 steps/s
+[E3] batch_gradient_000008609 DRAIN K=12
+[E3] batch_gradient_000008609 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000008621 WAIT_READY 
+[E3] batch_gradient_000008621 PREPARE K=9 estimate=0.75
+[E3] batch_gradient_000008621 GRANT K=9 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[E3] batch_gradient_000008621 DRAIN K=9
+[E3] batch_gradient_000008621 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000008630 WAIT_READY 
+[E3] batch_gradient_000008630 PREPARE K=6 estimate=0.75
+[E3] batch_gradient_000008630 GRANT K=6 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[E3] batch_gradient_000008630 DRAIN K=6
+[E3] batch_gradient_000008630 DONE drain_s=0.015 overrun=0
+[E3] batch_gradient_000008636 WAIT_READY 
+[E3] batch_gradient_000008636 PREPARE K=5 estimate=0.75
+[E3] batch_gradient_000008636 GRANT K=5 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[DDP] Step=8640 Loss=1.2384 Samples=276144 Elapsed=5231.7s Speed=1.65 steps/s
+[E3] batch_gradient_000008636 DRAIN K=5
+[E3] batch_gradient_000008636 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000008641 WAIT_READY 
+[E3] batch_gradient_000008641 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000008641 GRANT K=3 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[E3] batch_gradient_000008641 DRAIN K=3
+[E3] batch_gradient_000008641 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000008644 WAIT_READY 
+[E3] batch_gradient_000008644 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000008644 GRANT K=2 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[E3] batch_gradient_000008644 DRAIN K=2
+[E3] batch_gradient_000008644 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000008646 WAIT_READY 
+[E3] batch_gradient_000008646 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000008646 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[E3] batch_gradient_000008646 DRAIN K=1
+[E3] batch_gradient_000008646 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000008647 WAIT_READY 
+[E3] batch_gradient_000008647 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000008647 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=5250.0
+[E3] batch_gradient_000008647 DRAIN K=1
+[E3] batch_gradient_000008647 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000008648 WAIT_READY 
+[E3] batch_gradient_000008648 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5234.03 next_start=5940.25 wait_s=706.22 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5264.07 next_start=5940.25 wait_s=676.18 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5294.13 next_start=5940.25 wait_s=646.12 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5324.19 next_start=5940.25 wait_s=616.06 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5354.22 next_start=5940.25 wait_s=586.03 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5384.22 next_start=5940.25 wait_s=556.03 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5414.27 next_start=5940.25 wait_s=525.98 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5444.34 next_start=5940.25 wait_s=495.91 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5474.34 next_start=5940.25 wait_s=465.91 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5504.43 next_start=5940.25 wait_s=435.82 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5534.51 next_start=5940.25 wait_s=405.74 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5564.57 next_start=5940.25 wait_s=375.68 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5594.65 next_start=5940.25 wait_s=345.6 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5624.68 next_start=5940.25 wait_s=315.57 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5654.68 next_start=5940.25 wait_s=285.57 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5684.72 next_start=5940.25 wait_s=255.53 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5714.81 next_start=5940.25 wait_s=225.44 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5744.9 next_start=5940.25 wait_s=195.35 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5774.93 next_start=5940.25 wait_s=165.32 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5804.96 next_start=5940.25 wait_s=135.29 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5835.0 next_start=5940.25 wait_s=105.25 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5865.04 next_start=5940.25 wait_s=75.21 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5895.09 next_start=5940.25 wait_s=45.16 estimate=0.75
+[E3] batch_gradient_000008648 WAIT_CONTACT elapsed=5925.17 next_start=5940.25 wait_s=15.08 estimate=0.75
+[E3] batch_gradient_000008648 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000008648 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[E3] batch_gradient_000008648 DRAIN K=1
+[E3] batch_gradient_000008648 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000008649 WAIT_READY 
+[E3] batch_gradient_000008649 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008649 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8660 Loss=1.5748 Samples=276784 Elapsed=5943.4s Speed=1.46 steps/s
+[DDP] Step=8680 Loss=1.3730 Samples=277424 Elapsed=5947.3s Speed=1.46 steps/s
+[E3] batch_gradient_000008649 DRAIN K=32
+[E3] batch_gradient_000008649 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000008681 WAIT_READY 
+[E3] batch_gradient_000008681 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008681 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8700 Loss=1.5599 Samples=278064 Elapsed=5951.3s Speed=1.46 steps/s
+[E3] batch_gradient_000008681 DRAIN K=32
+[E3] batch_gradient_000008681 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000008713 WAIT_READY 
+[E3] batch_gradient_000008713 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008713 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8720 Loss=1.0515 Samples=278704 Elapsed=5955.4s Speed=1.46 steps/s
+[DDP] Step=8740 Loss=1.1823 Samples=279344 Elapsed=5959.3s Speed=1.47 steps/s
+[E3] batch_gradient_000008713 DRAIN K=32
+[E3] batch_gradient_000008713 DONE drain_s=0.013 overrun=0
+[E3] batch_gradient_000008745 WAIT_READY 
+[E3] batch_gradient_000008745 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008745 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8760 Loss=1.2520 Samples=279984 Elapsed=5963.4s Speed=1.47 steps/s
+[E3] batch_gradient_000008745 DRAIN K=32
+[E3] batch_gradient_000008745 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000008777 WAIT_READY 
+[E3] batch_gradient_000008777 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008777 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8780 Loss=0.7989 Samples=280624 Elapsed=5967.5s Speed=1.47 steps/s
+[DDP] Step=8800 Loss=1.6558 Samples=281250 Elapsed=5971.4s Speed=1.47 steps/s
+[E3] batch_gradient_000008777 DRAIN K=32
+[E3] batch_gradient_000008777 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000008809 WAIT_READY 
+[E3] batch_gradient_000008809 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008809 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8820 Loss=1.2645 Samples=281890 Elapsed=5975.5s Speed=1.48 steps/s
+[DDP] Step=8840 Loss=1.0754 Samples=282530 Elapsed=5979.4s Speed=1.48 steps/s
+[E3] batch_gradient_000008809 DRAIN K=32
+[E3] batch_gradient_000008809 DONE drain_s=0.057 overrun=0
+[E3] batch_gradient_000008841 WAIT_READY 
+[E3] batch_gradient_000008841 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008841 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8860 Loss=1.4751 Samples=283170 Elapsed=5983.5s Speed=1.48 steps/s
+[E3] batch_gradient_000008841 DRAIN K=32
+[E3] batch_gradient_000008841 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000008873 WAIT_READY 
+[E3] batch_gradient_000008873 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008873 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8880 Loss=1.0946 Samples=283810 Elapsed=5987.6s Speed=1.48 steps/s
+[DDP] Step=8900 Loss=1.0086 Samples=284450 Elapsed=5991.5s Speed=1.49 steps/s
+[E3] batch_gradient_000008873 DRAIN K=32
+[E3] batch_gradient_000008873 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000008905 WAIT_READY 
+[E3] batch_gradient_000008905 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008905 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8920 Loss=0.7892 Samples=285090 Elapsed=5995.6s Speed=1.49 steps/s
+[E3] batch_gradient_000008905 DRAIN K=32
+[E3] batch_gradient_000008905 DONE drain_s=0.011 overrun=0
+[E3] batch_gradient_000008937 WAIT_READY 
+[E3] batch_gradient_000008937 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008937 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8940 Loss=0.7863 Samples=285730 Elapsed=5999.6s Speed=1.49 steps/s
+[DDP] Step=8960 Loss=1.1159 Samples=286370 Elapsed=6003.5s Speed=1.49 steps/s
+[E3] batch_gradient_000008937 DRAIN K=32
+[E3] batch_gradient_000008937 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000008969 WAIT_READY 
+[E3] batch_gradient_000008969 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000008969 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=8980 Loss=1.1626 Samples=287010 Elapsed=6007.9s Speed=1.49 steps/s
+[DDP] Step=9000 Loss=1.2266 Samples=287650 Elapsed=6011.8s Speed=1.50 steps/s
+[E3] batch_gradient_000008969 DRAIN K=32
+[E3] batch_gradient_000008969 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000009001 WAIT_READY 
+[E3] batch_gradient_000009001 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009001 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9020 Loss=1.0607 Samples=288290 Elapsed=6015.8s Speed=1.50 steps/s
+[E3] batch_gradient_000009001 DRAIN K=32
+[E3] batch_gradient_000009001 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000009033 WAIT_READY 
+[E3] batch_gradient_000009033 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009033 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9040 Loss=1.4447 Samples=288930 Elapsed=6019.9s Speed=1.50 steps/s
+[DDP] Step=9060 Loss=0.9183 Samples=289570 Elapsed=6023.8s Speed=1.50 steps/s
+[E3] batch_gradient_000009033 DRAIN K=32
+[E3] batch_gradient_000009033 DONE drain_s=0.008 overrun=0
+[E3] batch_gradient_000009065 WAIT_READY 
+[E3] batch_gradient_000009065 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009065 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9080 Loss=0.6488 Samples=290210 Elapsed=6027.9s Speed=1.51 steps/s
+[E3] batch_gradient_000009065 DRAIN K=32
+[E3] batch_gradient_000009065 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000009097 WAIT_READY 
+[E3] batch_gradient_000009097 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009097 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9100 Loss=0.9177 Samples=290850 Elapsed=6032.0s Speed=1.51 steps/s
+[DDP] Step=9120 Loss=0.6484 Samples=291490 Elapsed=6035.9s Speed=1.51 steps/s
+[E3] batch_gradient_000009097 DRAIN K=32
+[E3] batch_gradient_000009097 DONE drain_s=0.056 overrun=0
+[E3] batch_gradient_000009129 WAIT_READY 
+[E3] batch_gradient_000009129 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009129 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9140 Loss=0.8737 Samples=292130 Elapsed=6039.9s Speed=1.51 steps/s
+[DDP] Step=9160 Loss=1.5033 Samples=292756 Elapsed=6043.9s Speed=1.52 steps/s
+[E3] batch_gradient_000009129 DRAIN K=32
+[E3] batch_gradient_000009129 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000009161 WAIT_READY 
+[E3] batch_gradient_000009161 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009161 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9180 Loss=0.9216 Samples=293396 Elapsed=6048.0s Speed=1.52 steps/s
+[E3] batch_gradient_000009161 DRAIN K=32
+[E3] batch_gradient_000009161 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000009193 WAIT_READY 
+[E3] batch_gradient_000009193 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009193 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9200 Loss=0.9918 Samples=294036 Elapsed=6052.0s Speed=1.52 steps/s
+[DDP] Step=9220 Loss=1.4468 Samples=294676 Elapsed=6055.9s Speed=1.52 steps/s
+[E3] batch_gradient_000009193 DRAIN K=32
+[E3] batch_gradient_000009193 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000009225 WAIT_READY 
+[E3] batch_gradient_000009225 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009225 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9240 Loss=0.6845 Samples=295316 Elapsed=6060.0s Speed=1.52 steps/s
+[E3] batch_gradient_000009225 DRAIN K=32
+[E3] batch_gradient_000009225 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000009257 WAIT_READY 
+[E3] batch_gradient_000009257 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009257 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9260 Loss=1.0652 Samples=295956 Elapsed=6064.0s Speed=1.53 steps/s
+[DDP] Step=9280 Loss=1.2508 Samples=296596 Elapsed=6067.9s Speed=1.53 steps/s
+[E3] batch_gradient_000009257 DRAIN K=32
+[E3] batch_gradient_000009257 DONE drain_s=0.006 overrun=0
+[E3] batch_gradient_000009289 WAIT_READY 
+[E3] batch_gradient_000009289 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009289 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9300 Loss=1.7095 Samples=297236 Elapsed=6071.9s Speed=1.53 steps/s
+[DDP] Step=9320 Loss=1.0196 Samples=297876 Elapsed=6075.8s Speed=1.53 steps/s
+[E3] batch_gradient_000009289 DRAIN K=32
+[E3] batch_gradient_000009289 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000009321 WAIT_READY 
+[E3] batch_gradient_000009321 PREPARE K=32 estimate=0.75
+[E3] batch_gradient_000009321 GRANT K=32 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9340 Loss=1.3131 Samples=298516 Elapsed=6079.8s Speed=1.54 steps/s
+[E3] batch_gradient_000009321 DRAIN K=32
+[E3] batch_gradient_000009321 DONE drain_s=0.058 overrun=0
+[E3] batch_gradient_000009353 WAIT_READY 
+[E3] batch_gradient_000009353 PREPARE K=29 estimate=0.75
+[E3] batch_gradient_000009353 GRANT K=29 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9360 Loss=0.7583 Samples=299156 Elapsed=6083.9s Speed=1.54 steps/s
+[DDP] Step=9380 Loss=1.0353 Samples=299796 Elapsed=6087.8s Speed=1.54 steps/s
+[E3] batch_gradient_000009353 DRAIN K=29
+[E3] batch_gradient_000009353 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000009382 WAIT_READY 
+[E3] batch_gradient_000009382 PREPARE K=22 estimate=0.75
+[E3] batch_gradient_000009382 GRANT K=21 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9400 Loss=1.6109 Samples=300436 Elapsed=6091.9s Speed=1.54 steps/s
+[E3] batch_gradient_000009382 DRAIN K=21
+[E3] batch_gradient_000009382 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000009403 WAIT_READY 
+[E3] batch_gradient_000009403 PREPARE K=16 estimate=0.75
+[E3] batch_gradient_000009403 GRANT K=16 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[E3] batch_gradient_000009403 DRAIN K=16
+[E3] batch_gradient_000009403 DONE drain_s=0.014 overrun=0
+[E3] batch_gradient_000009419 WAIT_READY 
+[E3] batch_gradient_000009419 PREPARE K=12 estimate=0.75
+[E3] batch_gradient_000009419 GRANT K=11 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9420 Loss=1.4196 Samples=301076 Elapsed=6096.0s Speed=1.55 steps/s
+[E3] batch_gradient_000009419 DRAIN K=11
+[E3] batch_gradient_000009419 DONE drain_s=0.009 overrun=0
+[E3] batch_gradient_000009430 WAIT_READY 
+[E3] batch_gradient_000009430 PREPARE K=8 estimate=0.75
+[E3] batch_gradient_000009430 GRANT K=8 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[E3] batch_gradient_000009430 DRAIN K=8
+[E3] batch_gradient_000009430 DONE drain_s=0.01 overrun=0
+[E3] batch_gradient_000009438 WAIT_READY 
+[E3] batch_gradient_000009438 PREPARE K=6 estimate=0.75
+[E3] batch_gradient_000009438 GRANT K=6 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[DDP] Step=9440 Loss=1.5608 Samples=301716 Elapsed=6100.3s Speed=1.55 steps/s
+[E3] batch_gradient_000009438 DRAIN K=6
+[E3] batch_gradient_000009438 DONE drain_s=0.03 overrun=0
+[E3] batch_gradient_000009444 WAIT_READY 
+[E3] batch_gradient_000009444 PREPARE K=4 estimate=0.75
+[E3] batch_gradient_000009444 GRANT K=4 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[E3] batch_gradient_000009444 DRAIN K=4
+[E3] batch_gradient_000009444 DONE drain_s=0.038 overrun=0
+[E3] batch_gradient_000009448 WAIT_READY 
+[E3] batch_gradient_000009448 PREPARE K=3 estimate=0.75
+[E3] batch_gradient_000009448 GRANT K=3 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[E3] batch_gradient_000009448 DRAIN K=3
+[E3] batch_gradient_000009448 DONE drain_s=0.015 overrun=0
+[E3] batch_gradient_000009451 WAIT_READY 
+[E3] batch_gradient_000009451 PREPARE K=2 estimate=0.75
+[E3] batch_gradient_000009451 GRANT K=2 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[E3] batch_gradient_000009451 DRAIN K=2
+[E3] batch_gradient_000009451 DONE drain_s=0.015 overrun=0
+[E3] batch_gradient_000009453 WAIT_READY 
+[E3] batch_gradient_000009453 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000009453 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[E3] batch_gradient_000009453 DRAIN K=1
+[E3] batch_gradient_000009453 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000009454 WAIT_READY 
+[E3] batch_gradient_000009454 PREPARE K=1 estimate=0.75
+[E3] batch_gradient_000009454 GRANT K=1 estimate=0.75 rate_mbps=5716.7 contact_end=6120.0
+[E3] batch_gradient_000009454 DRAIN K=1
+[E3] batch_gradient_000009454 DONE drain_s=0.012 overrun=0
+[E3] batch_gradient_000009455 WAIT_READY 
+[E3] batch_gradient_000009455 WAIT_CONTACT elapsed=6104.1 next_start=6780.25 wait_s=676.15 estimate=0.75
+[E3] batch_gradient_000009455 WAIT_CONTACT elapsed=6134.14 next_start=6780.25 wait_s=646.11 estimate=0.75
+[E3] batch_gradient_000009455 WAIT_CONTACT elapsed=6164.15 next_start=6780.25 wait_s=616.1 estimate=0.75
+[E3] batch_gradient_000009455 WAIT_CONTACT elapsed=6194.19 next_start=6780.25 wait_s=586.06 estimate=0.75
+[E3] batch_gradient_000009455 WAIT_CONTACT elapsed=6224.23 next_start=6780.25 wait_s=556.02 estimate=0.75
+setsid: child 119635 did not exit normally: Success

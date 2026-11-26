@@ -1,0 +1,89 @@
+{
+  "method": "diloco8",
+  "schedule_mode": "aware",
+  "sync_transport": "native_nccl",
+  "ring_transfer_metrics": null,
+  "measurement_horizon_censored": false,
+  "run_success": false,
+  "failure_reasons": [
+    "Remote stop failed graffiti-11.nancy.grid5000.fr/tc2: Command '['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=10', 'root@graffiti-11.nancy.grid5000.fr', 'python3 -c \\'\\nimport os, pathlib, signal, sys, time\\nmarker = pathlib.Path(sys.argv[1]); unique = sys.argv[2]\\nif not marker.exists():\\n    print(\\'\"\\'\"\\'No remote PID marker:\\'\"\\'\"\\', marker)\\n    sys.exit(0)\\ntry:\\n    pid_s, ticks = marker.read_text().strip().split()\\n    pid = int(pid_s)\\n    stat = pathlib.Path(f\\'\"\\'\"\\'/proc/{pid}/stat\\'\"\\'\"\\')\\n    if not stat.exists():\\n        marker.unlink(missing_ok=True); sys.exit(0)\\n    # account for parentheses in /proc/PID/stat comm field\\n    rest = stat.read_text().rsplit(\\'\"\\'\"\\')\\'\"\\'\"\\', 1)[1].strip().split()\\n    actual_ticks = rest[19]  # proc stat field 22\\n    raw = pathlib.Path(f\\'\"\\'\"\\'/proc/{pid}/cmdline\\'\"\\'\"\\').read_bytes().replace(b\\'\"\\'\"\\'\\\\0\\'\"\\'\"\\', b\\'\"\\'\"\\' \\'\"\\'\"\\').decode(errors=\\'\"\\'\"\\'replace\\'\"\\'\"\\')\\n    is_worker = any(name in raw for name in (\\'\"\\'\"\\'train.py\\'\"\\'\"\\', \\'\"\\'\"\\'train_flower.py\\'\"\\'\"\\', \\'\"\\'\"\\'tc_agent.py\\'\"\\'\"\\'))\\n    if actual_ticks != ticks or unique not in raw or not is_worker or os.getpgid(pid) != pid:\\n        print(\\'\"\\'\"\\'REFUSING: PID identity did not match\\'\"\\'\"\\', marker, pid, raw[:200], file=sys.stderr)\\n        sys.exit(7)\\n    os.killpg(pid, signal.SIGTERM)\\n    deadline = time.monotonic() + 15\\n    while time.monotonic() < deadline:\\n        if not stat.exists():\\n            break\\n        time.sleep(0.2)\\n    if stat.exists():\\n        # Force-stop only the verified same process group after grace period.\\n        if stat.read_text().rsplit(\\'\"\\'\"\\')\\'\"\\'\"\\', 1)[1].strip().split()[19] == ticks and os.getpgid(pid) == pid:\\n            print(\\'\"\\'\"\\'Escalating to SIGKILL:\\'\"\\'\"\\', pid, file=sys.stderr)\\n            os.killpg(pid, signal.SIGKILL)\\n    marker.unlink(missing_ok=True)\\nexcept ProcessLookupError:\\n    marker.unlink(missing_ok=True)\\nexcept Exception as e:\\n    print(\\'\"\\'\"\\'Remote termination error:\\'\"\\'\"\\', repr(e), file=sys.stderr)\\n    sys.exit(8)\\n\\' /tmp/e2_f6e00ca2039f_tc2.pid /home/amahmod/experiments_grid/contact_aware_sched/synthesized_E3_1/diloco/results/E3_1_diloco8_aware_nccl_K32_10800s_R01_20261125T081503Z_2611847']' timed out after 45 seconds"
+  ],
+  "trace_sha256": "a7dbad1deea65af9fc379e39a30f664af4cd2eefc6cadb8f8cc5a03243e5d6ca",
+  "start_unix": 1795594746.4951344,
+  "duration_s": 10800.0,
+  "operation_count": 17600,
+  "operation_started_count": 17600,
+  "training_communication_count": 17600,
+  "training_communication_completed": 17600,
+  "validation_barrier_operation_count": 0,
+  "operation_completed_count": 17600,
+  "scheduled_outage_exposed_count": 0,
+  "scheduled_outage_exposure_rate": 0.0,
+  "transport_outage_exposed_count": 0,
+  "transport_outage_exposure_rate": 0.0,
+  "transport_outage_attempted_count": 17600,
+  "transport_exposure_note": "Completed collective interval overlap on detected NCCL ring/ACK edges; null when topology is unverified; risk not failure.",
+  "observed_failures": 0,
+  "observed_timeout_events": 0,
+  "total_explicit_deferral_s": 11634.673887395831,
+  "total_rendezvous_wait_s": 336.80984745028445,
+  "completed_logical_bytes": 789897292800.0,
+  "logical_bytes_to_target": {
+    "50": 583446864000.0,
+    "60": 606605216448.0,
+    "70": 771226993152.0
+  },
+  "actual_H_median": 8.0,
+  "actual_H_range": [
+    8,
+    8
+  ],
+  "useful_contact_utilization": null,
+  "useful_contact_utilization_note": "Requires observed attributable on-wire bytes and per-link applied capacity; E2 logical collective sizes are not on-wire volume.",
+  "successful_transmission_count": 17600,
+  "observed_tcp_bytes": null,
+  "observed_tcp_bytes_note": "No validated per-flow TCP aggregation in this summary; see E2 socket monitoring",
+  "per_rank_nic_counters": [
+    {
+      "rank": 0,
+      "nic_tx_delta_bytes": 309802507185.0,
+      "nic_rx_delta_bytes": 309880102111.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 1,
+      "nic_tx_delta_bytes": 309854988548.0,
+      "nic_rx_delta_bytes": 309951279953.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 2,
+      "nic_tx_delta_bytes": 310305282109.0,
+      "nic_rx_delta_bytes": 310334807943.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 3,
+      "nic_tx_delta_bytes": 309885710990.0,
+      "nic_rx_delta_bytes": 309970093293.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    }
+  ],
+  "time_to_accuracy_s": {
+    "50": 3300.0,
+    "60": 3600.0,
+    "70": 4200.0
+  },
+  "validation_scope": "mean_global_or_worker_aggregate",
+  "final_observed_accuracy": 0.7261,
+  "final_validation_elapsed_s": 4200.0,
+  "total_logged_optimizer_steps": 140800,
+  "local_steps_during_union_outages": 0,
+  "message_staleness_s_median": null,
+  "message_staleness_s_p95": null,
+  "communication_blocked_s_note": "E2 ready->complete is NOT pure communication idle; E3 deferral is separately recorded",
+  "interruption_note": "Exposed to scheduled outage is a timestamp overlap risk, NOT a confirmed failed collective.",
+  "recovery_note": "Post-outage first completed rank-level communication; missing observations are censored",
+  "scheduler_latency_note": "Scheduler rendezvous overhead included explicitly",
+  "flower_caveat": "Flower server and rank0 client co-located; local traffic bypasses shaped link"
+}

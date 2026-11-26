@@ -1,0 +1,5 @@
+[E3] mode=off; scheduler=ReactiveScheduler
+[DDP] Step=1 Loss=4.7128 Samples=32 Elapsed=2.3s Speed=0.43 steps/s
+[DDP] Step=20 Loss=4.6082 Samples=640 Elapsed=14.0s Speed=1.43 steps/s
+[DDP] Step=40 Loss=4.5104 Samples=1280 Elapsed=19.9s Speed=2.01 steps/s
+[DDP] Step=60 Loss=4.3008 Samples=1920 Elapsed=24.1s Speed=2.49 steps/s

@@ -1,0 +1,99 @@
+{
+  "method": "diloco8",
+  "schedule_mode": "off",
+  "sync_transport": "tcp_ring",
+  "ring_transfer_metrics": {
+    "completed_tx_chunks_in_horizon": 36838,
+    "acknowledged_payload_bytes_in_horizon": 413327369968.0,
+    "contact_wait_worker_s": 0,
+    "frames_launched_outside_bidirectional_contact": 21.0,
+    "acknowledged_after_admitted_window": 0,
+    "post_horizon_tx_frames": 15.0,
+    "failed_tx_chunks": 2,
+    "measurement_note": "Payload excludes TCP headers/retransmissions; volume/wait count whole chunks completed within horizon. Frame launches/overruns are local observations, not proof of on-wire timing."
+  },
+  "measurement_horizon_censored": true,
+  "run_success": false,
+  "failure_reasons": [
+    "One or more remote processes exited nonzero",
+    "Nonzero process exits: {'train_rank0.log': 1, 'train_rank1.log': -9, 'train_rank2.log': 1, 'train_rank3.log': -9, 'tc_rank0.log': -9, 'tc_rank1.log': -9, 'tc_rank2.log': -9, 'tc_rank3.log': -9}"
+  ],
+  "trace_sha256": "a7dbad1deea65af9fc379e39a30f664af4cd2eefc6cadb8f8cc5a03243e5d6ca",
+  "start_unix": 1795599534.0455275,
+  "duration_s": 10800.0,
+  "operation_count": 6141,
+  "operation_started_count": 6141,
+  "training_communication_count": 6141,
+  "training_communication_completed": 6137,
+  "validation_barrier_operation_count": 0,
+  "operation_completed_count": 6137,
+  "scheduled_outage_exposed_count": 62,
+  "scheduled_outage_exposure_rate": 0.010096075557726755,
+  "transport_outage_exposed_count": null,
+  "transport_outage_exposure_rate": null,
+  "transport_outage_attempted_count": null,
+  "transport_exposure_note": "Completed collective interval overlap on detected NCCL ring/ACK edges; null when topology is unverified; risk not failure.",
+  "observed_failures": 4,
+  "observed_timeout_events": 2,
+  "total_explicit_deferral_s": 0,
+  "total_rendezvous_wait_s": 0,
+  "completed_logical_bytes": 275431800336.0,
+  "logical_bytes_to_target": {
+    "50": null,
+    "60": null,
+    "70": null
+  },
+  "actual_H_median": 8,
+  "actual_H_range": [
+    8,
+    8
+  ],
+  "useful_contact_utilization": null,
+  "useful_contact_utilization_note": "Requires observed attributable on-wire bytes and per-link applied capacity; E2 logical collective sizes are not on-wire volume.",
+  "successful_transmission_count": 6137,
+  "observed_tcp_bytes": null,
+  "observed_tcp_bytes_note": "No validated per-flow TCP aggregation in this summary; see E2 socket monitoring",
+  "per_rank_nic_counters": [
+    {
+      "rank": 0,
+      "nic_tx_delta_bytes": 108251118914.0,
+      "nic_rx_delta_bytes": 108342503098.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 1,
+      "nic_tx_delta_bytes": 108244599527.0,
+      "nic_rx_delta_bytes": 108330117780.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 2,
+      "nic_tx_delta_bytes": 108248836786.0,
+      "nic_rx_delta_bytes": 108350855676.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 3,
+      "nic_tx_delta_bytes": 108278092560.0,
+      "nic_rx_delta_bytes": 108339906606.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    }
+  ],
+  "time_to_accuracy_s": {
+    "50": null,
+    "60": null,
+    "70": null
+  },
+  "validation_scope": "mean_global_or_worker_aggregate",
+  "final_observed_accuracy": 0.377,
+  "final_validation_elapsed_s": 10500.0,
+  "total_logged_optimizer_steps": 49124,
+  "local_steps_during_union_outages": 35,
+  "message_staleness_s_median": null,
+  "message_staleness_s_p95": null,
+  "communication_blocked_s_note": "E2 ready->complete is NOT pure communication idle; E3 deferral is separately recorded",
+  "interruption_note": "Exposed to scheduled outage is a timestamp overlap risk, NOT a confirmed failed collective.",
+  "recovery_note": "Post-outage first completed rank-level communication; missing observations are censored",
+  "scheduler_latency_note": "Local TX waits are logged; no per-step central grant or filesystem rendezvous",
+  "flower_caveat": "Flower server and rank0 client co-located; local traffic bypasses shaped link"
+}

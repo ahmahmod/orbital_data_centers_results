@@ -1,0 +1,21 @@
+{
+  "return_codes": {
+    "train_rank0.log": 0,
+    "train_rank1.log": 0,
+    "train_rank2.log": 0,
+    "train_rank3.log": 0,
+    "tc_rank0.log": 0,
+    "tc_rank1.log": 0,
+    "tc_rank2.log": 0,
+    "tc_rank3.log": 0
+  },
+  "failures": [],
+  "shutdown_warnings": [],
+  "training_process_success": true,
+  "shutdown_grace_s": 300,
+  "wall_end": 1795584710.283133,
+  "run_id": "a2347683a8a6",
+  "success": true,
+  "training_completed_early": true,
+  "completion_reason": "trainers_finished"
+}

@@ -1,0 +1,57 @@
+{
+  "lille": [
+    {
+      "cluster": "chuc",
+      "queue": "default",
+      "gpu": "NVIDIA A100 40GB",
+      "iface": "ens15f1np1",
+      "eth": "eth1",
+      "nodes": 8
+    },
+    {
+      "cluster": "chifflot",
+      "queue": "default",
+      "gpu": "NVIDIA P100/V100 (fallback)",
+      "iface": "ens5f1",
+      "eth": "eth1",
+      "nodes": 8
+    }
+  ],
+  "grenoble": [
+    {
+      "cluster": "kinovis",
+      "queue": "default",
+      "gpu": "NVIDIA L40S 45GB",
+      "iface": "ens15f1np1",
+      "eth": "eth1",
+      "nodes": 6
+    }
+  ],
+  "nancy": [
+    {
+      "cluster": "gruss",
+      "queue": "abaca",
+      "gpu": "NVIDIA A40 45GB",
+      "iface": "eno33",
+      "eth": "eth2",
+      "nodes": 4
+    },
+    {
+      "cluster": "graffiti",
+      "queue": "abaca",
+      "gpu": "NVIDIA RTX 2080 Ti 11GB",
+      "iface": "ens4f0",
+      "eth": "eth2",
+      "nodes": 11
+    },
+    {
+      "cluster": "grue",
+      "queue": "production",
+      "gpu": "4 x NVIDIA Tesla T4 (15 GiB)",
+      "iface": "eno2",
+      "eth": "eth1",
+      "isolated_available": false,
+      "nodes": 5
+    }
+  ]
+}

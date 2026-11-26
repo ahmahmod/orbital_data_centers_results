@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+.deployment_job
+kavlan_state.json
+#results/
+data/
+network_state.json
+
+# Run output stays on Grid'5000 under each technique, not in source control
+#/ddp/results/
+#/ddp/comparisons/
+#/diloco/results/
+#/diloco/comparisons/
+#/gossip/results/
+#/gossip/comparisons/
+#/flower/results/
+#/flower/comparisons/

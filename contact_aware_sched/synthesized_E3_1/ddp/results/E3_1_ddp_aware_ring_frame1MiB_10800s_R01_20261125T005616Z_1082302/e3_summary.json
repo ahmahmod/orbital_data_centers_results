@@ -1,0 +1,96 @@
+{
+  "method": "ddp",
+  "schedule_mode": "aware",
+  "sync_transport": "tcp_ring",
+  "ring_transfer_metrics": {
+    "completed_tx_chunks_in_horizon": 50404,
+    "acknowledged_payload_bytes_in_horizon": 565539734944.0,
+    "contact_wait_worker_s": 14490.489410401738,
+    "frames_launched_outside_bidirectional_contact": 0,
+    "acknowledged_after_admitted_window": 10.0,
+    "post_horizon_tx_frames": 478.0,
+    "failed_tx_chunks": 0,
+    "measurement_note": "Payload excludes TCP headers/retransmissions; volume/wait count whole chunks completed within horizon. Frame launches/overruns are local observations, not proof of on-wire timing."
+  },
+  "measurement_horizon_censored": true,
+  "run_success": true,
+  "failure_reasons": [],
+  "trace_sha256": "a7dbad1deea65af9fc379e39a30f664af4cd2eefc6cadb8f8cc5a03243e5d6ca",
+  "start_unix": 1795568422.9702795,
+  "duration_s": 10800.0,
+  "operation_count": 8404,
+  "operation_started_count": 8404,
+  "training_communication_count": 8404,
+  "training_communication_completed": 8400,
+  "validation_barrier_operation_count": 0,
+  "operation_completed_count": 8400,
+  "scheduled_outage_exposed_count": 60,
+  "scheduled_outage_exposure_rate": 0.007139457401237506,
+  "transport_outage_exposed_count": null,
+  "transport_outage_exposure_rate": null,
+  "transport_outage_attempted_count": null,
+  "transport_exposure_note": "Completed collective interval overlap on detected NCCL ring/ACK edges; null when topology is unverified; risk not failure.",
+  "observed_failures": 0,
+  "observed_timeout_events": 0,
+  "total_explicit_deferral_s": 14975.384470441752,
+  "total_rendezvous_wait_s": 0,
+  "completed_logical_bytes": 376996435200.0,
+  "logical_bytes_to_target": {
+    "50": null,
+    "60": null,
+    "70": null
+  },
+  "actual_H_median": 1.0,
+  "actual_H_range": [
+    1,
+    1
+  ],
+  "useful_contact_utilization": null,
+  "useful_contact_utilization_note": "Requires observed attributable on-wire bytes and per-link applied capacity; E2 logical collective sizes are not on-wire volume.",
+  "successful_transmission_count": 8400,
+  "observed_tcp_bytes": null,
+  "observed_tcp_bytes_note": "No validated per-flow TCP aggregation in this summary; see E2 socket monitoring",
+  "per_rank_nic_counters": [
+    {
+      "rank": 0,
+      "nic_tx_delta_bytes": 148219309068.0,
+      "nic_rx_delta_bytes": 148236455820.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 1,
+      "nic_tx_delta_bytes": 148092124838.0,
+      "nic_rx_delta_bytes": 148215483348.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 2,
+      "nic_tx_delta_bytes": 148127269543.0,
+      "nic_rx_delta_bytes": 148163751292.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 3,
+      "nic_tx_delta_bytes": 148212313684.0,
+      "nic_rx_delta_bytes": 148353020452.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    }
+  ],
+  "time_to_accuracy_s": {
+    "50": null,
+    "60": null,
+    "70": null
+  },
+  "validation_scope": "mean_global_or_worker_aggregate",
+  "final_observed_accuracy": 0.4713,
+  "final_validation_elapsed_s": 10500.0,
+  "total_logged_optimizer_steps": 8400,
+  "local_steps_during_union_outages": 0,
+  "message_staleness_s_median": null,
+  "message_staleness_s_p95": null,
+  "communication_blocked_s_note": "E2 ready->complete is NOT pure communication idle; E3 deferral is separately recorded",
+  "interruption_note": "Exposed to scheduled outage is a timestamp overlap risk, NOT a confirmed failed collective.",
+  "recovery_note": "Post-outage first completed rank-level communication; missing observations are censored",
+  "scheduler_latency_note": "Local TX waits are logged; no per-step central grant or filesystem rendezvous",
+  "flower_caveat": "Flower server and rank0 client co-located; local traffic bypasses shaped link"
+}

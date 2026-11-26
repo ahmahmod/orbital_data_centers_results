@@ -1,0 +1,17 @@
+[Rank 3] Ring TX->0 RX<-2 connected; mode=aware; frame_bytes=1048576
+[RING RX r3<-2] WAIT_INCOMING step=1408 phase=0 round=1 next_elapsed=660.250
+[RING RX r3<-2] WAIT_INCOMING step=1408 phase=0 round=1 next_elapsed=660.250
+[RING RX r3<-2] WAIT_INCOMING step=2544 phase=1 round=1 next_elapsed=1440.250
+[RING RX r3<-2] WAIT_INCOMING step=2544 phase=1 round=1 next_elapsed=1440.250
+[RING RX r3<-2] WAIT_INCOMING step=3536 phase=1 round=1 next_elapsed=2340.250
+[RING RX r3<-2] WAIT_INCOMING step=3536 phase=1 round=1 next_elapsed=2340.250
+[RING RX r3<-2] WAIT_INCOMING step=4368 phase=0 round=1 next_elapsed=3180.250
+[RING RX r3<-2] WAIT_INCOMING step=4368 phase=0 round=1 next_elapsed=3180.250
+[RING RX r3<-2] WAIT_INCOMING step=6656 phase=0 round=1 next_elapsed=4260.250
+[RING RX r3<-2] WAIT_INCOMING step=6656 phase=0 round=1 next_elapsed=4260.250
+[RING RX r3<-2] WAIT_INCOMING step=8776 phase=1 round=0 next_elapsed=5940.250
+[RING RX r3<-2] WAIT_INCOMING step=8776 phase=1 round=0 next_elapsed=5940.250
+[RING RX r3<-2] WAIT_INCOMING step=9608 phase=0 round=2 next_elapsed=6780.250
+[RING RX r3<-2] WAIT_INCOMING step=9608 phase=0 round=2 next_elapsed=6780.250
+[RING RX r3<-2] WAIT_INCOMING step=11928 phase=0 round=1 next_elapsed=7860.250
+[RING RX r3<-2] WAIT_INCOMING step=11928 phase=0 round=1 next_elapsed=7860.250

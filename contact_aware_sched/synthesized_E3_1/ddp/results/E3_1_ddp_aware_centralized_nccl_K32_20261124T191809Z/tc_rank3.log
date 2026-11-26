@@ -1,0 +1,3 @@
+E2 tc installed: iface=ens4f0, mode=selective_tc, run=E3_1_ddp_aware_centralized_nccl_K32_20261124T191809Z
+E2 tc agent received stop signal; cleaning up
+E2 tc cleanup PASS: ens4f0

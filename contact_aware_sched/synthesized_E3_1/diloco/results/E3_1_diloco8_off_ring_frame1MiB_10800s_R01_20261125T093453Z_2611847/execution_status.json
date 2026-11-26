@@ -1,0 +1,24 @@
+{
+  "return_codes": {
+    "train_rank0.log": 1,
+    "train_rank1.log": -9,
+    "train_rank2.log": 1,
+    "train_rank3.log": -9,
+    "tc_rank0.log": -9,
+    "tc_rank1.log": -9,
+    "tc_rank2.log": -9,
+    "tc_rank3.log": -9
+  },
+  "failures": [
+    "One or more remote processes exited nonzero",
+    "Nonzero process exits: {'train_rank0.log': 1, 'train_rank1.log': -9, 'train_rank2.log': 1, 'train_rank3.log': -9, 'tc_rank0.log': -9, 'tc_rank1.log': -9, 'tc_rank2.log': -9, 'tc_rank3.log': -9}"
+  ],
+  "shutdown_warnings": [],
+  "training_process_success": false,
+  "shutdown_grace_s": 300,
+  "wall_end": 1795610750.407332,
+  "run_id": "ee977169064d",
+  "success": false,
+  "training_completed_early": false,
+  "completion_reason": "duration_or_failure"
+}

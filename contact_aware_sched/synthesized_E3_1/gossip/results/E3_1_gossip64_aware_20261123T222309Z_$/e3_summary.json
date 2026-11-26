@@ -1,0 +1,85 @@
+{
+  "method": "gossip64",
+  "schedule_mode": "aware",
+  "run_success": true,
+  "failure_reasons": [],
+  "trace_sha256": "a7dbad1deea65af9fc379e39a30f664af4cd2eefc6cadb8f8cc5a03243e5d6ca",
+  "start_unix": 1795472786.6110554,
+  "duration_s": 10800.0,
+  "operation_count": 1409,
+  "operation_started_count": 1405,
+  "training_communication_count": 1409,
+  "training_communication_completed": 1405,
+  "validation_barrier_operation_count": 0,
+  "operation_completed_count": 1405,
+  "scheduled_outage_exposed_count": 0,
+  "scheduled_outage_exposure_rate": 0.0,
+  "observed_failures": 0,
+  "observed_timeout_events": 0,
+  "proactive_fast_path_count": 0,
+  "proactive_guard_admission_count": 0,
+  "proactive_contact_deferral_count": 0,
+  "guard_bound_s": 15.0,
+  "guard_window_s": 30.0,
+  "total_explicit_deferral_s": 1227.53160572052,
+  "total_rendezvous_wait_s": 0.0026862621307373047,
+  "completed_logical_bytes": 63057147460.0,
+  "logical_bytes_to_target": {
+    "50": 34243845916.0,
+    "60": 56414828724.0,
+    "70": 60633598732.0
+  },
+  "actual_H_median": 64,
+  "actual_H_range": [
+    64,
+    1088
+  ],
+  "useful_contact_utilization": null,
+  "useful_contact_utilization_note": "Requires observed attributable on-wire bytes and per-link applied capacity; E2 logical collective sizes are not on-wire volume.",
+  "successful_transmission_count": 1405,
+  "observed_tcp_bytes": null,
+  "observed_tcp_bytes_note": "No validated per-flow TCP aggregation in this summary; see E2 socket monitoring",
+  "per_rank_nic_counters": [
+    {
+      "rank": 0,
+      "nic_tx_delta_bytes": 23564403584.0,
+      "nic_rx_delta_bytes": 16364788698.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 1,
+      "nic_tx_delta_bytes": 12676272412.0,
+      "nic_rx_delta_bytes": 23527813827.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 2,
+      "nic_tx_delta_bytes": 13644769724.0,
+      "nic_rx_delta_bytes": 12640734203.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 3,
+      "nic_tx_delta_bytes": 16367990824.0,
+      "nic_rx_delta_bytes": 13962191051.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    }
+  ],
+  "time_to_accuracy_s": {
+    "50": 193.9782476425171,
+    "60": 377.13238525390625,
+    "70": 469.1582729816437
+  },
+  "validation_scope": "async_gossip_rank0_local_validation",
+  "final_observed_accuracy": 0.7396,
+  "final_validation_elapsed_s": 554.0191133022308,
+  "total_logged_optimizer_steps": 140800,
+  "local_steps_during_union_outages": 64597,
+  "message_staleness_s_median": 0.14196228981018066,
+  "message_staleness_s_p95": 0.3237302303314209,
+  "communication_blocked_s_note": "E2 ready->complete is NOT pure communication idle; E3 deferral is separately recorded",
+  "interruption_note": "Exposed to scheduled outage is a timestamp overlap risk, NOT a confirmed failed collective.",
+  "recovery_note": "Post-outage first completed rank-level communication; missing observations are censored",
+  "scheduler_latency_note": "Shared filesystem rendezvous overhead included explicitly (aware collectives/Flower)",
+  "flower_caveat": "Flower server and rank0 client co-located; local traffic bypasses shaped link"
+}

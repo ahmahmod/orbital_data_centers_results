@@ -1,0 +1,8 @@
+[E3] mode=off; transport=decentralized_tcp_ring
+[Rank 0] Ring TX->1 RX<-3 connected; mode=off; frame_bytes=1048576
+[DDP] Step=1 Loss=4.7128 Samples=32 Elapsed=3.4s Speed=0.30 steps/s
+[DDP] Step=20 Loss=4.6207 Samples=640 Elapsed=33.1s Speed=0.60 steps/s
+[DDP] Step=40 Loss=4.6177 Samples=1280 Elapsed=65.3s Speed=0.61 steps/s
+[DDP] Step=60 Loss=4.2650 Samples=1920 Elapsed=97.2s Speed=0.62 steps/s
+[DDP] Step=80 Loss=3.8321 Samples=2560 Elapsed=128.3s Speed=0.62 steps/s
+[DDP] Step=100 Loss=4.0466 Samples=3200 Elapsed=159.1s Speed=0.63 steps/s

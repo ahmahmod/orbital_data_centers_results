@@ -1,0 +1,3 @@
+[Rank 1] Ring TX->2 RX<-0 connected; mode=off; frame_bytes=1048576
+[Rank 1] Training finished at step=1619; epochs_completed=4; reason=wall_budget
+[Rank 1] Ring TX/RX threads closed

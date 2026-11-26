@@ -1,0 +1,81 @@
+[rank3]:[E1124 18:23:09.911116133 ProcessGroupNCCL.cpp:632] [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=16752, OpType=ALLREDUCE, NumelIn=6623744, NumelOut=6623744, Timeout(ms)=900000) ran for 900028 milliseconds before timing out.
+[rank3]:[E1124 18:23:09.913542882 ProcessGroupNCCL.cpp:2271] [PG ID 0 PG GUID 0(default_pg) Rank 3]  failure detected by watchdog at work sequence id: 16752 PG status: last enqueued work: 16753, last completed work: 16751
+[rank3]:[E1124 18:23:09.913557317 ProcessGroupNCCL.cpp:670] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank3]:[W1124 18:29:05.391545206 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=75, addr=[graffiti-2.nancy.grid5000.fr]:56146, remote=[graffiti-1.nancy.grid5000.fr]:29527): Connection reset by peer
+Exception raised from recvBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:675 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1e153785e8 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5ba8bfe (0x7f1dfe6f4bfe in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x5baafcf (0x7f1dfe6f6fcf in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x5bab84a (0x7f1dfe6f784a in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x2a9 (0x7f1dfe6f12a9 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::heartbeatMonitor() + 0x379 (0x7f1dbfdf09f9 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xe1224 (0x7f1dafae1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #7: <unknown function> + 0x928bb (0x7f1e163808bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #8: <unknown function> + 0x110538 (0x7f1e163fe538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[W1124 18:29:05.399924253 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 3] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: Connection reset by peer
+[rank3]:[W1124 18:29:05.398612040 TCPStore.cpp:106] [c10d] sendBytes failed on SocketImpl(fd=75, addr=[graffiti-2.nancy.grid5000.fr]:56146, remote=[graffiti-1.nancy.grid5000.fr]:29527): Broken pipe
+Exception raised from sendBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:653 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1e153785e8 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5ba8bfe (0x7f1dfe6f4bfe in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x5baa458 (0x7f1dfe6f6458 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x5babc3e (0x7f1dfe6f7c3e in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<unsigned char, std::allocator<unsigned char> > const&) + 0x242 (0x7f1dfe6f4692 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::broadcastSignal(c10::intrusive_ptr<c10d::Store, c10::detail::intrusive_target_default_null_type<c10d::Store> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) + 0x69 (0x7f1dbfde7c49 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: c10d::ProcessGroupNCCL::broadcastDumpSignal() + 0x45 (0x7f1dbfde9755 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: c10d::ProcessGroupNCCL::watchdogHandler() + 0xac0 (0x7f1dbfdf4630 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f1dbfdf5efd in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: <unknown function> + 0xe1224 (0x7f1dafae1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #10: <unknown function> + 0x928bb (0x7f1e163808bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #11: <unknown function> + 0x110538 (0x7f1e163fe538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[E1124 18:29:05.405835661 ProcessGroupNCCL.cpp:2059] [PG ID 0 PG GUID 0(default_pg) Rank 3] Failed to broadcast signal exception_dump through TCPStore. Error: Broken pipe
+Exception raised from sendBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:653 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1e153785e8 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5ba8bfe (0x7f1dfe6f4bfe in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x5baa458 (0x7f1dfe6f6458 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x5babc3e (0x7f1dfe6f7c3e in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<unsigned char, std::allocator<unsigned char> > const&) + 0x242 (0x7f1dfe6f4692 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::ProcessGroupNCCL::broadcastSignal(c10::intrusive_ptr<c10d::Store, c10::detail::intrusive_target_default_null_type<c10d::Store> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) + 0x69 (0x7f1dbfde7c49 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: c10d::ProcessGroupNCCL::broadcastDumpSignal() + 0x45 (0x7f1dbfde9755 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: c10d::ProcessGroupNCCL::watchdogHandler() + 0xac0 (0x7f1dbfdf4630 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f1dbfdf5efd in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: <unknown function> + 0xe1224 (0x7f1dafae1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #10: <unknown function> + 0x928bb (0x7f1e163808bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #11: <unknown function> + 0x110538 (0x7f1e163fe538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[E1124 18:29:05.405846407 ProcessGroupNCCL.cpp:2106] [PG ID 0 PG GUID 0(default_pg) Rank 3] First PG on this rank to signal dumping.
+[rank3]:[E1124 18:29:06.400106610 ProcessGroupNCCL.cpp:1746] [PG ID 0 PG GUID 0(default_pg) Rank 3] Received a dump signal due to a collective timeout from this local rank and we will try our best to dump the debug info. Last enqueued NCCL work: 16753, last completed NCCL work: 16751.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank3]:[E1124 18:29:06.400344313 ProcessGroupNCCL.cpp:1536] [PG ID 0 PG GUID 0(default_pg) Rank 3] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1
+[rank3]:[E1124 18:29:06.400776455 ProcessGroupNCCL.cpp:684] [Rank 3] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank3]:[E1124 18:29:06.400790713 ProcessGroupNCCL.cpp:698] [Rank 3] To avoid data inconsistency, we are taking the entire process down.
+[rank3]:[E1124 18:29:06.402525490 ProcessGroupNCCL.cpp:1899] [PG ID 0 PG GUID 0(default_pg) Rank 3] Process group watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=16752, OpType=ALLREDUCE, NumelIn=6623744, NumelOut=6623744, Timeout(ms)=900000) ran for 900028 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:635 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1e153785e8 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x23d (0x7f1dbfdf2a6d in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0xc80 (0x7f1dbfdf47f0 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f1dbfdf5efd in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xe1224 (0x7f1dafae1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #5: <unknown function> + 0x928bb (0x7f1e163808bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #6: <unknown function> + 0x110538 (0x7f1e163fe538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG ID 0 PG GUID 0(default_pg) Rank 3] Process group watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=16752, OpType=ALLREDUCE, NumelIn=6623744, NumelOut=6623744, Timeout(ms)=900000) ran for 900028 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:635 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1e153785e8 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x23d (0x7f1dbfdf2a6d in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::watchdogHandler() + 0xc80 (0x7f1dbfdf47f0 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x14d (0x7f1dbfdf5efd in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xe1224 (0x7f1dafae1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #5: <unknown function> + 0x928bb (0x7f1e163808bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #6: <unknown function> + 0x110538 (0x7f1e163fe538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+Exception raised from ncclCommWatchdog at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1905 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f1e153785e8 in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x11b4abe (0x7f1dbfdc4abe in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: <unknown function> + 0xe07bed (0x7f1dbfa17bed in /home/amahmod/experiments_grid/.venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: <unknown function> + 0xe1224 (0x7f1dafae1224 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #4: <unknown function> + 0x928bb (0x7f1e163808bb in /lib/x86_64-linux-gnu/libc.so.6)
+frame #5: <unknown function> + 0x110538 (0x7f1e163fe538 in /lib/x86_64-linux-gnu/libc.so.6)
+
+setsid: child 83422 did not exit normally: Success
