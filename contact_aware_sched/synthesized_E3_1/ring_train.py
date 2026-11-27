@@ -7,7 +7,7 @@ import torch.distributed as dist
 import socket
 import sys
 from pathlib import Path
-from e2_metrics import STEP_FIELDS, VALIDATION_FIELDS, writer, sync_cuda, evaluate_local, ResourceSampler
+from e2_metrics import STEP_FIELDS, VALIDATION_FIELDS, writer, sync_cuda, evaluate_local, ResourceSampler, close_loaders
 from torchvision import models
 from e1_training import add_training_arguments, validate_training_args, loaders, lr_at
 from e3_schedule import ContactScheduler
@@ -52,8 +52,11 @@ def main(methods=('ddp','diloco8','diloco64')):
     p.add_argument('--resource-interval-s',type=float,default=float(os.getenv('E2_RESOURCE_INTERVAL_S','2')))
     p.add_argument('--comm-timeout',type=int,default=900,help='Reactive TCP no-progress timeout in seconds')
     p.add_argument('--dataset',choices=['cifar100','synthetic'],default='cifar100')
+    p.add_argument('--eval-steps',type=int,default=int(os.getenv('E3_EVAL_STEPS','128')))
     a=p.parse_args()
     validate_training_args(a)
+    h=int(''.join(c for c in a.method if c.isdigit()) or '1')
+    if a.eval_steps<1 or a.eval_steps%h:raise ValueError('eval-steps must be a positive multiple of H')
     if a.world != 4:raise ValueError('E3 ring requires four ranks')
     if a.comm_timeout<=0:raise ValueError('comm-timeout must be positive')
     if not (0 < a.outer_lr <= 1):raise ValueError('outer-lr must be in (0, 1]')
@@ -123,7 +126,8 @@ def main(methods=('ddp','diloco8','diloco64')):
         connect_timeout=float(os.getenv('E3_RING_CONNECT_TIMEOUT_S','180')),
         io_timeout=a.comm_timeout,
         drain_guard=float(os.getenv('E3_RING_DRAIN_GUARD_S','2')),
-        drain_timeout=float(os.getenv('E3_RING_DRAIN_TIMEOUT_S','240')))
+        drain_timeout=float(os.getenv('E3_RING_DRAIN_TIMEOUT_S','240')),
+        max_inflight=int(os.getenv('E3_RING_MAX_INFLIGHT','32')))
     ring.connect()
     reducer=RingAllReduce(ring)
     print(f'[Rank {rank}] Ring TX->{ring.next} RX<-{ring.prev} connected; '
@@ -162,6 +166,9 @@ def main(methods=('ddp','diloco8','diloco64')):
             detail=f'tcp_ring_{tag};tx_payload={ring.last_collective_tx_bytes};rx_payload={ring.last_collective_rx_bytes}')
         return out_tensor,opid
     # Initial model broadcast and both socket connections finish before replay.
+    validation_model=model
+    initial_metrics=evaluate_local(validation_model,testloader,device,torch,amp=amp)
+    initial_stamp=time.time()
     startup_run_id=os.environ.get('E3_RUN_ID','')
     if startup_run_id:
         publish_ready(output,rank,startup_run_id)
@@ -187,7 +194,30 @@ def main(methods=('ddp','diloco8','diloco64')):
     baseline=flatten_model(model).clone() if a.method!='ddp' else None
     outer_m=torch.zeros_like(baseline) if baseline is not None else None
     outer_round=0
+    last_validated=-1
+    def validate_checkpoint(kind,metrics=None,evaluated=None):
+        nonlocal last_validated
+        acc,v_loss,n,v_sec=metrics if metrics is not None else evaluate_local(
+            validation_model,testloader,device,torch,amp=amp)
+        stamp=time.time() if evaluated is None else evaluated
+        # Initial model was measured before readiness; place it at trace t=0.
+        recorded=a.start if kind=='initial' else stamp
+        rec=dict(experiment='E3_1',method=a.method,rank=rank,
+            epoch=step/len(loader),completed_epochs=step//len(loader),
+            step=step,unix_time_s=recorded,elapsed_s=recorded-a.start,
+            val_loss=v_loss,val_accuracy=acc,val_samples=n,val_s=v_sec,
+            local_samples=local_samples,global_samples_approx=local_samples*a.world,
+            validation_kind=kind,evaluated_unix_s=stamp,outer_round=outer_round,
+            within_horizon=int(recorded<=scheduler.end))
+        valwriter.writerow(rec)
+        if rank==0:
+            with (output/'validation.csv').open('a',newline='') as legacy:
+                lw=csv.writer(legacy)
+                if legacy.tell()==0:lw.writerow(['unix_s','elapsed_s','step','accuracy','method','val_accuracy','val_loss'])
+                lw.writerow([recorded,recorded-a.start,step,acc,a.method,acc,v_loss])
+        last_validated=step
     try:
+        validate_checkpoint('initial',initial_metrics,initial_stamp)
         # Fixed epochs or in-band common stop vote at the synchronization boundary.
         reason='epochs_completed'
         while epoch < a.epochs:
@@ -291,19 +321,8 @@ def main(methods=('ddp','diloco8','diloco64')):
             if stop_after_step:
                 break
             now=time.time()
-            if now<scheduler.end and a.eval_interval_s>0 and now>=next_validation:
-                acc,v_loss,n,v_sec=evaluate_local(model,testloader,device,torch,amp=amp)
-                stamp=time.time(); rec=dict(experiment='E2',method=a.method,rank=rank,epoch=epoch+1,
-                    step=step,unix_time_s=stamp,elapsed_s=stamp-a.start,val_loss=v_loss,
-                    val_accuracy=acc,val_samples=n,val_s=v_sec,local_samples=local_samples,
-                    global_samples_approx=local_samples*a.world)
-                valwriter.writerow(rec)
-                if rank==0:
-                    with (output/'validation.csv').open('a',newline='') as legacy:
-                        lw=csv.writer(legacy)
-                        if legacy.tell()==0:lw.writerow(['unix_s','elapsed_s','step','accuracy','method','val_accuracy','val_loss'])
-                        lw.writerow([stamp,stamp-a.start,step,acc,a.method,acc,v_loss])
-                next_validation += (int((stamp-next_validation)//a.eval_interval_s)+1)*a.eval_interval_s
+            if step%a.eval_steps==0 and now<scheduler.end:
+                validate_checkpoint('periodic')
             if rank == 0 and a.log_every > 0 and (step == 1 or step % a.log_every == 0):
                 elapsed = time.time() - a.start
                 current_loss = loss.detach().item()
@@ -321,6 +340,8 @@ def main(methods=('ddp','diloco8','diloco64')):
             # E2_FULL_METRICS: wall-clock validation runs independently on EVERY rank.
         if epoch < a.epochs and reason=='epochs_completed':
             reason='wall_budget'
+        if last_validated!=step:
+            validate_checkpoint('final')
         log('run_finished',step,detail=reason)
         print(f'[Rank {rank}] Training finished at step={step}; epochs_completed={min(epoch, a.epochs)}; reason={reason}',flush=True)
     except Exception:
@@ -337,5 +358,11 @@ def main(methods=('ddp','diloco8','diloco64')):
         eventfile.close();progress.close();valfile.close()
         ring.close()
         scheduler.close()
+        close_loaders(loader,testloader)
         print(f'[Rank {rank}] Ring TX/RX threads closed',flush=True)
+    from e3_startup import atomic_json
+    atomic_json(output/f'e3_trainer_done_rank{rank}.json',dict(
+        run_id=os.environ.get('E3_RUN_ID',''),rank=rank,step=step,
+        completed_epochs=step//len(loader),outer_round=outer_round,
+        reason=reason,finished_unix=time.time()))
 if __name__=='__main__':main()

@@ -57,3 +57,64 @@ class LinkPlan:
 
     def containing(self, elapsed):
         return next((w for w in self.windows if w[0]<=elapsed<w[1]),None)
+
+    def credit_limit(self, elapsed, payload_sizes, max_frames):
+        """Conservative credit budget including outstanding unacknowledged bytes.
+
+        One RTT for a pipelined burst, serialization of every frame/ACK, and
+        the configured safety factor and margin. This is an admission estimate,
+        not a guarantee of wire completion. Credit is also bounded by ~2 BDP.
+        """
+        w=self.containing(elapsed)
+        if w is None or elapsed<w[0]+self.open_guard:return 0
+        _,end,rate,ack_rate,fd,rd=w
+        rtt=fd+rd
+        # Two bandwidth-delay products, rounded up, capped by configured memory.
+        first=max(1,payload_sizes[0]) if payload_sizes else 1
+        bdp_limit=max(1,math.ceil(2*rate*rtt/8/first))
+        total=0
+        for i,n in enumerate(payload_sizes[:min(max_frames,bdp_limit)],1):
+            total+=(n+128)*8/rate+128*8/ack_rate
+            if elapsed+max(self.min_transfer,self.factor*(total+rtt))+self.margin>end:
+                return i-1
+        return min(len(payload_sizes),max_frames,bdp_limit)
+
+    def next_credit_slot(self, elapsed, payload_bytes):
+        for w in self.windows:
+            start=max(elapsed,w[0]+self.open_guard)
+            if self.credit_limit(start,[payload_bytes],1):
+                return start,w[1]
+        return None
+
+
+class RingConnectivity:
+    """Classify planned bidirectional ring availability, independent of TX policy."""
+    def __init__(self, edges, sats, duration):
+        from bisect import bisect_right
+        self._bisect=bisect_right
+        self.duration=float(duration)
+        pairs=[(edges[sats[i],sats[(i+1)%len(sats)]],
+                edges[sats[(i+1)%len(sats)],sats[i]]) for i in range(len(sats))]
+        bounds=sorted({0.,self.duration}|{t for pair in pairs for segs in pair
+                         for s in segs for t in s[:2] if 0<t<self.duration})
+        self.intervals=[]
+        for a,b in zip(bounds,bounds[1:]):
+            t=(a+b)/2
+            count=sum(all(any(s[0]<=t<s[1] and s[2]==1 and s[3]>0
+                              for s in segs) for segs in pair) for pair in pairs)
+            state='full' if count==len(pairs) else 'partial' if count else 'none'
+            if self.intervals and self.intervals[-1][2]==state:
+                self.intervals[-1]=(self.intervals[-1][0],b,state)
+            else:self.intervals.append((a,b,state))
+        self.starts=[a for a,b,state in self.intervals]
+
+    def interval(self,t):
+        i=self._bisect(self.starts,t)-1
+        if i<0 or i>=len(self.intervals):return None
+        a,b,state=self.intervals[i]
+        return (a,b,state) if a<=t<b else None
+
+    def classify(self, launch, ack):
+        a=self.interval(launch);b=self.interval(ack)
+        if a is None or b is None:return 'outside'
+        return a[2] if a==b else 'crossing'

@@ -1,0 +1,26 @@
+{
+  "return_codes": {
+    "train_rank0.log": 0,
+    "train_rank1.log": 0,
+    "train_rank2.log": 0,
+    "train_rank3.log": 0,
+    "tc_rank0.log": 0,
+    "tc_rank1.log": 0,
+    "tc_rank2.log": 0,
+    "tc_rank3.log": 0
+  },
+  "failures": [
+    "Missing clean completion markers for ranks [0, 1, 2, 3]"
+  ],
+  "shutdown_warnings": [],
+  "training_process_success": false,
+  "completed_epochs_target": false,
+  "trainer_completion": {},
+  "remote_processes_verified_gone": true,
+  "shutdown_grace_s": 300,
+  "wall_end": 1795717824.6765058,
+  "run_id": "0efd442735b6",
+  "success": false,
+  "training_completed_early": false,
+  "completion_reason": "duration_or_failure"
+}

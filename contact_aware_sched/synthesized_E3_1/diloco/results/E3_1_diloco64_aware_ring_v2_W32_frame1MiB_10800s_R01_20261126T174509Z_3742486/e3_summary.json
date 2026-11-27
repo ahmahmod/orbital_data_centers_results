@@ -1,0 +1,117 @@
+{
+  "method": "diloco64",
+  "schedule_mode": "aware",
+  "sync_transport": "tcp_ring",
+  "ring_transfer_metrics": {
+    "completed_tx_chunks_in_horizon": 13200,
+    "acknowledged_payload_bytes_in_horizon": 148105795200.0,
+    "contact_wait_worker_s": 2642.9310450520006,
+    "frames_launched_outside_bidirectional_contact": 0,
+    "acknowledged_after_admitted_window": 22.0,
+    "post_horizon_tx_frames": 0,
+    "failed_tx_chunks": 0,
+    "measurement_note": "In-horizon observed application ACK payload per frame, including partial chunks. Excludes TCP overhead and retransmissions; not a wire-utilization measurement.",
+    "ack_payload_in_horizon": 148105795200.0,
+    "partial_ack_bytes": 22440272.0,
+    "partial_contained_bytes": 11220136.0,
+    "full_contained_bytes": 148060914656.0,
+    "crossing_bytes": 33660408.0,
+    "none_contained_bytes": 0,
+    "partial_contained_frames": 11.0,
+    "partial_contained_fraction": 7.575757575757576e-05,
+    "max_outstanding_frames": 11.0,
+    "partial_metric_note": "Planned ring connectivity. Strict partial bytes have both frame launch and observed application ACK inside the same contiguous partial-connectivity interval; crossing bytes separate. ACK observation is not actual wire time. No retransmission bytes counted.",
+    "planned_connectivity_seconds": {
+      "full": 3330.0,
+      "partial": 5670.0,
+      "none": 1800.0
+    }
+  },
+  "measurement_horizon_censored": true,
+  "run_success": false,
+  "failure_reasons": [
+    "Missing clean completion markers for ranks [0, 1, 2, 3]"
+  ],
+  "trace_sha256": "a7dbad1deea65af9fc379e39a30f664af4cd2eefc6cadb8f8cc5a03243e5d6ca",
+  "start_unix": 1795715350.2066796,
+  "duration_s": 10800.0,
+  "operation_count": 2200,
+  "operation_started_count": 2200,
+  "training_communication_count": 2200,
+  "training_communication_completed": 2200,
+  "validation_barrier_operation_count": 0,
+  "operation_completed_count": 2200,
+  "scheduled_outage_exposed_count": 12,
+  "scheduled_outage_exposure_rate": 0.005454545454545455,
+  "transport_outage_exposed_count": null,
+  "transport_outage_exposure_rate": null,
+  "transport_outage_attempted_count": null,
+  "transport_exposure_note": "Completed collective interval overlap on detected NCCL ring/ACK edges; null when topology is unverified; risk not failure.",
+  "observed_failures": 0,
+  "observed_timeout_events": 0,
+  "nccl_watchdog_timeout_rank_sequences": 0,
+  "timeout_count_note": "Lower bound: maximum of event-log timeout count and distinct NCCL watchdog rank/sequence reports; avoids counting duplicated logs twice.",
+  "training_process_success": false,
+  "completed_epochs_target": false,
+  "total_explicit_deferral_s": 2642.9310450520006,
+  "total_rendezvous_wait_s": 0,
+  "completed_logical_bytes": 98737161600.0,
+  "logical_bytes_to_target": {
+    "50": 29441626368.0,
+    "60": 62473694976.0,
+    "70": 82221127296.0
+  },
+  "actual_H_median": 64.0,
+  "actual_H_range": [
+    64,
+    64
+  ],
+  "useful_contact_utilization": null,
+  "useful_contact_utilization_note": "Requires observed attributable on-wire bytes and per-link applied capacity; E2 logical collective sizes are not on-wire volume.",
+  "successful_transmission_count": 2200,
+  "observed_tcp_bytes": null,
+  "observed_tcp_bytes_note": "No validated per-flow TCP aggregation in this summary; see E2 socket monitoring",
+  "per_rank_nic_counters": [
+    {
+      "rank": 0,
+      "nic_tx_delta_bytes": 38681357474.0,
+      "nic_rx_delta_bytes": 38658491101.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 1,
+      "nic_tx_delta_bytes": 38787239663.0,
+      "nic_rx_delta_bytes": 38760621047.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 2,
+      "nic_tx_delta_bytes": 38726888838.0,
+      "nic_rx_delta_bytes": 38685428061.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    },
+    {
+      "rank": 3,
+      "nic_tx_delta_bytes": 38780451954.0,
+      "nic_rx_delta_bytes": 38812568997.0,
+      "note": "node-global NIC counters; not attributable to training process"
+    }
+  ],
+  "time_to_accuracy_s": {
+    "50": 267.52267241477966,
+    "60": 1452.846022605896,
+    "70": 1623.3467111587524
+  },
+  "validation_scope": "four_rank_exact_step_in_horizon",
+  "final_observed_accuracy": 0.75135,
+  "final_validation_elapsed_s": 2469.735639333725,
+  "total_logged_optimizer_steps": 140800,
+  "local_steps_during_union_outages": 0,
+  "message_staleness_s_median": null,
+  "message_staleness_s_p95": null,
+  "communication_blocked_s_note": "E2 ready->complete is NOT pure communication idle; E3 deferral is separately recorded",
+  "interruption_note": "Exposed to scheduled outage is a timestamp overlap risk, NOT a confirmed failed collective.",
+  "recovery_note": "Post-outage first completed rank-level communication; missing observations are censored",
+  "scheduler_latency_note": "Local TX waits are logged; no per-step central grant or filesystem rendezvous",
+  "flower_caveat": "Flower server and rank0 client co-located; local traffic bypasses shaped link"
+}

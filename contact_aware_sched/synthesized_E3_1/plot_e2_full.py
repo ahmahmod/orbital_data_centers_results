@@ -89,7 +89,7 @@ def xy(rows, xkey, ykey, mult=1):
     return [(x,y*mult) for x,y in pts if x is not None and y is not None]
 
 
-def save(out, name, title, ylabel, groups, percent=False):
+def save(out, name, title, ylabel, groups, percent=False, xlabel='Elapsed time (seconds)'):
     fig, ax=plt.subplots(figsize=(10,5.2))
     drawn=0
     for label, pts in groups:
@@ -99,7 +99,7 @@ def save(out, name, title, ylabel, groups, percent=False):
             drawn+=1
     if not drawn:
         plt.close(fig);return False
-    ax.set(title=title,xlabel='Elapsed time (seconds)',ylabel=ylabel)
+    ax.set(title=title,xlabel=xlabel,ylabel=ylabel)
     if percent: ax.set_ylim(bottom=0,top=100)
     ax.grid(alpha=.22)
     if drawn>1:ax.legend(loc='best',fontsize=8)
@@ -113,6 +113,7 @@ def aggregate_validation(root,interval):
     config_path=root/'e2_run_config.json'
     config=json.loads(config_path.read_text()) if config_path.is_file() else {}
     by_epoch=(config.get('validation_schedule')=='every_epoch')
+    by_step=(config.get('validation_schedule')=='every_step_checkpoint')
     for f in sorted(root.glob('validation_rank*.csv')):
         try:rank=int(f.stem.removeprefix('validation_rank'))
         except ValueError:continue
@@ -121,20 +122,22 @@ def aggregate_validation(root,interval):
             if elapsed is None or acc is None or loss is None: continue
             # E1_b compares the same completed epoch across ranks; the older
             # E2 wall-clock mode instead aligns independent checks by time.
-            slot=int(v['epoch']) if by_epoch else max(1, round(elapsed/interval))
+            slot=int(v['step']) if by_step else int(v['epoch']) if by_epoch else max(1, round(elapsed/interval))
             by_slot[slot][rank]=(v,acc,loss)
     fields=['experiment','method','epoch','step','elapsed_s','unix_time_s','mean_accuracy',
             'min_accuracy','max_accuracy','std_accuracy','mean_loss','min_loss','max_loss',
             'std_loss','val_samples_per_worker','world_size','mean_accuracy_target_reached',
-            'all_workers_target_reached','observed_ranks','complete']
+            'all_workers_target_reached','observed_ranks','complete','within_horizon','validation_kind','completed_epochs']
     rows=[]
     for slot,ranks in sorted(by_slot.items()):
         aa=[x[1] for x in ranks.values()];ll=[x[2] for x in ranks.values()]
         first=next(iter(ranks.values()))[0]
-        record=dict(experiment='E2',method=first.get('method',''),epoch=slot,
+        record=dict(experiment='E2',method=first.get('method',''),epoch=first.get('epoch') if by_step else slot,
            step=first.get('step',''),
-           elapsed_s=(statistics.mean(float(x[0]['elapsed_s']) for x in ranks.values()) if by_epoch else slot*interval),
-           unix_time_s=first.get('unix_time_s',''),
+           elapsed_s=(max(float(x[0]['elapsed_s']) for x in ranks.values()) if by_step else statistics.mean(float(x[0]['elapsed_s']) for x in ranks.values()) if by_epoch else slot*interval),
+           unix_time_s=(max(float(x[0]['unix_time_s']) for x in ranks.values()) if by_step else first.get('unix_time_s','')),
+           within_horizon=int(all(x[0].get('within_horizon','1')=='1' for x in ranks.values())),
+           validation_kind=first.get('validation_kind',''),completed_epochs=first.get('completed_epochs',''),
            mean_accuracy=statistics.mean(aa),min_accuracy=min(aa),max_accuracy=max(aa),
            std_accuracy=statistics.pstdev(aa),mean_loss=statistics.mean(ll),
            min_loss=min(ll),max_loss=max(ll),std_loss=statistics.pstdev(ll),
@@ -156,6 +159,9 @@ def plot_run(root):
     interval=float(config.get('eval_interval_s',300) or 300)
     agg=aggregate_validation(root,interval)
     val={i:read(root/f'validation_rank{i}.csv') for i in range(4)}
+    if config.get('validation_schedule')=='every_step_checkpoint':
+        agg=[r for r in agg if r['complete'] and r['within_horizon']]
+        val={i:[r for r in seq if r.get('within_horizon','1')=='1'] for i,seq in val.items()}
     resources={i:read(root/f'resources_rank{i}.csv') for i in range(4)}
     comm=read(root/'e2_communication_events.csv')
     events={i:read(root/f'e2_events_rank{i}.csv') for i in range(4)}
@@ -169,6 +175,10 @@ def plot_run(root):
         return [(f'Worker {r}',xy(seq,'elapsed_s',field,mult)) for r,seq in val.items()]
     def res_groups(field):
         return [(f'Worker {r}',xy(seq,'elapsed_s',field)) for r,seq in resources.items()]
+    if config.get('validation_schedule')=='every_step_checkpoint':
+        for name,key,xlabel in [('24_accuracy_vs_steps.png','step','Local optimizer steps'),('25_accuracy_vs_epochs.png','epoch','Equivalent epochs')]:
+            if save(out,name,'Validation accuracy at matched training progress','Accuracy (%)',
+                    [('Mean of four ranks',xy(agg,key,'mean_accuracy',100))],True,xlabel):created.append(name)
     plot('01_train_loss.png','E2 — local training loss','Cross-entropy',step_groups('loss'))
     plot('02_validation_accuracy.png','E2 — rank-0 independent validation accuracy','Accuracy (%)',
          [('Rank 0',xy(val[0],'elapsed_s','val_accuracy',100))],True)

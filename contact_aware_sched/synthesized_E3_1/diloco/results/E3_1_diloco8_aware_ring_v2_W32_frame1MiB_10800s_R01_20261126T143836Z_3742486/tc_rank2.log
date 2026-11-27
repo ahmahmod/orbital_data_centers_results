@@ -1,0 +1,3 @@
+E2 tc installed: iface=ens4f0, mode=selective_tc, run=E3_1_diloco8_aware_ring_v2_W32_frame1MiB_10800s_R01_20261126T143836Z_3742486
+E2 tc agent received stop signal; cleaning up
+E2 tc cleanup PASS: ens4f0

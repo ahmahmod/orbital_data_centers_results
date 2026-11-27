@@ -1,1 +1,0 @@
-{"run_id": "f6e00ca2039f", "action": "grant", "reason": "predicted_window_feasible", "contact_wait": 0.0, "start": 1795598025.6196404, "end": 1795598106.4951344, "estimate": 2.5, "first_estimate": 0.75, "K": 26, "rate": 6533333333.0, "delay": 0.01, "recent_estimate": 0.30524443700005577}

@@ -22,6 +22,7 @@ import sys
 import threading
 import time
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 
 from remote import ROOT, read_state, ssh, remote_argv, route_guard
 from network_select import validate_shared_routes
@@ -64,16 +65,18 @@ try:
         marker.unlink(missing_ok=True); sys.exit(0)
     # account for parentheses in /proc/PID/stat comm field
     rest = stat.read_text().rsplit(')', 1)[1].strip().split()
+    if rest[0]=='Z':
+        marker.unlink(missing_ok=True);sys.exit(0)
     actual_ticks = rest[19]  # proc stat field 22
     raw = pathlib.Path(f'/proc/{pid}/cmdline').read_bytes().replace(b'\0', b' ').decode(errors='replace')
-    is_worker = any(name in raw for name in ('train.py', 'train_flower.py', 'tc_agent.py'))
+    is_worker = any(name in raw for name in ('train.py', 'ring_train.py', 'nccl_train.py', 'train_flower.py', 'tc_agent.py'))
     if actual_ticks != ticks or unique not in raw or not is_worker or os.getpgid(pid) != pid:
         print('REFUSING: PID identity did not match', marker, pid, raw[:200], file=sys.stderr)
         sys.exit(7)
     os.killpg(pid, signal.SIGTERM)
     deadline = time.monotonic() + 15
     while time.monotonic() < deadline:
-        if not stat.exists():
+        if not stat.exists() or stat.read_text().rsplit(')',1)[1].split()[0]=='Z':
             break
         time.sleep(0.2)
     if stat.exists():
@@ -81,12 +84,31 @@ try:
         if stat.read_text().rsplit(')', 1)[1].strip().split()[19] == ticks and os.getpgid(pid) == pid:
             print('Escalating to SIGKILL:', pid, file=sys.stderr)
             os.killpg(pid, signal.SIGKILL)
+    deadline=time.monotonic()+5
+    while stat.exists() and time.monotonic()<deadline:
+        if stat.read_text().rsplit(')',1)[1].split()[0]=='Z':break
+        time.sleep(.1)
+    if stat.exists() and stat.read_text().rsplit(')',1)[1].split()[0]!='Z':
+        raise RuntimeError('Verified worker still alive after SIGKILL')
     marker.unlink(missing_ok=True)
-except ProcessLookupError:
+except (ProcessLookupError,FileNotFoundError):
     marker.unlink(missing_ok=True)
 except Exception as e:
     print('Remote termination error:', repr(e), file=sys.stderr)
     sys.exit(8)
+'''
+
+# Verify a run-scoped remote process marker without signaling anything.
+REMOTE_ALIVE = r'''
+import pathlib,sys
+p=pathlib.Path(sys.argv[1])
+try:
+    pid,ticks=p.read_text().split()
+    stat=pathlib.Path('/proc')/pid/'stat'
+    fields=stat.read_text().rsplit(')',1)[1].split()
+    print('alive' if fields[19]==ticks and fields[0]!='Z' else 'gone')
+except FileNotFoundError:
+    print('gone')
 '''
 
 
@@ -109,11 +131,15 @@ def main():
     p.add_argument('--trace', default=str(ROOT / 'traces/directed_trace_4workers.csv'))
     p.add_argument('--master-port', type=int, default=29527)
     p.add_argument('--eval-every', type=int, default=100)
+    p.add_argument('--eval-steps',type=int,default=int(os.getenv('E3_EVAL_STEPS','128')))
     p.add_argument('--flower-rounds', type=int, default=int(os.getenv('E2_FLOWER_ROUNDS', '500')))
     p.add_argument('--eval-interval-s',type=float,default=float(os.getenv('E2_EVAL_INTERVAL_S','300')))
     p.add_argument('--resource-interval-s',type=float,default=float(os.getenv('E2_RESOURCE_INTERVAL_S','2')))
     p.add_argument('--comm-timeout', type=int, default=int(os.getenv('E2_COMM_TIMEOUT', '900')))
     a = p.parse_args()
+    h=int(''.join(c for c in a.method if c.isdigit()) or '1')
+    if a.method in ('ddp','diloco8','diloco64') and (a.eval_steps<1 or a.eval_steps%h):
+        raise ValueError('eval-steps must be positive and a multiple of H')
     if a.e3_margin_s<0 or a.e3_estimate_factor<=0:raise ValueError('Invalid E3 contact estimator')
     if a.comm_timeout <= 0:
         raise ValueError('comm-timeout must be positive')
@@ -136,7 +162,7 @@ def main():
     ring_sync=synchronous_nccl and transport=='ring'
     native_nccl=synchronous_nccl and transport=='nccl'
     ring_env=dict(E3_RING_PORT=str(a.master_port+1),
-        E3_RING_FRAME_BYTES='1048576',E3_RING_MARGIN_S='.5',
+        E3_RING_FRAME_BYTES='1048576',E3_RING_MAX_INFLIGHT='32',E3_RING_VERBOSE='1',E3_RING_WINDOW_LOG_EVERY='128',E3_RING_MARGIN_S='.5',
         E3_RING_FACTOR=str(a.e3_estimate_factor),E3_RING_OPEN_GUARD_S='.25',
         E3_RING_MIN_TRANSFER_S='.02',E3_RING_CONNECT_TIMEOUT_S='180',
         E3_RING_DRAIN_GUARD_S='2',
@@ -266,10 +292,12 @@ def main():
         trace_sha256=hashlib.sha256(trace.read_bytes()).hexdigest(),
         tc_applied=a.apply, network_mode=mode, rate_scale=a.rate_scale,
         dataset=a.dataset, comm_timeout_s=a.comm_timeout, shutdown_grace_s=a.shutdown_grace,
-        training_profile=('E3_decentralized_tcp_ring_v1' if ring_sync else
-                          'E3_native_nccl_frontend_control_v4' if native_nccl else
+        training_profile=('E3_decentralized_tcp_ring_v2' if ring_sync else
+                          'E3_native_nccl_frontend_control_v5' if native_nccl else
                           'E1_b_gossip_epoch_sync_v2' if a.method.startswith('gossip') else 'E1_aligned_v1'),
-        validation_schedule=('every_epoch' if a.method.startswith('gossip') else 'wall_clock'),
+        validation_schedule=('every_epoch' if a.method.startswith('gossip') else 'every_step_checkpoint' if synchronous_nccl else 'wall_clock'),
+        eval_steps=a.eval_steps if synchronous_nccl else None,
+        ring_window_policy=('adaptive_contact_credit' if a.schedule_mode=='aware' else 'fixed_credit_reactive') if ring_sync else None,
         validation_protocol=('worker_local_no_collective' if a.method.startswith('gossip') or synchronous_nccl
                             else 'framework_existing'),
         schedule_policy_file=str(schedule_path),
@@ -311,6 +339,16 @@ def main():
     signal.signal(signal.SIGINT, on_interrupt)
     signal.signal(signal.SIGTERM, on_interrupt)
 
+    def read_trainer_done():
+        found={}
+        for rank in range(4):
+            try:
+                d=json.loads((out/f'e3_trainer_done_rank{rank}.json').read_text())
+                if d.get('run_id')==run_id and d.get('rank')==rank:
+                    found[rank]=d
+            except (OSError,ValueError,TypeError):pass
+        return found
+
     def launch(host, role, argv, logpath):
         if role.startswith('train'):
             argv=['env', 'E3_TRACE='+str(trace),
@@ -339,8 +377,8 @@ def main():
         tasks.append(task)
         return proc
 
-    def stream_rank0():
-        path = out / 'train_rank0.log'
+    def stream_rank0(rank=0):
+        path = out / f'train_rank{rank}.log'
         while not path.exists() and not stream_done.is_set():
             time.sleep(0.1)
         if not path.exists():
@@ -349,7 +387,7 @@ def main():
             while True:
                 line = fp.readline()
                 if line:
-                    print('[rank0] ' + line.rstrip(), flush=True)
+                    print(f'[rank{rank}] ' + line.rstrip(), flush=True)
                 elif stream_done.is_set():
                     break
                 else:
@@ -438,6 +476,7 @@ def main():
                        '--outer-lr', os.getenv('E2_OUTER_LR', '0.3'),
                        '--outer-momentum', os.getenv('E2_OUTER_MOMENTUM', '0.9'),
                        '--eval-interval-s',str(a.eval_interval_s),'--resource-interval-s',str(a.resource_interval_s)]
+                if synchronous_nccl:cmd+=['--eval-steps',str(a.eval_steps)]
             launch(n['host'], f'train{rank}', cmd, out / f'train_rank{rank}.log')
 
         if synchronous_nccl:
@@ -510,10 +549,13 @@ def main():
             publish_start(out,run_id,start)
             print(('RING' if ring_sync else 'NCCL')+' AND ALL TC AGENTS READY; shared trace epoch='+str(start),flush=True)
 
-        threading.Thread(target=stream_rank0, daemon=True).start()
+        for rank in (range(4) if ring_sync and int(ring_env['E3_RING_VERBOSE'])>=2 else [0]):
+            threading.Thread(target=stream_rank0,args=(rank,),daemon=True).start()
         print(f'Launched {len(tasks)} remote processes, start={start:.3f}, run={run_id}', flush=True)
         deadline = start + a.max_seconds + a.shutdown_grace
         print(f'Training ends at {start + a.max_seconds:.3f}; shutdown grace {a.shutdown_grace}s', flush=True)
+        next_done_check=0.
+        marker_seen=None
         while time.time() < deadline and not interrupted:
             status = {str(t['path'].name): t['proc'].poll() for t in tasks}
             if any(v is not None and v != 0 for v in status.values()):
@@ -551,13 +593,25 @@ def main():
                 print('TRAINING COMPLETE: all four workers exited successfully; '
                       'stopping contact replay and finalizing this method.', flush=True)
                 break
+            if synchronous_nccl and time.monotonic()>=next_done_check:
+                next_done_check=time.monotonic()+5
+                if len(read_trainer_done())==4:
+                    if marker_seen is None:
+                        marker_seen=time.monotonic()
+                        print('All trainers reported clean application completion; allowing SSH launchers to exit.',flush=True)
+                    elif time.monotonic()-marker_seen>=10:
+                        epochs_finished=True
+                        break
             if all(v is not None for v in status.values()):
                 break
             time.sleep(1)
         else:
             if not interrupted and any(t['proc'].poll() is None for t in tasks):
+                if synchronous_nccl and len(read_trainer_done())==4:
+                    epochs_finished=True
+                    shutdown_warnings.append('Application completed; launcher exceeded graceful deadline')
                 pending = [t['role'] + '@' + t['host'] for t in tasks if t['proc'].poll() is None]
-                failures.append(f'Experiment exceeded wall-clock deadline; pending: {pending}')
+                if not epochs_finished:failures.append(f'Experiment exceeded wall-clock deadline; pending: {pending}')
     except Exception as exc:
         failures.append(repr(exc))
         print('Coordinator error:', repr(exc), file=sys.stderr, flush=True)
@@ -567,55 +621,71 @@ def main():
         # Terminate active remote processes by verified PID, not just local SSH.
         # Stop training before tc, so tc has time to remove its own qdisc.
         print('FINALIZATION: stopping remaining training workers before tc agents', flush=True)
-        for role_prefix in ('train', 'flower_server', 'tc'):
-            for t in tasks:
-                if not t['role'].startswith(role_prefix):
-                    continue
-                if t['proc'].poll() is None:
-                    command = 'python3 -c ' + sq(REMOTE_STOP) + ' ' + sq(t['marker']) + ' ' + sq(str(out))
-                    try:
-                        result = ssh(t['host'], command, timeout=45)
-                        if result:
-                            print(f'Remote stop {t["host"]}/{t["role"]}: {result}', flush=True)
-                    except Exception as exc:
-                        msg=f'Remote stop failed {t["host"]}/{t["role"]}: {exc}'
-                        # Early-finished TRAINING and a DRY-RUN agent must be
-                        # distinguished from a training failure. All agents
-                        # are still explicitly stopped/checked below.
-                        if epochs_finished and not a.apply and t['role'].startswith('tc'):
-                            shutdown_warnings.append(msg)
-                            print('SHUTDOWN WARNING (dry-run agent):',msg,flush=True)
-                        else:
-                            failures.append(msg)
-        # Give tc agents a short opportunity to finish their own cleanup before
-        # closing any still-running SSH client. Never delete qdiscs blindly.
-        for t in tasks:
-            if t['role'].startswith('tc') and t['proc'].poll() is None:
-                try:
-                    t['proc'].wait(timeout=20)
-                except subprocess.TimeoutExpired:
-                    print('TC agent still pending after cleanup grace:', t['host'], flush=True)
-        for t in tasks:
-            if t['proc'].poll() is None:
-                try:
-                    t['proc'].wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    try:
-                        os.killpg(t['proc'].pid, signal.SIGTERM)
-                    except ProcessLookupError:
-                        pass
-                    try:
-                        t['proc'].wait(timeout=3)
-                    except subprocess.TimeoutExpired:
-                        os.killpg(t['proc'].pid, signal.SIGKILL)
-                        t['proc'].wait()
+        def remote_stop(t):
+            # Verify marker even when the local SSH launcher has already exited.
+            command='python3 -c '+sq(REMOTE_STOP)+' '+sq(t['marker'])+' '+sq(str(out))
+            try:
+                result=ssh(t['host'],command,timeout=45)
+                if result:print(f'Remote stop {t["host"]}/{t["role"]}: {result}',flush=True)
+                return None
+            except Exception as exc:
+                return f'Remote stop failed {t["host"]}/{t["role"]}: {exc}'
+
+        def close_ssh(t):
+            proc=t['proc']
+            if proc.poll() is not None:return
+            try:proc.wait(timeout=8)
+            except subprocess.TimeoutExpired:
+                for sig in (signal.SIGTERM,signal.SIGKILL):
+                    try:os.killpg(proc.pid,sig)
+                    except ProcessLookupError:pass
+                    try:proc.wait(timeout=3);break
+                    except subprocess.TimeoutExpired:continue
+
+        # Parallelize across nodes; keep training and replay termination ordered.
+        stop_errors=[]
+        for role_prefix in ('train','flower_server','tc'):
+            group=[t for t in tasks if t['role'].startswith(role_prefix)]
+            with ThreadPoolExecutor(max_workers=4) as pool:
+                stop_errors.extend(x for x in pool.map(remote_stop,group) if x)
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            list(pool.map(close_ssh,tasks))
+
+        def verify_remote(t):
+            try:
+                command='python3 -c '+sq(REMOTE_ALIVE)+' '+sq(t['marker'])
+                result=ssh(t['host'],command,timeout=25).strip()
+                return None if result=='gone' else f'Remote process not verified gone: {t["host"]}/{t["role"]}: {result}'
+            except Exception as exc:
+                return f'Cannot verify remote process {t["host"]}/{t["role"]}: {exc}'
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            remote_errors=[x for x in pool.map(verify_remote,tasks) if x]
+        failures.extend(remote_errors)
+        # Transient SSH stop failure is a warning only if subsequent independent
+        # checks establish that every process has exited and qdisc is clean.
+        if remote_errors:failures.extend(stop_errors)
+        else:shutdown_warnings.extend(stop_errors)
         if broker:broker.close()
         for fp in logs:
             fp.close()
         stream_done.set()
         status = {str(t['path'].name): t['proc'].returncode for t in tasks}
+        trainer_done=read_trainer_done() if synchronous_nccl else {}
+        # Shared NFS metadata can lag the remote process exit. Wait briefly for
+        # atomic trainer markers before declaring a clean run incomplete.
+        if synchronous_nccl and epochs_finished and len(trainer_done)<4:
+            marker_deadline=time.monotonic()+65
+            while len(trainer_done)<4 and time.monotonic()<marker_deadline:
+                time.sleep(1)
+                trainer_done=read_trainer_done()
+        training_clean=(len(trainer_done)==4 if synchronous_nccl else epochs_finished)
+        reached_epochs=(training_clean and all(d.get('completed_epochs',0)>=100
+                        and d.get('reason')=='epochs_completed' for d in trainer_done.values())
+                        if synchronous_nccl else epochs_finished)
+        if synchronous_nccl and not training_clean:
+            failures.append('Missing clean completion markers for ranks '+str(sorted(set(range(4))-set(trainer_done))))
         bad = {name: code for name, code in status.items() if code != 0}
-        if epochs_finished:
+        if training_clean:
             # tc_agent handles SIGTERM and removes its *own* qdisc in finally.
             # A remote SSH launcher may return a signal exit code even when
             # the agent confirms its cleanup; accept only verified cleanup.
@@ -632,25 +702,41 @@ def main():
                     print(f'Replay agent {name} confirmed cleanup after early stop '
                           f'(launcher exit {bad[name]}).', flush=True)
                     bad.pop(name)
-        if bad:
-            failures.append(f'Nonzero process exits: {bad}')
+        if training_clean and not remote_errors:
+            for name in list(bad):
+                if name.startswith('train_rank') and bad[name] in (-9,-15,137,143):
+                    shutdown_warnings.append(f'{name}: application completion marker verified; launcher exit {bad.pop(name)}')
+        # Replay launcher signal exits are assessed after independent qdisc checks.
+        cleanup_failure_start=len(failures)
         # Check for leftover E2-style qdisc and local tc-agent ownership marker.
         if a.apply:
             for n in nodes:
                 try:
-                    q = ssh(n['host'], 'tc qdisc show dev ' + sq(n['iface']))
+                    q = ssh(n['host'], 'tc qdisc show dev ' + sq(n['iface']) + '; test ! -e ' + sq('/run/e2_tc_'+n['iface']+'.json') + ' || echo E2_OWNERSHIP_MARKER_PRESENT',timeout=25)
+                    if 'E2_OWNERSHIP_MARKER_PRESENT' in q:
+                        failures.append(f"Residual E2 ownership marker on {n['host']}:{n['iface']}")
                     if any(line.startswith('qdisc htb 1: root') for line in q.splitlines()):
                         failures.append(f"Residual HTB qdisc on {n['host']}:{n['iface']}")
                 except Exception as exc:
                     failures.append(f"Cannot verify qdisc on {n['host']}: {exc}")
+        if training_clean and not remote_errors and len(failures)==cleanup_failure_start:
+            for name in list(bad):
+                if name.startswith('tc_rank') and bad[name] in (-9,-15,137,143):
+                    shutdown_warnings.append(f'{name}: remote process gone and qdisc/ownership checked; launcher exit {bad.pop(name)}')
+        if bad:failures.append(f'Nonzero process exits: {bad}')
         (out / 'execution_status.json').write_text(json.dumps(dict(
             return_codes=status, failures=failures, shutdown_warnings=shutdown_warnings,
-            training_process_success=epochs_finished,
+            training_process_success=training_clean,
+            completed_epochs_target=reached_epochs,
+            trainer_completion=trainer_done,
+            remote_processes_verified_gone=not remote_errors,
             shutdown_grace_s=a.shutdown_grace, wall_end=time.time(),
             run_id=run_id, success=(not failures),
-            training_completed_early=epochs_finished,
+            training_completed_early=(reached_epochs and (max(d['finished_unix'] for d in trainer_done.values())
+                if trainer_done else time.time())<start+a.max_seconds),
             completion_reason=('flower_rounds_completed' if epochs_finished and a.method.startswith('fl') else
-                               'trainers_finished' if epochs_finished else
+                               'epochs_completed' if reached_epochs else
+                               'wall_budget_or_no_feasible_contact' if training_clean else
                                'interrupted' if interrupted else 'duration_or_failure')), indent=2))
         print('Log/output folder:', out, flush=True)
         subprocess.run([sys.executable, str(ROOT / 'analyze.py'), str(out)], check=False)

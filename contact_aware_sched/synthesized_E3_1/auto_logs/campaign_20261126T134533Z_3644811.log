@@ -1,0 +1,9 @@
+Campaign log: auto_logs/campaign_20261126T134533Z_3644811.log
+Maximum training budget: up to 8 x 10800 seconds; reservation/setup/cleanup extra.
+Repetition=R01; retry failed=0; dry run=0
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+  File "/home/amahmod/experiments_grid/contact_aware_sched/synthesized_E3_1/remote.py", line 54, in read_state
+    if x.get('oar_job_id')!=os.getenv('OAR_JOB_ID'):raise RuntimeError('KaVLAN state is for another reservation; run bootstrap.sh')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: KaVLAN state is for another reservation; run bootstrap.sh

@@ -1,5 +1,0 @@
-rank,nic_tx_delta_bytes,nic_rx_delta_bytes,note
-0,309802507185.0,309880102111.0,node-global NIC counters; not attributable to training process
-1,309854988548.0,309951279953.0,node-global NIC counters; not attributable to training process
-2,310305282109.0,310334807943.0,node-global NIC counters; not attributable to training process
-3,309885710990.0,309970093293.0,node-global NIC counters; not attributable to training process

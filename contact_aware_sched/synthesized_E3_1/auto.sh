@@ -8,10 +8,18 @@ cd "$(dirname "$(realpath "$0")")"
 : "${AUTO_START_BUFFER_S:=2400}"
 : "${AUTO_REPETITION:=R01}"
 : "${AUTO_DRY_RUN:=0}"
+: "${AUTO_TRANSPORTS:=ring nccl}"
+for transport in $AUTO_TRANSPORTS; do [[ "$transport" == ring || "$transport" == nccl ]] || { echo "Invalid AUTO_TRANSPORTS"; exit 2; }; done
 : "${E2_CONFIRM_SHARED_TC:=0}"
 export MAX_SECONDS DATASET AUTO_RETRY_FAILED AUTO_REPETITION
 export TC_APPLY=1 E2_CONFIRM_SHAPING=1 E2_CONFIRM_SHARED_TC
-export E2_COMM_TIMEOUT=900 E2_LOG_EVERY=20 E2_EVAL_INTERVAL_S=300 E2_RESOURCE_INTERVAL_S=2 E2_SHUTDOWN_GRACE=300
+export E2_COMM_TIMEOUT=${E2_COMM_TIMEOUT:-900} E2_LOG_EVERY=20 E2_EVAL_INTERVAL_S=300 E2_RESOURCE_INTERVAL_S=2 E2_SHUTDOWN_GRACE=300
+: "${E3_EVAL_STEPS:=128}"
+: "${E3_RING_MAX_INFLIGHT:=32}"
+[[ "$E3_EVAL_STEPS" =~ ^[0-9]+$ && "$E3_RING_MAX_INFLIGHT" =~ ^[0-9]+$ ]] || exit 2
+(( E3_EVAL_STEPS>0 && E3_EVAL_STEPS%64==0 && E3_RING_MAX_INFLIGHT>=1 && E3_RING_MAX_INFLIGHT<=128 )) || { echo 'Invalid validation interval or credit cap'; exit 2; }
+export E3_EVAL_STEPS E3_RING_MAX_INFLIGHT
+export E3_RING_VERBOSE=${E3_RING_VERBOSE:-1} E3_RING_WINDOW_LOG_EVERY=${E3_RING_WINDOW_LOG_EVERY:-128}
 export E2_OUTER_LR=0.3 E2_OUTER_MOMENTUM=0.9
 export E3_NCCL_TOPOLOGY=ring_auto E3_GRANT_MAX_OPS=32 E3_MARGIN_S=15 E3_ESTIMATE_FACTOR=2
 export E3_MIN_TRANSFER_S=.5 E3_LOCAL_STEP_BUDGET_S=.25 E3_OBSERVED_FACTOR=1.5
@@ -47,7 +55,7 @@ flock -n 9 || { echo 'Another auto.sh is active'; exit 2; }
 LOG="auto_logs/campaign_$(date -u +%Y%m%dT%H%M%SZ)_$$.log"
 exec > >(tee -a "$LOG") 2>&1
 echo "Campaign log: $LOG"
-echo "Maximum training budget: 12 x $MAX_SECONDS seconds; reservation/setup/cleanup extra."
+echo "Maximum training budget: up to 8 x $MAX_SECONDS seconds; reservation/setup/cleanup extra."
 echo "Repetition=$AUTO_REPETITION; retry failed=$AUTO_RETRY_FAILED; dry run=$AUTO_DRY_RUN"
 
 if [[ "$AUTO_DRY_RUN" != 1 ]]; then
@@ -69,7 +77,7 @@ import hashlib,json,os,sys
 from pathlib import Path
 method,transport,mode=sys.argv[1:]
 root=Path('ddp' if method=='ddp' else 'diloco')/'results'
-profile='E3_native_nccl_frontend_control_v4' if transport=='nccl' else 'E3_decentralized_tcp_ring_v1'
+profile='E3_native_nccl_frontend_control_v5' if transport=='nccl' else 'E3_decentralized_tcp_ring_v2'
 sha=hashlib.sha256(Path(os.environ['AUTO_TRACE']).read_bytes()).hexdigest()
 def load(p):
     try:return json.loads(p.read_text())
@@ -79,7 +87,7 @@ def same(a,b):
     except (ValueError,TypeError):return a==b
 def matches_dict(actual,keys):
     return all(same(actual.get(k),os.environ[k]) for k in keys)
-ring_keys='E3_RING_PORT E3_RING_FRAME_BYTES E3_RING_MARGIN_S E3_RING_FACTOR E3_RING_OPEN_GUARD_S E3_RING_MIN_TRANSFER_S E3_RING_CONNECT_TIMEOUT_S E3_RING_DRAIN_GUARD_S E3_RING_DRAIN_TIMEOUT_S'.split()
+ring_keys='E3_RING_PORT E3_RING_FRAME_BYTES E3_RING_MAX_INFLIGHT E3_RING_MARGIN_S E3_RING_FACTOR E3_RING_OPEN_GUARD_S E3_RING_MIN_TRANSFER_S E3_RING_CONNECT_TIMEOUT_S E3_RING_DRAIN_GUARD_S E3_RING_DRAIN_TIMEOUT_S'.split()
 batch_keys='E3_GRANT_MAX_OPS E3_LOCAL_STEP_BUDGET_S E3_OBSERVED_FACTOR E3_MIN_TRANSFER_S E3_OBSERVED_WINDOW E3_OBSERVED_MAX_AGE_S E3_OBSERVED_QUANTILE E3_CONTACT_OPEN_GUARD_S E3_LAUNCH_GUARD_S E3_CONTROL_POLL_S E3_RENDEZVOUS_TIMEOUT'.split()
 rep=os.environ['AUTO_REPETITION']
 for d in sorted(root.glob(f'E3_1_{method}_{mode}_*'),reverse=True):
@@ -90,7 +98,7 @@ for d in sorted(root.glob(f'E3_1_{method}_{mode}_*'),reverse=True):
     c=load(d/'e2_run_config.json')
     if not c:
         # Preserve failed preflight attempts; only skip if named by this exact campaign.
-        label=('nccl_K32' if mode=='aware' else 'nccl_native') if transport=='nccl' else 'ring_frame1MiB'
+        label=('nccl_v5_K32' if mode=='aware' else 'nccl_v5_native') if transport=='nccl' else f'ring_v2_W{os.environ["E3_RING_MAX_INFLIGHT"]}_frame1MiB'
         if os.environ['AUTO_RETRY_FAILED']=='0' and f'_{label}_{os.environ["MAX_SECONDS"]}s_{rep}_' in d.name:
             print(str(d)+' (existing incomplete attempt; no config)');break
         continue
@@ -98,7 +106,7 @@ for d in sorted(root.glob(f'E3_1_{method}_{mode}_*'),reverse=True):
         duration_s=int(os.environ['MAX_SECONDS']),dataset=os.environ['DATASET'],
         trace_sha256=sha,tc_applied=True,rate_scale=1,seed=2026,max_epochs=100,
         model='ResNet18_CIFAR_stem',batch_size=32,num_workers=4,
-        comm_timeout_s=900,shutdown_grace_s=300,eval_interval_s=300,
+        comm_timeout_s=int(os.environ['E2_COMM_TIMEOUT']),shutdown_grace_s=300,eval_interval_s=300,eval_steps=int(os.environ['E3_EVAL_STEPS']),validation_schedule='every_step_checkpoint',
         resource_interval_s=2,outer_lr=.3,outer_momentum=.9,
         e3_margin_s=15,e3_estimate_factor=2)
     if any(not same(c.get(k),v) for k,v in wanted.items()):continue
@@ -111,6 +119,13 @@ for d in sorted(root.glob(f'E3_1_{method}_{mode}_*'),reverse=True):
     status=load(d/'execution_status.json')
     summary=load(d/'e3_summary.json')
     success=status.get('success') is True and summary.get('run_success') is True
+    if transport=='ring' and status.get('remote_processes_verified_gone') is True:
+        # Preserve scientifically completed training despite known v2 launcher/marker reporting faults.
+        markers=[load(d/f'e3_trainer_done_rank{i}.json') for i in range(4)]
+        clean=all(m.get('run_id')==status.get('run_id') and m.get('rank')==i and m.get('completed_epochs')==100 and m.get('reason')=='epochs_completed' for i,m in enumerate(markers))
+        benign=all(x.startswith(('Missing clean completion markers','Nonzero process exits:')) for x in status.get('failures',[]))
+        if clean and benign and summary.get('total_logged_optimizer_steps')==140800 and (summary.get('ring_transfer_metrics') or {}).get('failed_tx_chunks')==0:
+            success=True
     if success or os.environ['AUTO_RETRY_FAILED']=='0':
         print(str(d)+(' (success)' if success else ' (failed/incomplete; preserved)'));break
 PY
@@ -160,13 +175,13 @@ trap 'interrupted=1' INT TERM
 failed=0
 skipped=0
 launched=0
-for method in ddp diloco8 diloco64; do
-    for transport in nccl ring; do
-        for mode in off aware; do
-            label=ring_frame1MiB
+for method in ${AUTO_METHODS:-diloco8 diloco64}; do
+    for transport in $AUTO_TRANSPORTS; do
+        for mode in ${AUTO_MODES:-off aware}; do
+            label=ring_v2_W${E3_RING_MAX_INFLIGHT}_frame1MiB
             if [[ "$transport" == nccl ]]; then
-                label=nccl_native
-                [[ "$mode" == aware ]] && label=nccl_K32
+                label=nccl_v5_native
+                [[ "$mode" == aware ]] && label=nccl_v5_K32
             fi
             found=$(existing "$method" "$transport" "$mode")
             if [[ -n "$found" ]]; then

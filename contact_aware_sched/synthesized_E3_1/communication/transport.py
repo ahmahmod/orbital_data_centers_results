@@ -7,8 +7,10 @@ been received and validated. TCP handles retransmission within a live
 connection; connection loss aborts the run, never silently replays data.
 """
 import csv
+from collections import deque
 import json
 import math
+import os
 import queue
 import select
 import socket
@@ -20,7 +22,7 @@ from pathlib import Path
 
 import numpy as np
 
-from .contact_plan import LinkPlan
+from .contact_plan import LinkPlan, RingConnectivity
 
 
 HEADER=struct.Struct('!4sQBBHII')
@@ -47,7 +49,7 @@ class RingTransport:
     def __init__(self, rank, peers, port, run_id, scheduler, *, frame_bytes=1048576,
                  margin=.5, factor=2., open_guard=.25, min_transfer=.02,
                  connect_timeout=180., io_timeout=900., drain_guard=2.,
-                 drain_timeout=240.):
+                 drain_timeout=240., max_inflight=32):
         self.rank=int(rank);self.peers=list(peers);self.world=len(peers)
         if self.world!=4 or not 0<=self.rank<self.world:
             raise ValueError('Ring transport requires four ranks')
@@ -59,6 +61,11 @@ class RingTransport:
         self.scheduler=scheduler
         self.mode=scheduler.mode
         self.frame_bytes=int(frame_bytes)
+        self.max_inflight=int(max_inflight)
+        self.verbose=int(os.getenv('E3_RING_VERBOSE','1'))
+        self.log_every=max(1,int(os.getenv('E3_RING_WINDOW_LOG_EVERY','128')))
+        self.last_window_log=None
+        if not 1<=self.max_inflight<=128:raise ValueError('Invalid ring credit limit')
         if not 4<=self.frame_bytes<=64*1024*1024 or self.frame_bytes%4:
             raise ValueError('Frame bytes must be a multiple of 4, between 4 B and 64 MiB')
         self.connect_timeout=float(connect_timeout);self.io_timeout=float(io_timeout)
@@ -75,6 +82,7 @@ class RingTransport:
             return LinkPlan(edges[sats[src],sats[dst]],edges[sats[dst],sats[src]],
                 scheduler.end-scheduler.start,factor=factor,margin=margin,
                 open_guard=open_guard,min_transfer=min_transfer)
+        self.connectivity=RingConnectivity(edges,sats,scheduler.end-scheduler.start)
         self.tx_plan=plan(self.rank,self.next)
         self.rx_plan=plan(self.prev,self.rank)
         self.cancelled=threading.Event()
@@ -89,7 +97,10 @@ class RingTransport:
             'rank','peer','direction','mode','step','phase','round','chunk',
             'ready_unix','first_frame_unix','complete_unix','payload_bytes',
             'frames','contact_wait_s','io_s','ack_or_receive_after_window',
-            'outside_contact_frames','post_horizon_frames','status','error'])
+            'outside_contact_frames','post_horizon_frames','status','error',
+            'max_outstanding_frames','ack_payload_in_horizon','partial_ack_bytes',
+            'partial_contained_bytes','full_contained_bytes','crossing_bytes','none_contained_bytes',
+            'partial_contained_frames'])
         self.writer.writeheader()
         self.last_collective_wait_s=0.
         self.last_collective_tx_bytes=0
@@ -130,7 +141,7 @@ class RingTransport:
                 raise TimeoutError('Ring TX startup timed out')
             # Tiny run-scoped handshake, before any traffic is shaped.
             payload=json.dumps({'run_id':self.run_id,'rank':self.rank,
-                                'frame_bytes':self.frame_bytes}).encode()
+                                'frame_bytes':self.frame_bytes,'max_inflight':self.max_inflight}).encode()
             self._send(self.tx_sock,HELLO.pack(b'HELO',len(payload))+payload,
                        startup_deadline=deadline)
             while time.monotonic()<deadline:
@@ -148,7 +159,7 @@ class RingTransport:
             if magic!=b'HELO' or not 0<n<=4096:
                 raise RuntimeError('Invalid ring handshake')
             hello=json.loads(self._recv(self.rx_sock,n,startup_deadline=deadline))
-            if hello!={'run_id':self.run_id,'rank':self.prev,'frame_bytes':self.frame_bytes}:
+            if hello!={'run_id':self.run_id,'rank':self.prev,'frame_bytes':self.frame_bytes,'max_inflight':self.max_inflight}:
                 raise RuntimeError('Ring peer/run/frame configuration mismatch')
             listener.close();self.listener=None
             # Threads start before replay, but wait for jobs from training.
@@ -172,7 +183,7 @@ class RingTransport:
         # AWARE receive/ACK waits can span predicted outages. Do not apply
         # an arbitrary idle timeout to a valid planned contact wait.
         if self.mode=='off' and time.monotonic()-last_progress>self.io_timeout:
-            raise TimeoutError('Reactive TCP transfer made no progress')
+            raise TimeoutError(f'Reactive TCP transfer made no progress for {time.monotonic()-last_progress:.3f}s (limit={self.io_timeout:g}s)')
 
     def _send(self,sock,data,startup_deadline=None):
         view=memoryview(data).cast('B')
@@ -195,6 +206,35 @@ class RingTransport:
             offset+=n;last=time.monotonic()
         return data
 
+    def _window_log(self, job, now, pending, n, limit, decision):
+        if not self.verbose:return
+        w=self.tx_plan.containing(now-self.start)
+        key=(decision,w)
+        if self.verbose<2 and key==self.last_window_log and job.step%self.log_every!=0:return
+        # At level 1, emit once per sampled collective per decision/contact.
+        sample=(key,job.step)
+        if self.verbose<2 and getattr(self,'last_window_sample',None)==sample:return
+        self.last_window_log=key;self.last_window_sample=sample
+        sizes=[x[1] for x in pending]+[n]
+        details='contact=closed'
+        if w:
+            a,b,rf,rr,df,dr=w
+            rtt=df+dr
+            estimate=max(self.tx_plan.min_transfer,self.tx_plan.factor*(
+                sum((v+128)*8/rf+128*8/rr for v in sizes)+rtt))
+            bdp=rf*rtt/8
+            bdp_cap=max(1,math.ceil(2*bdp/max(1,sizes[0])))
+            details=(f'contact=[{a:.3f},{b:.3f}) remaining_s={b-(now-self.start):.6f} '
+                     f'forward_Mbps={rf/1e6:.3f} reverse_Mbps={rr/1e6:.3f} '
+                     f'rtt_ms={rtt*1000:.3f} bdp_bytes={bdp:.0f} bdp_cap={bdp_cap} '
+                     f'estimate_s={estimate:.6f} margin_s={self.tx_plan.margin:.3f} '
+                     f'factor={self.tx_plan.factor:g} open_guard_s={self.tx_plan.open_guard:g}')
+        print(f'[RING WINDOW r{self.rank}->{self.next}] mode={self.mode} '
+              f't={now-self.start:.6f} step={job.step} phase={job.phase} round={job.round} '
+              f'chunk={job.chunk} pending={len(pending)} pending_bytes={sum(sizes[:-1])} '
+              f'candidate_bytes={n} admissible={limit} cap={self.max_inflight} '
+              f'decision={decision} {details}',flush=True)
+
     def _wait_slot(self,n,job):
         ready=time.monotonic();reported=False
         while True:
@@ -209,7 +249,7 @@ class RingTransport:
                 return time.monotonic()-ready,None,True
             if self.mode=='off':
                 return 0.,None,False
-            slot=self.tx_plan.next_slot(now-self.start,n)
+            slot=self.tx_plan.next_credit_slot(now-self.start,n)
             if slot is not None and self.start+slot[0]<=now+1e-6:
                 return time.monotonic()-ready,self.start+slot[1],False
             target=self.start+slot[0] if slot else self.end+self.drain_guard
@@ -245,31 +285,69 @@ class RingTransport:
     def _transfer(self,direction,job):
         ready=time.time();first=None;wait=0.;io=0.;frames=0
         after=outside=drain=0;payload=0;status='completed';error=''
+        peak=0;ack_budget=0;partial_ack=0;partial_frames=0
+        classified=dict(full=0,partial=0,none=0,crossing=0)
         raw=memoryview(job.array).cast('B')
         total=len(raw)
         try:
-            for off in range(0,total,self.frame_bytes):
-                n=min(self.frame_bytes,total-off)
-                if direction=='tx':
-                    waited,contact_end,post=self._wait_slot(n,job)
-                    wait+=waited
-                    stamp=time.time()
-                    if first is None:first=stamp
-                    if stamp>=self.end or post:drain+=1
-                    elif not self.tx_plan.containing(stamp-self.start):outside+=1
-                    header=HEADER.pack(DATA,job.step,job.phase,job.round,job.chunk,off,n)
-                    t=time.monotonic()
-                    self._send(self.tx_sock,header)
-                    self._send(self.tx_sock,raw[off:off+n])
-                    reply=self._recv(self.tx_sock,HEADER.size)
-                    if HEADER.unpack(reply)!=(ACK,job.step,job.phase,job.round,job.chunk,off,n):
-                        raise RuntimeError('Unexpected frame ACK (sequence mismatch)')
-                    io+=time.monotonic()-t
-                    if contact_end is not None and time.time()>contact_end:after+=1
-                else:
-                    # Arm reception as soon as the dependency is known.
-                    # Never stop reading an already in-flight TCP frame when
-                    # a contact closes: that would create an artificial deadlock.
+            if direction=='tx':
+                pending=deque()
+                off=0
+                while off<total or pending:
+                    # Refill credits after every ACK, not after a whole chunk.
+                    # OFF uses the same framing/ACK protocol but no contact knowledge.
+                    while off<total and len(pending)<self.max_inflight:
+                        n=min(self.frame_bytes,total-off)
+                        now=time.time()
+                        if self.mode=='aware' and now<self.end:
+                            sizes=[x[1] for x in pending]+[n]
+                            limit=self.tx_plan.credit_limit(now-self.start,sizes,self.max_inflight)
+                            decision=('ADMIT' if limit>=len(sizes) else 'DRAIN_ACK' if pending else 'WAIT_CONTACT')
+                            self._window_log(job,now,pending,n,limit,decision)
+                            if limit<len(sizes):
+                                if pending:break
+                                waited,_,_=self._wait_slot(n,job)
+                                wait+=waited
+                                continue
+                        elif now>=self.end and now<self.end+self.drain_guard:
+                            if pending:break
+                            waited,_,_=self._wait_slot(n,job);wait+=waited
+                            continue
+                        if self.mode=='off':self._window_log(job,now,pending,n,self.max_inflight,'REACTIVE_ADMIT')
+                        self._check(time.monotonic())
+                        stamp=time.time()
+                        window=self.tx_plan.containing(stamp-self.start)
+                        if first is None:first=stamp
+                        if stamp>=self.end:drain+=1
+                        elif window is None:outside+=1
+                        header=HEADER.pack(DATA,job.step,job.phase,job.round,job.chunk,off,n)
+                        t=time.monotonic()
+                        self._send(self.tx_sock,header)
+                        self._send(self.tx_sock,raw[off:off+n])
+                        io+=time.monotonic()-t
+                        pending.append((off,n,stamp,self.start+window[1] if window else None))
+                        peak=max(peak,len(pending))
+                        off+=n
+                    if pending:
+                        pos,n,stamp,contact_end=pending.popleft()
+                        t=time.monotonic()
+                        reply=self._recv(self.tx_sock,HEADER.size)
+                        if HEADER.unpack(reply)!=(ACK,job.step,job.phase,job.round,job.chunk,pos,n):
+                            raise RuntimeError('Unexpected frame ACK (sequence mismatch)')
+                        io+=time.monotonic()-t
+                        ack=time.time()
+                        if self.mode=='aware' and contact_end is not None and ack>contact_end:after+=1
+                        if self.start<=stamp<=ack<self.end:
+                            ack_budget+=n
+                            state=self.connectivity.interval(ack-self.start)
+                            if state and state[2]=='partial':partial_ack+=n
+                            kind=self.connectivity.classify(stamp-self.start,ack-self.start)
+                            if kind in classified:classified[kind]+=n
+                            if kind=='partial':partial_frames+=1
+                        frames+=1;payload+=n
+            else:
+                for off in range(0,total,self.frame_bytes):
+                    n=min(self.frame_bytes,total-off)
                     wait+=self._await_rx_slot(n,job)
                     t=time.monotonic()
                     header=self._recv(self.rx_sock,HEADER.size)
@@ -285,7 +363,7 @@ class RingTransport:
                         window=self.rx_plan.containing(stamp-self.start)
                         if window is None:outside+=1
                         elif time.time()>self.start+window[1]:after+=1
-                frames+=1;payload+=n
+                    frames+=1;payload+=n
         except BaseException as exc:
             status='failed';error=repr(exc)
             raise
@@ -297,9 +375,11 @@ class RingTransport:
                     chunk=job.chunk,ready_unix=ready,first_frame_unix=first,
                     complete_unix=time.time(),payload_bytes=payload,frames=frames,
                     contact_wait_s=wait,io_s=io,ack_or_receive_after_window=after,
-                    outside_contact_frames=outside,post_horizon_frames=drain,status=status,error=error))
-                # One flush per chunk (not per frame); result visibility
-                # is diagnostic only and never a live scheduling dependency.
+                    outside_contact_frames=outside,post_horizon_frames=drain,status=status,error=error,
+                    max_outstanding_frames=peak,ack_payload_in_horizon=ack_budget,
+                    partial_ack_bytes=partial_ack,partial_contained_bytes=classified['partial'],
+                    full_contained_bytes=classified['full'],crossing_bytes=classified['crossing'],
+                    none_contained_bytes=classified['none'],partial_contained_frames=partial_frames))
                 self.fp.flush()
 
     def _worker(self,direction):
@@ -310,6 +390,7 @@ class RingTransport:
             if job is STOP:return
             try:self._transfer(direction,job)
             except BaseException as exc:
+                print(f'[RING FAILURE r{self.rank}] direction={direction} step={job.step} phase={job.phase} round={job.round} chunk={job.chunk} elapsed={time.time()-self.start:.6f} error={exc!r}',flush=True)
                 job.error=exc
                 with self.failure_lock:
                     if self.failure is None:self.failure=exc
@@ -354,5 +435,6 @@ class RingTransport:
             if sock is not None:
                 try:sock.close()
                 except OSError:pass
-        if not any(t.is_alive() for t in self.threads) and not self.fp.closed:
-            self.fp.close()
+        if any(t.is_alive() for t in self.threads):
+            raise RuntimeError('Ring TX/RX thread did not stop after socket shutdown')
+        if not self.fp.closed:self.fp.close()

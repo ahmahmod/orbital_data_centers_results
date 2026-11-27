@@ -1,0 +1,17 @@
+[Rank 2] Ring TX->3 RX<-1 connected; mode=aware; frame_bytes=1048576
+[RING RX r2<-1] WAIT_INCOMING step=11840 phase=0 round=0 next_elapsed=660.250[RING TX r2->3] WAIT_CONTACT step=11840 phase=0 round=0 next_elapsed=660.250
+
+[RING RX r2<-1] WAIT_INCOMING step=21760 phase=0 round=1 next_elapsed=1440.250
+[RING RX r2<-1] WAIT_INCOMING step=21760 phase=0 round=1 next_elapsed=1440.250
+[RING RX r2<-1] WAIT_INCOMING step=21760 phase=0 round=1 next_elapsed=1440.250
+[RING RX r2<-1] WAIT_INCOMING step=21760 phase=0 round=1 next_elapsed=1440.250
+[RING RX r2<-1] WAIT_INCOMING step=30400 phase=0 round=0 next_elapsed=2340.250
+[RING RX r2<-1] WAIT_INCOMING step=30400 phase=0 round=0 next_elapsed=2340.250
+[RING RX r2<-1] WAIT_INCOMING step=30400 phase=0 round=0 next_elapsed=2340.250
+[RING RX r2<-1] WAIT_INCOMING step=30400 phase=0 round=0 next_elapsed=2340.250
+[RING RX r2<-1] WAIT_INCOMING step=30400 phase=0 round=0 next_elapsed=2340.250
+[RING RX r2<-1] WAIT_INCOMING step=30400 phase=0 round=0 next_elapsed=2340.250
+[RING RX r2<-1] WAIT_INCOMING step=30400 phase=0 round=0 next_elapsed=2340.250
+[RING TX r2->3] WAIT_CONTACT step=30400 phase=0 round=0 next_elapsed=2340.250
+[Rank 2] Training finished at step=35200; epochs_completed=100; reason=epochs_completed
+[Rank 2] Ring TX/RX threads closed

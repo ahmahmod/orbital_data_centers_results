@@ -1,0 +1,5 @@
+rank,monitored_outage_samples,gpu_idle_during_outage_pct,idle_threshold_gpu_util_pct,note
+0,2843,99.61308476960957,10,sampled GPU utilization proxy; not exclusive communication blocking
+1,2841,99.71840901091166,10,sampled GPU utilization proxy; not exclusive communication blocking
+2,2842,99.68332160450387,10,sampled GPU utilization proxy; not exclusive communication blocking
+3,2845,99.78910369068541,10,sampled GPU utilization proxy; not exclusive communication blocking

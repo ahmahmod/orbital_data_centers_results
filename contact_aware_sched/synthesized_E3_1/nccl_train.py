@@ -7,7 +7,7 @@ import torch.distributed as dist
 import socket
 import sys
 from pathlib import Path
-from e2_metrics import STEP_FIELDS, VALIDATION_FIELDS, writer, sync_cuda, evaluate_local, ResourceSampler
+from e2_metrics import STEP_FIELDS, VALIDATION_FIELDS, writer, sync_cuda, evaluate_local, ResourceSampler, close_loaders
 from torchvision import models
 from e1_training import add_training_arguments, validate_training_args, loaders, lr_at
 from e3_batch_control import BatchScheduler
@@ -51,8 +51,11 @@ def main(methods=('ddp','diloco8','diloco64')):
     p.add_argument('--resource-interval-s',type=float,default=float(os.getenv('E2_RESOURCE_INTERVAL_S','2')))
     p.add_argument('--comm-timeout',type=int,default=900,help='NCCL operation timeout in seconds')
     p.add_argument('--dataset',choices=['cifar100','synthetic'],default='cifar100')
+    p.add_argument('--eval-steps',type=int,default=int(os.getenv('E3_EVAL_STEPS','128')))
     a=p.parse_args()
     validate_training_args(a)
+    h=int(''.join(c for c in a.method if c.isdigit()) or '1')
+    if a.eval_steps<1 or a.eval_steps%h:raise ValueError('eval-steps must be a positive multiple of H')
     if a.world != 4:raise ValueError('E3 NCCL control requires four ranks')
     if a.comm_timeout<=0:raise ValueError('comm-timeout must be positive')
     if not (0 < a.outer_lr <= 1):raise ValueError('outer-lr must be in (0, 1]')
@@ -113,6 +116,9 @@ def main(methods=('ddp','diloco8','diloco64')):
             dist.broadcast(tensor,src=0)
     dist.barrier(device_ids=[0])
     # Initialize DDP/CIFAR-100 before beginning the shared contact timeline.
+    validation_model=model.module if a.method=='ddp' else model
+    initial_metrics=evaluate_local(validation_model,testloader,device,torch,amp=amp)
+    initial_stamp=time.time()
     startup_run_id=os.environ.get('E3_RUN_ID','')
     if startup_run_id:
         publish_ready(output,rank,startup_run_id)
@@ -145,7 +151,30 @@ def main(methods=('ddp','diloco8','diloco64')):
     baseline=flatten_model(model).clone() if a.method!='ddp' else None
     outer_m=torch.zeros_like(baseline) if baseline is not None else None
     outer_round=0
+    last_validated=-1
+    def validate_checkpoint(kind,metrics=None,evaluated=None):
+        nonlocal last_validated
+        acc,v_loss,n,v_sec=metrics if metrics is not None else evaluate_local(
+            validation_model,testloader,device,torch,amp=amp)
+        stamp=time.time() if evaluated is None else evaluated
+        # Initial model was measured before readiness; place it at trace t=0.
+        recorded=a.start if kind=='initial' else stamp
+        rec=dict(experiment='E3_1',method=a.method,rank=rank,
+            epoch=step/len(loader),completed_epochs=step//len(loader),
+            step=step,unix_time_s=recorded,elapsed_s=recorded-a.start,
+            val_loss=v_loss,val_accuracy=acc,val_samples=n,val_s=v_sec,
+            local_samples=local_samples,global_samples_approx=local_samples*a.world,
+            validation_kind=kind,evaluated_unix_s=stamp,outer_round=outer_round,
+            within_horizon=int(recorded<=scheduler.end))
+        valwriter.writerow(rec)
+        if rank==0:
+            with (output/'validation.csv').open('a',newline='') as legacy:
+                lw=csv.writer(legacy)
+                if legacy.tell()==0:lw.writerow(['unix_s','elapsed_s','step','accuracy','method','val_accuracy','val_loss'])
+                lw.writerow([recorded,recorded-a.start,step,acc,a.method,acc,v_loss])
+        last_validated=step
     try:
+        validate_checkpoint('initial',initial_metrics,initial_stamp)
         # Match E1_b: finish on epoch budget OR wall-clock budget, whichever comes first.
         reason='epochs_completed'
         while epoch < a.epochs:
@@ -170,7 +199,7 @@ def main(methods=('ddp','diloco8','diloco64')):
                 # Gate before forward: the reducer can communicate there.
                 log('comm_ready',step,logical,detail='ddp_native_step')
                 ok,ddp_opid=scheduler.gate('collective',step,logical,
-                    remaining_ops=total_steps-step,tag='gradient')
+                    remaining_ops=min(total_steps-step,a.eval_steps-step%a.eval_steps),tag='gradient')
                 if not ok:
                     reason='wall_budget' if schedule_mode=='off' else 'no_feasible_contact_or_wall_budget'
                     log('scheduler_horizon_stop',step,detail=reason)
@@ -202,7 +231,8 @@ def main(methods=('ddp','diloco8','diloco64')):
                 log('comm_ready',step,local_delta.numel()*local_delta.element_size(),detail='diloco_delta')
                 sync_cuda(torch)
                 ok,outer_opid=scheduler.gate('collective',step,local_delta.numel()*local_delta.element_size(),
-                    remaining_ops=1+(total_steps-step)//sync_every,tag='outer')
+                    remaining_ops=min(1+(total_steps-step)//sync_every,
+                        1+((a.eval_steps-step%a.eval_steps)%a.eval_steps)//sync_every),tag='outer')
                 if not ok:
                     reason='wall_budget' if schedule_mode=='off' else 'no_feasible_contact_or_wall_budget'
                     log('scheduler_horizon_stop',step,detail=reason+'; pending_outer_round_not_applied')
@@ -257,19 +287,8 @@ def main(methods=('ddp','diloco8','diloco64')):
             if finished_op is not None:
                 scheduler.finish_operation(*finished_op)
             now=time.time()
-            if not scheduler.in_batch and a.eval_interval_s>0 and now>=next_validation:
-                acc,v_loss,n,v_sec=evaluate_local(model.module if a.method=='ddp' else model,testloader,device,torch,amp=amp)
-                stamp=time.time(); rec=dict(experiment='E2',method=a.method,rank=rank,epoch=epoch+1,
-                    step=step,unix_time_s=stamp,elapsed_s=stamp-a.start,val_loss=v_loss,
-                    val_accuracy=acc,val_samples=n,val_s=v_sec,local_samples=local_samples,
-                    global_samples_approx=local_samples*a.world)
-                valwriter.writerow(rec)
-                if rank==0:
-                    with (output/'validation.csv').open('a',newline='') as legacy:
-                        lw=csv.writer(legacy)
-                        if legacy.tell()==0:lw.writerow(['unix_s','elapsed_s','step','accuracy','method','val_accuracy','val_loss'])
-                        lw.writerow([stamp,stamp-a.start,step,acc,a.method,acc,v_loss])
-                next_validation += (int((stamp-next_validation)//a.eval_interval_s)+1)*a.eval_interval_s
+            if step%a.eval_steps==0 and not scheduler.in_batch and now<scheduler.end:
+                validate_checkpoint('periodic')
             if rank == 0 and a.log_every > 0 and (step == 1 or step % a.log_every == 0):
                 elapsed = time.time() - a.start
                 current_loss = loss.detach().item()
@@ -289,6 +308,8 @@ def main(methods=('ddp','diloco8','diloco64')):
             raise RuntimeError('Training ended with undrained collective grant')
         if epoch < a.epochs and reason=='epochs_completed':
             reason='wall_budget'
+        if last_validated!=step:
+            validate_checkpoint('final')
         log('run_finished',step,detail=reason)
         print(f'[Rank {rank}] Training finished at step={step}; epochs_completed={min(epoch, a.epochs)}; reason={reason}',flush=True)
     except Exception:
@@ -306,6 +327,7 @@ def main(methods=('ddp','diloco8','diloco64')):
     finally:
         if resources:resources.close()
         eventfile.close();progress.close();valfile.close()
+        close_loaders(loader,testloader)
         scheduler.close()
         print(f'[Rank {rank}] Destroying process group',flush=True)
         # Avoid a final blocking barrier on disconnected network.
@@ -314,4 +336,10 @@ def main(methods=('ddp','diloco8','diloco64')):
             print(f'[Rank {rank}] Process group destroyed',flush=True)
         except Exception as exc:
             print(f'[Rank {rank}] Process group shutdown error: {exc!r}',flush=True)
+            raise
+    from e3_startup import atomic_json
+    atomic_json(output/f'e3_trainer_done_rank{rank}.json',dict(
+        run_id=os.environ.get('E3_RUN_ID',''),rank=rank,step=step,
+        completed_epochs=step//len(loader),outer_round=outer_round,
+        reason=reason,finished_unix=time.time()))
 if __name__=='__main__':main()

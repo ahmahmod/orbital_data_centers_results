@@ -1,0 +1,8 @@
+[Rank 1] Ring TX->2 RX<-0 connected; mode=aware; frame_bytes=1048576
+[RING TX r1->2] WAIT_CONTACT step=4888 phase=0 round=1 next_elapsed=660.250
+[RING TX r1->2] WAIT_CONTACT step=9064 phase=0 round=0 next_elapsed=1440.250
+[RING TX r1->2] WAIT_CONTACT step=12688 phase=0 round=1 next_elapsed=2340.250
+[RING TX r1->2] WAIT_CONTACT step=18640 phase=0 round=0 next_elapsed=3600.250
+[RING TX r1->2] WAIT_CONTACT step=23952 phase=0 round=0 next_elapsed=4260.250
+[RING TX r1->2] WAIT_CONTACT step=28080 phase=1 round=2 next_elapsed=5040.250
+[RING TX r1->2] WAIT_CONTACT step=31880 phase=0 round=0 next_elapsed=5940.250

@@ -1,0 +1,61 @@
+{
+  "return_codes": {
+    "train_rank0.log": 0,
+    "train_rank1.log": 0,
+    "train_rank2.log": 0,
+    "train_rank3.log": 0,
+    "tc_rank0.log": 0,
+    "tc_rank1.log": 0,
+    "tc_rank2.log": 0,
+    "tc_rank3.log": 0
+  },
+  "failures": [],
+  "shutdown_warnings": [],
+  "training_process_success": true,
+  "completed_epochs_target": true,
+  "trainer_completion": {
+    "0": {
+      "run_id": "75b123c4e8ae",
+      "rank": 0,
+      "step": 35200,
+      "completed_epochs": 100,
+      "outer_round": 4400,
+      "reason": "epochs_completed",
+      "finished_unix": 1795735369.574789
+    },
+    "1": {
+      "run_id": "75b123c4e8ae",
+      "rank": 1,
+      "step": 35200,
+      "completed_epochs": 100,
+      "outer_round": 4400,
+      "reason": "epochs_completed",
+      "finished_unix": 1795735369.6603901
+    },
+    "2": {
+      "run_id": "75b123c4e8ae",
+      "rank": 2,
+      "step": 35200,
+      "completed_epochs": 100,
+      "outer_round": 4400,
+      "reason": "epochs_completed",
+      "finished_unix": 1795735369.5937102
+    },
+    "3": {
+      "run_id": "75b123c4e8ae",
+      "rank": 3,
+      "step": 35200,
+      "completed_epochs": 100,
+      "outer_round": 4400,
+      "reason": "epochs_completed",
+      "finished_unix": 1795735369.5943458
+    }
+  },
+  "remote_processes_verified_gone": true,
+  "shutdown_grace_s": 300,
+  "wall_end": 1795735373.8227227,
+  "run_id": "75b123c4e8ae",
+  "success": true,
+  "training_completed_early": true,
+  "completion_reason": "epochs_completed"
+}

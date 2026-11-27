@@ -4,7 +4,7 @@
 Joins scheduler events to E2 validation/step/resource/replay telemetry. Missing
 metrics stay null. E2's raw CSVs and existing figures are not overwritten.
 """
-import csv,json,math,statistics,sys
+import csv,json,math,statistics,sys,re,hashlib
 from collections import defaultdict
 from pathlib import Path
 
@@ -51,6 +51,9 @@ def accuracy_series(folder):
         series=[x for x in series if None not in x]
         if series:return sorted(series),'async_gossip_rank0_local_validation'
     aggregate=rows(folder/'validation_aggregate.csv')
+    if config.get('validation_schedule')=='every_step_checkpoint':
+        aggregate=[r for r in aggregate if r.get('complete')=='1' and r.get('within_horizon')=='1']
+        return sorted((float(r['elapsed_s']),float(r['mean_accuracy'])) for r in aggregate), 'four_rank_exact_step_in_horizon'
     if aggregate:
         series=[(num(r.get('elapsed_s')),num(r.get('mean_accuracy'))) for r in aggregate]
         series=[x for x in series if None not in x]
@@ -69,6 +72,7 @@ def metrics(folder):
     if t0 is None:raise ValueError('Missing shared start time')
     horizon=num(conf.get('duration_s')) or 3600.
     ring_run=conf.get('sync_transport')=='tcp_ring'
+    censor=ring_run or conf.get('validation_schedule')=='every_step_checkpoint'
     cutoff=t0+horizon
     trace=Path(conf.get('trace_file') or '')
     if not trace.is_file():
@@ -101,7 +105,7 @@ def metrics(folder):
         elif action=='unavailable':rec['status']='not_started_no_window'
         elif action=='defer' and rec['status']=='unknown':rec['status']='deferred_unresolved'
         elif action=='start' and rec['status']=='unknown':rec['status']='started_unresolved'
-    if ring_run:
+    if censor:
         # Final drain/stop-vote traffic remains in raw CSVs. Censor training
         # operations at the trace horizon, not the later cleanup deadline.
         for cid,op in list(operations.items()):
@@ -117,11 +121,20 @@ def metrics(folder):
     for rank in range(4):legacy.extend(rows(folder/f'e2_events_rank{rank}.csv'))
     failed=[r for r in legacy if r.get('event') in ('run_failed','comm_error')]
     timeout_events=[r for r in failed if any(x in (r.get('detail','').lower()) for x in ('timeout','timed out','watchdog'))]
+    watchdog=set()
+    for rank in range(4):
+        path=folder/f'train_rank{rank}.log'
+        if not path.is_file():continue
+        with path.open(errors='replace') as fp:
+            for line in fp:
+                if 'Watchdog caught collective operation timeout' in line:
+                    seq=re.search(r'SeqNum=(\d+)',line)
+                    watchdog.add((rank,seq.group(1) if seq else 'unknown'))
     progress_rows={}
     all_progress=[]
     for rank in range(4):
         progress=rows(folder/f'steps_rank{rank}.csv')
-        if ring_run:
+        if censor:
             progress=[r for r in progress if (num(r.get('unix_time_s') or r.get('unix_s')) or float('inf'))<=cutoff]
         progress_rows[rank]=progress
         for row in progress:
@@ -249,7 +262,7 @@ def metrics(folder):
     write(folder/'e3_effective_H.csv',actual_intervals,
           ['rank','previous_step','completed_step','actual_H','complete_unix'])
     validation,kind=accuracy_series(folder)
-    if ring_run:validation=[(t,a) for t,a in validation if t<=horizon]
+    if censor:validation=[(t,a) for t,a in validation if t<=horizon]
     targets={}
     for threshold in (0.5,0.6,0.7):
         found=next((t for t,acc in validation if acc>=threshold),None)
@@ -282,10 +295,35 @@ def metrics(folder):
             post_horizon_tx_frames=sum(num(x.get('post_horizon_frames')) or 0 for x in tx),
             failed_tx_chunks=sum(x.get('status')=='failed' for x in tx),
             measurement_note='Payload excludes TCP headers/retransmissions; volume/wait count whole chunks completed within horizon. Frame launches/overruns are local observations, not proof of on-wire timing.')
+        if any('ack_payload_in_horizon' in x for x in tx):
+            fields=['ack_payload_in_horizon','partial_ack_bytes','partial_contained_bytes',
+                    'full_contained_bytes','crossing_bytes','none_contained_bytes','partial_contained_frames']
+            for key in fields:
+                ring_stats[key]=sum(num(x.get(key)) or 0 for x in tx)
+            # Count already ACKed frames even if their enclosing chunk later failed.
+            ring_stats['acknowledged_payload_bytes_in_horizon']=ring_stats['ack_payload_in_horizon']
+            ring_stats['partial_contained_fraction']=(ring_stats['partial_contained_bytes']/ring_stats['ack_payload_in_horizon']
+                if ring_stats['ack_payload_in_horizon'] else None)
+            ring_stats['max_outstanding_frames']=max((num(x.get('max_outstanding_frames')) or 0 for x in tx),default=0)
+            ring_stats['partial_metric_note']='Planned ring connectivity. Strict partial bytes have both frame launch and observed application ACK inside the same contiguous partial-connectivity interval; crossing bytes separate. ACK observation is not actual wire time. No retransmission bytes counted.'
+            if trace.is_file() and hashlib.sha256(trace.read_bytes()).hexdigest()==conf.get('trace_sha256'):
+                from communication.contact_plan import RingConnectivity
+                sats=[f'SAT-DEMO-{i+1:03d}' for i in range(4)]
+                edges=defaultdict(list)
+                for x in rows(trace):
+                    edges[x['src'],x['dst']].append((float(x['t_start_s']),float(x['t_end_s']),
+                        int(x['available']),float(x['rate_bps']),float(x['prop_delay_ms'])/1000))
+                plan=RingConnectivity(edges,sats,horizon)
+                ring_stats['planned_connectivity_seconds']={state:sum(b-a for a,b,s in plan.intervals if s==state)
+                    for state in ('full','partial','none')}
+                # Use only active elapsed duration for early-ended runs when calculating a rate.
+                write(folder/'e3_ring_connectivity_intervals.csv',
+                      [dict(start_s=a,end_s=b,state=s) for a,b,s in plan.intervals],['start_s','end_s','state'])
+            ring_stats['measurement_note']='In-horizon observed application ACK payload per frame, including partial chunks. Excludes TCP overhead and retransmissions; not a wire-utilization measurement.'
     execution=load(folder/'execution_status.json')
     summary=dict(method=conf.get('method'),schedule_mode=conf.get('schedule_mode','off'),
        sync_transport=conf.get('sync_transport'),ring_transfer_metrics=ring_stats,
-       measurement_horizon_censored=ring_run,
+       measurement_horizon_censored=censor,
        run_success=execution.get('success'),failure_reasons=execution.get('failures',[]),
        trace_sha256=conf.get('trace_sha256'),start_unix=t0,duration_s=horizon,
        operation_count=len(detailed),operation_started_count=attempted,
@@ -298,7 +336,11 @@ def metrics(folder):
        transport_outage_exposure_rate=transport_risk/transport_attempted if transport_attempted else None,
        transport_outage_attempted_count=transport_attempted if transport_edges else None,
        transport_exposure_note='Completed collective interval overlap on detected NCCL ring/ACK edges; null when topology is unverified; risk not failure.',
-       observed_failures=len(failed),observed_timeout_events=len(timeout_events),
+       observed_failures=max(len(failed),len(watchdog)),observed_timeout_events=max(len(timeout_events),len(watchdog)),
+       nccl_watchdog_timeout_rank_sequences=len(watchdog),
+       timeout_count_note='Lower bound: maximum of event-log timeout count and distinct NCCL watchdog rank/sequence reports; avoids counting duplicated logs twice.',
+       training_process_success=execution.get('training_process_success'),
+       completed_epochs_target=execution.get('completed_epochs_target'),
        total_explicit_deferral_s=sum(x['defer_s'] for x in detailed),
        total_rendezvous_wait_s=sum(x['rendezvous_wait_s'] for x in detailed),
        completed_logical_bytes=sum(x['logical_bytes'] for x in completions),
@@ -341,6 +383,13 @@ def plot(folder):
         for t in (50,60,70):ax.axhline(t,linestyle=':',linewidth=.8)
         ax.set(xlabel='Elapsed training time (min)',ylabel='Validation accuracy (%)',title='E3_1 learning progress')
         ax.grid(alpha=.3);fig.tight_layout();fig.savefig(out/'accuracy_vs_time.png',dpi=150);plt.close(fig)
+    stats=load(folder/'e3_summary.json').get('ring_transfer_metrics') or {}
+    if 'partial_contained_bytes' in stats:
+        fig,ax=plt.subplots(figsize=(7,4))
+        names=['Full','Partial','Crossing','None']
+        keys=['full_contained_bytes','partial_contained_bytes','crossing_bytes','none_contained_bytes']
+        ax.bar(names,[stats[k]/1e9 for k in keys]);ax.set(ylabel='Acknowledged payload (GB)',title='Frame delivery by planned ring connectivity')
+        fig.tight_layout();fig.savefig(out/'payload_by_connectivity.png',dpi=150);plt.close(fig)
     events=rows(folder/'e3_communication_operations.csv')
     xs=[num(r['ready_unix']) for r in events if num(r.get('ready_unix')) is not None]
     if xs:

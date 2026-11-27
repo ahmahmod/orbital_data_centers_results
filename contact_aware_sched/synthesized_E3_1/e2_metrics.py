@@ -19,7 +19,8 @@ STEP_FIELDS = [
 ]
 VALIDATION_FIELDS = [
  'experiment','method','rank','epoch','step','unix_time_s','elapsed_s',
- 'val_loss','val_accuracy','val_samples','val_s','local_samples','global_samples_approx'
+ 'val_loss','val_accuracy','val_samples','val_s','local_samples','global_samples_approx',
+ 'validation_kind','evaluated_unix_s','completed_epochs','outer_round','within_horizon'
 ]
 RESOURCE_FIELDS = [
  'rank','local_rank','host','unix_time_s','elapsed_s','gpu_util_pct',
@@ -53,8 +54,8 @@ def evaluate_local(model, loader, device, torch, amp=False):
                 labels = labels.to(device, non_blocking=True)
                 with torch.autocast(device_type='cuda', dtype=torch.float16, enabled=amp):
                     logits = model(images)
-                total_loss += torch.nn.functional.cross_entropy(
-                    logits, labels, reduction='sum').item()
+                    loss = torch.nn.functional.cross_entropy(logits, labels, reduction='sum')
+                total_loss += loss.item()
                 correct += (logits.argmax(1) == labels).sum().item()
                 n += labels.numel()
         sync_cuda(torch)
@@ -109,3 +110,12 @@ class ResourceSampler:
                     rx_bytes_node=counter('rx_bytes'),tx_bytes_node=counter('tx_bytes'),
                     nic=self.iface,status=';'.join(errors) if errors else 'ok'))
                 self.stop_event.wait(self.period)
+
+def close_loaders(*loaders):
+    """Stop persistent DataLoader children before reporting a clean worker exit."""
+    for loader in loaders:
+        iterator=getattr(loader,'_iterator',None)
+        if iterator is not None:
+            shutdown=getattr(iterator,'_shutdown_workers',None)
+            if shutdown:shutdown()
+            loader._iterator=None

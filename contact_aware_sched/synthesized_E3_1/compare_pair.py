@@ -19,7 +19,7 @@ def number(x):
 def validation(p):
     config=obj(p/'e2_run_config.json')
     def within(v):
-        if config.get('sync_transport')=='tcp_ring':
+        if config.get('sync_transport')=='tcp_ring' or config.get('validation_schedule')=='every_step_checkpoint':
             v=[(t,a) for t,a in v if t<=float(config['duration_s'])]
         return sorted(v)
     if str(config.get('method','')).startswith('gossip'):
@@ -28,6 +28,8 @@ def validation(p):
         v=[(t,a) for t,a in v if t is not None and a is not None]
         if v:return within(v)
     agg=read(p/'validation_aggregate.csv')
+    if config.get('validation_schedule')=='every_step_checkpoint':
+        return within([(float(r['elapsed_s']),float(r['mean_accuracy'])) for r in agg if r.get('complete')=='1' and r.get('within_horizon')=='1'])
     v=[(number(r.get('elapsed_s')),number(r.get('mean_accuracy'))) for r in agg]
     v=[(t,a) for t,a in v if t is not None and a is not None]
     if v:return within(v)
@@ -44,7 +46,7 @@ def main():
     configs=[obj(p/'e2_run_config.json') for p in (a.off,a.aware)]
     if configs[0].get('schedule_mode')!='off' or configs[1].get('schedule_mode')!='aware':
         ap.error('Expected --off scheduling-off and --aware scheduling-aware results')
-    for key in ('method','trace_sha256','dataset','seed','model','duration_s','outer_lr','outer_momentum','training_profile','nccl_algorithm','control_transport','sync_transport','ring_config'):
+    for key in ('method','trace_sha256','dataset','seed','model','duration_s','outer_lr','outer_momentum','training_profile','nccl_algorithm','control_transport','sync_transport','ring_config','validation_schedule','eval_steps'):
         if configs[0].get(key)!=configs[1].get(key):
             ap.error(f'Mismatched {key}: {configs[0].get(key)} vs {configs[1].get(key)}')
     results=[obj(p/'e3_summary.json') for p in (a.off,a.aware)]
@@ -72,6 +74,9 @@ def main():
             delta=(yn-xn) if xn is not None and yn is not None else None
             pct=(100*delta/xn) if delta is not None and xn else None
             w.writerow([k,x,y,delta,pct])
+        for k in ('ack_payload_in_horizon','partial_contained_bytes','partial_ack_bytes','full_contained_bytes','crossing_bytes','partial_contained_fraction','max_outstanding_frames'):
+            x=number((results[0].get('ring_transfer_metrics') or {}).get(k));y=number((results[1].get('ring_transfer_metrics') or {}).get(k))
+            w.writerow([k,x,y,y-x if None not in (x,y) else None,100*(y-x)/x if None not in (x,y) and x else None])
         for threshold in ('50','60','70'):
             x=number(results[0].get('time_to_accuracy_s',{}).get(threshold))
             y=number(results[1].get('time_to_accuracy_s',{}).get(threshold))

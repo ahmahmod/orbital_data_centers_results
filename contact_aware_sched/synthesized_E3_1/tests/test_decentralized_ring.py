@@ -17,7 +17,7 @@ from types import SimpleNamespace
 import numpy as np
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from communication.contact_plan import LinkPlan
+from communication.contact_plan import LinkPlan, RingConnectivity
 from communication.transport import RingTransport
 from communication.ring_allreduce import RingAllReduce
 
@@ -64,6 +64,26 @@ class PlanTests(unittest.TestCase):
                       margin=.1,open_guard=.01,factor=2)
         self.assertIsNotNone(plan.next_slot(0,1024))
         self.assertIsNone(plan.next_slot(0,1048576))
+
+
+    def test_adaptive_credit_capacity(self):
+        plan=LinkPlan(segments(2,[(0,2)],rate=1e9,delay=.01),
+                      segments(2,[(0,2)],rate=1e9,delay=.01),2,
+                      margin=.1,open_guard=.01,factor=2,min_transfer=.001)
+        payload=[1048576]*32
+        self.assertGreater(plan.credit_limit(.1,payload,32),1)
+        self.assertLess(plan.credit_limit(.1,payload,32),32)
+        self.assertEqual(plan.credit_limit(1.99,payload,32),0)
+        self.assertEqual(plan.credit_limit(0,payload,32),0)
+        self.assertLessEqual(plan.credit_limit(.1,payload,2),2)
+
+    def test_partial_connectivity_classification(self):
+        sats,edges=trace(8,'staggered')
+        plan=RingConnectivity(edges,sats,8)
+        self.assertEqual(plan.classify(.02,.04),'partial')
+        self.assertEqual(plan.classify(.02,.18),'crossing')
+        self.assertEqual(plan.classify(.18,.19),'none')
+        self.assertEqual(plan.classify(7.99,8.01),'outside')
 
 
 class RingTests(unittest.TestCase):
@@ -121,6 +141,7 @@ class RingTests(unittest.TestCase):
         self.assertEqual(results,[[False,False,True]]*4)
         self.assertTrue(all(float(r['contact_wait_s'])==0 for r in tx))
         self.assertTrue(any(int(r['outside_contact_frames'])>0 for r in tx))
+        self.assertTrue(any(int(r['max_outstanding_frames'])>1 for r in tx))
         self.assertTrue(all(int(r['post_horizon_frames'])==0 for r in tx))
 
     def test_aware_without_any_common_four_worker_window(self):
@@ -132,6 +153,10 @@ class RingTests(unittest.TestCase):
         # 4 workers x 6 exchanges = 24 TX chunks per collective.
         self.assertEqual(len(tx),24)
         self.assertTrue(all(int(r['frames'])>1 for r in tx))
+        self.assertTrue(any(int(r['max_outstanding_frames'])>1 for r in tx))
+        self.assertTrue(any(int(r['partial_contained_bytes'])>0 for r in tx))
+        for row in tx:
+            self.assertEqual(int(row['ack_payload_in_horizon']),sum(int(row[k]) for k in ('partial_contained_bytes','full_contained_bytes','crossing_bytes','none_contained_bytes')))
 
     def test_horizon_drain_and_common_terminal_vote(self):
         results,tx=self.exercise('aware','all_down',.3,[False,None])

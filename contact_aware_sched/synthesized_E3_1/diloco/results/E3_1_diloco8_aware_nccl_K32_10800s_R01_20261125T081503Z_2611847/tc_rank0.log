@@ -1,3 +1,0 @@
-E2 tc installed: iface=ens4f0, mode=selective_tc, run=E3_1_diloco8_aware_nccl_K32_10800s_R01_20261125T081503Z_2611847
-E2 tc agent received stop signal; cleaning up
-E2 tc cleanup PASS: ens4f0
